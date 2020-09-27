@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" height="25.3867" viewBox="0 0 23.5 23.799999" width="25.0667" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <filter id="filter3956" style="color-interpolation-filters:sRGB">
+   <feGaussianBlur stdDeviation="0.12154297"/>
+  </filter>
+  <clipPath id="clipPath3849" clipPathUnits="userSpaceOnUse">
+   <rect height="19.921" width="20.3953" y="1026.77" x="5.08177" fill="#ffffff"/>
+  </clipPath>
+  <clipPath id="clipPath3871" clipPathUnits="userSpaceOnUse">
+   <rect height="19.921" width="20.3953" y="1026.31" x="4.3651" fill="#ffffff"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(-124.714 -145.644)">
+  <rect stroke-linejoin="round" stroke-opacity=".392157" fill-opacity=".274510" height="20" width="20" stroke="#000000" stroke-linecap="round" y="148.444" x="127.211" stroke-width="2" fill="#ffffff"/>
+  <g>
+   <g opacity=".4" clip-path="url(#clipPath3871)" transform="translate(121.166 -879.473)" filter="url(#filter3956)" stroke="#000000">
+    <g id="g3861-5" transform="matrix(.109712 0 0 .117506 -32.9411 988.059)" stroke="#000000">
+     <path d="m407.5 383.791h100.357" stroke="#000000" stroke-width="8.80731px" fill="none"/>
+     <path stroke-linejoin="round" d="m531.845 420.007a18.1224 18.0565 0 0 1 -15.6944 -9.02824 18.1224 18.0565 0 0 1 0 -18.0565 18.1224 18.0565 0 0 1 15.6944 -9.02824" transform="matrix(.800116 0 0 .803036 92.6204 60.5356)" stroke="#000000" stroke-width="10.9875" fill="none"/>
+     <path d="m444.969 383.746 24.875-24.875" stroke="#000000" stroke-width="8.80731px" fill="none"/>
+     <path d="m444.712 383.667 24.875 24.875" stroke="#000000" stroke-width="8.80731px" fill="none"/>
+     <path stroke-linejoin="round" d="m531.845 420.007a18.1224 18.0565 0 0 1 -15.6944 -9.02824 18.1224 18.0565 0 0 1 0 -18.0565 18.1224 18.0565 0 0 1 15.6944 -9.02824" transform="matrix(.729563 .310714 -.352312 .730648 238.688 -99.594)" stroke="#000000" stroke-width="10.9875" fill="none"/>
+     <path stroke-linejoin="round" d="m531.845 420.007a18.1224 18.0565 0 0 1 -15.6944 -9.02824 18.1224 18.0565 0 0 1 0 -18.0565 18.1224 18.0565 0 0 1 15.6944 -9.02824" transform="matrix(.663340 -.421157 .478879 .664574 -61.7763 361.668)" stroke="#000000" stroke-width="10.9875" fill="none"/>
+     <path d="m425.378 374.954v30.321" stroke="#000000" stroke-linecap="square" stroke-width="8.80731px" fill="none"/>
+    </g>
+    <use xlink:href="#g3861-5" transform="matrix(.5 .927552 -.808580 .5 841.216 505.658)" height="1052.3622" width="744.09448" y="0" x="0"/>
+    <use xlink:href="#g3861-5" transform="matrix(-.5 .927552 -.808580 -.5 852.944 1538.81)" height="1052.3622" width="744.09448" y="0" x="0"/>
+    <use xlink:href="#g3861-5" transform="rotate(180 11.7589 1033.17)" height="1052.3622" width="744.09448" y="0" x="0"/>
+    <use xlink:href="#g3861-5" transform="matrix(-.5 -.927552 .808580 -.5 -817.739 1560.63)" height="1052.3622" width="744.09448" y="0" x="0"/>
+    <use xlink:href="#g3861-5" transform="matrix(.5 -.927552 .808580 .5 -829.478 527.444)" height="1052.3622" width="744.09448" y="0" x="0"/>
+   </g>
+   <g clip-path="url(#clipPath3849)" transform="translate(120.528 -880.045)" stroke="#222222">
+    <g id="g3861" transform="matrix(.109712 0 0 .117506 -32.9411 988.059)" stroke="#222222">
+     <path d="m407.5 383.791h100.357" stroke="#222222" stroke-width="8.80731px" fill="none"/>
+     <path stroke-linejoin="round" d="m531.845 420.007a18.1224 18.0565 0 0 1 -15.6944 -9.02824 18.1224 18.0565 0 0 1 0 -18.0565 18.1224 18.0565 0 0 1 15.6944 -9.02824" transform="matrix(.800116 0 0 .803036 92.6204 60.5356)" stroke="#222222" stroke-width="10.9875" fill="none"/>
+     <path d="m444.969 383.746 24.875-24.875" stroke="#222222" stroke-width="8.80731px" fill="none"/>
+     <path d="m444.712 383.667 24.875 24.875" stroke="#222222" stroke-width="8.80731px" fill="none"/>
+     <path stroke-linejoin="round" d="m531.845 420.007a18.1224 18.0565 0 0 1 -15.6944 -9.02824 18.1224 18.0565 0 0 1 0 -18.0565 18.1224 18.0565 0 0 1 15.6944 -9.02824" transform="matrix(.729563 .310714 -.352312 .730648 238.688 -99.594)" stroke="#222222" stroke-width="10.9875" fill="none"/>
+     <path stroke-linejoin="round" d="m531.845 420.007a18.1224 18.0565 0 0 1 -15.6944 -9.02824 18.1224 18.0565 0 0 1 0 -18.0565 18.1224 18.0565 0 0 1 15.6944 -9.02824" transform="matrix(.663340 -.421157 .478879 .664574 -61.7763 361.668)" stroke="#222222" stroke-width="10.9875" fill="none"/>
+     <path d="m425.378 374.954v30.321" stroke="#222222" stroke-linecap="square" stroke-width="8.80731px" fill="none"/>
+    </g>
+    <use xlink:href="#g3861" transform="matrix(.5 .927552 -.808580 .5 841.216 505.658)" height="1052.3622" width="744.09448" y="0" x="0"/>
+    <use xlink:href="#g3861" transform="matrix(-.5 .927552 -.808580 -.5 852.944 1538.81)" height="1052.3622" width="744.09448" y="0" x="0"/>
+    <use xlink:href="#g3861" transform="rotate(180 11.7589 1033.17)" height="1052.3622" width="744.09448" y="0" x="0"/>
+    <use xlink:href="#g3861" transform="matrix(-.5 -.927552 .808580 -.5 -817.739 1560.63)" height="1052.3622" width="744.09448" y="0" x="0"/>
+    <use xlink:href="#g3861" transform="matrix(.5 -.927552 .808580 .5 -829.478 527.444)" height="1052.3622" width="744.09448" y="0" x="0"/>
+   </g>
+   <rect stroke-linejoin="round" height="20" width="20" stroke="#222222" stroke-linecap="round" y="146.648" x="125.714" stroke-width="2" fill="none"/>
+  </g>
+ </g>
+</svg>

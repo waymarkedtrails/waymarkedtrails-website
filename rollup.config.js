@@ -2,6 +2,7 @@ import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
+import css from 'rollup-plugin-css-porter';
 import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -16,7 +17,7 @@ function serve() {
 	return {
 		writeBundle() {
 			if (server) return;
-			server = require('child_process').spawn('yarn', ['run', 'start', '--', '--dev'], {
+			server = require('child_process').spawn('yarn', ['start', '--', '--dev'], {
 				stdio: ['ignore', 'inherit', 'inherit'],
 				shell: true
 			});
@@ -56,6 +57,7 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
+        css({dest: 'public/build/contrib.css'}),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
@@ -71,5 +73,15 @@ export default {
 	],
 	watch: {
 		clearScreen: false
-	}
+	},
+    onwarn: function(warning, superOnWarn) {
+    /*
+     * skip certain warnings
+     * https://github.com/openlayers/openlayers/issues/10245
+     */
+    if (warning.code === 'THIS_IS_UNDEFINED') {
+      return;
+    }
+    superOnWarn(warning);
+  }
 };
