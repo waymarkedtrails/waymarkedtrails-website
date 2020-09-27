@@ -1,29 +1,40 @@
 <script>
     import { onMount, setContext } from 'svelte';
+    import { map_view } from './app_state.js';
+    import { get} from 'svelte/store';
 
     import 'ol/ol.css';
     import {Map, View} from 'ol';
-    import TileLayer from 'ol/layer/Tile';
-    import XYZ from 'ol/source/XYZ';
+    import {transform} from 'ol/proj';
 
-    export let lat = 0;
-    export let lon = 0;
-    export let zoom = 2;
     export let copyright = '';
 
     let map;
+    let component;
+
+    setContext('olContext', () => map);
 
     onMount(() => {
-            map = new Map({target: 'app-map',
-                 layers: [
-                   new TileLayer({source: new XYZ({
-                        url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
-                       })
-                      })
-                         ],
-                 view: new View({center: [lon, lat], zoom: zoom})
-            });
-            copyright = 'Map data © OpenStreetMap under ODbL elevation data by SRTM/ASTER Base map: OpenStreetMap(CC-by-SA)';
+        let m = get(map_view);
+        map = new Map({
+                  target: component,
+                  view: new View({
+                      center: transform(m.center, "EPSG:4326", "EPSG:3857"),
+                      zoom: m.zoom
+                  })
+              });
+
+        map.on('moveend', function(evt) {
+            let view = evt.map.getView();
+            let center = transform(view.getCenter(), "EPSG:3857", "EPSG:4326");
+
+            let zoom = view.getZoom();
+            let lon = (Math.round(center[1] * 10000) / 10000);
+            let lat = (Math.round(center[0] * 10000) / 10000);
+            map_view.set({center: [lon, lat], zoom: zoom});
+        });
+
+        copyright = 'Map data © OpenStreetMap under ODbL elevation data by SRTM/ASTER Base map: OpenStreetMap(CC-by-SA)';
         });
 </script>
 
@@ -36,4 +47,6 @@
       }
 </style>
 
-<div id="app-map"></div>
+<div bind:this={component}>
+{#if map}<slot></slot>{/if}
+</div>
