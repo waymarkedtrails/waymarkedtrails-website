@@ -9,6 +9,7 @@
     export let lat = 0;
     export let lon = 0;
     export let zoom = 2;
+    export let copyright = '';
 
     let map;
 
@@ -22,6 +23,7 @@
                          ],
                  view: new View({center: [lon, lat], zoom: zoom})
             });
+            copyright = 'Map data © OpenStreetMap under ODbL elevation data by SRTM/ASTER Base map: OpenStreetMap(CC-by-SA)';
         });
 </script>
 

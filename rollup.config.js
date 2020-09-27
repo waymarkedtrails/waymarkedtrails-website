@@ -30,11 +30,15 @@ function serve() {
 
 export default {
 	input: 'src/main.js',
+    external: ['theme'],
 	output: {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: 'public/build/bundle.js',
+        globals: {
+            theme: 'WMTConfig'
+        }
 	},
 	plugins: [
 		svelte({

@@ -280,16 +280,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap@npm:^4.5.2":
-  version: 4.5.2
-  resolution: "bootstrap@npm:4.5.2"
-  peerDependencies:
-    jquery: 1.9.1 - 3
-    popper.js: ^1.16.1
-  checksum: 980e7e4ebd1ba50b605a8f22e2b80cb024db23b5fb7790ff54bc3cd9345496610f36028fa14c78a50a50e1026a977aeaa60245211144f4fbf9d3eb3cd6949760
-  languageName: node
-  linkType: hard
-
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -725,6 +715,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"hasha@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "hasha@npm:2.2.0"
+  dependencies:
+    is-stream: ^1.0.1
+    pinkie-promise: ^2.0.0
+  checksum: 4233cecb12a60e8e6475466853fd3bd717432d4d441da0fb9eb763a5edb6ba36b1b8a8655c31f69e6b2f47a97502b54414c9235a6a3681f41ffab21f3ee2e79d
+  languageName: node
+  linkType: hard
+
 "http-signature@npm:~1.2.0":
   version: 1.2.0
   resolution: "http-signature@npm:1.2.0"
@@ -821,6 +821,13 @@ fsevents@~2.1.2:
   dependencies:
     "@types/estree": "*"
   checksum: 9daa3d7c4dc159e326be68c025a43bf714b36a6d065c2cc6907f7c44d010867dd10ec7f74bff37cb5d2000ac8b03c94cde3d69c85dc9a56a887ce576200ad01f
+  languageName: node
+  linkType: hard
+
+"is-stream@npm:^1.0.1":
+  version: 1.1.0
+  resolution: "is-stream@npm:1.1.0"
+  checksum: 39843ee9ff68ebda05237199f18831eb6e0e28db7799ee9ddaac5573b0681f18b4dc427afdb7b7ad906db545e4648999c42a1810b277acc8451593ff59da00fa
   languageName: node
   linkType: hard
 
@@ -1272,6 +1279,22 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"pinkie-promise@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "pinkie-promise@npm:2.0.1"
+  dependencies:
+    pinkie: ^2.0.0
+  checksum: 1e32e05ffdfb691b04a42d05d5452698853099efe1bab70bfa538e9a793e609b66cc59180cc5fc2158062a2fc5991c9c268a82b2b655247aa005020167e31d75
+  languageName: node
+  linkType: hard
+
+"pinkie@npm:^2.0.0":
+  version: 2.0.4
+  resolution: "pinkie@npm:2.0.4"
+  checksum: 2cb484c9da47b2f420fddffe7cbfeac950106a848343d147c2b2668d12b71aa3d09297bfe37ec32539a27c6dc7db414414f5ee166d6b2ca0d95f6dfe9dde60d7
+  languageName: node
+  linkType: hard
+
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -1446,6 +1469,15 @@ fsevents@~2.1.2:
     path: ^0.12.7
     rollup-pluginutils: ^2.4.1
   checksum: 80cce43a1f2e27bc9926d8c56fc5d9860fcf8b2bfe198965c23d4ec4f7d2dcfc390b49d9c85a4e380450b6d2275ebc45ba41b374df677677d4cf75e0a16cf55c
+  languageName: node
+  linkType: hard
+
+"rollup-plugin-hash@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "rollup-plugin-hash@npm:1.3.0"
+  dependencies:
+    hasha: ^2.2.0
+  checksum: ea0ac67410f1e2acf6b451a62d675dd37f72394e729ce2c9727f0413b7c762849572461839a11c59a9d96a1bdfb7029e89a92c0001645ee6f6f8b0e9a7097e7d
   languageName: node
   linkType: hard
 
@@ -1691,12 +1723,12 @@ fsevents@~2.1.2:
   dependencies:
     "@rollup/plugin-commonjs": ^14.0.0
     "@rollup/plugin-node-resolve": ^8.0.0
-    bootstrap: ^4.5.2
     jquery: ^3.5.1
     node-static: ^0.7.11
     ol: ^6.4.3
     rollup: ^2.3.4
     rollup-plugin-css-porter: ^1.0.2
+    rollup-plugin-hash: ^1.3.0
     rollup-plugin-livereload: ^2.0.0
     rollup-plugin-svelte: ^6.0.0
     rollup-plugin-terser: ^7.0.0
