@@ -981,6 +981,20 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"lodash.isobject@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "lodash.isobject@npm:3.0.2"
+  checksum: 650d6689f3e96a559c6ea2b5a901de19228f7fce78ed5a22a9df8ec260cceeac616b539fa69e7f8e7b6eb9054dddbb58d4ac2f6a484b64a6502437ba732069dc
+  languageName: node
+  linkType: hard
+
+"lodash.tonumber@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "lodash.tonumber@npm:4.0.3"
+  checksum: 8368d397fd975cad69374d771b30e9305b8505c0b2c321904325c37e9fdd5a7dd9d0088cc3b515dfe21185e921317bbeb677f09be883044aa0ff7069e05f776a
+  languageName: node
+  linkType: hard
+
 "magic-string@npm:^0.25.2":
   version: 0.25.7
   resolution: "magic-string@npm:0.25.7"
@@ -1752,6 +1766,7 @@ fsevents@~2.1.2:
     rollup-plugin-svelte: ^6.0.0
     rollup-plugin-terser: ^7.0.0
     svelte: ^3.0.0
+    sveltestrap: ^3.9.0
   languageName: unknown
   linkType: soft
 
@@ -1759,6 +1774,18 @@ fsevents@~2.1.2:
   version: 3.28.0
   resolution: "svelte@npm:3.28.0"
   checksum: 0380ab421fa36701891c7ac8c547fea007225473e75f8ef28f1de4c43a0808ca99413b15530c6e60266f8fa274a1305a353a13a0276ad946afb7b0ab5aea14ef
+  languageName: node
+  linkType: hard
+
+"sveltestrap@npm:^3.9.0":
+  version: 3.9.0
+  resolution: "sveltestrap@npm:3.9.0"
+  dependencies:
+    lodash.isobject: ^3.0.2
+    lodash.tonumber: ^4.0.3
+  peerDependencies:
+    svelte: ^3.4.4
+  checksum: 6d34c96825c59bd129b69f732c274a480ec156915ca3708599c20e1ca4c9f2f1083c629c776f694026729b9816cd2f4927a967c8008e89d388475bbf43b55b58
   languageName: node
   linkType: hard
 

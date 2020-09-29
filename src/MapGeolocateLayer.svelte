@@ -1,10 +1,11 @@
 <script>
     import WMTConfig from 'theme';
-    import { getContext } from 'svelte';
+    import { getContext, onDestroy } from 'svelte';
     import { geolocation_tracking_enabled } from './app_state.js';
     import Feature from 'ol/Feature';
     import {Icon, Style} from 'ol/style';
     import {Vector as VectorLayer} from 'ol/layer';
+    import Point from 'ol/geom/Point';
     import {Vector as VectorSource} from 'ol/source';
     import Geolocation from 'ol/Geolocation';
 
@@ -25,8 +26,8 @@
     });
 
     map.addLayer(new VectorLayer({
-        source: VectorSource({
-            features: [obj.marker]
+        source: new VectorSource({
+            features: [marker]
         })
     }));
 
@@ -50,12 +51,17 @@
         } else {
             marker.setGeometry(null);
         }
-        geolocate.setTracking(false);
+        geolocation_tracking_enabled.set(false);
     });
 
     geolocate.on('error', function() {
         // XXX show popup
-        geolocate.setTracking(false);
+        geolocation_tracking_enabled.set(false);
     });
 
+    const unsubscribe = geolocation_tracking_enabled.subscribe(value => {
+        geolocate.setTracking(value);
+    });
+
+    onDestroy(unsubscribe);
 </script>

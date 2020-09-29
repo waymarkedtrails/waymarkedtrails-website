@@ -3,7 +3,7 @@
 import { geolocation_tracking_enabled } from './app_state.js';
 
 function geolocate() {
-    geolocation_tracking_enabled.set(True);
+    geolocation_tracking_enabled.set(true);
 }
 </script>
 

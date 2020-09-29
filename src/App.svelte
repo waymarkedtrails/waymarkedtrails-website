@@ -7,6 +7,7 @@
     import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route } from './app_state.js';
     import Map from './Map.svelte';
     import MapXYZLayer from './MapXYZLayer.svelte';
+    import MapGeolocateLayer from './MapGeolocateLayer.svelte';
     import Headline from './Headline.svelte';
     import MapFooter from './MapFooter.svelte';
 
@@ -37,5 +38,6 @@
   <MapXYZLayer {...WMTConfig.BASEMAPS[$basemap_id]} opacity={$map_opacity_base}/>
   <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} />
   <MapXYZLayer name="routelayer" url={WMTConfig.TILE_URL} opacity={$map_opacity_route}/>
+  <MapGeolocateLayer />
 </Map>
 <MapFooter />
