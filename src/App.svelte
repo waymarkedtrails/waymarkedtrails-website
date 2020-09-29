@@ -4,10 +4,11 @@
     import { onMount } from 'svelte';
     import jQuery from 'jquery';
     import WMTConfig from 'theme';
-    import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state } from './app_state.js';
+    import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route } from './app_state.js';
     import Map from './Map.svelte';
     import MapXYZLayer from './MapXYZLayer.svelte';
     import Headline from './Headline.svelte';
+    import MapFooter from './MapFooter.svelte';
 
     let db_update = '';
     let copyright;
@@ -37,4 +38,4 @@
   <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} />
   <MapXYZLayer name="routelayer" url={WMTConfig.TILE_URL} opacity={$map_opacity_route}/>
 </Map>
-<div class="map-footer"></div>
+<MapFooter />

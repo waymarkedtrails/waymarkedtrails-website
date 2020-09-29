@@ -280,6 +280,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bootstrap-icons@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "bootstrap-icons@npm:1.0.0"
+  checksum: 082d8d2aff07217289b3a78c0d8eb80c45b42f2ee63ffa27a87c83072745177dd12b0b12d1b73d95a5e69d45b54c739b5db6e2eb7e310aa8b54b6b08ec57772c
+  languageName: node
+  linkType: hard
+
+"bootstrap@npm:^4.5.2":
+  version: 4.5.2
+  resolution: "bootstrap@npm:4.5.2"
+  peerDependencies:
+    jquery: 1.9.1 - 3
+    popper.js: ^1.16.1
+  checksum: 980e7e4ebd1ba50b605a8f22e2b80cb024db23b5fb7790ff54bc3cd9345496610f36028fa14c78a50a50e1026a977aeaa60245211144f4fbf9d3eb3cd6949760
+  languageName: node
+  linkType: hard
+
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -1723,6 +1740,8 @@ fsevents@~2.1.2:
   dependencies:
     "@rollup/plugin-commonjs": ^14.0.0
     "@rollup/plugin-node-resolve": ^8.0.0
+    bootstrap: ^4.5.2
+    bootstrap-icons: ^1.0.0
     jquery: ^3.5.1
     node-static: ^0.7.11
     ol: ^6.4.3
