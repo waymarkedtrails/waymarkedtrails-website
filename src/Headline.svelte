@@ -44,8 +44,8 @@
   #subheadline {
     position: absolute;
     display: flex;
-    top: calc(var(--headline-total-height) - 1.2em);
-    height: 1.2em;
+    top: calc(var(--headline-total-height) - 1.4em);
+    height: 1.4em;
     font-size: 0.8em;
     padding: 0;
     background-color: var(--theme-sub-color);

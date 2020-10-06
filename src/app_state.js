@@ -14,6 +14,10 @@ export const map_opacity_shade =
     writable(s.opacity('opacity-shade-layer', 'hill', 0.0));
 export const geolocation_tracking_enabled = writable(false);
 
+export function reset_page_state() {
+    page_state.set({page: ''});
+}
+
 map_view.subscribe(function (value) {
     let map_param = value.zoom.toFixed(4)
                     + '/' + value.center[0]

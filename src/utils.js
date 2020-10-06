@@ -38,6 +38,8 @@ export function WindowHash(page, params = new Map()) {
                 h += encodeURI(k) + '=' + encodeURI(params.get(k));
             }
         }
+
+        return h;
     };
 
     obj.replace_history = function() {
