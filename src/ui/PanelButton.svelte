@@ -4,6 +4,6 @@
     }
 </style>
 
-<button type="button" class="btn btn-dark btn-sm" on:click>
+<button type="button" class="btn btn-outline-dark btn-sm" on:click>
   <slot></slot>
 </button>

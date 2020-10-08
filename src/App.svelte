@@ -10,7 +10,7 @@
     import MapGeolocateLayer from './MapGeolocateLayer.svelte';
     import Headline from './Headline.svelte';
     import MapFooter from './MapFooter.svelte';
-    import SidePanel from './SidePanel.svelte';
+    import PanelRouteList from './PanelRouteList.svelte';
     import PanelSettings from './PanelSettings.svelte';
 
     let db_update = '';
@@ -48,8 +48,5 @@
 </Headline>
 <MapFooter />
 
-{#if sidepanel === 'settings'}
-  <SidePanel title="Settings">
-    <PanelSettings/>
-  </SidePanel>
-{/if}
+{#if sidepanel === 'settings'}<PanelSettings/>{/if}
+{#if sidepanel === 'routelist'}<PanelRouteList/>{/if}

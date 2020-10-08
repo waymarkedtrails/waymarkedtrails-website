@@ -31,7 +31,8 @@
             let zoom = view.getZoom();
             let lon = (Math.round(center[1] * 10000) / 10000);
             let lat = (Math.round(center[0] * 10000) / 10000);
-            map_view.set({center: [lon, lat], zoom: zoom});
+            map_view.set({center: [lon, lat], zoom: zoom,
+                          extent: view.calculateExtent(evt.map.getSize())});
         });
 
         copyright = 'Map data © OpenStreetMap under ODbL elevation data by SRTM/ASTER Base map: OpenStreetMap(CC-by-SA)';
