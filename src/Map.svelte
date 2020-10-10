@@ -1,6 +1,7 @@
 <script>
     import { onMount, setContext } from 'svelte';
     import { map_view } from './app_state.js';
+    import { get_mapview } from './util/saved_state.js';
     import { get} from 'svelte/store';
 
     import 'ol/ol.css';
@@ -15,7 +16,7 @@
     setContext('olContext', () => map);
 
     onMount(() => {
-        let m = get(map_view);
+        let m = get_mapview();
         map = new Map({
                   target: component,
                   view: new View({

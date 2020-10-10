@@ -1,11 +1,12 @@
 <script>
     import WMTConfig from 'theme';
+    import { show_page } from '../app_state.js';
 
     export let route_data;
     export let groups;
 
     function show_route(route_id) {
-        console.log(route_id);
+        show_page('route', [['id', route_id]]);
     }
 </script>
 

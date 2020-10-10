@@ -47,7 +47,7 @@
         return '';
     };
 
-    let unsubscribe_map_view = map_view.subscribe((value) => {
+    onDestroy(map_view.subscribe((value) => {
         if (ongoing_request || typeof value.extent === 'undefined') {
             return;
         }
@@ -57,20 +57,16 @@
         jQuery.getJSON(WMTConfig.API_URL + '/list/by_area',
                        { bbox: value.extent.join(",") })
               .done(function (json) {
-                  console.log(json);
                   route_data = convert_json(json.results);
                   ongoing_request = false;
               })
               .fail(function (jqxhr, textStatus, error) {
                   fail_message = "Request failed: " + textStatus + ", " + error;
               });
-    });
+    }));
 
 </script>
 
-<SidePanel title="Routes">
-<RouteList groups={groups} route_data={route_data} />
-{#if fail_message !== ''}
-  {fail_message}
-{/if}
+<SidePanel title="Routes" fail_message={fail_message}>
+    <RouteList groups={groups} route_data={route_data} />
 </SidePanel>
