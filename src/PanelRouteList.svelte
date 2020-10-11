@@ -5,6 +5,7 @@
     import SidePanel from './ui/SidePanel.svelte';
     import RouteList from './ui/RouteList.svelte';
     import { map_view } from './app_state.js';
+    import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
 
     const groups = WMTConfig.ROUTE_GROUPS;
     let fail_message = '';
@@ -18,33 +19,13 @@
         });
 
         routes.forEach(function(route) {
-            route.title = display_name(route);
-            route.subtitle = make_subtitle(route);
+            route.title = make_route_title(route);
+            route.subtitle = make_route_subtitle(route);
             let key = data.has(route.group)? route.group : '';
             data.get(key).push(route);
         })
 
         return data;
-    };
-
-    const display_name = function (rel) {
-        if (rel.name)
-          return rel.name;
-        if (rel.itinerary)
-          return rel.itinerary.join(' - ');
-        if (rel.symbol_description)
-          return rel.symbol_description;
-        if (rel.ref)
-          return '[' + rel.ref + ']';
-        return '(' + rel.id + ')';
-    };
-
-    const make_subtitle = function (rel) {
-        if (rel.local_name)
-            return rel.local_name;
-        if (rel.name && rel.itinerary)
-            return rel.itinerary.join(' - ');
-        return '';
     };
 
     onDestroy(map_view.subscribe((value) => {
