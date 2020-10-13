@@ -7,22 +7,29 @@
     import 'ol/ol.css';
     import {Map, View} from 'ol';
     import {transform} from 'ol/proj';
+    import {Attribution, defaults as defaultControls} from 'ol/control';
 
-    export let copyright = '';
+    export let map;
 
-    let map;
     let component;
 
     setContext('olContext', () => map);
 
     onMount(() => {
         let m = get_mapview();
+        let attribution = new Attribution({
+            className: 'map-attribution',
+            target: 'map-attribution',
+            collapsible: false,
+            label: ''
+        });
         map = new Map({
                   target: component,
                   view: new View({
                       center: transform(m.center, "EPSG:4326", "EPSG:3857"),
                       zoom: m.zoom
-                  })
+                  }),
+                  controls: defaultControls({attribution: false}).extend([attribution]),
               });
 
         map.on('moveend', function(evt) {
@@ -35,18 +42,16 @@
             map_view.set({center: [lon, lat], zoom: zoom,
                           extent: view.calculateExtent(evt.map.getSize())});
         });
-
-        copyright = 'Map data © OpenStreetMap under ODbL elevation data by SRTM/ASTER Base map: OpenStreetMap(CC-by-SA)';
-        });
+    });
 </script>
 
 <style>
-      div {
+    div {
         position: absolute;
         top: var(--headline-total-height);
         bottom: 0;
         width: 100%;
-      }
+    }
 </style>
 
 <div bind:this={component}>

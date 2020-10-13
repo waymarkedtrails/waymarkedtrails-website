@@ -13,15 +13,17 @@
     let visible;
     $: visible = opacity > 0.0;
 
+    let attribs = ['Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> under <a href= "https://www.openstreetmap.org/copyright">ODbL</a>', attribution];
+
 
     const layer = new TileLayer({
-                      source: new XYZ({url: url}),
+                      source: new XYZ({url: url, attributions: attribs}),
                       opacity: opacity,
                       visible: visible
                   });
     map.addLayer(layer);
 
-    $: layer.setSource(new XYZ({url: url}));
+    $: layer.setSource(new XYZ({url: url, attributions: attribs}));
     $: layer.setOpacity(opacity);
     $: layer.setVisible(visible);
 </script>

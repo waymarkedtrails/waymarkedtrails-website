@@ -15,6 +15,7 @@
     import PanelRouteDetails from './PanelRouteDetails.svelte';
     import PanelSettings from './PanelSettings.svelte';
 
+    let map;
     let db_update = '';
     let copyright;
     let sidepanel = '';
@@ -38,21 +39,23 @@
         });
 
     });
+
+    const hillattr='elevation data by <a href= "https://hiking.waymarkedtrails.org/help/acknowledgements">SRTM/ASTER</a>';
 </script>
 
 <svelte:head>
   <title>DEV: Waymarked Trails - {WMTConfig.TITLE}</title>
 </svelte:head>
 
-<Map bind:copyright={copyright}>
+<Map bind:map={map}>
   <MapXYZLayer {...WMTConfig.BASEMAPS[$basemap_id]} opacity={$map_opacity_base}/>
-  <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} />
+  <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} attribution={hillattr} />
   <MapXYZLayer name="routelayer" url={WMTConfig.TILE_URL} opacity={$map_opacity_route}/>
   <MapGeolocateLayer />
 </Map>
 <Headline>
   <span slot="subleft">Last Update: {db_update}</span>
-  <span slot="subright">{copyright}</span>
+  <span slot="subright"><span id="map-attribution"></span></span>
 </Headline>
 <MapFooter />
 
