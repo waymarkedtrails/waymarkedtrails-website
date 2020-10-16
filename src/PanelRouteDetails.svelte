@@ -10,6 +10,8 @@
     import Collapsible from './ui/Collapsible.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
 
+    export let map;
+
     let osm_type = '';
     let osm_id = '';
     let fail_message = '';
@@ -100,7 +102,7 @@
     {make_route_title(route)}
 </h3>
 <div class="btn-group" role="group" aria-label="Quick access">
-  <ButtonRouteZoom bbox={route.bbox} />
+  <ButtonRouteZoom map={map} bbox={route.bbox} />
   <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="gpx">GPX</ButtonRouteDownload>
   <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="kml">KML</ButtonRouteDownload>
 </div>

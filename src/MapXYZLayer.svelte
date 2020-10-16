@@ -21,7 +21,8 @@
     const layer = new TileLayer({
                       source: new XYZ({url: url, attributions: make_attribs()}),
                       opacity: opacity,
-                      visible: visible
+                      visible: visible,
+                      maxZoom: 18
                   });
     map.addLayer(layer);
 

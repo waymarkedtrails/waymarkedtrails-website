@@ -62,5 +62,5 @@
 
 {#if sidepanel === 'settings'}<PanelSettings/>{/if}
 {#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
-{#if sidepanel === 'route'}<PanelRouteDetails/>{/if}
+{#if sidepanel === 'route'}<PanelRouteDetails map={map}/>{/if}
 {#if sidepanel === 'search'}<PanelSearch map={map}/>{/if}
