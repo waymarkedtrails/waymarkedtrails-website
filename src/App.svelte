@@ -14,6 +14,7 @@
     import PanelRouteList from './PanelRouteList.svelte';
     import PanelRouteDetails from './PanelRouteDetails.svelte';
     import PanelSettings from './PanelSettings.svelte';
+    import PanelSearch from './PanelSearch.svelte';
 
     let map;
     let db_update = '';
@@ -62,3 +63,4 @@
 {#if sidepanel === 'settings'}<PanelSettings/>{/if}
 {#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
 {#if sidepanel === 'route'}<PanelRouteDetails/>{/if}
+{#if sidepanel === 'search'}<PanelSearch map={map}/>{/if}

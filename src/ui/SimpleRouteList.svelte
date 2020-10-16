@@ -2,20 +2,15 @@
     import WMTConfig from 'theme';
     import { show_page } from '../app_state.js';
 
-    export let route_data;
-
-    function show_route(route_id) {
-        show_page('route', [['id', route_id]]);
+    function show_route(route) {
+        show_page('route', [['id', route.id]]);
     }
+
+    export let route_data;
+    export let callback = show_route;
 </script>
 
 <style>
-    ul {
-        list-style: none;
-        margin: 2px -5px;
-        padding: 0;
-    }
-
     button {
         width: 100%;
         border: none;
@@ -32,6 +27,7 @@
         margin-top: -5px;
         text-size: smaller;
         color: #777;
+        margin-left: 45px;
     }
 
     .route-title {
@@ -48,22 +44,36 @@
         color: rgb(90, 90, 150);
         font-familiy: mono
     }
+
+    img {
+        max-width: 32px;
+        max-height: 16px;
+    }
+
+    .route-symbol {
+        flex: 0 0 45px;
+    }
 </style>
 
 {#if route_data}
-    <ul>
-        {#each route_data as route}
-        <li>
-          <button type="button" class="btn-outline-dark"on:click={show_route(route.id)}>
-          <div class="main-info">
-          <span class="route-title">{route.title}</span>
-          <span class="route-ref">{route.ref || ''}</span>
-          </div>
-          {#if route.subtitle}
-              <div class="subtitle">{route.subtitle}</div>
-          {/if}
-        </li>
-        {/each}
-    </ul>
+{#each route_data as route}
+    <li>
+        <button type="button" class="btn-outline-dark" on:click|preventDefault={callback(route)}>
+        <div class="main-info">
+            <span class="route-symbol">
+            {#if route.icon}
+                <img alt="place icon" src="{route.icon}" />
+            {:else}
+                <img alt="route symbol" src="{WMTConfig.API_URL}/symbols/id/{route.symbol_id}" />
+            {/if}
+            </span>
+            <span class="route-title">{route.title}</span>
+            <span class="route-ref">{route.ref || ''}</span>
+        </div>
+        {#if route.subtitle}
+            <div class="subtitle">{route.subtitle}</div>
+        {/if}
+    </li>
+{/each}
 {/if}
 

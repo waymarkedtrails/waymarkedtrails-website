@@ -23,7 +23,7 @@
             route.subtitle = make_route_subtitle(route);
             let key = data.has(route.group)? route.group : '';
             data.get(key).push(route);
-        })
+        });
 
         return data;
     };

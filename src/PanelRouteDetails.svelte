@@ -23,7 +23,7 @@
         osm_id = value.params.get('id');
         if (typeof osm_id === 'undefined') {
             fail_message = "Missing parameter 'id'.";
-            return
+            return;
         }
         osm_type = value.params.get('type') || 'relation';
 
@@ -86,6 +86,11 @@
         padding: 0 5px;
     }
 
+    ul {
+        list-style: none;
+        margin: 2px -5px;
+        padding: 0;
+    }
 </style>
 
 <SidePanel title="{osm_type} {osm_id}" fail_message={fail_message}>
@@ -124,13 +129,13 @@
 
 {#if route.subroutes}
 <Collapsible title="Sections" init_collapsed={true}>
-    <SimpleRouteList route_data={route.subroutes} />
+    <ul><SimpleRouteList route_data={route.subroutes} /></ul>
 </Collapsible>
 {/if}
 
 {#if route.superroutes}
 <Collapsible title="Part of" init_collapsed={true}>
-    <SimpleRouteList route_data={route.superroutes} />
+    <ul><SimpleRouteList route_data={route.superroutes} /></ul>
 </Collapsible>
 {/if}
 
