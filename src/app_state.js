@@ -18,8 +18,8 @@ export function show_page(page = '', params = []) {
 map_view.subscribe(function (value) {
     if (value !== false) {
         let map_param = value.zoom.toFixed(4)
-                        + '/' + value.center[0]
-                        + '/' + value.center[1];
+                        + '/' + value.center[1]
+                        + '/' + value.center[0];
 
         localStorage.setItem('position', map_param);
 

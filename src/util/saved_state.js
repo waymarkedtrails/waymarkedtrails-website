@@ -21,7 +21,7 @@ export function get_mapview() {
         }
         if (parts.length === 3) {
           zoom = parseFloat(parts[0]);
-          center = [parseFloat(parts[1]), parseFloat(parts[2])];
+          center = [parseFloat(parts[2]), parseFloat(parts[1])];
         }
     };
 

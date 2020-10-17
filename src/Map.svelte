@@ -36,9 +36,9 @@
             let center = transform(view.getCenter(), "EPSG:3857", "EPSG:4326");
 
             let zoom = view.getZoom();
-            let lon = (Math.round(center[1] * 10000) / 10000);
-            let lat = (Math.round(center[0] * 10000) / 10000);
-            map_view.set({center: [lon, lat], zoom: zoom,
+            let x = (Math.round(center[0] * 10000) / 10000);
+            let y = (Math.round(center[1] * 10000) / 10000);
+            map_view.set({center: [x, y], zoom: zoom,
                           extent: view.calculateExtent(evt.map.getSize())});
         });
     });
