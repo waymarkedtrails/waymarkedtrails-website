@@ -1,6 +1,16 @@
+<script context="module">
+    let map;
+
+    export function set_map_view(bbox) {
+        if (bbox && map) {
+            map.getView().fit(bbox, {size: map.getSize(), maxZoom: 18});
+        }
+    };
+</script>
+
 <script>
-    import { onMount, setContext, onDestroy } from 'svelte';
-    import { map_view, map_view_demand } from './app_state.js';
+    import { onMount, setContext } from 'svelte';
+    import { map_view } from './app_state.js';
     import { get_mapview } from './util/saved_state.js';
     import { get} from 'svelte/store';
 
@@ -9,7 +19,6 @@
     import {transform} from 'ol/proj';
     import {Attribution, defaults as defaultControls} from 'ol/control';
 
-    let map;
     let component;
 
     setContext('olContext', () => map);
@@ -43,13 +52,6 @@
         });
     });
 
-    onDestroy(map_view_demand.subscribe(function (value) {
-        if (value && map) {
-            map.getView().fit(value, { size: map.getSize(),
-                                       maxZoom: 18
-                                     });
-        }
-    }));
 </script>
 
 <style>

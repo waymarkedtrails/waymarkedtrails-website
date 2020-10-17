@@ -9,6 +9,7 @@
     import ButtonRouteDownload from './ui/ButtonRouteDownload.svelte';
     import Collapsible from './ui/Collapsible.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
+    import ElevationView from './ElevationView.svelte';
 
     let osm_type = '';
     let osm_id = '';
@@ -122,7 +123,7 @@
 </div>
 
 <Collapsible title="Elevation profile" init_collapsed={true}>
-    TODO
+    <ElevationView osm_type={osm_type} osm_id={osm_id} />
 </Collapsible>
 
 {#if route.subroutes}

@@ -4,7 +4,8 @@
     import SidePanel from './ui/SidePanel.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
     import { onDestroy } from 'svelte';
-    import { page_state, map_view_demand } from './app_state.js';
+    import { page_state } from './app_state.js';
+    import { set_map_view } from './Map.svelte';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
 
     let fail_message = '';
@@ -19,7 +20,7 @@
             parseFloat(place.boundingbox[3]),
             parseFloat(place.boundingbox[1])];
         ext = transformExtent(ext, "EPSG:4326", "EPSG:3857");
-        map_view_demand.set(ext);
+        set_map_view(ext);
     };
 
     onDestroy(page_state.subscribe((value) => {
