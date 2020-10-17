@@ -9,6 +9,7 @@ export const map_opacity_base = writable(false);
 export const map_opacity_route = writable(false);
 export const map_opacity_shade = writable(false);
 export const geolocation_tracking_enabled = writable(false);
+export const map_view_demand = writable(false);
 
 export function show_page(page = '', params = []) {
     page_state.set({page: page, params : new Map(params)});
@@ -29,7 +30,6 @@ map_view.subscribe(function (value) {
 });
 
 basemap_id.subscribe(function (value) {
-    console.log("Seting basemap", value);
     if (value !== false) {
         localStorage.setItem('basemap-id', WMTConfig.BASEMAPS[value].id);
     }

@@ -5,7 +5,6 @@
     export let params = [];
 
     function open_panel() {
-        console.log(params);
         page_state.set({page: page, params: new Map(params)});
     }
 </script>

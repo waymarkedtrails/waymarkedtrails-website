@@ -16,7 +16,6 @@
     import PanelSettings from './PanelSettings.svelte';
     import PanelSearch from './PanelSearch.svelte';
 
-    let map;
     let db_update = '';
     let copyright;
     let sidepanel = '';
@@ -48,7 +47,7 @@
   <title>DEV: Waymarked Trails - {WMTConfig.TITLE}</title>
 </svelte:head>
 
-<Map bind:map={map}>
+<Map>
   <MapXYZLayer {...WMTConfig.BASEMAPS[$basemap_id]} opacity={$map_opacity_base}/>
   <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} attribution={hillattr} />
   <MapXYZLayer name="routelayer" url={WMTConfig.TILE_URL} opacity={$map_opacity_route}/>
@@ -62,5 +61,5 @@
 
 {#if sidepanel === 'settings'}<PanelSettings/>{/if}
 {#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
-{#if sidepanel === 'route'}<PanelRouteDetails map={map}/>{/if}
-{#if sidepanel === 'search'}<PanelSearch map={map}/>{/if}
+{#if sidepanel === 'route'}<PanelRouteDetails />{/if}
+{#if sidepanel === 'search'}<PanelSearch />{/if}
