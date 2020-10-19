@@ -2,7 +2,7 @@
   import 'bootstrap/dist/css/bootstrap.css';
   import ButtonSidePanel from './ui/ButtonSidePanel.svelte';
   import SearchForm from './ui/SearchForm.svelte';
-  import ButtonGeolocate from './ButtonGeolocate.svelte';
+  import ButtonGeolocate from './ui/ButtonGeolocate.svelte';
 </script>
 
 <style>

@@ -8,7 +8,7 @@
     import { get_page_state, get_basemap, get_opacity } from './util/saved_state.js';
     import Map from './Map.svelte';
     import MapXYZLayer from './MapXYZLayer.svelte';
-    import MapGeolocateLayer from './MapGeolocateLayer.svelte';
+    import MapGeolocateLayer from './map/LayerGeolocate.svelte';
     import Headline from './Headline.svelte';
     import MapFooter from './MapFooter.svelte';
     import PanelRouteList from './PanelRouteList.svelte';

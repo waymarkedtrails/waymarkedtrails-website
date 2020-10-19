@@ -8,7 +8,6 @@ export const basemap_id = writable(false);
 export const map_opacity_base = writable(false);
 export const map_opacity_route = writable(false);
 export const map_opacity_shade = writable(false);
-export const geolocation_tracking_enabled = writable(false);
 
 export function show_page(page = '', params = []) {
     page_state.set({page: page, params : new Map(params)});

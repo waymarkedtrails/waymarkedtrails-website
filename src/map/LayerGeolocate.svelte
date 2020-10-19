@@ -1,7 +1,14 @@
+<script context="module">
+    let geolocate;
+
+    export function enable_geolocation() {
+        geolocate.setTracking(true);
+    }
+</script>
+
 <script>
     import WMTConfig from 'theme';
-    import { getContext, onDestroy } from 'svelte';
-    import { geolocation_tracking_enabled } from './app_state.js';
+    import { getContext } from 'svelte';
     import Feature from 'ol/Feature';
     import {Icon, Style} from 'ol/style';
     import {Vector as VectorLayer} from 'ol/layer';
@@ -31,7 +38,7 @@
         })
     }));
 
-    const geolocate = new Geolocation({
+    geolocate = new Geolocation({
       projection: map.getView().getProjection(),
       trackingOptions: {
         enableHighAccuracy: true,
@@ -51,17 +58,12 @@
         } else {
             marker.setGeometry(null);
         }
-        geolocation_tracking_enabled.set(false);
+
+        geolocate.setTracking(false);
     });
 
     geolocate.on('error', function() {
         // XXX show popup
-        geolocation_tracking_enabled.set(false);
+        geolocate.setTracking(false);
     });
-
-    const unsubscribe = geolocation_tracking_enabled.subscribe(value => {
-        geolocate.setTracking(value);
-    });
-
-    onDestroy(unsubscribe);
 </script>
