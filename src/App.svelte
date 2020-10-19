@@ -6,7 +6,7 @@
     import WMTConfig from 'theme';
     import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state, show_page } from './app_state.js';
     import Map from './Map.svelte';
-    import MapXYZLayer from './MapXYZLayer.svelte';
+    import MapXYZLayer from './map/XYZLayer.svelte';
     import MapGeolocateLayer, { enable_geolocation } from './map/LayerGeolocate.svelte';
     import Headline from './Headline.svelte';
     import PageFooter from './PageFooter.svelte';

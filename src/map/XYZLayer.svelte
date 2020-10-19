@@ -6,7 +6,6 @@
     const getMap = getContext('olContext');
     const map = getMap();
 
-    export let name;
     export let url;
     export let attribution = '';
     export let opacity;
