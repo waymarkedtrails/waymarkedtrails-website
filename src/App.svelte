@@ -1,8 +1,7 @@
 <script>
     import '../css/global.css';
 
-    import { onMount, onDestroy } from 'svelte';
-    import jQuery from 'jquery';
+    import { onDestroy } from 'svelte';
     import WMTConfig from 'theme';
     import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state } from './app_state.js';
     import { get_page_state, get_basemap, get_opacity } from './util/saved_state.js';
@@ -15,8 +14,8 @@
     import PanelRouteDetails from './PanelRouteDetails.svelte';
     import PanelSettings from './PanelSettings.svelte';
     import PanelSearch from './PanelSearch.svelte';
+    import UpdateInfo from './UpdateInfo.svelte';
 
-    let db_update = '';
     let copyright;
     let sidepanel = '';
 
@@ -27,18 +26,6 @@
     map_opacity_shade.set(get_opacity('opacity-shade-layer', 'hill', 0.0));
 
     onDestroy(page_state.subscribe(value => sidepanel = value.page));
-
-    onMount(() => {
-        jQuery.getJSON(WMTConfig.API_URL + '/status', function (data) {
-            if (data.server_status == 'OK') {
-                const update = new Date(Date.parse(data.last_update));
-                db_update = update.toLocaleString(navigator.languages);
-            } else {
-                db_update = "API unavailable";
-            }
-        });
-
-    });
 
     const hillattr='elevation data by <a href= "https://hiking.waymarkedtrails.org/help/acknowledgements">SRTM/ASTER</a>';
 </script>
@@ -54,7 +41,7 @@
   <MapGeolocateLayer />
 </Map>
 <Headline>
-  <span slot="subleft">Last Update: {db_update}</span>
+  <span slot="subleft"><UpdateInfo /></span>
   <span slot="subright"><span id="map-attribution"></span></span>
 </Headline>
 <MapFooter />
