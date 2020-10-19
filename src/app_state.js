@@ -1,13 +1,17 @@
 import { writable } from 'svelte/store';
 import { WindowHash } from './util/window_hash.js';
+import { get_page_state, get_basemap, get_opacity } from './util/saved_state.js';
 import WMTConfig from 'theme';
 
-export const page_state = writable(false);
 export const map_view = writable(false);
-export const basemap_id = writable(false);
-export const map_opacity_base = writable(false);
-export const map_opacity_route = writable(false);
-export const map_opacity_shade = writable(false);
+export const page_state = writable(get_page_state());
+export const basemap_id = writable(get_basemap());
+export const map_opacity_base
+    = writable(get_opacity('opacity-base-layer', 'basemap-opacity', 1.0));
+export const map_opacity_route
+    = writable(get_opacity('opacity-route-layer', 'routemap-opacity', 0.8));
+export const map_opacity_shade
+    = writable(get_opacity('opacity-shade-layer', 'hill', 0.0));
 
 export function show_page(page = '', params = []) {
     page_state.set({page: page, params : new Map(params)});
@@ -28,31 +32,21 @@ map_view.subscribe(function (value) {
 });
 
 basemap_id.subscribe(function (value) {
-    if (value !== false) {
-        localStorage.setItem('basemap-id', WMTConfig.BASEMAPS[value].id);
-    }
+    localStorage.setItem('basemap-id', WMTConfig.BASEMAPS[value].id);
 });
 
 map_opacity_base.subscribe(function (value) {
-    if (value !== false) {
-        localStorage.setItem('opacity-base-layer', (value*100).toFixed(0));
-    }
+    localStorage.setItem('opacity-base-layer', (value*100).toFixed(0));
 });
 
 map_opacity_route.subscribe(function (value) {
-    if (value !== false) {
-        localStorage.setItem('opacity-route-layer', (value*100).toFixed(0));
-    }
+    localStorage.setItem('opacity-route-layer', (value*100).toFixed(0));
 });
 
 map_opacity_shade.subscribe(function (value) {
-    if (value !== false) {
-        localStorage.setItem('opacity-shade-layer', (value*100).toFixed(0));
-    }
+    localStorage.setItem('opacity-shade-layer', (value*100).toFixed(0));
 });
 
 page_state.subscribe(function (value) {
-    if (value !== false) {
-        WindowHash(value.page, value.params).push_history();
-    }
+    WindowHash(value.page, value.params).push_history();
 });

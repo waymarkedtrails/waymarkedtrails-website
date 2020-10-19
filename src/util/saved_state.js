@@ -62,12 +62,12 @@ export function get_opacity(storage_id, uri_id, defvalue) {
 
     hash.with_param(uri_id, function(v) {
         let parsed = parseFloat(v);
-        if (parsed >= 0.0 && parsed <= 100.0) {
-            value = parsed;;
+        if (parsed >= 0.0 && parsed <= 1.0) {
+            value = parsed;
         }
     });
 
-    return defvalue;
+    return value;
 };
 
 export function get_page_state() {
