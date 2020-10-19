@@ -7,6 +7,7 @@
     import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state, show_page } from './app_state.js';
     import Map from './Map.svelte';
     import MapXYZLayer from './map/XYZLayer.svelte';
+    import MapLayerRouteDetails from './map/LayerRouteDetails.svelte';
     import MapGeolocateLayer, { enable_geolocation } from './map/LayerGeolocate.svelte';
     import Headline from './Headline.svelte';
     import PageFooter from './PageFooter.svelte';
@@ -37,6 +38,7 @@
   <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} attribution={hillattr} />
   <MapXYZLayer name="routelayer" url={WMTConfig.TILE_URL} opacity={$map_opacity_route}/>
   <MapGeolocateLayer />
+  <MapLayerRouteDetails />
 </Map>
 
 <Headline>
