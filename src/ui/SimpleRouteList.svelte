@@ -1,9 +1,18 @@
 <script>
     import WMTConfig from 'theme';
     import { show_page } from '../app_state.js';
+    import {set_visible as set_map_details_visible } from '../map/LayerRouteDetails.svelte';
 
     function show_route(route) {
         show_page('route', [['id', route.id]]);
+    }
+
+    function begin_hover(route_id) {
+        set_map_details_visible(false);
+    }
+
+    function end_hover(route_id) {
+        set_map_details_visible(true);
     }
 
     export let route_data;
@@ -58,7 +67,7 @@
 {#if route_data}
 {#each route_data as route}
     <li>
-        <button type="button" class="btn-outline-dark" on:click|preventDefault={callback(route)}>
+        <button type="button" class="btn-outline-dark" on:click|preventDefault={callback(route)} on:mouseenter={() => begin_hover(route.id)} on:mouseleave={() => end_hover(route.id)}>
         <div class="main-info">
             <span class="route-symbol">
             {#if route.icon}

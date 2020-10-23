@@ -1,3 +1,11 @@
+<script context="module">
+    let layer;
+
+    export function set_visible(state) {
+        layer.setVisible(state);
+    };
+</script>
+
 <script>
     import { getContext, onDestroy } from 'svelte';
     import WMTConfig from 'theme';
@@ -10,7 +18,7 @@
     const getMap = getContext('olContext');
     const map = getMap();
 
-    let layer = new VectorLayer({source: null, style: null});
+    layer = new VectorLayer({source: null, style: null});
     map.addLayer(layer);
 
     onDestroy(page_state.subscribe((value) => {
@@ -24,6 +32,7 @@
                                     url: WMTConfig.API_URL + "/details/" + osm_type + "/" + osm_id + '/geometry/geojson',
                                     format: new GeoJSON()
                 }));
+                layer.setVisible(true);
 
                 return;
             }
