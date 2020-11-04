@@ -1,9 +1,9 @@
 <script>
-    import jQuery from 'jquery';
     import WMTConfig from 'theme';
-    import SidePanel from './ui/SidePanel.svelte';
-    import { page_state } from './app_state.js';
     import { onDestroy } from 'svelte';
+    import { page_state } from './app_state.js';
+    import SidePanel from './ui/SidePanel.svelte';
+    import { json_loader } from './util/load_json.js';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
     import ButtonRouteZoom from './ui/ButtonRouteZoom.svelte';
     import ButtonRouteDownload from './ui/ButtonRouteDownload.svelte';
@@ -15,6 +15,31 @@
     let osm_id = '';
     let fail_message = '';
     let route;
+
+    const loader = json_loader(function(json) {
+        route = json;
+        route.tag_keys = [];
+        for (var k in route.tags)
+            route.tag_keys.push(k);
+        route.tag_keys.sort((a, b) => a.localeCompare(b));
+
+        if (route.subroutes) {
+            route.subroutes.forEach(function(route) {
+                route.title = make_route_title(route);
+                route.subtitle = make_route_subtitle(route);
+            });
+        }
+
+        if (route.superroutes) {
+            route.superroutes.forEach(function(route) {
+                route.title = make_route_title(route);
+                route.subtitle = make_route_subtitle(route);
+            });
+        }
+
+        fail_message = '';
+    },
+    function(error) { fail_message = "Request failed: " + error; });
 
     onDestroy(page_state.subscribe((value) => {
         if (value.page !== 'route') {
@@ -28,33 +53,7 @@
         }
         osm_type = value.params.get('type') || 'relation';
 
-        jQuery.getJSON(WMTConfig.API_URL + '/details/' + osm_type + '/' + osm_id)
-            .done(function (json) {
-                route = json;
-                route.tag_keys = [];
-                for (var k in route.tags)
-                    route.tag_keys.push(k);
-                route.tag_keys.sort((a, b) => a.localeCompare(b));
-
-                if (route.subroutes) {
-                    route.subroutes.forEach(function(route) {
-                        route.title = make_route_title(route);
-                        route.subtitle = make_route_subtitle(route);
-                    });
-                }
-
-                if (route.superroutes) {
-                    route.superroutes.forEach(function(route) {
-                        route.title = make_route_title(route);
-                        route.subtitle = make_route_subtitle(route);
-                    });
-                }
-
-                fail_message = '';
-            })
-            .fail(function (jqxhr, textStatus, error) {
-                  fail_message = "Request failed: " + textStatus + ", " + error;
-            });
+        loader.load('/details/' + osm_type + '/' + osm_id);
     }));
 
 </script>

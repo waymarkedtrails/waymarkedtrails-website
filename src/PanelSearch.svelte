@@ -1,5 +1,5 @@
 <script>
-    import jQuery from 'jquery';
+    import { json_loader } from './util/load_json.js';
     import {transformExtent} from 'ol/proj';
     import SidePanel from './ui/SidePanel.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
@@ -23,6 +23,30 @@
         set_map_view(ext);
     };
 
+    const route_search = json_loader((json) => {
+        json.results.forEach(function(route) {
+            route.title = make_route_title(route);
+            route.subtitle = make_route_subtitle(route);
+        });
+
+        route_results = json.results;
+    });
+
+    const place_search = json_loader((json) => {
+        json.forEach(function (place) {
+            let split = place.display_name.indexOf(',');
+            if (split < 0) {
+                place.title = place.display_name;
+                place.subtitle = '';
+            } else {
+                place.title = place.display_name.substring(0, split);
+                place.subtitle = place.display_name.substring(split + 1);
+            }
+         });
+
+        place_results = json;
+    }, function(error) {}, 'http://nominatim.loar');
+
     onDestroy(page_state.subscribe((value) => {
         if (value.page !== 'search') {
             return;
@@ -36,36 +60,8 @@
 
         fail_message = '';
 
-        jQuery.getJSON(WMTConfig.API_URL + '/list/search', {query: query})
-            .done(function (json) {
-                route_results = json.results;
-
-                route_results.forEach(function(route) {
-                    route.title = make_route_title(route);
-                    route.subtitle = make_route_subtitle(route);
-                });
-            });
-
-        jQuery.getJSON('http://nominatim.loar/search.php',
-                       {q: query, format: 'jsonv2'})
-            .done(function (json) {
-                place_results = json;
-
-                place_results.forEach(function (place) {
-                    place.icon = 'http://nominatim.loar' + place.icon;
-                    let split = place.display_name.indexOf(',');
-                    if (split < 0) {
-                        place.title = place.display_name;
-                        place.subtitle = '';
-                    } else {
-                        place.title = place.display_name.substring(0, split);
-                        place.subtitle = place.display_name.substring(split + 1);
-                    }
-
-
-                });
-            });
-
+        route_search.load('/list/search', {query: query});
+        place_search.load('/search.php', {q: query, format: 'jsonv2'});
     }));
 </script>
 

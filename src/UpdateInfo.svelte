@@ -1,21 +1,21 @@
 <script>
-    import jQuery from 'jquery';
+    import { onMount, onDestroy } from 'svelte';
     import WMTConfig from 'theme';
-    import { onMount } from 'svelte';
+    import { json_loader } from './util/load_json.js';
 
     let db_update = '';
 
-    onMount(() => {
-        jQuery.getJSON(WMTConfig.API_URL + '/status', function (data) {
-            if (data.server_status == 'OK') {
-                const update = new Date(Date.parse(data.last_update));
-                db_update = update.toLocaleString(navigator.languages);
-            } else {
-                db_update = "API unavailable";
-            }
-        });
+    const loader = json_loader(function(data) {
+        if (data.server_status == 'OK') {
+            const update = new Date(Date.parse(data.last_update));
+            db_update = update.toLocaleString(navigator.languages);
+        } else {
+            db_update = "API unavailable";
+        }
+    }, function(error) { db_update = error; });
 
-    });
+    onMount(function() { loader.load('/status'); });
+    onDestroy(function() { loader.abort(); });
 </script>
 
 Last Update: {db_update}

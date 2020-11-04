@@ -1,7 +1,6 @@
 <script>
-    import jQuery from 'jquery';
-    import { onMount, onDestroy } from 'svelte';
-    import { json as loadJSON } from 'd3-fetch';
+    import { onMount } from 'svelte';
+    import { json_loader } from './util/load_json.js';
     import HourGlass from './svg/HourGlass.svelte';
     import D3ElevationProfile from './svg/D3ElevationProfile.svelte';
 
@@ -11,16 +10,16 @@
     let profile;
     let fail_message = '';
 
+    const loader = json_loader((json) => { profile = json; },
+                               (error) => { fail_message = "Request failed: " + error; });
+
     onMount(() => {
         profile = false;
+        fail_message = '';
 
-        loadJSON(WMTConfig.API_URL + '/details/' + osm_type + '/' + osm_id + '/elevation')
-            .then(function(json) {
-                profile = json;
-            })
-            .catch(function (error) {
-                  fail_message = "Request failed: " + error;
-            });
+        loader.load('/details/' + osm_type + '/' + osm_id + '/elevation');
+
+        return () => { loader.abort(); };
     });
 </script>
 
