@@ -121,7 +121,7 @@
     {#if route.wikipedia}<a href="{WMTConfig.API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink'}">Wikipedia</a>{/if}
 </div>
 
-<Collapsible title="Elevation profile" init_collapsed={false}>
+<Collapsible title="Elevation profile" init_collapsed={true}>
     <ElevationView osm_type={osm_type} osm_id={osm_id} />
 </Collapsible>
 

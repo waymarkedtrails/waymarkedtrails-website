@@ -16,10 +16,8 @@
     import { highlight_stroke } from './styles.js';
 
     const getMap = getContext('olContext');
-    const map = getMap();
-
     layer = new VectorLayer({source: null, style: null});
-    map.addLayer(layer);
+    getMap().addLayer(layer);
 
     onDestroy(page_state.subscribe((value) => {
         if (value.page === 'route') {

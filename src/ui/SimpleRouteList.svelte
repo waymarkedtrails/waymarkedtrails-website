@@ -2,6 +2,7 @@
     import WMTConfig from 'theme';
     import { show_page } from '../app_state.js';
     import {set_visible as set_map_details_visible } from '../map/LayerRouteDetails.svelte';
+    import {highlight_route, unhighlight_route } from '../map/LayerVectorData.svelte';
 
     function show_route(route) {
         show_page('route', [['id', route.id]]);
@@ -9,10 +10,12 @@
 
     function begin_hover(route_id) {
         set_map_details_visible(false);
+        highlight_route(route_id);
     }
 
     function end_hover(route_id) {
         set_map_details_visible(true);
+        unhighlight_route();
     }
 
     export let route_data;

@@ -8,6 +8,7 @@
     import Map from './Map.svelte';
     import MapXYZLayer from './map/XYZLayer.svelte';
     import MapLayerRouteDetails from './map/LayerRouteDetails.svelte';
+    import MapLayerVectorData from './map/LayerVectorData.svelte';
     import MapGeolocateLayer, { enable_geolocation } from './map/LayerGeolocate.svelte';
     import Headline from './Headline.svelte';
     import PageFooter from './PageFooter.svelte';
@@ -21,7 +22,6 @@
     import SvgGeoPin from './svg/GeoPin.svelte';
     import SvgGear from './svg/Gear.svelte';
 
-    let copyright;
     let sidepanel = '';
 
     onDestroy(page_state.subscribe(value => sidepanel = value.page));
@@ -39,6 +39,7 @@
   <MapXYZLayer name="routelayer" url={WMTConfig.TILE_URL} opacity={$map_opacity_route}/>
   <MapGeolocateLayer />
   <MapLayerRouteDetails />
+  <MapLayerVectorData />
 </Map>
 
 <Headline>
