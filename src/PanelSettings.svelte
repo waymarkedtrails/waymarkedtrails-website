@@ -1,5 +1,4 @@
 <script>
-  import 'bootstrap/js/src/dropdown.js';
   import { basemap_id, map_opacity_base, map_opacity_route, map_opacity_shade } from './app_state.js';
   import WMTConfig from 'theme';
   import SidePanel from './ui/SidePanel.svelte';
