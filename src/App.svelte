@@ -2,6 +2,7 @@
     import '../css/global.css';
     import 'bootstrap/dist/css/bootstrap.css';
 
+    import { isLoading, _ } from 'svelte-i18n'
     import { onDestroy } from 'svelte';
     import WMTConfig from 'theme';
     import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state, show_page } from './app_state.js';
@@ -33,6 +34,9 @@
   <title>DEV: Waymarked Trails - {WMTConfig.TITLE}</title>
 </svelte:head>
 
+{#if $isLoading}
+Loading...
+{:else}
 <Map>
   <MapXYZLayer {...WMTConfig.BASEMAPS[$basemap_id]} opacity={$map_opacity_base}/>
   <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} attribution={hillattr} />
@@ -63,3 +67,4 @@
 {#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
 {#if sidepanel === 'route'}<PanelRouteDetails />{/if}
 {#if sidepanel === 'search'}<PanelSearch />{/if}
+{/if}
