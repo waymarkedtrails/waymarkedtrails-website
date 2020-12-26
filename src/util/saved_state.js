@@ -1,5 +1,5 @@
 import { WindowHash } from './window_hash.js';
-import WMTConfig from 'theme';
+import WMTConfig from '../../theme.js';
 
 let hash = WindowHash();
 

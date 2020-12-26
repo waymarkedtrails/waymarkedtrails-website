@@ -100,6 +100,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rollup/plugin-json@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@rollup/plugin-json@npm:4.1.0"
+  dependencies:
+    "@rollup/pluginutils": ^3.0.8
+  peerDependencies:
+    rollup: ^1.20.0 || ^2.0.0
+  checksum: 07bc6bc83d07aefd35278e4e1a125e65210061b3dcab50c0f01273c54f43a60a3e01c1a0fed451e35d592ef1cbc8288ec8148a6229cf8cca9cdbf11a6d2d7d1c
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-node-resolve@npm:^8.0.0":
   version: 8.4.0
   resolution: "@rollup/plugin-node-resolve@npm:8.4.0"
@@ -1909,6 +1920,7 @@ fsevents@~2.1.2:
   resolution: "svelte-app@workspace:."
   dependencies:
     "@rollup/plugin-commonjs": ^14.0.0
+    "@rollup/plugin-json": ^4.1.0
     "@rollup/plugin-node-resolve": ^8.0.0
     bootstrap: ^4.5.2
     bootstrap-icons: ^1.0.0
@@ -1927,6 +1939,7 @@ fsevents@~2.1.2:
     rollup-plugin-terser: ^7.0.0
     svelte: ^3.0.0
     svelte-i18n: ^3.3.0
+    systemjs: ^6.8.2
   languageName: unknown
   linkType: soft
 
@@ -1952,6 +1965,13 @@ fsevents@~2.1.2:
   version: 3.28.0
   resolution: "svelte@npm:3.28.0"
   checksum: 0380ab421fa36701891c7ac8c547fea007225473e75f8ef28f1de4c43a0808ca99413b15530c6e60266f8fa274a1305a353a13a0276ad946afb7b0ab5aea14ef
+  languageName: node
+  linkType: hard
+
+"systemjs@npm:^6.8.2":
+  version: 6.8.2
+  resolution: "systemjs@npm:6.8.2"
+  checksum: 5fbd1b2275b92ff0cda48b0b3177a563484227c795a1d7c9a8b5b57dec84a07c8dded57fa92d8681cef6d312c9b661fb13621898b8003a2b11099c1854464084
   languageName: node
   linkType: hard
 

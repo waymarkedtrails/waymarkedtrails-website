@@ -7,7 +7,7 @@
 </script>
 
 <script>
-    import WMTConfig from 'theme';
+    import WMTConfig from '../../theme.js';
     import { getContext } from 'svelte';
     import Feature from 'ol/Feature';
     import {Icon, Style} from 'ol/style';

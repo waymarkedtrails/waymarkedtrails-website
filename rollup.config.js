@@ -1,6 +1,7 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
 import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-porter';
 import { terser } from 'rollup-plugin-terser';
@@ -30,14 +31,13 @@ function serve() {
 
 export default {
 	input: 'src/main.js',
-    external: ['theme'],
+    external: ['../theme.js', '../../theme.js'],
 	output: {
 		sourcemap: true,
-		format: 'iife',
-		name: 'app',
-		file: 'public/build/bundle.js',
+		format: 'es',
+		dir: 'public/build/',
         globals: {
-            theme: 'WMTConfig'
+            'theme.js': 'WMTConfig'
         }
 	},
 	plugins: [
@@ -61,6 +61,7 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
+        json(),
         css({dest: 'public/build/contrib.css'}),
 
 		// In dev mode, call `npm run start` once

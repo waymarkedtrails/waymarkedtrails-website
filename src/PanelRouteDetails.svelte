@@ -1,5 +1,5 @@
 <script>
-    import WMTConfig from 'theme';
+    import WMTConfig from '../theme.js';
     import { onDestroy } from 'svelte';
     import { page_state } from './app_state.js';
     import SidePanel from './ui/SidePanel.svelte';

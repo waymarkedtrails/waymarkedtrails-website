@@ -1,6 +1,6 @@
 <script>
   import { basemap_id, map_opacity_base, map_opacity_route, map_opacity_shade } from './app_state.js';
-  import WMTConfig from 'theme';
+  import WMTConfig from '../theme.js';
   import SidePanel from './ui/SidePanel.svelte';
   import OpacitySlider from './ui/OpacitySlider.svelte';
   import DropdownList from './ui/DropdownList.svelte';

@@ -1,5 +1,5 @@
 <script>
-    import WMTConfig from 'theme';
+    import WMTConfig from '../../theme.js';
     import { show_page } from '../app_state.js';
     import {set_visible as set_map_details_visible } from '../map/LayerRouteDetails.svelte';
     import {highlight_route, unhighlight_route } from '../map/LayerVectorData.svelte';

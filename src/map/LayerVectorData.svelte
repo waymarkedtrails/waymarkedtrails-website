@@ -1,5 +1,5 @@
 <script context="module">
-    import WMTConfig from 'theme';
+    import WMTConfig from '../../theme.js';
     import VectorSource from 'ol/source/Vector';
     import GeoJSON from 'ol/format/GeoJSON';
     import { highlight_stroke } from './styles.js';

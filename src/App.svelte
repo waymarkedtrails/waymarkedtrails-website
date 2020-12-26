@@ -4,7 +4,7 @@
 
     import { isLoading, _ } from 'svelte-i18n'
     import { onDestroy } from 'svelte';
-    import WMTConfig from 'theme';
+    import WMTConfig from '../theme.js';
     import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state, show_page } from './app_state.js';
     import Map from './Map.svelte';
     import MapXYZLayer from './map/XYZLayer.svelte';

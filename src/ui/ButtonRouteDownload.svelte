@@ -1,5 +1,5 @@
 <script>
-    import WMTConfig from 'theme';
+    import WMTConfig from '../../theme.js';
 
     export let route_type;
     export let route_id;

@@ -8,7 +8,7 @@
 
 <script>
     import { getContext, onDestroy } from 'svelte';
-    import WMTConfig from 'theme';
+    import WMTConfig from '../../theme.js';
     import { page_state } from '../app_state.js';
     import VectorLayer from 'ol/layer/Vector';
     import {Vector as VectorSource} from 'ol/source';

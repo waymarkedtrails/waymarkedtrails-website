@@ -1,6 +1,6 @@
 <script>
     import { json_loader } from './util/load_json.js';
-    import WMTConfig from 'theme';
+    import WMTConfig from '../theme.js';
     import SidePanel from './ui/SidePanel.svelte';
     import RouteList from './ui/RouteList.svelte';
     import { map_view, page_state } from './app_state.js';

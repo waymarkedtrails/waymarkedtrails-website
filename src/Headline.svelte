@@ -1,5 +1,5 @@
 <script>
-    import WMTConfig from 'theme';
+    import WMTConfig from '../theme.js';
     const themes = [['hiking', 'Hiking'],
                   ['cycling', 'Cycling'],
                   ['mtb', 'MTB'],

@@ -24,3 +24,5 @@ const WMTConfig = {
         { id: 'NDS', label: 'node network connections' }
     ]
 };
+
+export { WMTConfig as default };

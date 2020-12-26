@@ -1,4 +1,4 @@
-import WMTConfig from 'theme';
+import WMTConfig from '../../theme.js';
 
 export function json_loader(done, error, base_url = WMTConfig.API_URL) {
     let current = 0;

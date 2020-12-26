@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 import { WindowHash } from './util/window_hash.js';
 import { get_page_state, get_basemap, get_opacity } from './util/saved_state.js';
-import WMTConfig from 'theme';
+import WMTConfig from '../theme.js';
 
 export const map_view = writable(false);
 export const page_state = writable(get_page_state());

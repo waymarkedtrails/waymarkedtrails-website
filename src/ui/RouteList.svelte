@@ -1,5 +1,5 @@
 <script>
-    import WMTConfig from 'theme';
+    import WMTConfig from '../../theme.js';
     import { show_page } from '../app_state.js';
     import SimpleRouteList from './SimpleRouteList.svelte';
 
