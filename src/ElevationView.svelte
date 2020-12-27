@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import { onMount } from 'svelte';
     import { json_loader } from './util/load_json.js';
     import HourGlass from './svg/HourGlass.svelte';
@@ -11,7 +12,7 @@
     let fail_message = '';
 
     const loader = json_loader((json) => { profile = json; },
-                               (error) => { fail_message = "Request failed: " + error; });
+                               (error) => { fail_message = $_('error.load_error'); });
 
     onMount(() => {
         profile = false;
@@ -41,15 +42,15 @@
 </style>
 
 {#if fail_message}
-Error: {fail_message}
+{fail_message}
 {:else if profile}
 <div>
-<div class="altitude diagram-label">Altitude (in m)</div>
+<div class="altitude diagram-label">{$_('elevation.diagram.altitude')}</div>
 <D3ElevationProfile data={profile} width="100%" height="200" y_axis_width="55"/>
-<div class="distance diagram-label">Distance (in km)</div>
+<div class="distance diagram-label">{$_('elevation.diagram.distance')}</div>
 </div>
-<p>Total ascent: {profile.ascent}m</p>
-<p>Total descent: {profile.descent}m</p>
+<p>{$_('elevation.ascent')}: {profile.ascent}m</p>
+<p>{$_('elevation.descent')}: {profile.descent}m</p>
 {:else}
     <HourGlass />
 {/if}

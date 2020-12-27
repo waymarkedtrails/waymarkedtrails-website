@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import { json_loader } from './util/load_json.js';
     import WMTConfig from '../theme.js';
     import SidePanel from './ui/SidePanel.svelte';
@@ -8,9 +9,11 @@
     import { load_routes } from './map/LayerVectorData.svelte';
 
     const groups = WMTConfig.ROUTE_GROUPS;
+    const max_routes = 20;
     let fail_message = '';
     let route_data = false;
     let current_ids;
+    let has_more = false;
 
     $: {
         let page = $page_state;
@@ -27,7 +30,7 @@
         let extent = $map_view.extent;
         if (typeof current_ids === 'undefined' && typeof extent !== 'undefined') {
             fail_message = '';
-            loader.load('/list/by_area', {bbox: extent.join(",")});
+            loader.load('/list/by_area', {bbox: extent.join(","), limit: max_routes});
         }
     }
 
@@ -36,6 +39,8 @@
         WMTConfig.ROUTE_GROUPS.forEach(function(group) {
             data.set(group.id, []);
         });
+
+        has_more = json.results.length >= max_routes;
 
         json.results.forEach(function(route) {
             route.title = make_route_title(route);
@@ -46,10 +51,11 @@
 
         load_routes(json.results);
         route_data = data;
-    }, function(error) { fail_message = "Request failed: " + error; });
+    }, function(error) { fail_message = $_('error.load_error'); });
 
 </script>
 
 <SidePanel title="Routes" fail_message={fail_message}>
     <RouteList groups={groups} route_data={route_data} />
+    {#if has_more}<p>{$_('routelist.more')}</p>{/if}
 </SidePanel>

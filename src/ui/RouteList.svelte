@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import WMTConfig from '../../theme.js';
     import { show_page } from '../app_state.js';
     import SimpleRouteList from './SimpleRouteList.svelte';
@@ -28,7 +29,7 @@
     <ul>
     {#each groups as group}
         {#if route_data.get(group.id).length > 0}
-            <li class="divider">{group.label}</li>
+            <li class="divider">{$_(group.label)}</li>
             <SimpleRouteList route_data={route_data.get(group.id)} />
         {/if}
     {/each}

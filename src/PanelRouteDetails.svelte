@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import WMTConfig from '../theme.js';
     import { onDestroy } from 'svelte';
     import { page_state } from './app_state.js';
@@ -39,7 +40,7 @@
 
         fail_message = '';
     },
-    function(error) { fail_message = "Request failed: " + error; });
+    function(error) { fail_message = $_('error.load_error'); });
 
     onDestroy(page_state.subscribe((value) => {
         if (value.page !== 'route') {
@@ -48,7 +49,7 @@
 
         osm_id = value.params.get('id');
         if (typeof osm_id === 'undefined') {
-            fail_message = "Missing parameter 'id'.";
+            fail_message = $_('error.missing_id');
             return;
         }
         osm_type = value.params.get('type') || 'relation';
@@ -94,51 +95,51 @@
 <SidePanel title="{osm_type} {osm_id}" fail_message={fail_message}>
 {#key route}{#if route}
 <h3>
-    <img alt="route symbol" src="{WMTConfig.API_URL}/symbols/id/{route.symbol_id}" />
+    <img alt="{$_('route_symbol')}" src="{WMTConfig.API_URL}/symbols/id/{route.symbol_id}" />
     {make_route_title(route)}
 </h3>
-<div class="btn-group" role="group" aria-label="Quick access">
+<div class="btn-group" role="group">
   <ButtonRouteZoom bbox={route.bbox} />
-  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="gpx">GPX</ButtonRouteDownload>
-  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="kml">KML</ButtonRouteDownload>
+  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="gpx">{$_('details.GPX')}</ButtonRouteDownload>
+  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="kml">{$_('details.KML')}</ButtonRouteDownload>
 </div>
 
 <p>{#if route.itinerary}{route.itinerary.join(' - ')}{/if}</p>
 
 <dl>
 {#if route.ref}<dt>Ref:</dt><dd>{route.ref}</dd>{/if}
-{#if route.mapped_length}<dt>Mapped length:</dt><dd>{route.mapped_length}</dd>{/if}
-{#if route.official_length}<dt>Mapped length:</dt><dd>{route.official_length}</dd>{/if}
-{#if route.operator}<dt>Operator:</dt><dd>{route.operator}</dd>{/if}
-{#if route.symbol}<dt>Symbol:</dt><dd>{route.symbol}</dd>{/if}
+{#if route.mapped_length}<dt>{$_('details.mapped_len')}:</dt><dd>{route.mapped_length}</dd>{/if}
+{#if route.official_length}<dt>{$_('details.official_len')}:</dt><dd>{route.official_length}</dd>{/if}
+{#if route.operator}<dt>{$_('details.operator')}:</dt><dd>{route.operator}</dd>{/if}
+{#if route.symbol}<dt>{$_('details.symbol')}:</dt><dd>{route.symbol}</dd>{/if}
 </dl>
 
 {#if route.description}<p>{route.description}</p>{/if}
-{#if route.note}<p><i>Note:</i> {route.note}<p>{/if}
+{#if route.note}<p><i>{$_('details.note')}:</i> {route.note}<p>{/if}
 
 <div>
-    {#if route.url}<a href="{route.url}">Website</a>{/if}
-    {#if route.wikipedia}<a href="{WMTConfig.API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink'}">Wikipedia</a>{/if}
+    {#if route.url}<a href="{route.url}">{$_('details.website')}</a>{/if}
+    {#if route.wikipedia}<a href="{WMTConfig.API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink'}">{$_('details.wikipedia')}</a>{/if}
 </div>
 
-<Collapsible title="Elevation profile" init_collapsed={true}>
+<Collapsible title={$_('elevation.title')} init_collapsed={true}>
     <ElevationView osm_type={osm_type} osm_id={osm_id} />
 </Collapsible>
 
 {#if route.subroutes}
-<Collapsible title="Sections" init_collapsed={true}>
+<Collapsible title={$_('details.subroutes_title')} init_collapsed={true}>
     <ul><SimpleRouteList route_data={route.subroutes} /></ul>
 </Collapsible>
 {/if}
 
 {#if route.superroutes}
-<Collapsible title="Part of" init_collapsed={true}>
+<Collapsible title={$_('details.superroutes_title')} init_collapsed={true}>
     <ul><SimpleRouteList route_data={route.superroutes} /></ul>
 </Collapsible>
 {/if}
 
 
-<Collapsible title="OpenStreetMap tags">
+<Collapsible title={$_('details.tags_title')}>
     <table>
         {#each route.tag_keys as key}
             <tr><td>{key}</td><td>{route.tags[key]}</td></tr>

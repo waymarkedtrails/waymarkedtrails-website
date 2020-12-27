@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import { page_state } from '../app_state.js';
 
     let searchterm;
@@ -11,7 +12,7 @@
 </script>
 
 <form class="input-group" action=""  on:submit|preventDefault={turn_page}>
-    <input bind:value={searchterm} type="search" class="form-control" placeholder="Search">
+    <input bind:value={searchterm} type="search" class="form-control" placeholder={$_('search.title')}>
     <button type="submit" class="btn btn-secondary">
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>

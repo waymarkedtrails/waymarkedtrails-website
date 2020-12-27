@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import { json_loader } from './util/load_json.js';
     import {transformExtent} from 'ol/proj';
     import SidePanel from './ui/SidePanel.svelte';
@@ -45,7 +46,7 @@
          });
 
         place_results = json;
-    }, function(error) {}, 'http://nominatim.loar');
+    }, function(error) {}, 'https://nominatim.openstreetmap.org');
 
     onDestroy(page_state.subscribe((value) => {
         if (value.page !== 'search') {
@@ -54,7 +55,7 @@
 
         query = value.params.get('query');
         if (typeof query === 'undefined') {
-            fail_message = "Missing parameter 'query'.";
+            fail_message = $_('error.missing_query');
             return;
         }
 
@@ -73,12 +74,12 @@
     }
 </style>
 
-<SidePanel title="Results for '{query}'" fail_message={fail_message}>
-<h4>Routes</h4>
+<SidePanel title="{$_('search.title')}: '{query}'" fail_message={fail_message}>
+<h4>{$_('search.routes')}</h4>
 {#if route_results}
     <ul><SimpleRouteList route_data={route_results} /></ul>
 {/if}
-<h4>Places</h4>
+<h4>{$_('search.places')}</h4>
 {#if place_results}
     <ul><SimpleRouteList route_data={place_results} callback={show_place} /></ul>
 {/if}

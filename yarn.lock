@@ -1477,13 +1477,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"popper.js@npm:^1.16.1":
-  version: 1.16.1
-  resolution: "popper.js@npm:1.16.1"
-  checksum: eb53806fb7680e31c7d1db096f95438a40a7cb869f7ee0e27100c0860f11583a0d322606c6073618e7fe8865f834ec36482901b547256d9a0cf2b22434bca75d
-  languageName: node
-  linkType: hard
-
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -1930,7 +1923,6 @@ fsevents@~2.1.2:
     d3-shape: ^2.0.0
     node-static: ^0.7.11
     ol: ^6.4.3
-    popper.js: ^1.16.1
     rollup: ^2.3.4
     rollup-plugin-css-porter: ^1.0.2
     rollup-plugin-hash: ^1.3.0

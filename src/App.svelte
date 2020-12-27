@@ -2,7 +2,7 @@
     import '../css/global.css';
     import 'bootstrap/dist/css/bootstrap.css';
 
-    import { isLoading, _ } from 'svelte-i18n'
+    import { isLoading, _ } from 'svelte-i18n';
     import { onDestroy } from 'svelte';
     import WMTConfig from '../theme.js';
     import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state, show_page } from './app_state.js';
@@ -24,22 +24,21 @@
     import SvgGear from './svg/Gear.svelte';
 
     let sidepanel = '';
+    let page_title = $isLoading ? '' : $_(WMTConfig.TITLE);
 
     onDestroy(page_state.subscribe(value => sidepanel = value.page));
-
-    const hillattr='elevation data by <a href= "https://hiking.waymarkedtrails.org/help/acknowledgements">SRTM/ASTER</a>';
 </script>
 
 <svelte:head>
-  <title>DEV: Waymarked Trails - {WMTConfig.TITLE}</title>
+  <title>DEV: Waymarked Trails - {page_title}</title>
 </svelte:head>
 
 {#if $isLoading}
 Loading...
 {:else}
 <Map>
-  <MapXYZLayer {...WMTConfig.BASEMAPS[$basemap_id]} opacity={$map_opacity_base}/>
-  <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} attribution={hillattr} />
+  <MapXYZLayer {...WMTConfig.BASEMAPS[$basemap_id]} title={$_('settings.base_map')} opacity={$map_opacity_base}/>
+  <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} title={$_('attribution.elevation_title')} attribution='<a href= "/help/acknowledgements">SRTM/ASTER</a>' />
   <MapXYZLayer name="routelayer" url={WMTConfig.TILE_URL} opacity={$map_opacity_route}/>
   <MapGeolocateLayer />
   <MapLayerRouteDetails />
@@ -54,12 +53,12 @@ Loading...
 <PageFooter>
     <SearchForm />
     <div class="btn-group" role="group">
-        <ButtonFooter on:click={() => show_page('settings')}><SvgGear /></ButtonFooter>
-        <ButtonFooter on:click={enable_geolocation}><SvgGeoPin /></ButtonFooter>
+        <ButtonFooter title={$_('settings.title')} on:click={() => show_page('settings')}><SvgGear /></ButtonFooter>
+        <ButtonFooter title={$_('locate_me')} on:click={enable_geolocation}><SvgGeoPin /></ButtonFooter>
         <ButtonFooter>Right</ButtonFooter>
     </div>
     <div class="btn-group" role="group">
-        <ButtonFooter on:click={() => show_page('routelist')}>Routes</ButtonFooter>
+        <ButtonFooter on:click={() => show_page('routelist')}>{$_('routelist.title')}</ButtonFooter>
     </div>
 </PageFooter>
 

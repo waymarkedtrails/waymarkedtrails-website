@@ -1,3 +1,70 @@
 {
-    "title": "Hiking"
+    "site_title" : {
+        "hiking" : "Hiking",
+        "cycling" : "Cycling",
+        "mtb" : "MTB",
+        "riding" : "Horse Riding",
+        "skating" : "Inline Skating",
+        "slopes" : "Winter Sport Slopes"
+    },
+    "attribution" : {
+        "data" : "Map data © <a href=\"https://www.openstreetmap.org\">OpenStreetMap</a> under <a href=\"https://www.openstreetmap.org/copyright\">ODbL</a>",
+        "elevation_title" : "Elevation data"
+    },
+    "settings" : {
+        "title" : "Map settings",
+        "base_map" : "Base map",
+        "route_layer" : "Route layer",
+        "hillshading_layer" : "Hill shading",
+        "transparency" : "Map transparency",
+        "language" : "Language",
+        "browser_language" : "Use browser settings"
+    },
+    "routelist" : {
+        "title" : "Routes",
+        "more" : "Zoom in to see more routes."
+    },
+    "details" : {
+        "route_symbol" : "Route symbol",
+        "zoom_to" : "Show on map",
+        "GPX" : "GPX",
+        "KML" : "KML",
+        "mapped_len" : "Mapped length",
+        "official_len" : "Official length",
+        "operator" : "Operator",
+        "symbol" : "Symbol",
+        "note" : "Note",
+        "website" : "Website",
+        "wikipedia" : "Wikipedia",
+        "subroutes_title" : "Sections",
+        "superroutes_title" : "Part of",
+        "tags_title" : "OpenStreetMap tags"
+    },
+    "elevation" : {
+        "title" : "Elevation profile",
+        "diagram" : {
+            "altitude" : "Altitude (m)",
+            "distance" : "Distance (km)"
+        },
+        "ascent" : "Accumulated ascent",
+        "descent" : "Accumulated descent"
+    },
+    "search" : {
+        "title" : "Search",
+        "routes" : "Routes",
+        "places" : "Places"
+    },
+    "network" : {
+        "continental" : "Continental routes",
+        "national" : "National routes",
+        "regional" : "Regional routes",
+        "other" : "Other routes",
+        "node" : "Node network connections"
+    },
+    "locate_me" : "Locate me",
+    "error" : {
+        "load_error" : "Error connecting to server.",
+        "missing_id" : "Error: missing parameter 'id'.",
+        "missing_query" : "Error: missing parameter 'query'."
+    }
 }

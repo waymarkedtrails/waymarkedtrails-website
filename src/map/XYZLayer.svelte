@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import { getContext } from 'svelte';
     import TileLayer from 'ol/layer/Tile';
     import XYZ from 'ol/source/XYZ';
@@ -9,11 +10,13 @@
     export let url;
     export let attribution = '';
     export let opacity;
+    export let title = '';
     let visible;
     $: visible = opacity > 0.0;
 
     let make_attribs = function() {
-        return ['Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> under <a href= "https://www.openstreetmap.org/copyright">ODbL</a>', attribution];
+        return [$_('attribution.data'),
+                (title && attribution) ? title + ': ' + attribution : ''];
     };
 
 
