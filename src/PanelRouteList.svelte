@@ -18,10 +18,10 @@
     $: {
         let page = $page_state;
         if (page.page === 'routelist') {
-            current_ids = page.params.get('ids');
+            current_ids = page.params.get('relations');
             fail_message = '';
             if (typeof current_ids !== 'undefined') {
-                loader.load('/list/by_ids', {ids : current_ids});
+                loader.load('/list/by_ids', {relations : current_ids});
             }
         }
     }

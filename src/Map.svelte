@@ -35,7 +35,8 @@
                   target: component,
                   view: new View({
                       center: transform(m.center, "EPSG:4326", "EPSG:3857"),
-                      zoom: m.zoom
+                      zoom: m.zoom,
+                      maxZoom: 18
                   }),
                   controls: defaultControls({attribution: false}).extend([attribution]),
               });

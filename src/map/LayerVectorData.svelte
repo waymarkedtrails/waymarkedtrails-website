@@ -101,8 +101,8 @@
             return;
         }
 
-        let p1 = map.getCoordinateFromPixel([evt.pixel[0] - 3, evt.pixel[1] - 3]);
-        let p2 = map.getCoordinateFromPixel([evt.pixel[0] + 3, evt.pixel[1] + 3]);
+        let p1 = map.getCoordinateFromPixel([evt.pixel[0] - 5, evt.pixel[1] - 5]);
+        let p2 = map.getCoordinateFromPixel([evt.pixel[0] + 5, evt.pixel[1] + 5]);
 
         var feats = vtile_layer.getSource().getFeaturesInExtent(boundingExtent([p1, p2]));
 
@@ -113,7 +113,7 @@
                 relations = relations.concat(props.top_relations);
             }
             if (current_zoom > 13 && props.type === 'guidepost') {
-                show_page('guidepost', [['id', props.id]]);
+                show_page('guidepost', [['id', props.osm_id]]);
                 return;
             }
         }
@@ -125,7 +125,7 @@
             show_page('route', [['id', relations[0]]]);
         } else {
             console.log(relations.join());
-            show_page('routelist', [['ids', relations.join()]]);
+            show_page('routelist', [['relations', relations.join()]]);
         }
     }
 </script>
