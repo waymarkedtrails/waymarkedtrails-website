@@ -9,7 +9,12 @@
     import ButtonRouteZoom from './ui/ButtonRouteZoom.svelte';
     import ButtonRouteDownload from './ui/ButtonRouteDownload.svelte';
     import Collapsible from './ui/Collapsible.svelte';
+    import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
+    import DetailsPropertyList from './ui/DetailsPropertyList.svelte';
+    import DetailsPropertyItem from './ui/DetailsPropertyItem.svelte';
+    import DetailsHeader from './ui/DetailsHeader.svelte';
+    import DetailsWeblink from './ui/DetailsWeblink.svelte';
     import ElevationView from './ElevationView.svelte';
 
     let osm_type = '';
@@ -19,10 +24,10 @@
 
     const loader = json_loader(function(json) {
         route = json;
-        route.tag_keys = [];
-        for (var k in route.tags)
-            route.tag_keys.push(k);
-        route.tag_keys.sort((a, b) => a.localeCompare(b));
+
+        if (route.wikipedia) {
+            route.wiki_url = WMTConfig.API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink';
+        }
 
         if (route.subroutes) {
             route.subroutes.forEach(function(route) {
@@ -60,31 +65,6 @@
 </script>
 
 <style>
-    h3 {
-        padding-top: 5px;
-    }
-
-    h3 img {
-        height: 45px
-    }
-
-    dl {
-        font-size: smaller
-    }
-
-    dt {
-        padding-right: 5px;
-        float: left;
-    }
-
-    dd {
-        margin: 0
-    }
-
-    td {
-        padding: 0 5px;
-    }
-
     ul {
         list-style: none;
         margin: 2px -5px;
@@ -94,10 +74,9 @@
 
 <SidePanel title="{osm_type} {osm_id}" fail_message={fail_message}>
 {#key route}{#if route}
-<h3>
-    <img alt="{$_('route_symbol')}" src="{WMTConfig.API_URL}/symbols/id/{route.symbol_id}" />
-    {make_route_title(route)}
-</h3>
+
+<DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{WMTConfig.API_URL}/symbols/id/{route.symbol_id}" title={make_route_title(route)} />
+
 <div class="btn-group" role="group">
   <ButtonRouteZoom bbox={route.bbox} />
   <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="gpx">{$_('details.GPX')}</ButtonRouteDownload>
@@ -106,20 +85,20 @@
 
 <p>{#if route.itinerary}{route.itinerary.join(' - ')}{/if}</p>
 
-<dl>
-{#if route.ref}<dt>Ref:</dt><dd>{route.ref}</dd>{/if}
-{#if route.mapped_length}<dt>{$_('details.mapped_len')}:</dt><dd>{route.mapped_length}</dd>{/if}
-{#if route.official_length}<dt>{$_('details.official_len')}:</dt><dd>{route.official_length}</dd>{/if}
-{#if route.operator}<dt>{$_('details.operator')}:</dt><dd>{route.operator}</dd>{/if}
-{#if route.symbol}<dt>{$_('details.symbol')}:</dt><dd>{route.symbol}</dd>{/if}
-</dl>
+<DetailsPropertyList>
+    <DetailsPropertyItem title="Ref" value={route.ref} />
+    <DetailsPropertyItem title={$_('details.mapped_len')} value={route.mapped_length} />
+    <DetailsPropertyItem title={$_('details.official_len')} value={route.official_length} />
+    <DetailsPropertyItem title={$_('details.operator')} value={route.operator} />
+    <DetailsPropertyItem title={$_('details.symbol')} value={route.symbol} />
+</DetailsPropertyList>
 
 {#if route.description}<p>{route.description}</p>{/if}
 {#if route.note}<p><i>{$_('details.note')}:</i> {route.note}<p>{/if}
 
 <div>
-    {#if route.url}<a href="{route.url}">{$_('details.website')}</a>{/if}
-    {#if route.wikipedia}<a href="{WMTConfig.API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink'}">{$_('details.wikipedia')}</a>{/if}
+    <DetailsWeblink title={$_('details.website')} url={route.url} />
+    <DetailsWeblink title={$_('details.wikipedia')} url={route.wiki_url} />
 </div>
 
 <Collapsible title={$_('elevation.title')} init_collapsed={true}>
@@ -138,14 +117,7 @@
 </Collapsible>
 {/if}
 
-
-<Collapsible title={$_('details.tags_title')}>
-    <table>
-        {#each route.tag_keys as key}
-            <tr><td>{key}</td><td>{route.tags[key]}</td></tr>
-        {/each}
-    </table>
-</Collapsible>
+<CollapsibleTagList tags={route.tags} />
 
 {/if}{/key}
 </SidePanel>

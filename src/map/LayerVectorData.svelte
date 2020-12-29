@@ -124,7 +124,6 @@
         if (relations.length === 1) {
             show_page('route', [['id', relations[0]]]);
         } else {
-            console.log(relations.join());
             show_page('routelist', [['relations', relations.join()]]);
         }
     }

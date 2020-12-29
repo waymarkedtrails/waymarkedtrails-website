@@ -17,6 +17,7 @@
     import PanelRouteDetails from './PanelRouteDetails.svelte';
     import PanelSettings from './PanelSettings.svelte';
     import PanelSearch from './PanelSearch.svelte';
+    import PanelGuidepost from './PanelGuidepost.svelte';
     import UpdateInfo from './UpdateInfo.svelte';
     import SearchForm from './ui/SearchForm.svelte';
     import ButtonFooter from './ui/ButtonFooter.svelte';
@@ -66,4 +67,5 @@ Loading...
 {#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
 {#if sidepanel === 'route'}<PanelRouteDetails />{/if}
 {#if sidepanel === 'search'}<PanelSearch />{/if}
+{#if sidepanel === 'guidepost'}<PanelGuidepost />{/if}
 {/if}

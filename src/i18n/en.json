@@ -25,6 +25,12 @@
         "more" : "Zoom in to see more routes."
     },
     "details" : {
+        "type" : {
+            "relation" : "Relation",
+            "way" : "Way",
+            "node" : "Node",
+            "guidepost" : "Guidepost"
+        },
         "route_symbol" : "Route symbol",
         "zoom_to" : "Show on map",
         "GPX" : "GPX",
@@ -34,6 +40,7 @@
         "operator" : "Operator",
         "symbol" : "Symbol",
         "note" : "Note",
+        "altitude" : "Altitude",
         "website" : "Website",
         "wikipedia" : "Wikipedia",
         "subroutes_title" : "Sections",

@@ -17,4 +17,3 @@ export function make_route_subtitle(route) {
         return route.itinerary.join(' - ');
     return '';
 };
-
