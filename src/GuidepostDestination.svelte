@@ -13,7 +13,6 @@
             fail_message = json.error;
             return
         }
-        console.log(json);
 
         for (let feat of json.data) {
             if (feat.duration) {

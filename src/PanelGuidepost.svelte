@@ -15,6 +15,7 @@
     import Collapsible from './ui/Collapsible.svelte';
     import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
     import GuidepostDestination from './GuidepostDestination.svelte';
+    import { set_highlight_point } from './map/LayerRouteDetails.svelte';
 
     let osm_id = '';
     let fail_message = '';
@@ -24,6 +25,7 @@
         guidepost = json;
 
         guidepost.location = new Point([guidepost.x, guidepost.y]);
+        set_highlight_point(guidepost.location);
     },
     function(error) { fail_message = $_('error.load_error'); });
 
@@ -65,7 +67,7 @@
     <DetailsWeblink title={$_('details.wikipedia')} url={guidepost.wiki_url} />
 </div>
 
-<Collapsible title={$_('destination_sign.title')} init_collapsed={false}>
+<Collapsible title={$_('destination_sign.title')} init_collapsed={true}>
     <GuidepostDestination osm_id={osm_id} />
 </Collapsible>
 
