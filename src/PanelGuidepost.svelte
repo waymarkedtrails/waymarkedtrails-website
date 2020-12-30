@@ -12,7 +12,9 @@
     import DetailsPropertyList from './ui/DetailsPropertyList.svelte';
     import DetailsPropertyItem from './ui/DetailsPropertyItem.svelte';
     import DetailsWeblink from './ui/DetailsWeblink.svelte';
+    import Collapsible from './ui/Collapsible.svelte';
     import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
+    import GuidepostDestination from './GuidepostDestination.svelte';
 
     let osm_id = '';
     let fail_message = '';
@@ -62,6 +64,10 @@
     <DetailsWeblink title={$_('details.website')} url={guidepost.url} />
     <DetailsWeblink title={$_('details.wikipedia')} url={guidepost.wiki_url} />
 </div>
+
+<Collapsible title={$_('destination_sign.title')} init_collapsed={false}>
+    <GuidepostDestination osm_id={osm_id} />
+</Collapsible>
 
 <CollapsibleTagList tags={guidepost.tags} />
 {/if}{/key}

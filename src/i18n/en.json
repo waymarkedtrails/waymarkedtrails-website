@@ -56,6 +56,10 @@
         "ascent" : "Accumulated ascent",
         "descent" : "Accumulated descent"
     },
+    "destination_sign" : {
+        "title" : "Destinations",
+        "more" : "More details"
+    },
     "search" : {
         "title" : "Search",
         "routes" : "Routes",
