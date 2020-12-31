@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import PanelButton from './PanelButton.svelte';
     import { show_page } from '../app_state.js';
 
@@ -73,7 +74,9 @@
             </svg>
         </PanelButton>
         <span>
-        {#if osm_type}
+        {#if fail_message}
+            {$_('error.panel_title')}
+        {:else if osm_type}
             <a target="_new" href="https://openstreetmap.org/{osm_type}/{osm_id}">{title}</a>
         {:else}
             {title}

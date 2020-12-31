@@ -74,8 +74,9 @@
     },
     "locate_me" : "Locate me",
     "error" : {
+        "panel_title" : "Error",
         "load_error" : "Error connecting to server.",
-        "missing_id" : "Error: missing parameter 'id'.",
-        "missing_query" : "Error: missing parameter 'query'."
+        "missing_id" : "Missing parameter 'id'.",
+        "missing_query" : "Missing parameter 'query'."
     }
 }
