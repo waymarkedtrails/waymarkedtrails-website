@@ -61,7 +61,7 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
-        json({namedExports: false}),
+        json({namedExports: false, compact: production}),
         css({dest: 'public/build/contrib.css'}),
 
 		// In dev mode, call `npm run start` once
