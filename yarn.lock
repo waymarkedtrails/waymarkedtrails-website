@@ -300,13 +300,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap-icons@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "bootstrap-icons@npm:1.0.0"
-  checksum: 082d8d2aff07217289b3a78c0d8eb80c45b42f2ee63ffa27a87c83072745177dd12b0b12d1b73d95a5e69d45b54c739b5db6e2eb7e310aa8b54b6b08ec57772c
-  languageName: node
-  linkType: hard
-
 "bootstrap@npm:^4.5.2":
   version: 4.5.2
   resolution: "bootstrap@npm:4.5.2"
@@ -1916,7 +1909,6 @@ fsevents@~2.1.2:
     "@rollup/plugin-json": ^4.1.0
     "@rollup/plugin-node-resolve": ^8.0.0
     bootstrap: ^4.5.2
-    bootstrap-icons: ^1.0.0
     d3-axis: ^2.0.0
     d3-scale: ^3.2.3
     d3-selection: ^2.0.0
@@ -1931,7 +1923,6 @@ fsevents@~2.1.2:
     rollup-plugin-terser: ^7.0.0
     svelte: ^3.0.0
     svelte-i18n: ^3.3.0
-    systemjs: ^6.8.2
   languageName: unknown
   linkType: soft
 
@@ -1957,13 +1948,6 @@ fsevents@~2.1.2:
   version: 3.28.0
   resolution: "svelte@npm:3.28.0"
   checksum: 0380ab421fa36701891c7ac8c547fea007225473e75f8ef28f1de4c43a0808ca99413b15530c6e60266f8fa274a1305a353a13a0276ad946afb7b0ab5aea14ef
-  languageName: node
-  linkType: hard
-
-"systemjs@npm:^6.8.2":
-  version: 6.8.2
-  resolution: "systemjs@npm:6.8.2"
-  checksum: 5fbd1b2275b92ff0cda48b0b3177a563484227c795a1d7c9a8b5b57dec84a07c8dded57fa92d8681cef6d312c9b661fb13621898b8003a2b11099c1854464084
   languageName: node
   linkType: hard
 
