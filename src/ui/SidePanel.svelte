@@ -2,6 +2,8 @@
     import PanelButton from './PanelButton.svelte';
     import { show_page } from '../app_state.js';
 
+    export let osm_type;
+    export let osm_id;
     export let title = '';
     export let fail_message = '';
 
@@ -70,7 +72,13 @@
                 <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
             </svg>
         </PanelButton>
-        <span>{title}</span>
+        <span>
+        {#if osm_type}
+            <a target="_new" href="https://openstreetmap.org/{osm_type}/{osm_id}">{title}</a>
+        {:else}
+            {title}
+        {/if}
+        </span>
         <PanelButton on:click={() => show_page()}>
             <svg width="25px" height="25px" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>

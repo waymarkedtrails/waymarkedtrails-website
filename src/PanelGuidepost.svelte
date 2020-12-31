@@ -44,7 +44,7 @@
     }));
 </script>
 
-<SidePanel title="{$_('details.type.node')} {osm_id}" fail_message={fail_message}>
+<SidePanel osm_type="node" osm_id={osm_id} title="{$_('details.type.guidepost')} {osm_id}" fail_message={fail_message}>
 {#key guidepost}{#if guidepost}
 
 <DetailsHeader img_alt={$_('details.type.guidepost')} img_src="/img/guidepost.svg" title={guidepost.name} />

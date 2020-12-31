@@ -72,7 +72,7 @@
     }
 </style>
 
-<SidePanel title="{osm_type} {osm_id}" fail_message={fail_message}>
+<SidePanel osm_type={osm_type} osm_id={osm_id} title="{$_('details.type.' + osm_type)} {osm_id}" fail_message={fail_message}>
 {#key route}{#if route}
 
 <DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{WMTConfig.API_URL}/symbols/id/{route.symbol_id}" title={make_route_title(route)} />
