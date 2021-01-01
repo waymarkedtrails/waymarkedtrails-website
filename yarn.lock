@@ -128,6 +128,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rollup/plugin-yaml@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@rollup/plugin-yaml@npm:3.0.0"
+  dependencies:
+    "@rollup/pluginutils": ^3.1.0
+    js-yaml: ^3.14.0
+    tosource: ^1.0.0
+  peerDependencies:
+    rollup: ^1.20.0 || ^2.0.0
+  checksum: a6cea8f5d434481f1d522bcf30a80e53d1b43d8f2b4780327a86bac2acfe73980cb7762d5af7925457d1777bc414141d4a7e2040f5f47c2ef3013cb48c903aad
+  languageName: node
+  linkType: hard
+
 "@rollup/pluginutils@npm:^3.0.8, @rollup/pluginutils@npm:^3.1.0":
   version: 3.1.0
   resolution: "@rollup/pluginutils@npm:3.1.0"
@@ -230,6 +243,15 @@ __metadata:
     delegates: ^1.0.0
     readable-stream: ^2.0.6
   checksum: 2d6fdb0ddde9b8cb120b6851b42c75f6b6db78b540b579a00d144ad38cb9e1bdf1248e5454049fcf5b47ef61d1a6f2ea433a8e38984158afd441bc1e0db7a625
+  languageName: node
+  linkType: hard
+
+"argparse@npm:^1.0.7":
+  version: 1.0.10
+  resolution: "argparse@npm:1.0.10"
+  dependencies:
+    sprintf-js: ~1.0.2
+  checksum: 435adaef5f6671c3ef1478a22be6fd54bdb99fdbbce8f5561b9cbbb05068ccce87b7df3b9f3322ff52a6ebb9cab2b427cbedac47a07611690a9beaa5184093e2
   languageName: node
   linkType: hard
 
@@ -631,6 +653,16 @@ __metadata:
   version: 1.0.5
   resolution: "escape-string-regexp@npm:1.0.5"
   checksum: f9484b8b4c8827d816e0fd905c25ed4b561376a9c220e1430403ea84619bf680c76a883a48cff8b8e091daf55d6a497e37479f9787b9f15f3c421b6054289744
+  languageName: node
+  linkType: hard
+
+"esprima@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "esprima@npm:4.0.1"
+  bin:
+    esparse: ./bin/esparse.js
+    esvalidate: ./bin/esvalidate.js
+  checksum: 5df45a3d9c95c36800d028ba76d8d4e04e199932b58c2939f462f859fd583e7d39b4a12d3f97986cf272a28a5fe5948ee6e49e36ef63f67b5b48d82a635c5081
   languageName: node
   linkType: hard
 
@@ -1052,6 +1084,18 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"js-yaml@npm:^3.14.0":
+  version: 3.14.1
+  resolution: "js-yaml@npm:3.14.1"
+  dependencies:
+    argparse: ^1.0.7
+    esprima: ^4.0.0
+  bin:
+    js-yaml: bin/js-yaml.js
+  checksum: 46b61f889796a20d16b0b64580a01b6a02b2e45c1a2744906346da54d07e14cde764e887ab6d1512d8b2541c63711bd4b75859c28eb99605baf59fa173fc38c2
+  languageName: node
+  linkType: hard
+
 "jsbn@npm:~0.1.0":
   version: 0.1.1
   resolution: "jsbn@npm:0.1.1"
@@ -1145,6 +1189,15 @@ fsevents@~2.1.2:
   version: 2.4.0
   resolution: "mapbox-to-css-font@npm:2.4.0"
   checksum: efbac4a88f53af1628d8801fc6b89f66dac8a9a19f65ed87834b60daaf9bedf54995f5596e23e0c38408553ea1e328522cfa26947342f5aae7f6231bc203f2b6
+  languageName: node
+  linkType: hard
+
+"marked@npm:^1.2.7":
+  version: 1.2.7
+  resolution: "marked@npm:1.2.7"
+  bin:
+    marked: bin/marked
+  checksum: 52591bd9f0681b9ceb6f43b662078bef56e93510119986595c02f22a8eb5df3d2ce8bf19934de09caf8aac3ba0e7894fe03745a1ec6ffc90d62ab022d5299c1a
   languageName: node
   linkType: hard
 
@@ -1833,6 +1886,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"sprintf-js@npm:~1.0.2":
+  version: 1.0.3
+  resolution: "sprintf-js@npm:1.0.3"
+  checksum: 51df1bce9e577287f56822d79ac5bd94f6c634fccf193895f2a1d2db2e975b6aa7bc97afae9cf11d49b7c37fe4afc188ff5c4878be91f2c86eabd11c5df8b62c
+  languageName: node
+  linkType: hard
+
 "sshpk@npm:^1.7.0":
   version: 1.16.1
   resolution: "sshpk@npm:1.16.1"
@@ -1908,11 +1968,13 @@ fsevents@~2.1.2:
     "@rollup/plugin-commonjs": ^14.0.0
     "@rollup/plugin-json": ^4.1.0
     "@rollup/plugin-node-resolve": ^8.0.0
+    "@rollup/plugin-yaml": ^3.0.0
     bootstrap: ^4.5.2
     d3-axis: ^2.0.0
     d3-scale: ^3.2.3
     d3-selection: ^2.0.0
     d3-shape: ^2.0.0
+    marked: ^1.2.7
     node-static: ^0.7.11
     ol: ^6.5.0
     rollup: ^2.3.4
@@ -1994,6 +2056,13 @@ fsevents@~2.1.2:
   dependencies:
     is-number: ^7.0.0
   checksum: 2b6001e314e4998a07137c197e333fac2f86d46d0593da90b678ae64e2daa07274b508f83cca09e6b3504cdf222497dcb5b7daceb6dc13a9a8872f58a27db907
+  languageName: node
+  linkType: hard
+
+"tosource@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "tosource@npm:1.0.0"
+  checksum: 57348bec54146e6e36fcbaa6c3cc58c839c3e8bb2ee4aae35c02bb9010879a3cfa1b1cad201eb64ede3bdecb67b3a9a61ba3f83026bfa549f53e63c2baada4fc
   languageName: node
   linkType: hard
 

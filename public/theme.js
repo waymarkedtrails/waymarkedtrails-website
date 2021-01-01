@@ -22,6 +22,18 @@ const WMTConfig = {
         { id: 'REG', label: 'network.regional'},
         { id: '', label: 'network.other'},
         { id: 'NDS', label: 'network.node' }
+    ],
+    HELP : [
+        { l: 0, section: "about", paragraphs: ["hiking", "osm"]},
+        { l: 0, section: "rendering", paragraphs: ["hikingroutes", "classification", "hikinglabels", "hierarchy", "guideposts"]},
+        { l: 1, section: "hierarchies", paragraphs: ["text"]},
+        { l: 1, section: "osmc", paragraphs: ["text"]},
+        { l: 1, section: "hikinglocal", paragraphs: ["text", "czech", "germany", "hungary", "slovakia", "swiss", "italy", "uk"]},
+        { l: 1, section: "elevationprofiles", paragraphs: ["general"]},
+        { l: 0, section: "technical", paragraphs: ["general", "translation"]},
+        { l: 0, section: "legal", paragraphs: ["copyright", "usage", "disclaimer"]},
+        { l: 0, section: "acknowledgements", paragraphs: ["text"]},
+        { l: 0, section: "contact", paragraphs: ["text"]}
     ]
 };
 

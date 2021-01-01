@@ -10,6 +10,8 @@
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-yaml": "^3.0.0",
+    "marked": "^1.2.7",
     "node-static": "^0.7.11",
     "rollup": "^2.3.4",
     "rollup-plugin-css-porter": "^1.0.2",

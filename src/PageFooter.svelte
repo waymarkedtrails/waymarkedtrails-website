@@ -9,6 +9,6 @@
   }
 </style>
 
-<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+<div class="btn-toolbar justify-content-between" role="toolbar">
     <slot></slot>
 </div>

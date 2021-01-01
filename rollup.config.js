@@ -2,9 +2,11 @@ import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
+import yaml from '@rollup/plugin-yaml';
 import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-porter';
 import { terser } from 'rollup-plugin-terser';
+import marked from 'marked';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -62,6 +64,18 @@ export default {
 		}),
 		commonjs(),
         json({namedExports: false, compact: production}),
+        yaml({safe: false,
+             transform(data, filePath) {
+                 for (const section in data) {
+                    for (const key in data[section]) {
+                        if (key !== 'title') {
+                            data[section][key] = marked(data[section][key]);
+                         }
+                    }
+                 }
+                 return data;
+             }
+        }),
         css({dest: 'public/build/contrib.css'}),
 
 		// In dev mode, call `npm run start` once

@@ -18,13 +18,16 @@
     import PanelSettings from './PanelSettings.svelte';
     import PanelSearch from './PanelSearch.svelte';
     import PanelGuidepost from './PanelGuidepost.svelte';
+    import PanelHelp from './PanelHelp.svelte';
     import UpdateInfo from './UpdateInfo.svelte';
     import SearchForm from './ui/SearchForm.svelte';
     import ButtonFooter from './ui/ButtonFooter.svelte';
     import SvgGeoPin from './svg/GeoPin.svelte';
     import SvgGear from './svg/Gear.svelte';
+    import SvgInfo from './svg/Info.svelte';
 
     let sidepanel = '';
+    let showhelp = false;
     let page_title = $isLoading ? '' : $_(WMTConfig.TITLE);
 
     onDestroy(page_state.subscribe(value => sidepanel = value.page));
@@ -56,7 +59,7 @@ Loading...
     <div class="btn-group" role="group">
         <ButtonFooter title={$_('settings.title')} on:click={() => show_page('settings')}><SvgGear /></ButtonFooter>
         <ButtonFooter title={$_('locate_me')} on:click={enable_geolocation}><SvgGeoPin /></ButtonFooter>
-        <ButtonFooter>Right</ButtonFooter>
+        <ButtonFooter title={$_('help')} on:click={() => showhelp = !showhelp}><SvgInfo /></ButtonFooter>
     </div>
     <div class="btn-group" role="group">
         <ButtonFooter on:click={() => show_page('routelist')}>{$_('routelist.title')}</ButtonFooter>
@@ -68,4 +71,5 @@ Loading...
 {#if sidepanel === 'route'}<PanelRouteDetails />{/if}
 {#if sidepanel === 'search'}<PanelSearch />{/if}
 {#if sidepanel === 'guidepost'}<PanelGuidepost />{/if}
+{#if showhelp}<PanelHelp />{/if}
 {/if}

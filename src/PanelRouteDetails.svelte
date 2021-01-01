@@ -70,18 +70,16 @@
         margin: 2px -5px;
         padding: 0;
     }
+
+    .btn-group {
+        width: 100%
+    }
 </style>
 
 <SidePanel osm_type={osm_type} osm_id={osm_id} title="{$_('details.type.' + osm_type)} {osm_id}" fail_message={fail_message}>
 {#key route}{#if route}
 
 <DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{WMTConfig.API_URL}/symbols/id/{route.symbol_id}" title={make_route_title(route)} />
-
-<div class="btn-group" role="group">
-  <ButtonRouteZoom bbox={route.bbox} />
-  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="gpx">{$_('details.GPX')}</ButtonRouteDownload>
-  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="kml">{$_('details.KML')}</ButtonRouteDownload>
-</div>
 
 <p>{#if route.itinerary}{route.itinerary.join(' - ')}{/if}</p>
 
@@ -100,6 +98,14 @@
     <DetailsWeblink title={$_('details.website')} url={route.url} />
     <DetailsWeblink title={$_('details.wikipedia')} url={route.wiki_url} />
 </div>
+
+<div class="btn-group" role="group">
+  <ButtonRouteZoom bbox={route.bbox} />
+  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="gpx">{$_('details.GPX')}</ButtonRouteDownload>
+  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="kml">{$_('details.KML')}</ButtonRouteDownload>
+</div>
+
+
 
 <Collapsible title={$_('elevation.title')} init_collapsed={true}>
     <ElevationView osm_type={osm_type} osm_id={osm_id} />
