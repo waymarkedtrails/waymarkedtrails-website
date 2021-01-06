@@ -59,7 +59,7 @@ Loading...
     <div class="btn-group" role="group">
         <ButtonFooter title={$_('settings.title')} on:click={() => show_page('settings')}><SvgGear /></ButtonFooter>
         <ButtonFooter title={$_('locate_me')} on:click={enable_geolocation}><SvgGeoPin /></ButtonFooter>
-        <ButtonFooter title={$_('help')} on:click={() => showhelp = !showhelp}><SvgInfo /></ButtonFooter>
+        <ButtonFooter title={$_('help')} on:click={() => show_page(sidepanel.startsWith('help')?'':'help-about')}><SvgInfo /></ButtonFooter>
     </div>
     <div class="btn-group" role="group">
         <ButtonFooter on:click={() => show_page('routelist')}>{$_('routelist.title')}</ButtonFooter>
@@ -71,5 +71,5 @@ Loading...
 {#if sidepanel === 'route'}<PanelRouteDetails />{/if}
 {#if sidepanel === 'search'}<PanelSearch />{/if}
 {#if sidepanel === 'guidepost'}<PanelGuidepost />{/if}
-{#if showhelp}<PanelHelp />{/if}
+{#if sidepanel.startsWith('help')}<PanelHelp />{/if}
 {/if}
