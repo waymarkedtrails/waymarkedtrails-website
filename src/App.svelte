@@ -11,6 +11,7 @@
     import MapLayerRouteDetails from './map/LayerRouteDetails.svelte';
     import MapLayerVectorData from './map/LayerVectorData.svelte';
     import MapGeolocateLayer, { enable_geolocation } from './map/LayerGeolocate.svelte';
+    import MapLayerElevation from './map/LayerElevation.svelte';
     import Headline from './Headline.svelte';
     import PageFooter from './PageFooter.svelte';
     import PanelRouteList from './PanelRouteList.svelte';
@@ -54,6 +55,7 @@ Loading...
   <MapGeolocateLayer />
   <MapLayerRouteDetails />
   <MapLayerVectorData />
+  <MapLayerElevation />
 </Map>
 
 <Headline>

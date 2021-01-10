@@ -39,11 +39,20 @@
         width: 100%;
         text-align: center;
     }
+
+    .warn-unsorted {
+        font-size: smaller;
+        font-style: italic;
+        margin: 0
+    }
 </style>
 
 {#if fail_message}
 {fail_message}
 {:else if profile}
+{#if profile.length && profile.length * 1.1 < profile.end_position}
+<p class="warn-unsorted">{$_('elevation.warn_unsorted')}</p>
+{/if}
 <div>
 <div class="altitude diagram-label">{$_('elevation.diagram.altitude')}</div>
 <D3ElevationProfile data={profile} width="100%" height="200" y_axis_width="55"/>

@@ -9,7 +9,6 @@
     };
 
     export function set_highlight_point(pt) {
-        console.log('GOT POINT', pt);
         let src = new VectorSource();
         src.addFeature(new Feature(pt));
         layer.setSource(src);

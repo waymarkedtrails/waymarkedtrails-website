@@ -7,8 +7,6 @@
     let getMap;
     let vtile_layer, vector_layer;
 
-    let h
-
     export function load_routes(routes) {
         if (!is_vtiles_active()) {
             let ids = {};

@@ -51,7 +51,9 @@
         "tags_title" : "OpenStreetMap tags"
     },
     "elevation" : {
+        "unavailable" : "No elevation data found.",
         "title" : "Elevation profile",
+        "warn_unsorted" : "Route is potentially unordered or incomplete. Elevation information might be inaccurate.",
         "diagram" : {
             "altitude" : "Altitude (m)",
             "distance" : "Distance (km)"

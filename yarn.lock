@@ -506,6 +506,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"d3-array@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "d3-array@npm:2.9.1"
+  checksum: ec4e9ce3e7b45ab4c6a52eaeb538d8a4c94cd572642d8f614e1e785292af475f585e3caf0556a217f16fdd1ace7452c2188463d2ef682887ae7cb8e6fc016cf4
+  languageName: node
+  linkType: hard
+
 "d3-axis@npm:^2.0.0":
   version: 2.0.0
   resolution: "d3-axis@npm:2.0.0"
@@ -1970,6 +1977,7 @@ fsevents@~2.1.2:
     "@rollup/plugin-node-resolve": ^8.0.0
     "@rollup/plugin-yaml": ^3.0.0
     bootstrap: ^4.5.2
+    d3-array: ^2.9.1
     d3-axis: ^2.0.0
     d3-scale: ^3.2.3
     d3-selection: ^2.0.0

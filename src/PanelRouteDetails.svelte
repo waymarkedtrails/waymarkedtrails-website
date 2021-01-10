@@ -107,7 +107,7 @@
 
 
 
-<Collapsible title={$_('elevation.title')} init_collapsed={true}>
+<Collapsible title={$_('elevation.title')} init_collapsed={false}>
     <ElevationView osm_type={osm_type} osm_id={osm_id} />
 </Collapsible>
 
