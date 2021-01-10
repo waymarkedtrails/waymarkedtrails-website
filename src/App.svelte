@@ -28,13 +28,20 @@
 
     let sidepanel = '';
     let showhelp = false;
-    let page_title = $isLoading ? '' : $_(WMTConfig.TITLE);
 
     onDestroy(page_state.subscribe(value => sidepanel = value.page));
+
+    $: {
+        if (!$isLoading) {
+            document.title = 'Waymarked Trails - ' + $_('site_title.' + WMTConfig.TITLE);
+            document.getElementById('meta-description')
+                    .setAttribute('content', $_('site_description.' + WMTConfig.TITLE));
+        }
+    }
 </script>
 
 <svelte:head>
-  <title>DEV: Waymarked Trails - {page_title}</title>
+  <link rel="shortcut icon" href="/img/map_{WMTConfig.TITLE}.ico" />
 </svelte:head>
 
 {#if $isLoading}

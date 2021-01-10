@@ -1,5 +1,5 @@
 const WMTConfig = {
-    TITLE: 'site_title.hiking',
+    TITLE: 'hiking',
     MEDIA_URL: '/',
     API_URL: 'http://loar:8080/v1/api',
 
