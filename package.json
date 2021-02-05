@@ -1,5 +1,5 @@
 {
-  "name": "svelte-app",
+  "name": "waymarkedtrails-app",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
@@ -7,23 +7,23 @@
     "start": "static -c 0 -p 5000 public"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
     "@rollup/plugin-yaml": "^3.0.0",
-    "marked": "^1.2.7",
+    "marked": "^1.2.9",
     "node-static": "^0.7.11",
-    "rollup": "^2.3.4",
+    "rollup": "^2.38.5",
     "rollup-plugin-css-porter": "^1.0.2",
     "rollup-plugin-hash": "^1.3.0",
     "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^6.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "svelte": "^3.31.0"
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^3.32.1"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2",
-    "d3-array": "^2.9.1",
+    "bootstrap": "^4.6.0",
+    "d3-array": "^2.11.0",
     "d3-axis": "^2.0.0",
     "d3-scale": "^3.2.3",
     "d3-selection": "^2.0.0",
