@@ -6,6 +6,7 @@
     import { onDestroy } from 'svelte';
     import WMTConfig from '../theme.js';
     import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state, show_page } from './app_state.js';
+    import { WindowHash } from './util/window_hash.js';
     import Map from './Map.svelte';
     import MapXYZLayer from './map/XYZLayer.svelte';
     import MapLayerRouteDetails from './map/LayerRouteDetails.svelte';
@@ -39,11 +40,18 @@
                     .setAttribute('content', $_('site_description.' + WMTConfig.TITLE));
         }
     }
+
+    function handlePopState() {
+        let hash = WindowHash();
+        page_state.set({page: hash.get_page(), params: hash.get_params()});
+    }
 </script>
 
 <svelte:head>
   <link rel="shortcut icon" href="/img/map_{WMTConfig.TITLE}.ico" />
 </svelte:head>
+
+<svelte:window on:popstate={handlePopState} />
 
 {#if $isLoading}
 Loading...
