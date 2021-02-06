@@ -1,3 +1,10 @@
 {
-    "title": "Wandern"
+    "site_title" : {
+        "hiking" : "Wandern",
+        "cycling" : "Radfahren",
+        "mtb" : "MTB",
+        "riding" : "Pferdesport",
+        "skating" : "Inline Skating",
+        "slopes" : "Wintersport"
+    }
 }
