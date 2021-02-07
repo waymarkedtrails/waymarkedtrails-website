@@ -6,6 +6,7 @@ import yaml from '@rollup/plugin-yaml';
 import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-porter';
 import { terser } from 'rollup-plugin-terser';
+import replace from '@rollup/plugin-replace';
 import marked from 'marked';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -69,6 +70,11 @@ export default {
                  }
                  return data;
              }
+        }),
+
+        !production && replace({
+            'config.MEDIA_URL': '""',
+            'config.API_URL': '"http://loar:8080/v1/api"'
         }),
 
 		// In dev mode, call `npm run start` once
