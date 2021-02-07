@@ -33,27 +33,19 @@ function serve() {
 
 export default {
 	input: 'src/main.js',
-    external: ['../theme.js', '../../theme.js'],
 	output: {
 		sourcemap: true,
 		format: 'es',
-		dir: 'public/build/',
-        globals: {
-            'theme.js': 'WMTConfig'
-        }
+		dir: 'public/build/'
 	},
 	plugins: [
 		svelte({
             compilerOptions: {
                 // enable run-time checks when not in production
                 dev: !production,
-                // we'll extract any component CSS out into
-                // a separate file - better for performance
-                css: css => {
-                    css.write('bundle.css');
-                }
             }
 		}),
+        css({ dest: 'public/build/bundle.css' }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
@@ -78,7 +70,6 @@ export default {
                  return data;
              }
         }),
-        css({dest: 'public/build/contrib.css'}),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated

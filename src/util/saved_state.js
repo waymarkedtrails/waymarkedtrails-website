@@ -1,5 +1,5 @@
+import { BASEMAPS } from '../config.js';
 import { WindowHash } from './window_hash.js';
-import WMTConfig from '../../theme.js';
 
 let hash = WindowHash();
 
@@ -37,7 +37,7 @@ export function get_basemap() {
     let basemap_id = 0;
 
     let set_id_from = function (saved_id) {
-        WMTConfig.BASEMAPS.forEach(function(item, i) {
+        BASEMAPS.forEach(function(item, i) {
             if (item.id === saved_id) {
                 basemap_id = i;
             }

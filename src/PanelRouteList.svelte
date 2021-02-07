@@ -1,14 +1,13 @@
 <script>
     import { _ } from 'svelte-i18n';
+    import { ROUTE_GROUPS } from './config.js';
     import { json_loader } from './util/load_json.js';
-    import WMTConfig from '../theme.js';
     import SidePanel from './ui/SidePanel.svelte';
     import RouteList from './ui/RouteList.svelte';
     import { map_view, page_state } from './app_state.js';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
     import { load_routes } from './map/LayerVectorData.svelte';
 
-    const groups = WMTConfig.ROUTE_GROUPS;
     const max_routes = 20;
     let fail_message = '';
     let route_data = false;
@@ -36,7 +35,7 @@
 
     const loader = json_loader(function(json) {
         let data = new Map();
-        WMTConfig.ROUTE_GROUPS.forEach(function(group) {
+        ROUTE_GROUPS.forEach(function(group) {
             data.set(group.id, []);
         });
 
@@ -56,6 +55,6 @@
 </script>
 
 <SidePanel title="Routes" fail_message={fail_message}>
-    <RouteList groups={groups} route_data={route_data} />
+    <RouteList groups={ROUTE_GROUPS} route_data={route_data} />
     {#if has_more}<p>{$_('routelist.more')}</p>{/if}
 </SidePanel>

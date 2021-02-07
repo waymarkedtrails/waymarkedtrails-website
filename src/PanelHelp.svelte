@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import WMTConfig from '../theme.js';
+    import { HELP } from './config.js';
     import { page_state }  from './app_state.js';
 
     let content;
@@ -54,12 +54,12 @@
 <div class="helppanel">
 {#if content}
     <nav class="nav flex-column">
-        {#each WMTConfig.HELP as part}
+        {#each HELP as part}
             <a class="nav-link level-{part.l}" href="#help-{part.section}">{content[part.section].title}</a>
         {/each}
     </nav>
     <div class="content-frame"><div class="content">
-        {#each WMTConfig.HELP as part}
+        {#each HELP as part}
         <h1 class="level-{part.l}" id="help-{part.section}">{content[part.section].title}</h1>
         {#each part.paragraphs as para}<p>{@html content[part.section][para]}</p>{/each}
         {/each}

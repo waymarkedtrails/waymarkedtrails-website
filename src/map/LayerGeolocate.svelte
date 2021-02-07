@@ -7,7 +7,6 @@
 </script>
 
 <script>
-    import WMTConfig from '../../theme.js';
     import { getContext } from 'svelte';
     import Feature from 'ol/Feature';
     import {Icon, Style} from 'ol/style';
@@ -15,6 +14,7 @@
     import Point from 'ol/geom/Point';
     import {Vector as VectorSource} from 'ol/source';
     import Geolocation from 'ol/Geolocation';
+    import { MEDIA_URL } from '../config.js';
 
 
     const getMap = getContext('olContext');
@@ -27,7 +27,7 @@
                 anchorXUnits: 'fraction',
                 anchorYUnits: 'fraction',
                 opacity: 0.75,
-                src: WMTConfig.MEDIA_URL + '/img/marker.png'
+                src: MEDIA_URL + '/img/marker.png'
             })
        })
     });

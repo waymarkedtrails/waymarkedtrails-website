@@ -1,7 +1,7 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import WMTConfig from '../theme.js';
     import { onDestroy } from 'svelte';
+    import { API_URL } from './config.js';
     import { page_state } from './app_state.js';
     import SidePanel from './ui/SidePanel.svelte';
     import { json_loader } from './util/load_json.js';
@@ -26,7 +26,7 @@
         route = json;
 
         if (route.wikipedia) {
-            route.wiki_url = WMTConfig.API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink';
+            route.wiki_url = API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink';
         }
 
         if (route.subroutes) {
@@ -79,7 +79,7 @@
 <SidePanel osm_type={osm_type} osm_id={osm_id} title="{$_('details.type.' + osm_type)} {osm_id}" fail_message={fail_message}>
 {#key route}{#if route}
 
-<DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{WMTConfig.API_URL}/symbols/id/{route.symbol_id}" title={make_route_title(route)} />
+<DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{API_URL}/symbols/id/{route.symbol_id}" title={make_route_title(route)} />
 
 <p>{#if route.itinerary}{route.itinerary.join(' - ')}{/if}</p>
 

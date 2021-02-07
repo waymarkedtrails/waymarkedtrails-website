@@ -1,6 +1,5 @@
 <script>
     import { onMount, onDestroy } from 'svelte';
-    import WMTConfig from '../theme.js';
     import { json_loader } from './util/load_json.js';
 
     let db_update = '';

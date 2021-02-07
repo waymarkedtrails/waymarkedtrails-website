@@ -1,7 +1,7 @@
 <script context="module">
-    import WMTConfig from '../../theme.js';
     import VectorSource from 'ol/source/Vector';
     import GeoJSON from 'ol/format/GeoJSON';
+    import { API_URL } from '../config.js';
     import { highlight_stroke } from './styles.js';
 
     let getMap;
@@ -18,7 +18,7 @@
             });
             let map = getMap();
             let extent = map.getView().calculateExtent(map.getSize());
-            let segment_url = WMTConfig.API_URL + "/list/segments?bbox=" + extent;
+            let segment_url = API_URL + "/list/segments?bbox=" + extent;
             for (let k in ids) {
                 segment_url += '&' + k + 's=' + ids[k];
             }
@@ -81,7 +81,7 @@
     vtile_layer = new VectorTileLayer({
         source: new VectorTileSource({
             format: new GeoJSON(),
-            url: WMTConfig.API_URL + "/tiles/{z}/{x}/{y}.json",
+            url: API_URL + "/tiles/{z}/{x}/{y}.json",
             maxZoom: 12,
             minZoom: 12
         }),

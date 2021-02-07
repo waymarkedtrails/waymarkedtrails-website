@@ -1,9 +1,9 @@
 <script>
     import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
+    import { BASEMAPS } from './config.js';
     import { languages, set_stored_locale, get_stored_locale } from './i18n.js';
     import { basemap_id, map_opacity_base, map_opacity_route, map_opacity_shade } from './app_state.js';
-    import WMTConfig from '../theme.js';
     import SidePanel from './ui/SidePanel.svelte';
     import OpacitySlider from './ui/OpacitySlider.svelte';
     import DropdownList from './ui/DropdownList.svelte';
@@ -41,8 +41,8 @@
 
     <h4>{$_('settings.base_map')}</h4>
 
-    <DropdownList title={WMTConfig.BASEMAPS[$basemap_id].name}>
-        {#each WMTConfig.BASEMAPS as cfg, idx}
+    <DropdownList title={BASEMAPS[$basemap_id].name}>
+        {#each BASEMAPS as cfg, idx}
             <button class="dropdown-item" type="button" on:click="{() => basemap_id.set(idx)}">{cfg.name}</button>
         {/each}
     </DropdownList>

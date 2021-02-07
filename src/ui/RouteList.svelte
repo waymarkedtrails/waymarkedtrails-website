@@ -1,6 +1,5 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import WMTConfig from '../../theme.js';
     import { show_page } from '../app_state.js';
     import SimpleRouteList from './SimpleRouteList.svelte';
 

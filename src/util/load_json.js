@@ -1,6 +1,6 @@
-import WMTConfig from '../../theme.js';
+import { API_URL } from '../config.js';
 
-export function json_loader(done, error, base_url = WMTConfig.API_URL) {
+export function json_loader(done, error, base_url = API_URL) {
     let current = 0;
     return {
         load : function(url, params) {

@@ -1,5 +1,5 @@
 <script>
-    import WMTConfig from '../theme.js';
+    import { TITLE, MEDIA_URL } from './config.js';
     import { _ } from 'svelte-i18n';
 
     const themes = ['hiking', 'cycling', 'mtb', 'skating', 'riding', 'slopes'];
@@ -51,10 +51,10 @@
 
 </style>
 
-<div id="headline"><h1>Waymarked Trails: {$_('site_title.' + WMTConfig.TITLE)}</h1>
+<div id="headline"><h1>Waymarked Trails: {$_('site_title.' + TITLE)}</h1>
   <div class="map_maplinks right-align">
     {#each themes as theme }
-      <a class="maplink" href="https://{theme}.waymarkedtrails.org"><img src="{WMTConfig.MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" /></a>
+      <a class="maplink" href="https://{theme}.waymarkedtrails.org"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" /></a>
     {/each}
   </div>
 </div>

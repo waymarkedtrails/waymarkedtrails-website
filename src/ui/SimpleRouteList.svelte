@@ -1,5 +1,5 @@
 <script>
-    import WMTConfig from '../../theme.js';
+    import { API_URL } from '../config.js';
     import { show_page } from '../app_state.js';
     import {set_visible as set_map_details_visible } from '../map/LayerRouteDetails.svelte';
     import {highlight_route, unhighlight_route } from '../map/LayerVectorData.svelte';
@@ -76,7 +76,7 @@
             {#if route.icon}
                 <img alt="place icon" src="{route.icon}" />
             {:else}
-                <img alt="route symbol" src="{WMTConfig.API_URL}/symbols/id/{route.symbol_id}" />
+                <img alt="route symbol" src="{API_URL}/symbols/id/{route.symbol_id}" />
             {/if}
             </span>
             <span class="route-title">{route.title}</span>

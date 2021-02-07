@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
+import { BASEMAPS } from './config.js';
 import { WindowHash } from './util/window_hash.js';
 import { get_page_state, get_basemap, get_opacity } from './util/saved_state.js';
-import WMTConfig from '../theme.js';
 
 export const map_view = writable(false);
 export const page_state = writable(get_page_state());
@@ -32,7 +32,7 @@ map_view.subscribe(function (value) {
 });
 
 basemap_id.subscribe(function (value) {
-    localStorage.setItem('basemap-id', WMTConfig.BASEMAPS[value].id);
+    localStorage.setItem('basemap-id', BASEMAPS[value].id);
 });
 
 map_opacity_base.subscribe(function (value) {

@@ -2,9 +2,9 @@
     import '../css/global.css';
     import 'bootstrap/dist/css/bootstrap.css';
 
+    import { TITLE, BASEMAPS, HILLSHADING_URL, TILE_URL } from './config.js';
     import { isLoading, _ } from 'svelte-i18n';
     import { onDestroy } from 'svelte';
-    import WMTConfig from '../theme.js';
     import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state, show_page } from './app_state.js';
     import { WindowHash } from './util/window_hash.js';
     import Map from './Map.svelte';
@@ -35,9 +35,9 @@
 
     $: {
         if (!$isLoading) {
-            document.title = 'Waymarked Trails - ' + $_('site_title.' + WMTConfig.TITLE);
+            document.title = 'Waymarked Trails - ' + $_('site_title.' + TITLE);
             document.getElementById('meta-description')
-                    .setAttribute('content', $_('site_description.' + WMTConfig.TITLE));
+                    .setAttribute('content', $_('site_description.' + TITLE));
         }
     }
 
@@ -48,7 +48,7 @@
 </script>
 
 <svelte:head>
-  <link rel="shortcut icon" href="/img/map_{WMTConfig.TITLE}.ico" />
+  <link rel="shortcut icon" href="/img/map_{TITLE}.ico" />
 </svelte:head>
 
 <svelte:window on:popstate={handlePopState} />
@@ -57,9 +57,9 @@
 Loading...
 {:else}
 <Map>
-  <MapXYZLayer {...WMTConfig.BASEMAPS[$basemap_id]} title={$_('settings.base_map')} opacity={$map_opacity_base}/>
-  <MapXYZLayer name="hillshading" url={WMTConfig.HILLSHADING_URL} opacity={$map_opacity_shade} title={$_('attribution.elevation_title')} attribution='<a href= "/help/acknowledgements">SRTM/ASTER</a>' />
-  <MapXYZLayer name="routelayer" url={WMTConfig.TILE_URL} opacity={$map_opacity_route}/>
+  <MapXYZLayer {...BASEMAPS[$basemap_id]} title={$_('settings.base_map')} opacity={$map_opacity_base}/>
+  <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={$map_opacity_shade} title={$_('attribution.elevation_title')} attribution='<a href= "/help/acknowledgements">SRTM/ASTER</a>' />
+  <MapXYZLayer name="routelayer" url={TILE_URL} opacity={$map_opacity_route}/>
   <MapGeolocateLayer />
   <MapLayerRouteDetails />
   <MapLayerVectorData />
