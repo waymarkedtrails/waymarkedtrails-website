@@ -1,8 +1,10 @@
 :root {
-      --theme-background-color: #81AA4B; /*9ec868*/
-      --theme-sub-color: #526d30;
-      --theme-sub-font-color: #dbfbb1;
-      --theme-sub-link-color: #fcd76d;
-      --theme-banner-image: url('/img/banner_hiking.jpg');
+      --theme-background-color: #a2a2a2;
+      --theme-font-color: #000;
+      --theme-sub-color: #424242;
+      --theme-sub-font-color: #b5b5b5;
+      --theme-sub-link-color: #c67a0e;
+      --theme-banner-image: url('/img/banner_slopes.jpg');
+      --theme-link-color: #3d53d5;
 }
 

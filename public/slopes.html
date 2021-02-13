@@ -3,34 +3,33 @@
 <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" lang="en" content="waymarkedtrails, hiking routes, walking, openstreetmap" />
+    <meta name="keywords" lang="en" content="waymarkedtrails, ski routes, sleigh, openstreetmap" />
     <meta name="description" id="meta-description" />
-    <title>Waymarked Trails - Hiking</title>
+    <title>Waymarked Trails - Winter Sports</title>
 
-    <link rel="shortcut icon" href="img/map_hiking.ico" />
-    <link rel='stylesheet' href='hiking.css'>
+    <link rel="shortcut icon" href="img/map_slopes.ico" />
+    <link rel='stylesheet' href='slopes.css'>
     <link rel='stylesheet' href='/build/bundle.min.css'>
 
     <script id="WMTConfig" type="application/json">
         {
-            "TITLE": "hiking",
+            "TITLE": "slopes",
             "MEDIA_URL": "https://static.waymarkedtrails.org",
-            "API_URL": "https://hiking.waymarkedtrails.org/v1/api",
+            "API_URL": "https://slopes.waymarkedtrails.org/v1/api",
 
-            "TILE_URL": "https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png",
+            "TILE_URL": "https://tile.waymarkedtrails.org/slopes/{z}/{x}/{y}.png",
             "ROUTE_GROUPS" : [
-                { "id": "INT", "label": "network.continental"},
-                { "id": "NAT", "label": "network.national"},
-                { "id": "REG", "label": "network.regional"},
-                { "id": "", "label": "network.other"},
-                { "id": "NDS", "label": "network.node" }
+                { "id": "1", "label": "network.downhill"},
+                { "id": "2", "label": "network.nordic"},
+                { "id": "3", "label": "network.skitour"},
+                { "id": "4", "label": "network.sled"},
+                { "id": "5", "label": "network.winter_hike" },
+                { "id": "6", "label": "network.sleigh" },
+                { "id": "0", "label": "network.other" }
             ],
             "HELP" : [
-                { "l": 0, "section": "about", "paragraphs": ["hiking", "osm"]},
-                { "l": 0, "section": "rendering", "paragraphs": ["hikingroutes", "classification", "hikinglabels", "hierarchy", "guideposts"]},
-                { "l": 1, "section": "hierarchies", "paragraphs": ["text"]},
-                { "l": 1, "section": "osmc", "paragraphs": ["text"]},
-                { "l": 1, "section": "hikinglocal", "paragraphs": ["text", "czech", "germany", "hungary", "slovakia", "swiss", "italy", "uk"]},
+                { "l": 0, "section": "about", "paragraphs": ["slopemap", "osm"]},
+                { "l": 0, "section": "rendering", "paragraphs": ["sloperoutes", "slopeclassification", "slopemaplabels"]},
                 { "l": 1, "section": "elevationprofiles", "paragraphs": ["general"]},
                 { "l": 0, "section": "technical", "paragraphs": ["general", "translation"]},
                 { "l": 0, "section": "legal", "paragraphs": ["copyright", "usage", "disclaimer"]},

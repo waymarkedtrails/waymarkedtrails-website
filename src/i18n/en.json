@@ -75,7 +75,13 @@
         "national" : "National routes",
         "regional" : "Regional routes",
         "other" : "Other routes",
-        "node" : "Node network connections"
+        "node" : "Node network connections",
+        "downhill" : "Downhill",
+        "nordic" : "Nordic skiing",
+        "skitour" : "Ski tours",
+        "sled" : "Sledding piste",
+        "winter_hike" : "Winter hiking",
+        "sleigh" : "Sleigh piste"
     },
     "locate_me" : "Locate me",
     "error" : {
