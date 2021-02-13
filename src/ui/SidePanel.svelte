@@ -56,6 +56,7 @@
 
   .sidepanel-page :global(h4) {
     background-color: var(--theme-background-color);
+    color: var(--theme-font-color);
     font-size: small;
     font-weight: bold;
     padding: 2px;

@@ -31,3 +31,7 @@ body {
 #map-attribution a {
     color: var(--theme-sub-link-color);
 }
+
+a {
+    color: var(--theme-link-color);
+}

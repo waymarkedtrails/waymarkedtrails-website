@@ -24,7 +24,7 @@
      font-size: 30px;
      font-weight: 700;
      margin: 5px;
-     color: #101010;
+     color: var(--theme-font-color);
   }
 
   .map_maplinks {

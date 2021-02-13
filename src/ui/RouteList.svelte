@@ -20,6 +20,7 @@
 
     .divider {
         background-color: var(--theme-background-color);
+        color: var(--theme-font-color);
         font-weight: bold
     }
 </style>

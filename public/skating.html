@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" lang="en" content="waymarkedtrails, inline skating routes, openstreetmap" />
+    <meta name="description" id="meta-description" />
+    <title>Waymarked Trails - Inline Skating</title>
+
+    <link rel="shortcut icon" href="img/map_skating.ico" />
+    <link rel='stylesheet' href='skating.css'>
+    <link rel='stylesheet' href='/build/bundle.min.css'>
+
+    <script id="WMTConfig" type="application/json">
+        {
+            "TITLE": "skating",
+            "MEDIA_URL": "https://static.waymarkedtrails.org",
+            "API_URL": "https://skating.waymarkedtrails.org/v1/api",
+
+            "TILE_URL": "https://tile.waymarkedtrails.org/skating/{z}/{x}/{y}.png",
+            "ROUTE_GROUPS" : [
+                { "id": "INT", "label": "network.continental"},
+                { "id": "NAT", "label": "network.national"},
+                { "id": "REG", "label": "network.regional"},
+                { "id": "", "label": "network.other"},
+                { "id": "NDS", "label": "network.node" }
+            ],
+            "HELP" : [
+                { "l": 0, "section": "about", "paragraphs": ["skating", "osm"]},
+                { "l": 0, "section": "rendering", "paragraphs": ["skatingroutes", "classification", "labels", "hierarchy"]},
+                { "l": 1, "section": "hierarchies", "paragraphs": ["text"]},
+                { "l": 1, "section": "elevationprofiles", "paragraphs": ["general"]},
+                { "l": 0, "section": "technical", "paragraphs": ["general", "translation"]},
+                { "l": 0, "section": "legal", "paragraphs": ["copyright", "usage", "disclaimer"]},
+                { "l": 0, "section": "acknowledgements", "paragraphs": ["text"]},
+                { "l": 0, "section": "contact", "paragraphs": ["text"]}
+            ]
+        }
+    </script>
+    <script>
+        import('/build/main.js');
+    </script>
+</head>
+
+<body>
+</body>
+</html>

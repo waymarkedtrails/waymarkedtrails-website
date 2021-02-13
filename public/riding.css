@@ -1,0 +1,10 @@
+:root {
+      --theme-background-color: #d9c885;
+      --theme-font-color: #101010;
+      --theme-sub-color: #7e744d;
+      --theme-sub-font-color: #fae69b;
+      --theme-sub-link-color: #fcfbf7;
+      --theme-banner-image: url('/img/banner_riding.jpg');
+      --theme-link-color: #68570f;
+}
+

@@ -1,10 +1,8 @@
 :root {
-      --theme-background-color: #81AA4B;
-      --theme-font-color: #0e0f43;
+      --theme-background-color: #81AA4B; /*9ec868*/
       --theme-sub-color: #526d30;
       --theme-sub-font-color: #dbfbb1;
       --theme-sub-link-color: #fcd76d;
       --theme-banner-image: url('/img/banner_hiking.jpg');
-      --theme-link-color: #12148d;
 }
 

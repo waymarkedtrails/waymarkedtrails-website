@@ -1,0 +1,9 @@
+:root {
+      --theme-background-color: #353d6b;
+      --theme-font-color: #bfdcdb;
+      --theme-sub-color: #161a2d;
+      --theme-sub-font-color: #c9cdd2;
+      --theme-sub-link-color: #c4fffd;
+      --theme-banner-image: url('/img/banner_mtb.jpg');
+      --theme-link-color: #3d53d5;
+}
