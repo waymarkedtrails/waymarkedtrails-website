@@ -108,7 +108,7 @@
 
 
 <Collapsible title={$_('elevation.title')} init_collapsed={false}>
-    <ElevationView osm_type={osm_type} osm_id={osm_id} />
+    <ElevationView osm_type={osm_type} osm_id={osm_id} length={route.mapped_length} />
 </Collapsible>
 
 {#if route.subroutes}

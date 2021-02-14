@@ -31,6 +31,7 @@
         "type" : {
             "relation" : "Relation",
             "way" : "Way",
+            "wayset" : "Wayset",
             "node" : "Node",
             "guidepost" : "Guidepost"
         },

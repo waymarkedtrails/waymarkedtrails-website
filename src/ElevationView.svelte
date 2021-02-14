@@ -7,6 +7,7 @@
 
     export let osm_type;
     export let osm_id;
+    export let length = 0;
 
     let profile;
     let fail_message = '';
@@ -50,7 +51,7 @@
 {#if fail_message}
 {fail_message}
 {:else if profile}
-{#if profile.length && profile.length * 1.1 < profile.end_position}
+{#if length > 0 && length * 1.1 < profile.end_position}
 <p class="warn-unsorted">{$_('elevation.warn_unsorted')}</p>
 {/if}
 <div>

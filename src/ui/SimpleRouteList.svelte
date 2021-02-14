@@ -5,15 +5,15 @@
     import {highlight_route, unhighlight_route } from '../map/LayerVectorData.svelte';
 
     function show_route(route) {
-        show_page('route', [['id', route.id]]);
+        show_page('route', [['id', route.id], ['type', route.type]]);
     }
 
-    function begin_hover(route_id) {
+    function begin_hover(route_id, route_type) {
         set_map_details_visible(false);
-        highlight_route(route_id);
+        highlight_route(route_id, route_type);
     }
 
-    function end_hover(route_id) {
+    function end_hover() {
         set_map_details_visible(true);
         unhighlight_route();
     }
@@ -70,7 +70,7 @@
 {#if route_data}
 {#each route_data as route}
     <li>
-        <button type="button" class="btn-outline-dark" on:click|preventDefault={callback(route)} on:mouseenter={() => begin_hover(route.id)} on:mouseleave={() => end_hover(route.id)}>
+        <button type="button" class="btn-outline-dark" on:click|preventDefault={callback(route)} on:mouseenter={() => begin_hover(route.id, route.type)} on:mouseleave={end_hover}>
         <div class="main-info">
             <span class="route-symbol">
             {#if route.icon}

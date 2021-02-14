@@ -30,20 +30,32 @@
         }
     }
 
-    export function highlight_route(rid) {
+    export function highlight_route(rid, rtype) {
         if (is_vtiles_active()) {
             vtile_layer.setStyle(function(feature, resolution) {
                 let prop = feature.getProperties();
-                if ((prop.top_relations && prop.top_relations.indexOf(rid) >= 0)
-                    || (prop.child_relations && prop.child_relations.indexOf(rid) >= 0)) {
-                    return highlight_stroke;
+                if (rtype === 'relation') {
+                    if (prop.type === 'way' &&
+                        (((prop.top_relations && prop.top_relations.indexOf(rid) >= 0)
+                        || (prop.child_relations && prop.child_relations.indexOf(rid) >= 0)))) {
+                        return highlight_stroke;
+                    }
+                } else {
+                    if (prop.type =='wayset' &&
+                        ((rtype === 'way' && prop.way_id == rid)
+                         || (rtype === 'wayset' && prop.wayset_ids && prop.wayset_ids.indexOf(rid) >= 0))) {
+                        return highlight_stroke;
+                    }
                 }
 
                 return null;
             });
         } else {
+            if (rtype === 'wayset') {
+                rtype = 'way';
+            }
             vector_layer.setStyle(function(feature, resolution) {
-                if (feature.getId() === 'r' + rid) {
+                if (feature.getId() == rid && feature.getProperties().type == rtype) {
                     return highlight_stroke;
                 }
 

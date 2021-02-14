@@ -78,7 +78,7 @@
         {#if fail_message}
             {$_('error.panel_title')}
         {:else if osm_type}
-            <a target="_new" href="https://openstreetmap.org/{osm_type}/{osm_id}">{title}</a>
+            <a target="_new" href="https://openstreetmap.org/{osm_type === 'wayset' ? 'way' : osm_type}/{osm_id}">{title}</a>
         {:else}
             {title}
         {/if}
