@@ -1,12 +1,34 @@
 <script>
     import { onMount } from 'svelte';
     import { HELP } from './config.js';
-    import { page_state }  from './app_state.js';
+    import { page_state, show_page }  from './app_state.js';
 
     let content;
+    let helpbox;
 
     onMount(async () => {
-        content = await import('./i18n/help.en.yaml');
+        content = await import('./i18n/help.en.yaml')
+
+        const handle_any_click = (event) => {
+          if (helpbox && !helpbox.contains(event.target)) {
+            show_page('');
+          }
+        };
+
+        const handle_esc = (event) => {
+          if (helpbox && event.key === 'Escape') {
+            show_page('');
+          }
+        };
+
+        document.addEventListener('click', handle_any_click, false);
+        document.addEventListener('keyup', handle_esc, false);
+
+        return () => {
+            document.removeEventListener('click', handle_any_click, false);
+            document.removeEventListener('keyup', handle_esc, false);
+    };
+
     });
 </script>
 
@@ -51,7 +73,7 @@
     }
 </style>
 
-<div class="helppanel">
+<div class="helppanel" bind:this={helpbox}>
 {#if content}
     <nav class="nav flex-column">
         {#each HELP as part}
