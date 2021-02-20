@@ -5,32 +5,6 @@ body {
     font-family: Helvetica,Arial,sans-serif
 }
 
-#map-attribution button {
-    display: none
-}
-
-#map-attribution .map-attribution {
-    position: relative;
-    background: none;
-    padding: 0;
-}
-
-#map-attribution ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0
-}
-
-#map-attribution li {
-    display: inline;
-    list-style: none;
-    margin-right: 5px
-}
-
-#map-attribution a {
-    color: var(--theme-sub-link-color);
-}
-
 a {
     color: var(--theme-link-color);
 }

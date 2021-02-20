@@ -13,6 +13,7 @@
     import MapLayerVectorData from './map/LayerVectorData.svelte';
     import MapGeolocateLayer, { enable_geolocation } from './map/LayerGeolocate.svelte';
     import MapLayerElevation from './map/LayerElevation.svelte';
+    import MapAttribution from './map/MapAttribution.svelte';
     import Headline from './Headline.svelte';
     import PageFooter from './PageFooter.svelte';
     import PanelRouteList from './PanelRouteList.svelte';
@@ -48,16 +49,13 @@
 </script>
 
 <style>
-
-.screen {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%
-
-}
-
+    .screen {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%
+    }
 </style>
 
 <svelte:head>
@@ -72,7 +70,7 @@ Loading...
 <div class="screen">
 <Headline>
   <span slot="subleft"><UpdateInfo /></span>
-  <span slot="subright"><span id="map-attribution"></span></span>
+  <span slot="subright"><MapAttribution /></span>
 </Headline>
 
 <Map>
