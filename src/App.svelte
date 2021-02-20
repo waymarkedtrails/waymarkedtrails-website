@@ -15,7 +15,7 @@
     import MapLayerElevation from './map/LayerElevation.svelte';
     import MapAttribution from './map/MapAttribution.svelte';
     import Headline from './Headline.svelte';
-    import PageFooter from './PageFooter.svelte';
+    import Footer from './Footer.svelte';
     import PanelRouteList from './PanelRouteList.svelte';
     import PanelRouteDetails from './PanelRouteDetails.svelte';
     import PanelSettings from './PanelSettings.svelte';
@@ -90,7 +90,7 @@ Loading...
 </Map>
 
 
-<PageFooter>
+<Footer>
     <SearchForm />
     <div class="btn-group" role="group">
         <ButtonFooter title={$_('settings.title')} on:click={() => show_page('settings')}><SvgGear /></ButtonFooter>
@@ -100,7 +100,7 @@ Loading...
     <div class="btn-group" role="group">
         <ButtonFooter on:click={() => show_page('routelist')}>{$_('routelist.title')}</ButtonFooter>
     </div>
-</PageFooter>
+</Footer>
 </div>
 
 {#if sidepanel.startsWith('help')}<PanelHelp />{/if}
