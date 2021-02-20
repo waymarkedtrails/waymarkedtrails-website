@@ -57,10 +57,9 @@
 
 <style>
     div {
-        position: absolute;
-        top: var(--headline-total-height);
-        bottom: 0;
+        position: relative;
         width: 100%;
+        flex-grow: 1;
     }
 </style>
 

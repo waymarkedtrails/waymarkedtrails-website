@@ -1,7 +1,3 @@
-:root {
-     --headline-total-height: 70px;
-}
-
 body {
     margin : 0;
     padding : 0;
@@ -15,11 +11,14 @@ body {
 
 #map-attribution .map-attribution {
     position: relative;
-    background: none
+    background: none;
+    padding: 0;
 }
 
 #map-attribution ul {
-    display: inline-block
+    display: inline-block;
+    margin: 0;
+    padding: 0
 }
 
 #map-attribution li {

@@ -14,8 +14,8 @@
 <style>
   .sidepanel {
     position: absolute;
-    top: calc(var(--headline-total-height) + 5px);
-    bottom: 50px;
+    top: 5px;
+    height: 100%;
     right: 0;
     min-height: 34px;
     border-style: solid;
@@ -23,7 +23,7 @@
     width: 24em;
     max-width: 40%;
     background-color: white;
-    box-shadow: -5px 0 5px rgba(0,0,0,0.15)
+    box-shadow: -5px 0 5px rgba(0,0,0,0.15);
   }
 
 

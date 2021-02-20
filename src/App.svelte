@@ -47,6 +47,19 @@
     }
 </script>
 
+<style>
+
+.screen {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%
+
+}
+
+</style>
+
 <svelte:head>
   <link rel="shortcut icon" href="/img/map_{TITLE}.ico" />
 </svelte:head>
@@ -56,6 +69,12 @@
 {#if $isLoading}
 Loading...
 {:else}
+<div class="screen">
+<Headline>
+  <span slot="subleft"><UpdateInfo /></span>
+  <span slot="subright"><span id="map-attribution"></span></span>
+</Headline>
+
 <Map>
   <MapXYZLayer {...BASEMAPS[$basemap_id]} title={$_('settings.base_map')} opacity={$map_opacity_base}/>
   <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={$map_opacity_shade} title={$_('attribution.elevation_title')} attribution='<a href= "/help/acknowledgements">SRTM/ASTER</a>' />
@@ -64,12 +83,14 @@ Loading...
   <MapLayerRouteDetails />
   <MapLayerVectorData />
   <MapLayerElevation />
+
+  {#if sidepanel === 'settings'}<PanelSettings/>{/if}
+  {#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
+  {#if sidepanel === 'route'}<PanelRouteDetails />{/if}
+  {#if sidepanel === 'search'}<PanelSearch />{/if}
+  {#if sidepanel === 'guidepost'}<PanelGuidepost />{/if}
 </Map>
 
-<Headline>
-  <span slot="subleft"><UpdateInfo /></span>
-  <span slot="subright"><span id="map-attribution"></span></span>
-</Headline>
 
 <PageFooter>
     <SearchForm />
@@ -82,11 +103,8 @@ Loading...
         <ButtonFooter on:click={() => show_page('routelist')}>{$_('routelist.title')}</ButtonFooter>
     </div>
 </PageFooter>
+</div>
 
-{#if sidepanel === 'settings'}<PanelSettings/>{/if}
-{#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
-{#if sidepanel === 'route'}<PanelRouteDetails />{/if}
-{#if sidepanel === 'search'}<PanelSearch />{/if}
-{#if sidepanel === 'guidepost'}<PanelGuidepost />{/if}
 {#if sidepanel.startsWith('help')}<PanelHelp />{/if}
+
 {/if}
