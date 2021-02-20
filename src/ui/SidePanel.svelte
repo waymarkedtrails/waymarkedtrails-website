@@ -17,11 +17,10 @@
     top: 5px;
     height: 100%;
     right: 0;
-    min-height: 34px;
     border-style: solid;
     border-width: 1px;
     width: 24em;
-    max-width: 40%;
+    max-width: 48%;
     background-color: white;
     box-shadow: -5px 0 5px rgba(0,0,0,0.15);
     z-index: 2

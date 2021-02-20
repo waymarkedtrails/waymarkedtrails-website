@@ -20,17 +20,19 @@
     const getMap = getContext('olContext');
     const map = getMap();
 
-    const marker = new Feature({
-        style : new Style({
-            image: new Icon({
-                anchor: [0.5, 0],
-                anchorXUnits: 'fraction',
-                anchorYUnits: 'fraction',
-                opacity: 0.75,
-                src: MEDIA_URL + '/img/marker.png'
-            })
-       })
+    const marker = new Feature();
+
+    const style = new Style({
+        image: new Icon({
+            anchor: [0.5, 1],
+            anchorXUnits: 'fraction',
+            anchorYUnits: 'fraction',
+            opacity: 0.75,
+            src: MEDIA_URL + 'img/marker.png'
+        })
     });
+
+    marker.setStyle(style);
 
     map.addLayer(new VectorLayer({
         source: new VectorSource({

@@ -14,7 +14,6 @@
     import { get_mapview } from './util/saved_state.js';
     import { get} from 'svelte/store';
 
-    import 'ol/ol.css';
     import {Map, View} from 'ol';
     import {transform} from 'ol/proj';
     import {Attribution, defaults as defaultControls} from 'ol/control';
