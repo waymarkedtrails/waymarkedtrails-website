@@ -70,7 +70,7 @@
         color: #777;
     }
 
-    .description {
+    .description, .note {
         margin: 3px
     }
 
@@ -82,6 +82,11 @@
         list-style: none;
         margin: 2px;
         padding: 0;
+    }
+
+    .weblinks {
+        padding: 10px;
+        display: flex;
     }
 </style>
 
@@ -105,7 +110,7 @@
 </dl>
 
 
-<div>
+<div class="weblinks">
     <DetailsWeblink title={$_('details.website')} url={route.url} />
     <DetailsWeblink title={$_('details.wikipedia')} url={route.wiki_url} />
 </div>

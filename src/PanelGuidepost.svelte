@@ -64,7 +64,7 @@
 {#if guidepost.description}<p>{guidepost.description}</p>{/if}
 {#if guidepost.note}<p><i>{$_('details.note')}:</i> {guidepost.note}<p>{/if}
 
-<div>
+<div class="weblinks">
     <DetailsWeblink title={$_('details.website')} url={guidepost.url} />
     <DetailsWeblink title={$_('details.wikipedia')} url={guidepost.wiki_url} />
 </div>
