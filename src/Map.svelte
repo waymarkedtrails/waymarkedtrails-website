@@ -16,7 +16,7 @@
 
     import {Map, View} from 'ol';
     import {transform} from 'ol/proj';
-    import {Attribution, defaults as defaultControls} from 'ol/control';
+    import {Attribution, ScaleLine, defaults as defaultControls} from 'ol/control';
 
     let component;
 
@@ -37,7 +37,8 @@
                       zoom: m.zoom,
                       maxZoom: 18
                   }),
-                  controls: defaultControls({attribution: false}).extend([attribution]),
+                  controls: defaultControls({attribution: false})
+                             .extend([attribution, new ScaleLine()]),
               });
 
         map.on('moveend', function(evt) {
