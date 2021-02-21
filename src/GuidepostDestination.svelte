@@ -11,7 +11,12 @@
     const loader = json_loader(function(json) {
         if (json.error) {
             fail_message = json.error;
-            return
+            return;
+        }
+
+        if (!json.data) {
+            fail_message = $_('destination_sign.no_data');
+            return;
         }
 
         for (let feat of json.data) {

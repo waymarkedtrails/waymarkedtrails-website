@@ -8,7 +8,7 @@
 
     $: {
         if (value) {
-            if (type == 'km') {
+            if (type === 'km') {
                 if (value < 1000) {
                     formatted_value = value;
                     unit = 'm';
@@ -19,6 +19,9 @@
                     formatted_value = (value/1000).toFixed(0);
                     unit = 'km';
                 }
+            } else if (type === 'ele') {
+                formatted_value = value.toFixed(2);
+                unit = 'm';
             } else {
                 formatted_value = value;
                 unit = ''

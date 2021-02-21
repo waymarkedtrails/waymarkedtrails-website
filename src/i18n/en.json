@@ -45,6 +45,7 @@
         "symbol" : "Symbol",
         "note" : "Note",
         "altitude" : "Altitude",
+        "image": "Image",
         "website" : "Website",
         "wikipedia" : "Wikipedia",
         "subroutes_title" : "Sections",
@@ -69,7 +70,8 @@
     },
     "destination_sign" : {
         "title" : "Destinations",
-        "more" : "More details"
+        "more" : "More details",
+        "no_data" : "No destination information available for this guidepost."
     },
     "search" : {
         "title" : "Search",

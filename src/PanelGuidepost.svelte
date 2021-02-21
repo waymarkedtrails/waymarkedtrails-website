@@ -44,30 +44,50 @@
     }));
 </script>
 
+<style>
+    .description, .note {
+        margin: 3px
+    }
+
+    .properties {
+        margin: 10px;
+    }
+
+    .weblinks {
+        padding: 10px;
+        display: flex;
+    }
+</style>
+
 <SidePanel osm_type="node" osm_id={osm_id} title="{$_('details.type.guidepost')} {osm_id}" fail_message={fail_message}>
 {#key guidepost}{#if guidepost}
 
 <DetailsHeader img_alt={$_('details.type.guidepost')} img_src="/img/guidepost.svg">
-    guidepost.name
+    {#if guidepost.name}
+        {guidepost.name}
+    {:else}
+        <i>{$_('details.type.guidepost')} {osm_id}</i>
+    {/if}
 </DetailsHeader>
 
 <div class="btn-group" role="group">
   <ButtonRouteZoom bbox={guidepost.location} />
 </div>
 
+{#if guidepost.description}<div class="description">{guidepost.description}</div>{/if}
 
-<DetailsPropertyList>
-    <DetailsPropertyItem title={$_('details.altitude')} value="{guidepost.ele}m" />
+<dl class="properties">
+    <DetailsPropertyItem title={$_('details.altitude')} value="{guidepost.ele}" />
     <DetailsPropertyItem title={$_('details.operator')} value={guidepost.tags.operator} />
-</DetailsPropertyList>
-
-{#if guidepost.description}<p>{guidepost.description}</p>{/if}
-{#if guidepost.note}<p><i>{$_('details.note')}:</i> {guidepost.note}<p>{/if}
+</dl>
 
 <div class="weblinks">
+    <DetailsWeblink title={$_('details.image')} url={guidepost.image} />
     <DetailsWeblink title={$_('details.website')} url={guidepost.url} />
     <DetailsWeblink title={$_('details.wikipedia')} url={guidepost.wiki_url} />
 </div>
+
+{#if guidepost.note}<div class="note"><i>{$_('details.note')}:</i> {guidepost.note}</div>{/if}
 
 <Collapsible title={$_('destination_sign.title')} init_collapsed={true}>
     <GuidepostDestination osm_id={osm_id} />
