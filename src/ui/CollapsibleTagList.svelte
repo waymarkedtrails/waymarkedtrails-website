@@ -17,16 +17,26 @@
 </script>
 
 <style>
-    td {
-        padding: 0 5px;
+    table {
+        width: 100%;
+        padding: 0 5px
+    }
+
+    th {
+        text-align: left;
+    }
+
+    .even {
+        background-color: #f3f3f3;
     }
 </style>
 
 
-<Collapsible title={$_('details.tags_title')}>
+<Collapsible title={$_('details.tags.title')}>
     <table>
-        {#each keys as key}
-            <tr><td>{key}</td><td>{tags[key]}</td></tr>
+        <tr><th>{$_('details.tags.key')}</th><th>{$_('details.tags.value')}</th></tr>
+        {#each keys as key, idx}
+            <tr class={idx % 2 === 0 ? "even" : "odd"}><td>{key}</td><td>{tags[key]}</td></tr>
         {/each}
     </table>
 </Collapsible>

@@ -49,7 +49,11 @@
         "wikipedia" : "Wikipedia",
         "subroutes_title" : "Sections",
         "superroutes_title" : "Part of",
-        "tags_title" : "OpenStreetMap tags"
+        "tags" : {
+            "title" : "OpenStreetMap tags",
+            "key" : "key",
+            "value": "value"
+        }
     },
     "elevation" : {
         "unavailable" : "No elevation data found.",
