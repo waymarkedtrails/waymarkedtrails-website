@@ -59,7 +59,6 @@
 
     .title-line {
         display: flex;
-        justify-content: space-between;
         width: 100%
     }
 
@@ -68,13 +67,16 @@
         text-overflow: ellipsis;
         overflow: hidden;
         text-align: left;
+        flex: 1 1 auto;
+        width: 5px;
     }
 
     .route-ref {
+        white-space: nowrap;
         padding-left: 2px;
         color: rgb(90, 90, 150);
         font-family: mono;
-        flex: none
+        flex: 0 0 2px;
     }
 
 </style>
@@ -92,8 +94,8 @@
         </div>
         <div class="main-info">
             <div class="title-line">
-                <span class="route-title">{route.title}</span>
-                <span class="route-ref">{route.ref || ''}</span>
+                <div class="route-title">{route.title}</div>
+                <div class="route-ref">{route.ref || ''}</div>
             </div>
             {#if route.subtitle}
             <div class="subtitle">{route.subtitle}</div>

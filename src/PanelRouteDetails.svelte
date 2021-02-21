@@ -70,14 +70,18 @@
         color: #777;
     }
 
-    ul {
-        list-style: none;
-        margin: 2px -5px;
-        padding: 0;
+    .description {
+        margin: 3px
     }
 
-    .btn-group {
-        width: 100%
+    .properties {
+        margin: 10px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 2px;
+        padding: 0;
     }
 </style>
 
@@ -91,21 +95,22 @@
 
 <ItineraryLine itinerary={route.itinerary} />
 
-<DetailsPropertyList>
-    <DetailsPropertyItem title="Ref" value={route.ref} />
-    <DetailsPropertyItem title={$_('details.mapped_len')} value={route.mapped_length} />
-    <DetailsPropertyItem title={$_('details.official_len')} value={route.official_length} />
+{#if route.description}<div class="description">{route.description}</div>{/if}
+
+<dl class="properties">
+    <DetailsPropertyItem title={$_('details.mapped_len')} value={route.mapped_length} type="km" />
+    <DetailsPropertyItem title={$_('details.official_len')} value={route.official_length} type="km" />
     <DetailsPropertyItem title={$_('details.operator')} value={route.operator} />
     <DetailsPropertyItem title={$_('details.symbol')} value={route.symbol} />
-</DetailsPropertyList>
+</dl>
 
-{#if route.description}<p>{route.description}</p>{/if}
-{#if route.note}<p><i>{$_('details.note')}:</i> {route.note}<p>{/if}
 
 <div>
     <DetailsWeblink title={$_('details.website')} url={route.url} />
     <DetailsWeblink title={$_('details.wikipedia')} url={route.wiki_url} />
 </div>
+
+{#if route.note}<div class="note"><i>{$_('details.note')}:</i> {route.note}</div>{/if}
 
 <Collapsible title={$_('elevation.title')} init_collapsed={true}>
     <ElevationView osm_type={osm_type} osm_id={osm_id} length={route.mapped_length} />

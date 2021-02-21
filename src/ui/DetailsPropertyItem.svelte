@@ -1,19 +1,46 @@
 <script>
     export let title = '';
     export let value;
+    export let type = '';
+
+    let formatted_value;
+    let unit;
+
+    $: {
+        if (value) {
+            if (type == 'km') {
+                if (value < 1000) {
+                    formatted_value = value;
+                    unit = 'm';
+                } else if (value < 10000) {
+                    formatted_value = (value/1000).toFixed(2);
+                    unit = 'km';
+                } else {
+                    formatted_value = (value/1000).toFixed(0);
+                    unit = 'km';
+                }
+            } else {
+                formatted_value = value;
+                unit = ''
+            }
+        }
+    }
+
 </script>
 
 <style>
-    dt {
-        padding-right: 5px;
-        float: left;
+    .title {
+        font-weight: bold;
+        float: left
     }
 
-    dd {
-        margin: 0
+    .value {
+        overflow: auto;
+        padding-left: 8px;
+        margin-bottom: 4px
     }
 </style>
 
 {#if value}
-<dt>{title}:</dt><dd>{value}</dd>
+<dt class="title">{title}:</dt><dd class="value">{formatted_value}&thinsp;{unit}</dd>
 {/if}
