@@ -46,6 +46,16 @@
         font-style: italic;
         margin: 0
     }
+
+    .total {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .total span {
+        padding-left: 10px
+    }
 </style>
 
 {#if fail_message}
@@ -59,8 +69,10 @@
 <D3ElevationProfile data={profile} width="100%" height="200" y_axis_width="55"/>
 <div class="distance diagram-label">{$_('elevation.diagram.distance')}</div>
 </div>
-<p>{$_('elevation.ascent')}: {profile.ascent}m</p>
-<p>{$_('elevation.descent')}: {profile.descent}m</p>
+<div class="total">{$_('elevation.total')}:
+    <span>↗ {profile.ascent}m</span>
+    <span>↘ {profile.descent}m</span>
+</div>
 {:else}
     <HourGlass />
 {/if}

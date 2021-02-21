@@ -7,6 +7,7 @@ body {
 
 a {
     color: var(--theme-link-color);
+    text-decoration: none
 }
 
 .btn-primary {

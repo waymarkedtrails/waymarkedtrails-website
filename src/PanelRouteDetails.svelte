@@ -6,8 +6,6 @@
     import SidePanel from './ui/SidePanel.svelte';
     import { json_loader } from './util/load_json.js';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
-    import ButtonRouteZoom from './ui/ButtonRouteZoom.svelte';
-    import ButtonRouteDownload from './ui/ButtonRouteDownload.svelte';
     import Collapsible from './ui/Collapsible.svelte';
     import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
@@ -17,6 +15,7 @@
     import DetailsWeblink from './ui/DetailsWeblink.svelte';
     import ElevationView from './ElevationView.svelte';
     import ItineraryLine from './ui/ItineraryLine.svelte';
+    import DetailsFooter from './ui/DetailsFooter.svelte';
 
     let osm_type = '';
     let osm_id = '';
@@ -108,15 +107,7 @@
     <DetailsWeblink title={$_('details.wikipedia')} url={route.wiki_url} />
 </div>
 
-<div class="btn-group" role="group">
-  <ButtonRouteZoom bbox={route.bbox} />
-  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="gpx">{$_('details.GPX')}</ButtonRouteDownload>
-  <ButtonRouteDownload route_type={osm_type} route_id={osm_id} format="kml">{$_('details.KML')}</ButtonRouteDownload>
-</div>
-
-
-
-<Collapsible title={$_('elevation.title')} init_collapsed={false}>
+<Collapsible title={$_('elevation.title')} init_collapsed={true}>
     <ElevationView osm_type={osm_type} osm_id={osm_id} length={route.mapped_length} />
 </Collapsible>
 
@@ -133,6 +124,10 @@
 {/if}
 
 <CollapsibleTagList tags={route.tags} />
-
 {/if}{/key}
+
+<div slot="footer">
+    <DetailsFooter {route} />
+<div>
+
 </SidePanel>

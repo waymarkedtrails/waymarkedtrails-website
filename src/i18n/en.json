@@ -60,7 +60,8 @@
             "distance" : "Distance (km)"
         },
         "ascent" : "Accumulated ascent",
-        "descent" : "Accumulated descent"
+        "descent" : "Accumulated descent",
+        "total" : "Total elevation"
     },
     "destination_sign" : {
         "title" : "Destinations",

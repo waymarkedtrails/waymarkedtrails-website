@@ -57,6 +57,10 @@
     overflow: hidden;
     font-size: small;
   }
+
+  .sidepanel-footer {
+    margin-top: 2px;
+  }
 </style>
 
 
@@ -74,6 +78,7 @@
         </span>
         <PanelButton on:click={() => show_page()}><SVGClose /></PanelButton>
     </h3>
+    <div class="sidepanel-footer"><slot name="footer"></slot></div>
     <div class="sidepanel-content">
         {#if fail_message}
             {fail_message}
