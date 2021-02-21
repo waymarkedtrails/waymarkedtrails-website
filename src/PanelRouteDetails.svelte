@@ -65,6 +65,11 @@
 </script>
 
 <style>
+    .subtitle {
+        font-size: smaller;
+        color: #777;
+    }
+
     ul {
         list-style: none;
         margin: 2px -5px;
@@ -79,7 +84,10 @@
 <SidePanel osm_type={osm_type} osm_id={osm_id} title="{$_('details.type.' + osm_type)} {osm_id}" fail_message={fail_message}>
 {#key route}{#if route}
 
-<DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{API_URL}/symbols/id/{route.symbol_id}" title={make_route_title(route)} />
+<DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{API_URL}/symbols/id/{route.symbol_id}" ref={route.ref}>
+    {make_route_title(route)}
+    {#if route.local_name}<div class="subtitle">{route.name}</div>{/if}
+</DetailsHeader>
 
 <p>{#if route.itinerary}{route.itinerary.join(' - ')}{/if}</p>
 
