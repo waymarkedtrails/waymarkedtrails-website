@@ -10,7 +10,6 @@
 
     function handleClick(ev) {
         if (headline_div.clientWidth <= 650) {
-            console.log("AAAA");
             show_maplink_menu = !show_maplink_menu;
         }
     }

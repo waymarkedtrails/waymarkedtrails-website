@@ -2,6 +2,6 @@
     export let title = '';
 </script>
 
-<button title={title} type="button" class="btn btn-secondary" on:click>
+<button class="btn-primary" title={title} type="button" on:click>
 <slot></slot>
 </button>

@@ -5,34 +5,36 @@
 
     export let route_data;
     export let groups;
-
-    function show_route(route_id) {
-        show_page('route', [['id', route_id]]);
-    }
 </script>
 
 <style>
     ul {
         list-style: none;
-        margin: 2px -5px;
         padding: 0;
+        margin: 0;
     }
 
     .divider {
         background-color: var(--theme-background-color);
         color: var(--theme-font-color);
-        font-weight: bold
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .divider:first-of-type {
+        margin-top: 0;
     }
 </style>
 
 {#if route_data}
     <ul>
-    {#each groups as group}
-        {#if route_data.get(group.id).length > 0}
-            <li class="divider">{$_(group.label)}</li>
-            <SimpleRouteList route_data={route_data.get(group.id)} />
-        {/if}
-    {/each}
+        {#each groups as group}
+            {#if route_data.get(group.id).length > 0}
+                <li class="divider">{$_(group.label)}</li>
+                <SimpleRouteList route_data={route_data.get(group.id)} />
+            {/if}
+        {/each}
     </ul>
 {/if}
 

@@ -27,34 +27,14 @@
         width: 100%;
         border: none;
         padding-left: 5px;
+        background: #f8f8f8;
+        margin-bottom: 2px;
+        display:flex;
+        justify-content: space-between;
     }
 
-    .main-info {
-        display: flex;
-        align-items: baseline;
-    }
-
-    .subtitle {
-        text-align: left;
-        margin-top: -5px;
-        text-size: smaller;
-        color: #777;
-        margin-left: 45px;
-    }
-
-    .route-title {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        text-align: left;
-        flex: auto
-    }
-
-    .route-ref {
-        flex: none;
-        padding-left: 2px;
-        color: rgb(90, 90, 150);
-        font-familiy: mono
+    button:hover {
+        background: #ddd;
     }
 
     img {
@@ -65,26 +45,60 @@
     .route-symbol {
         flex: 0 0 45px;
     }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-start
+    }
+
+    .subtitle {
+        color: #777;
+    }
+
+    .title-line {
+        display: flex;
+        justify-content: space-between;
+        width: 100%
+    }
+
+    .route-title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .route-ref {
+        padding-left: 2px;
+        color: rgb(90, 90, 150);
+        font-family: mono;
+        flex: none
+    }
+
 </style>
 
 {#if route_data}
 {#each route_data as route}
     <li>
-        <button type="button" class="btn-outline-dark" on:click|preventDefault={callback(route)} on:mouseenter={() => begin_hover(route.id, route.type)} on:mouseleave={end_hover}>
-        <div class="main-info">
-            <span class="route-symbol">
+        <button type="button" on:click|preventDefault={callback(route)} on:mouseenter={() => begin_hover(route.id, route.type)} on:mouseleave={end_hover}>
+        <div class="route-symbol">
             {#if route.icon}
                 <img alt="place icon" src="{route.icon}" />
             {:else}
                 <img alt="route symbol" src="{API_URL}/symbols/id/{route.symbol_id}" />
             {/if}
-            </span>
-            <span class="route-title">{route.title}</span>
-            <span class="route-ref">{route.ref || ''}</span>
         </div>
-        {#if route.subtitle}
+        <div class="main-info">
+            <div class="title-line">
+                <span class="route-title">{route.title}</span>
+                <span class="route-ref">{route.ref || ''}</span>
+            </div>
+            {#if route.subtitle}
             <div class="subtitle">{route.subtitle}</div>
-        {/if}
+            {/if}
+        </div>
     </li>
 {/each}
 {/if}

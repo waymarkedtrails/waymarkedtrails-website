@@ -9,6 +9,23 @@ a {
     color: var(--theme-link-color);
 }
 
+.btn-primary {
+    background-color: var(--theme-button-background);
+    color: var(--theme-button-color);
+    font-size: 18px;
+    padding: 8px 12px;
+    border-color: #bbb;
+}
+
+.panel-heading {
+    background-color: var(--theme-background-color);
+    color: var(--theme-font-color);
+    font-size: small;
+    font-weight: bold;
+    padding: 2px;
+    margin: 10px 0px;
+}
+
 .ol-rotate {
     display: none
 }
@@ -16,6 +33,7 @@ a {
 .ol-zoom button {
     background-color: var(--theme-button-background);
     color: var(--theme-button-color);
+    padding: 5px 7px;
 }
 
 .ol-zoom {

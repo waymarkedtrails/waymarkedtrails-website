@@ -1,9 +1,13 @@
 <style>
     button {
-        margin: 2px
+        background-color: #999;
+        color: white;
+        font-size: 21px;
+        padding: 7px 6px 2px 7px;
+        border-color: #bbb;
     }
 </style>
 
-<button type="button" class="btn btn-outline-dark btn-sm" on:click>
+<button type="button" on:click>
   <slot></slot>
 </button>
