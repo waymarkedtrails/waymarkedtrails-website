@@ -7,7 +7,7 @@
 <style>
     h1 {
         display: flex;
-        margin: 3px;
+        margin: 9px 3px;
         font-size: 21px;
     }
 

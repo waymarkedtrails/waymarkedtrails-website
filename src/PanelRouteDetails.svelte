@@ -16,6 +16,7 @@
     import DetailsHeader from './ui/DetailsHeader.svelte';
     import DetailsWeblink from './ui/DetailsWeblink.svelte';
     import ElevationView from './ElevationView.svelte';
+    import ItineraryLine from './ui/ItineraryLine.svelte';
 
     let osm_type = '';
     let osm_id = '';
@@ -89,7 +90,7 @@
     {#if route.local_name}<div class="subtitle">{route.name}</div>{/if}
 </DetailsHeader>
 
-<p>{#if route.itinerary}{route.itinerary.join(' - ')}{/if}</p>
+<ItineraryLine itinerary={route.itinerary} />
 
 <DetailsPropertyList>
     <DetailsPropertyItem title="Ref" value={route.ref} />
