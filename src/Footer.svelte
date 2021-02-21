@@ -37,6 +37,6 @@
         <ButtonFooter title={$_('help')} on:click={() => show_page(sidepanel.startsWith('help')?'':'help-about')}><SvgInfo /></ButtonFooter>
     </div>
     <div>
-        <ButtonFooter on:click={() => show_page('routelist')}>{$_('routelist.title')}</ButtonFooter>
+        <ButtonFooter on:click={() => show_page(sidepanel === 'routelist' ? '' : 'routelist')}>{$_('routelist.title')}</ButtonFooter>
     </div>
 </div>
