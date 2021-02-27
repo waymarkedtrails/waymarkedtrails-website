@@ -55,6 +55,7 @@
 
     .subtitle {
         color: #777;
+        text-align: left
     }
 
     .title-line {
@@ -88,7 +89,7 @@
         <div class="route-symbol">
             {#if route.icon}
                 <img alt="place icon" src="{route.icon}" />
-            {:else}
+            {:else if route.symbol_id}
                 <img alt="route symbol" src="{API_URL}/symbols/id/{route.symbol_id}" />
             {/if}
         </div>

@@ -75,11 +75,11 @@
 </style>
 
 <SidePanel title="{$_('search.title')}: '{query}'" fail_message={fail_message}>
-<h4>{$_('search.routes')}</h4>
+<h2 class="panel-heading">{$_('search.routes')}</h2>
 {#if route_results}
     <ul><SimpleRouteList route_data={route_results} /></ul>
 {/if}
-<h4>{$_('search.places')}</h4>
+<h2 class="panel-heading">{$_('search.places')}</h2>
 {#if place_results}
     <ul><SimpleRouteList route_data={place_results} callback={show_place} /></ul>
 {/if}
