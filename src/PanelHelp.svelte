@@ -39,14 +39,13 @@
         bottom: 50px;
         right: 10%;
         min-height: 34px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: lightgray;
+        border: 2px solid #b4b4b4;
         width: 80%;
         background-color: #f3f3f3;
         box-shadow: -5px 0 5px rgba(0,0,0,0.15);
         overflow: auto;
         display: flex;
+        padding: 5px 0px 5px 5px;
     }
 
     .content-frame {
@@ -61,16 +60,20 @@
         background-color: white
     }
 
-    h1.level-0 { font-size: 2.5rem; }
-    h1.level-1 { font-size: 2.1rem; }
-    .content :global(h2) { font-size: 1.7rem; }
-    .content :global(h3) { font-size: 1.4rem; }
-
-    nav a { padding: 2px 11px; }
+    nav a {
+        display: block;
+        white-space: nowrap;
+        padding: 2px 11px;
+    }
     nav a.level-1 {
         font-size: smaller;
         padding-left: 20px;
     }
+
+    h1.level-0 { font-size: 2.0rem; }
+    h1.level-1 { font-size: 1.8rem; }
+    .content :global(h2) { font-size: 1.6rem; }
+    .content :global(h3) { font-size: 1.3rem; }
 </style>
 
 <div class="helppanel" bind:this={helpbox}>
