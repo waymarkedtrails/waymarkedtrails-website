@@ -18,9 +18,8 @@
     .toolbar {
         display: flex;
         justify-content: space-between;
-        width: 100%;
         margin: 0;
-        padding: 4px 0;
+        padding: 4px;
         background-color: var(--theme-background-color);
     }
 

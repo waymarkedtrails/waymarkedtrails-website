@@ -30,17 +30,43 @@
 </script>
 
 <style>
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 8px 12px;
+        background-color: #f2f2f2;
+        boder-color: #ddd;
+    }
+
     .dropdown-menu {
-        min-width: 100%
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        margin-top: -2px;
+    }
+
+    .dropdown-menu :global(button) {
+        background-color: white;
+        border: none;
+        padding: 8px 12px;
+    }
+
+    .dropdown-menu :global(button:hover) {
+        background-color: #ddd;
     }
 </style>
 
 <div class="dropdown">
-  <button on:click={() => (expanded = !expanded)} class="btn btn-outline-dark btn-block" type="button" id="BaseMapButton" bind:this={menu_button}>
+  <button on:click={() => (expanded = !expanded)} type="button" id="BaseMapButton" bind:this={menu_button}>
  {title}
   </button>
   {#if expanded}
-  <div class="dropdown-menu show" aria-labelledby="BaseMapButton">
+  <div class="dropdown-menu" aria-labelledby="BaseMapButton">
     <slot></slot>
   </div>
   {/if}

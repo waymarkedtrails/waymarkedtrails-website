@@ -29,8 +29,14 @@
     });
 </script>
 
+<style>
+    .sliders {
+        width: 100%;
+    }
+</style>
+
 <SidePanel title={$_('settings.title')}>
-    <h4>{$_('settings.language')}</h4>
+    <h2 class="panel-heading">{$_('settings.language')}</h2>
 
     <DropdownList title={current_lang_title || $_('Use browser setting')}>
         <button class="dropdown-item" type="button" on:click={set_language}>{$_('Use browser setting')}</button>
@@ -39,7 +45,7 @@
         {/each}
     </DropdownList>
 
-    <h4>{$_('settings.base_map')}</h4>
+    <h2 class="panel-heading">{$_('settings.base_map')}</h2>
 
     <DropdownList title={BASEMAPS[$basemap_id].name}>
         {#each BASEMAPS as cfg, idx}
@@ -47,11 +53,11 @@
         {/each}
     </DropdownList>
 
-    <h4>{$_('settings.transparency')}</h4>
+    <h2 class="panel-heading">{$_('settings.transparency')}</h2>
 
-    <div class="container">
+    <table class="sliders">
       <OpacitySlider name="base" title={$_('settings.base_map')} bind:value={$map_opacity_base} />
       <OpacitySlider name="route" title={$_('settings.route_layer')} bind:value={$map_opacity_route} />
       <OpacitySlider name="shade" title={$_('settings.hillshading_layer')} bind:value={$map_opacity_shade} />
-    </div>
+    </table>
 </SidePanel>

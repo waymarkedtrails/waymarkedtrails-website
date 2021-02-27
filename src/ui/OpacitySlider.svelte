@@ -5,6 +5,10 @@
 </script>
 
 <style>
+    input[type=range] {
+        width: 100%
+    }
+
     input[type=range]::-webkit-slider-runnable-track {
       width: 100%;
       height: 8.4px;
@@ -52,13 +56,23 @@
     input[type=range]:focus::-ms-fill-upper {
       background: #367ebd;
     }
+
+    .label-col {
+        width: min-content;
+    }
+
+    .slider-col {
+        width: max-content;
+        padding: 0 8px
+    }
+
 </style>
 
-<div class="row">
-    <div class="col">
+<tr>
+    <td class="label-col">
         <label for="slider-{name}">{title}</label>
-    </div>
-    <div class="col">
+    </td>
+    <td class="slider-col">
         <input bind:value={value} id="slider-{name}" min="0" max="1.0" step="0.01" type="range">
-    </div>
-</div>
+    </td>
+</tr>
