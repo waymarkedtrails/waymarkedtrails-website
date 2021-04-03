@@ -1,3 +1,7 @@
+<script>
+    export let classes = '';
+</script>
+
 <style>
     button {
         background-color: #999;
@@ -8,6 +12,6 @@
     }
 </style>
 
-<button type="button" on:click>
+<button class={classes} type="button" on:click>
   <slot></slot>
 </button>
