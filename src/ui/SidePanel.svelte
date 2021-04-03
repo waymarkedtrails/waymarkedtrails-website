@@ -78,7 +78,6 @@
         </span>
         <PanelButton on:click={() => show_page()}><SVGClose /></PanelButton>
     </h3>
-    <div class="sidepanel-footer"><slot name="footer"></slot></div>
     <div class="sidepanel-content">
         {#if fail_message}
             {fail_message}
@@ -86,4 +85,5 @@
             <div class="sidepanel-page"><slot></slot></div>
         {/if}
     </div>
+    <div class="sidepanel-footer"><slot name="footer"></slot></div>
 </div>

@@ -17,7 +17,7 @@
 
     button, a {
         flex-grow: 1;
-        background-color: #f2f2f2;
+        background-color: #cecece;
         color: black;
         font-size: 16px;
         padding: 6px 0px;
