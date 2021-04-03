@@ -3,6 +3,7 @@ const config = JSON.parse(document.getElementById("WMTConfig").text);
 export const API_URL = config.API_URL;
 export const HELP = config.HELP;
 export const MEDIA_URL = config.MEDIA_URL;
+export const SYMBOL_URL = config.SYMBOL_URL;
 export const ROUTE_GROUPS = config.ROUTE_GROUPS;
 export const TILE_URL = config.TILE_URL;
 export const TITLE = config.TITLE;

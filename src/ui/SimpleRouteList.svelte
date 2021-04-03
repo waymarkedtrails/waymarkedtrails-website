@@ -90,7 +90,7 @@
             {#if route.icon}
                 <img alt="place icon" src="{route.icon}" />
             {:else if route.symbol_id}
-                <img alt="route symbol" src="{API_URL}/symbols/id/{route.symbol_id}" />
+                <img alt="route symbol" src="{API_URL}/symbols/id/{route.symbol_id}.svg" />
             {/if}
         </div>
         <div class="main-info">
