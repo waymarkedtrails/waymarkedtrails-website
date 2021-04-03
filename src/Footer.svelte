@@ -9,7 +9,7 @@
 
     import SvgGeoPin from './svg/GeoPin.svelte';
     import SvgGear from './svg/Gear.svelte';
-    import SvgInfo from './svg/Info.svelte';
+    import SvgQuestion from './svg/Question.svelte';
     import SVGListTask from './svg/ListTask.svelte';
     import SVGSearch from './svg/Search.svelte';
 
@@ -50,7 +50,7 @@
     <div>
         <ButtonFooter title={$_('settings.title')} on:click={() => show_page('settings')}><SvgGear /></ButtonFooter>
         <ButtonFooter title={$_('locate_me')} on:click={enable_geolocation}><SvgGeoPin /></ButtonFooter>
-        <ButtonFooter title={$_('help')} on:click={() => show_page(sidepanel.startsWith('help')?'':'help-about')}><SvgInfo /></ButtonFooter>
+        <ButtonFooter title={$_('help')} on:click={() => show_page(sidepanel.startsWith('help')?'':'help-about')}><SvgQuestion /></ButtonFooter>
     </div>
     <div>
         <ButtonFooter on:click={() => show_page(sidepanel === 'routelist' ? '' : 'routelist')}>
