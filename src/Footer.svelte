@@ -11,6 +11,7 @@
     import SvgGear from './svg/Gear.svelte';
     import SvgInfo from './svg/Info.svelte';
     import SVGListTask from './svg/ListTask.svelte';
+    import SVGSearch from './svg/Search.svelte';
 
     export let sidepanel = '';
 </script>
@@ -28,23 +29,24 @@
         display: flex;
     }
 
-    .mobile-yes {
+    .toolbar .mobile-yes {
         display: none
     }
 
     @media (max-width: 650px) {
-        .mobile-yes {
+        .toolbar .mobile-yes {
             display: unset
         }
 
-        .mobile-no {
+        .toolbar .mobile-no {
             display: none
         }
     }
 </style>
 
 <div class="toolbar" >
-    <div><SearchForm /></div>
+    <div class="mobile-no"><SearchForm /></div>
+    <div class="mobile-yes"><ButtonFooter title={$_('search.title')} on:click={() => show_page(sidepanel === 'search' ? '' : 'search')}><SVGSearch /></ButtonFooter></div>
     <div>
         <ButtonFooter title={$_('settings.title')} on:click={() => show_page('settings')}><SvgGear /></ButtonFooter>
         <ButtonFooter title={$_('locate_me')} on:click={enable_geolocation}><SvgGeoPin /></ButtonFooter>

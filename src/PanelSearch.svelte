@@ -2,6 +2,7 @@
     import { _ } from 'svelte-i18n';
     import { json_loader } from './util/load_json.js';
     import {transformExtent} from 'ol/proj';
+    import SearchForm from './ui/SearchForm.svelte';
     import SidePanel from './ui/SidePanel.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
     import { onDestroy } from 'svelte';
@@ -53,17 +54,17 @@
             return;
         }
 
+        fail_message = '';
+
         query = value.params.get('query');
         if (typeof query === 'undefined') {
-            fail_message = $_('error.missing_query');
             return;
         }
-
-        fail_message = '';
 
         route_search.load('/list/search', {query: query});
         place_search.load('/search.php', {q: query, format: 'jsonv2'});
     }));
+
 </script>
 
 <style>
@@ -72,16 +73,40 @@
         margin: 2px -5px;
         padding: 0;
     }
+
+    .search-input-div {
+        margin: 0px 12px;
+    }
+
+    .search-input-div :global(input) {
+        width: 100%
+    }
+
+    .search-input-div :global(button) {
+        background-color: #efefef;
+        color: black;
+        border-color: #eee;
+    }
+
+    @media (min-width: 650px) {
+        .search-input-div {
+            display: none
+        }
+    }
+
 </style>
 
-<SidePanel title="{$_('search.title')}: '{query}'" fail_message={fail_message}>
-<h2 class="panel-heading">{$_('search.routes')}</h2>
-{#if route_results}
-    <ul><SimpleRouteList route_data={route_results} /></ul>
-{/if}
-<h2 class="panel-heading">{$_('search.places')}</h2>
-{#if place_results}
-    <ul><SimpleRouteList route_data={place_results} callback={show_place} /></ul>
+<SidePanel title="{$_('search.title')}{query ? (': ' + query) : ''}" fail_message={fail_message}>
+<div class="search-input-div"><SearchForm /></div>
+{#if query}
+    <h2 class="panel-heading">{$_('search.routes')}</h2>
+    {#if route_results}
+        <ul><SimpleRouteList route_data={route_results} /></ul>
+    {/if}
+    <h2 class="panel-heading">{$_('search.places')}</h2>
+    {#if place_results}
+        <ul><SimpleRouteList route_data={place_results} callback={show_place} /></ul>
+    {/if}
 {/if}
 
 </SidePanel>
