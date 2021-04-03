@@ -10,6 +10,7 @@
     import SvgGeoPin from './svg/GeoPin.svelte';
     import SvgGear from './svg/Gear.svelte';
     import SvgInfo from './svg/Info.svelte';
+    import SVGListTask from './svg/ListTask.svelte';
 
     export let sidepanel = '';
 </script>
@@ -26,6 +27,20 @@
     .toolbar div {
         display: flex;
     }
+
+    .mobile-yes {
+        display: none
+    }
+
+    @media (max-width: 650px) {
+        .mobile-yes {
+            display: unset
+        }
+
+        .mobile-no {
+            display: none
+        }
+    }
 </style>
 
 <div class="toolbar" >
@@ -36,6 +51,9 @@
         <ButtonFooter title={$_('help')} on:click={() => show_page(sidepanel.startsWith('help')?'':'help-about')}><SvgInfo /></ButtonFooter>
     </div>
     <div>
-        <ButtonFooter on:click={() => show_page(sidepanel === 'routelist' ? '' : 'routelist')}>{$_('routelist.title')}</ButtonFooter>
+        <ButtonFooter on:click={() => show_page(sidepanel === 'routelist' ? '' : 'routelist')}>
+          <span class="mobile-yes"><SVGListTask /></span>
+          <span class="mobile-no">{$_('routelist.title')}</span>
+          </ButtonFooter>
     </div>
 </div>
