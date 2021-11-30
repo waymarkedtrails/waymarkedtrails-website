@@ -64,7 +64,7 @@ export default {
                  for (const section in data) {
                     for (const key in data[section]) {
                         if (key !== 'title') {
-                            data[section][key] = marked(data[section][key]);
+                            data[section][key] = marked.parse(data[section][key]);
                          }
                     }
                  }
