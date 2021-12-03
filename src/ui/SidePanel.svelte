@@ -41,14 +41,19 @@
         display: flex;
         background-color: #ccc;
         justify-content: space-between;
+        align-items: center;
         margin: 0;
-        padding: 3px;
+        padding: 0;
     }
 
     h3 span {
-        margin: auto;
+        padding: 4px;
+        flex-grow: 1;
         font-size: 20px;
-        font-weight: bold
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid white;
+        border-right: 1px solid #bbb;
     }
 
     .sidepanel-content {
@@ -90,7 +95,6 @@
 
 <div class="sidepanel" class:small={hidden}>
     <h3>
-        <PanelButton on:click={back}><SVGBack /></PanelButton>
         <PanelButton classes="smallonly" on:click={() => toggle_hidden()}>
             {#if hidden}<SVGArrowBottom />{:else}<SVGArrowTop />{/if}
         </PanelButton>

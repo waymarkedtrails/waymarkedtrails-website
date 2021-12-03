@@ -35,7 +35,7 @@
 <style>
     .helppanel {
         position: absolute;
-        top: 30px;
+        top: 0px;
         bottom: 50px;
         right: 10%;
         min-height: 34px;
