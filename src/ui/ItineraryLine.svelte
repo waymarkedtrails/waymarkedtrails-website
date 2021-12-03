@@ -7,10 +7,11 @@
     div {
         display: flex;
         width: 100%;
-        background-color: #cbcbcb;
+        background-color: var(--theme-background-color);
         font-size: 16px;
         align-items: flex-start;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        padding: 2px;
     }
 
     .delimiter {

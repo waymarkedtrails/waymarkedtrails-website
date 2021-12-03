@@ -92,13 +92,13 @@
 
 <SidePanel osm_type={osm_type} osm_id={osm_id} title="{$_('details.type.' + osm_type)} {osm_id}" fail_message={fail_message}>
 {#key route}{#if route}
+<ItineraryLine itinerary={route.itinerary} />
 
 <DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{API_URL}/symbols/id/{route.symbol_id}" ref={route.ref}>
     {make_route_title(route)}
     {#if route.local_name}<div class="subtitle">{route.name}</div>{/if}
 </DetailsHeader>
 
-<ItineraryLine itinerary={route.itinerary} />
 
 {#if route.description}<div class="description">{route.description}</div>{/if}
 

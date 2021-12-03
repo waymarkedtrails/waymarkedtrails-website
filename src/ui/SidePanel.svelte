@@ -26,8 +26,7 @@
         top: 5px;
         height: 100%;
         right: 0;
-        border-style: solid;
-        border-width: 1px;
+        border: 1px solid var(--theme-sub-color);
         width: 24em;
         max-width: 48%;
         background-color: white;
@@ -60,7 +59,7 @@
         overflow: auto;
         width: 100%;
         flex-grow: 1;
-        padding: 5px 0;
+        padding: 0;
     }
 
     .sidepanel.small {
