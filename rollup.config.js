@@ -74,8 +74,8 @@ export default {
 
         !production && replace({
             'config.MEDIA_URL': '""',
-            'config.API_URL': '"http://loar:8080/v1/api"',
-            'config.SYMBOL_URL': '"http://loar:8080/v1/api/symbols/id"'
+            'config.API_URL': '"http://localhost:8080/v1/api"',
+            'config.SYMBOL_URL': '"http://localhost:8080/v1/api/symbols/id"'
         }),
 
 		// In dev mode, call `npm run start` once
