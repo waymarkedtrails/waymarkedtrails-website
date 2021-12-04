@@ -127,15 +127,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-replace@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@rollup/plugin-replace@npm:3.0.0"
-  dependencies:
-    "@rollup/pluginutils": ^3.1.0
-    magic-string: ^0.25.7
+"@rollup/plugin-virtual@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@rollup/plugin-virtual@npm:2.0.3"
   peerDependencies:
-    rollup: ^1.20.0 || ^2.0.0
-  checksum: 5a7c29e9ae3ff713b0f7ab56536a33c6482eb50158c3a422deeed796f3a25d31b7b3a7bbc65e2ef4dc60c9c42f65612b3b2a49a62119f4becbfd194cd523c230
+    rollup: ^1.20.0||^2.0.0
+  checksum: 5a9f9a69ff0260e82e6241ff40ae3e2c6bb6c9d262e1767370a7f16ac9e325c8867207258ee8421bc86b79da8941539d75621fbaa45ea900d5d09bee0c93ee1e
   languageName: node
   linkType: hard
 
@@ -2197,7 +2194,7 @@ resolve@^1.19.0:
     "@rollup/plugin-commonjs": ^21.0.1
     "@rollup/plugin-json": ^4.1.0
     "@rollup/plugin-node-resolve": ^13.0.6
-    "@rollup/plugin-replace": ^3.0.0
+    "@rollup/plugin-virtual": ^2.0.3
     "@rollup/plugin-yaml": ^3.1.0
     d3-array: ^2.12.1
     d3-axis: ^2.1.0

@@ -6,10 +6,25 @@ import yaml from '@rollup/plugin-yaml';
 import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-porter';
 import { terser } from 'rollup-plugin-terser';
-import replace from '@rollup/plugin-replace';
+import virtual from '@rollup/plugin-virtual';
 import marked from 'marked';
 
 const production = !process.env.ROLLUP_WATCH;
+
+const base_url = process.env.WMT_BASE_URL || 'waymarkedtrails.org';
+const media_url = process.env.WMT_MEDIA_URL ||
+                   (production ? 'https://static.' + base_url : '');
+const symbol_url = process.env.WMT_MEDIA_URL ||
+                   (production ? 'https://static.' + base_url + '/symbols'
+                               : 'http://localhost:8080/v1/api/symbols/id');
+const api_url = process.env.WMT_MEDIA_URL ||
+                   (production ? '' : 'http://localhost:8080/v1/api');
+const tile_base_url = process.env.WMT_TILE_BASE || ('https://tile.' + base_url);
+const tile_url = process.env.WMT_TILE_URL || '';
+
+function export_str(content) {
+    return `export default '` + content + `'`;
+}
 
 function serve() {
 	let server;
@@ -40,6 +55,15 @@ export default {
 		dir: 'public/build/'
 	},
 	plugins: [
+        virtual({
+          'CFG_BASE_URL' : export_str(base_url),
+          'CFG_MEDIA_URL' : export_str(media_url),
+          'CFG_SYMBOL_URL' : export_str(symbol_url),
+          'CFG_API_URL' : export_str(api_url),
+          'CFG_TILE_BASE_URL' : export_str(tile_base_url),
+          'CFG_TILE_URL' : export_str(tile_url)
+        }),
+
 		svelte({
             compilerOptions: {
                 // enable run-time checks when not in production
@@ -70,12 +94,6 @@ export default {
                  }
                  return data;
              }
-        }),
-
-        !production && replace({
-            'config.MEDIA_URL': '""',
-            'config.API_URL': '"http://localhost:8080/v1/api"',
-            'config.SYMBOL_URL': '"http://localhost:8080/v1/api/symbols/id"'
         }),
 
 		// In dev mode, call `npm run start` once
