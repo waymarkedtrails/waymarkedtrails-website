@@ -6,4 +6,6 @@
       --theme-sub-link-color: #c4fffd;
       --theme-banner-image: url('/img/banner_mtb.jpg');
       --theme-link-color: #3d53d5;
+      --theme-button-background: #5a6268;
+      --theme-button-color: #ddd;
 }

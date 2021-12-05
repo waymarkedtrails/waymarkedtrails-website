@@ -6,5 +6,7 @@
       --theme-sub-link-color: #fcfbf7;
       --theme-banner-image: url('/img/banner_riding.jpg');
       --theme-link-color: #68570f;
+      --theme-button-background: #5a6268;
+      --theme-button-color: #fff;
 }
 

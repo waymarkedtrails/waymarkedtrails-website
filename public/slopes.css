@@ -6,5 +6,7 @@
       --theme-sub-link-color: #c67a0e;
       --theme-banner-image: url('/img/banner_slopes.jpg');
       --theme-link-color: #3d53d5;
+      --theme-button-background: #5a6268;
+      --theme-button-color: #fff;
 }
 
