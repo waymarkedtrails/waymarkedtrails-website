@@ -7,7 +7,8 @@ import tile_url from 'CFG_TILE_URL';
 
 const config = JSON.parse(document.getElementById("WMTConfig").text);
 
-export const API_URL = api_url || ('https:://' + config.TITLE + '.' + baseurl + '/v1/api');
+export const BASE_URL = base_url;
+export const API_URL = api_url || ('https://' + config.TITLE + '.' + base_url + '/api/v1');
 export const HELP = config.HELP;
 export const MEDIA_URL = media_url;
 export const SYMBOL_URL = symbol_url + '/' + config.TITLE;

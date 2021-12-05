@@ -13,12 +13,12 @@ const production = !process.env.ROLLUP_WATCH;
 
 const base_url = process.env.WMT_BASE_URL || 'waymarkedtrails.org';
 const media_url = process.env.WMT_MEDIA_URL ||
-                   (production ? 'https://static.' + base_url : '');
+                   (production ? 'https://static.' + base_url + '/' : '');
 const symbol_url = process.env.WMT_SYMBOL_URL ||
                    (production ? 'https://static.' + base_url + '/symbols'
                                : 'http://localhost:8080/v1/api/symbols/id');
 const api_url = process.env.WMT_API_URL ||
-                   (production ? '' : 'http://localhost:8080/v1/api');
+                   (production ? '' : 'http://localhost:8080/v1');
 const tile_base_url = process.env.WMT_TILE_BASE || ('https://tile.' + base_url);
 const tile_url = process.env.WMT_TILE_URL || '';
 
