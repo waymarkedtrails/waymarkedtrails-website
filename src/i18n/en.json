@@ -8,7 +8,9 @@
         "slopes" : "Winter Sport Slopes"
     },
     "site_description" : {
-        "hiking" : "Hiking and walking routes from the local to international level, with maps and information from OpenStreetMap."
+        "hiking" : "Local and long-distance hiking and walking routes, with maps and information from OpenStreetMap.",
+        "cycling" : "Local and long-distance cycling routes, with maps and information from OpenStreetMap.",
+        "riding" : "Local and long-distance cycling routes, with maps and information from OpenStreetMap."
     },
     "attribution" : {
         "data" : "Map data © <a href=\"https://www.openstreetmap.org\">OpenStreetMap</a> under <a href=\"https://www.openstreetmap.org/copyright\">ODbL</a>",
@@ -97,5 +99,6 @@
         "load_error" : "Error connecting to server.",
         "missing_id" : "Missing parameter 'id'.",
         "missing_query" : "Missing parameter 'query'."
-    }
+    },
+    "help" : "Help"
 }

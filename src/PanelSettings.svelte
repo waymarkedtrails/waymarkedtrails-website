@@ -38,8 +38,8 @@
 <SidePanel title={$_('settings.title')}>
     <h2 class="panel-heading">{$_('settings.language')}</h2>
 
-    <DropdownList title={current_lang_title || $_('Use browser setting')}>
-        <button class="dropdown-item" type="button" on:click={set_language}>{$_('Use browser setting')}</button>
+    <DropdownList title={current_lang_title || $_('settings.browser_language')}>
+        <button class="dropdown-item" type="button" on:click={set_language}>{$_('settings.browser_language')}</button>
         {#each languages as lang}
             <button class="dropdown-item" type="button" data-lang={lang[0]} data-title={lang[1]} on:click={set_language}>{lang[1]}</button>
         {/each}
