@@ -1,13 +1,35 @@
 <script>
     import { onMount } from 'svelte';
+    import { get } from 'svelte/store';
+    import { locale } from 'svelte-i18n';
+    import { aliases } from './i18n.js';
+    import help_languages from './i18n/help.js';
     import { HELP } from './config.js';
     import { page_state, show_page }  from './app_state.js';
 
     let content;
     let helpbox;
 
+    function contentFunc(locale) {
+        if (help_languages.hasOwnProperty(locale)) {
+            return help_languages[locale];
+        }
+
+        if (aliases.hasOwnProperty(locale) && help_languages.hasOwnProperty(aliases[locale])) {
+            return help_languages[aliases[locale]];
+        }
+
+        const parts = locale.split('-');
+        if (parts.length > 1) {
+            return contentFunc(parts[0]);
+        }
+
+        return help_languages['en'];
+    }
+
     onMount(async () => {
-        content = await import('./i18n/help.en.yaml')
+        const current = contentFunc(get(locale));
+        content = await current();
 
         const handle_any_click = (event) => {
           if (helpbox && !helpbox.contains(event.target)) {
@@ -62,6 +84,7 @@
     }
 
     nav {
+        max-width: 35%;
         background-color: rgba(254, 254, 254, 0.7);
     }
 
