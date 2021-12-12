@@ -1,0 +1,328 @@
+# Messages for French (français)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Boniface
+# Author: Cquoi
+# Author: Damouns
+# Author: Gomoko
+# Author: JB
+# Author: Pyrog
+# Author: Shirayuki
+# Author: Thibaut120094
+# Author: Urhixidur
+# Author: Verdy p
+# Author: Wladek92
+---
+about:
+  title: À propos de la carte
+  hiking: Cette carte affiche les itinéraires de randonnée pédestre balisés dans le
+    monde.
+  cycling: Cette carte affiche les chemins cyclables balisés dans le monde.
+  mtb: Cette carte affiche les chemins de vélo de montagne balisés dans le monde.
+  skating: Cette carte affiche les itinéraires balisés de rollers dans le monde.
+  riding: Cette carte affiche les itinéraires balisés pour randonnées équestres dans
+    le monde.
+  slopemap: Cette carte affiche les pistes de sport d’hiver balisées partout dans
+    le monde.
+  osm: |-
+    Les itinéraires sont superposés à la carte OpenStreetMap standard et avec le rendu facultatif du relief. La carte des itinéraires est générée d’après les données du projet [OpenStreetMap](http://www.openstreetmap.org) (OSM).
+    OSM est une carte du monde librement modifiable à laquelle tout le monde peut contribuer. Cela signifie qu’elle n’est en aucun cas complète, mais également que vous pouvez y contribuer en ajoutant de nouveaux itinéraires et en corrigeant les erreurs dans ceux qui existent déjà. Pour en savoir plus sur OpenStreetMap, consultez le
+    [Guide du débutant](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
+rendering:
+  title: Rendu des données OSM
+  hikingroutes: |-
+    Les itinéraires de randonnée pédestre dans OSM doivent être saisis en tant que relations.
+    C’est  expliqué en détails sur la page des balises des
+    [itinéraires de randonnée pédestre](http://wiki.openstreetmap.org/wiki/Walking_Routes)
+    dans le wiki d’OSM. Cette carte montre les relations qui ont au moins les
+    balises suivantes :
+
+        type = route|superroute
+        route = foot|walking|hiking
+  cyclingroutes: |-
+    Les itinéraires cyclables dans OSM doivent être saisis en tant que relations.
+    C’est expliqué en détail sur la page des balises des
+    [itinéraires cyclables](http://wiki.openstreetmap.org/wiki/Cycle_routes)
+    dans le wiki d’OSM. Cette carte montre toutes les relations qui ont au moins les
+    balises suivantes :
+
+        type = route|superroute
+        route = bicycle
+
+    Les itinéraires de vélo de montagne sont affichés sur une
+    [carte vélo de montagne](http://mtb.waymarkedtrails.org/en/) distincte.
+  mtbroutes: |-
+    Les itinéraires de vélo de montagne suivent le même schéma de marquage que les itinéraires cyclables
+    qui est décrit en détail sur la page wiki d’OSM :
+    [itinéraires cyclables](http://wiki.openstreetmap.org/wiki/Cycle_routes).
+    Les relations avec les balises suivantes sont reconnues comme des itinéraires de vélo de montagne :
+
+        type = route|superroute
+        route = mtb
+
+    Les itinéraires cyclables classiques sont affichés sur la
+    [carte des itinéraires cyclables](http://cycling.waymarkedtrails.org/fr/).
+  skatingroutes: |-
+    Les itinéraires balisés de rollers doivent être marqués comme toute les autres relations de type `route`.
+    Pour le balisage compris par cette carte, jetez un œil sur la page du wiki concernant les
+    [itinéraires de rollers suisses](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
+    Pour être reconnus comme des itinéraires de rollers, les balises suivantes doivent être présentes :
+
+        type = route|superroute
+        route = inline_skates
+  ridingroutes: |-
+    Les itinéraires balisés pour randonnée équestre doivent être marqués comme toute autre relation d’itinéraire.
+    Pour les détails, voyez [la page de l’itinéraire dans le wiki OSM](http://wiki.openstreetmap.org/wiki/Relation:route).
+    Pour être reconnues comme itinéraire équestre, les balises suivantes doivent être présentes :
+
+        type = route|superroute
+        route = horse
+  sloperoutes: |-
+    Les pentes balisées sont des chemins avec les balises `piste:type`.
+    Pour être reconnus comme pistes, les balises suivantes doivent être associées aux chemins :
+
+       piste:type = downhill|nordic|sled|hike|sleigh
+
+    Pour les relations, les balises suivantes doivent être présentes :
+
+       type = route|superroute
+       route = ski|piste
+       piste:type = downhill|nordic|sled|hike|sleigh
+  slopeclassification: |-
+    La classification des pistes de ski (de descente) est
+    déterminée par la balise `piste:difficulty` et utilisée
+    pour colorer leur rendu.
+  classification: |-
+    Des balises `route` avec des valeurs multiples sont prises en charge quand celles-ci sont séparées par
+    des points-virgules sans espace autour.
+    La classification (et donc la couleur du trajet sur la carte) est
+    déterminée par la balise `network`.
+  slopemaplabels: "Le libellé pour les pistes de ski (de descente) est « deviné »
+    d’après les balises dans l’ordre suivant :\n\n1. Si une balise `piste:ref` existe,
+    l’utiliser pour en faire un libellé.\n2. Si une balise `piste:name` existe, en
+    dériver une référence, d’abord en utilisant\n   uniquement des lettres majuscules,
+    sinon en utilisant les premières lettres du nom.\n3. Si une balise `ref` existe,
+    l’utiliser pour en faire un libellé.\n4. Si une relation et une balise `name`
+    existent, en dériver une référence, d’abord en utilisant\n   uniquement des lettres
+    majuscules, sinon en utilisant les premières lettres du nom.\n5. Abandonner. \n\nLes
+    pentes nordiques sont marquées d’un signe qui ne montre que leur couleur, si une
+    balise de couleur est présente."
+  hikinglabels: |-
+    Le libellé pour chaque trajet est « deviné » d’après les balises, dans l’ordre suivant :
+
+    1. Suivre les [règles de rendu locales](rendering/hikinglocal) existantes.
+    2. Essayer d interpréter la balise `osmc:symbol`. Pour plus de détails sur quelles parties
+        sont reconnues, voir [Règles de rendu de `osmc:symbol`](rendering/osmc).
+    3. Si une balise `ref` existe, créer un libellé texte avec la balise `ref`.
+    4. Si une balise `name` existe, en déduire une référence, d’abord en utilisant
+        uniquement les lettres majuscules, sinon en utilisant les premières lettres du nom.
+    5. Abandonner.
+  labels: |-
+    Le libellé de chaque trajet est « deviné » à partir des balises dans l’ordre suivant :
+
+    1. Si une balise `ref` existe, créer un libellé texte avec la balise `ref`.
+    2. Si une balise `name` existe, en déduire une référence, d’abord en utilisant
+        uniquement les lettres majuscules, sinon en utilisant les premières lettres du nom.
+    3. Abandonner.
+  hierarchy: La carte prend également en charge les [hiérarchies de relations](rendering/hierarchies).
+  guideposts: |-
+    Les [panneaux indicateurs](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    doivent être saisis avec les balises suivantes :
+
+        tourism=information
+        information=guidepost
+        name=<name>
+        ele=<altitude>
+
+    `tourism` et `information` sont obligatoires. `name` et `ele` peuvent être omis.
+hierarchies:
+  title: Hiérarchies de relations
+  text: |-
+    La carte prend également en charge les relations imbriquées, c.-à-d. les relations qui contiennent
+    elles-mêmes des relations. Ces hiérarchies sont utilisées de deux manières différentes
+    dans la base de données OSM : elles sont soit utilisées pour partager les trajets très longs
+    (par ex. [E1](https://hiking.waymarkedtrails.org/#route?id=36367)), soit
+    pour éviter de répéter du travail quand deux trajets empruntent le même chemin (voyez
+    par exemple la [ViaFrancigena](https://hiking.waymarkedtrails.org/#route?id=124582)
+    suisse, qui fait partie de la [Via Francigena](https://hiking.waymarkedtrails.org/#route?id=11860709) européenne).
+    Dans le premier cas, les sous-relations ne sont pas en elles-mêmes des trajets complets et ne devraient donc pas être affichées de manière indépendante sur la carte.
+
+    La manière dont une sous-relation est traitée par le moteur de rendu dépend de la balise `network` :
+
+    * Si les relations parent et enfant partagent la même balise `network`, la relation enfant est considérée comme une étape de la relation parent. Ainsi, son trajet est ajouté à la relation parent et la relation enfant n’est pas affichée sur la carte.
+    * Si les balises `network` des relations parent et enfant sont différentes, la relation est supposée être indépendante. Le trajet de la relation enfant est ajouté au parent et les deux relations sont affichées sur la carte.
+
+    *Note :* vous pouvez toujours inspecter les sous-relations par le navigateur de trajet. Sélectionnez
+    simplement la relation parent et une liste sélectionnable de ses sous-relations sera affichée.
+osmc:
+  title: La balise `osmc:symbol`
+  text: |-
+    La balise `osmc:symbol` permet de décrire d’une façon lisible par une machine les symboles d’un itinéraire à partir de formes géométriques simples, comme on peut en trouver dans certains pays européens (particulièrement en Allemagne). La carte ne prend en charge qu’une partie de ce qui est décrit dans la page Wiki. Pour pouvoir apparaître sur la carte, la balise doit avoir le format suivant :
+
+        osmc:symbol=waycolor:background:foreground:text:textcolor
+
+    `waycolor` doit être présent mais est ignoré pour cette carte.
+    Un autre `foreground` n’est pas pris en charge. `text` et `textcolor` peuvent être omis.
+hikinglocal:
+  title: Rendu localisé
+  text: |-
+    Il existe de nombreux systèmes pour baliser des sentiers de randonnée pédestre dans le monde. Alors que cette carte s’efforce d’utiliser les balises OSM les plus générales pour leur donner un rendu décent, ceci est voué à l’échec pour certains systèmes de balisages, en particulier pour les itinéraires de randonnée pédestre. Pour tenir compte de ces problèmes, la carte peut être différenciée pour les régions où le rendu standard est peu adapté.
+
+    Ci-dessous, la liste des régions qui utilisent leurs propres symboles de rendu. Si vous souhaitez que votre région soit rendue d’une manière particulière, lisez les suggestions en fin de page.
+  swiss: |-
+    ## Suisse
+
+    La Suisse a un important réseau de chemins de randonnée balisés couvrant tout le pays. Le réseau est un réseau de nœuds où les panneaux nommés servent de nœuds. Tous les chemins sont balisés en fonction de leur difficulté. La carte affiche ces chemins en rouge avec le type de pointillé indiquant la difficulté :
+
+    * ![ligne rouge](route_std.png) *chemin de randonnée*, balisé par des ![losanges](yellow_diamond.png). Marqué avec `network=lwn` et `osmc:symbol=yellow:[...]`.
+    * ![lignes tiretée](route_mnt.png) *chemin de montagne*, balisé par des ![blanc-rouge-blanc](white_red_white.png). Marqué avec `network=lwn` et `osmc:symbol=red:[...]`.
+    * ![ligne pointillée](route_alp.png) *route alpine*, balisée avec ![blanc-bleu-blanc](white_blue_white.png). Marqué avec `network=lwn` et `osmc:symbol=blue:[...]`.
+
+    Remarquez que par-dessus ce réseau il y a un certain nombre de chemins nationaux et régionaux qui sont affichés de la manière habituelle.
+
+    Pour plus d'information sur le balisage des chemins de randonnée en Suisse dans OSM, voyez:
+    [réseau de randonnée suisse](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  italy: |-
+    ## Italie
+
+    Le Club Alpin Italien (CAI) entretient le réseau des chemins de montagne
+    qui sont classés par diffuculté, comme ce qui existe en Suisse.
+    Les chemins marqués avec `network=lwn`, `osmc:symbol=red:..` et une balise `cai_scale`
+    seront reconnues comme des chemins entretenus par le CAI et affichés avec des lignes rouge
+    selon leur difficulté.
+
+    * ![red line](route_std.png) cai_scale=T
+    * ![dashed line](route_mnt1.png) cai_scale=E
+    * ![dashed line](route_mnt2.png) cai_scale=EE
+    * ![dotted line](route_alp.png) cai_scale=EEA*
+  uk: |-
+    ## Royaume-Uni
+
+    La classification des [itinéraires de longues randonnées](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) (notés `network=uk_ldp`) dépend de la balise `operator`. Les relations avec `operator=National Trails` sont représentées comme des itinéraires nationaux, les autres apparaissent en tant qu'itinéraires régionaux.
+
+    Les relations avec une balise `network=lwn/rwn/nwn/iwn` sont traitées de manière habituelle.
+  czech: |-
+    ## République tchèque
+
+    Le pays utilise un balisage des sentiers standard basé sur un ensemble de 7 symboles de 4 couleurs différentes. Pour leur description, voyez la [page de balisage tchèque](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (en langue tchèque uniquement).
+
+    Quand une balise `kct_*` est disponible, elle est préférée à toute autre balide `osmc:symbol`.
+    De plus, le chemin est reclassifié, si aucune balise de réseau valide ne peut être trouvée. Les chemins avec `kct_red=major` deviennent des routes nationales, les autres `kct_*=major` sont classés comme régionaux.
+  slovakia: "## Slovaquie\n\nLa Slovaquie utilise le même système de marquage que
+    la République Tchèque. Cependant, les balises utilisées sont légèrement différentes,
+    voir la [page de randonnée Slovaque](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+    \n\nTous les itinéraires contenant une balise `operator=KST` sont marquées selon
+    ce schéma. Comme les itinéraires en Slovaquie devraient avoir une balise `network`
+    valide, aucune reclassification n'est opérée."
+  hungary: |-
+    ## Hongrie
+
+    La Hongrie utilise également un système avec un ensemble défini de symboles de différentes couleurs. Ceux-ci sont marqués par leurs propres balises : [jel](http://wiki.openstreetmap.org/wiki/Key:jel).
+    Cette balise prévaut sur d'éventuelles balises `osmc:symbol`.
+  germany: |-
+    ## Allemagne
+
+    ### Fränkischer Albverein
+
+    Le réseau autour de Nuremberg est assez dense, donc les itinéraires régionaux contenant la balise `operator=Fränkischer Albverein` apparaitront à des niveaux de zoom plus faibles que d'habitude.
+  ukcycle: |-
+    ## Royaume-Uni
+
+    ### Norwich
+
+    Norwich utilise un système de marquage des itinéraires par code couleur. Les itinéraires indiqués avec la balise `operator=Norwich City Council` sont représentés par un carré de la couleur indiquée par la balise `colour`.
+elevationprofiles:
+  title: Profils d'altitude
+  general: |-
+    Les profils d'altitude sont construits avec les données d'altitude du [ASTER modèle d'altitude numérique global (GDEM) version 2](http://asterweb.jpl.nasa.gov/gdem.asp), la balise `ele` dans OpenStreetMap n'est pas prise en compte, ni les tunnels et les ponts. GDEM ASTER est un produit de METI et de la NASA.
+
+    Si le trajet a plus de deux points terminaux ou consiste en plus d'un segment, aucun profil ne sera rendu. La direction du profil suit le trajet ouest-est ou nord-sud. Si les trajets ont des éléments avec des rôles comme `start` ou `goal`, et/ou sont listés de façon continue du départ à l'arrivée, nous pouvons déterminer la direction depuis la liaison du trajet elle-même. Vous voudrez sans doute garder cela à l'esprit en projetant des trajets sur OpenStreetMap.
+
+    Il y a des trous, appelés "vides", pour lesquels nous n'avons pas de données d'altitude; ils sont représentés avec des espaces dans la ligne du profil d'altitude.
+
+    Faites attention que bien que ASTER version 2 soit probablement le meilleur MNT libre global, il a ses limitations, à la fois en termes de précision et de couverture; voyez leur [résumé du rapport de validation](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) pour plus d'information. Les imprécisions sont de plus aggravées par l'imprécision des données OSM, [une technique de lissage](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nous appliquons, et par la résolution du profil qui diminue avec l'allongement du trajet.
+technical:
+  title: Détails techniques
+  general: "Les itinéraires sont mis à jour chaque minute et normalement avec un décalage
+    de 2-5 minutes par rapport au serveur OSM. La date en haut à gauche indique la
+    dernière mise à jour. Les mises à jour de la carte Mapnik sous-jacente ne sont
+    pas du ressort de ce site. Selon la charge actuelle du serveur OSM, elles peuvent
+    prendre entre une minute et quelques jours. \n\nLa machine fonctionne sur un système
+    d’exploitation [Debian Linux](http://www.debian.org/) standard avec les logiciels
+    \n[pyosmium](http://osmcode.org/pyosmium/),\n[Postgresql](http://www.postgresql.org)
+    et [Mapnik 2.0](http://www.mapnik.org).\n[osgende](https://github.com/waymarkedtrails/osgende)
+    traite la base de donnée avant le rendu. Le site web tourne en utilisant [CherryPy](http://cherrypy.org/).
+    Le code source est disponible sous licence GPL. Pour plus d’information, visitez
+    la [page du projet sur GitHub](https://github.com/waymarkedtrails/waymarked-trails-site)."
+  translation: |-
+    ## Traductions
+
+    Les traductions sont gérées par les généreux contributeurs participants de
+    [translatewiki.net](http://translatewiki.net). Si vous voulez contribuer à la traduction
+    dans votre langue ou donner un avis sur les traductions existantes, visitez la
+    [page du projet sur translatewiki.net](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+legal:
+  title: Conditions légales d’utilisation
+  copyright: |-
+    Les itinéraires sont disponibles sous la
+    [licence Creative Commons Attribution-Share Alike 3.0 Allemagne](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en) et les traces GPX sont sous la
+    [licence ODbL](http://opendatacommons.org/licenses/odbl/).
+    Ils peuvent être réutilisés et modifiés tant que le travail en résultant utilise une licence compatible
+    et que le projet OpenStreetMap et ce site soient mentionnés.
+  usage: |-
+    ## Règles d’utilisation
+
+    Vous pouvez utiliser la superposition d’itinéraires sur d’autres sites tant que les fréquences d’accès restent modérées.
+    Veuillez mettre en cache les tuiles aussi souvent que possible et utiliser un référent correct. Le téléchargement massif
+    de tuiles est fortement découragé.
+
+    Les traces GPX sont fournies pour la commodité des visiteurs de ce site. Le téléchargement en masse
+    n’est pas autorisé.
+  disclaimer: "## Avertissement \n\nNi l’exactitude ni la complétude de la carte ne
+    sont garanties. Si vous allez randonner,\nprenez une carte papier décente, un
+    équipement adapté et ne laissez pas votre bon sens chez vous. \nLa nature peut
+    être aussi impitoyable que belle.\n\nCe site contient des liens vers des sites
+    Internet externes. L’auteur du présent site n’a aucune influence sur\nleur contenu
+    et n’engage pas sa responsabilité sur celui-ci."
+acknowledgements:
+  title: Remerciements
+  text: |-
+    Toutes les données de la carte sont fournies par [OpenStreetMap et ses contributeurs](http://www.openstreetmap.org)
+    et distribuées sous la license ODbL. La carte de base est également aimablement fournie par OSM et disponible
+    sous licence CC BY-SA 2.0. Pour plus d’informations, voyez la
+    [page de propriété intellectuelle d’OSM](http://www.openstreetmap.org/copyright).
+
+    La couche d’ombrage et les données altimétriques ont été créées par un mixage de données de SRTM et ASTER GDEM.
+    ASTER GDEM est un produit de METI et de la NASA.
+    Le post-traitement a été aimablement fourni par Yvez Cainaud chez [opensnowmap.org](http://opensnowmap.org).
+
+    Le profil d’altitude a été développé par Espen Oldeman Lund en coopération avec [Kresendo](http://www.kresendo.no)
+    et le [projet TG4NP](http://tg4np.eu) à l’[Institut de Recherche de Norvège Occidentale](http://wwww.vestforsk.no).
+
+    La variante des pistes de sport d’hiver a été développée par Michael Spreng. Le symbole d’équitation a été
+    préparé par Robert Wittaker.
+
+    Les poteaux indicateurs de destination sont traitées par [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Tous nos remerciements à Jan Michel pour la fourniture de ce service.
+
+    Les traductions de ce site sont fournies par
+    [translatewiki.net et ses contributeurs](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Des remerciements particuliers aux premiers traducteurs qui
+    ont fourni les textes avant translatewiki.net : Yves Cainaud (français),
+    Oscar Formaggi (italien),
+    Gustave [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (espagnol),
+    [Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (norvégien bokmål et nynorsk),
+    Mads Lumholt/TG4NP (danois), Magnús Smári Snorrason/TG4NP (islandais),
+    Lars Mikaelsson/TG4NP (suédois) et Elina Pesonen (finlandais).
+
+    Enfin, le serveur n’existerait pas sans l’aide généreuse de
+    [Martin Hoffmann](http://www.partim.de).
+contact:
+  title: Contact
+  text: |-
+    Les questions et commentaires à propos de ce site peuvent être envoyés à :
+    [lonvia@denofr.de](mailto:lonvia@denofr.de).
+
+    Les problèmes peuvent être remontés au
+    [traqueur d’anomalies du projet sur github](https://github.com/lonvia/waymarked-trails-site/issues).
+    Avant de signaler une anomalie, merci de vérifier que le problème ne provient
+    pas des données OSM.
+...

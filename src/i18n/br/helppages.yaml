@@ -1,0 +1,251 @@
+# Messages for Breton (brezhoneg)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Fohanno
+# Author: Fulup
+# Author: Gwenn-Ael
+# Author: Y-M D
+---
+about:
+  title: A-zivout ar gartenn
+  hiking: Taolenniñ a ra ar gartenn-mañ ar gwenodennoù-bale balizennet e pep lec'h
+    er bed.
+  cycling: Taolenniñ a ra ar gartenn-mañ ar gwenodennoù divrodegoù balizennet e pep
+    lec'h er bed.
+  mtb: Taolenniñ a ra ar gartenn-mañ ar gwenodennoù MTB balizennet e pep lec'h er
+    bed.
+  skating: Taolenniñ a ra ar gartenn-mañ ar gwenodennoù boteier-ruilh balizennet e
+    pep lec'h er bed.
+  riding: Taolenniñ a ra ar gartenn-mañ ar gwenodennoù-bale war varc'h balizennet
+    e pep lec'h er bed.
+  slopemap: Gant ar gartenn-mañ eo lakaet war wel ar roudennoù sportoù goañv balizennet
+    e pep lec'h er bed.
+  osm: |-
+    An hentoù a vez dreistlakaet war ar gartenn OpenStreetMap boutin ha gant danvez an torosennadur en un doare diuzadel. Generet eo kartenn an hentoù o'n em harpañ war roadennoù ar raktres (OpenStreedMap)[OpenStreetMap](http://www.openstreetmap.org) (OSM).
+    OSM zo ur gartenn eus ar bed a c'haller kemmañ e pep frankiz hag an holl dud a c'hall kemer perzh. Talvezout a ra n'eo ket sur e vo klok hag e c'hallit ivez kenlabourat hag ouzhpennañ hentoù nevez ha reizhañ ar fazioù en hentoù zo anezho dija. Evit gouzout hiroc'h war OpenStreetMap, sellit ouzh [Levr an deraouidi](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide).](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
+rendering:
+  title: Skeudennadur ar roadennoù OSM
+  hikingroutes: |-
+    An hentoù-bale war droad a rank bezañ merket e OSM evel darempredoù. Displeget eo dre ar munud war pajenn tikedennoù an [hentoù-bale)[walking routes](http://wiki.openstreetmap.org/wiki/Walking_Routes)e wiki OSM. Ar gartenn-mañ a ziskouez an darempredoù a ra gant an tikedennoù-mañ da nebeutañ :
+
+    type= route|superroute
+    route= foot|walking|hiking
+    route = foot|walking|hiking
+  cyclingroutes: |-
+    An hentoù divrodegoù a rank bezañ merket e OSM evel darempredoù. Displeget eo dre ar munud war pajenn tikedennoù an [hentoù divrodegoù)[cycling routes](http://wiki.openstreetmap.org/wiki/Cycle_routes)e wiki OSM. Ar gartenn-mañ a ziskouez an darempredoù a ra gant an tikedennoù-mañ da nebeutañ :
+
+    type= route|superroute
+    doare= bycicle
+  mtbroutes: |-
+    An hentoù MTB a vez merket evel an hentoù divrodegoù a zo deskrivet dre ar munud war bajenn wiki OSM [cycling routes](http://wiki.openstreetmap.org/wiki/Cycle_routes). An darempredoù gant an tikedennoù-mañ zo anavezet evel hentoù MTB :
+
+    type= route|superroute
+    route= mtb
+
+    War wel emañ an hentoù-belo klasel war ar [cycling map](http://cycling.waymarkedtrails.org/en/).
+  skatingroutes: |-
+    An hentoù balizennet evit ar botoù-ruilh a rank bezañ merket evel an holl zarempredoù all evel "hent". Evit ar balizennañ er gartenn-mañ, taolit ur sell war pajenn ar wiki a sell ouzh an [hentoù rollerioù e Suis) [Swiss inline skating routes](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork). Evit bezañ anavezet evel hentoù rollerioù e ranker ober gant an tikedennoù-mañ :
+
+    type= route|superroute
+    route=inline_skates
+    route= inline_skates
+  ridingroutes: An hentoù balizennet evit troioù-bale war varc'h a rank bezañ merket
+    evel nep darempred hent all. Evit ar munudoù, sellit ouzh [pajenn an hent er wiki
+    OSM](http://wiki.openstreetmap.org/wiki/Relation:route).
+  sloperoutes: |-
+    An diskennoù balizennet zo anezho hentoù gant tikedennoù roudenn:doare
+    evit bezañ anavezet evel ur roudenn e rank an tikedennoù-mañ bezañ liammet gant an hentoù :
+
+    piste:type = downhill|nordic|sled|hike|sleigh
+
+    Evit an darempredoù e rank ar tikedennoù-mañ bezañ implijet:
+
+    type = route|superroute
+    route = ski|piste
+    piste:type = downhill|nordic|sled|hike|sleigh
+  slopeclassification: Renkadur ar roudennoù ski (diskenn) zo termenet gant an dikedenn
+    'pist.difficulty', hag implijet eo evit livañ an diskwel anezhañ.
+  classification: Un dikedenn "hent" gant talvoudoù lies zo kemeret e karg pa vez
+    dispartiet ar re-mañ gant pikoù-skej hep esaouenn ebet tro-dro dezho. Ar rummata
+    (hag e-se liv an hentad war ar gartenn)zo termenet gant an dikedenn "network".
+  slopemaplabels: |-
+    Ar skridennad evit ar roudennoù ski (diskenn) zo "divinet" hervez an tikedennoù en urzh-mañ :
+
+    1. ma’z eus eus un dikedenn `piste:ref`, implijout anezhi evit ober ur skridennad.
+    2. ma’z eus eus un dikedenn `piste:name`, deverañ un daveenn anezhi, oc’h implijout pennlizherennoù da gentañ, anez oc'h implijout lizherennoù kentañ an anv.
+    3. ma’z eus eus un dikedenn `ref`, implijout anezhi evit ober ur skridennad anezhi.
+    4. ma’z eus eus un darempred hag un dikedenn `name`, deverañ un daveenn anezhi, oc’h implijout pennlizherennoù hepken da gentañ, anez oc’h implijout lizherennoù kentañ an anv.
+    5. Dilezel.
+
+    Merket eo an diskennoù skandinavek gant un arouezenn a ziskouez o liv, pa vez un dikedenn liv.
+  hikinglabels: |-
+    Ar skridennad evit pep hent zo "divinet" hervez an tikedennoù en urzh-mañ :
+    1. Heuliañ [reolennoù lec’hel ar skeudennadur](rendering/hickinglocal) a zo.
+    2 Klask displegañ an dikedenn `osmc:symbol`. Evit gouzout hiroc’h diwar-benn al lodennoù a vo ganet, gwelet (Reolennoù skeudennadur `osmc:symbol`](rendering/osmc).
+    3. Ma’z eus eus un dikedenn `ref`, krouiñ ur skridennad testenn gant an dikedenn `ref`.
+    4. Ma’z eus eus un dikedenn `name`, dezastum un daveenn diouti, oc’h implijout pennlizherennoù da gentañ, anez implijout lizherennoù kentañ an anv.
+    5. Lezel da gouezhañ.
+  labels: |-
+    Ar skridennad evit pep hent zo "divinet" adalek an tikedennoù en urzh-mañ :
+    1. Ma’z eus eus un dikedenn `ref`, krouit un dikedenn testenn gant an dikedenn `ref`.
+    2. Ma’z eus un dikedenn `name`, dezastum un daveenn diouti, oc’h implijout pennlizherennoù da gentañ, hag oc’h implijout lizherennoù kentañ an anv da c’houde.
+    3. Dilezel.
+  hierarchy: Skorañ a ra ar gartenn an [urzhazoù daremprediñ](rendering/hierarchies)
+    ivez.
+  guideposts: |-
+    Ar [panelloù-heñchañ](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost) a rank bezañ merket gant an tikedennoù-mañ :
+
+        tourism=information
+        information=guidepost
+        name=<name>
+        ele=<altitude>
+
+    Ret eo ober gant `tourism` hag`information`. Diret eo `name` hag `ele`.
+hierarchies:
+  title: Urzhazoù darempred
+  text: |-
+    Kemeret eo e karg an darempredoù enframmet gant ar gartenn-mañ ivez, d.l.e. an darempredoù zo enno darempredoù ivez. Implijet eo an urzhazoù-se e daou zoare disheñvel e diaz roadennoù OSM : pe ez int implijet evit rannañ tennadoù-hent hir-tre (da skouer [E1](http://hiking.waymarkedtrails.org/route/European%20walking%20route%20E1)), pe kuit a adober an hevelep labour pa dremen daou dennad disheñvel dre ar memes hent (gwelit, da skouer ar [Via Francigena](http://hiking.waymarkedtrails.org/route/Via%20Francigena,%20Swiss%20part) suis, zo ul lodenn eus ar [Via Romea Francigena](http://hiking.waymarkedtrails.org/route/Via%20Romea%20Francigena) europat). En degouezh kentañ ne'z a ket an isdarempredoù d'ober, drezo o-unan, tennadoù klok ha ne zlefent ket, neuze, bezañ diskwelet en ur mod dizalc'h war ar gartenn.
+
+    Ar mod m'eo tretet da vat un isdarempred dre ar c'heflusker ezteurel a zo diouzh an dikedenn `network` :
+
+    * Me vez rannet an hevelep tikedenn `network` gant an darempredoù tud ha bugale, e seller ouzh an darempred bugel evel un tennad eus an darempred tud. Evel-se e vo ouzhpennet an tennad d'an darempred tud ha ne zek et war an darempdred bugel war ar gartenn.
+
+    * Ma vez disheñvel tikedennoù `network` an darempredoù tud ha bugel, e c'houlakaer eo dizalc'h an darempred. Ouzhpennet eo tennad an darempred bugel ouzh hini e dud ha dont a ra war wel an daou zarempred war ar gartenn.
+
+    *Notenn :* gallout a rit atav ensellet an isdarempredoù dre merdeer an tennadoù. Trawalc'h eo diuzañ an darempred tud ha dont a raio war wel ur rollad isdarempredoù a c'hallot diuzañ.
+osmc:
+  title: An dikedenn osmc:symbol
+  text: |-
+    Kinnig a ra an dikedenn `osmc:symbol` un doare lennus evit ur mekanik da zeskrivañ arouezennoù-hent diwar lunioù geometrek eeun, evel ma c'haller kavout e broioù europat zo (dreist-holl en Alamagn). Ne skor ar gartenn nemet ul lodenn eus ar pezh zo deskrivet er bajenn wiki. Evit bezañ eztaolet war ar gartenn e rank an dikedenn bezañ diouzh ar furmad-mañ :
+
+        osmc:symbol=waycolor:background:foreground:text:textcolor
+
+    `waycolor` a rank bezañ merket ha pa ne vefe ket kemeret e kont evit ar gartenn-mañ. Ur `foreground` all n'eo ket skoret kennebeut. N'eo ket ret ober gant `text` na gant `textcolor`.
+hikinglocal:
+  title: Skeudennadur lec'helaet
+  text: |-
+    Ur bern reizhadoù zo evit merkañ an hentoù-bale er bed a-bezh. Tra ma klask ar gartenn-mañ ober gant an tikedennoù OSM boazetañ evit ma vefe teufent war wel en un doare dereadik eo tonket an traoù da vont da c'hwitañ gant reizhiadoù tikedenniñ zo, dreist-holl evit an hentoù-bale. Evit kemer ar c'hudennoù-se e kont e c'haller personelaat ar gartenn evit an takadoù m'eo re zister an eztaoladur stantard.
+
+    A-is e vo kavet ur roll eus ar rannvro a ra gant arouezennoù kartennaouiñ dibar. Evit personelaat eztaoladur ho takad deoc'h-c'hwi, lennit ar c'hinnigoù graet e traoñ ar bajenn.
+  swiss: |-
+    ## Suis
+
+    E Suis ez eus ur rouedad hentoù-bale stank-stank tikedennet hag a c'holo ar vro a-bezh. Ur ouedad skoulmoù eo ar rouedad ma talvez ar panelloù da skoulm. Tikedennet eo pep gwenodenn diouzh o diaester bale. E ruz eo embanne ar gwenodennoù-se gant ar gartenn, gant un doare poentaouiñ a verk an diaester :
+
+    * ![linenn ruz](route_std.png) *hent-bale*, tikedennet gant ![romboù](yellow_diamond.png). Merket gant `network=lwn` ha `osmc:symbol=yellow:[...]`.
+    * ![linenn diredet](route_mnt.png) *hent menez*, tikedennet gant ![gwenn-ruz-gwenn](white_red_white.png). Merket gant `network=lwn` ha `osmc:symbol=red:[...]`.
+    * ![linenn boentennet](route_alp.png) *hent alpek*, tikedennet gant ![gwenn-glas-gwenn](white_blue_white.png). Merket gant `network=lwn` ha `osmc:symbol=blue:[...]`.
+
+    Notit mat ez eus un niver bennak a wenodennoù broadel ha rannvroel merket gant an doare klasel en tu all d'ar rouedad-mañ.
+
+    Evit gouzout hiroc'h war tikedenniñ an hentoù-bale suis en OSM, gwelit :
+    [rouedad hentoù-bale suis](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  italy: |-
+    ## Italia
+
+    Gant Klub  Alpaerezh Italia(KAI)e vez kempennet rouedad gwenodennoù-menez a zo renket dre ziaester, evel ma'z eus bet graet e Suis.
+    Ar gwenodennoù merket gant`network=lwn`,`osmc:symbol=red:..` hag ur valizenn `cai_scale` a vo anavezet evel gwenodennoù kempennet gant KAI ha diswelet gant linennoù ruz, hervez o diaester.
+
+    * ![red line](route_std.png) cai_scale=T
+    * ![dashed line](route_mnt1.png) cai_scale=E
+    * ![dashed line](route_mnt2.png) cai_scale=EE
+    * ![dotted line](route_alp.png) cai_scale=EEA*
+  uk: |-
+    ## Rouantelezh-Unanet
+
+    Rummatadur an [hentoù-bale breizhveuriat hir](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
+    (tikedennet gant `network=uk_ldp`) zo diouzh an dikedenn `operator`. Merket eo an darempredoù gant `operator=National Trails` evel tennadoù broadel, ar re all a zeu evel tennadoù rannvroel.
+
+    En un doare boas e pleder gant an darempredoù tikedennet gant `network=lwn/rwn/nwn/iwn`.
+  czech: |-
+    ## Republik Tchek
+
+    Ober a ra ar vro gant ur reizhiad merkañ standard evit an hentoù-bale diazezet gant un hollad 7 arouezenn a bevar liv disheñvel. Evit an deskrivadur, sellet ouzh [pajenn dikedenniñ tchek](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (e tchekeg hepken).
+
+    Pa vez hegerzh un dikedenn `kct_*` eo trec'h war ne vern pe dikedenn `osmc:symbol`.
+    Ouzhpenn-se eo adrummatet an tennad-hent ma ne c'haller ket kaout tikedenn rouedad reizh ebet. An tennadoù gant `kct_red=major` a zeu da vezañ tennadoù broadel, ar `kct_*=major` zo rummet evel rannvroel.
+  slovakia: |-
+    ## Slovakia
+
+    Ober a ra Slovakia gant an hevelep reizhiad merkañ standard ha Republik Tchekia. Koulskoude,
+    un tammig eo disheñvel an tres tikedenniñ, sellit ouzh
+    [pajenn valeadennoù Slovakia](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+
+    An holl dennadoù dezho un dikedenn `operator=KST` zo tikedennet diouzh an tres-se. Dre ma tle an tennadoù e Slovakia dont gant un dikedenn reizh, n'eus ket bet adrummatet netra.
+  hungary: |-
+    ## Hungaria
+
+    Hungaria a ra ivez gant ur reizhiad arouezennoù liv stabil. Merket eo ar re-mañ gant o ziketennoù dezho o-unan : [jel](http://wiki.openstreetmap.org/wiki/Key:jel).
+    Trec'h eo an dikedenn-mañ war an tikedennoù all mod `osmc:symbol` a c'hallfe bezañ.
+  germany: |-
+    ## Alamagn
+
+    ### Fränkischer Albverein
+
+    Fetis a-walc'h eo ar rouedad tro-dro da Nürnberg hag e-se e teuy war wel an hentoù rannvroel zo enno an dikedenn operator=Fränkischer Albverein` e liveoù zoumañ gwanoc'h eget boaz.
+  ukcycle: |-
+    ## Rouantelezh-Unanet
+
+    ### Norwich
+
+    Implijout a ra Norwich ur reizhiad da verkañ an hentoù gant ur c'hod liv. An hentoù merket gant an dikedenn `operator=Norwich City Council` zo lakaet war wel gant ur garrezenn liv merket gant an dikedenn 'colour'.
+elevationprofiles:
+  title: Profiloù uhelder
+  general: |-
+    Savet eo ar profiloù uhelder diwar roadennoù uhelder [ASTER patrom uhelder niverel hollek (GDEM) stumm 2](http://asterweb.jpl.nasa.gov/gdem.asp), n'eo ket kemeret e kont an dikedenn "ele" en OpenStreetMap, nag ar ribouloù pr ar pontoù. Ur produ eus METI hag an NASA eo ASTER GDEM.
+
+    Ma'z eus ouzhpenn daou boent dibenn gant an tennad-hent pe ma'z a ouzhpenn ur rann d'e ober, ne vo eztaolet profil ebet. Heuliañ a ra ar profil ur roud a gornôg da reter pe norzh-su. Ma'z eus gant an tennadoù elfennoù gant rolloù mod "start" pe "goal", ha/pe ma' int listennet en un doare padus eus an disparti betek an degouezh e c'hallomp didermeniñ durc'hadur an tennad e-unan. Moarvat e vo mat deoc'h kaout soñj eus se pa voc'h oc'h empentiñ raktresoù war OpenStreetMap.
+
+    Toulloù zo a reer "ichoù" anezho. Evit ar re-mañ n'eus ket a roadennoù uhelder ; diskwelet int gant esaouennoù e linenn ar profil uhelder.
+
+    Diwallit mat, ha pa vefe hep mar ASTER stumm 2 an DEM frank a wirioù gwellañ, n'eo ket diharz e varregezhioù, kement war dachenn ar pizhder ha war hini ar goloadur.; gwelet [diverrañ o danevell gadarnaat](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) evit gouzout hiroc'h. War ar marc'had eo gwashaet an diresisder gant diresisder roadennoù OSM, [un teknik levnaat](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) a lakaomp e pleustr, ha gant pizhder ar profil a vihana a-feur ma hira an tennad-hent.
+technical:
+  title: Munudoù teknikel
+  general: |-
+    Bep munut e vez hizivaet an tennadoù-hent gant un tamm dale 2/5 munut e-keñver servijer OSM. Merkañ a ra an deiziad El laez a-gleiz deiziad an hizivadenn ziwezhañ. Hizivadennoù kartenn Mapnik eus o zu n'int ket mestroniet gant al lec'hienn-mañ. Hervez ar garg zo gant servijer OSM e c'hallont padout etre ur vunutenn hag un nebeud deizioù.
+
+    Mont a ra ar mekanik en-dro gant reizhiad korvoiñ standard [Debian Linux](http://www.debian.org/) enni ar meziantoù [pyosmium](http://osmocode.org/wiki/pyosmium),
+    [Postgresql](http://www.postgresql.org) ha [Mapnik 2.0](http://www.mapnik.org).
+    [osgende](https://github.com/waymarkedtrails/osgende) a bled gant an diaz roadennoù a-raok an ezteurel. Ober a ra al lec'hienn gant [framm labour web Django][Cherrypy] http://cherrypy.org). Emañ ar c'hod tarzh diouzh un aotre-implijout GPL. Evit muioc'h a ditouroù kit da welet [pajenn ar raktres war GitHub](https://github.com/waymarkedtrails/waymarked-trails-site).
+  translation: |-
+    ## Troidigezhioù
+    Kinniget eo an troidigezhioù a-drugarez d'ar c'henlabour gant tud [translatewiki.net](http://translatewiki.net). Mar fell deoc'h kemer perzh evit treiñ war-zu ho yezh deoc'h pe adwelet an troidigezhioù zo c'hoazh, kit da welet war [pajenn ar raktres translatewiki.net](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+legal:
+  title: Termenoù implijout lezennel
+  copyright: |-
+    Hegerz eo an tennadoù-hent dindan an [aotre implijout alamalan Creative Commons Attribution-Share Alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en), emañ ar roudoù GPX dindan [ODbL](http://opendatacommons.org/licenses/odbl/).
+    Gallout a reont bezañ adimplijet e kement ha ma vo un aotre implijout kenglotus gant disoc'h al labour hag e kement ha ma vo meneget ar raktres OpenStreetMap ant e lec'hienn.
+  usage: |-
+    ## Reolennoù implijout
+
+    Gallout a rit lakaat tennadoù-hent an eil war egile war lec'hiennoù all e kement ha n'eo ket re uhel an stankter moned. Lakait an teol er grubuilh bep tro ma c'hallit hag implijit un davead reizh. Arabat diskargañ teol a-vras.
+
+    Pourchaset eo ar roudoù GPX evit aesaat an traoù da weladennerien al lec'hienn-mañ. N'eo ket aotreet pellgargañ a-vras.
+  disclaimer: |-
+    ## Kemenn-diwall
+
+    N'haller ket gwarantiñ e vefe reizh pe glok ar gartenn e mod ebet. Ma'z it da vale, tapit ganeoc'h ur gartenn baper a-feson, ur benveg azas, hag ho skiant-vat. Ken kriz ha ma'z eo kaer e c'hall an natur bezañ.
+
+    Liammoù war-zu lec'hiennoù web diavaez zo el lec'hienn-mañ. Aozer al lec'hienn n'en deus tamm levezon ebet war danvez al lec'hiennoù-se ha n'eo ket atebek anezho e mod ebet.
+acknowledgements:
+  title: Trugarekadennoù
+  text: |-
+    Pourvezet eo holl roadennoù ar gartenn gant [OpenStreetMap hag e izili](http://www.openstreetmap.org), dasparzhet dindan an aotre implijout ODbL. Pourchaset eo ivez ar gartenn diazez a-drugarez da OSM dindan an aotre implijout CC BY-SA 2.0. Evit gouzout hiroc'h, sellit ouzh [pajenn ar perc'henniezh spered OSM](http://www.openstreetmap.org/copyright).
+
+    Krouet eo bet ar gwiskad skeudañ hag ar roadennoù uhelvetrek dre veskañ roadennoù SRTM gant ASTER GDEM.
+    Ur produ eus METI hag an NASA eo ASTER GDEM.
+    A-drugarez da Yves Cainaud eo bet pourchaset goude-tretiñ [opensnowmap.org](http://opensnowmap.org).
+
+    Gant Espen Oldeman Lund eo bet diorroet ar profil uhelder e darempred gant [Kresendo](http://www.kresendo.no) ha [raktres TG4NP](http://tg4np.eu) en [Ensavadur imbourc'hiñ Norvegia ar C'hornôg](http://wwww.vestforsk.no).
+
+    Gant Michael Spreng eo bet savet adstumm ar pistennoù sportoù goañv. Gant Robert Wittaker eo bet prientet an arouezenn varc'hegañ.
+
+    Troidigezhioù al lec'hienn-mañ a zeu diwar [translatewiki.net hag e genlabourerien](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Trugarekadennoù c'hwek d'an droourien gentañ o deus pourvezet testennoù a-raok translatewiki.net : Yves Cainaud (galleg), Oscar Formaggi (italianeg), Gustave  [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (spagnoleg), [Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (norvegeg bokmål ha nynorsk), Mads Lumholt/TG4NP (daneg), Magnús Smári Snorrason/TG4NP (islandeg), Lars Mikaelsson/TG4NP (svedeg), hag Elina Pesonen (finneg).
+
+    Erfin, ne vije ket eus ar servijer hep skoazell vrokus [Martin Hoffmann](http://www.partim.de).
+contact:
+  title: Darempred
+  text: |-
+    Gallout a rit kas ho koulennoù hag evezhiadennoù diwar-benn al lec'hienn-mañ da : [lonvia@denofr.de](mailto:lonvia@denofr.de).
+    Kelaouiñ diwar-benn ar c'hudennnoù a c'haller ober war [furcher drein raktres github](https://github.com/lonvia/waymarked-trails-site/issues). A-raok kas keloù diwar-benn un draen, gwiriit mat n'emañ ket an dalc'h gant roadennoù OSM.
+...

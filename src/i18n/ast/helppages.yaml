@@ -1,0 +1,330 @@
+# Messages for Asturian (asturianu)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Xuacu
+---
+about:
+  title: Tocante al mapa
+  hiking: Esti mapa amuesa rutes d'escursionismu señalizaes per tol mundu.
+  cycling: Esti mapa amuesa rutes ciclistes señalizaes per tol mundu.
+  mtb: Esti mapa amuesa rutes de bici de monte señalizaes per tol mundu.
+  skating: Esti mapa amuesa rutes en patinos señalizaes per tol mundu.
+  riding: Esti mapa amuesa rutes ecuestres señalizaes per tol mundu.
+  slopemap: Esti mapa amuesa pendientes señalizaes pa deportes d'iviernu per tol mundu.
+  osm: "Les rutes tan sobrepuestes al mapa estándar d'OpenStreetMap y opcionalmente
+    una capa de relieve. El mapa de rutes xenérase con datos del proyeutu [OpenStreetMap](http://www.openstreetmap.org)
+    (OSM).\nOSM ye un mapamundi editable llibremente onde cualquiera pue\nparticipar.
+    Esto significa que de nenguna manera ta completu,\npero tamién significa que tu
+    pues collaborar amestando rutes\nnueves y corrixendo errores nes esistentes. Pa
+    saber más\nsobro OpenStreetMap, mira la \n[Guía del principiante](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide)"
+rendering:
+  title: Representación de los datos d'OSM
+  hikingroutes: "Les rutes d'escursionismu n'OSM deben inxertase como rellaciones.
+    El so funcionamientu\ndescribese en detalle na páxina d'etiquetáu\n[Walking Routes](http://wiki.openstreetmap.org/wiki/Walking_Routes)\nde
+    la wiki d'OSM. Esti mapa amuesa les rellaciones que tienen polo menos les \nsiguientes
+    etiquetes:\n\n    type = route|superroute\n    route = foot|walking|hiking"
+  cyclingroutes: "Les rutes ciclistes n'OSM tienen d'inxertase como rellaciones. El
+    so \nfuncionamientu se describe de mou detalláu na páxina de etiquetáu (n'inglés)
+    \nde la wiki d'OSM sobre \n[rutes ciclistes](http://wiki.openstreetmap.org/wiki/Cycle_routes).
+    Esti mapa \namuesa toles rellaciones que tienen polo menos les siguientes etiquetes:
+    \n\n    type = route|superroute\n    route = bicycle\n\nLes rutes pa bicis de
+    monte o BTT s'amuesen nun [mapa distintu](http://mtb.waymarkedtrails.org/ast/)."
+  mtbroutes: "Les rutes pa bicis de monte n'OSM siguen l'esquema d'etiquetáu de les
+    \nciclistes, que se describe de mou detalláu na páxina de etiquetáu (n'inglés)
+    \nde la wiki d'OSM sobre \n[rutes ciclistes](http://wiki.openstreetmap.org/wiki/Cycle_routes).\nLes
+    rellaciones que tienen les siguientes etiquetes se reconocen como rutes de BTT:
+    \n\n    type = route|superroute\n    route = mtb\n\nLes rutes ciclistes normales
+    s'amuesen nel [mapa ciclista](http://cycling.waymarkedtrails.org/ast/)."
+  skatingroutes: |-
+    Les rutes de patinaxe señalizaes tienen d'etiquetase como cualesquier otra rellación de ruta.
+    Pa les etiquetes qu'entiende esti mapa, echa-y una güeyada a la páxina wiki sobre les
+    [rutes de patinaxe en llinia de Suiza](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
+    Pa que se reconoza como ruta de patinaxe, tienen de tar presentes les siguientes etiquetes:
+
+        type = route|superroute
+        route = inline_skates
+  ridingroutes: |-
+    Les rutes d'equitación señalizaes tienen d'etiquetase como cualquier otra rellación de ruta.
+    Pa más detalles mira [la páxina de ruta na wiki d'OSM](http://wiki.openstreetmap.org/wiki/Relation:route).
+    Pa que se reconoza como una ruta ecuestre, han tar presentes les siguientes etiquetes:
+
+        type = route|superroute
+        route = horse
+  sloperoutes: |-
+    Les pendientes señalizaes son víes con etiquetes piste:type.
+    Pa que se reconoza como pendiente, les siguientes etiquetes tienen de tar presentes nes víes:
+
+        piste:type = downhill|nordic|sled|hike|sleigh
+
+    Pa les rellaciones, tienen de tar presentes les siguientes etiquetes:
+
+        type = route|superroute
+        route = ski|piste
+        piste:type = downhill|nordic|sled|hike|sleigh
+  slopeclassification: |-
+    La clasificación de pendientes d'esquí (descensu)
+    determínase dende la etiqueta `piste:difficulty`,
+    y s'usa pal color de la representación.
+  classification: |-
+    Hai sofitu pa valores múltiples na etiqueta `route`
+    cuando se separen con puntu y coma ensin espaciu.
+    La clasificación (y, poro, el color de la ruta nel mapa)
+    determínase dende la etiqueta de `network`.
+  slopemaplabels: |-
+    La etiqueta pa les rutes d'esquí (descensu) "albídrase" dende les etiquetes nel orde siguiente:
+
+    1. Si esiste una etiqueta `piste:ref`, fai una etiqueta de testu con `piste:ref`.
+    2. Si esiste una etiqueta `piste:name`, deriva una referencia d'ella, usando primero
+       sólo lletres mayúscules y, si falla, usando les primeres lletres
+       del nome.
+    3. Si esiste una etiqueta `ref`, fai una etiqueta de testu con `ref`.
+    4. Si ye una rellación y esiste una etiqueta `name`, deriva una referencia d'ella, usando primero
+       sólo lletres mayúscules y, si falla, usando les primeres lletres
+       del nome.
+    5. Abandona.
+
+    Les pendientes pa esquí nórdicu márquense con un signu qu'amuesa namái el so color, si ta presente una etiqueta de color.
+  hikinglabels: |-
+    La etiqueta de cada ruta «s'albidra» a partir de les etiquetes nel orde siguiente:
+
+    1. Se comprueben les [regles de representación llocalizaes](rendering/hikinglocal).
+    2. S'intenta interpretar la etiqueta `osmc:symbol`. Pa más detalles sobro les partes
+       que s'entienden, consulta [regles de representación de osmc:symbol](rendering/osmc).
+    3. Si existe una etiqueta `ref`, fai una etiqueta de testu cola etiqueta `ref`.
+    4. Si esiste una etiqueta `name`, deriva la referencia d'ella, primero usando
+       namái les lletres mayúscules y, si falla eso, usando les primeres lletres
+       del nome.
+    5. Dexalo por imposible.
+  labels: |-
+    La etiqueta de cada ruta «s'albidra» a partir de les etiquetes nel orde siguiente:
+
+    1. Si existe una etiqueta `ref`, fai una etiqueta de testu cola etiqueta `ref`.
+    2. Si esiste una etiqueta `name`, deriva la referencia d'ella, primero usando
+       namái les lletres mayúscules y, si falla eso, usando les primeres lletres
+       del nome.
+    3. Dexalo por imposible.
+  hierarchy: El mapa tamién soporta [xerarquíes de rellación](rendering/hierarchies).
+  guideposts: |-
+    Los [postes de señalización](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    se reconocen poles siguientes etiquetes:
+
+        tourism=information
+        information=guidepost
+        name=<nome>
+        ele=<altitú>
+
+    `tourism` ya `information` son obligatories. `name` y `ele` se puen omitir.
+hierarchies:
+  title: Xerarquíes de rellación
+  text: "El mapa tamién soporta rellaciones añeraes, esto ye, rellaciones que contienen\notres
+    rellaciones. Estes xerarquíes s'usen de dos maneres distintes na base de\ndatos
+    d'OSM: o bien pa dividir rutes mui llargues\n(p.ex. [E1](http://hiking.waymarkedtrails.org/route/European%20walking%20route%20E1))\no
+    pa evitar duplicar el trabayu cuando dos rutes van pol mesmu camín (ver,\npor
+    exemplu, la suiza \n[Via Francigena](http://hiking.waymarkedtrails.org/route/Via%20Francigena,%20Swiss%20part)\nque
+    forma parte de la européa \n[Via Romea Francigena](http://hiking.waymarkedtrails.org/route/Via%20Romea%20Francigena)).\nNel
+    primer casu les rellaciones secundaries nun son rutes completas elles\nmesmes
+    y, poro, nun tienen d'apaecer nel mapa de mou independiente.\n\nEl cómo se trata
+    exactamente una rellación secundaria na representación,\ndepende de la etiqueta
+    `network`:\n\n* Si la rellación madre y la fía comparten la mesma etiqueta de
+    rede, la \n  rellación fía se toma como sólo una etapa de la rellación madre.
+    Poro,\n  la so ruta s'amiesta a la rellación madre y la rellación fía nun s'amuesa\n
+    \ nel mapa.\n* Si la etiqueta `network` de les rellaciones madre y fía son diferentes,\n
+    \ les rellaciones se tomen como independientes. La ruta de la rellación\n  fía
+    s'amiesta a la rellación madre y les dos rellaciones s'amuesen nel\n  mapa.\n\n*Nota:*
+    siempre se puen inspeicionar les rellaciones secundaries col navegador\nde rutes.
+    Namái seleiciona la rellación madre y s'amosará una llista seleicionable\nde rellaciones
+    secundaries."
+osmc:
+  title: La etiqueta osmc:symbol
+  text: |-
+    La etiqueta `osmc:symbol` ufre una manera de describir, de forma lleíble por una
+    máquina, símbolos de ruta de formes xeométriques simples, como s'alcuentren en
+    dalgunos paises européos (y especialmente n'Alemania). El mapa
+    sólo almite un subconxuntu de lo que se describe na páxina Wiki. Pa que se
+    represente nel mapa, la etiqueta debe tener el siguiente formatu:
+
+        osmc:symbol=waycolor:background:foreground:text:textcolor
+
+    `waycolor` tien de tar presente, pero s'inora para esti mapa.
+    Un segundu primer planu. `text` y `textcolor`
+    puen omitise.
+hikinglocal:
+  title: Renderización llocal
+  text: |-
+    Hai abondos sistemes diferentes pa marcar rutes d'escursionismu a lo llargo
+    del mundu. Mentanto que'l mapa intenta usar les etiquetes más xenerales pa
+    facer una representación decente, ta condenáu a fallar con ciertos sistemes,
+    especialmente con redes de rutes d'escursionismu. Pa adautase a estos
+    sistemes, el mapa pue llocalizase pa los llugares onde nun ye bastante cola
+    representación estándar.
+
+    Más abaxo hai una llista de llugares qu'utilicen mapes con símbolos especiales.
+    Pa que'l llugar que tu quieras se represente d'una manera especial, llei los
+    conseyos al final de la páxina.
+  swiss: |-
+    ## Suiza
+
+    Suiza tien una estensa rede de senderos marcaos que cubre'l país ensembre. La
+    rede ye una rede de nodos, onde los postes de señalización con nome funcionen
+    como nodos. Toles rutes marquense d'un mou determináu acordies cola so
+    dificultá. El mapa amuesa esos senderos en bermeyo, con un patrón de llinia
+    que marca la dificultá:
+
+    * ![red line](route_std.png) *Senderu*, marcáu con ![diamond](yellow_diamond.png). Etiquetáu como `network=lwn` y `osmc:symbol=yellow:[...]`.
+    * ![dashed line](route_mnt.png) *Senderu de monte*, marcáu con ![white-red-white](white_red_white.png). Etiquetáu como `network=lwn` y `osmc:symbol=red:[...]`.
+    * ![dotted line](route_alp.png) *Senderu d'alpinismu*, marcáu con ![white-blue-white](white_blue_white.png). Etiquetáu como `network=lwn` y `osmc:symbol=blue:[...]`.
+
+    Date cuenta que sobre esta rede hai delles rutes nacionales y rexonales que
+    vense de manera normal.
+
+    Pa más información tocante al etiquetáu de rutes d'escursionismu de Suiza en
+    OSM ver:
+    [Rede de senderos de Suiza](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)
+  italy: |-
+    ## Italy
+
+    El Club Alpino Italiano (CAI) caltien la rede de siendes de monte
+    clasificaes por dificultá de mou asemeyáu al qu'esiste en Suiza.
+    Les rutes marcaes con `network=lwn`, `osmc:symbol=red:..` y con etiqueta `cai_scale`
+    reconoceránse como siendes calteníes pol CAI y apaecerán como llinies
+    bermeyes acordies cola dificultá.
+
+    * ![red line](route_std.png) cai_scale=T
+    * ![dashed line](route_mnt1.png) cai_scale=E
+    * ![dashed line](route_mnt2.png) cai_scale=EE
+    * ![dotted line](route_alp.png) cai_scale=EEA*
+  uk: |-
+    ## Reinu Xuníu
+
+    La clasificación de los [caminos de llarga distancia nel RX](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
+    (los etiquetaos con `network=uk_ldp`) depende de la etiqueta `operator`. Les
+    rellaciones con `operator=National Trails` veranse como caminos nacionales;
+    toles demás rellaciones apaecen como rutes rexonales.
+
+    Les rellaciones con una etiqueta `network=lwn/rwn/nwn/iwn` xestionense como de
+    vezu.
+  czech: |-
+    ## República Checa
+
+    El país utiliza un marcáu estándar de caminos basáu nun conxuntu de 7 símbolos
+    y 4 colores diferentes. Pa ver una descripción visita la [páxina de etiquetáu checa](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (namái en checu).
+
+    Cuando ta disponible una etiqueta `kct_*`, prefierse antes qu'una etiqueta `osmc:symbol`.
+    Amás, la ruta reclasifícase si nun s'alcuentra una etiqueta `network` válida.
+    Les rutes con `kct_red=major` conviertense'n rutes nacionales; les otres
+    etiquetes `kct_*=major` clasifiquense como rexonales.
+  slovakia: |-
+    ## Eslovaquia
+
+    Eslovaquia utiliza'l mesmu estándar de marcáu de caminos que la República
+    Checa. Sicasí, l'esquema de etiquetáu ye llixeramente diferente; consulta la
+    [páxina de senderismu eslovaca](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+
+    Toles rutes cola etiqueta `operator=KST` marquense acordies con esi esquema.
+    Como les rutes en Eslovaquia tienende venir con una etiqueta `network` válida,
+    nun se fai reclasificación dala.
+  hungary: |-
+    ## Hungría
+
+    Hungría tamién usa un sistema con un conxuntu fixu de símbolos de diferentes
+    colores. Estos marquense cola so propia etiqueta [jel](http://wiki.openstreetmap.org/wiki/Key:jel).
+    Esta etiqueta prefierse antes que cualquier etiqueta `osmc:symbol`.
+  germany: |-
+    ## Alemaña
+
+    ### Fränkischer Albverein
+
+    La rede alredor de Nuremberg ye enforma densa y, poro, les rutes rexonales
+    etiquetaes con `operator=Fränkischer Albverein` tienen d'apaecer con niveles
+    d'ampliación menores de lo habitual.
+  ukcycle: |-
+    ## Reinu Xuníu
+
+    ### Norwich
+
+    Norwich usa un sistema de rutas codificaes por color. Les rutes etiquetaes con
+    `operator=Norwich City Council` tan marcaes con un cuadráu de color según
+    la etiqueta `colour`.
+elevationprofiles:
+  title: Perfiles d'altitú
+  general: |-
+    Los perfiles d'altitú faense con datos d'altitú del [modelu d'altitú dixital global ASTER (GDEM) versión 2](http://asterweb.jpl.nasa.gov/gdem.asp), la etiqueta "ele" n'OpenStreetMap nun se tien en cuenta, nin los túneles y pontes. ASTER GDEM ye un productu de METI y la NASA.
+
+    Si la ruta tien más de dos puntos finales o ta formada por más d'un segmentu, nun se representará dengún perfil. La direición del perfil sigue la ruta oeste-este o norte-sur. Si les rutes teníen elementos con roles como "start" (aniciu) y "goal" (destín), y/o apaecen continuamente dende l'aniciu al destín, podríamos determinar la direición dende la propia rellación de la ruta. Habríes de tener en cuenta eses coses cuando traces rutes en OpenStreetMap.
+
+    Hai furacos, llamaos "voids" para los que nun tenemos datos d'altitú, estos vense como furacos na llinia del perfil d'altitú.
+
+    Ten en cuenta que anque ASTER versión 2 probablemente ye'l meyor DEM global llibre, tien ciertos llímites tanto en precisión como en cobertura, llei el so [informe resume de validación](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) pa más información. Les imprecisiones agravense inda más pola inexautitú de los datos d'OSM, [una técnica de suavizáu](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) qu'aplicamos, y la resolución del perfil que faise menor cuanto más llarga ye la ruta.
+technical:
+  title: Detalles téunicos
+  general: |-
+    La capa de ruta anuevase cada minutu y normalmente va 2-5 minutos por detrás del
+    sirvidor d'OSM. La data de la esquina superior izquierda amuesa
+    l'últimu anovamientu. Los anovamientos del mapa Mapnik del fondu nun tan baxo
+    control d'esti sitiu. Dependiendo de la carga actual del sirvidor d'OSM tarden
+    ente un minutu y dellos díes.
+
+    La máquina funciona con [Debian Linux](http://www.debian.org) estándar con una cadena de ferramientes
+    formada por [pyosmium](http://osmcode.org/pyosmium/),
+    [Postgresql](http://www.postgresql.org) y [Mapnik 2.0](http://www.mapnik.org).
+    [osgende](https://github.com/waymarkedtrails/osgende) encargase de dalgún postprocesamientu
+    na base de datos enantes de presentala. El sitiu web sírvese usando
+    [CherryPy](http://cherrypy.org/). El códigu fonte
+    ta disponible baxo llicencia GPL. Pa más información, visita la
+    [páxina del proyeutu en GitHub](https://github.com/waymarkedtrails/waymarked-trails-site).
+  translation: |-
+    ## Traducciones
+
+    Les traducciones alminístrense gracies como siempres a l'ayuda de la xente de
+    [translatewiki.net](http://translatewiki.net/). Si quies collaborar con una traducción
+    na to llingua o facer comentarios sobro les traducciones esistentes, visita la
+    [páxina del proyeutu en translatewiki.net](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+legal:
+  title: Condiciones llegales y d'usu
+  copyright: "La capa de rutes ta disponible baxo \n[llicencia Creative Commons Attribution-Share
+    Alike 3.0 Alemania](http://creativecommons.org/licenses/by-sa/3.0/de/deed.ast),
+    y les traces GPX baxo la [ODbL](http://opendatacommons.org/licenses/odbl/). \nPuen
+    reutilizase y camudase mentanto que'l trabayu resultante use una llicencia compatible
+    y se mencionen el proyeutu OpenStreetMap y esti sitiu."
+  usage: |-
+    ## Política d'usu
+
+    Pue usar la capa n'otros sitios mentanto la tasa de tráficu seya moderada. Por favor, ponga los cuadros en caché tanto como pueda y use un referente correutu. Desaconseyase enforma la descarga en masa de los cuadros.
+
+    Les traces GPX ufrense pa mayor comodidá de los visitantes d'esti sitiu. La descarga en masa nun ta permitida.
+  disclaimer: |-
+    ## Renuncia de responsabilidá
+
+    Nun pue garantizase que'l mapa seya exactu nin tea completu. Si sal d'escursión, consiga un bon mapa, un equipamientu afayadizu, y nun dexe'l bon xaciu en casa. La natura ye tan guapa como despiadada.
+
+    Esti sitiu contien enllaces a sitios web esternos. L'autor d'esti sitiu nun tien influencia dala sobro'l conteníu d'esos sitios web y nun asume nenguna responsabilidá por ellos.
+acknowledgements:
+  title: Reconocimientos
+  text: "Tolos datos de los mapes proporciónenlos \n[OpenStreetMap y collaboradores](http://www.openstreetmap.org)
+    y distribúinse baxo la llicencia ODBL. El mapa base tamién ye cortesía d'OSM y
+    ta disponible baxo llicencia CC BY-SA 2.0. Pa más información, visita la [páxina
+    de drechos d'autor d'OSM](http://www.openstreetmap.org/copyright).\n\nLos datos
+    de relieve y elevación tan fechos con un entemecíu de datos SRTM y ASTER GDEM.\nASTER
+    GDEM ye un productu de METI y NASA.\nEl postprocesáu ufriólu amablemente Yves
+    Cainaud de [opensnowmap.org](http://www.opensnowmap.org).\n\nEl códigu del perfil
+    d'elevación ta desendolcáu por Espen Oldeman Lund nuna cooperación ente [Kresendo](http://www.kresendo.no)
+    ya'l [proyeutu TG4NP](http://tg4np.eu) nel [Western Norway Research Institute](http://wwww.vestforsk.no).
+    La variante de les pendientes de deportes d'iviernu desendolcóla Michael Spreng.
+    El símbolu d'equitación preparólu Robert Whittaker.\n\nLos destinos de Guidepost
+    tan procesaos por [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm).
+    Munches gracies a Jan Michel por ufrir el serviciu.\n\nLes traducciones d'esti
+    sitiu les proporcionen [translatewiki.net y collaboradores](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators).
+    Gracies n'especial a los primeros traductores que\nprepararon traducciones enantes
+    de translatewiki.net: Yves Cainaud (Francés),\nOscar Formaggi (Italianu),\nGustavo
+    [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (Español),\n[Guttorm
+    Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (Noruegu bokmål y
+    nynorsk),\nMads Lumholt/TG4NP (Danés), Magnús Smári Snorrason/TG4NP (Islandés),\nLars
+    Mikaelsson/TG4NP (Suecu), y Elina Pesonen (Finlandés).\n\nFinalmente, el sirvidor
+    nun esistiría ensin el xenerosu encontu de\n[Martin Hoffmann](http://www.partim.de)."
+contact:
+  title: Contautu
+  text: |-
+    Les entrugues y comentarios tocante a esti sitiu se puen unviar a [lonvia@denofr.de](mailto:lonvia@denofr.de).
+
+    Tamién se pue informar de los fallos nel [siguimientu de fallos del proyeutu en github](https://github.com/lonvia/waymarked-trails-site/issues). Enantes d'informar d'un fallu, por favor, asegurate de que'l problema nun ye colos datos d'OSM.
+...

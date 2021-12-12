@@ -1,0 +1,163 @@
+# Messages for Swedish (svenska)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Fader
+# Author: Grytolle
+# Author: Jopparn
+# Author: Lokal Profil
+# Author: Sendelbach
+# Author: WikiPhoenix
+---
+about:
+  title: Om kartan
+  hiking: Denna karta visar märkta vandringsrutter runt om i världen.
+  cycling: Denna karta visar märkta cykelrutter runt om i världen.
+  mtb: Denna karta visar märkta mountainbike-rutter runt om i världen.
+  skating: Denna karta visar märkta inline-skridskorutter runt om i världen.
+  riding: Denna karta visar uppmärkta ridningsrutter runt om i världen.
+  slopemap: Denna karta visar uppmärkta vintersportbackar runt om i världen.
+  osm: Lederna är överlagrade på OpenStreetMaps standardkarta och har ett valbart
+    höjdkurvslager. Ledkartan skapas från data från projektet [OpenStreetMap](http://www.openstreetmap.org)
+    (OSM). OSM är en fri redigerbar världskarta som alla kan bidra till. Detta innebär
+    att den på intet sätt är fullständig, men det innebär också att du kan bidra genom
+    att lägga till nya leder och korrigera fel som gjorts på de inlagda. För mer information
+    om OpenStreetMap, se [Nybörjarguiden](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
+rendering:
+  title: Renderar OSM-data
+  hikingroutes: "Vandringsleder i OSM måste läggas in som relationer. Hur detta görs
+    beskrivs i detalj på taggningssidan om [vandringsleder](http://wiki.openstreetmap.org/wiki/Walking_Routes)
+    på OSM:s wiki. Denna karta visar relationer som har minst en av följande taggar:
+    \n\ntype = route|superroute\nroute = foot|walking|hiking"
+  cyclingroutes: |-
+    Cykelleder i OSM måste läggas in som relationer. Hur denna görs beskrivs i detalj på taggningssidan om [cykelleder](http://wiki.openstreetmap.org/wiki/Cycle_routes) på OSM:s wiki. Denna karta visar alla relationer som har minst en av följande taggar:
+
+    type = route|superroute
+    route = bicycle
+
+    Mountainbikeleder visas på en separat [MTB-karta](http://mtb.waymarkedtrails.org/en/).
+  mtbroutes: |-
+    Mountainbikeleder följer samma taggningsschema som cykelleder vilka beskrivs i detalj på OSM-wikins sida om [cykelleder](http://wiki.openstreetmap.org/wiki/Cycle_routes). Relationer som har följande taggar är MTB-leder:
+
+    type = route|superroute
+    route = mtb
+
+    Vanliga cykelleder visas på [cykelkartan](http://cycling.waymarkedtrails.org/en/).
+  skatingroutes: |-
+    Skyltade skridskoleder kan taggas som andra leders relationer. För taggningen som används på denna karta kan du ta en titt på wikisidan om [Schweiziska inlineleder](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork). För att vara en skridskoled måste följande taggar finnas:
+
+    type = route|superroute
+    route = inline_skates
+  ridingroutes: |-
+    Skyltade hästridningsrutter kan taggas som andra leders relationer.
+    För detaljer se [ruttsidan på OSM wiki](http://wiki.openstreetmap.org/wiki/Relation:route).
+    För att vara en hästridningsrutt måste följande taggar finnas:
+
+        type = route|superroute
+        route = horse
+  sloperoutes: |-
+    Skyltade backar är vägar med piste:type-taggarna.
+    För att vara en backe måste följande taggar finnas:
+
+        piste:type = downhill|nordic|sled|hike|sleigh
+
+    För relationer måste följande taggar finnas:
+
+        type = route|superroute
+        route = ski|piste
+        piste:type = downhill|nordic|sled|hike|sleigh
+  slopeclassification: |-
+    Klassificeringen av skidbackar (nedförsbacke)
+    bestäms genom `piste:difficulty`-taggen och
+    användes för färgen i renderingen.
+  classification: |-
+    En `route`-tagg med flera värden stöds om de är separerade av semikolon utan omgivande mellanslag.
+    Klassificeringen (och därigenom ledens färg på kartan) bestäms genom `network`-taggen.
+  slopemaplabels: |-
+    Etiketten för skidrutter (nedförsbacke) "gissas fram" utifrån taggarna i följande ordning:
+
+    1. Om taggen `piste:ref` existerar, skapa en textruta med taggen `piste:ref`.
+    2. Om taggen `piste:name` existerar, skapa en referens utifrån denna i första hand genom att använda versala bokstäver och om detta misslyckas genom att använda de första tecknen i namnet.
+    3. Om taggen `ref` existerar, skapa en textruta med taggen `ref`.
+    4. Om det är en relation och taggen `name` existerar, skapa en referens utifrån denna i första hand genom att använda versala bokstäver och om detta misslyckas genom att använda de första tecknen i namnet.
+    5. Ge upp.
+
+    Nordiska backar markeras med en skylt för att visa sin färg om en färgtagg används.
+  hikinglabels: |-
+    Etiketten för varje led "gissas fram" utifrån taggarna i följande ordning:
+
+    1. Kolla efter [lokala renderingsregler](rendering/hikinglocal).
+    2. Försök översätta taggen `osmc:symbol`. För detaljer om vilka delar som förstås, se [Renderingsregler för osmc:symbol](rendering/osmc). 3. Om taggen `ref` existerar, gör en textruta med taggen `ref`.
+    4. Om taggen `name` existerar, skapa en referens utifrån denna i första hand genom att använda versala bokstäver och om detta misslyckas genom att använda de första tecknen i namnet.
+    5. Ge upp.
+  labels: |-
+    Etiketten för varje led "gissas fram" utifrån taggarna i följande ordning:
+
+    1. Om taggen `ref` existerar, gör en textetikett med `ref` i.
+    2. Om taggen `name` existerar, skapa en referens utifrån denna, i första hand genom att använda versala bokstäver och om detta misslyckas genom att använda de första tecknen i namnet.
+    3. Ge upp.
+  hierarchy: Kartan stödjer även [relationhierarkier](rendering/hierarchies).
+  guideposts: "[Guideposts](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    känns igen genom följande taggar: \n\ntourism=information\ninformation=guidepost\nname=<name>\nele=<altitude>
+    \n\n`tourism` och `information` måste finnas. `name` och `ele` kan utelämnas."
+hierarchies:
+  title: Relationhierarkier
+osmc:
+  title: osmc:symbol-taggen
+hikinglocal:
+  title: Lokaliserade rendering
+  text: "Det finns en mängd olika system att markera vandringsleder runt om i världen.
+    Även om kartan försöker att använda de vanligaste taggarna för att ge dem en anständig
+    rendering, kommer det att misslyckas för vissa system, särskilt för nätverk av
+    vandringsleder. För att tillgodose dessa system kan kartan lokaliseras för regioner
+    där standardrendering är otillräcklig. \n\nNedan är en lista över regioner som
+    använder särskilda kartsymboler. Läs tipsen i slutet av sidan för att få din egen
+    region återged på ett speciellt sätt."
+  germany: |-
+    ## Tyskland
+
+    ### Fränkischer Albverein
+
+    Nätverket runt Nürnberg är ganska tätt, vilket innebär att regionala rutter taggade
+    med `operator=Fränkischer Albverein` visas med lägre zoomnivåer än normalt.
+elevationprofiles:
+  title: Höjdprofiler
+technical:
+  title: Tekniska detaljer
+  translation: |-
+    ## Översättningar
+
+    Översättningar hanteras av de alltid hjälpsamma människorna på
+    [translatewiki.net](http://translatewiki.net). Om du vill bidra med en översättning
+    på ditt eget språk eller ge feedback på befintliga översättningar, besök
+    [translatewiki.net projektsidan](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+legal:
+  title: Juridiska och användningsvilkor
+acknowledgements:
+  title: Tack till
+  text: |-
+    All kartdata tillhandahålls av [OpenStreetMap och dess bidragsgivare](http://www.openstreetmap.org)
+    och distribueras under licensen ODbL. Grundkartan används med tillstånd av OSM och är tillgänglig under CC BY-SA 2.0. För mer information, se [upphovsrättssidan för OSM](http://www.openstreetmap.org/copyright).
+
+    Skuggningen för kullarna och höjddatan skapades från en kombination av data från SRTM och ASTER GDEM.
+    ASTER GDEM är en produkt av METI och NASA.
+    Efterbehandlingen tillhandahölls av Yves Cainaud från [opensnowmap.org](http://opensnowmap.org).
+
+    Profilkoden för höjder har utvecklats av Espen Oldeman Lund i ett samarbete mellan [Kresendo](http://www.kresendo.no) och [TG4NP-projektet](http://tg4np.eu) på [Western Norway Research Institute](http://www.vestforsk.no).
+
+    Sluttningsvarianten för vintersporter har utvecklas av Michael Spreng. Ryttarsymbolen förberedes av Robert Whittaker.
+
+    Översättningarna av denna webbplats tillhandahålls av [translatewiki.net och dess bidragsgivare](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Stort tack går till pionjäröversättarna som tillhandahöll översättningar innan translatewiki.net: Yves Cainaud (franska),
+    Oscar Formaggi (italienska),
+    Gustavo [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (spanska),
+    [Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (norska bokmål och nynorsk),
+    Mads Lumholt/TG4NP (danska), Magnús Smári Snorrason/TG4NP (Islandic),
+    Lars Mikaelsson/TG4NP (svenska) och Elina Pesonen (finska).
+
+    Slutligen, servrarna skulle inte kunna finnas utan det generösa stödet från [Martin Hoffmann](http://www.partim.de).
+contact:
+  title: Kontakt
+  text: |-
+    Frågor och kommentarer om denna webbplats kan skickas till: [lonvia@denofr.de](mailto:lonvia@denofr.de).
+
+    Tekniska fel kan även rapporteras på [github](https://github.com/lonvia/waymarked-trails-site/issues). Kontrollera först om felet beror på OSM-datan.
+...

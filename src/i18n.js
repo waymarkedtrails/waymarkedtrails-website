@@ -1,11 +1,15 @@
 import { register, init, getLocaleFromNavigator, locale } from 'svelte-i18n';
+import msg_languages from './i18n/messages.js';
 
 export const languages = [['en', 'English'],
                           ['de', 'Deutsch']
                          ];
 
-register('en', () => import('./i18n/en.json'));
-register('de', () => import('./i18n/de.json'));
+languages.forEach((item, idx) => {
+    if (msg_languages.hasOwnProperty(item[0])) {
+        register(item[0], msg_languages[item[0]])
+    }
+});
 
 let storedLocale = localStorage.getItem('lang');
 

@@ -1,0 +1,198 @@
+# Messages for Colognian (Ripoarisch)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Purodha
+---
+about:
+  title: Övver heh di Landkaat
+  hiking: Heh di Kaat zeisch beschelderte Wanderwääje op je janze Ääd.
+  cycling: Heh di Kaat zeisch beschelderte Raddwanderwääje op je janze Ääd.
+  mtb: Heh di Kaat zeisch beschelderte Wääje fö Mauntenbaiks övver je janze Ääd.
+  skating: Heh di Kaat zeisch beschelderte Wääje för Rollschohn op je janze Ääd.
+  riding: Heh di Kaat zeisch beschelderte Wääje op je janze Ääd för met Pähde drop
+    ze rigge.
+  slopemap: Heh di Kaat zeisch Häng, loipe un Piste för der Wenterschpood öm de Wäld.
+  osm: |-
+    De Wääje wääde op de jewöhnlijje Kaat vun OpenStreetMap dropjemohld, un wann ußjesöhg och övver en Schummerung för de Ongerscheide en de Hühde. Di Kaad es opjebout op Daate uß däm Projäk [OpenStreetMap](http://www.openstreetmap.org) (OSM).
+    Dat es en frei änderbaa Landkaat vun de janze Ääd woh jeder_ein draan metmaache kann.
+    Dat bedügg och, di Kaat es lang noch nit kumplät.
+    Ävver et bedügg och, dat De jät dohzoh beidraare kanns, för e Beischpell neu Wääje endraare udder Fähler udder Änderonge aan Wääje nohdraare, di ald doh sin.
+    Öm mieh övver OpenStreetMap ze lässe, jangk op et
+    [Handbooch för Neulenge](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
+rendering:
+  title: Daate uß em OSM daaschtälle
+  hikingroutes: |-
+    Wanderwääje möße en OSM als Verbendonge enjedraare wääde. Wi da jeihd es ang detail beschrevve op dä Sigg övver de
+    [Wanderwääje](http://wiki.openstreetmap.org/wiki/Walking_Routes)
+    em wikki vum OSM. Di kaat heh zeisch Verbendonge, di winneschsdends jekännzeischent sin met dä Befähle:
+
+        type = route|superroute
+        route = foot|walking|hiking
+  cyclingroutes: |-
+    Faratwääje em OSM möße als Verbendonge aanjelaat wääde. Wi dat jeihd es em Einzelne op dä [Sigg övver de Faratwääje](http://wiki.openstreetmap.org/wiki/Cycle_routes) em OSM singem Wiki beschrevvve. Heh di Kaat zeisch alle Verbendonge, di winneschsdens eine vun dä Mekeeronge:
+
+        type = route|superroute
+        route = bicycle
+
+    han. Wääje för Mauntenbaiks sen op ene eijene [Kaat för Mauntenbaiks](http://mtb.waymarkedtrails.org/en/) ze fenge.
+  mtbroutes: |-
+    Rattwääje för Mauntenbaiks em OSM han desällve Eijeschaffte wi de nommaale Rattwääje, dad es em Einzelne op dä [Sigg övver de Faratwääje](http://wiki.openstreetmap.org/wiki/Cycle_routes) em OSM singem Wiki beschrevvve. Heh di Kaat zeisch alle Verbendonge met dä Mekeeronge
+
+        type = route|superroute
+        route = mtb
+
+    wääde als Rattwääje för Mauntenbaiks aanjesinn. Jewöhnlejje rattwääje sen op dä [Kaat för de Rattwääje](http://cycling.waymarkedtrails.org/en/) ze fenge.
+  skatingroutes: |-
+    Beschelderte Wähje för met Rollschohn ze fahre sulte esu ußjezeischnet wähde, wi alle andere Verbendonge övver Wähje. De Bezeischnonge fengk mer en dä Wikki-Sigg övver de [Schwäijz ier Inlain-Skating Ruhte](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork) beschrevve. Öm als esu en Ruhte aanjenumme ze wähde, möße heh di Befähle aanjejovve sin:
+
+        type = route|superroute
+        route = inline_skates
+  ridingroutes: |-
+    Beschelderte Wähje för met Pähde drop ze rigge sulte esu ußjezeischnet wähde, wi alle andere Verbendonge övver Wähje. De Einzelheijte fengk mer en dä [Sigg övver Wähje em Wikki vum OSM](http://wiki.openstreetmap.org/wiki/Relation:route) beschrevve. Öm als esu ene Wähsch för met Pähde ze rigge aanjenumme ze wähde, möße heh di Befähle aanjejovve sin:
+
+        type = route|superroute
+        route = horse
+  sloperoutes: |-
+    Beschelderte Hänge sin Wähje met Befähle vun dä Zoot `piste:type` dren. Öm als esu en Häng ze jällde, möße heh di Befähle för Wähje aanjejovve sin:
+
+        piste:type = downhill|nordic|sled|hike|sleigh
+
+    För Wähje möße heh di Befähle aanjejovve sin:
+
+        type = route|superroute
+        route = ski|piste
+        piste:type = downhill|nordic|sled|hike|sleigh
+  slopeclassification: De Eindeijlong vun Peßte jeihd noh dä Aanjahb `piste:difficulty`
+    för der Schwihreschkeidsjrahd, un weed och för de Färv beim Aanzeije jebruch.
+  classification: |-
+    Ene Befähl `route` kann mieh wi eine Wäät han. Di sin hengeranander ze schriive, met Schtreschpongkte derzwesche ävver kein Zweschereum.
+
+    De Enoodenong, un dohment de Färv vun däm Wääsch en dä Kaat, kütt vun dä Aanjahbe för `network`.
+  labels: |-
+    De Beschreftong för jehde Wähsch weed von dä Aanjahbe en dä Reijefollsch ußklamüüsert:
+
+    1. Wann en `ref` aanjejovve es, nemm de Beschreftong vun doh.
+    2. Wann `name` aanjejovve es, kütt se vun doh. Eets bloß met de jruuß jeschreve Bohchschtahbe, un wann dat nit flupp, de aanfänglesche Bohchschtahbe vum Nahme.
+    3. Jiv et op.
+  hierarchy: Di Kaat määt och [Ongerdeilonge vun Verbendonge](rendering/hierarchies)
+    müjjelesch.
+  guideposts: |-
+    [Schelder aam Wääsch](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    wääde övver heh di Befähle aanjejovve:
+
+        tourism=information
+        information=guidepost
+        name=<Name>
+        ele=<Hühde>
+
+    `tourism` un `information` sin nüüdesch, ävver `name` udder `ele` kam_mer fott lohße.
+hierarchies:
+  title: De Ongerdeilonge vun de Verbendonge
+osmc:
+  title: Dä Befähl osmc:symbol
+hikinglocal:
+  title: Ußjaabe und Besönderheite en beschtemmpte Rejoone
+  text: |-
+    Mer han ene Pöngel ongerscheilijje Süßtehme för de Wanderwääje öm der Jloobus ze makeere un daazeschtälle. Di Kaat versöhk, met de alljemeinjöllteschßde Makeeronge en joode Daaschtällong henzekrijje. Dat flupp ävver nit emmer, besönders bei Näzwärke vun Wanderwääje. Öm esu en Süßteem good erövver ze bränge, kann di Kaat för en Jääjend extra Makeeronge han, woh der Schtandatt äävens nit rik.
+
+    Onge ham_mer en leß met dä Jääjende, för di ier eije extra Zeische op dä Kaat ze sinn sin. Wi mer de eije Rejohn op ier eije Aat en di Kaat kritt, kam_mer en tö Tips jans_aam Ängk vun heh dä Sigg lässe.
+  swiss: |-
+    ## de Schweiz
+
+    De Schweiz hädd e ußjedehnt Näzwärek aan Wanderwääje övver et janze Land.
+    Et weed vun Krüzpongkte uß Schelder jebildt, di all eije Nahme han.
+    Alle Wääje sin einheitlesch makkeht dernoh, wi schwieresch se sin.
+    Je nohdäm weede ongerscheidlejje Zoote Linnije jemohlt.
+    De Kaat zeisch se en rud.
+
+    * ![ruude Linnesch](route_std.png) *Wanderwääsch*, makeet met ![diamond](yellow_diamond.png). Hät en Bezeischnong als `network=lwn` un `osmc:symbol=yellow:[...]`.
+    * ![jeschtreschelte Linnesch](route_mnt.png) *Bärschwääsch*, makeet met ![white-red-white](white_red_white.png). Bezeischnet met `network=lwn` un`osmc:symbol=red:[...]`.
+    * ![Linnesch uß Püngkelscher](route_alp.png) *Alpepad*, makeet met ![white-blue-white](white_blue_white.png). Bezeischnet met `network=lwn` un `osmc:symbol=blue:[...]`.
+
+    Övver dat Näzwerrek loufe och en Aanzahl ääje uß de rejioone un däm Land, di en de üüblesche Manier aanjezeisch wääde.
+
+    Mieh Aanjahbe övver et Bezeischne vun de Wanderwääje en der Schweiz em OSM fengk mer beim
+    [Näzwärk vun de schweizer Wanderwääje](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  uk: |-
+    ## Gruhßbretannje
+
+    De [Wanderwehje en Juhßbrettannje](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths), allsu di mem Kännzeijsche „<code lang="en" xml:lang="en">network=uk_ldp</code>“, wähde övver dä Befähl „<code lang="en" xml:lang="en">operator</code>“ ennjedeilt. Alle Wähje met „<code lang="en" xml:lang="en">operator=National Trails</code>“ wähde als nazjonahle Wähje makeehrt, all di anndere als rejonahle Wähje.
+
+    Wähje met einem vun dä Kännzeijsche „<code lang="en" xml:lang="en">network=lwn/rwn/nwn/iwn</code>“ wähde wie jewöhnlesch jezeijsch.
+  slovakia: "## de ẞlovakei\n\nDe ẞlovakei hät hät desällve Makeeronge för Wääje,
+    wi de Tschäschei, ävver dat Scheema es e bezje anders, wi mer op dä \n[ẞlovakesche
+    Wander-Sigg](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes)
+    süht.\n\nAlle Wääje met däm Kännzeische `operator=KST` wääde paßend zoh däm Scheema
+    makeet. Weil de Wääje en der ẞlovakei ald med enem jöltejje `network=KST`-Befähl
+    ußjeschtattet sin sullte, wääde se nit neu enjeoodenet."
+  hungary: |-
+    ## Onnjann
+
+    Onnjann hät och e Süßethm met enem beschtemmpte Saz uß Sümbohle met ongerscheidlejje Färve.
+    Di wääde met enem eije Befähl aanjejovve, [jel](http://wiki.openstreetmap.org/wiki/Key:jel).
+    Dä Befähl  ham_mer leever wi jeede `osmc:symbol` Befähl.
+  germany: |-
+    ## Deutschland
+
+    ### Der Fränkesche Albverein
+
+    Weil dat Näz öm Nörnbärsch eröm ärsch deesch es, wähde de Wähje mem Kännzeische „operator=Fränkischer Albverein“ eez ovverhallef vun en jrüüßere Oplühsong aanjezeisch, als mer et jewöhnlesch med ander Wähje en de Rejohne maache.
+  ukcycle: |-
+    ## Jruußbetannije = et Vereineschte Künnegsrisch
+
+    ### Norwich
+
+    Norwich hät e Süßtehm vun Wääje, di met Färve makeet sin.
+    Wääje met däm Befähl `operator=Norwich City Council`
+    wääde met enem Vieräck en dä aanjejovve Färf makeet.
+elevationprofiles:
+  title: Profihle för de Hühde
+technical:
+  title: Täschnesche Einzelheite
+  translation: |-
+    ## Övversäzonge
+
+    Övversäzonge wääde vun dä iewesch hellfreische Lück op
+    [translatewiki.net](http://translatewiki.net) jemaat. Wann De derbei metmaache
+    wells, en Översäzong in ein vun Dinge Schprohche ze maache udder wann De övver en
+    Övversäzong jät ze saare häs, jangk op di Sigg:
+    [translatewiki.net project page](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+legal:
+  title: Bedengonge für et Benöze un rääschlesche Krohm
+  copyright: |-
+    Dat Övverlaareongsbeld met dä Wääje un de GPX-Opnahme schtonn onger ener [Creative Commons
+    Attribution-Share Alike 3.0 Germany
+    Lizenz](http://creativecommons.org/licenses/by-sa/3.0/de/deed.de).
+    Se künne all anderswoh jebruch wääde un doch verärbeidt wääde,
+    esu lang wi dat Wärk, wat derbei eruß kütt, widder onger en Lizänz vun dersällve Aat jeschtallt weed, un esu lang wi OpenStreetMap un och heh si Sigg als Quäll jenannt sin.
+  usage: |-
+    ## Rääjelle för der Jebruch
+
+    Dat Övverlaareongsbeld kann en ander Websigge enjebonge wääde, esu lang et nit
+    övvermääßesch öff afjeroofe weed. De Kachele sullte wo müjjelesch jekäsch wääde
+    un dä drop lengk, op Änglesch dä Referer, moß schtemme.
+    Kaateußschnedde angmaßß eronger Laade weed nit jähn jesinn un mer roode kräftesch
+    dervun aff.
+
+    De GPX-Datteije schton alleins för de Besöhker vun heh dä Sigg paraat. Automattesch
+    eronger Laade un tiräkte Lengks drop dom_mer nit zohlohße.
+  disclaimer: |-
+    ## Haftong ußjeschloße
+
+    Mer künne nit jaranteere, dat di Landkaat akeraat uddr kumpläd_es. Wann De op en
+    Wanderong jeihß, holl Der en aanschtändije Kaat op Papier jedröck, donn de reschteje
+    Saache aan, un nämm Denge jesonde Verschtand metnämme.
+    De Natuur kann weld un Jrousam sin un och wunderschöön.
+
+    Heh fengks De Lengks op ander Websigge un Webßaitß. De Maacher vun heh dä Webßait
+    han doh keine Enfloß drop un draare kein Verantwoodong för wat mer op dä främde Sigge
+    fengk.
+acknowledgements:
+  title: Danksaaronge
+contact:
+  title: Kumtak
+  text: |-
+    Aanrääjonge un Froore övver heh di Wäbsigg künnd_Er aan [lonvia@denofr.de](mailto:lonvia@denofr.de) schecke.
+
+    Fähler kam_mer och en däm [Projäk singem Süßtehm för Aufjabe ze verwallde op Github](https://github.com/lonvia/waymarked-trails-site/issues) enndraare. Ih dat De ene Fähler mällds, bes ävver sescher, dat dä nit en dä Daate vum OSM schtisch.
+...

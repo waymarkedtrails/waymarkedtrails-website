@@ -1,0 +1,33 @@
+# Messages for Romanian (română)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Minisarm
+---
+about:
+  title: Despre hartă
+  hiking: Această hartă afișează traseele turistice marcate din toată lumea.
+  cycling: Această hartă afișează traseele de ciclism marcate din toată lumea.
+  mtb: Această hartă afișează traseele de ciclism montan marcate din toată lumea.
+  skating: Această hartă afișează traseele de patinaj marcate din toată lumea.
+  riding: Această hartă afișează traseele de echitație marcate din toată lumea.
+  slopemap: Această hartă afișează traseele de pârtii de zăpadă marcate din toată
+    lumea.
+rendering:
+  title: Randarea datelor OSM
+hierarchies:
+  title: Ierarhii de relații
+osmc:
+  title: Eticheta osmc:symbol
+hikinglocal:
+  title: Randare localizată
+elevationprofiles:
+  title: Profile de altitudine
+technical:
+  title: Detalii tehnice
+legal:
+  title: Termeni juridici și de utilizare
+acknowledgements:
+  title: Mulțumiri
+contact:
+  title: Contact
+...
