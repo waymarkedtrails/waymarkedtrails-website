@@ -1,0 +1,111 @@
+# Translation of Waymarked Trails Website to Sicilian (sicilianu)
+# Exported from translatewiki.net
+#
+# Author: Ajeje Brazorf
+# Author: Sarvaturi
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Dati mappa © [OpenStreetMap](https://www.openstreetmap.org) cu licenza [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: dati di cota di [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: KML
+  altitude: ''
+  image: Mmàggini
+  mapped_len: Taliatu ntâ mappa
+  note: Nota
+  official_len: Lunghizza officiali
+  operator: Opiraturi
+  route_symbol: ''
+  subroutes_title: Sizzioni
+  superroutes_title: Parti di
+  symbol: ''
+  tags:
+    key: ''
+    title: Etichetti OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Situ web
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: Acchianata accumulata
+  descent: Scisa accumulata
+  diagram:
+    altitude: Altitùdini (m)
+    distance: Distanza (km)
+  title: Prufilu altimètricu
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Erruri
+headline:
+  last_update: Ùrtimu aggiurnamentu
+help: ''
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: Chiudi
+  more: ''
+  rollup: ''
+  title: Pircursi
+search:
+  places: ''
+  routes: Pircursi
+  title: Arricerca
+settings:
+  base_map: Mappa di basi
+  browser_language: ''
+  hillshading_layer: Hill shading
+  language: Lingua
+  route_layer: Route layer
+  title: ''
+  transparency: Trasparenza mappa
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Ciclismu
+  hiking: Escursioni a pedi
+  mtb: Mountain bike
+  riding: Passiati a cavaddu
+  skating: Pattinaggiu n lìnia
+  slopes: Pisti pi sport mmirnali
+

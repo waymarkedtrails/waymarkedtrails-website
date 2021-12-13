@@ -1,0 +1,123 @@
+# Translation of Waymarked Trails Website to Polish (polski)
+# Exported from translatewiki.net
+#
+# Author: BeginaFelicysym
+# Author: Chrumps
+# Author: Kastanoto
+# Author: Rezonansowy
+# Author: Royas
+# Author: Teiron
+# Author: Ty221
+# Author: Woytecr
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Dane mapy © [OpenStreetMap](https://www.openstreetmap.org) na licencji [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: dane wysokościowe [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: Długość na mapie
+  note: Uwaga
+  official_len: Długość oficjalna
+  operator: Operator
+  route_symbol: ''
+  subroutes_title: Sekcje
+  superroutes_title: Jest częścią
+  symbol: ''
+  tags:
+    key: ''
+    title: Znaczniki OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Strona internetowa
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: Skumulowane wznoszenia
+  descent: Zgromadzone schodzenia
+  diagram:
+    altitude: Wysokość (m)
+    distance: Odległość (km)
+  title: Profil terenu
+  total: ''
+  unavailable: ''
+  warn_unsorted: Szlak może być nieuporządkowany lub niekompletny. Dane wysokościowe
+    mogą być nieprecyzyjne.
+error:
+  load_error: Błąd połączenia z serwerem.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Błąd
+headline:
+  last_update: Ostatnia aktualizacja
+help: O mapie
+locate_me: Moja lokalizacja
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Tło działa na podobnej zasadzie - także składa się z koloru i kształtu.
+    Tłem także może być tylko nazwa koloru, co da tło z wybranym kolorem. Jest to
+    pokazane w pierwszym rzędzie.
+  foreground: Symbol pierwszego planu składa się z koloru i kształtu oddzielonego
+    znakiem podkreślenia. Następująca tablica wyświetla wszystkie kombinacje rozpoznawane
+    przez tą stronę. Obsługiwane są także symbole składające się tylko z nazwy kształtu
+    - ich symbole są wyświetlone w ostatniej kolumnie.
+  preview: ''
+  tester: ''
+routelist:
+  close: Zamknij
+  more: ''
+  rollup: Zwiń
+  title: Trasy
+search:
+  places: ''
+  routes: Trasy
+  title: Szukaj
+settings:
+  base_map: Mapa podstawowa
+  browser_language: Użyj ustawień przeglądarki
+  hillshading_layer: Cieniowanie zboczy
+  language: Język
+  route_layer: Warstwa trasy
+  title: Ustawienia mapy
+  transparency: Przezroczystość warstw
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Kolarstwo
+  hiking: Turystyka piesza
+  mtb: Kolarstwo górskie
+  riding: Jazda konna
+  skating: Jazda na rolkach
+  slopes: Stoki do uprawiania sportów zimowych
+

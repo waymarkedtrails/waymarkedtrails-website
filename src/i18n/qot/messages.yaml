@@ -1,6 +1,6 @@
 attribution:
-  data: "Map data \xA9 [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)"
-  elevation_title: Elevation data
+  data: Map data © [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: elevation data by [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: More details
   no_data: No destination information available for this guidepost.
@@ -47,7 +47,9 @@ error:
   missing_id: Missing parameter 'id'.
   missing_query: Missing parameter 'query'.
   panel_title: Error
-help: Help
+headline:
+  last_update: Last update
+help: About the map
 locate_me: Locate me
 network:
   continental: Continental routes
@@ -61,8 +63,21 @@ network:
   sled: Sledding piste
   sleigh: Sleigh piste
   winter_hike: Winter hiking
+osmc_symbol:
+  background: The background works in a similar way. It also consists of a color and
+    a shape. The background may also be only a color name which results in a canvas
+    of the choosen color.This is shown in the first row.
+  foreground: The foreground symbol consists of a color and a shape linked by an underscore.
+    The table below shows all combinations recognised by this site. It also recognises
+    foregrounds that consist only of the name of the shape. The symbols for those
+    are shown in the last column.
+  preview: Preview
+  tester: "Type an osmc:symbol value into the input field below\n     to see how it\
+    \ will be rendered on the map."
 routelist:
+  close: Close
   more: Zoom in to see more routes.
+  rollup: Roll up
   title: Routes
 search:
   places: Places
@@ -81,7 +96,11 @@ site_description:
     OpenStreetMap.
   hiking: Local and long-distance hiking and walking routes, with maps and information
     from OpenStreetMap.
-  riding: Local and long-distance cycling routes, with maps and information from OpenStreetMap.
+  mtb: Mountain-biking routes (MTB), with maps and information from OpenStreetMap.
+  riding: Horse riding routes, with maps and information from OpenStreetMap.
+  skating: Inline-skating routes, with maps and information from OpenStreetMap.
+  slopes: Winter sport slopes, downhill skiing, cross-country skating, winter walking,
+    with maps and information from OpenStreetMap.
 site_title:
   cycling: Cycling
   hiking: Hiking

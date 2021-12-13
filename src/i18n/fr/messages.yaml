@@ -1,0 +1,132 @@
+# Translation of Waymarked Trails Website to French (français)
+# Exported from translatewiki.net
+#
+# Author: Cquoi
+# Author: Crochet.david
+# Author: Gomoko
+# Author: Hpetit
+# Author: IAlex
+# Author: JB
+# Author: Objectivesea
+# Author: Od1n
+# Author: Pyrog
+# Author: Shirayuki
+# Author: Tititou36
+# Author: Urhixidur
+# Author: Verdy p
+# Author: Wladek92
+# Author: Wyz
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Données cartographiques © [OpenStreetMap](https://www.openstreetmap.org) sous
+    [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: données altimétriques par [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Plus de détails
+  no_data: ''
+  title: Destinations
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Altitude
+  image: Image
+  mapped_len: Longueur cartographiée
+  note: Note
+  official_len: Longueur officielle
+  operator: Opérateur
+  route_symbol: ''
+  subroutes_title: Sections
+  superroutes_title: Appartient à
+  symbol: ''
+  tags:
+    key: ''
+    title: Balises OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Site web
+  wikipedia: Wikipédia
+  zoom_to: Afficher sur la carte
+elevation:
+  ascent: Montée cumulée
+  descent: Descente cumulée
+  diagram:
+    altitude: Altitude (m)
+    distance: Distance (km)
+  title: Profil d’altitude
+  total: ''
+  unavailable: Aucune donnée d’élévation trouvée.
+  warn_unsorted: Le chemin est potentiellement non ordonné ou incomplet. Les informations
+    d’altitude peuvent être inexactes.
+error:
+  load_error: Erreur de connexion au serveur.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Erreur
+headline:
+  last_update: Dernière mise à jour
+help: À propos de la carte
+locate_me: Me localiser
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: L’arrière-plan travaille de façon similaire. Cela consiste aussi en
+    une couleur et une forme. Le fond peut aussi être uniquement un nom de couleur,
+    ce qui aboutit à une toile unie de la couleur choisie. Cela est visible dans la
+    première ligne.
+  foreground: Le symbole de premier plan est formé d’une couleur et d’une forme reliées
+    par un souligné. Le tableau ci-dessous montre toutes les combinaisons reconnues
+    par ce site. Il reconnaît aussi les premiers plans constitués uniquement d’un
+    nom de forme. Les symboles pour celles-ci sont affichés dans la dernière colonne.
+  preview: Aperçu
+  tester: ''
+routelist:
+  close: Fermer
+  more: ''
+  rollup: Enrouler
+  title: Itinéraires
+search:
+  places: ''
+  routes: Itinéraires
+  title: Rechercher
+settings:
+  base_map: Carte de fond
+  browser_language: Utiliser les paramètres du navigateur
+  hillshading_layer: Relief
+  language: Langue
+  route_layer: Itinéraires
+  title: Paramètres de la carte
+  transparency: Transparence de la carte
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: À vélo
+  hiking: À pied
+  mtb: En vélo de montagne
+  riding: Équitation
+  skating: En rollers
+  slopes: Pistes de sport d’hiver
+

@@ -1,0 +1,116 @@
+# Translation of Waymarked Trails Website to Finnish (suomi)
+# Exported from translatewiki.net
+#
+# Author: Lliehu
+# Author: Nedergard
+# Author: Nike
+# Author: Pyscowicz
+# Author: Silvonen
+# Author: Snidata
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kartta-aineisto © [OpenStreetMap](https://www.openstreetmap.org)  [ODbL-lisenssillä](https://www.openstreetmap.org/copyright)
+  elevation_title: korkeustiedot tarjoaa [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Lisätiedot
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: ''
+  altitude: ''
+  image: Kuva
+  mapped_len: Kartoitettu pituus
+  note: Lisätietoja
+  official_len: Virallinen pituus
+  operator: Ylläpitäjä
+  route_symbol: ''
+  subroutes_title: Osuudet
+  superroutes_title: Osa reittiä
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap-tagi
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Verkkosivusto
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: Kertynyt nousu
+  descent: Kertynyt laskeutuminen
+  diagram:
+    altitude: Korkeus (m)
+    distance: Etäisyys (km)
+  title: Korkeusprofiili
+  total: ''
+  unavailable: ''
+  warn_unsorted: Reitti on mahdollisesti epäjärjestyksessä tai epätäydellinen. Korkeustiedot
+    voivat olla epätarkkoja.
+error:
+  load_error: Virhe yhdistettäessä palvelimeen.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Virhe
+headline:
+  last_update: Viimeisin päivitys
+help: Tietoa kartasta
+locate_me: Etsi minulle
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: Sulje
+  more: ''
+  rollup: Roll up
+  title: Reitit
+search:
+  places: ''
+  routes: Reitit
+  title: Haku
+settings:
+  base_map: Karttapohja
+  browser_language: Käytä selaimen asetuksia
+  hillshading_layer: Rinnevarjostus
+  language: Kieli
+  route_layer: Reittikartta
+  title: Kartta-asetukset
+  transparency: Kartan läpinäkyvyys
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Pyöräily
+  hiking: Vaellus
+  mtb: Maastopyöräily
+  riding: Ratsastus
+  skating: Rullaluistelu
+  slopes: Talviurheilurinteet
+

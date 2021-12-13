@@ -1,0 +1,111 @@
+# Translation of Waymarked Trails Website to Palatine German (Pälzisch)
+# Exported from translatewiki.net
+#
+# Author: Manuae
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kaadedaade vun [OpenStreetMap](http://www.openstreetmap.org) un Midawaida
+    ([CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/))
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: Uffde Kaad gzaischd
+  note: Hiewees
+  official_len: Offiziell Leng
+  operator: Bdraiwa
+  route_symbol: ''
+  subroutes_title: Abschnidd
+  superroutes_title: Deel vun
+  symbol: ''
+  tags:
+    key: ''
+    title: ''
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Websaid
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ''
+    distance: ''
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Fehla
+headline:
+  last_update: Ledschdi Agdualisiarung
+help: ''
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: ''
+  more: ''
+  rollup: ''
+  title: Weesche
+search:
+  places: ''
+  routes: Weesche
+  title: Suche
+settings:
+  base_map: Basiskaad
+  browser_language: ''
+  hillshading_layer: Schadierunge
+  language: ''
+  route_layer: Weesche
+  title: ''
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Radfahre
+  hiking: Wondare
+  mtb: Maundebaige
+  riding: ''
+  skating: Rollschuh laafe
+  slopes: ''
+

@@ -1,0 +1,110 @@
+# Translation of Waymarked Trails Website to Malagasy (Malagasy)
+# Exported from translatewiki.net
+#
+# Author: Jagwar
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: ''
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: ''
+  note: Naoty
+  official_len: ''
+  operator: ''
+  route_symbol: ''
+  subroutes_title: Fizarana
+  superroutes_title: Singan'i
+  symbol: ''
+  tags:
+    key: ''
+    title: ''
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Tranonkala
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: Haavo (m)
+    distance: Halavirana (km)
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Hadisoana
+headline:
+  last_update: Nohavaozina farany
+help: ''
+locate_me: Aiza aho
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: Hidiana
+  more: ''
+  rollup: ''
+  title: Lalana
+search:
+  places: ''
+  routes: Lalana
+  title: Hikaroka
+settings:
+  base_map: Sarintany fototra
+  browser_language: ''
+  hillshading_layer: ''
+  language: Fiteny
+  route_layer: ''
+  title: Parametatry ny sarintany
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Bisikileta
+  hiking: Tongotra
+  mtb: Mandeha VTT
+  riding: Soavaly
+  skating: ''
+  slopes: ''
+

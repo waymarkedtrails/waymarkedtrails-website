@@ -1,0 +1,114 @@
+# Translation of Waymarked Trails Website to Norwegian Bokmål (norsk bokmål)
+# Exported from translatewiki.net
+#
+# Author: Dittaeva
+# Author: Jon Harald Søby
+# Author: Kingu
+# Author: SuperPotato
+# Author: Wouterkoch
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kartdata © [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: høgdedata av [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Flere detaljer
+  no_data: ''
+  title: Mål
+details:
+  GPX: GPX
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: Vist på kartet
+  note: Melding
+  official_len: Offisiell lengde
+  operator: Ansvarlig
+  route_symbol: ''
+  subroutes_title: Deler
+  superroutes_title: Del av
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap-tagger
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Vevside
+  wikipedia: ''
+  zoom_to: Vis på kart
+elevation:
+  ascent: Akkumulert stigning
+  descent: Akkumulert nedstigning
+  diagram:
+    altitude: Høyde (m)
+    distance: Avstand (km)
+  title: Høgdeprofil
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: Feil under tilkobling til tjeneren.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Feil
+headline:
+  last_update: Sist oppdatert
+help: Om kartet
+locate_me: Finn meg
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: Forhåndsvis
+  tester: ''
+routelist:
+  close: Lukk
+  more: ''
+  rollup: Rull opp
+  title: Ruter
+search:
+  places: ''
+  routes: Ruter
+  title: Søk
+settings:
+  base_map: Bakgrunnskart
+  browser_language: Bruk nettleserens innstillinger
+  hillshading_layer: Høydelag
+  language: Språk
+  route_layer: Ruter
+  title: Kartinnstillinger
+  transparency: Kart-transparens
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Sykkelruter
+  hiking: Vandreruter
+  mtb: Terrengsykkelruter
+  riding: Ridning
+  skating: Inline-skøyte-ruter
+  slopes: Vintersportbakker
+

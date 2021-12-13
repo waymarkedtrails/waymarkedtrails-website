@@ -1,0 +1,121 @@
+# Translation of Waymarked Trails Website to Basque (euskara)
+# Exported from translatewiki.net
+#
+# Author: An13sa
+# Author: EukeneFL
+# Author: Sator
+# Author: Subi
+# Author: Theklan
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Maparen datuak © [OpenStreetMap](https://www.openstreetmap.org) [ODbL](r)en
+    menpean (https://www.openstreetmap.org/copyright)
+  elevation_title: Goratze datuak [SRTM/ASTER](help/acknowledgements)(r)en esku
+destination_sign:
+  more: Xehetasun gehiago
+  no_data: ''
+  title: Helburua
+details:
+  GPX: GPSa
+  KML: KML
+  altitude: Garaiera
+  image: Irudia
+  mapped_len: Egokitutako neurriak
+  note: Oharra
+  official_len: Neurri ofiziala
+  operator: Eragilea
+  route_symbol: ''
+  subroutes_title: Atalak
+  superroutes_title: (r)en zati bat
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap oharrak
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Webgunea
+  wikipedia: ''
+  zoom_to: Erakutsi mapan
+elevation:
+  ascent: Pilatutako igoera
+  descent: Pilatutako jaitsiera
+  diagram:
+    altitude: Altitudea (m)
+    distance: Distantzia (km)
+  title: Goratze maila
+  total: ''
+  unavailable: Ez da garaiera daturik topatu
+  warn_unsorted: Bide hau ez dago guztiz zehaztuta. Baliteke garaierari buruzko informazioa
+    eguneratuta ez egotea.
+error:
+  load_error: Serbidoreak huts egin du.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Errorea
+headline:
+  last_update: Azken eguneratzea
+help: Mapari buruz
+locate_me: Non nago
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Atzeko planoak antzera funtzionatzen du. Kolorea eta formaz osatuta
+    dago ere. Baliteke atzeko planoa kolore bakar batean agertzea, lientzoan agertzen
+    den aukeratutako kolorea, alegia. Hauxe bera lehenengo lerroan ikus daiteke.
+  foreground: Lehen planoaren sinboloak kolore eta forma bat osatzen dute, azpimarra
+    batez loturik. Ondorengo taulak gunea aitortzen dituen konbinazio guztiak erakusten
+    ditu. Horretaz gain, erliebearen izenaz, besterik ez, osaturik dauden lehen planoak
+    aitortzen ditu. Horietako sinboloak azken zutabean agertzen dira.
+  preview: Aurreikuspena
+  tester: ''
+routelist:
+  close: Itxi
+  more: ''
+  rollup: Biribildu
+  title: Ibilbideak
+search:
+  places: ''
+  routes: Ibilbideak
+  title: Bilatu
+settings:
+  base_map: Jatorrizko mapa
+  browser_language: Nabigatzaile ezarpenak erabili
+  hillshading_layer: Mendi erliebea
+  language: Hizkuntza
+  route_layer: Ibilbidearen azalera
+  title: Maparen ezarpenak
+  transparency: Maparen gardentasuna
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Txirrindularitza
+  hiking: Mendi-igoerak
+  mtb: Mendiko txirrindularitza
+  riding: Zaldi ibilaldiak
+  skating: Lerro-patinaketa
+  slopes: Negurako kirol-aldapak
+

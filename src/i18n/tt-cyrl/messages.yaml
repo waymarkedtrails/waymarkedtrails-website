@@ -1,0 +1,111 @@
+# Translation of Waymarked Trails Website to Tatar (Cyrillic script) (татарча)
+# Exported from translatewiki.net
+#
+# Author: Ерней
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: © [OpenStreetMap](https://www.openstreetmap.org) харитасы мәгълүматлары [ODbL](https://www.openstreetmap.org/copyright)
+    рөхсәтнамәсе астында
+  elevation_title: '[SRTM/ASTER](help/acknowledgements) тарафыннан биеклек мәгълүматлары'
+destination_sign:
+  more: Тулырак
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Югарылык
+  image: Сурәт
+  mapped_len: Харитада күрсәтү
+  note: Искәрмә
+  official_len: Рәсми озынлык
+  operator: Оператор
+  route_symbol: ''
+  subroutes_title: Бүлекләр
+  superroutes_title: Өлеш
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap тамгалары
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Веб-сәхифә
+  wikipedia: ''
+  zoom_to: Харитада күрсәтү
+elevation:
+  ascent: Тупланган менеш
+  descent: Тупланган төшеш
+  diagram:
+    altitude: Югарылык (м)
+    distance: Ераклык (км)
+  title: Биеклек өске йөзе
+  total: ''
+  unavailable: Биеклек мәгълүматлары табылмаган.
+  warn_unsorted: ''
+error:
+  load_error: Сервер белән тоташтыру хатасы.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Хата
+headline:
+  last_update: Соңгы яңарту
+help: Харита турында
+locate_me: Табыгыз мине
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: Алдан карау
+  tester: ''
+routelist:
+  close: Ябу
+  more: ''
+  rollup: Җыярга
+  title: Маршрутлар
+search:
+  places: ''
+  routes: Маршрутлар
+  title: Эзләү
+settings:
+  base_map: Төп харита
+  browser_language: Браузер көйләнмәләрен куллану
+  hillshading_layer: Калкулык шәүләләнүе
+  language: Тел
+  route_layer: Маршрут катламы
+  title: Харита көйләнмәләре
+  transparency: Харита үтәкүренмәлеге
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Велоспорт
+  hiking: Йөреп кайту
+  mtb: Таулы велоспорт
+  riding: Атланып йөрү
+  skating: Тәгәрмәчле тимераяк шуу
+  slopes: Кышкы спорт өчен тау битләре
+

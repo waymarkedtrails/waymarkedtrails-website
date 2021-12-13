@@ -1,0 +1,118 @@
+# Translation of Waymarked Trails Website to Zazaki (Zazaki)
+# Exported from translatewiki.net
+#
+# Author: Erdemaslancan
+# Author: Gorizon
+# Author: Kumkumuk
+# Author: Marmase
+# Author: Mirzali
+# Author: Orbot707
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Melumatê xerita © [OpenStreetMap](http://www.openstreetmap.org) sera [ODbL](http://www.openstreetmap.org/copyright)
+  elevation_title: Malumata berziye  [SRTM/ASTER](desteg/teşekuri)
+destination_sign:
+  more: Tayêna melumat
+  no_data: ''
+  title: Hedefi
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Berziye
+  image: Resım
+  mapped_len: Dergeya xerita
+  note: Not
+  official_len: Resmi dergey
+  operator: Operator
+  route_symbol: ''
+  subroutes_title: Warey
+  superroutes_title: Letey
+  symbol: ''
+  tags:
+    key: ''
+    title: Etiketê OpenStreetMapi
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Keyepele
+  wikipedia: ''
+  zoom_to: Xerita de bımocne
+elevation:
+  ascent: Verecoro komkerde
+  descent: Verecoro komkerde
+  diagram:
+    altitude: Berziye (m)
+    distance: Dûriye (km)
+  title: Profilê berziye
+  total: ''
+  unavailable: Berziya datay nêvineyê.
+  warn_unsorted: Rota raşt hesab nêbiya û kemiya. Melumatê berziye belkiya çewto.
+error:
+  load_error: Gırêbiyayışê serveri de xeta.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Xeta
+headline:
+  last_update: Resnayışo Peyên
+help: Heqa xerita de
+locate_me: Mı bıvêne
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Plano peyên enê usul ra guriyeno. Plano peyên yew reng u şekıl ra vıraziyayo.
+    Plano peyên tuwal de weçinaye yew reng zi beno. No hal de sıfte ena mocniyeno.
+  foreground: Sembolê ver plani, yu bınê xeta gıre biyaye yu renga ameyo meydan. Tabloyê
+    cêri de terefê ena site ra kombinasyoni pêro mocniyenê. Reyna zi, teyna namey
+    şekıli zi plana miyan de nas keno. Coy ra semboli estuna peyên de mocniyeno.
+  preview: Verqayt
+  tester: ''
+routelist:
+  close: Kip ke
+  more: ''
+  rollup: Loğe ke
+  title: Rota
+search:
+  places: ''
+  routes: Rota
+  title: Cı geyre
+settings:
+  base_map: Xeritaya esase
+  browser_language: Sazê rovıteri bıkarnê
+  hillshading_layer: Rolyefe sersi
+  language: Zıwan
+  route_layer: Cayê rota
+  title: Sazê xerita
+  transparency: Zelal xerita
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Ramıtış
+  hiking: Geme geyrayış
+  mtb: Bisikleta Koya
+  riding: Bergir nışayış
+  skating: Patena Teqerın
+  slopes: Sud spore zımıstani
+

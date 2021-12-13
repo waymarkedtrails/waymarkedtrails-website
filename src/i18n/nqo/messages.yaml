@@ -1,0 +1,111 @@
+# Translation of Waymarked Trails Website to N’Ko (ߒߞߏ)
+# Exported from translatewiki.net
+#
+# Author: Lancine.kounfantoh.fofana
+# Author: Lanciné.kounfantoh.fofana
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Map data © [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: ''
+destination_sign:
+  more: ߝߊߙߊ߲ߝߊ߯ߛߌ߫ ߜߘߍ ߟߎ߬
+  no_data: ''
+  title: ߕߊ߯ߦߙߐ
+details:
+  GPX: GPX
+  KML: KML
+  altitude: ߞߐߓߋ
+  image: ߖߌ߬ߦߊ߬ߓߍ
+  mapped_len: ߖߊ߲߰ߧߊ ߡߊߔߎߣߍ߲
+  note: ߦߟߌߣߐ
+  official_len: ''
+  operator: ߘߐ߬ߓߛߏ߬ߟߊ
+  route_symbol: ''
+  subroutes_title: ߕߍߕߍ߮ ߟߎ߬
+  superroutes_title: ߝߊ߲߭ ߘߏ߫
+  symbol: ''
+  tags:
+    key: ''
+    title: ߏߔߌ߲ߛߑߕߙߌߕߑߡߊߔ ߘߎ߲ߛߓߍ
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: ߓߟߐߟߐ߫ ߞߍߦߙߐ
+  wikipedia: ߥߞߌߔߋߘߌߦߊ
+  zoom_to: ߊ߬ ߦߌ߬ߘߊ߬ ߡߊߔ ߞߊ߲߬
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ߞߐߓߋ (ߜ)
+    distance: ߝߏ߬ߣߊ߲ (ߞߎߘߍ)
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ߝߎ߬ߕߎ߲߬ߕߌ ߞߵߌ ߕߴߌ ߜߊ߲߬ߞߎ߲ ߠߊ߫ ߡߊ߬ߛߐ߬ߟߊ ߟߊ߫
+  missing_id: ''
+  missing_query: ''
+  panel_title: ߝߎ߬ߕߎ߲߬ߕߌ
+headline:
+  last_update: ߟߏ߲ߘߐߦߊߟߌ ߞߐ߯ߟߕߊ
+help: ߞߊ߬ ߓߍ߲߬ ߡߊߔ ߡߊ߬
+locate_me: ߒ ߘߌ߲߬ߞߌߙߊ ߦߌ߬ߘߊ߬
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ߊ߬ ߘߐߜߍ߫ ߡߎߣߎ߲߬
+  tester: ''
+routelist:
+  close: ߊ߬ ߘߊߕߎ߲߯
+  more: ''
+  rollup: ''
+  title: ߛߌߟߊ
+search:
+  places: ''
+  routes: ߛߌߟߊ
+  title: ߢߌߣߌ߲ߠߌ߲
+settings:
+  base_map: ߔߊ߬ߔߘߊ ߓߊߖߎ
+  browser_language: ߛߏ߲߯ߓߊߟߊ߲ ߟߊ߬ߓߍ߲߬ߢߐ߲߰ߡߦߊ߬ߘߊ ߟߊߓߊ߯ߙߊ߫
+  hillshading_layer: ߞߎ߬ߙߎ ߞߟߐ߬ ߓߐߣߍ߲ߢߐ߲߯ߡߊ
+  language: ߞߊ߲
+  route_layer: ߛߌߟߊ߫ ߓߐߟߊ
+  title: ߡߊߔ ߟߊ߬ߓߍ߲߬ߢߐ߲߰ߡߦߊ߬ߘߊ
+  transparency: ߡߊߔ ߟߊ߲ߞߣߍߡߊߟߌ
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: ߣߍ߰ߛߏ߬ߞߊ߲߬ߦߊ
+  hiking: ߡߊ߬ߕߊ߰ߡߊ߬ߟߌ
+  mtb: MTB
+  riding: ߛߏ߬ ߓߏߙߌ
+  skating: ''
+  slopes: ''
+

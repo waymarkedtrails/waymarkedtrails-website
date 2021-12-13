@@ -1,0 +1,114 @@
+# Translation of Waymarked Trails Website to South Azerbaijani (تۆرکجه)
+# Exported from translatewiki.net
+#
+# Author: Alp Er Tunqa
+# Author: Amir a57
+# Author: Arjanizary
+# Author: E THP
+# Author: Mousa
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: ''
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: ائشلئنئن اوزونلوغو
+  note: یادداشت
+  official_len: رسمی اوزون‌لوغو
+  operator: 'اوپئراتور:'
+  route_symbol: ''
+  subroutes_title: بولوم لر
+  superroutes_title: بولوم دن
+  symbol: ''
+  tags:
+    key: ''
+    title: ''
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: قایناقلاما
+  wikipedia: ویکی‌پئدیا
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ''
+    distance: ''
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: خطا
+headline:
+  last_update: سون یئنی لنمه
+help: ''
+locate_me: منیم یئریمی تاپ
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: باغلا
+  more: ''
+  rollup: ''
+  title: مسیر لر
+search:
+  places: ''
+  routes: مسیر لر
+  title: آختار
+settings:
+  base_map: پایه خریطه
+  browser_language: ''
+  hillshading_layer: تپه کؤلگه سی
+  language: دیل
+  route_layer: یول لایی
+  title: نقشه تنظیملری
+  transparency: نقشه آیدینلیغی
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: چرخ سورمک
+  hiking: یئرده گئتمک
+  mtb: MTB
+  riding: ''
+  skating: تکرلی کونکی
+  slopes: ''
+

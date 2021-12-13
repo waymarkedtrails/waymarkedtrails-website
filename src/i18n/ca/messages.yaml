@@ -1,0 +1,123 @@
+# Translation of Waymarked Trails Website to Catalan (català)
+# Exported from translatewiki.net
+#
+# Author: Alvaro Vidal-Abarca
+# Author: Avm99963
+# Author: Jlrb+
+# Author: Jmontane
+# Author: Mguix
+# Author: Pitort
+# Author: Shirayuki
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Dades cartogràfiques © [OpenStreetMap](https://www.openstreetmap.org) sota
+    llicència [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: dades altimètriques de [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Més detalls
+  no_data: ''
+  title: Destinacions
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Altitud
+  image: Imatge
+  mapped_len: Longitud cartografiada
+  note: Nota
+  official_len: Longitud oficial
+  operator: Operador
+  route_symbol: ''
+  subroutes_title: Seccions
+  superroutes_title: Part de
+  symbol: ''
+  tags:
+    key: ''
+    title: Etiquetes d'OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Lloc web
+  wikipedia: ''
+  zoom_to: Mostrar en el mapa
+elevation:
+  ascent: Ascensió acumulada
+  descent: Descens acumulat
+  diagram:
+    altitude: Altura (m)
+    distance: Distància (km)
+  title: Perfil d'elevació
+  total: ''
+  unavailable: No s'han trobat dades d'elevació
+  warn_unsorted: La ruta és potencialment desordenada o incompleta. La informació
+    sobre la cota pot ser incorrecta.
+error:
+  load_error: S'ha produït un error en connectar-se al servidor.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Error
+headline:
+  last_update: Darrera actualització
+help: Sobre el mapa
+locate_me: Localitza’m
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: El fons funciona d’una manera similar. També consisteix en un color
+    i una forma. El fons també pot ser només un nom de color que tingui com a resultat
+    un llenç del color escollit. Això es mostra a la primera fila.
+  foreground: El símbol del primer pla consisteix en un color i una forma units per
+    un guió baix. La taula següent mostra totes les combinacions reconegudes per aquest
+    lloc. També reconeix els primers plans que només consisteixen en el nom de la
+    forma. Els símbols d’aquests es mostren a l’última columna.
+  preview: Vista prèvia
+  tester: ''
+routelist:
+  close: Tancar
+  more: ''
+  rollup: Contreure
+  title: Rutes
+search:
+  places: ''
+  routes: Rutes
+  title: Cerca
+settings:
+  base_map: Mapa base
+  browser_language: Utilitzeu la configuració del navegador
+  hillshading_layer: Relleu ombrejat
+  language: Idioma
+  route_layer: Capa de rutes
+  title: Configuració del mapa
+  transparency: Transparència del mapa
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Ciclisme
+  hiking: Excursionisme
+  mtb: BTT
+  riding: Hípica
+  skating: Patí en línia
+  slopes: Pistes per Esports d'Hivern
+

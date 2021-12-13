@@ -1,0 +1,120 @@
+# Translation of Waymarked Trails Website to Galician (galego)
+# Exported from translatewiki.net
+#
+# Author: Elisardojm
+# Author: Iváns
+# Author: Toliño
+# Author: Vivaelcelta
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Datos cartográficos © do [OpenStreetMap](https://www.openstreetmap.org) baixo
+    a licenza [ODbL](https://www.openstreetmap.org/copyright/gl)
+  elevation_title: datos de elevación de [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Máis detalles
+  no_data: ''
+  title: Destinos
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Altitude
+  image: ''
+  mapped_len: Lonxitude cartografada
+  note: Nota
+  official_len: Lonxitude oficial
+  operator: Operador
+  route_symbol: ''
+  subroutes_title: Seccións
+  superroutes_title: Parte de
+  symbol: ''
+  tags:
+    key: ''
+    title: Etiquetas do OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Páxina web
+  wikipedia: Wikipedia
+  zoom_to: Amosar no mapa
+elevation:
+  ascent: Ascenso acumulado
+  descent: Descenso acumulado
+  diagram:
+    altitude: Altitude (m)
+    distance: Distancia (km)
+  title: Perfil de elevación
+  total: ''
+  unavailable: Non foron atoparon datos de elevación.
+  warn_unsorted: Seica a rota está incompleta ou desordenada. A información da elevación
+    pode ter pouca precisión.
+error:
+  load_error: Erro ó conectarse ó servidor.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Erro
+headline:
+  last_update: Última actualización
+help: Acerca do mapa
+locate_me: Localizarme
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: O fondo funciona de xeito semellante. Tamén contén unha cor e unha forma.
+    O fondo tamén pode ser só un nome de cor que resulta nun cadro da cor escollida.
+    Isto amósase na primeira fila.
+  foreground: O símbolo da fronte está formado por unha cor e unha forma ligadas por
+    un guión baixo. A táboa de abaixo amosa tódalas combinacións recoñecidas por este
+    sitio. Tamén recoñece frontes que formadas só polo nome da forma. Os símbolos
+    para estes amósanse na última columna.
+  preview: Vista previa
+  tester: ''
+routelist:
+  close: Pechar
+  more: ''
+  rollup: Agochar
+  title: Rutas
+search:
+  places: ''
+  routes: Rutas
+  title: Procurar
+settings:
+  base_map: Mapa de base
+  browser_language: Empregar os axustes do navegador
+  hillshading_layer: Sombreado de ladeiras
+  language: Lingua
+  route_layer: Capa de rutas
+  title: Axustes do mapa
+  transparency: Transparencia do mapa
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Ciclismo
+  hiking: Sendeirismo
+  mtb: Ciclismo de montaña
+  riding: Equitación
+  skating: Patinaxe en liña
+  slopes: Pistas de deportes de inverno
+

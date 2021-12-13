@@ -1,0 +1,118 @@
+# Translation of Waymarked Trails Website to Arabic (العربية)
+# Exported from translatewiki.net
+#
+# Author: DRIHEM
+# Author: Maroen1990
+# Author: Meno25
+# Author: OsamaK
+# Author: ديفيد
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: بيانات خريطة © [خريطة الشارع المفتوحة]\n(https://www.openstreetmap.org) تحت
+    [رخصة قاعدة البيانات المفتوحة] (https://www.openstreetmap.org/copyright)
+  elevation_title: بيانات الارتفاع بواسطة [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: مزيد من التفاصيل
+  no_data: ''
+  title: الوجهات
+details:
+  GPX: جي بي إكس
+  KML: كيه إم إل
+  altitude: الارتفاع
+  image: صورة
+  mapped_len: ظاهرة على الخريطة
+  note: ملاحظة
+  official_len: الطول الرسمي
+  operator: العامل
+  route_symbol: ''
+  subroutes_title: الأقسام
+  superroutes_title: جزء من
+  symbol: ''
+  tags:
+    key: ''
+    title: علامات خريطة الشارع المفتوح
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: موقع الويب
+  wikipedia: ويكيبيديا
+  zoom_to: أظهر على الخريطة
+elevation:
+  ascent: الصعود المتراكم
+  descent: النزول المتراكم
+  diagram:
+    altitude: الارتفاع (م)
+    distance: المسافة (كم)
+  title: ملف تعريف الارتفاع
+  total: ''
+  unavailable: لا بيانات ارتفاع تم العثور عليها.
+  warn_unsorted: الطريق غير محتمل أو غير مكتمل; قد تكون معلومات الارتفاع غير دقيقة.
+error:
+  load_error: خطأ في الاتصال بالخادم.
+  missing_id: ''
+  missing_query: ''
+  panel_title: خطأ
+headline:
+  last_update: آخر تحديث
+help: معلومات عن الخريطة
+locate_me: حدد موقعي
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: الخلفية تعمل بطريقة مماثلة، كما تتكون من لون وشكل، قد تكون الخلفية أيضا
+    اسم لون فقط ينتج قماشا من اللون المختار، يظهر هذا في الصف الأول.
+  foreground: يتكون رمز المقدمة من لون وشكل مرتبطين بواسطة شرطة سفلية، يعرض الجدول
+    أدناه جميع المجموعات المتعارف عليها في هذا الموقع، كما يتعرف على الواجهات الأمامية
+    التي تتكون فقط من اسم الشكل، تظهر رموز تلك في العمود الأخير.
+  preview: معاينة
+  tester: ''
+routelist:
+  close: أغلق
+  more: ''
+  rollup: لف
+  title: الطرق
+search:
+  places: ''
+  routes: الطرق
+  title: بحث
+settings:
+  base_map: الخريطة الأساسية
+  browser_language: استخدم إعدادات المتصفح
+  hillshading_layer: تظليل التلال
+  language: اللغة
+  route_layer: طبقة الطريق
+  title: إعدادات الخريطة
+  transparency: شفافية الخريطة
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: ركوب الدراجات
+  hiking: المشي لمسافات طويلة
+  mtb: الدراجات الجبلية
+  riding: ركوب الخيل
+  skating: التزلج على العجلات
+  slopes: منحدرات الرياضات الشتوية
+

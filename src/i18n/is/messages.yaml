@@ -1,0 +1,118 @@
+# Translation of Waymarked Trails Website to Icelandic (íslenska)
+# Exported from translatewiki.net
+#
+# Author: Sveinki
+# Author: Sveinn í Felli
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kortagögn © [OpenStreetMap](https://www.openstreetmap.org) með [ODbL](https://www.openstreetmap.org/copyright)
+    notkunarleyfi
+  elevation_title: hæðargögn frá [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Frekari upplýsingar
+  no_data: ''
+  title: Áfangastaðir
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Hæð
+  image: Mynd
+  mapped_len: Vegalengd á korti
+  note: Ábending
+  official_len: Opinber vegalengd
+  operator: Umsjón
+  route_symbol: ''
+  subroutes_title: Svæði
+  superroutes_title: Hluti af
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap-merki
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Vefsvæði
+  wikipedia: Wikipedia
+  zoom_to: Sýna á korti
+elevation:
+  ascent: Uppsöfnuð hækkun
+  descent: Uppsöfnuð lækkun
+  diagram:
+    altitude: Hæð (m)
+    distance: Vegalengd (km)
+  title: Hæðarsnið
+  total: ''
+  unavailable: Engin hæðargögn fundust.
+  warn_unsorted: Leiðin er mögulega ekki í réttri röð eða ófullgerð. Hæðarupplýsingar
+    gætu verið ónákvæmar.
+error:
+  load_error: Villa við að tengjast þjóni.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Villa
+headline:
+  last_update: Síðast uppfært
+help: Um landakortið
+locate_me: Staðsetja mig
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Bakgrunnurinn virkar á svipaðan máta. Hann samanstendur af lit og lögun.
+    Bakgrunnurinn getur líka verið bara nafn a lit sem gefur þá myndflöt með valda
+    litnum. Þetta er sýnt í fyrstu röðinni.
+  foreground: Forgrunnstáknið samanstendur af lit og lögun sem tengt er með undirstrikun.
+    Taflan hér fyrir neðan sýnir allar mögulegar samsetningar sem þetta vefsvæði þekkir.
+    Það þekkir líka forgrunna sem samanstanda eingöngu af nafni lögunarinnar. Þau
+    tákn eru sýnd í síðasta dálknum.
+  preview: Forskoðun
+  tester: ''
+routelist:
+  close: Loka
+  more: ''
+  rollup: Rúlla upp
+  title: Leiðir
+search:
+  places: ''
+  routes: Leiðir
+  title: Leit
+settings:
+  base_map: Grunnkort
+  browser_language: Nota stillingar vafra
+  hillshading_layer: Skyggja hlíðar
+  language: Tungumál
+  route_layer: Lag með leiðum
+  title: Stillingar korts
+  transparency: Gegnsæi korts
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Hjólaleiðir
+  hiking: Gönguleiðir
+  mtb: Fjallahjólaleiðir
+  riding: Hestaferðir
+  skating: Línuskautaleiðir
+  slopes: Brautir fyrir vetraríþróttir
+

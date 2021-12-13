@@ -1,0 +1,111 @@
+# Translation of Waymarked Trails Website to Serbian (Latin script) (srpski (latinica)‎)
+# Exported from translatewiki.net
+#
+# Author: Rancher
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kartografski podaci © [Openstritmap](http://www.openstreetmap.org) pod licencom
+    [ODbL](http://www.openstreetmap.org/copyright)
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: Prikazano na mapi
+  note: Beleška
+  official_len: Zvanična dužina
+  operator: Operator
+  route_symbol: ''
+  subroutes_title: Potezi
+  superroutes_title: 'Deo:'
+  symbol: ''
+  tags:
+    key: ''
+    title: Oznake Openstritmapa
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Sajt
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ''
+    distance: ''
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Greška
+headline:
+  last_update: Poslednje ažuriranje
+help: ''
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: ''
+  more: ''
+  rollup: ''
+  title: Putevi
+search:
+  places: ''
+  routes: Putevi
+  title: Pretraži
+settings:
+  base_map: Osnovna mapa
+  browser_language: ''
+  hillshading_layer: Reljefno senčenje
+  language: ''
+  route_layer: Sloj puta
+  title: ''
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Biciklizam
+  hiking: Pešačenje
+  mtb: Planinski biciklizam
+  riding: ''
+  skating: Roleri
+  slopes: ''
+

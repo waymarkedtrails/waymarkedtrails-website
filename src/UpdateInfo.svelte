@@ -1,4 +1,5 @@
 <script>
+    import { _ } from 'svelte-i18n';
     import { onMount, onDestroy } from 'svelte';
     import { json_loader } from './util/load_json.js';
 
@@ -17,4 +18,4 @@
     onDestroy(function() { loader.abort(); });
 </script>
 
-Last Update: {db_update}
+{$_('headline.last_update')}: {db_update}

@@ -1,0 +1,112 @@
+# Translation of Waymarked Trails Website to Vietnamese (Tiếng Việt)
+# Exported from translatewiki.net
+#
+# Author: Max20091
+# Author: Minh Nguyen
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Dữ liệu bản đồ © [OpenStreetMap](https://www.openstreetmap.org) theo [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: dữ liệu cao độ do [SRTM/ASTER](help/acknowledgements) cung cấp
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: Chiều dài trên bản đồ
+  note: Ghi chú
+  official_len: Chiều dài chính thức
+  operator: Cơ quan giữ gìn
+  route_symbol: ''
+  subroutes_title: Giai đoạn
+  superroutes_title: Trực thuộc
+  symbol: ''
+  tags:
+    key: ''
+    title: Các thẻ OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Trang Web
+  wikipedia: Wikipedia
+  zoom_to: ''
+elevation:
+  ascent: Chiều cao leo lên tổng cộng
+  descent: Chiều cao đi xuống tổng cộng
+  diagram:
+    altitude: Cao độ (m)
+    distance: Tầm xa (km)
+  title: Biểu đồ cao độ
+  total: ''
+  unavailable: ''
+  warn_unsorted: Tuyến đường có thể sai thứ tự hoặc không hoàn toàn. Các thông tin
+    về độ cao có thể không chính xác.
+error:
+  load_error: Lỗi kết nối với máy chủ.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Lỗi
+headline:
+  last_update: Lúc cập nhật
+help: Giới thiệu về bản đồ
+locate_me: Định vị
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: Đóng
+  more: ''
+  rollup: Cuộn lên
+  title: Các tuyến đường
+search:
+  places: ''
+  routes: Các tuyến đường
+  title: Tìm kiếm
+settings:
+  base_map: Bản đồ gốc
+  browser_language: Dùng thiết lập của trình duyệt
+  hillshading_layer: Đồi bóng
+  language: Ngôn ngữ
+  route_layer: Lớp tuyến đường
+  title: Tùy chọn bản đồ
+  transparency: Độ trong suốt bản đồ
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Xe đạp
+  hiking: Đường đi bộ dài
+  mtb: Xe đạp leo núi
+  riding: Cưỡi ngựa
+  skating: Trượt băng nội tuyến
+  slopes: Dốc Dành cho các Môn Thể thao Mùa đông
+

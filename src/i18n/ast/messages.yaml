@@ -1,0 +1,118 @@
+# Translation of Waymarked Trails Website to Asturian (asturianu)
+# Exported from translatewiki.net
+#
+# Author: Shirayuki
+# Author: Xuacu
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Datos del mapa © [OpenStreetMap](https://www.openstreetmap.org) baxo llicencia
+    [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: datos d'altures de [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Más detalles
+  no_data: ''
+  title: Destinos
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Altitú
+  image: Imaxe
+  mapped_len: Amosada nel mapa
+  note: Nota
+  official_len: Llonxitú oficial
+  operator: Operador
+  route_symbol: ''
+  subroutes_title: Seiciones
+  superroutes_title: Parte de
+  symbol: ''
+  tags:
+    key: ''
+    title: Etiquetes d'OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Sitiu web
+  wikipedia: Wikipedia
+  zoom_to: Ver nel mapa
+elevation:
+  ascent: Ascensu acumuláu
+  descent: Descensu acumuláu
+  diagram:
+    altitude: Altitú (m)
+    distance: Distancia (km)
+  title: Perfil d'altitú
+  total: ''
+  unavailable: Nun s'atoparon datos d'elevación
+  warn_unsorted: La ruta posiblemente ta desordenada o incompleta. La información
+    d'altitú podría nun ser exauta.
+error:
+  load_error: Error de conexón col sirvidor.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Error
+headline:
+  last_update: Caberu anovamientu
+help: Tocante al mapa
+locate_me: Llocalizame
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: El fondu funciona de manera asemeyada. Tamién ta formáu por un color
+    y una forma. El fondu tamién puede ser solo un nome de color que produz un llenzu
+    del color escoyíu. Eso apaez na primera fila.
+  foreground: El símbolu del frente ta formáu por un color y una forma xuníos con
+    un guión baxu. La tabla de más abaxo amuesa toles combinaciones que reconoz esti
+    sitiu. Tamién reconoz frentes formaos solo pol nome de la forma. Los símbolos
+    pa estos amuésense na última columna.
+  preview: Vista previa
+  tester: ''
+routelist:
+  close: Zarrar
+  more: ''
+  rollup: Contraer
+  title: Rutes
+search:
+  places: ''
+  routes: Rutes
+  title: Guetar
+settings:
+  base_map: Mapa base
+  browser_language: Usar la configuración del navegador
+  hillshading_layer: Solombra de relieve
+  language: Llingua
+  route_layer: Capa de ruta
+  title: Preferencies del mapa
+  transparency: Tresparencia del mapa
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Ciclismu
+  hiking: Escursionismu
+  mtb: BTT
+  riding: Equitación
+  skating: Patinaxe en llinia
+  slopes: Pendientes de deportes d'iviernu
+

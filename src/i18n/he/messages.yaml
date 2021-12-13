@@ -1,0 +1,113 @@
+# Translation of Waymarked Trails Website to Hebrew (עברית)
+# Exported from translatewiki.net
+#
+# Author: Amire80
+# Author: Inkbug
+# Author: Steeve815
+# Author: YaronSh
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: נתוני מפה © [OpenStreetMap](https://www.openstreetmap.org) לפי תנאי [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: נתוני גובה מאת [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: פרטים נוספים
+  no_data: ''
+  title: יעדים
+details:
+  GPX: GPX
+  KML: KML
+  altitude: גובה
+  image: תמונה
+  mapped_len: אורך ממופה
+  note: פתק
+  official_len: אורך רשמי
+  operator: מפעיל
+  route_symbol: ''
+  subroutes_title: מקטעים
+  superroutes_title: חלק מתוך
+  symbol: ''
+  tags:
+    key: ''
+    title: תגי OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: אתר אינטרנט
+  wikipedia: ''
+  zoom_to: הצגה במפה
+elevation:
+  ascent: עלייה מצטברת
+  descent: ירידה מצטברת
+  diagram:
+    altitude: גובה (מ׳)
+    distance: מרחק (ק״מ)
+  title: פרופיל גובה
+  total: ''
+  unavailable: לא נמצאו נתוני עילוי.
+  warn_unsorted: ''
+error:
+  load_error: שגיאה בהתחברות לשרת.
+  missing_id: ''
+  missing_query: ''
+  panel_title: שגיאה
+headline:
+  last_update: עדכון אחרון
+help: על אודות המפה
+locate_me: איתור עצמי
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: תצוגה מקדימה
+  tester: ''
+routelist:
+  close: סגירה
+  more: ''
+  rollup: ''
+  title: נתיבים
+search:
+  places: ''
+  routes: נתיבים
+  title: חיפוש
+settings:
+  base_map: מפת יסוד
+  browser_language: שימוש בהגדרות הדפדפן
+  hillshading_layer: הצללת גבעות
+  language: שפה
+  route_layer: שכבת נתיב
+  title: הגדרות מפה
+  transparency: שקיפות מפה
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: אופניים
+  hiking: הליכה
+  mtb: אופני הרים
+  riding: רכיבה על סוסים
+  skating: גלגיליות
+  slopes: מדרוני ספורט חורפי
+

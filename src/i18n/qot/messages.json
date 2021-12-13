@@ -10,11 +10,17 @@
     "site_description" : {
         "hiking" : "Local and long-distance hiking and walking routes, with maps and information from OpenStreetMap.",
         "cycling" : "Local and long-distance cycling routes, with maps and information from OpenStreetMap.",
-        "riding" : "Local and long-distance cycling routes, with maps and information from OpenStreetMap."
+        "mtb" : "Mountain-biking routes (MTB), with maps and information from OpenStreetMap.",
+        "riding" : "Horse riding routes, with maps and information from OpenStreetMap.",
+        "skating" : "Inline-skating routes, with maps and information from OpenStreetMap.",
+        "slopes" : "Winter sport slopes, downhill skiing, cross-country skating, winter walking, with maps and information from OpenStreetMap."
+    },
+    "headline" : {
+        "last_update" : "Last update"
     },
     "attribution" : {
         "data" : "Map data © [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)",
-        "elevation_title" : "Elevation data"
+        "elevation_title" : "elevation data by [SRTM/ASTER](help/acknowledgements)"
     },
     "settings" : {
         "title" : "Map settings",
@@ -27,7 +33,9 @@
     },
     "routelist" : {
         "title" : "Routes",
-        "more" : "Zoom in to see more routes."
+        "more" : "Zoom in to see more routes.",
+        "close" : "Close",
+        "rollup" : "Roll up"
     },
     "details" : {
         "type" : {
@@ -57,6 +65,12 @@
             "key" : "key",
             "value": "value"
         }
+    },
+    "osmc_symbol" : {
+        "foreground" : "The foreground symbol consists of a color and a shape linked by an underscore. The table below shows all combinations recognised by this site. It also recognises foregrounds that consist only of the name of the shape. The symbols for those are shown in the last column.",
+        "background" : "The background works in a similar way. It also consists of a color and a shape. The background may also be only a color name which results in a canvas of the choosen color.This is shown in the first row.",
+        "preview" : "Preview",
+        "tester" : "Type an osmc:symbol value into the input field below\n     to see how it will be rendered on the map."
     },
     "elevation" : {
         "unavailable" : "No elevation data found.",
@@ -100,5 +114,5 @@
         "missing_id" : "Missing parameter 'id'.",
         "missing_query" : "Missing parameter 'query'."
     },
-    "help" : "Help"
+    "help" : "About the map"
 }

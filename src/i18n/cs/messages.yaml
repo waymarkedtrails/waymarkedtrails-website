@@ -1,0 +1,122 @@
+# Translation of Waymarked Trails Website to Czech (čeština)
+# Exported from translatewiki.net
+#
+# Author: Aktron
+# Author: Chmee2
+# Author: Dittaeva
+# Author: Dvorapa
+# Author: Jezevec
+# Author: Juandev
+# Author: Marek Pavlica
+# Author: Matěj Suchánek
+# Author: Mormegil
+# Author: Natalie
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Mapová data © [OpenStreetMap](https://www.openstreetmap.org) pod [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: údaje o nadmořské výšce podle [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Více informací
+  no_data: ''
+  title: Cíle
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Výška
+  image: Obrázek
+  mapped_len: Zobrazeno na mapě
+  note: Poznámka
+  official_len: Celková délka
+  operator: Operátor
+  route_symbol: ''
+  subroutes_title: Sekce
+  superroutes_title: Část z
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap značky
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Webová stránka
+  wikipedia: ''
+  zoom_to: Ukázat na mapě
+elevation:
+  ascent: Kumulované stoupání
+  descent: Kumulovaný sestup
+  diagram:
+    altitude: Nadmořská výška (m)
+    distance: Vzdálenost (km)
+  title: Výškový profil
+  total: ''
+  unavailable: Údaje o nadmořské výšce nenalezeny
+  warn_unsorted: Cesta může být neorganizovaná nebo neúplná. Údaje o nadmořské výšce
+    mohou být nepřesné.
+error:
+  load_error: Chyba při připojování k serveru.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Chyba
+headline:
+  last_update: Poslední aktualizace
+help: O mapě
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Pozadí funguje podobně. Skládá se z barvy a tvaru. Pozadí také může
+    být pouze název barvy díky což má za následek plátno ve zvolené barvě. To je ukázané
+    v první řadě.
+  foreground: ''
+  preview: Náhled
+  tester: ''
+routelist:
+  close: Zavřít
+  more: ''
+  rollup: srolovat
+  title: Trasy
+search:
+  places: ''
+  routes: Trasy
+  title: Hledat
+settings:
+  base_map: Základní mapa
+  browser_language: Použít nastavení prohlížeče
+  hillshading_layer: Stínování kopců
+  language: Jazyk
+  route_layer: Routovací vrstva
+  title: Nastavení mapy
+  transparency: Průhlednost mapy
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Cyklistika
+  hiking: Pěší turistika
+  mtb: Horská cyklistika
+  riding: Jízda na koni
+  skating: Inline bruslení
+  slopes: Svahy pro zimní sporty
+

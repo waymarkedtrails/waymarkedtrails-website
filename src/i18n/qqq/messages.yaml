@@ -1,0 +1,124 @@
+# Translation of Waymarked Trails Website to Message documentation (Message documentation)
+# Exported from translatewiki.net
+#
+# Author: Dittaeva
+# Author: Liuxinyu970226
+# Author: Metalhead64
+# Author: Nike
+# Author: Shirayuki
+# Author: Siebrand
+# Author: Verdy p
+# Author: 아라
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: '{{doc-markdown}}'
+  elevation_title: '{{doc-markdown}}'
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: ''
+  note: '{{Identical|Note}}'
+  official_len: ''
+  operator: '{{Identical|Operator}}'
+  route_symbol: ''
+  subroutes_title: '{{Identical|Section}}'
+  superroutes_title: ''
+  symbol: ''
+  tags:
+    key: ''
+    title: ''
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: '{{Identical|Website}}'
+  wikipedia: '{{Optional}}\n{{Identical|Wikipedia}}'
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ''
+    distance: ''
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: '{{Identical|Error}}'
+headline:
+  last_update: '{{Identical|Last update}}'
+help: ''
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: The leading whitespaces the segmentation in lines can be safely ignored
+    as this is plain HTML and not wiki text. Feel free to reorder elements as this
+    will generate a single paragraph of text embedded in <code>&lt;p&gt;...&lt;/p&gt;</code>.\n\nThe
+    HTML template on which this is used is at:\n\nhttps://github.com/waymarkedtrails/waymarked-trails-site/blob/master/frontend/templates/osmc_symbol.html#L32
+  foreground: 'Ignore the leading whitespace and the division into arbitrary lines:
+    this is not wikicode to be presented indented as is, but only plain HTML, that
+    will be part of the same paragraph (between <code>&lt;p&gt;...&lt;/p&gt;</code>
+    HTML tags).\nFeel free to sub-segment and reorder the sentence correctly for the
+    target language.\n\nThe HTML template where it is used is actually located at:\n\nhttps://github.com/waymarkedtrails/waymarked-trails-site/blob/master/frontend/templates/osmc_symbol.html'
+  preview: ''
+  tester: ''
+routelist:
+  close: '{{Identical|Close}}'
+  more: ''
+  rollup: ''
+  title: ''
+search:
+  places: ''
+  routes: ''
+  title: '{{Identical|Search}}'
+settings:
+  base_map: ''
+  browser_language: ''
+  hillshading_layer: ''
+  language: '{{Identical|Language}}'
+  route_layer: One of the layers that can be adjusted in the layer chooser.
+  title: ''
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+

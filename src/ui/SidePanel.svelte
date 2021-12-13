@@ -94,7 +94,7 @@
 
 <div class="sidepanel" class:small={hidden}>
     <h3>
-        <PanelButton classes="smallonly" on:click={() => toggle_hidden()}>
+        <PanelButton title="{$_('routelist.rollup')}" classes="smallonly" on:click={() => toggle_hidden()}>
             {#if hidden}<SVGArrowBottom />{:else}<SVGArrowTop />{/if}
         </PanelButton>
         <span>
@@ -106,7 +106,7 @@
             {title}
         {/if}
         </span>
-        <PanelButton on:click={() => show_page()}><SVGClose /></PanelButton>
+        <PanelButton title="{$_('routelist.close')}" on:click={() => show_page()}><SVGClose /></PanelButton>
     </h3>
     <div class="sidepanel-content">
         {#if fail_message}

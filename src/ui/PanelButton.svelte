@@ -1,5 +1,6 @@
 <script>
     export let classes = '';
+    export let title = '';
 </script>
 
 <style>
@@ -15,6 +16,6 @@
     }
 </style>
 
-<button class={classes} type="button" on:click>
+<button title={title} class={classes} type="button" on:click>
   <slot></slot>
 </button>

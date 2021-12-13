@@ -1,0 +1,119 @@
+# Translation of Waymarked Trails Website to Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
+# Exported from translatewiki.net
+#
+# Author: Jim-by
+# Author: Nerogaf
+# Author: Red Winged Duck
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Зьвесткі мапы © [OpenStreetMap](https://www.openstreetmap.org) паводле ліцэнзіі
+    [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: зьвесткі вышыняў паводле [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Падрабязьней
+  no_data: ''
+  title: Месцы прызначэньня
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Вышыня
+  image: Выява
+  mapped_len: Даўжыня на мапе
+  note: Заўвага
+  official_len: Афіцыйная даўжыня
+  operator: Апэратар
+  route_symbol: ''
+  subroutes_title: Разьдзелы
+  superroutes_title: Частка
+  symbol: ''
+  tags:
+    key: ''
+    title: Цэтлікі OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Вэб-сайт
+  wikipedia: ''
+  zoom_to: Паказаць на мапе
+elevation:
+  ascent: Сумарны пад’ём
+  descent: Сумарны спуск
+  diagram:
+    altitude: Вышыня (м)
+    distance: Адлегласьць (км)
+  title: Профіль рэльефу
+  total: ''
+  unavailable: Ня знойдзеныя зьвесткі вышыні.
+  warn_unsorted: Маршрут зьяўляецца патэнцыйна неўпарадкаваным ці няпоўным. Зьвесткі
+    пра вышыню могуць быць недакладныя.
+error:
+  load_error: Памылка злучэньня з сэрвэрам.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Памылка
+headline:
+  last_update: Апошняе абнаўленьне
+help: Пра мапу
+locate_me: Знайсьці мяне
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Фон працуе падобным чынам. Ён таксама ўтрымлівае колер і форму. Фон
+    таксама можа быць толькі назвай колеру, што дасьць палатно абранага колеру. Гэта
+    паказана ў першым радку.
+  foreground: Сымбаль на пярэднім пляне ўтрымлівае колер і форму з спасылкай-падкрэсьленьнем.
+    Табліца ніжэй паказвае ўсе камбінацыі, якія распазнае гэты сайт. Ён таксама распазнае
+    пярэднія пляны, якія ўтрымліваюць толькі назву формы. Сымбалі для гэтага паказаныя
+    ў апошнім слупку.
+  preview: Папярэдні прагляд
+  tester: ''
+routelist:
+  close: Закрыць
+  more: ''
+  rollup: Згарнуць
+  title: Маршруты
+search:
+  places: ''
+  routes: Маршруты
+  title: Пошук
+settings:
+  base_map: Базавая мапа
+  browser_language: Выкарыстоўваць налады браўзэра
+  hillshading_layer: Адлюстраваньне рэльефу
+  language: Мова
+  route_layer: Слой маршрутаў
+  title: Налады мапы
+  transparency: Празрыстасьць мапы
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Ровар
+  hiking: Шпацыры
+  mtb: Маўнтынбайк
+  riding: Верхавая язда
+  skating: Ролікавыя канькі
+  slopes: Маршруты зімовых відаў спорту
+

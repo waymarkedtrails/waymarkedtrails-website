@@ -1,0 +1,125 @@
+# Translation of Waymarked Trails Website to Russian (русский)
+# Exported from translatewiki.net
+#
+# Author: Alexandr Efremov
+# Author: DCamer
+# Author: Eleferen
+# Author: Express2000
+# Author: Facenapalm
+# Author: Irus
+# Author: Movses
+# Author: Okras
+# Author: Sagan
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Данные карты © [OpenStreetMap](https://www.openstreetmap.org) под лицензией
+    [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: данные рельефа от [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Подробнее
+  no_data: ''
+  title: Места назначения
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Высота
+  image: Изображение
+  mapped_len: Показать на карте
+  note: Примечание
+  official_len: Официальная длина маршрута
+  operator: Оператор
+  route_symbol: ''
+  subroutes_title: Разделы
+  superroutes_title: Часть
+  symbol: ''
+  tags:
+    key: ''
+    title: Теги OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Веб-сайт
+  wikipedia: Википедия
+  zoom_to: Показать на карте
+elevation:
+  ascent: Суммарное восхождение
+  descent: Суммарный спуск
+  diagram:
+    altitude: Высота (м)
+    distance: Расстояние (км)
+  title: Профиль рельефа
+  total: ''
+  unavailable: Не найдены данные о высотах рельефа
+  warn_unsorted: Маршрут потенциально неупорядочен или неполон. Информация о высоте
+    может быть неточной.
+error:
+  load_error: Ошибка при подключении к серверу.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Ошибка
+headline:
+  last_update: Последнее обновление
+help: О карте
+locate_me: Найдите меня
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Фон работает похожим образом. Он тоже состоит из цвета и формы. Фон
+    также может быть лишь названием цвета, что даст полотно этого цвета. Такой вариант
+    показан в первой строке.
+  foreground: Символ переднего плана состоит из цвета и формы с подчёркнутой ссылкой.
+    Таблица внизу показывает все комбинации, которые распознаются этим сайтом. Он
+    также распознает фон, который состоит лишь из названия формы. Соответствующие
+    символы показаны в последнем столбце.
+  preview: Предпросмотр
+  tester: ''
+routelist:
+  close: Закрыть
+  more: ''
+  rollup: Свернуть
+  title: Маршруты
+search:
+  places: ''
+  routes: Маршруты
+  title: Найти
+settings:
+  base_map: Базовая карта
+  browser_language: Использовать настройки браузера
+  hillshading_layer: Отображение рельефа
+  language: Язык
+  route_layer: Слой маршрутов
+  title: Настройки карты
+  transparency: Прозрачность карты
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Велоспорт
+  hiking: Пешие прогулки
+  mtb: Горный велоспорт
+  riding: Верховая езда
+  skating: Роликовые коньки
+  slopes: Склоны для зимних видов спорта
+

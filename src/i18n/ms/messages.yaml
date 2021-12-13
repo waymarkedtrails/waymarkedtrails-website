@@ -1,0 +1,110 @@
+# Translation of Waymarked Trails Website to Malay (Bahasa Melayu)
+# Exported from translatewiki.net
+#
+# Author: Anakmalaysia
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Data peta © [OpenStreetMap](http://www.openstreetmap.org) di bawah [ODbL](http://www.openstreetmap.org/copyright)
+  elevation_title: data ketinggian oleh [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: Kepanjangan terpeta
+  note: Catatan
+  official_len: Kepanjangan rasmi
+  operator: Pengendali
+  route_symbol: ''
+  subroutes_title: Bahagian
+  superroutes_title: Sebahagian daripada
+  symbol: ''
+  tags:
+    key: ''
+    title: Tag OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Tapak sesawang
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: Kenaikan terkumpul
+  descent: Keturunan terkumpul
+  diagram:
+    altitude: Altitud (m)
+    distance: Jarak (km)
+  title: Profil ketinggian
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Ralat
+headline:
+  last_update: Kemas kini terkini
+help: ''
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: ''
+  more: ''
+  rollup: ''
+  title: Jalan
+search:
+  places: ''
+  routes: Jalan
+  title: Cari
+settings:
+  base_map: Peta asas
+  browser_language: ''
+  hillshading_layer: Bayangan bukit
+  language: Bahasa
+  route_layer: Lapisan jalan
+  title: ''
+  transparency: Kelutsinaran peta
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Basikal
+  hiking: Kembara
+  mtb: MTB
+  riding: Tunggang Kuda
+  skating: Kasut Roda
+  slopes: Cerun Sukan Musim Sejuk
+

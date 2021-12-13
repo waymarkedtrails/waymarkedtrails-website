@@ -1,0 +1,111 @@
+# Translation of Waymarked Trails Website to Norwegian Nynorsk (norsk nynorsk)
+# Exported from translatewiki.net
+#
+# Author: Dittaeva
+# Author: Njardarlogar
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kartdata © [OpenStreetMap](http://www.openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright)
+  elevation_title: høgdedata av [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: Vist på kartet
+  note: Melding
+  official_len: Offisiell lengd
+  operator: Ansvarleg
+  route_symbol: ''
+  subroutes_title: Deler
+  superroutes_title: Del av
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap-taggar
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Vevside
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: Akummulert stiging
+  descent: Akkumulert nedstiging
+  diagram:
+    altitude: Høgd (m)
+    distance: Avstand (km)
+  title: Høgdeprofil
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Feil
+headline:
+  last_update: Sist oppdatert
+help: ''
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: ''
+  more: ''
+  rollup: ''
+  title: Ruter
+search:
+  places: ''
+  routes: Ruter
+  title: Søk
+settings:
+  base_map: Bakgrunnskart
+  browser_language: ''
+  hillshading_layer: Høgdelag
+  language: Språk
+  route_layer: Ruter
+  title: ''
+  transparency: Kart-transparens
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Sykkelruter
+  hiking: Vandreruter
+  mtb: Terrengsykkelruter
+  riding: aking
+  skating: Inline-skøyte-ruter
+  slopes: Vintersportsbakkar
+

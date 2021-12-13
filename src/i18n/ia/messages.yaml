@@ -1,0 +1,116 @@
+# Translation of Waymarked Trails Website to Interlingua (interlingua)
+# Exported from translatewiki.net
+#
+# Author: McDutchie
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Datos cartographic © [OpenStreetMap](https://www.openstreetmap.org) sub [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: datos altimetric per [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Plus detalios
+  no_data: ''
+  title: Destinationes
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Altitude
+  image: Imagine
+  mapped_len: Distantia in carta
+  note: Nota
+  official_len: Distantia official
+  operator: Operator
+  route_symbol: ''
+  subroutes_title: Sectiones
+  superroutes_title: Parte de
+  symbol: ''
+  tags:
+    key: ''
+    title: Etiquettas de OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Sito web
+  wikipedia: ''
+  zoom_to: Monstrar in carta
+elevation:
+  ascent: Ascension accumulate
+  descent: Descension accumulate
+  diagram:
+    altitude: Altitude (m)
+    distance: Distantia (km)
+  title: Profilo altimetric
+  total: ''
+  unavailable: Nulle datos de elevation trovate.
+  warn_unsorted: Le itinerario es possibilemente non ordinate o incomplete. Le information
+    de elevation pote esser inexacte.
+error:
+  load_error: Error de connexion al servitor.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Error
+headline:
+  last_update: Ultime actualisation
+help: A proposito del carta
+locate_me: Localisar me
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Le fundo functiona de maniera similar. Illo etiam consiste de un color
+    e un forma. Le fundo pote etiam esser solmente un nomine de color, lo que produce
+    un quadro del color seligite. Isto se monstra in le prime linea.
+  foreground: Le symbolo de prime plano se compone de un color e un forma, ligate
+    per un tracto de sublineamento. Le tabella infra monstra tote le combinationes
+    que iste sito recognosce. Le sito recognosce etiam prime planos que consiste solmente
+    del nomine del forma. Le symbolos pro illos appare in le ultime columna.
+  preview: Previsualisar
+  tester: ''
+routelist:
+  close: Clauder
+  more: ''
+  rollup: Inrolar
+  title: Itinerarios
+search:
+  places: ''
+  routes: Itinerarios
+  title: Cercar
+settings:
+  base_map: Carta de base
+  browser_language: Usar le configuration del navigator
+  hillshading_layer: Depiction de relievo cartographic
+  language: Lingua
+  route_layer: Strato de itinerarios
+  title: Optiones del carta
+  transparency: Transparentia del carta
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Cyclismo
+  hiking: Tourismo pedestre
+  mtb: Bicycletta de montania
+  riding: Equitation
+  skating: Patinage in linea
+  slopes: Pistas de sport de hiberno
+

@@ -1,0 +1,114 @@
+# Translation of Waymarked Trails Website to Lithuanian (lietuvių)
+# Exported from translatewiki.net
+#
+# Author: Dittaeva
+# Author: Eitvys200
+# Author: Mantak111
+# Author: Shirayuki
+# Author: Zygimantus
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Žemėlapio duomenys © [OpenStreetMap](http://www.openstreetmap.org) pagal [ODbL](http://www.openstreetmap.org/copyright)
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: ''
+  note: Pastaba
+  official_len: Oficialus ilgis
+  operator: Operatorius
+  route_symbol: ''
+  subroutes_title: Skyriai
+  superroutes_title: Dalis
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap žymės
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Tinklalapis
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: Aukštis (m)
+    distance: Atstumas (km)
+  title: Aukščio profilis
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Klaida
+headline:
+  last_update: Paskutinis įrašas
+help: Apie žemėlapį
+locate_me: Raskite mane
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: Uždaryti
+  more: ''
+  rollup: ''
+  title: Maršrutai
+search:
+  places: ''
+  routes: Maršrutai
+  title: Ieškoti
+settings:
+  base_map: Pagrindinis žemėlapis
+  browser_language: Naudoti naršyklės nustatymus
+  hillshading_layer: Kalnų šešėliavimas
+  language: Kalba
+  route_layer: Maršrutų klodas
+  title: Žemėlapio nustatymai
+  transparency: Žemėlapio skaidrumas
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Dviračių sportas
+  hiking: Žygiai
+  mtb: Kalnų dviračių sportas
+  riding: Jodinėjimas
+  skating: Riedučių sportas
+  slopes: ''
+

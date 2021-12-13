@@ -1,0 +1,126 @@
+# Translation of Waymarked Trails Website to Turkish (Türkçe)
+# Exported from translatewiki.net
+#
+# Author: BaRaN6161 TURK
+# Author: Emperyan
+# Author: Grkn gll
+# Author: Hedda
+# Author: Incelemeelemani
+# Author: JackUKElliott
+# Author: MuratTheTurkish
+# Author: Sayginer
+# Author: Sezgin İbiş
+# Author: Stonecy
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Harita verileri © [ODbL](https://www.openstreetmap.org/copyright) altında
+    [OpenStreetMap](https://www.openstreetmap.org)
+  elevation_title: 'yükseklik verileri: [SRTM/ASTER](help/acknowledgements)'
+destination_sign:
+  more: Daha fazla ayrıntı
+  no_data: ''
+  title: Hedefler
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Yükseklik
+  image: Resim
+  mapped_len: Eşlenmiş uzunluk
+  note: Not
+  official_len: Resmi uzunluğu
+  operator: Operatör
+  route_symbol: ''
+  subroutes_title: Bölümler
+  superroutes_title: Parçası
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap etiketleri
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Web site
+  wikipedia: Vikipedi
+  zoom_to: Haritada göster
+elevation:
+  ascent: Birikmiş yükseliş
+  descent: Birikmiş iniş
+  diagram:
+    altitude: Yükseklik (m)
+    distance: Mesafe (km)
+  title: Yükselti profili
+  total: ''
+  unavailable: Yükseklik verisi bulunamadı.
+  warn_unsorted: Rota potansiyel olarak sıralanmamış veya eksik. Yükseklik bilgisi
+    yanlış olabilir.
+error:
+  load_error: Sunucuya bağlanma hatası.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Hata
+headline:
+  last_update: Son güncelleme
+help: Harita hakkında
+locate_me: Beni bul
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Arka plan benzer şekilde çalışır. Aynı zamanda bir renk ve bir şekilden
+    oluşur. Arka plan, tuvalde seçilmiş sadece bir renk adı da olabilir. Bu durumda
+    ilk olarak bu gösterilir.
+  foreground: Ön plan sembolü, bir alt çizgi ile bağlantılı bir renk ve şekilden oluşur.
+    Aşağıdaki tabloda bu site tarafından tanınan tüm kombinasyonlar gösterilmektedir.
+    Ayrıca, yalnızca şeklin adını içeren ön planları tanır. Bunlardan dolayı semboller
+    son sütunda gösterilir.
+  preview: Önizleme
+  tester: ''
+routelist:
+  close: Kapat
+  more: ''
+  rollup: Topla
+  title: Güzergâhlar
+search:
+  places: ''
+  routes: Güzergâhlar
+  title: Ara
+settings:
+  base_map: Temel harita
+  browser_language: Tarayıcı ayarlarını kullan
+  hillshading_layer: Gölge rölyefi
+  language: Dil
+  route_layer: Güzergâh katmanı
+  title: Harita ayarları
+  transparency: Harita şeffaflığı
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Bisiklete binme
+  hiking: Doğa yürüyüşü
+  mtb: MTB
+  riding: At Binme
+  skating: Tekerlekli Paten
+  slopes: Kış Sporu Yamaçları
+

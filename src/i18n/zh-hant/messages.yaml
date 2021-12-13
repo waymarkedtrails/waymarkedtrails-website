@@ -1,0 +1,115 @@
+# Translation of Waymarked Trails Website to Traditional Chinese (中文（繁體）‎)
+# Exported from translatewiki.net
+#
+# Author: Kly
+# Author: Liuxinyu970226
+# Author: Shirayuki
+# Author: Simon Shek
+# Author: SupaplexTW
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: 地圖資料 © [OpenStreetMap](https://www.openstreetmap.org)以 [ODbL](https://www.openstreetmap.org/copyright)
+    授權
+  elevation_title: 海拔資料透過 [SRTM/ASTER](help/acknowledgements) 提供
+destination_sign:
+  more: 更多詳細資料
+  no_data: ''
+  title: 目的地
+details:
+  GPX: GPX
+  KML: KML
+  altitude: 海拔
+  image: 圖片
+  mapped_len: 顯示在地圖上
+  note: 說明
+  official_len: 官方長度
+  operator: 維護機關
+  route_symbol: ''
+  subroutes_title: 部分
+  superroutes_title: 部分
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap 標籤
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: 網站
+  wikipedia: 維基百科
+  zoom_to: 在地圖上顯示
+elevation:
+  ascent: 累積上坡
+  descent: 累積下坡
+  diagram:
+    altitude: 高度 （公尺）
+    distance: 距離 (公里)
+  title: 海拔輪廓
+  total: ''
+  unavailable: 查無海拔資料。
+  warn_unsorted: 路線可能不規律或不完整。海拔訊息可能不精準。
+error:
+  load_error: 連接至伺服器出現錯誤。
+  missing_id: ''
+  missing_query: ''
+  panel_title: 錯誤
+headline:
+  last_update: 最後更新
+help: 關於地圖
+locate_me: 找到我
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: 在背景運作採用相似的方式，同樣包含色彩與外型。背景可能僅是在色彩取樣畫布物件上所得到的色彩名稱。這將會顯示在第一列。
+  foreground: 前景符號包含所關聯強調項目的色彩與外形。以下表格顯示著此網站所有可識別組合。僅由外形名稱所組成前景亦可識別。用於這些的符號會顯示於最後一欄裡。
+  preview: 預覽
+  tester: ''
+routelist:
+  close: 關閉
+  more: ''
+  rollup: 捲起
+  title: 路線
+search:
+  places: ''
+  routes: 路線
+  title: 搜尋
+settings:
+  base_map: 底圖
+  browser_language: 使用瀏覽器設定
+  hillshading_layer: 山丘陰影
+  language: 語言
+  route_layer: 路線層
+  title: 地圖設定
+  transparency: 地圖透明度
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: 騎自行車
+  hiking: 徒步旅行
+  mtb: 登山自行車
+  riding: 騎馬
+  skating: 直排輪
+  slopes: 冬季滑坡運動
+

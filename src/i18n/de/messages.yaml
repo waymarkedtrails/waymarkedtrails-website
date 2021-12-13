@@ -1,0 +1,124 @@
+# Translation of Waymarked Trails Website to German (Deutsch)
+# Exported from translatewiki.net
+#
+# Author: DraconicDark
+# Author: Geitost
+# Author: JOE
+# Author: Kghbln
+# Author: Lonvia
+# Author: Metalhead64
+# Author: Purodha
+# Author: Tobi 406
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kartendaten © [OpenStreetMap](https://www.openstreetmap.org) unter [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: Höhendaten von [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Weitere Einzelheiten
+  no_data: ''
+  title: Ziele
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Höhe
+  image: Bild
+  mapped_len: Erfasste Länge
+  note: Hinweis
+  official_len: Offizielle Länge
+  operator: Betreiber
+  route_symbol: ''
+  subroutes_title: Abschnitte
+  superroutes_title: Teil von
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap-Tags
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Website
+  wikipedia: Wikipedia
+  zoom_to: Auf Karte anzeigen
+elevation:
+  ascent: Kumulierter Anstieg
+  descent: Kumulierter Abstieg
+  diagram:
+    altitude: Höhe (m)
+    distance: Entfernung (km)
+  title: Höhenprofil
+  total: ''
+  unavailable: Es wurden keine Höhendaten gefunden.
+  warn_unsorted: Der Weg ist möglicherweise nicht sortiert oder unvollständig. Die
+    Höheninformationen können ungenau sein.
+error:
+  load_error: Fehler beim Verbinden zum Server.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Fehler
+headline:
+  last_update: Letzte Aktualisierung
+help: Über die Karte
+locate_me: Lokalisiere mich
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Der Hintergrund funktioniert auf ähnliche Weise. Er besteht auch aus
+    einer Farbe und einer Form. Der Hintergrund kann auch nur ein Farbname sein, der
+    in einer Leinwand mit der angegebenen Farbe endet. Dies wird in der ersten Zeile
+    angezeigt.
+  foreground: Das Vordergrundsymbol besteht aus einer Farbe und einer Form, verbunden
+    mit einem Unterstrich. Die Tabelle unten zeigt alle Kombinationen, die von dieser
+    Website erkannt werden. Sie erkennt auch Vordergründe, die nur aus dem Namen der
+    Form bestehen. Die Symbole für diese werden in der letzten Spalte angezeigt.
+  preview: Vorschau
+  tester: ''
+routelist:
+  close: Schließen
+  more: ''
+  rollup: Aufrollen
+  title: Routen
+search:
+  places: ''
+  routes: Routen
+  title: Suche
+settings:
+  base_map: Basiskarte
+  browser_language: Browsereinstellungen verwenden
+  hillshading_layer: Höhenrelief
+  language: Sprache
+  route_layer: Routen
+  title: Karteneinstellungen
+  transparency: Kartentransparenz
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Radwege
+  hiking: Wanderwege
+  mtb: Mountainbike-Routen
+  riding: Reiten
+  skating: Inline-Skating
+  slopes: Wintersportpisten
+

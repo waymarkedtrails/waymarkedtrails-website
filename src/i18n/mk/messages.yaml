@@ -1,0 +1,118 @@
+# Translation of Waymarked Trails Website to Macedonian (македонски)
+# Exported from translatewiki.net
+#
+# Author: Bjankuloski06
+# Author: Vlad5250
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Картогр. податоци © [OpenStreetMap](https://www.openstreetmap.org) под лиц.
+    [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: податоци за надм. височина од [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Поподробно
+  no_data: ''
+  title: Одредници
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Надм. височина
+  image: Слика
+  mapped_len: Прикажано на картата
+  note: Белешка
+  official_len: Официјална должина
+  operator: 'Оператор:'
+  route_symbol: ''
+  subroutes_title: Потези
+  superroutes_title: Дел од
+  symbol: ''
+  tags:
+    key: ''
+    title: Ознаки за OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Портал
+  wikipedia: Википедија
+  zoom_to: Прикажи на карта
+elevation:
+  ascent: Вкупно искачување
+  descent: Вкупно симнување
+  diagram:
+    altitude: Надм. височина (м)
+    distance: Растојание (км)
+  title: Висински профил
+  total: ''
+  unavailable: Не најдов податоци за висина.
+  warn_unsorted: Маршрутата е потенцијално неподредена или нецелосна. Информацијата
+    за надморската висина може да биде неточна.
+error:
+  load_error: Грешка при поврзувањето со опслужувачот.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Грешка
+headline:
+  last_update: Последна поднова
+help: За картава
+locate_me: Пронајди ме
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Заднината работи на сличен начин. И таа се состои од боја и облик. Заднината
+    исто така може да биде само назив на боја, што дава проста подлога од избраната
+    боја. Ова се покажува во првиот ред.
+  foreground: Симболот на преднината се осстои од боја и облик, сврзани со долна црта.
+    Долунаведенат табела ги прикажува сите комбинации кои ги признава мрежното место.
+    Ги признава и преднините кои се состојат само од називот на обликот. Нивните симболи
+    се прикажани во последниот столб.
+  preview: Преглед
+  tester: ''
+routelist:
+  close: Затвори
+  more: ''
+  rollup: Собери
+  title: Маршрути
+search:
+  places: ''
+  routes: Маршрути
+  title: Пребарај
+settings:
+  base_map: Основна карта
+  browser_language: Користи ги поставките од прелистувачот
+  hillshading_layer: Релјефно сенчање
+  language: Јазик
+  route_layer: Слој со траси
+  title: Поставки за картата
+  transparency: Проѕирност на картата
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Велосипедизам
+  hiking: Пешачење
+  mtb: Планински велосипедизам
+  riding: Јавање
+  skating: Ролерки
+  slopes: Патеки за зимски спортови
+

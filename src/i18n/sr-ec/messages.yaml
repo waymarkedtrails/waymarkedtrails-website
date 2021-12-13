@@ -1,0 +1,121 @@
+# Translation of Waymarked Trails Website to Serbian (Cyrillic script) (српски (ћирилица)‎)
+# Exported from translatewiki.net
+#
+# Author: Acamicamacaraca
+# Author: Aktron
+# Author: BadDog
+# Author: Kizule
+# Author: Milicevic01
+# Author: Nikola Smolenski
+# Author: Rancher
+# Author: Srdjan m
+# Author: Srđan
+# Author: Zoranzoki21
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Подаци мапе © [OpenStreetMap (https://www.openstreetmap.org) под лиценцом
+    [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: ''
+destination_sign:
+  more: Више детаља
+  no_data: ''
+  title: Дестинације
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Надморска висина
+  image: ''
+  mapped_len: Приказано на мапи
+  note: Белешка
+  official_len: Званична дужина
+  operator: Оператор
+  route_symbol: ''
+  subroutes_title: Одељци
+  superroutes_title: Део
+  symbol: ''
+  tags:
+    key: ''
+    title: Ознаке OpenStreetMap-а
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Веб-сајт
+  wikipedia: ''
+  zoom_to: Прикажи на мапи
+elevation:
+  ascent: Акумулирани успон
+  descent: Акумулирани спуст
+  diagram:
+    altitude: Висина (м)
+    distance: Удаљеност (км)
+  title: Висински профил
+  total: ''
+  unavailable: Нису пронађени подаци о висини.
+  warn_unsorted: Пут је потенцијално неуређен или непотпун. Информације о висини могу
+    бити нетачне.
+error:
+  load_error: Грешка при повезивању на сервер.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Грешка
+headline:
+  last_update: Последње ажурирање
+help: О мапи
+locate_me: Нађи ме
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: Преглед
+  tester: ''
+routelist:
+  close: Затвори
+  more: ''
+  rollup: Окретање
+  title: Руте
+search:
+  places: ''
+  routes: Руте
+  title: Претражи
+settings:
+  base_map: Основна мапа
+  browser_language: Користи подешавања прегледача
+  hillshading_layer: Рељефно сенчење
+  language: Језик
+  route_layer: Слој руте
+  title: Подешавања мапе
+  transparency: Прозирност мапе
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Бициклизам
+  hiking: Пешачење
+  mtb: Планински бициклизам
+  riding: Јахање коња
+  skating: Ролери
+  slopes: ''
+

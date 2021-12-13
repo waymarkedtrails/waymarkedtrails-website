@@ -1,0 +1,115 @@
+# Translation of Waymarked Trails Website to Slovenian (slovenščina)
+# Exported from translatewiki.net
+#
+# Author: Dbc334
+# Author: Eleassar
+# Author: Irena Plahuta
+# Author: Lesko987
+# Author: P̲̳l̳eo
+# Author: Shirayuki
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Podatki zemljevidov  © [OpenStreetMap](http://www.openstreetmap.org) pod [ODbL](http://www.openstreetmap.org/copyright).
+  elevation_title: višinski podatki [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Več podrobnosti
+  no_data: ''
+  title: Destinacije
+details:
+  GPX: ''
+  KML: ''
+  altitude: Nadmorska višina
+  image: ''
+  mapped_len: Prikazano na zemljevidu
+  note: Opomba
+  official_len: Uradna dolžina
+  operator: Upravljavec
+  route_symbol: ''
+  subroutes_title: Odseki
+  superroutes_title: Del
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap oznake
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Spletna stran
+  wikipedia: Wikipedija
+  zoom_to: Prikaži na zemljevidu
+elevation:
+  ascent: Skupni vzpon
+  descent: Skupni spust
+  diagram:
+    altitude: Nadmorska višina (m)
+    distance: Razdalja (km)
+  title: Višinski profil
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Napaka
+headline:
+  last_update: Zadnja posodobitev
+help: O zemljevidu
+locate_me: Poiščite me
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: Predogled
+  tester: ''
+routelist:
+  close: Zapri
+  more: ''
+  rollup: ''
+  title: Poti
+search:
+  places: ''
+  routes: Poti
+  title: Iskanje
+settings:
+  base_map: Osnovni zemljevid
+  browser_language: ''
+  hillshading_layer: Senčenje hribov
+  language: Jezik
+  route_layer: Plast poti
+  title: Nastavitve zemljevida
+  transparency: Prozornost zemljevida
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Kolesarjenje
+  hiking: Planinarjenje
+  mtb: Gorsko kolesarjenje
+  riding: Jahanje konjev
+  skating: Rolanje
+  slopes: ''
+

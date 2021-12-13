@@ -1,0 +1,111 @@
+# Translation of Waymarked Trails Website to Kabyle (Taqbaylit)
+# Exported from translatewiki.net
+#
+# Author: Belkacem77
+# Author: Sayem AtVkm
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: ''
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: ''
+  note: Tazmilt
+  official_len: Teɣzi tunsibt
+  operator: Amahal
+  route_symbol: ''
+  subroutes_title: Tigezmiyin
+  superroutes_title: D ayla n
+  symbol: ''
+  tags:
+    key: ''
+    title: Ticraḍ OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Asmel web
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ''
+    distance: Ameccaq
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: Tuccḍa n tuqqna ar uqedac
+  missing_id: ''
+  missing_query: ''
+  panel_title: Tuccḍa
+headline:
+  last_update: Lqem aneggaru
+help: ɣef tkarḍa
+locate_me: Sideg-iyi
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: Mdel
+  more: ''
+  rollup: Skur
+  title: Iberdan
+search:
+  places: ''
+  routes: Iberdan
+  title: Nadi
+settings:
+  base_map: Takarḍa tazadurt
+  browser_language: Seqdec iɣewwaṛen n iminig
+  hillshading_layer: Agazal
+  language: Tutlayt
+  route_layer: ''
+  title: Iɣewwaṛen n tekarḍa
+  transparency: Asuseɣ n tkarḍa
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: S uvilu
+  hiking: ɣef uḍar
+  mtb: ''
+  riding: Tanaka
+  skating: ''
+  slopes: ''
+

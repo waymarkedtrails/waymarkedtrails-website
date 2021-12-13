@@ -1,0 +1,126 @@
+# Translation of Waymarked Trails Website to Brazilian Portuguese (português do Brasil)
+# Exported from translatewiki.net
+#
+# Author: !Silent
+# Author: Athena in Wonderland
+# Author: Eduardo Addad de Oliveira
+# Author: Eduardoaddad
+# Author: Fasouzafreitas
+# Author: Gusta
+# Author: Luckas
+# Author: Rodrigo codignoli
+# Author: TheGabrielZaum
+# Author: Tuliouel
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Dados cartográficos © [OpenStreetMap](https://www.openstreetmap.org) sob a
+    licença [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: dados de relevo de [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Mais detalhes
+  no_data: ''
+  title: Destinos
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Altitude
+  image: Imagem
+  mapped_len: Exibido no mapa
+  note: Nota
+  official_len: Distância oficial
+  operator: Operador
+  route_symbol: ''
+  subroutes_title: Seções
+  superroutes_title: Parte de
+  symbol: ''
+  tags:
+    key: ''
+    title: Etiquetas do OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Website
+  wikipedia: Wikipédia
+  zoom_to: Mostrar no mapa
+elevation:
+  ascent: Ascensão acumulada
+  descent: Descensão acumulada
+  diagram:
+    altitude: Altitude (m)
+    distance: Distância (km)
+  title: Perfil de relevo
+  total: ''
+  unavailable: Nenhum dado de elevação encontrado.
+  warn_unsorted: A rota provavelmente está incompleta e desordenada. A informação
+    da elevação pode ter pouca precisão.
+error:
+  load_error: Erro ao conectar com o servidor.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Erro
+headline:
+  last_update: Última atualização
+help: Sobre o mapa
+locate_me: Localize-me
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: O fundo funciona de maneira parecida. Também contém uma cor e uma forma.
+    O fundo também pode ser só um nome de cor que resulta num quadro da cor escolhida.
+    Isto é mostrado na primeira fila.
+  foreground: O símbolo do primeiro plano é formado por uma cor e uma forma ligadas
+    por uma linha baixa. A tabela abaixo mostra todas as combinações reconhecidas
+    por este sítio. Também reconhece os primeiros planos que são formados apenas pelo
+    nome da forma. Os símbolos para estes são mostrados na última coluna.
+  preview: Pré-visualizar
+  tester: ''
+routelist:
+  close: Fechar
+  more: ''
+  rollup: Rolar acima
+  title: Rotas
+search:
+  places: ''
+  routes: Rotas
+  title: Buscar
+settings:
+  base_map: Mapa base
+  browser_language: Usar as configurações do navegador
+  hillshading_layer: Sombreamento de relevo
+  language: Idioma
+  route_layer: Camada de rotas
+  title: Configurações do mapa
+  transparency: Transparência do mapa
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Ciclismo
+  hiking: Excursionismo
+  mtb: BTT
+  riding: Corridas de cavalos
+  skating: Patinação em linha
+  slopes: Pistas para esportes de inverno
+

@@ -1,0 +1,110 @@
+# Translation of Waymarked Trails Website to Kumyk (къумукъ)
+# Exported from translatewiki.net
+#
+# Author: ArslanX
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: ''
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: ''
+  note: ''
+  official_len: ''
+  operator: ''
+  route_symbol: ''
+  subroutes_title: Бёлюклер
+  superroutes_title: ''
+  symbol: ''
+  tags:
+    key: ''
+    title: ''
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Веб-сайфа
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ''
+    distance: ''
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Хата
+headline:
+  last_update: Ахырынчы янгыртыв
+help: Хаританы гьакъында
+locate_me: Тап мени
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: Япмакъ
+  more: ''
+  rollup: ''
+  title: ''
+search:
+  places: ''
+  routes: ''
+  title: Излемек
+settings:
+  base_map: ''
+  browser_language: ''
+  hillshading_layer: ''
+  language: Тил
+  route_layer: ''
+  title: ''
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: ''
+  hiking: Яяв юрюв
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+

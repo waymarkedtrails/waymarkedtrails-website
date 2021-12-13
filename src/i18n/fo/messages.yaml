@@ -1,0 +1,110 @@
+# Translation of Waymarked Trails Website to Faroese (føroyskt)
+# Exported from translatewiki.net
+#
+# Author: EileenSanda
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kort dáta © [OpenStreetMap](http://www.openstreetmap.org) undir [ODbL](http://www.openstreetmap.org/copyright)
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: Vís longdina á kortinum
+  note: Viðmerking
+  official_len: Almenna longdin
+  operator: Ábygdari
+  route_symbol: ''
+  subroutes_title: Sektiónir
+  superroutes_title: Partur av
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap tags
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Heimasíða
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: Samlað fall
+  diagram:
+    altitude: Hædd (m)
+    distance: Fjarstøða (km)
+  title: Hæddarprofilur
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: Feilur
+headline:
+  last_update: Seinast dagført
+help: ''
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: ''
+  more: ''
+  rollup: ''
+  title: Rutur, leiðir
+search:
+  places: ''
+  routes: Rutur, leiðir
+  title: Leita
+settings:
+  base_map: Grund kort
+  browser_language: ''
+  hillshading_layer: Hæddarkurvar
+  language: Mál
+  route_layer: Rutur
+  title: ''
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Súkkling
+  hiking: Vallararutur, gangitúrar
+  mtb: Fjallasúkkla
+  riding: ''
+  skating: Inline Skating
+  slopes: ''
+

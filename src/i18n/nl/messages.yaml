@@ -1,0 +1,125 @@
+# Translation of Waymarked Trails Website to Dutch (Nederlands)
+# Exported from translatewiki.net
+#
+# Author: A67-A67
+# Author: Elderson
+# Author: Elroy
+# Author: Jeleniccz
+# Author: Kars
+# Author: M!dgard
+# Author: McDutchie
+# Author: Romaine
+# Author: SPQRobin
+# Author: Siebrand
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kaartgegevens © [OpenStreetMap](http://www.openstreetmap.org) onder [ODbL](http://www.openstreetmap.org/copyright)
+  elevation_title: hoogtegegevens via [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Meer gegevens
+  no_data: ''
+  title: Bestemmingen
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Hoogte
+  image: Afbeelding
+  mapped_len: Lengte op kaart
+  note: Opmerking
+  official_len: Officiële afstand
+  operator: Beheerder
+  route_symbol: ''
+  subroutes_title: Secties
+  superroutes_title: Onderdeel van
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMaplabels
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Website
+  wikipedia: Wikipedia
+  zoom_to: Op kaart weergeven
+elevation:
+  ascent: Totaal gestegen
+  descent: Totaal gedaald
+  diagram:
+    altitude: Hoogte (m)
+    distance: Afstand (km)
+  title: Hoogteprofiel
+  total: ''
+  unavailable: Geen hoogtegegevens gevonden.
+  warn_unsorted: De route is mogelijk ongesorteerd of onvolledig. Hoogte-informatie
+    is mogelijk onnauwkeurig.
+error:
+  load_error: Fout bij verbinden met server.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Fout
+headline:
+  last_update: Laatst bijgewerkt
+help: Over de kaart
+locate_me: Zoek mij
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Het achtergrondsymbool werkt vergelijkbaar. Dit bestaat ook uit een
+    kleur en een vorm. De achtergrond kan ook alleen een kleurnaam zijn, met een effen
+    kleurvlak als resultaat. Dit wordt in de eerste regel van onderstaande tabel getoond.
+  foreground: Het voorgrondsymbool bestaat uit een kleur en een vorm, met een underscore
+    ertussen. Onderstaande tabel toont alle combinaties die deze site herkent. Ook
+    voorgrondsymbolen die alleen een vormnaam hebben worden herkend. De laatste kolom
+    toont die symbolen.
+  preview: Voorbeeld
+  tester: ''
+routelist:
+  close: Sluiten
+  more: ''
+  rollup: Roll-up
+  title: Routes
+search:
+  places: ''
+  routes: Routes
+  title: Zoeken
+settings:
+  base_map: Basiskaart
+  browser_language: Gebruik de instellingen van de browser
+  hillshading_layer: Reliëfschaduw
+  language: Taal
+  route_layer: Routelaag
+  title: Kaartinstellingen
+  transparency: Kaarttransparantie
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Fietsen
+  hiking: Wandelen
+  mtb: Mountainbiken
+  riding: Paardrijden
+  skating: Inline skaten
+  slopes: Wintersportpistes
+

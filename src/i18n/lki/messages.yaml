@@ -1,0 +1,112 @@
+# Translation of Waymarked Trails Website to Laki (لەکی)
+# Exported from translatewiki.net
+#
+# Author: Arash71
+# Author: Hosseinblue
+# Author: Lakzon
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: ''
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: ''
+  note: ویرنۆیسة-یادداشت
+  official_len: ''
+  operator: ''
+  route_symbol: ''
+  subroutes_title: ''
+  superroutes_title: ''
+  symbol: ''
+  tags:
+    key: ''
+    title: ''
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: وبسایت
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ''
+    distance: ''
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: خطا
+headline:
+  last_update: بروزرسانی دؤمائن
+help: ''
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: ''
+  more: ''
+  rollup: ''
+  title: مسیرها
+search:
+  places: ''
+  routes: مسیرها
+  title: مِنِی کِردِن(گێردین)
+settings:
+  base_map: تقشه پایه
+  browser_language: ''
+  hillshading_layer: سایه تپه
+  language: زوون
+  route_layer: لایه مسیر
+  title: ''
+  transparency: شفافیت نقشه
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: دوچرخه سواری
+  hiking: پیاده‌روی
+  mtb: ام تی بی
+  riding: ''
+  skating: ''
+  slopes: ''
+

@@ -1,0 +1,119 @@
+# Translation of Waymarked Trails Website to Slovak (slovenčina)
+# Exported from translatewiki.net
+#
+# Author: AtonX
+# Author: Jaroslav.micek
+# Author: Kusavica
+# Author: Patriccck
+# Author: Patrik L.
+# Author: Yardom78
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Mapové údaje © [OpenStreetMap](https://www.openstreetmap.org) v rámci licencie
+    [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: údaje o nadmorskej výške podľa [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Viac podrobností
+  no_data: ''
+  title: Ciele
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Nadmorská výška
+  image: Obrázok
+  mapped_len: Mapovaná dĺžka
+  note: Poznámka
+  official_len: Oficiálna dĺžka
+  operator: Operátor
+  route_symbol: ''
+  subroutes_title: Sekcie
+  superroutes_title: Súčasť
+  symbol: ''
+  tags:
+    key: ''
+    title: Štítky OpenStreetMap
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Webová stránka
+  wikipedia: Wikipedia
+  zoom_to: Zobraziť na mape
+elevation:
+  ascent: Akumulovaný výstup
+  descent: Akumulovaný zostup
+  diagram:
+    altitude: Nadmorská výška (m)
+    distance: Vzdialenosť (km)
+  title: Výškový profil
+  total: ''
+  unavailable: Údaje o nadmorskej výške neboli nájdené.
+  warn_unsorted: Trasa je pravdepodobne nekompletná. Údaje o nadmorskej výške môžu
+    byť nepresné.
+error:
+  load_error: Chyba pri pripájaní na server.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Chyba
+headline:
+  last_update: Posledná aktualizácia
+help: O mape
+locate_me: Lokalizovať ma
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Pozadie funguje podobným spôsobom. Skladá sa z farby a tvaru. Pozadie
+    môže byť len plná farba.
+  foreground: Popredie sa skladá z farby a tvaru . Tabuľka nižšie ukazuje všetky dostupné
+    kombinácie.
+  preview: Náhľad
+  tester: ''
+routelist:
+  close: Zavrieť
+  more: ''
+  rollup: Zrolovať
+  title: Trasy
+search:
+  places: ''
+  routes: Trasy
+  title: Hľadať
+settings:
+  base_map: Základná mapa
+  browser_language: Použiť nastavenia prehliadača
+  hillshading_layer: Tieňovanie kopcov
+  language: Jazyk
+  route_layer: Vrstva trasy
+  title: Nastavenia mapy
+  transparency: Transparentnosť mapy
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Cyklistika
+  hiking: Turistika
+  mtb: Horská cyklistika
+  riding: Jazda na koni
+  skating: Inline korčuľovanie
+  slopes: Svahy pre zimné športy
+

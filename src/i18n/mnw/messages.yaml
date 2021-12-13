@@ -1,0 +1,110 @@
+# Translation of Waymarked Trails Website to Mon (ဘာသာ မန်)
+# Exported from translatewiki.net
+#
+# Author: Aue Nai
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: ''
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: ''
+  note: 'တၚ်စၟတ်:'
+  official_len: ''
+  operator: ''
+  route_symbol: ''
+  subroutes_title: အခန်
+  superroutes_title: မွဲလစှ်ေ ကု
+  symbol: ''
+  tags:
+    key: ''
+    title: ''
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: ''
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ''
+    distance: ဇမ္ၚောဲ(km)
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: ဗၠေတ်
+headline:
+  last_update: ကလေင်ပလေဝ်လဝ်တၟိ လက္ကရဴအိုတ်
+help: ပရူ ဗီုတိ
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: ကၟာတ်
+  more: ''
+  rollup: ခၟောပတိုန်
+  title: လၟေၚ်တရဴဂမၠိုၚ်
+search:
+  places: ''
+  routes: လၟေၚ်တရဴဂမၠိုၚ်
+  title: ဂၠာဲ
+settings:
+  base_map: ဒုၚ်သ္ဇိုၚ်ဗီုတိ
+  browser_language: ''
+  hillshading_layer: ''
+  language: အရေဝ်ဘာသာ
+  route_layer: ကဆံၚ်လၟေၚ်တရဴ
+  title: ချိၚ်ဒၟံၚ် ဗီုတိ
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: ''
+  hiking: ''
+  mtb: MTB
+  riding: ''
+  skating: ''
+  slopes: ''
+

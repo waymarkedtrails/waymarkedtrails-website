@@ -1,0 +1,112 @@
+# Translation of Waymarked Trails Website to Nepali (नेपाली)
+# Exported from translatewiki.net
+#
+# Author: RajeshPandey
+# Author: सरोज कुमार ढकाल
+# Author: हिमाल सुबेदी
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: ''
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: ''
+  note: टिप्पणी
+  official_len: आधिकारिक दुरी
+  operator: सञ्चालक
+  route_symbol: ''
+  subroutes_title: खण्डहरू
+  superroutes_title: खण्ड
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap ट्यागहरू
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: वेवसाइट
+  wikipedia: विकिपिडिया
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: उचाइ (मि)
+    distance: दुरी (किमि)
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: त्रुटि
+headline:
+  last_update: अन्तिम सम्पादन
+help: यस नक्साको बारेमा
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: ''
+  more: ''
+  rollup: ''
+  title: बाटाहरू
+search:
+  places: ''
+  routes: बाटाहरू
+  title: खोज
+settings:
+  base_map: ''
+  browser_language: ''
+  hillshading_layer: ''
+  language: भाषा
+  route_layer: ''
+  title: ''
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+

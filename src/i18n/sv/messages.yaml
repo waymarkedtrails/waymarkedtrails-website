@@ -1,0 +1,124 @@
+# Translation of Waymarked Trails Website to Swedish (svenska)
+# Exported from translatewiki.net
+#
+# Author: Cybjit
+# Author: Fader
+# Author: Jopparn
+# Author: LeiLar
+# Author: Sendelbach
+# Author: Sturban
+# Author: Tobulos1
+# Author: Warrakkk
+# Author: WikiPhoenix
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kartdata © [OpenStreetMap](https://www.openstreetmap.org) under licensen [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: höjddata från [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Mer detaljer
+  no_data: ''
+  title: Destinationer
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Altitud
+  image: Bild
+  mapped_len: Visas på karta
+  note: Not
+  official_len: Officiell längd
+  operator: Ansvariga
+  route_symbol: ''
+  subroutes_title: Delar
+  superroutes_title: Del av
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap-taggar
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Webbsida
+  wikipedia: Wikipedia
+  zoom_to: Visa på karta
+elevation:
+  ascent: Ackumulerad stigning
+  descent: Ackumulerad nedstigning
+  diagram:
+    altitude: Höjd (m)
+    distance: Distans (km)
+  title: Höjdprofil
+  total: ''
+  unavailable: Inga höjddata hittades.
+  warn_unsorted: Rutten är förmodligen oordnad eller ofullständig. Elevationsinformationen
+    kan vara felaktig.
+error:
+  load_error: Fel vid anslutning till server.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Fel
+headline:
+  last_update: Senast uppdaterat
+help: Om kartan
+locate_me: Hitta mig
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: Bakgrunden fungerar på ett liknande sätt. Den består också av en färg
+    och en form. Bakgrunden kan också endast vara ett färgnamn som resulterar i en
+    kanvas med vald färg. Detta syns i första raden.
+  foreground: Förgrundssymbolen består av en färg och en form som länkas av ett understreck.
+    Tabellen nedan visar alla kombinationer som denna webbplats känner igen. Den känner
+    även igen förgrunder som endast består av namnet på formen. Symbolerna för dessa
+    visas i den sista kolumnen.
+  preview: Förhandsgranska
+  tester: ''
+routelist:
+  close: Stäng
+  more: ''
+  rollup: Rulla upp
+  title: Rutter
+search:
+  places: ''
+  routes: Rutter
+  title: Sök
+settings:
+  base_map: Bakgrundskarta
+  browser_language: Använd webbläsarens inställningar
+  hillshading_layer: Höjdstruktur
+  language: Språk
+  route_layer: Rutter
+  title: Kartinställningar
+  transparency: Kartgenomskinlighet
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Cykelrutt
+  hiking: Vandringsled
+  mtb: Mountainbikerutt
+  riding: Ridning
+  skating: Inline skating-rutt
+  slopes: Vintersportbackarna
+

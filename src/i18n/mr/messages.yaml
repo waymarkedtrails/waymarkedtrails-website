@@ -1,0 +1,111 @@
+# Translation of Waymarked Trails Website to Marathi (मराठी)
+# Exported from translatewiki.net
+#
+# Author: Sau6402
+# Author: V.narsikar
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: ''
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: ''
+  KML: ''
+  altitude: ''
+  image: ''
+  mapped_len: नकाशात असलेली लांबी
+  note: टिप्पणी
+  official_len: अधिकृत लांबी
+  operator: यंत्रचालक
+  route_symbol: ''
+  subroutes_title: विभाग
+  superroutes_title: चा भाग
+  symbol: ''
+  tags:
+    key: ''
+    title: ओपनस्ट्रीटमॅपच्या खूणपताका
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: संकेतस्थळ
+  wikipedia: ''
+  zoom_to: ''
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: उन्नतन (मि)
+    distance: अंतर (किमी)
+  title: एलिव्हेशन प्रोफाईल
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: चूक
+headline:
+  last_update: शेवटील अद्यतन
+help: ''
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ''
+  tester: ''
+routelist:
+  close: ''
+  more: ''
+  rollup: ''
+  title: वाटा
+search:
+  places: ''
+  routes: वाटा
+  title: शोध
+settings:
+  base_map: मूळ नकाशा
+  browser_language: ''
+  hillshading_layer: डोंगराचे शेडींग
+  language: भाषा
+  route_layer: रस्त्याचा थर
+  title: ''
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: सायकलिंग
+  hiking: हायकिंग
+  mtb: एमटीबी
+  riding: ''
+  skating: ईनलाईन स्केटींग
+  slopes: ''
+
