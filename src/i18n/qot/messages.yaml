@@ -1,0 +1,92 @@
+attribution:
+  data: "Map data \xA9 [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)"
+  elevation_title: Elevation data
+destination_sign:
+  more: More details
+  no_data: No destination information available for this guidepost.
+  title: Destinations
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Altitude
+  image: Image
+  mapped_len: Mapped length
+  note: Note
+  official_len: Official length
+  operator: Operator
+  route_symbol: Route symbol
+  subroutes_title: Sections
+  superroutes_title: Part of
+  symbol: Symbol
+  tags:
+    key: key
+    title: OpenStreetMap tags
+    value: value
+  type:
+    guidepost: Guidepost
+    node: Node
+    relation: Relation
+    way: Way
+    wayset: Wayset
+  website: Website
+  wikipedia: Wikipedia
+  zoom_to: Show on map
+elevation:
+  ascent: Accumulated ascent
+  descent: Accumulated descent
+  diagram:
+    altitude: Altitude (m)
+    distance: Distance (km)
+  title: Elevation profile
+  total: Total elevation
+  unavailable: No elevation data found.
+  warn_unsorted: Route is potentially unordered or incomplete. Elevation information
+    might be inaccurate.
+error:
+  load_error: Error connecting to server.
+  missing_id: Missing parameter 'id'.
+  missing_query: Missing parameter 'query'.
+  panel_title: Error
+help: Help
+locate_me: Locate me
+network:
+  continental: Continental routes
+  downhill: Downhill
+  national: National routes
+  node: Node network connections
+  nordic: Nordic skiing
+  other: Other routes
+  regional: Regional routes
+  skitour: Ski tours
+  sled: Sledding piste
+  sleigh: Sleigh piste
+  winter_hike: Winter hiking
+routelist:
+  more: Zoom in to see more routes.
+  title: Routes
+search:
+  places: Places
+  routes: Routes
+  title: Search
+settings:
+  base_map: Base map
+  browser_language: Use browser settings
+  hillshading_layer: Hill shading
+  language: Language
+  route_layer: Route layer
+  title: Map settings
+  transparency: Map transparency
+site_description:
+  cycling: Local and long-distance cycling routes, with maps and information from
+    OpenStreetMap.
+  hiking: Local and long-distance hiking and walking routes, with maps and information
+    from OpenStreetMap.
+  riding: Local and long-distance cycling routes, with maps and information from OpenStreetMap.
+site_title:
+  cycling: Cycling
+  hiking: Hiking
+  mtb: MTB
+  riding: Horse Riding
+  skating: Inline Skating
+  slopes: Winter Sport Slopes
+

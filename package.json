@@ -12,7 +12,7 @@
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-virtual": "^2.0.3",
     "@rollup/plugin-yaml": "^3.1.0",
-    "marked": "^4.0.5",
+    "markdown-it": "^12.3.0",
     "node-static": "^0.7.11",
     "rollup": "^2.60.2",
     "rollup-plugin-css-porter": "^1.0.2",

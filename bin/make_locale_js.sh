@@ -7,11 +7,11 @@ LANGS=`find src/i18n -mindepth 1 -type d ! -name 'qot' ! -name 'qqq' -printf '%f
 
 echo 'const langs = {' > $MSG_JS
 for lang in $LANGS; do
-  if [ -f "src/i18n/$lang/messages.json" ]; then
-    echo "   '$lang': () => import ('./$lang/messages.json')," >> $MSG_JS
+  if [ -f "src/i18n/$lang/messages.yaml" ]; then
+    echo "   '$lang': () => import ('./$lang/messages.yaml')," >> $MSG_JS
   fi
 done
-echo "   'en': () => import ('./qot/messages.json') };" >> $MSG_JS
+echo "   'en': () => import ('./qot/messages.yaml') };" >> $MSG_JS
 
 echo 'export { langs as default };' >> $MSG_JS
 

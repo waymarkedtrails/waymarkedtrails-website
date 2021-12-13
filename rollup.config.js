@@ -7,7 +7,7 @@ import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-porter';
 import { terser } from 'rollup-plugin-terser';
 import virtual from '@rollup/plugin-virtual';
-import marked from 'marked';
+import marked from 'markdown-it';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -47,6 +47,30 @@ function serve() {
 	};
 }
 
+const md = marked()
+const orig = md.normalizeLink;
+md.normalizeLink = function(url) {
+  let out = orig(url);
+  if (out.indexOf('/') < 0) {
+    // must be an image
+    out = 'img/' + out;
+  }
+
+  return out;
+}
+
+function md_parse_dict(data, inline) {
+    for (const section in data) {
+        if (typeof data[section] === 'object') {
+            md_parse_dict(data[section], inline);
+        } else if (inline || section === 'title') {
+            data[section] = md.renderInline(data[section]);
+        } else {
+            data[section] = md.render(data[section]);
+        }
+    }
+}
+
 export default {
 	input: 'src/main.js',
 	output: {
@@ -84,15 +108,8 @@ export default {
 		commonjs(),
         json({namedExports: false, compact: production}),
         yaml({safe: false,
-             transform(data, filePath) {
-                 for (const section in data) {
-                    for (const key in data[section]) {
-                        if (key !== 'title') {
-                            data[section][key] = marked.parse(data[section][key]);
-                         }
-                    }
-                 }
-                 return data;
+              transform(data, filePath) {
+                return md_parse_dict(data, filePath.indexOf('helppage') < 0);
              }
         }),
 

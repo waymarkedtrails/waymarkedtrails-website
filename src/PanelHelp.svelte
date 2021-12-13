@@ -122,7 +122,7 @@
 {#if content}
     <nav class="nav flex-column">
         {#each HELP as part}
-            <a class="nav-link level-{part.l}" href="#help-{part.section}">{content[part.section].title}</a>
+            <a class="nav-link level-{part.l}" href="#help-{part.section}">{@html content[part.section].title}</a>
         {/each}
     </nav>
     <div class="content-frame"><div class="content">

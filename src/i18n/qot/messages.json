@@ -13,7 +13,7 @@
         "riding" : "Local and long-distance cycling routes, with maps and information from OpenStreetMap."
     },
     "attribution" : {
-        "data" : "Map data © <a href=\"https://www.openstreetmap.org\">OpenStreetMap</a> under <a href=\"https://www.openstreetmap.org/copyright\">ODbL</a>",
+        "data" : "Map data © [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)",
         "elevation_title" : "Elevation data"
     },
     "settings" : {
