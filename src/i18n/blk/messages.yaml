@@ -1,0 +1,111 @@
+# Translation of Waymarked Trails Website to Pa'O (ပအိုဝ်ႏဘာႏသာႏ)
+# Exported from translatewiki.net
+#
+# Author: Khun Kt
+# Author: 咽頭べさ
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: ''
+  elevation_title: ''
+destination_sign:
+  more: ''
+  no_data: ''
+  title: ''
+details:
+  GPX: GPX
+  KML: KML
+  altitude: ထိုထဲင်းပင်ႏလယ်ႏထီခိုႏဆꩻကီ
+  image: ရုက်ပုင်ႏ
+  mapped_len: ''
+  note: ရောမ်မုဲင်
+  official_len: ''
+  operator: ''
+  route_symbol: ''
+  subroutes_title: အကွို့ꩻဖိုင်ႏ
+  superroutes_title: ''
+  symbol: ''
+  tags:
+    key: ''
+    title: ''
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: ဝဲက်သုဲက်
+  wikipedia: ''
+  zoom_to: အွောန်ႏနယ် ဟံႏပုင်ႏကို
+elevation:
+  ascent: ''
+  descent: ''
+  diagram:
+    altitude: ထိုထဲင်းပင်ႏလယ်ႏထီခိုႏဆꩻကီ (မီတာ)
+    distance: အဗွော့ꩻအညာꩻ (ကီလိုမီတာ)
+  title: ''
+  total: ''
+  unavailable: ''
+  warn_unsorted: ''
+error:
+  load_error: ''
+  missing_id: ''
+  missing_query: ''
+  panel_title: အမာႏ
+headline:
+  last_update: အဆုဲင်ꩻသွတ်ꩻ မွဉ်းဖျင်မုꩻ
+help: ဟံႏပုင်ႏခရာႏ
+locate_me: ''
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: ''
+  foreground: ''
+  preview: ထွားကျိုႏစံꩻ
+  tester: ''
+routelist:
+  close: ပေ့ꩻထိုꩻ
+  more: ''
+  rollup: ''
+  title: ''
+search:
+  places: ''
+  routes: ''
+  title: ထိုမ်ႏ
+settings:
+  base_map: အခေႏခံႏဟံႏပုင်ႏ
+  browser_language: ''
+  hillshading_layer: ''
+  language: ဘာႏသာႏငဝ်းငွါ
+  route_layer: ''
+  title: ဟံႏပုင်ႏ အပွိုင်အဆင်ဖိုင်ႏ
+  transparency: ''
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: ''
+  hiking: ''
+  mtb: MTB
+  riding: ''
+  skating: ''
+  slopes: ''
+

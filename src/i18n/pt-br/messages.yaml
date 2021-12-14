@@ -9,6 +9,7 @@
 # Author: Gusta
 # Author: Luckas
 # Author: Rodrigo codignoli
+# Author: SaldırganSincap
 # Author: TheGabrielZaum
 # Author: Tuliouel
 # --
@@ -47,7 +48,7 @@ details:
     relation: ''
     way: ''
     wayset: ''
-  website: Website
+  website: Site
   wikipedia: Wikipédia
   zoom_to: Mostrar no mapa
 elevation:

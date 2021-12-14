@@ -12,14 +12,14 @@ attribution:
   data: Dữ liệu bản đồ © [OpenStreetMap](https://www.openstreetmap.org) theo [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: dữ liệu cao độ do [SRTM/ASTER](help/acknowledgements) cung cấp
 destination_sign:
-  more: ''
+  more: Thêm chi tiết
   no_data: ''
-  title: ''
+  title: Điểm đến
 details:
   GPX: GPX
-  KML: ''
-  altitude: ''
-  image: ''
+  KML: KML
+  altitude: Cao độ
+  image: Hình ảnh
   mapped_len: Chiều dài trên bản đồ
   note: Ghi chú
   official_len: Chiều dài chính thức
@@ -40,7 +40,7 @@ details:
     wayset: ''
   website: Trang Web
   wikipedia: Wikipedia
-  zoom_to: ''
+  zoom_to: Xem trên bản đồ
 elevation:
   ascent: Chiều cao leo lên tổng cộng
   descent: Chiều cao đi xuống tổng cộng
@@ -76,7 +76,7 @@ network:
 osmc_symbol:
   background: ''
   foreground: ''
-  preview: ''
+  preview: Xem trước
   tester: ''
 routelist:
   close: Đóng

@@ -7,6 +7,7 @@
 # Author: Pyscowicz
 # Author: Silvonen
 # Author: Snidata
+# Author: Veikk0.ma
 # --
 # This file is part of the Waymarked Trails Map Project
 # Copyright (C) 2011-2016
@@ -22,7 +23,7 @@ destination_sign:
 details:
   GPX: GPX
   KML: ''
-  altitude: ''
+  altitude: Korkeus
   image: Kuva
   mapped_len: Kartoitettu pituus
   note: Lisätietoja

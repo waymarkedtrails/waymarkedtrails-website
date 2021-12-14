@@ -12,7 +12,7 @@ attribution:
   data: Dati mappa © [OpenStreetMap](https://www.openstreetmap.org) cu licenza [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: dati di cota di [SRTM/ASTER](help/acknowledgements)
 destination_sign:
-  more: ''
+  more: Cchiossai dittagghî
   no_data: ''
   title: ''
 details:
@@ -23,7 +23,7 @@ details:
   mapped_len: Taliatu ntâ mappa
   note: Nota
   official_len: Lunghizza officiali
-  operator: Opiraturi
+  operator: Upiraturi
   route_symbol: ''
   subroutes_title: Sizzioni
   superroutes_title: Parti di
@@ -40,7 +40,7 @@ details:
     wayset: ''
   website: Situ web
   wikipedia: ''
-  zoom_to: ''
+  zoom_to: Ammustra ntâ mappa
 elevation:
   ascent: Acchianata accumulata
   descent: Scisa accumulata
@@ -58,7 +58,7 @@ error:
   panel_title: Erruri
 headline:
   last_update: Ùrtimu aggiurnamentu
-help: ''
+help: Nfurmazzioni supra la mappa
 locate_me: ''
 network:
   continental: ''
@@ -75,7 +75,7 @@ network:
 osmc_symbol:
   background: ''
   foreground: ''
-  preview: ''
+  preview: Antiprima
   tester: ''
 routelist:
   close: Chiudi
@@ -92,7 +92,7 @@ settings:
   hillshading_layer: Hill shading
   language: Lingua
   route_layer: Route layer
-  title: ''
+  title: Mpustazzioni mappa
   transparency: Trasparenza mappa
 site_description:
   cycling: ''

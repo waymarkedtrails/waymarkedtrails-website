@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 #
 # Author: Cybjit
+# Author: Danieldegroot2
 # Author: Fader
 # Author: Jopparn
 # Author: LeiLar
@@ -53,7 +54,7 @@ elevation:
   descent: Ackumulerad nedstigning
   diagram:
     altitude: Höjd (m)
-    distance: Distans (km)
+    distance: Avstånd (km)
   title: Höjdprofil
   total: ''
   unavailable: Inga höjddata hittades.

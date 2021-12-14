@@ -1,0 +1,117 @@
+# Translation of Waymarked Trails Website to Western Frisian (Frysk)
+# Exported from translatewiki.net
+#
+# Author: PiefPafPier
+# Author: Robin van der Vliet
+# --
+# This file is part of the Waymarked Trails Map Project
+# Copyright (C) 2011-2016
+# This file is distributed under the same license as the main package.
+#
+attribution:
+  data: Kaartdata © [OpenStreetMap](https://www.openstreetmap.org) ûnder [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: elevaasjedata troch [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Mear gegevens
+  no_data: ''
+  title: Bestimmingen
+details:
+  GPX: GPX
+  KML: KML
+  altitude: Hichte
+  image: Ofbyld
+  mapped_len: Ofstân op 'e kaart
+  note: Tink derom
+  official_len: Offisjele ôfstân
+  operator: Behearder
+  route_symbol: ''
+  subroutes_title: Parten
+  superroutes_title: Part fan
+  symbol: ''
+  tags:
+    key: ''
+    title: OpenStreetMap-lebels
+    value: ''
+  type:
+    guidepost: ''
+    node: ''
+    relation: ''
+    way: ''
+    wayset: ''
+  website: Webstee
+  wikipedia: Wikipedy
+  zoom_to: Op 'e kaart oanjaan
+elevation:
+  ascent: Klimmen byinoar
+  descent: Dalen byinoar
+  diagram:
+    altitude: Hichte (m)
+    distance: Ofstân (km)
+  title: Elevaasjeprofyl
+  total: ''
+  unavailable: Gjin elevaasjedata fûn.
+  warn_unsorted: De rûte is mooglik net oardere of folslein. De elevaasjegegevens
+    kinne ûnkrekt wêze.
+error:
+  load_error: Ferbiningsflater mei de tsjinner.
+  missing_id: ''
+  missing_query: ''
+  panel_title: Flater
+headline:
+  last_update: Lêst bywurke
+help: Oer de kaart
+locate_me: Fyn my
+network:
+  continental: ''
+  downhill: ''
+  national: ''
+  node: ''
+  nordic: ''
+  other: ''
+  regional: ''
+  skitour: ''
+  sled: ''
+  sleigh: ''
+  winter_hike: ''
+osmc_symbol:
+  background: De eftergrûn wurket op deselde wize. Dy bestiet ek út in kleur en in
+    foarm. De eftergrûn kin ek inkeld in kleurnamme wêze, wat in ûndergrûn fan 'e
+    keazen kleur opsmyt. Dat wurdt yn 'e boppeste rige werjûn.
+  foreground: It symboal op 'e foargrûn bestiet út in kleur en in foarm, keppele troch
+    in ûnderstreekje. De tabel hjirûnder lit alle kombinaasjes sjen dy't dit webstee
+    werkent. Hy werkent ek foargrûnen dy't inkeld de namme fan 'e foarm befetsje.
+    De symboalen dêrfoar steane yn 'e lêste kolom.
+  preview: Proefbyld
+  tester: ''
+routelist:
+  close: Slute
+  more: ''
+  rollup: Oprôlje
+  title: Rûtes
+search:
+  places: ''
+  routes: Rûtes
+  title: Sykje
+settings:
+  base_map: Basiskaart
+  browser_language: Webblêderynstellings brûke
+  hillshading_layer: Heuvelskaad
+  language: Taal
+  route_layer: Rûtelaach
+  title: Kaartynstellings
+  transparency: Kaarttrochsichtigens
+site_description:
+  cycling: ''
+  hiking: ''
+  mtb: ''
+  riding: ''
+  skating: ''
+  slopes: ''
+site_title:
+  cycling: Fytse
+  hiking: Kuierje
+  mtb: Terreinfytse
+  riding: Hynsteride
+  skating: Skeelerje
+  slopes: Wintersportpystes
+
