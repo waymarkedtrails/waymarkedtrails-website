@@ -1,9 +1,6 @@
 import { register, init, getLocaleFromNavigator, locale } from 'svelte-i18n';
 import msg_languages from './i18n/messages.js';
-
-export const languages = [['en', 'English'],
-                          ['de', 'Deutsch']
-                         ];
+import languages from './i18n/languages.js';
 
 export const aliases = {
     'no' : 'nb',

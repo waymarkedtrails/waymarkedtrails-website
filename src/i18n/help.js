@@ -44,6 +44,7 @@ const langs = {
    'es': () => import ('./es/helppages.yaml'),
    'az': () => import ('./az/helppages.yaml'),
    'pl': () => import ('./pl/helppages.yaml'),
+   'fy': () => import ('./fy/helppages.yaml'),
    'zh-hant': () => import ('./zh-hant/helppages.yaml'),
    'ca': () => import ('./ca/helppages.yaml'),
    'zh-hans': () => import ('./zh-hans/helppages.yaml'),

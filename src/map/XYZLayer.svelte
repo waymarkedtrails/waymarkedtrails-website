@@ -1,5 +1,5 @@
 <script>
-    import { _ } from 'svelte-i18n';
+    import { _, locale } from 'svelte-i18n';
     import { getContext } from 'svelte';
     import TileLayer from 'ol/layer/Tile';
     import XYZ from 'ol/source/XYZ';
@@ -10,15 +10,18 @@
     export let url;
     export let attribution = '';
     export let opacity;
-    export let title = '';
     let visible;
     $: visible = opacity > 0.0;
 
     let make_attribs = function() {
-        return [$_('attribution.data'),
-                (title && attribution) ? title + ': ' + attribution : ''];
+        let secondary = '';
+        if (attribution === 'elevation') {
+            secondary = $_('attribution.elevation_title');
+        } else if (attribution) {
+            secondary = $_('settings.base_map') + ': ' + attribution;
+        }
+        return [$_('attribution.data'), secondary];
     };
-
 
     const layer = new TileLayer({
                       source: new XYZ({url: url, attributions: make_attribs()}),
@@ -27,6 +30,10 @@
                       maxZoom: 18
                   });
     map.addLayer(layer);
+
+    locale.subscribe(() => {
+       layer.setSource(new XYZ({url: url, attributions: make_attribs()})); 
+    });
 
     $: layer.setSource(new XYZ({url: url, attributions: make_attribs()}));
     $: layer.setOpacity(opacity);

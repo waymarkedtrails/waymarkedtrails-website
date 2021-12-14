@@ -68,8 +68,8 @@
     </Headline>
 
     <Map>
-      <MapXYZLayer {...BASEMAPS[$basemap_id]} title={$_('settings.base_map')} opacity={$map_opacity_base}/>
-      <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={$map_opacity_shade} title={$_('attribution.elevation_title')} attribution='<a href= "/help/acknowledgements">SRTM/ASTER</a>' />
+      <MapXYZLayer {...BASEMAPS[$basemap_id]} opacity={$map_opacity_base}/>
+      <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={$map_opacity_shade} attribution='elevation' />
       <MapXYZLayer name="routelayer" url={TILE_URL} opacity={$map_opacity_route}/>
       <MapGeolocateLayer />
       <MapLayerRouteDetails />

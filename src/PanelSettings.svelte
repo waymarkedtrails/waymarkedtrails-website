@@ -2,7 +2,8 @@
     import { onMount } from 'svelte';
     import { _ } from 'svelte-i18n';
     import { BASEMAPS } from './config.js';
-    import { languages, set_stored_locale, get_stored_locale } from './i18n.js';
+    import languages from './i18n/languages.js';
+    import { set_stored_locale, get_stored_locale } from './i18n.js';
     import { basemap_id, map_opacity_base, map_opacity_route, map_opacity_shade } from './app_state.js';
     import SidePanel from './ui/SidePanel.svelte';
     import OpacitySlider from './ui/OpacitySlider.svelte';
