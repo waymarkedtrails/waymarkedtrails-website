@@ -83,10 +83,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: 返回
   background: 背景以类似方式工作。它也由颜色和形状构成。背景也可以只是一个颜色名（这会产生一个选定颜色的画布）。这显示在第一行。
+  background_heading: 背景
+  examples: 示例
   foreground: 前景符号由一个颜色和一个由下划线连接的形状组成。下表显示了本网站所认可的所有组合。它还可以识别仅包含形状名称的前景。这些符号显示在最后一列。
-  preview: 预览
-  tester: ''
+  foreground_heading: 前景
+  preview: ''
+  preview_heading: 预览
 routelist:
   close: 关闭
   more: ''
@@ -115,6 +119,7 @@ site_title:
   cycling: 骑脚踏车
   hiking: 徒步旅行
   mtb: MTB
+  osmc_symbol: ''
   riding: 骑马
   skating: 轮滑
   slopes: 冬季斜坡运动

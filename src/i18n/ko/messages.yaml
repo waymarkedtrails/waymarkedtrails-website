@@ -78,10 +78,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: 뒤로
   background: ''
+  background_heading: 배경
+  examples: 예시
   foreground: ''
-  preview: 미리 보기
-  tester: ''
+  foreground_heading: 전경
+  preview: ''
+  preview_heading: 미리 보기
 routelist:
   close: 닫기
   more: ''
@@ -110,6 +114,7 @@ site_title:
   cycling: 자전거 타기
   hiking: 하이킹
   mtb: 산악 자전거
+  osmc_symbol: ''
   riding: 승마
   skating: 인라인 스케이팅
   slopes: 동계 종목 슬로프

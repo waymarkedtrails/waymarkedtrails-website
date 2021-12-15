@@ -73,10 +73,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Հետ
   background: ''
+  background_heading: ''
+  examples: Օրինակներ
   foreground: ''
-  preview: Նախադիտում
-  tester: ''
+  foreground_heading: Հիմնական գույնը
+  preview: ''
+  preview_heading: Նախադիտում
 routelist:
   close: Փակել
   more: ''
@@ -105,6 +109,7 @@ site_title:
   cycling: Հեծանվավազք
   hiking: Ոտքով զբոսնելն
   mtb: Լեռնային հեծանվավազք
+  osmc_symbol: ''
   riding: Ձիասպորտ
   skating: ''
   slopes: Լանջերը ձմեռային սպորտաձևերի համար

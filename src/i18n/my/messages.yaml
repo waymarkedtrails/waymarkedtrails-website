@@ -72,10 +72,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: နောက်သို့
   background: ''
+  background_heading: နောက်ခံ
+  examples: ဥပမာများ
   foreground: ''
-  preview: ကြိုတင်အစမ်းကြည့်ရှုရန်
-  tester: ''
+  foreground_heading: ရှေ့ခံ
+  preview: ''
+  preview_heading: ကြိုတင်အစမ်းကြည့်ရှုရန်
 routelist:
   close: ပိတ်ရန်
   more: ''
@@ -104,6 +108,7 @@ site_title:
   cycling: ''
   hiking: ''
   mtb: ''
+  osmc_symbol: ''
   riding: ''
   skating: ''
   slopes: ''

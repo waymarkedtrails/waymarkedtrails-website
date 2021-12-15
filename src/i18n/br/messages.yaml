@@ -77,15 +77,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Distro
   background: Labourat a ra an drekleur evel-se ivez. Bez' ez eus anezhi ul liv hag
     ur stumm ivez. Gallout a ra an drekleur bezañ hepken anv ul liv, ar pezh a ya
     d'ober an dibab arlivioù eus al liv dibabet. Diskouezet eo el linenn gentañ.
+  background_heading: Drekleur
+  examples: Skouerioù
   foreground: Mont a ra ul liv hag ur stumm islinennet d'ober arouezennoù ar rakleur.
     Diskouez a ra an daolenn a-is an holl genaozadoù anavezet gant al lec'hienn. Anavezout
     a ra ivez ar rakleurioù a ya anv ar stumm d'o ober hepken. Er bann diwezhañ emañ
     diskouezet an arouezennoù evit ar re-mañ.
-  preview: Rakwelet
-  tester: ''
+  foreground_heading: Talbenn
+  preview: ''
+  preview_heading: Rakwelet
 routelist:
   close: Serriñ
   more: ''
@@ -114,6 +118,7 @@ site_title:
   cycling: Marc'h-houarn
   hiking: Bale
   mtb: MTB
+  osmc_symbol: ''
   riding: Marc'hegerezh
   skating: Botoù-ruilh
   slopes: Roudennoù evit ar sportoù goañv

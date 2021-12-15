@@ -72,10 +72,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: ''
   background: ''
+  background_heading: Taust
+  examples: ''
   foreground: ''
+  foreground_heading: Esiplaan
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: ''
   more: ''
@@ -104,6 +108,7 @@ site_title:
   cycling: Rattasõit
   hiking: Matkamine
   mtb: Mägirattasport
+  osmc_symbol: ''
   riding: kelgutamine
   skating: Rulluisutamine
   slopes: Talispordi nõlvad

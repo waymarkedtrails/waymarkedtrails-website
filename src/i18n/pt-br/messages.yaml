@@ -84,15 +84,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Voltar
   background: O fundo funciona de maneira parecida. Também contém uma cor e uma forma.
     O fundo também pode ser só um nome de cor que resulta num quadro da cor escolhida.
     Isto é mostrado na primeira fila.
+  background_heading: Plano de fundo
+  examples: Exemplos
   foreground: O símbolo do primeiro plano é formado por uma cor e uma forma ligadas
     por uma linha baixa. A tabela abaixo mostra todas as combinações reconhecidas
     por este sítio. Também reconhece os primeiros planos que são formados apenas pelo
     nome da forma. Os símbolos para estes são mostrados na última coluna.
-  preview: Pré-visualizar
-  tester: ''
+  foreground_heading: Primeiro plano
+  preview: ''
+  preview_heading: Pré-visualizar
 routelist:
   close: Fechar
   more: ''
@@ -121,6 +125,7 @@ site_title:
   cycling: Ciclismo
   hiking: Excursionismo
   mtb: BTT
+  osmc_symbol: ''
   riding: Corridas de cavalos
   skating: Patinação em linha
   slopes: Pistas para esportes de inverno

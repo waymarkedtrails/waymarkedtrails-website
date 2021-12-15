@@ -76,10 +76,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: دالی
   background: ''
+  background_heading: آرخا پلان
+  examples: ''
   foreground: ''
+  foreground_heading: اؤن پلان
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: باغلا
   more: ''
@@ -108,6 +112,7 @@ site_title:
   cycling: چرخ سورمک
   hiking: یئرده گئتمک
   mtb: MTB
+  osmc_symbol: ''
   riding: ''
   skating: تکرلی کونکی
   slopes: ''

@@ -72,10 +72,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: ''
   background: ''
+  background_heading: Latar belakang
+  examples: ''
   foreground: ''
+  foreground_heading: Latar hadapan
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: ''
   more: ''
@@ -104,6 +108,7 @@ site_title:
   cycling: Basikal
   hiking: Kembara
   mtb: MTB
+  osmc_symbol: ''
   riding: Tunggang Kuda
   skating: Kasut Roda
   slopes: Cerun Sukan Musim Sejuk

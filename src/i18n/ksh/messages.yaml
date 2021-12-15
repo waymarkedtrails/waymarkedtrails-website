@@ -74,10 +74,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Retuhr
   background: ''
+  background_heading: Hengerjrond
+  examples: ''
   foreground: ''
+  foreground_heading: Vüürjrond
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: Zohmaache
   more: ''
@@ -106,6 +110,7 @@ site_title:
   cycling: Radfahre
   hiking: Wandere
   mtb: Mauntenbaike
+  osmc_symbol: ''
   riding: Pähdsrigge
   skating: Enlainerfahre
   slopes: Pißte för der Winnterschpocht

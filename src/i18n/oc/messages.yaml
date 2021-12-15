@@ -74,10 +74,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Retorn
   background: ''
+  background_heading: Rèireplan
+  examples: ''
   foreground: ''
+  foreground_heading: Primièr plan
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: Tampar
   more: ''
@@ -106,6 +110,7 @@ site_title:
   cycling: A bicicleta
   hiking: A pè
   mtb: A VTT
+  osmc_symbol: ''
   riding: Equitacion
   skating: En rollers
   slopes: Pistas d'espòrt d’ivèrn

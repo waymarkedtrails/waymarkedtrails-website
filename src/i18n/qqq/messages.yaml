@@ -79,17 +79,21 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: '{{Identical|Back}}'
   background: The leading whitespaces the segmentation in lines can be safely ignored
     as this is plain HTML and not wiki text. Feel free to reorder elements as this
     will generate a single paragraph of text embedded in <code>&lt;p&gt;...&lt;/p&gt;</code>.\n\nThe
     HTML template on which this is used is at:\n\nhttps://github.com/waymarkedtrails/waymarked-trails-site/blob/master/frontend/templates/osmc_symbol.html#L32
+  background_heading: '{{Identical|Background}}'
+  examples: '{{Identical|Example}}'
   foreground: 'Ignore the leading whitespace and the division into arbitrary lines:
     this is not wikicode to be presented indented as is, but only plain HTML, that
     will be part of the same paragraph (between <code>&lt;p&gt;...&lt;/p&gt;</code>
     HTML tags).\nFeel free to sub-segment and reorder the sentence correctly for the
     target language.\n\nThe HTML template where it is used is actually located at:\n\nhttps://github.com/waymarkedtrails/waymarked-trails-site/blob/master/frontend/templates/osmc_symbol.html'
+  foreground_heading: ''
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: '{{Identical|Close}}'
   more: ''
@@ -118,6 +122,7 @@ site_title:
   cycling: ''
   hiking: ''
   mtb: ''
+  osmc_symbol: ''
   riding: ''
   skating: ''
   slopes: ''

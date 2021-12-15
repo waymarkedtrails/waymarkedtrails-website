@@ -82,15 +82,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Terug
   background: Het achtergrondsymbool werkt vergelijkbaar. Dit bestaat ook uit een
     kleur en een vorm. De achtergrond kan ook alleen een kleurnaam zijn, met een effen
     kleurvlak als resultaat. Dit wordt in de eerste regel van onderstaande tabel getoond.
+  background_heading: Achtergrond
+  examples: Voorbeelden
   foreground: Het voorgrondsymbool bestaat uit een kleur en een vorm, met een underscore
     ertussen. Onderstaande tabel toont alle combinaties die deze site herkent. Ook
     voorgrondsymbolen die alleen een vormnaam hebben worden herkend. De laatste kolom
     toont die symbolen.
-  preview: Voorbeeld
-  tester: ''
+  foreground_heading: Voorgrond
+  preview: ''
+  preview_heading: Voorbeeld
 routelist:
   close: Sluiten
   more: ''
@@ -119,6 +123,7 @@ site_title:
   cycling: Fietsen
   hiking: Wandelen
   mtb: Mountainbiken
+  osmc_symbol: ''
   riding: Paardrijden
   skating: Inline skaten
   slopes: Wintersportpistes

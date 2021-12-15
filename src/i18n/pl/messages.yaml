@@ -80,15 +80,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Wstecz
   background: Tło działa na podobnej zasadzie - także składa się z koloru i kształtu.
     Tłem także może być tylko nazwa koloru, co da tło z wybranym kolorem. Jest to
     pokazane w pierwszym rzędzie.
+  background_heading: Tło
+  examples: Przykłady
   foreground: Symbol pierwszego planu składa się z koloru i kształtu oddzielonego
     znakiem podkreślenia. Następująca tablica wyświetla wszystkie kombinacje rozpoznawane
     przez tą stronę. Obsługiwane są także symbole składające się tylko z nazwy kształtu
     - ich symbole są wyświetlone w ostatniej kolumnie.
+  foreground_heading: Pierwszy plan
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: Zamknij
   more: ''
@@ -117,6 +121,7 @@ site_title:
   cycling: Kolarstwo
   hiking: Turystyka piesza
   mtb: Kolarstwo górskie
+  osmc_symbol: ''
   riding: Jazda konna
   skating: Jazda na rolkach
   slopes: Stoki do uprawiania sportów zimowych

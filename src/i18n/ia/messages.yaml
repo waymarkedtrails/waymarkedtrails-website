@@ -73,15 +73,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Retornar
   background: Le fundo functiona de maniera similar. Illo etiam consiste de un color
     e un forma. Le fundo pote etiam esser solmente un nomine de color, lo que produce
     un quadro del color seligite. Isto se monstra in le prime linea.
+  background_heading: Fundo
+  examples: Exemplos
   foreground: Le symbolo de prime plano se compone de un color e un forma, ligate
     per un tracto de sublineamento. Le tabella infra monstra tote le combinationes
     que iste sito recognosce. Le sito recognosce etiam prime planos que consiste solmente
     del nomine del forma. Le symbolos pro illos appare in le ultime columna.
-  preview: Previsualisar
-  tester: ''
+  foreground_heading: Prime plano
+  preview: ''
+  preview_heading: Previsualisar
 routelist:
   close: Clauder
   more: ''
@@ -110,6 +114,7 @@ site_title:
   cycling: Cyclismo
   hiking: Tourismo pedestre
   mtb: Bicycletta de montania
+  osmc_symbol: ''
   riding: Equitation
   skating: Patinage in linea
   slopes: Pistas de sport de hiberno

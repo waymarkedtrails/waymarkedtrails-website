@@ -80,15 +80,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Enrere
   background: El fons funciona d’una manera similar. També consisteix en un color
     i una forma. El fons també pot ser només un nom de color que tingui com a resultat
     un llenç del color escollit. Això es mostra a la primera fila.
+  background_heading: Fons
+  examples: Exemples
   foreground: El símbol del primer pla consisteix en un color i una forma units per
     un guió baix. La taula següent mostra totes les combinacions reconegudes per aquest
     lloc. També reconeix els primers plans que només consisteixen en el nom de la
     forma. Els símbols d’aquests es mostren a l’última columna.
-  preview: Vista prèvia
-  tester: ''
+  foreground_heading: Primer pla
+  preview: ''
+  preview_heading: Vista prèvia
 routelist:
   close: Tancar
   more: ''
@@ -117,6 +121,7 @@ site_title:
   cycling: Ciclisme
   hiking: Excursionisme
   mtb: BTT
+  osmc_symbol: ''
   riding: Hípica
   skating: Patí en línia
   slopes: Pistes per Esports d'Hivern

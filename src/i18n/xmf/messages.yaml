@@ -72,10 +72,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: უკახალე
   background: ''
+  background_heading: ფონი
+  examples: სამანგეფი
   foreground: ''
-  preview: გიწოთოლორაფა
-  tester: ''
+  foreground_heading: თარი ფერი
+  preview: ''
+  preview_heading: გიწოთოლორაფა
 routelist:
   close: კილუა
   more: ''
@@ -104,6 +108,7 @@ site_title:
   cycling: ველოსპორტი
   hiking: ''
   mtb: ''
+  osmc_symbol: ''
   riding: ცხენენჯუა
   skating: ''
   slopes: ''

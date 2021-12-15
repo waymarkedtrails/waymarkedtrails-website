@@ -73,10 +73,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: ߌ ߞߐߛߊ߬ߦߌ߬
   background: ''
+  background_heading: ߝߊ߲߬ߝߘߊ ߞߘߐߟߊ
+  examples: ߟߊߒߡߊ߫ ߘߐ߫
   foreground: ''
-  preview: ߊ߬ ߘߐߜߍ߫ ߡߎߣߎ߲߬
-  tester: ''
+  foreground_heading: ߝߊ߲߬ߝߘߊ߬ ߝߟߐ
+  preview: ''
+  preview_heading: ߊ߬ ߘߐߜߍ߫ ߡߎߣߎ߲߬
 routelist:
   close: ߊ߬ ߘߊߕߎ߲߯
   more: ''
@@ -105,6 +109,7 @@ site_title:
   cycling: ߣߍ߰ߛߏ߬ߞߊ߲߬ߦߊ
   hiking: ߡߊ߬ߕߊ߰ߡߊ߬ߟߌ
   mtb: MTB
+  osmc_symbol: ''
   riding: ߛߏ߬ ߓߏߙߌ
   skating: ''
   slopes: ''

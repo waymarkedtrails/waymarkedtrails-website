@@ -77,10 +77,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Nazaj
   background: ''
+  background_heading: Ozadje
+  examples: Primeri
   foreground: ''
-  preview: Predogled
-  tester: ''
+  foreground_heading: Ospredje
+  preview: ''
+  preview_heading: Predogled
 routelist:
   close: Zapri
   more: ''
@@ -109,6 +113,7 @@ site_title:
   cycling: Kolesarjenje
   hiking: Planinarjenje
   mtb: Gorsko kolesarjenje
+  osmc_symbol: ''
   riding: Jahanje konjev
   skating: Rolanje
   slopes: ''

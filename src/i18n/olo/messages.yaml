@@ -73,10 +73,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Järilleh
   background: ''
+  background_heading: ''
+  examples: ''
   foreground: ''
+  foreground_heading: ''
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: Salbua
   more: ''
@@ -105,6 +109,7 @@ site_title:
   cycling: ''
   hiking: ''
   mtb: ''
+  osmc_symbol: ''
   riding: Račastus
   skating: ''
   slopes: ''

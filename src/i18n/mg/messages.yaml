@@ -72,10 +72,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Hiverina
   background: ''
+  background_heading: ''
+  examples: ''
   foreground: ''
+  foreground_heading: ''
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: Hidiana
   more: ''
@@ -104,6 +108,7 @@ site_title:
   cycling: Bisikileta
   hiking: Tongotra
   mtb: Mandeha VTT
+  osmc_symbol: ''
   riding: Soavaly
   skating: ''
   slopes: ''

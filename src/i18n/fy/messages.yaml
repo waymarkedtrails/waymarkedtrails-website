@@ -74,15 +74,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Werom
   background: De eftergrûn wurket op deselde wize. Dy bestiet ek út in kleur en in
     foarm. De eftergrûn kin ek inkeld in kleurnamme wêze, wat in ûndergrûn fan 'e
     keazen kleur opsmyt. Dat wurdt yn 'e boppeste rige werjûn.
+  background_heading: Eftergrûn
+  examples: Foarbylden
   foreground: It symboal op 'e foargrûn bestiet út in kleur en in foarm, keppele troch
     in ûnderstreekje. De tabel hjirûnder lit alle kombinaasjes sjen dy't dit webstee
     werkent. Hy werkent ek foargrûnen dy't inkeld de namme fan 'e foarm befetsje.
     De symboalen dêrfoar steane yn 'e lêste kolom.
-  preview: Proefbyld
-  tester: ''
+  foreground_heading: Foargrûn
+  preview: ''
+  preview_heading: Proefbyld
 routelist:
   close: Slute
   more: ''
@@ -111,6 +115,7 @@ site_title:
   cycling: Fytse
   hiking: Kuierje
   mtb: Terreinfytse
+  osmc_symbol: ''
   riding: Hynsteride
   skating: Skeelerje
   slopes: Wintersportpystes

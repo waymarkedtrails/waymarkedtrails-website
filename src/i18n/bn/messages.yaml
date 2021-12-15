@@ -76,10 +76,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: পিছনে
   background: ''
+  background_heading: ''
+  examples: উদাহরণ
   foreground: ''
-  preview: প্রাকদর্শন
-  tester: ''
+  foreground_heading: ''
+  preview: ''
+  preview_heading: প্রাকদর্শন
 routelist:
   close: ''
   more: ''
@@ -108,6 +112,7 @@ site_title:
   cycling: সাইকেল করার পথ
   hiking: পায়ে চলা পথ
   mtb: পাহাড়ী পথ (MTB)
+  osmc_symbol: ''
   riding: অশ্বারোহন
   skating: ''
   slopes: ''

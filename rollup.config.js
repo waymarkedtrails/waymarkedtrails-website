@@ -72,7 +72,7 @@ function md_parse_dict(data, inline) {
 }
 
 export default {
-	input: 'src/main.js',
+	input: ['src/main.js', 'src/osmc_symbols.js'],
 	output: {
 		sourcemap: true,
 		format: 'es',

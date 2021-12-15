@@ -5,7 +5,8 @@
         "mtb" : "MTB",
         "riding" : "Horse Riding",
         "skating" : "Inline Skating",
-        "slopes" : "Winter Sport Slopes"
+        "slopes" : "Winter Sport Slopes",
+        "osmc_symbol" : "The osmc:symbol tag"
     },
     "site_description" : {
         "hiking" : "Local and long-distance hiking and walking routes, with maps and information from OpenStreetMap.",
@@ -67,10 +68,14 @@
         }
     },
     "osmc_symbol" : {
+        "foreground_heading" : "Foreground",
         "foreground" : "The foreground symbol consists of a color and a shape linked by an underscore. The table below shows all combinations recognised by this site. It also recognises foregrounds that consist only of the name of the shape. The symbols for those are shown in the last column.",
+        "background_heading" : "Background",
         "background" : "The background works in a similar way. It also consists of a color and a shape. The background may also be only a color name which results in a canvas of the choosen color.This is shown in the first row.",
-        "preview" : "Preview",
-        "tester" : "Type an osmc:symbol value into the input field below\n     to see how it will be rendered on the map."
+        "examples" : "Examples",
+        "preview_heading" : "Preview",
+        "preview" : "Type an osmc:symbol value into the input field below\n     to see how it will be rendered on the map.",
+        "back" : "Back"
     },
     "elevation" : {
         "unavailable" : "No elevation data found.",

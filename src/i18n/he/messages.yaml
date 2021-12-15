@@ -75,10 +75,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: חזרה
   background: ''
+  background_heading: רקע
+  examples: דוגמאות
   foreground: ''
-  preview: תצוגה מקדימה
-  tester: ''
+  foreground_heading: חזית
+  preview: ''
+  preview_heading: תצוגה מקדימה
 routelist:
   close: סגירה
   more: ''
@@ -107,6 +111,7 @@ site_title:
   cycling: אופניים
   hiking: הליכה
   mtb: אופני הרים
+  osmc_symbol: ''
   riding: רכיבה על סוסים
   skating: גלגיליות
   slopes: מדרוני ספורט חורפי

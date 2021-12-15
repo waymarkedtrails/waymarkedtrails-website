@@ -77,14 +77,18 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Reveni
   background: La fono funkcias simile. Ĝi ankaŭ konsistas el koloro kaj formo. La
     fono povas esti nur nomo de koloro, tio iĝas kanvaso en elektita koloro. Tio ĉi
     estas montrata en la unua vico.
+  background_heading: Fono
+  examples: Ekzemploj
   foreground: La simbolo de malfono konsistas el koloro kaj fono kunigitaj per substreko.
     Ankaŭ estas rekonataj malfonoj konsistantaj nur el nomo kaj formo. Simboloj por
     ili estas montrataj en la lasta kolumno.
-  preview: Antaŭvido
-  tester: ''
+  foreground_heading: Malfono
+  preview: ''
+  preview_heading: Antaŭvido
 routelist:
   close: Fermi
   more: ''
@@ -113,6 +117,7 @@ site_title:
   cycling: Biciklado
   hiking: Marŝado
   mtb: Montbiciklado
+  osmc_symbol: ''
   riding: Ĉevala rajdado
   skating: Rulglitado
   slopes: Vintrosportejoj

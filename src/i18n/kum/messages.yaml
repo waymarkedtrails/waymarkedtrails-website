@@ -72,10 +72,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Артгъа
   background: ''
+  background_heading: ''
+  examples: ''
   foreground: ''
+  foreground_heading: ''
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: Япмакъ
   more: ''
@@ -104,6 +108,7 @@ site_title:
   cycling: ''
   hiking: Яяв юрюв
   mtb: ''
+  osmc_symbol: ''
   riding: ''
   skating: ''
   slopes: ''

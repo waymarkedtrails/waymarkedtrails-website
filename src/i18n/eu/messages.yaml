@@ -78,15 +78,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Atzera
   background: Atzeko planoak antzera funtzionatzen du. Kolorea eta formaz osatuta
     dago ere. Baliteke atzeko planoa kolore bakar batean agertzea, lientzoan agertzen
     den aukeratutako kolorea, alegia. Hauxe bera lehenengo lerroan ikus daiteke.
+  background_heading: Atzeko planoa
+  examples: Adibideak
   foreground: Lehen planoaren sinboloak kolore eta forma bat osatzen dute, azpimarra
     batez loturik. Ondorengo taulak gunea aitortzen dituen konbinazio guztiak erakusten
     ditu. Horretaz gain, erliebearen izenaz, besterik ez, osaturik dauden lehen planoak
     aitortzen ditu. Horietako sinboloak azken zutabean agertzen dira.
-  preview: Aurreikuspena
-  tester: ''
+  foreground_heading: Lehen planoan
+  preview: ''
+  preview_heading: Aurreikuspena
 routelist:
   close: Itxi
   more: ''
@@ -115,6 +119,7 @@ site_title:
   cycling: Txirrindularitza
   hiking: Mendi-igoerak
   mtb: Mendiko txirrindularitza
+  osmc_symbol: ''
   riding: Zaldi ibilaldiak
   skating: Lerro-patinaketa
   slopes: Negurako kirol-aldapak

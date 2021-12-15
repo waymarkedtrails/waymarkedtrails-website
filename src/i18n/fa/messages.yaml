@@ -77,10 +77,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: بازگشت
   background: ''
+  background_heading: پیش‌زمینه
+  examples: ''
   foreground: ''
+  foreground_heading: ''
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: ''
   more: ''
@@ -109,6 +113,7 @@ site_title:
   cycling: دوچرخه سواری
   hiking: پیاده‌روی
   mtb: ''
+  osmc_symbol: ''
   riding: ''
   skating: ''
   slopes: ''

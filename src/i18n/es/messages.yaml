@@ -83,15 +83,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Volver
   background: El fondo funciona de manera similar. También contiene un color y una
     forma. El fondo también puede consistir solo en un nombre de color que produce
     un lienzo del color elegido. Eso se muestra en la primera fila.
+  background_heading: Fondo
+  examples: Ejemplos
   foreground: El símbolo del frente consiste de un color y una forma enlazados por
     un guion bajo. La tabla debajo muestra todas las combinaciones reconocidas por
     este sitio. También reconoce frentes que consisten solo en el nombre de la forma.
     Los símbolos para eso se muestran en la última columna.
-  preview: Previsualizar
-  tester: ''
+  foreground_heading: Frente
+  preview: ''
+  preview_heading: Previsualizar
 routelist:
   close: Cerrar
   more: ''
@@ -120,6 +124,7 @@ site_title:
   cycling: Ciclismo
   hiking: Senderismo
   mtb: MTB
+  osmc_symbol: ''
   riding: Equitación
   skating: Patín en línea
   slopes: Pistas para deportes de invierno

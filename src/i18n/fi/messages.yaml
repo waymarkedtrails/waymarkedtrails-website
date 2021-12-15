@@ -79,10 +79,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Takaisin
   background: ''
+  background_heading: Tausta
+  examples: Esimerkit
   foreground: ''
+  foreground_heading: Symboli
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: Sulje
   more: ''
@@ -111,6 +115,7 @@ site_title:
   cycling: Pyöräily
   hiking: Vaellus
   mtb: Maastopyöräily
+  osmc_symbol: ''
   riding: Ratsastus
   skating: Rullaluistelu
   slopes: Talviurheilurinteet

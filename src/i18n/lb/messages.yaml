@@ -72,10 +72,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Zréck
   background: ''
+  background_heading: Hannergrond
+  examples: Beispiller
   foreground: ''
-  preview: Kucken ouni ze späicheren
-  tester: ''
+  foreground_heading: Vierdergrond
+  preview: ''
+  preview_heading: Kucken ouni ze späicheren
 routelist:
   close: Zoumaachen
   more: ''
@@ -104,6 +108,7 @@ site_title:
   cycling: Mam Vëlo
   hiking: Zu Fouss
   mtb: ''
+  osmc_symbol: ''
   riding: ''
   skating: ''
   slopes: ''

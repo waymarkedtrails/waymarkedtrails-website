@@ -75,15 +75,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Anterior
   background: El fondu funciona de manera asemeyada. Tamién ta formáu por un color
     y una forma. El fondu tamién puede ser solo un nome de color que produz un llenzu
     del color escoyíu. Eso apaez na primera fila.
+  background_heading: Fondu
+  examples: Exemplos
   foreground: El símbolu del frente ta formáu por un color y una forma xuníos con
     un guión baxu. La tabla de más abaxo amuesa toles combinaciones que reconoz esti
     sitiu. Tamién reconoz frentes formaos solo pol nome de la forma. Los símbolos
     pa estos amuésense na última columna.
-  preview: Vista previa
-  tester: ''
+  foreground_heading: Frente
+  preview: ''
+  preview_heading: Vista previa
 routelist:
   close: Zarrar
   more: ''
@@ -112,6 +116,7 @@ site_title:
   cycling: Ciclismu
   hiking: Escursionismu
   mtb: BTT
+  osmc_symbol: ''
   riding: Equitación
   skating: Patinaxe en llinia
   slopes: Pendientes de deportes d'iviernu

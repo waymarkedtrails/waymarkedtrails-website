@@ -74,10 +74,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: ''
   background: ''
+  background_heading: Arxa planda
+  examples: ''
   foreground: ''
+  foreground_heading: Ön planda
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: ''
   more: ''
@@ -106,6 +110,7 @@ site_title:
   cycling: Veloidman
   hiking: Piyada gəzintisi
   mtb: Dag veloidmanı
+  osmc_symbol: ''
   riding: ''
   skating: Diyircəkli skeyt
   slopes: ''

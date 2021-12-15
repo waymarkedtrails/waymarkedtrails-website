@@ -72,10 +72,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: ''
   background: ''
+  background_heading: Bakgrund
+  examples: ''
   foreground: ''
+  foreground_heading: Forgrund
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: ''
   more: ''
@@ -104,6 +108,7 @@ site_title:
   cycling: Súkkling
   hiking: Vallararutur, gangitúrar
   mtb: Fjallasúkkla
+  osmc_symbol: ''
   riding: ''
   skating: Inline Skating
   slopes: ''

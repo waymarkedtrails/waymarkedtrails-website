@@ -75,15 +75,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Til baka
   background: Bakgrunnurinn virkar á svipaðan máta. Hann samanstendur af lit og lögun.
     Bakgrunnurinn getur líka verið bara nafn a lit sem gefur þá myndflöt með valda
     litnum. Þetta er sýnt í fyrstu röðinni.
+  background_heading: Bakgrunnur
+  examples: Dæmi
   foreground: Forgrunnstáknið samanstendur af lit og lögun sem tengt er með undirstrikun.
     Taflan hér fyrir neðan sýnir allar mögulegar samsetningar sem þetta vefsvæði þekkir.
     Það þekkir líka forgrunna sem samanstanda eingöngu af nafni lögunarinnar. Þau
     tákn eru sýnd í síðasta dálknum.
-  preview: Forskoðun
-  tester: ''
+  foreground_heading: Forgrunnur
+  preview: ''
+  preview_heading: Forskoðun
 routelist:
   close: Loka
   more: ''
@@ -112,6 +116,7 @@ site_title:
   cycling: Hjólaleiðir
   hiking: Gönguleiðir
   mtb: Fjallahjólaleiðir
+  osmc_symbol: ''
   riding: Hestaferðir
   skating: Línuskautaleiðir
   slopes: Brautir fyrir vetraríþróttir

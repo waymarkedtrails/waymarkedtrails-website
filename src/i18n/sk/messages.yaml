@@ -79,12 +79,16 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Späť
   background: Pozadie funguje podobným spôsobom. Skladá sa z farby a tvaru. Pozadie
     môže byť len plná farba.
+  background_heading: Pozadie
+  examples: Príklady
   foreground: Popredie sa skladá z farby a tvaru . Tabuľka nižšie ukazuje všetky dostupné
     kombinácie.
-  preview: Náhľad
-  tester: ''
+  foreground_heading: Popredie
+  preview: ''
+  preview_heading: Náhľad
 routelist:
   close: Zavrieť
   more: ''
@@ -113,6 +117,7 @@ site_title:
   cycling: Cyklistika
   hiking: Turistika
   mtb: Horská cyklistika
+  osmc_symbol: ''
   riding: Jazda na koni
   skating: Inline korčuľovanie
   slopes: Svahy pre zimné športy

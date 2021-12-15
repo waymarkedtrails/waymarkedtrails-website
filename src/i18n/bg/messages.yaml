@@ -76,10 +76,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Връщане
   background: ''
+  background_heading: Фон
+  examples: ''
   foreground: ''
+  foreground_heading: Основен цвят
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: Затваряне
   more: ''
@@ -108,6 +112,7 @@ site_title:
   cycling: Колоездене
   hiking: Туризъм
   mtb: МТБ
+  osmc_symbol: ''
   riding: Конна езда
   skating: Ролери
   slopes: Ски писти

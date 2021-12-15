@@ -72,10 +72,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: ကလေင်
   background: ''
+  background_heading: စးဒုၚ်ကြဴ
+  examples: ဥပမာဂမၠိုင်
   foreground: ''
+  foreground_heading: ''
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: ကၟာတ်
   more: ''
@@ -104,6 +108,7 @@ site_title:
   cycling: ''
   hiking: ''
   mtb: MTB
+  osmc_symbol: ''
   riding: ''
   skating: ''
   slopes: ''

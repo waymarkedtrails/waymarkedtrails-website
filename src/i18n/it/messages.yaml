@@ -78,10 +78,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Indietro
   background: ''
+  background_heading: Sfondo
+  examples: Esempi
   foreground: ''
-  preview: Anteprima
-  tester: ''
+  foreground_heading: In primo piano
+  preview: ''
+  preview_heading: Anteprima
 routelist:
   close: Chiudi
   more: ''
@@ -110,6 +114,7 @@ site_title:
   cycling: Ciclismo
   hiking: Escursioni a piedi
   mtb: Mountain bike
+  osmc_symbol: ''
   riding: Passeggiate a cavallo
   skating: Pattinaggio in linea
   slopes: Piste per sport invernali

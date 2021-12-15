@@ -73,10 +73,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: 戻る
   background: ''
+  background_heading: 背景
+  examples: 例
   foreground: ''
+  foreground_heading: 前景
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: 閉じる
   more: ''
@@ -105,6 +109,7 @@ site_title:
   cycling: サイクリング
   hiking: ハイキング
   mtb: マウンテンバイク
+  osmc_symbol: ''
   riding: 乗馬
   skating: インライン スケート
   slopes: ウィンター スポーツの斜面

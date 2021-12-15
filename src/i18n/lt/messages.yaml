@@ -76,10 +76,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Atgal
   background: ''
+  background_heading: Antrasis planas
+  examples: ''
   foreground: ''
+  foreground_heading: Pirmasis planas
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: Uždaryti
   more: ''
@@ -108,6 +112,7 @@ site_title:
   cycling: Dviračių sportas
   hiking: Žygiai
   mtb: Kalnų dviračių sportas
+  osmc_symbol: ''
   riding: Jodinėjimas
   skating: Riedučių sportas
   slopes: ''

@@ -73,10 +73,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: ''
   background: ''
+  background_heading: Sfunnu
+  examples: Asempi
   foreground: ''
-  preview: Antiprima
-  tester: ''
+  foreground_heading: Ntô primu pianu
+  preview: ''
+  preview_heading: Antiprima
 routelist:
   close: Chiudi
   more: ''
@@ -105,6 +109,7 @@ site_title:
   cycling: Ciclismu
   hiking: Escursioni a pedi
   mtb: Mountain bike
+  osmc_symbol: ''
   riding: Passiati a cavaddu
   skating: Pattinaggiu n lìnia
   slopes: Pisti pi sport mmirnali

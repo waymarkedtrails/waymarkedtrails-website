@@ -74,10 +74,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Quay lại
   background: ''
+  background_heading: Nền
+  examples: Ví dụ
   foreground: ''
-  preview: Xem trước
-  tester: ''
+  foreground_heading: Cận cảnh
+  preview: ''
+  preview_heading: Xem trước
 routelist:
   close: Đóng
   more: ''
@@ -106,6 +110,7 @@ site_title:
   cycling: Xe đạp
   hiking: Đường đi bộ dài
   mtb: Xe đạp leo núi
+  osmc_symbol: ''
   riding: Cưỡi ngựa
   skating: Trượt băng nội tuyến
   slopes: Dốc Dành cho các Môn Thể thao Mùa đông

@@ -77,13 +77,17 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Peyser
   background: Plano peyên enê usul ra guriyeno. Plano peyên yew reng u şekıl ra vıraziyayo.
     Plano peyên tuwal de weçinaye yew reng zi beno. No hal de sıfte ena mocniyeno.
+  background_heading: Hetê peyi
+  examples: Nımuneyi
   foreground: Sembolê ver plani, yu bınê xeta gıre biyaye yu renga ameyo meydan. Tabloyê
     cêri de terefê ena site ra kombinasyoni pêro mocniyenê. Reyna zi, teyna namey
     şekıli zi plana miyan de nas keno. Coy ra semboli estuna peyên de mocniyeno.
-  preview: Verqayt
-  tester: ''
+  foreground_heading: Hetê veri
+  preview: ''
+  preview_heading: Verqayt
 routelist:
   close: Kip ke
   more: ''
@@ -112,6 +116,7 @@ site_title:
   cycling: Ramıtış
   hiking: Geme geyrayış
   mtb: Bisikleta Koya
+  osmc_symbol: ''
   riding: Bergir nışayış
   skating: Patena Teqerın
   slopes: Sud spore zımıstani

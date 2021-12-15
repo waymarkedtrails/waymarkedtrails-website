@@ -80,16 +80,20 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Zurück
   background: Der Hintergrund funktioniert auf ähnliche Weise. Er besteht auch aus
     einer Farbe und einer Form. Der Hintergrund kann auch nur ein Farbname sein, der
     in einer Leinwand mit der angegebenen Farbe endet. Dies wird in der ersten Zeile
     angezeigt.
+  background_heading: Hintergrund
+  examples: Beispiele
   foreground: Das Vordergrundsymbol besteht aus einer Farbe und einer Form, verbunden
     mit einem Unterstrich. Die Tabelle unten zeigt alle Kombinationen, die von dieser
     Website erkannt werden. Sie erkennt auch Vordergründe, die nur aus dem Namen der
     Form bestehen. Die Symbole für diese werden in der letzten Spalte angezeigt.
-  preview: Vorschau
-  tester: ''
+  foreground_heading: Vordergrund
+  preview: ''
+  preview_heading: Vorschau
 routelist:
   close: Schließen
   more: ''
@@ -118,6 +122,7 @@ site_title:
   cycling: Radwege
   hiking: Wanderwege
   mtb: Mountainbike-Routen
+  osmc_symbol: ''
   riding: Reiten
   skating: Inline-Skating
   slopes: Wintersportpisten

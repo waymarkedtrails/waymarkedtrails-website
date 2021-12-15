@@ -83,15 +83,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Geri
   background: Arka plan benzer şekilde çalışır. Aynı zamanda bir renk ve bir şekilden
     oluşur. Arka plan, tuvalde seçilmiş sadece bir renk adı da olabilir. Bu durumda
     ilk olarak bu gösterilir.
+  background_heading: Arka plan
+  examples: Örnekler
   foreground: Ön plan sembolü, bir alt çizgi ile bağlantılı bir renk ve şekilden oluşur.
     Aşağıdaki tabloda bu site tarafından tanınan tüm kombinasyonlar gösterilmektedir.
     Ayrıca, yalnızca şeklin adını içeren ön planları tanır. Bunlardan dolayı semboller
     son sütunda gösterilir.
-  preview: Önizleme
-  tester: ''
+  foreground_heading: Ön plan
+  preview: ''
+  preview_heading: Önizleme
 routelist:
   close: Kapat
   more: ''
@@ -120,6 +124,7 @@ site_title:
   cycling: Bisiklete binme
   hiking: Doğa yürüyüşü
   mtb: MTB
+  osmc_symbol: ''
   riding: At Binme
   skating: Tekerlekli Paten
   slopes: Kış Sporu Yamaçları

@@ -64,16 +64,20 @@ network:
   sleigh: Sleigh piste
   winter_hike: Winter hiking
 osmc_symbol:
+  back: Back
   background: The background works in a similar way. It also consists of a color and
     a shape. The background may also be only a color name which results in a canvas
     of the choosen color.This is shown in the first row.
+  background_heading: Background
+  examples: Examples
   foreground: The foreground symbol consists of a color and a shape linked by an underscore.
     The table below shows all combinations recognised by this site. It also recognises
     foregrounds that consist only of the name of the shape. The symbols for those
     are shown in the last column.
-  preview: Preview
-  tester: "Type an osmc:symbol value into the input field below\n     to see how it\
-    \ will be rendered on the map."
+  foreground_heading: Foreground
+  preview: "Type an osmc:symbol value into the input field below\n     to see how\
+    \ it will be rendered on the map."
+  preview_heading: Preview
 routelist:
   close: Close
   more: Zoom in to see more routes.
@@ -105,6 +109,7 @@ site_title:
   cycling: Cycling
   hiking: Hiking
   mtb: MTB
+  osmc_symbol: The osmc:symbol tag
   riding: Horse Riding
   skating: Inline Skating
   slopes: Winter Sport Slopes

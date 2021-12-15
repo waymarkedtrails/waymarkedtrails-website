@@ -74,13 +74,17 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: ''
   background: ''
+  background_heading: ''
+  examples: ''
   foreground: پیش منظر علامت ایک رنگ اور ہیئت جو خوشنما انڈراسکور پر مشتمل ہے۔ زیر
     کا جدول وہ تمام مرکبات بتاتا ہے جواس سائٹ کی جانب سے پہچانے جاتے ہیں۔ یہ ان پیش
     منظروں کو بھی پہچانتا ہے جو صرف ہیئت کے ناموں پر مشتمل ہیں۔ان کی علامتیں آخری
     کالم میں دکھائی گئی ہیں۔
+  foreground_heading: ''
   preview: ''
-  tester: ''
+  preview_heading: ''
 routelist:
   close: ''
   more: ''
@@ -109,6 +113,7 @@ site_title:
   cycling: سائکلنگ
   hiking: پیدل سفر
   mtb: ایم ٹی بی
+  osmc_symbol: ''
   riding: گھڑ سواری
   skating: ان لائن سکیٹنگ
   slopes: ''

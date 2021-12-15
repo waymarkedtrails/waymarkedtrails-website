@@ -83,10 +83,14 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Назад
   background: ''
+  background_heading: Позадина
+  examples: Примери
   foreground: ''
-  preview: Преглед
-  tester: ''
+  foreground_heading: Предњи план
+  preview: ''
+  preview_heading: Преглед
 routelist:
   close: Затвори
   more: ''
@@ -115,6 +119,7 @@ site_title:
   cycling: Бициклизам
   hiking: Пешачење
   mtb: Планински бициклизам
+  osmc_symbol: ''
   riding: Јахање коња
   skating: Ролери
   slopes: ''

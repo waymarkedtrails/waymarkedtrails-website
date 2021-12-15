@@ -88,16 +88,20 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Retour
   background: L’arrière-plan travaille de façon similaire. Cela consiste aussi en
     une couleur et une forme. Le fond peut aussi être uniquement un nom de couleur,
     ce qui aboutit à une toile unie de la couleur choisie. Cela est visible dans la
     première ligne.
+  background_heading: Arrière-plan
+  examples: Exemples
   foreground: Le symbole de premier plan est formé d’une couleur et d’une forme reliées
     par un souligné. Le tableau ci-dessous montre toutes les combinaisons reconnues
     par ce site. Il reconnaît aussi les premiers plans constitués uniquement d’un
     nom de forme. Les symboles pour celles-ci sont affichés dans la dernière colonne.
-  preview: Aperçu
-  tester: ''
+  foreground_heading: Premier plan
+  preview: ''
+  preview_heading: Aperçu
 routelist:
   close: Fermer
   more: ''
@@ -126,6 +130,7 @@ site_title:
   cycling: À vélo
   hiking: À pied
   mtb: En vélo de montagne
+  osmc_symbol: ''
   riding: Équitation
   skating: En rollers
   slopes: Pistes de sport d’hiver

@@ -82,15 +82,19 @@ network:
   sleigh: ''
   winter_hike: ''
 osmc_symbol:
+  back: Tillbaka
   background: Bakgrunden fungerar på ett liknande sätt. Den består också av en färg
     och en form. Bakgrunden kan också endast vara ett färgnamn som resulterar i en
     kanvas med vald färg. Detta syns i första raden.
+  background_heading: Bakgrund
+  examples: Exempel
   foreground: Förgrundssymbolen består av en färg och en form som länkas av ett understreck.
     Tabellen nedan visar alla kombinationer som denna webbplats känner igen. Den känner
     även igen förgrunder som endast består av namnet på formen. Symbolerna för dessa
     visas i den sista kolumnen.
-  preview: Förhandsgranska
-  tester: ''
+  foreground_heading: Förgrund
+  preview: ''
+  preview_heading: Förhandsgranska
 routelist:
   close: Stäng
   more: ''
@@ -119,6 +123,7 @@ site_title:
   cycling: Cykelrutt
   hiking: Vandringsled
   mtb: Mountainbikerutt
+  osmc_symbol: ''
   riding: Ridning
   skating: Inline skating-rutt
   slopes: Vintersportbackarna
