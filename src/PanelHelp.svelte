@@ -55,16 +55,25 @@
 </script>
 
 <style>
-    .helppanel {
+    .background {
         position: absolute;
         top: 0px;
-        bottom: 50px;
-        right: 10%;
+        left: 0px;
+        width: 100%;
+        bottom: 48px;
         min-height: 34px;
-        border: 2px solid #b4b4b4;
-        width: 80%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    .helppanel {
+        top: 0px;
+        bottom: 9px;
+        border: 2px solid var(--theme-button-background);
+        max-width: 80%;
         background-color: var(--theme-background-color);
-        box-shadow: 8px 8px rgba(0,0,0,0.15);
+        box-shadow: 8px 8px rgba(0,0,0,0.25);
         overflow: auto;
         display: flex;
         z-index: 3;
@@ -118,6 +127,7 @@
     }
 </style>
 
+<div class="background">
 <div class="helppanel" bind:this={helpbox}>
 {#if content}
     <nav class="nav flex-column">
@@ -132,4 +142,5 @@
         {/each}
     </div></div>
 {/if}
+</div>
 </div>

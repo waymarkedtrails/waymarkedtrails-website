@@ -12,7 +12,7 @@ let with_local_storage = function(key, f) {
 
 export function get_mapview() {
     let center = [-7.9, 34.6];
-    let zoom = 3.0;
+    let zoom = 3;
 
     let parse_coords = function(mapview) {
         let parts = mapview.split('/');

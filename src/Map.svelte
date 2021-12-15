@@ -35,7 +35,8 @@
                   view: new View({
                       center: transform(m.center, "EPSG:4326", "EPSG:3857"),
                       zoom: m.zoom,
-                      maxZoom: 18
+                      maxZoom: 18,
+                      constrainResolution: true
                   }),
                   controls: defaultControls({attribution: false})
                              .extend([attribution, new ScaleLine()]),
@@ -45,7 +46,7 @@
             let view = evt.map.getView();
             let center = transform(view.getCenter(), "EPSG:3857", "EPSG:4326");
 
-            let zoom = view.getZoom();
+            let zoom = Math.round(view.getZoom());
             let x = (Math.round(center[0] * 10000) / 10000);
             let y = (Math.round(center[1] * 10000) / 10000);
             map_view.set({center: [x, y], zoom: zoom,
