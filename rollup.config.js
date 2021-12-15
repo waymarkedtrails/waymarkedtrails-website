@@ -51,7 +51,7 @@ const md = marked()
 const orig = md.normalizeLink;
 md.normalizeLink = function(url) {
   let out = orig(url);
-  if (out.indexOf('/') < 0) {
+  if (out.indexOf('/') < 0 && (out.endsWith('png') || out.endsWith('svg'))) {
     // must be an image
     out = 'img/' + out;
   }

@@ -173,6 +173,9 @@ osmc:
         A second foreground is not supported. `text` and `textcolor` can
         be omitted.
 
+        See the extra [osmc:symbol](osmc_symbols.html) tag page for a list of symbols that are
+        supported by Waymarked Trails.
+
 hikinglocal:
     title: Localized rendering
     text: |
