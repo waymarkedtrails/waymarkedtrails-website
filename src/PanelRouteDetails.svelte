@@ -96,7 +96,7 @@
 
 <DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{API_URL}/symbols/id/{route.symbol_id}" ref={route.ref}>
     {make_route_title(route)}
-    {#if route.local_name}<div class="subtitle">{route.name}</div>{/if}
+    {#if route.local_name}<div class="subtitle">{route.local_name}</div>{/if}
 </DetailsHeader>
 
 
