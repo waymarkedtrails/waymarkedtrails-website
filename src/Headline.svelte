@@ -2,9 +2,21 @@
     import { TITLE, MEDIA_URL, BASE_URL } from './config.js';
     import { _ } from 'svelte-i18n';
     import InterLinkMapList from './ui/InterLinkMapList.svelte';
+    import { map_view } from './app_state.js';
 
     let headline_div;
     let show_maplink_menu = false;
+    let map_link_tail = '';
+
+    map_view.subscribe(function (value) {
+        if (value === false) {
+            map_link_tail = '';
+        } else {
+            map_link_tail = "#?map=" + value.zoom.toFixed(1)
+                            + '/' + value.center[1]
+                            + '/' + value.center[0];
+        }
+    });
 
     const themes = ['hiking', 'cycling', 'mtb', 'skating', 'riding', 'slopes'];
 
@@ -81,7 +93,7 @@
     <h1>Waymarked Trails: {$_('site_title.' + TITLE)}</h1>
     <div class="map_maplinks">
       {#each themes as theme}
-        <a class="maplink" href="https://{theme}.{BASE_URL}"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" /></a>
+        <a class="maplink" href="https://{theme}.{BASE_URL}{map_link_tail}"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" /></a>
       {/each}
     </div>
   </div>
