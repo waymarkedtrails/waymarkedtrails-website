@@ -1,4 +1,5 @@
 <script>
+    import { onDestroy } from 'svelte';
     import { API_URL } from '../config.js';
     import { show_page } from '../app_state.js';
     import {set_visible as set_map_details_visible } from '../map/LayerRouteDetails.svelte';
@@ -17,6 +18,8 @@
         set_map_details_visible(true);
         unhighlight_route();
     }
+
+    onDestroy(end_hover);
 
     export let route_data;
     export let callback = show_route;
