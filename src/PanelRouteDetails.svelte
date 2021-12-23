@@ -5,6 +5,7 @@
     import { page_state } from './app_state.js';
     import SidePanel from './ui/SidePanel.svelte';
     import { json_loader } from './util/load_json.js';
+    import { load_routes } from './map/LayerVectorData.svelte';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
     import Collapsible from './ui/Collapsible.svelte';
     import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
@@ -42,6 +43,8 @@
                 route.subtitle = make_route_subtitle(route);
             });
         }
+
+        load_routes([].concat(route.subroutes || [], route.superroutes || []));
 
         fail_message = '';
     },

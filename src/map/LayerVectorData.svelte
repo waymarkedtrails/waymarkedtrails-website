@@ -8,7 +8,7 @@
     let vtile_layer, vector_layer;
 
     export function load_routes(routes) {
-        if (!is_vtiles_active()) {
+        if (!is_vtiles_active() && routes && routes.length) {
             let ids = {};
             routes.forEach(function(r, i) {
                 if (r.type in ids)
