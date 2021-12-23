@@ -23,7 +23,7 @@ export const TITLE = config.TITLE;
 export const BASEMAPS = [
     { id: "osm-mapnik",
       name: "OSM Standard Map",
-      url: "https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
       attribution: "<a href=\"https://openstreetmap.org\">OpenStreetMap</a>"
     },
     { id: "opentopo",
