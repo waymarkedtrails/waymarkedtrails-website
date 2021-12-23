@@ -11,23 +11,42 @@
     const max_routes = 20;
     let fail_message = '';
     let route_data = false;
-    let current_ids;
+    let is_id_mode = false;
     let has_more = false;
 
     $: {
         let page = $page_state;
         if (page.page === 'routelist') {
-            current_ids = page.params.get('relations');
+            let rel_ids = page.params.get('relations');
+            let ws_ids = page.params.get('waysets');
+            let way_ids = page.params.get('ways');
+            let do_ids = false;
+
+            let args = {};
+            if (typeof rel_ids !== 'undefined') {
+                do_ids = true;
+                args['relations'] = rel_ids;
+            }
+            if (typeof ws_ids !== 'undefined') {
+                do_ids = true;
+                args['waysets'] = ws_ids;
+            }
+            if (typeof way_ids !== 'undefined') {
+                do_ids = true;
+                args['ways'] = way_ids;
+            }
+
             fail_message = '';
-            if (typeof current_ids !== 'undefined') {
-                loader.load('/list/by_ids', {relations : current_ids});
+            if (do_ids) {
+                is_id_mode = true;
+                loader.load('/list/by_ids', args);
             }
         }
     }
 
     $: {
         let extent = $map_view.extent;
-        if (typeof current_ids === 'undefined' && typeof extent !== 'undefined') {
+        if (!is_id_mode && typeof extent !== 'undefined') {
             fail_message = '';
             loader.load('/list/by_area', {bbox: extent.join(","), limit: max_routes});
         }

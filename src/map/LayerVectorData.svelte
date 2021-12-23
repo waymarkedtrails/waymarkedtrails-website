@@ -117,10 +117,19 @@
         var feats = vtile_layer.getSource().getFeaturesInExtent(boundingExtent([p1, p2]));
 
         let relations = [];
+        let ways = [];
+        let waysets = [];
         for (const feature of feats) {
             let props = feature.getProperties();
             if (props.type === 'way') {
                 relations = relations.concat(props.top_relations);
+            }
+            if (props.type === 'wayset') {
+                if (props.wayset_ids) {
+                    waysets = waysets.concat(props.wayset_ids);
+                } else {
+                    ways.push(props.way_id);
+                }
             }
             if (current_zoom > 13 && props.type === 'guidepost') {
                 show_page('guidepost', [['id', props.osm_id]]);
@@ -128,13 +137,39 @@
             }
         }
 
+        // deduplicate the lists
         relations = relations.filter(function(elem, index, self) {
             return index === self.indexOf(elem);
         });
-        if (relations.length === 1) {
-            show_page('route', [['id', relations[0]]]);
-        } else {
-            show_page('routelist', [['relations', relations.join()]]);
+        waysets = waysets.filter(function(elem, index, self) {
+            return index === self.indexOf(elem);
+        });
+        ways = ways.filter(function(elem, index, self) {
+            return index === self.indexOf(elem);
+        });
+
+        let total = relations.length + waysets.length + ways.length;
+
+        if (total == 1) {
+            if (relations.length) {
+                show_page('route', [['id', relations[0]]]);
+            } else if (waysets.length) {
+                show_page('route', [['id', waysets[0]], ['type', 'wayset']]);
+            } else if (ways.length) {
+                show_page('route', [['id', ways[0]], ['type', 'way']]);
+            }
+        } else if (total > 1) {
+            let args = [];
+            if (relations.length) {
+                args.push(['relations', relations.join()]);
+            }
+            if (waysets.length) {
+                args.push(['waysets', waysets.join()]);
+            }
+            if (ways.length) {
+                args.push(['ways', ways.join()]);
+            }
+            show_page('routelist', args);
         }
     }
 </script>
