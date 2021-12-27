@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Ukrainian (українська)
+# Messages for Ukrainian (українська)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: A1
 # Author: Alex Khimich
 # Author: Andrew J.Kurbiko
@@ -14,17 +14,12 @@
 # Author: Salieri328
 # Author: Steve.rusyn
 # Author: SteveR
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Дані мапи © [OpenStreetMap](https://www.openstreetmap.org) згідно з [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: дані про рельєф від [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Докладніше
-  no_data: ''
   title: Місця призначення
 details:
   GPX: GPX
@@ -35,22 +30,11 @@ details:
   note: Примітка
   official_len: Офіційна відстань
   operator: Оператор
-  route_symbol: ''
   subroutes_title: Розділи
   superroutes_title: Частина
-  symbol: ''
   tags:
-    key: ''
     title: Теґи OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Веб-сайт
-  wikipedia: ''
   zoom_to: Показати на мапі
 elevation:
   ascent: Сукупний підйом
@@ -59,31 +43,19 @@ elevation:
     altitude: Висота (м)
     distance: Відстань (км)
   title: Профіль рельєфу
-  total: ''
   unavailable: Не знайдені дані о висотах рельєфу.
   warn_unsorted: Шлях є потенційно невпорядкованим чи неповним. Інформація щодо висоти
     може бути неточною.
 error:
   load_error: Помилка підключення до сервера.
-  missing_id: ''
-  missing_query: ''
   panel_title: Помилка
 headline:
   last_update: Останнє оновлення
 help: Про мапу
 locate_me: Моє розташування
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: гірськолижний спуск
+  node: мережеві з'єднання вузла
 osmc_symbol:
   back: Назад
   background: Тло працює в схожий спосіб. Воно теж складається з кольору та форми.
@@ -96,15 +68,14 @@ osmc_symbol:
     розпізнає тло, яке складається лише з назви форми. Відповідні символи показано
     в останньому стовпці.
   foreground_heading: Передній план
-  preview: ''
+  preview: Заповніть поле нижче значенням для "osmc:symbol" щоб побачити як буде відображатися
+    на мапі.
   preview_heading: Попередній перегляд
 routelist:
   close: Закрити
-  more: ''
   rollup: Згорнути
   title: Маршрути
 search:
-  places: ''
   routes: Маршрути
   title: Пошук
 settings:
@@ -115,19 +86,11 @@ settings:
   route_layer: Шар маршрутів
   title: Налаштування мапи
   transparency: Прозорість мапи
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Велосипед
   hiking: Пішохідний туризм
   mtb: Гірський велоспорт
-  osmc_symbol: ''
   riding: Верхова їзда
   skating: Катання на роликах
   slopes: Маршрути для зимових видів спорту
-
+...

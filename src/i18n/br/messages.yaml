@@ -1,22 +1,17 @@
-# Translation of Waymarked Trails Website to Breton (brezhoneg)
+# Messages for Breton (brezhoneg)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Fohanno
 # Author: Fulup
 # Author: Gwenn-Ael
 # Author: Y-M D
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Roadennoù kartennaouiñ©[OpenStreetMap](https://www.openstreetmap.org) dindan
     aotre-implijout [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: Roadennoù altimetrek gant [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Muioc'h a vunudoù
-  no_data: ''
   title: 'Lec''hioù-kas :'
 details:
   GPX: GPX
@@ -27,22 +22,11 @@ details:
   note: Notenn
   official_len: Hed ofisiel
   operator: Oberataer
-  route_symbol: ''
   subroutes_title: Rannoù
   superroutes_title: Lodenn eus
-  symbol: ''
   tags:
-    key: ''
     title: Tikedennoù OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Lec'hienn Genrouedad
-  wikipedia: ''
   zoom_to: Diskouez war ar gartenn
 elevation:
   ascent: Sav berniet
@@ -51,31 +35,16 @@ elevation:
     altitude: Uhelder (m)
     distance: Hed (km)
   title: Profil uhelder
-  total: ''
   unavailable: N'eus bet kavet roadennoù uhelder ebet.
   warn_unsorted: Gallout a ra an hent bezañ en dizurzh pe diglok. faos e c'hall bezañ
     an titouroù uhelder ivez.
 error:
   load_error: Fazi kevreañ ouzh ar servijer.
-  missing_id: ''
-  missing_query: ''
   panel_title: Fazi
 headline:
   last_update: Hizivaet da ziwezhañ
 help: A-zivout ar gartenn
 locate_me: Lec'hiit ac'hanon
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: Distro
   background: Labourat a ra an drekleur evel-se ivez. Bez' ez eus anezhi ul liv hag
@@ -88,15 +57,12 @@ osmc_symbol:
     a ra ivez ar rakleurioù a ya anv ar stumm d'o ober hepken. Er bann diwezhañ emañ
     diskouezet an arouezennoù evit ar re-mañ.
   foreground_heading: Talbenn
-  preview: ''
   preview_heading: Rakwelet
 routelist:
   close: Serriñ
-  more: ''
   rollup: Punañ
   title: Hentoù
 search:
-  places: ''
   routes: Hentoù
   title: Klask
 settings:
@@ -107,19 +73,11 @@ settings:
   route_layer: Gwiskad hentoù
   title: Arventennoù ar gartenn
   transparency: Treuzweluster ar gartenn
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Marc'h-houarn
   hiking: Bale
   mtb: MTB
-  osmc_symbol: ''
   riding: Marc'hegerezh
   skating: Botoù-ruilh
   slopes: Roudennoù evit ar sportoù goañv
-
+...

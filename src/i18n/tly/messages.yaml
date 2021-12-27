@@ -1,19 +1,11 @@
-# Translation of Waymarked Trails Website to Talysh (tolışi)
+# Messages for Talysh (tolışi)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Patriot Kur
 # Author: Гусейн
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
+---
 destination_sign:
   more: Чәмин
-  no_data: ''
   title: Шә вырон
 details:
   GPX: GPX
@@ -24,23 +16,11 @@ details:
   note: Ğeyd
   official_len: Rəsmiyə dıruzəti
   operator: Operator
-  route_symbol: ''
   subroutes_title: Baxşəon
   superroutes_title: Поә
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap nışonon
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Vebsoyt
-  wikipedia: ''
-  zoom_to: ''
 elevation:
   ascent: Умуми пеше
   descent: Умуми етат
@@ -48,69 +28,35 @@ elevation:
     altitude: Barzəti (m)
     distance: Məsofə (km)
   title: Релјефи профил
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
   load_error: Бә сервери дәшејәдә хәто беше.
-  missing_id: ''
-  missing_query: ''
   panel_title: Səhv
 headline:
   last_update: Охонә тожә кардә чиј
 help: Xəritə barədə məlumot
 locate_me: Мыни пәјдокән
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: Oqarde
-  background: ''
   background_heading: Zəmin
   examples: Misolon
-  foreground: ''
   foreground_heading: Əsosi ranq
-  preview: ''
-  preview_heading: ''
 routelist:
   close: Жәј
-  more: ''
-  rollup: ''
   title: Marşruton
 search:
-  places: ''
   routes: Marşruton
   title: Bınəv
 settings:
   base_map: Əsosə xəritə
-  browser_language: ''
   hillshading_layer: Relyefi nişo doy
   language: Zıvon
   route_layer: Marşruton ğat
   title: Хәритә сәбәро
   transparency: Хәритә виндејәти
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Velovərzış
   hiking: Lınqəseyr
   mtb: Bandə velovərzış
-  osmc_symbol: ''
   riding: Аспи роме
   skating: Лулә лискә мәшо
-  slopes: ''
-
+...

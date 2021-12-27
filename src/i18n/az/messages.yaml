@@ -1,117 +1,44 @@
-# Translation of Waymarked Trails Website to Azerbaijani (azərbaycanca)
+# Messages for Azerbaijani (azərbaycanca)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: AZISS
 # Author: Toghrul Rahimli
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+# Author: Şeyx Şamil
+---
 attribution:
   data: Xəritə məlumatları © [OpenStreetMap](http://www.openstreetmap.org) üzərindən
     [ODbL](http://www.openstreetmap.org/copyright)
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: Xəritədə göstər
   note: Qeyd
   official_len: Marşrutun rəsmi uzunluğu
   operator: Operator
-  route_symbol: ''
   subroutes_title: Bölmələr
   superroutes_title: Hissəsidir
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap nişanları
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Vebsayt
   wikipedia: Vikipediya
-  zoom_to: ''
-elevation:
-  ascent: ''
-  descent: ''
-  diagram:
-    altitude: ''
-    distance: ''
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: Xəta
 headline:
   last_update: Son yeniləmə
-help: ''
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
-  back: ''
-  background: ''
   background_heading: Arxa planda
-  examples: ''
-  foreground: ''
   foreground_heading: Ön planda
-  preview: ''
-  preview_heading: ''
 routelist:
-  close: ''
-  more: ''
-  rollup: ''
   title: Marçrutlar
 search:
-  places: ''
-  routes: Marçrutlar
+  routes: Marşrutlar
   title: Axtar
 settings:
   base_map: Əsas xəritə
-  browser_language: ''
   hillshading_layer: Relyefi göstər
   language: Dil
   route_layer: Marşrutların təbəqəsi
-  title: ''
-  transparency: ''
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Veloidman
   hiking: Piyada gəzintisi
   mtb: Dag veloidmanı
-  osmc_symbol: ''
-  riding: ''
   skating: Diyircəkli skeyt
-  slopes: ''
-
+...

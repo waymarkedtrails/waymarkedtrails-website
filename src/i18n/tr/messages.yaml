@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Turkish (Türkçe)
+# Messages for Turkish (Türkçe)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: BaRaN6161 TURK
 # Author: Emperyan
 # Author: Grkn gll
@@ -11,18 +11,13 @@
 # Author: Sayginer
 # Author: Sezgin İbiş
 # Author: Stonecy
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Harita verileri © [ODbL](https://www.openstreetmap.org/copyright) altında
     [OpenStreetMap](https://www.openstreetmap.org)
   elevation_title: 'yükseklik verileri: [SRTM/ASTER](help/acknowledgements)'
 destination_sign:
   more: Daha fazla ayrıntı
-  no_data: ''
   title: Hedefler
 details:
   GPX: GPX
@@ -33,20 +28,10 @@ details:
   note: Not
   official_len: Resmi uzunluğu
   operator: Operatör
-  route_symbol: ''
   subroutes_title: Bölümler
   superroutes_title: Parçası
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap etiketleri
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Web site
   wikipedia: Vikipedi
   zoom_to: Haritada göster
@@ -57,31 +42,19 @@ elevation:
     altitude: Yükseklik (m)
     distance: Mesafe (km)
   title: Yükselti profili
-  total: ''
   unavailable: Yükseklik verisi bulunamadı.
   warn_unsorted: Rota potansiyel olarak sıralanmamış veya eksik. Yükseklik bilgisi
     yanlış olabilir.
 error:
   load_error: Sunucuya bağlanma hatası.
-  missing_id: ''
-  missing_query: ''
   panel_title: Hata
 headline:
   last_update: Son güncelleme
 help: Harita hakkında
 locate_me: Beni bul
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: aşağı
+  node: düğüm ağ bağlantıları
 osmc_symbol:
   back: Geri
   background: Arka plan benzer şekilde çalışır. Aynı zamanda bir renk ve bir şekilden
@@ -94,15 +67,15 @@ osmc_symbol:
     Ayrıca, yalnızca şeklin adını içeren ön planları tanır. Bunlardan dolayı semboller
     son sütunda gösterilir.
   foreground_heading: Ön plan
-  preview: ''
+  preview: |-
+    Bir osmc: sembol değerini aşağıdaki giriş alanına yazın
+          harita üzerinde nasıl oluşturulacağını görmek için.
   preview_heading: Önizleme
 routelist:
   close: Kapat
-  more: ''
   rollup: Topla
   title: Güzergâhlar
 search:
-  places: ''
   routes: Güzergâhlar
   title: Ara
 settings:
@@ -113,19 +86,11 @@ settings:
   route_layer: Güzergâh katmanı
   title: Harita ayarları
   transparency: Harita şeffaflığı
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Bisiklete binme
   hiking: Doğa yürüyüşü
   mtb: MTB
-  osmc_symbol: ''
   riding: At Binme
   skating: Tekerlekli Paten
   slopes: Kış Sporu Yamaçları
-
+...

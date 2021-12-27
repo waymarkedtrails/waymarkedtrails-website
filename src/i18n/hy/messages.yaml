@@ -1,116 +1,56 @@
-# Translation of Waymarked Trails Website to Armenian (հայերեն)
+# Messages for Armenian (հայերեն)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Kareyac
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Քարտեզի տվյալները © [OpenStreetMap](http://www.openstreetmap.org) [ODbL](http://www.openstreetmap.org/copyright)
     լիցենզիայի տակ
-  elevation_title: ''
 destination_sign:
-  more: ''
-  no_data: ''
   title: Ուղղություններ
 details:
   GPX: GPX
-  KML: ''
   altitude: Բարձրություն
   image: Պատկեր
-  mapped_len: ''
   note: Նշում
   official_len: Երթուղու պաշտոնական երկարությունը
   operator: Օպերատոր
-  route_symbol: ''
   subroutes_title: Բաժիններ
   superroutes_title: Մասն է
-  symbol: ''
-  tags:
-    key: ''
-    title: ''
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
+  symbol: Նշան
   website: Կայք
-  wikipedia: ''
-  zoom_to: ''
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
     altitude: Բարձրությունը (մ)
     distance: Հեռավորությունը (կմ)
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: Սխալ
 headline:
   last_update: Վերջին թարմացումը
 help: Քարտեզի մասին
 locate_me: Տեղադրեք ինձ
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: Հետ
-  background: ''
-  background_heading: ''
   examples: Օրինակներ
-  foreground: ''
   foreground_heading: Հիմնական գույնը
-  preview: ''
   preview_heading: Նախադիտում
 routelist:
   close: Փակել
-  more: ''
   rollup: Գլորում
   title: Երթուղիներ
 search:
-  places: ''
   routes: Երթուղիներ
   title: Որոնել
 settings:
   base_map: Բազային քարտեզը
-  browser_language: ''
-  hillshading_layer: ''
   language: Լեզու
   route_layer: Երթուղիների շերտը
   title: Քարտեզի կարգավորումներ
   transparency: Քարտեզի թափանցիկությունը
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Հեծանվավազք
   hiking: Ոտքով զբոսնելն
   mtb: Լեռնային հեծանվավազք
-  osmc_symbol: ''
   riding: Ձիասպորտ
-  skating: ''
   slopes: Լանջերը ձմեռային սպորտաձևերի համար
-
+...

@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Hungarian (magyar)
+# Messages for Hungarian (magyar)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: BáthoryPéter
 # Author: Csega
 # Author: Dittaeva
@@ -10,18 +10,13 @@
 # Author: Grin
 # Author: Misibacsi
 # Author: Wolf Rex
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Térképadatok © [OpenStreetMap](https://www.openstreetmap.org), [ODbL](https://www.openstreetmap.org/copyright)
     licenc szerint
   elevation_title: magassági adatok [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: További részletek
-  no_data: ''
   title: Úti célok
 details:
   GPX: GPX
@@ -32,22 +27,11 @@ details:
   note: Megjegyzés
   official_len: Hivatalos hossz
   operator: Üzemeltető
-  route_symbol: ''
   subroutes_title: Szakaszok
   superroutes_title: 'Része ennek:'
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap címkék
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Weboldal
-  wikipedia: ''
   zoom_to: Megjelenítés a térképen
 elevation:
   ascent: Összesített emelkedés
@@ -56,31 +40,19 @@ elevation:
     altitude: Magasság (m)
     distance: Távolság (km)
   title: Magassági profil
-  total: ''
   unavailable: Nem találhatók magassági adatok.
   warn_unsorted: Lehet, hogy az útvonal rendezetlen vagy hiányos. A magassági adatok
     pontatlanok lehetnek.
 error:
   load_error: Nem sikerült csatlakozni a szerverhez.
-  missing_id: ''
-  missing_query: ''
   panel_title: Hiba
 headline:
   last_update: Utolsó frissítés
 help: A térképről
 locate_me: Hol vagyok most?
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: lesiklás
+  node: ponthálózat-kapcsolatok
 osmc_symbol:
   back: Vissza
   background: A háttér hasonlóan működik. Ez is egy színből és egy alakzatból áll.
@@ -93,15 +65,14 @@ osmc_symbol:
     kombinációt mutatja. Az olyan előtereket is felismeri, amelyek csak az alakzat
     nevéből állnak. Ezek szimbólumai az utolsó oszlopban láthatók.
   foreground_heading: Előtér
-  preview: ''
+  preview: Az alábbi beviteli mezőben adjon megy egy osmc:symbol értéket, hogy lássa,
+    hogyan fog megjelenni a térképen.
   preview_heading: Előnézet
 routelist:
   close: Bezárás
-  more: ''
   rollup: Fel
   title: Útvonalak
 search:
-  places: ''
   routes: Útvonalak
   title: Keresés
 settings:
@@ -112,19 +83,11 @@ settings:
   route_layer: Útvonalréteg
   title: Térképbeállítások
   transparency: Térkép átlátszósága
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Kerékpározás
   hiking: Túrázás
   mtb: Mountain bike
-  osmc_symbol: ''
   riding: Lovaglás
   skating: Görkorcsolya
   slopes: Télisport-pályák
-
+...

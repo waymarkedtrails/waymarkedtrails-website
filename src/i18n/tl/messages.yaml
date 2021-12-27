@@ -1,116 +1,41 @@
-# Translation of Waymarked Trails Website to Tagalog (Tagalog)
+# Messages for Tagalog (Tagalog)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: AnakngAraw
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Dato ng mapa ng [OpenStreetMap](http://www.openstreetmap.org) at mga mang-aambag
     ([CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/))
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: Ipinapakita sa mapa
   note: Tala
   official_len: Opisyal na haba
   operator: Tagapagpaandar
-  route_symbol: ''
   subroutes_title: Mga bahagi
   superroutes_title: Bahagi ng
-  symbol: ''
   tags:
-    key: ''
     title: Mga tatak ng OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Pook sa sapot
   wikipedia: Wikipedia
-  zoom_to: ''
-elevation:
-  ascent: ''
-  descent: ''
-  diagram:
-    altitude: ''
-    distance: ''
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: Kamalian
 headline:
   last_update: Huling pagsasapanahon
-help: ''
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
-  back: ''
-  background: ''
   background_heading: Panlikuran
-  examples: ''
-  foreground: ''
   foreground_heading: Pangharapan
-  preview: ''
-  preview_heading: ''
 routelist:
-  close: ''
-  more: ''
-  rollup: ''
   title: Mga ruta
 search:
-  places: ''
   routes: Mga ruta
   title: Maghanap
 settings:
   base_map: Mapa ng himpilan
-  browser_language: ''
   hillshading_layer: Pagsangga sa burol
-  language: ''
   route_layer: Patong na ruta
-  title: ''
-  transparency: ''
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Pagbibisikleta
   hiking: Pang-aliw na paglalakad nang mahaba
   mtb: MTB
-  osmc_symbol: ''
-  riding: ''
   skating: Iskeyting na Nasa Guhit
-  slopes: ''
-
+...

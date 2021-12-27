@@ -1,115 +1,45 @@
-# Translation of Waymarked Trails Website to Manipuri (ꯃꯤꯇꯩ ꯂꯣꯟ)
+# Messages for Manipuri (ꯃꯤꯇꯩ ꯂꯣꯟ)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: ꯴꯰꯴
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
+---
 destination_sign:
-  more: ''
-  no_data: ''
   title: ꯂꯝꯊꯨꯡꯐꯝ
 details:
-  GPX: ''
-  KML: ''
   altitude: ꯑꯋꯥꯡꯕ
   image: ꯃꯤꯔꯦꯜ
-  mapped_len: ''
   note: ꯏꯁꯤꯟꯒꯗꯕ
   official_len: ꯂꯣꯏꯁꯪꯒꯤ ꯑꯁꯥꯡꯕ
-  operator: ''
-  route_symbol: ''
   subroutes_title: ꯁꯔꯨꯛꯁꯤꯡ
   superroutes_title: ꯁꯔꯨꯛꯅꯤ
-  symbol: ''
-  tags:
-    key: ''
-    title: ''
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: ꯋꯦꯕꯁꯥꯏꯠ
-  wikipedia: ''
   zoom_to: ꯃꯦꯞꯇ ꯑꯣꯏꯅ ꯎꯠꯂꯣ
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
     altitude: ꯑꯋꯥꯡꯕ (m)
     distance: ꯑꯔꯥꯞꯄ (Km)
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: ꯑꯔꯥꯟꯕ
 headline:
   last_update: ꯑꯔꯣꯏꯕ ꯅꯧꯊꯣꯛꯍꯟꯕ
 help: ꯃꯦꯞꯀꯤ ꯃꯇꯥꯡꯗ
-locate_me: ''
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: ꯆꯤꯡꯈꯣꯡ
 osmc_symbol:
   back: ꯍꯟꯂꯨ
-  background: ''
-  background_heading: ''
-  examples: ''
-  foreground: ''
-  foreground_heading: ''
-  preview: ''
   preview_heading: ꯃꯃꯥꯡꯒꯤꯗꯨ ꯎꯠꯄ
 routelist:
   close: ꯈꯨꯝꯖꯤꯟꯂꯦ
-  more: ''
   rollup: ꯄꯨꯂꯞ ꯆꯤꯡꯈꯠꯂꯛꯄ
   title: ꯆꯠꯐꯝꯁꯤꯡ
 search:
-  places: ''
   routes: ꯆꯠꯐꯝꯁꯤꯡ
   title: ꯊꯤꯕꯥ
 settings:
-  base_map: ''
   browser_language: ꯕꯔꯥꯎꯁꯔꯒꯤ ꯁꯦꯝꯐꯝꯗꯨ ꯁꯤꯖꯤꯟꯅꯧ
-  hillshading_layer: ''
   language: ꯂꯣꯟ
   route_layer: ꯆꯠꯐꯝꯒꯤ ꯃꯔꯣꯜ ꯃꯔꯣꯜ
-  title: ''
-  transparency: ''
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: ꯁꯥꯏꯀꯜ ꯊꯧꯔꯤ
-  hiking: ''
-  mtb: ''
-  osmc_symbol: ''
   riding: ꯁꯒꯣꯜ ꯊꯧꯔꯤ
-  skating: ''
-  slopes: ''
-
+...

@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to German (Deutsch)
+# Messages for German (Deutsch)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: DraconicDark
 # Author: Geitost
 # Author: JOE
@@ -9,17 +9,12 @@
 # Author: Metalhead64
 # Author: Purodha
 # Author: Tobi 406
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Kartendaten © [OpenStreetMap](https://www.openstreetmap.org) unter [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: Höhendaten von [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Weitere Einzelheiten
-  no_data: ''
   title: Ziele
 details:
   GPX: GPX
@@ -30,20 +25,10 @@ details:
   note: Hinweis
   official_len: Offizielle Länge
   operator: Betreiber
-  route_symbol: ''
   subroutes_title: Abschnitte
   superroutes_title: Teil von
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap-Tags
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Website
   wikipedia: Wikipedia
   zoom_to: Auf Karte anzeigen
@@ -54,31 +39,19 @@ elevation:
     altitude: Höhe (m)
     distance: Entfernung (km)
   title: Höhenprofil
-  total: ''
   unavailable: Es wurden keine Höhendaten gefunden.
   warn_unsorted: Der Weg ist möglicherweise nicht sortiert oder unvollständig. Die
     Höheninformationen können ungenau sein.
 error:
   load_error: Fehler beim Verbinden zum Server.
-  missing_id: ''
-  missing_query: ''
   panel_title: Fehler
 headline:
   last_update: Letzte Aktualisierung
 help: Über die Karte
 locate_me: Lokalisiere mich
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: bergab
+  node: Knoten-Netzwerkverbindungen
 osmc_symbol:
   back: Zurück
   background: Der Hintergrund funktioniert auf ähnliche Weise. Er besteht auch aus
@@ -92,15 +65,15 @@ osmc_symbol:
     Website erkannt werden. Sie erkennt auch Vordergründe, die nur aus dem Namen der
     Form bestehen. Die Symbole für diese werden in der letzten Spalte angezeigt.
   foreground_heading: Vordergrund
-  preview: ''
+  preview: |-
+    Gib einen osmc:symbol-Wert in das unten stehende Eingabefeld ein,
+    um zu sehen, wie er auf der Karte dargestellt wird.
   preview_heading: Vorschau
 routelist:
   close: Schließen
-  more: ''
   rollup: Aufrollen
   title: Routen
 search:
-  places: ''
   routes: Routen
   title: Suche
 settings:
@@ -111,19 +84,11 @@ settings:
   route_layer: Routen
   title: Karteneinstellungen
   transparency: Kartentransparenz
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Radwege
   hiking: Wanderwege
   mtb: Mountainbike-Routen
-  osmc_symbol: ''
   riding: Reiten
   skating: Inline-Skating
   slopes: Wintersportpisten
-
+...

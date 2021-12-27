@@ -1,21 +1,17 @@
-# Translation of Waymarked Trails Website to Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
+# Messages for Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Jim-by
 # Author: Nerogaf
+# Author: Nieszczarda2
 # Author: Red Winged Duck
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Зьвесткі мапы © [OpenStreetMap](https://www.openstreetmap.org) паводле ліцэнзіі
     [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: зьвесткі вышыняў паводле [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Падрабязьней
-  no_data: ''
   title: Месцы прызначэньня
 details:
   GPX: GPX
@@ -26,22 +22,12 @@ details:
   note: Заўвага
   official_len: Афіцыйная даўжыня
   operator: Апэратар
-  route_symbol: ''
+  route_symbol: Сымбаль маршруту
   subroutes_title: Разьдзелы
   superroutes_title: Частка
-  symbol: ''
   tags:
-    key: ''
     title: Цэтлікі OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Вэб-сайт
-  wikipedia: ''
   zoom_to: Паказаць на мапе
 elevation:
   ascent: Сумарны пад’ём
@@ -50,31 +36,18 @@ elevation:
     altitude: Вышыня (м)
     distance: Адлегласьць (км)
   title: Профіль рэльефу
-  total: ''
   unavailable: Ня знойдзеныя зьвесткі вышыні.
   warn_unsorted: Маршрут зьяўляецца патэнцыйна неўпарадкаваным ці няпоўным. Зьвесткі
     пра вышыню могуць быць недакладныя.
 error:
   load_error: Памылка злучэньня з сэрвэрам.
-  missing_id: ''
-  missing_query: ''
   panel_title: Памылка
 headline:
   last_update: Апошняе абнаўленьне
 help: Пра мапу
 locate_me: Знайсьці мяне
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  continental: Кантынэнтальныя маршруты
 osmc_symbol:
   back: Назад
   background: Фон працуе падобным чынам. Ён таксама ўтрымлівае колер і форму. Фон
@@ -87,15 +60,12 @@ osmc_symbol:
     пярэднія пляны, якія ўтрымліваюць толькі назву формы. Сымбалі для гэтага паказаныя
     ў апошнім слупку.
   foreground_heading: Пярэдні плян
-  preview: ''
   preview_heading: Папярэдні прагляд
 routelist:
   close: Закрыць
-  more: ''
   rollup: Згарнуць
   title: Маршруты
 search:
-  places: ''
   routes: Маршруты
   title: Пошук
 settings:
@@ -106,19 +76,12 @@ settings:
   route_layer: Слой маршрутаў
   title: Налады мапы
   transparency: Празрыстасьць мапы
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Ровар
   hiking: Шпацыры
   mtb: Маўнтынбайк
-  osmc_symbol: ''
+  osmc_symbol: Тэг osmc:symbol
   riding: Верхавая язда
   skating: Ролікавыя канькі
   slopes: Маршруты зімовых відаў спорту
-
+...

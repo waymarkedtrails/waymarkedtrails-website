@@ -1,20 +1,15 @@
-# Translation of Waymarked Trails Website to Asturian (asturianu)
+# Messages for Asturian (asturianu)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Shirayuki
 # Author: Xuacu
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Datos del mapa © [OpenStreetMap](https://www.openstreetmap.org) baxo llicencia
     [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: datos d'altures de [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Más detalles
-  no_data: ''
   title: Destinos
 details:
   GPX: GPX
@@ -25,20 +20,10 @@ details:
   note: Nota
   official_len: Llonxitú oficial
   operator: Operador
-  route_symbol: ''
   subroutes_title: Seiciones
   superroutes_title: Parte de
-  symbol: ''
   tags:
-    key: ''
     title: Etiquetes d'OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Sitiu web
   wikipedia: Wikipedia
   zoom_to: Ver nel mapa
@@ -49,31 +34,19 @@ elevation:
     altitude: Altitú (m)
     distance: Distancia (km)
   title: Perfil d'altitú
-  total: ''
   unavailable: Nun s'atoparon datos d'elevación
   warn_unsorted: La ruta posiblemente ta desordenada o incompleta. La información
     d'altitú podría nun ser exauta.
 error:
   load_error: Error de conexón col sirvidor.
-  missing_id: ''
-  missing_query: ''
   panel_title: Error
 headline:
   last_update: Caberu anovamientu
 help: Tocante al mapa
 locate_me: Llocalizame
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: descensu
+  node: conexones de rede de nodios
 osmc_symbol:
   back: Anterior
   background: El fondu funciona de manera asemeyada. Tamién ta formáu por un color
@@ -86,15 +59,15 @@ osmc_symbol:
     sitiu. Tamién reconoz frentes formaos solo pol nome de la forma. Los símbolos
     pa estos amuésense na última columna.
   foreground_heading: Frente
-  preview: ''
+  preview: |-
+    Escribi un valor osmc:symbol nel campu de más abaxo
+         pa ver cómo va renderizase nel mapa.
   preview_heading: Vista previa
 routelist:
   close: Zarrar
-  more: ''
   rollup: Contraer
   title: Rutes
 search:
-  places: ''
   routes: Rutes
   title: Guetar
 settings:
@@ -105,19 +78,11 @@ settings:
   route_layer: Capa de ruta
   title: Preferencies del mapa
   transparency: Tresparencia del mapa
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Ciclismu
   hiking: Escursionismu
   mtb: BTT
-  osmc_symbol: ''
   riding: Equitación
   skating: Patinaxe en llinia
   slopes: Pendientes de deportes d'iviernu
-
+...

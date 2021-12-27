@@ -1,27 +1,23 @@
-# Translation of Waymarked Trails Website to Czech (čeština)
+# Messages for Czech (čeština)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Aktron
 # Author: Chmee2
 # Author: Dittaeva
 # Author: Dvorapa
 # Author: Jezevec
 # Author: Juandev
+# Author: Kendo13
 # Author: Marek Pavlica
 # Author: Matěj Suchánek
 # Author: Mormegil
 # Author: Natalie
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Mapová data © [OpenStreetMap](https://www.openstreetmap.org) pod [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: údaje o nadmořské výšce podle [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Více informací
-  no_data: ''
   title: Cíle
 details:
   GPX: GPX
@@ -32,22 +28,13 @@ details:
   note: Poznámka
   official_len: Celková délka
   operator: Operátor
-  route_symbol: ''
   subroutes_title: Sekce
   superroutes_title: Část z
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap značky
-    value: ''
   type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
+    relation: Relace
   website: Webová stránka
-  wikipedia: ''
   zoom_to: Ukázat na mapě
 elevation:
   ascent: Kumulované stoupání
@@ -56,31 +43,18 @@ elevation:
     altitude: Nadmořská výška (m)
     distance: Vzdálenost (km)
   title: Výškový profil
-  total: ''
+  total: Celková Nadmořská výška
   unavailable: Údaje o nadmořské výšce nenalezeny
   warn_unsorted: Cesta může být neorganizovaná nebo neúplná. Údaje o nadmořské výšce
     mohou být nepřesné.
 error:
   load_error: Chyba při připojování k serveru.
-  missing_id: ''
-  missing_query: ''
   panel_title: Chyba
 headline:
   last_update: Poslední aktualizace
 help: O mapě
-locate_me: ''
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  continental: Kontinentální kongres
 osmc_symbol:
   back: Zpět
   background: Pozadí funguje podobně. Skládá se z barvy a tvaru. Pozadí také může
@@ -88,17 +62,13 @@ osmc_symbol:
     v první řadě.
   background_heading: Podklad
   examples: Příklady
-  foreground: ''
   foreground_heading: Popředí
-  preview: ''
   preview_heading: Náhled
 routelist:
   close: Zavřít
-  more: ''
   rollup: srolovat
   title: Trasy
 search:
-  places: ''
   routes: Trasy
   title: Hledat
 settings:
@@ -109,19 +79,11 @@ settings:
   route_layer: Routovací vrstva
   title: Nastavení mapy
   transparency: Průhlednost mapy
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Cyklistika
   hiking: Pěší turistika
   mtb: Horská cyklistika
-  osmc_symbol: ''
   riding: Jízda na koni
   skating: Inline bruslení
   slopes: Svahy pro zimní sporty
-
+...

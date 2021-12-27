@@ -1,45 +1,26 @@
-# Translation of Waymarked Trails Website to Chinese (Hong Kong) (中文（香港）)
+# Messages for Chinese (Hong Kong) (中文（香港）)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: C933103
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: 地圖資料 © [OpenStreetMap](https://www.openstreetmap.org)以 [ODbL](https://www.openstreetmap.org/copyright)
     授權
   elevation_title: 海拔資料由[SRTM/ASTER](help/acknowledgements)提供
 destination_sign:
   more: 更多詳情
-  no_data: ''
   title: 目的地
 details:
   GPX: GPX
   KML: KML
   altitude: 海拔
   image: 圖片
-  mapped_len: ''
-  note: ''
   official_len: 官方長度
   operator: 營運者
-  route_symbol: ''
-  subroutes_title: ''
   superroutes_title: 屬於
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap標籤
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: 網站
-  wikipedia: ''
   zoom_to: 顯示到地圖上
 elevation:
   ascent: 累積上斜
@@ -47,70 +28,35 @@ elevation:
   diagram:
     altitude: 海拔（米）
     distance: 距離（公里）
-  title: ''
-  total: ''
-  unavailable: ''
   warn_unsorted: 路線可能未經排序或者不完整。海拔資訊可能不精準。
 error:
   load_error: 連接至伺服器時出現錯誤。
-  missing_id: ''
-  missing_query: ''
   panel_title: 錯誤
 headline:
   last_update: 最後更新
 help: 關於地圖
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: 返回
-  background: ''
   background_heading: 背景
   examples: 例子
-  foreground: ''
   foreground_heading: 前景
-  preview: ''
   preview_heading: 預覽
 routelist:
   close: 關閉
-  more: ''
-  rollup: ''
   title: 路線
 search:
-  places: ''
   routes: 路線
   title: 搜尋
 settings:
   base_map: 底層地圖
   browser_language: 使用瀏覽器設定
-  hillshading_layer: ''
   language: 語言
   route_layer: 路線層
   title: 地圖設定
   transparency: 地圖透明度
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: 踩單車
   hiking: 遠足
   mtb: MTB
-  osmc_symbol: ''
   riding: 騎馬
-  skating: ''
-  slopes: ''
-
+...

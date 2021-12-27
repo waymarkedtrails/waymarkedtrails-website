@@ -1,116 +1,36 @@
-# Translation of Waymarked Trails Website to Livvi-Karelian (livvinkarjala)
+# Messages for Livvi-Karelian (livvinkarjala)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Ilja.mos
 # Author: Mashoi7
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
+---
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: Kartoitettu piduhus
-  note: ''
   official_len: Virralline piduhus
   operator: Operuattoru
-  route_symbol: ''
-  subroutes_title: ''
-  superroutes_title: ''
-  symbol: ''
-  tags:
-    key: ''
-    title: ''
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Internetsaitu
-  wikipedia: ''
-  zoom_to: ''
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
-    altitude: ''
     distance: Loittozus (km)
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: Haireh
 headline:
   last_update: Jälgimäine päivitys
 help: Kartah näh
-locate_me: ''
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: alamägi
 osmc_symbol:
   back: Järilleh
-  background: ''
-  background_heading: ''
-  examples: ''
-  foreground: ''
-  foreground_heading: ''
-  preview: ''
-  preview_heading: ''
 routelist:
   close: Salbua
-  more: ''
-  rollup: ''
   title: Maršrutat
 search:
-  places: ''
   routes: Maršrutat
   title: Eččie
 settings:
-  base_map: ''
-  browser_language: ''
-  hillshading_layer: ''
   language: Kieli
-  route_layer: ''
   title: Kartan azetukset
   transparency: Kartan läbinägyvys
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  osmc_symbol: ''
   riding: Račastus
-  skating: ''
-  slopes: ''
-
+...

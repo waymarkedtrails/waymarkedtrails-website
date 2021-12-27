@@ -1,46 +1,23 @@
-# Translation of Waymarked Trails Website to Romanian (română)
+# Messages for Romanian (română)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Minisarm
 # Author: Shirayuki
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Date hartă © [OpenStreetMap](http://www.openstreetmap.org) sub [ODbL](http://www.openstreetmap.org/copyright)
   elevation_title: datele despre altitudine de la [SRTM/ASTER](help/acknowledgements)
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
 details:
   GPX: GPX
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: Afișată pe hartă
   note: Notă
   official_len: Lungime oficială
   operator: Operator
-  route_symbol: ''
   subroutes_title: Secțiuni
   superroutes_title: Parte din
-  symbol: ''
   tags:
-    key: ''
     title: Etichete OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Site web
-  wikipedia: ''
-  zoom_to: ''
 elevation:
   ascent: Urcare cumulată
   descent: Coborâre cumulată
@@ -48,46 +25,22 @@ elevation:
     altitude: Altitudine (m)
     distance: Distanță (km)
   title: Profil de altitudine
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
   load_error: Eroare de conectare la server.
-  missing_id: ''
-  missing_query: ''
   panel_title: Eroare
 headline:
   last_update: Ultima actualizare
-help: ''
 locate_me: Localizează-mă
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: coborâre
 osmc_symbol:
   back: Înapoi
-  background: ''
   background_heading: Fundal
-  examples: ''
-  foreground: ''
   foreground_heading: Prim plan
-  preview: ''
-  preview_heading: ''
 routelist:
   close: Închide
-  more: ''
-  rollup: ''
   title: Trasee
 search:
-  places: ''
   routes: Trasee
   title: Căutare
 settings:
@@ -98,19 +51,11 @@ settings:
   route_layer: Stratul traseelor
   title: Setări hartă
   transparency: Transparența hărții
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Ciclism
   hiking: Drumeții
   mtb: MTB
-  osmc_symbol: ''
   riding: Echitație
   skating: Patinaj cu role
   slopes: Pârtii pentru sporturi de iarnă
-
+...

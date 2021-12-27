@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Catalan (català)
+# Messages for Catalan (català)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Alvaro Vidal-Abarca
 # Author: Avm99963
 # Author: Jlrb+
@@ -8,18 +8,13 @@
 # Author: Mguix
 # Author: Pitort
 # Author: Shirayuki
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Dades cartogràfiques © [OpenStreetMap](https://www.openstreetmap.org) sota
     llicència [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: dades altimètriques de [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Més detalls
-  no_data: ''
   title: Destinacions
 details:
   GPX: GPX
@@ -30,22 +25,11 @@ details:
   note: Nota
   official_len: Longitud oficial
   operator: Operador
-  route_symbol: ''
   subroutes_title: Seccions
   superroutes_title: Part de
-  symbol: ''
   tags:
-    key: ''
     title: Etiquetes d'OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Lloc web
-  wikipedia: ''
   zoom_to: Mostrar en el mapa
 elevation:
   ascent: Ascensió acumulada
@@ -54,31 +38,16 @@ elevation:
     altitude: Altura (m)
     distance: Distància (km)
   title: Perfil d'elevació
-  total: ''
   unavailable: No s'han trobat dades d'elevació
   warn_unsorted: La ruta és potencialment desordenada o incompleta. La informació
     sobre la cota pot ser incorrecta.
 error:
   load_error: S'ha produït un error en connectar-se al servidor.
-  missing_id: ''
-  missing_query: ''
   panel_title: Error
 headline:
   last_update: Darrera actualització
 help: Sobre el mapa
 locate_me: Localitza’m
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: Enrere
   background: El fons funciona d’una manera similar. També consisteix en un color
@@ -91,15 +60,12 @@ osmc_symbol:
     lloc. També reconeix els primers plans que només consisteixen en el nom de la
     forma. Els símbols d’aquests es mostren a l’última columna.
   foreground_heading: Primer pla
-  preview: ''
   preview_heading: Vista prèvia
 routelist:
   close: Tancar
-  more: ''
   rollup: Contreure
   title: Rutes
 search:
-  places: ''
   routes: Rutes
   title: Cerca
 settings:
@@ -110,19 +76,11 @@ settings:
   route_layer: Capa de rutes
   title: Configuració del mapa
   transparency: Transparència del mapa
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Ciclisme
   hiking: Excursionisme
   mtb: BTT
-  osmc_symbol: ''
   riding: Hípica
   skating: Patí en línia
   slopes: Pistes per Esports d'Hivern
-
+...

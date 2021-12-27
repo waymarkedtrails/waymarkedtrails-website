@@ -1,117 +1,35 @@
-# Translation of Waymarked Trails Website to Bosnian (bosanski)
+# Messages for Bosnian (bosanski)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Palapa
 # Author: Srdjan m
 # Author: Srđan
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
+---
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
-  mapped_len: ''
-  note: ''
   official_len: Službena dužina
   operator: Operator
-  route_symbol: ''
   subroutes_title: Potezi
   superroutes_title: Dio
-  symbol: ''
   tags:
-    key: ''
     title: Oznake OpenStreetMapa
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Veb-sajt
-  wikipedia: ''
-  zoom_to: ''
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
     altitude: Visina (m)
-    distance: ''
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: Greška
-headline:
-  last_update: ''
 help: O karti
 locate_me: Nađi me
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: Nazad
-  background: ''
-  background_heading: ''
-  examples: ''
-  foreground: ''
-  foreground_heading: ''
-  preview: ''
-  preview_heading: ''
 routelist:
   close: Zatvori
-  more: ''
-  rollup: ''
-  title: ''
 search:
-  places: ''
-  routes: ''
   title: Pretraži
 settings:
-  base_map: ''
-  browser_language: ''
-  hillshading_layer: ''
   language: Jezik
-  route_layer: ''
   title: Postavke karte
   transparency: Providnost karte
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
-  cycling: ''
-  hiking: ''
   mtb: Planinski biciklizam
-  osmc_symbol: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-
+...

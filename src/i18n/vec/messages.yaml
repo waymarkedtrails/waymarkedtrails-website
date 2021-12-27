@@ -1,19 +1,14 @@
-# Translation of Waymarked Trails Website to Venetian (vèneto)
+# Messages for Venetian (vèneto)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Alunardon90
 # Author: Fierodelveneto
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Dati mapa © [OpenStreetMap](https://www.openstreetmap.org) soto licensa [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: dati de cuora de [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Pì detaji
-  no_data: ''
   title: Destinasion
 details:
   GPX: GPX
@@ -24,22 +19,11 @@ details:
   note: Note
   official_len: Longhesa oficiałe
   operator: Operador
-  route_symbol: ''
   subroutes_title: Sesion
   superroutes_title: Parte de
-  symbol: ''
   tags:
-    key: ''
     title: Note de OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: sito web
-  wikipedia: ''
   zoom_to: Mostra inte ła mapa
 elevation:
   ascent: Aseza cumułada
@@ -48,46 +32,27 @@ elevation:
     altitude: Altitùdene (m)
     distance: Distansa (km)
   title: Profiło altimètrego
-  total: ''
   unavailable: Nisun dato catà su l'altura ojeto.
-  warn_unsorted: ''
 error:
   load_error: Eror de conesion al sèrver.
-  missing_id: ''
-  missing_query: ''
   panel_title: Erore
 headline:
   last_update: Ultimo ajornamento
 help: Informasion so ła mapa
 locate_me: Pozisióname
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: diseze
 osmc_symbol:
   back: Indrio
-  background: ''
   background_heading: Sfondo
   examples: Ezenpi
-  foreground: ''
   foreground_heading: In primo pian
-  preview: ''
   preview_heading: Vista prèvia
 routelist:
   close: Sara
-  more: ''
   rollup: Inròdoła
   title: Percorsi
 search:
-  places: ''
   routes: Percorsi
   title: Serca
 settings:
@@ -98,19 +63,11 @@ settings:
   route_layer: Liveło de percorso
   title: Costuma ła mapa
   transparency: Trasparense mapa
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Ciclixmo
   hiking: Escursion a pie
   mtb: Bici da montagna
-  osmc_symbol: ''
   riding: A spaso a cavało
   skating: Patinajo in linea
   slopes: Piste par spor de inverno
-
+...

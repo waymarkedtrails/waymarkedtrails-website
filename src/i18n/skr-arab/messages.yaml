@@ -1,115 +1,42 @@
-# Translation of Waymarked Trails Website to Saraiki (Arabic script) (سرائیکی)
+# Messages for Saraiki (Arabic script) (سرائیکی)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Saraiki
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
+---
 details:
   GPX: جی پی ایکس
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: نقشے دی لمبائی
   note: نوٹ
   official_len: سرکاری لمبائی
   operator: عامل
-  route_symbol: ''
   subroutes_title: حصے
   superroutes_title: دا حصہ
-  symbol: ''
-  tags:
-    key: ''
-    title: ''
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: ویب سائٹ
-  wikipedia: ''
-  zoom_to: ''
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
     altitude: اُچائی (میٹر)
     distance: فاصلہ (کلومیٹر)
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: نقص
 headline:
   last_update: چھیکڑی تبدیلی
 help: نقشے بارے
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: پچھوں
-  background: ''
-  background_heading: ''
   examples: مثالاں
-  foreground: ''
-  foreground_heading: ''
-  preview: ''
-  preview_heading: ''
 routelist:
   close: بند کرو
-  more: ''
-  rollup: ''
   title: رستے
 search:
-  places: ''
   routes: رستے
   title: ڳولو
 settings:
-  base_map: ''
-  browser_language: ''
-  hillshading_layer: ''
   language: زبان
-  route_layer: ''
   title: نقشے دیاں ترتیباں
-  transparency: ''
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: سائکلنگ
   hiking: پیدل سفر
   mtb: ایم ٹی بی
-  osmc_symbol: ''
   riding: گھڑ سواری
   skating: ان لائن سکیٹنگ
-  slopes: ''
-
+...

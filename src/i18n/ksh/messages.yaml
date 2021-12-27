@@ -1,47 +1,24 @@
-# Translation of Waymarked Trails Website to Colognian (Ripoarisch)
+# Messages for Colognian (Ripoarisch)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Dittaeva
 # Author: Purodha
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Kaate-Daate sin_er © vun [OpenStreetMap](http://www.openstreetmap.org), ze
     han onger dä [ODbL](http://www.openstreetmap.org/copyright)
   elevation_title: Daate övver de Hühde vun [SRTM/ASTER](Hölp un Aanäkännonge)
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: Op dä Landkaat aanjezeisch
   note: Notez
   official_len: De ofizjälle Längde
   operator: Zohschtändesch es
-  route_symbol: ''
   subroutes_title: Afschnedde
   superroutes_title: Deijl vun
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap sing Befähle
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Wäbßaijt
   wikipedia: Wikkipehdija
-  zoom_to: ''
 elevation:
   ascent: Der Aanschteesch, zesammejenumme
   descent: Der Afschteesch, zesammejenumme
@@ -49,46 +26,20 @@ elevation:
     altitude: De Hühde en Meeter
     distance: Der Afschtand en Killomeeter
   title: Et Profihl för de Hühde
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: Fähler
 headline:
   last_update: Zoläz jeändert
-help: ''
-locate_me: ''
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: der Bersch eraf
 osmc_symbol:
   back: Retuhr
-  background: ''
   background_heading: Hengerjrond
-  examples: ''
-  foreground: ''
   foreground_heading: Vüürjrond
-  preview: ''
-  preview_heading: ''
 routelist:
   close: Zohmaache
-  more: ''
-  rollup: ''
   title: Wääje
 search:
-  places: ''
   routes: Wääje
   title: Söhke
 settings:
@@ -99,19 +50,11 @@ settings:
   route_layer: De Wääje
   title: Enschtällonge för de Kaat
   transparency: Dorschseeschteschkeit vun dä Kaat
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Radfahre
   hiking: Wandere
   mtb: Mauntenbaike
-  osmc_symbol: ''
   riding: Pähdsrigge
   skating: Enlainerfahre
   slopes: Pißte för der Winnterschpocht
-
+...

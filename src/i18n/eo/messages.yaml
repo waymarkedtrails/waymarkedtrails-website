@@ -1,22 +1,17 @@
-# Translation of Waymarked Trails Website to Esperanto (Esperanto)
+# Messages for Esperanto (Esperanto)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Kastanoto
 # Author: Objectivesea
 # Author: Robin van der Vliet
 # Author: Yekrats
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Map-datumoj © [OpenStreetMap](https://www.openstreetmap.org) laŭ la permesilo
     [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: altitudaj datumoj de [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Pliaj detaloj
-  no_data: ''
   title: Celoj
 details:
   GPX: GPX
@@ -27,20 +22,10 @@ details:
   note: Rimarko
   official_len: Oficiala distanco
   operator: Administranto
-  route_symbol: ''
   subroutes_title: Sekcioj
   superroutes_title: Parto de
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap-etikedoj
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Retejo
   wikipedia: Vikipedio
   zoom_to: Montri sur mapo
@@ -51,31 +36,19 @@ elevation:
     altitude: Altitudo (m)
     distance: Distanco (km)
   title: Terena profilo
-  total: ''
   unavailable: Ne trovis datumojn de altitudo.
   warn_unsorted: Kurso povas esti malordigita kaj nekompleta. Informoj pri altitudo
     povas esti malprecizaj.
 error:
   load_error: Eraro dum konektado al servilo.
-  missing_id: ''
-  missing_query: ''
   panel_title: Eraro
 headline:
   last_update: Lasta ĝisdatigo
 help: Pri la mapo
 locate_me: Mia pozicio
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: skivojoj alpaj (malsupreniraj)
+  node: konektoj de noda reto
 osmc_symbol:
   back: Reveni
   background: La fono funkcias simile. Ĝi ankaŭ konsistas el koloro kaj formo. La
@@ -87,15 +60,14 @@ osmc_symbol:
     Ankaŭ estas rekonataj malfonoj konsistantaj nur el nomo kaj formo. Simboloj por
     ili estas montrataj en la lasta kolumno.
   foreground_heading: Malfono
-  preview: ''
+  preview: Entajpu valoron de “osmc:symbol” suben por vidigi kiel ĝi estos bildigita
+    sur la mapo.
   preview_heading: Antaŭvido
 routelist:
   close: Fermi
-  more: ''
   rollup: Suprenvolvi
   title: Kursoj
 search:
-  places: ''
   routes: Kursoj
   title: Serĉi
 settings:
@@ -106,19 +78,11 @@ settings:
   route_layer: Kursa tavolo
   title: Mapaj agordoj
   transparency: Mapa diafaneco
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Biciklado
   hiking: Marŝado
   mtb: Montbiciklado
-  osmc_symbol: ''
   riding: Ĉevala rajdado
   skating: Rulglitado
   slopes: Vintrosportejoj
-
+...

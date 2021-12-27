@@ -1,116 +1,51 @@
-# Translation of Waymarked Trails Website to Japanese (日本語)
+# Messages for Japanese (日本語)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Otokoume
 # Author: Shirayuki
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: 地図データ © [OpenStreetMap](http://www.openstreetmap.org) 、ライセンス [ODbL](http://www.openstreetmap.org/copyright)
   elevation_title: '標高データ提供: [SRTM/ASTER](help/acknowledgements)'
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
-  mapped_len: ''
   note: 注釈
   official_len: 公式な長さ
   operator: オペレーター
-  route_symbol: ''
   subroutes_title: 節
-  superroutes_title: ''
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap タグ
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Web サイト
-  wikipedia: ''
-  zoom_to: ''
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
     altitude: 高度 (m)
     distance: 距離 (km)
   title: 高度のプロファイル
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: エラー
 headline:
   last_update: 最終更新
-help: ''
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: 戻る
-  background: ''
   background_heading: 背景
   examples: 例
-  foreground: ''
   foreground_heading: 前景
-  preview: ''
-  preview_heading: ''
 routelist:
   close: 閉じる
-  more: ''
-  rollup: ''
   title: 経路
 search:
-  places: ''
   routes: 経路
   title: 検索
 settings:
   base_map: 基図
-  browser_language: ''
-  hillshading_layer: ''
   language: 言語
   route_layer: 経路レイヤー
   title: 地図の設定
   transparency: 地図の透明度
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: サイクリング
   hiking: ハイキング
   mtb: マウンテンバイク
-  osmc_symbol: ''
   riding: 乗馬
   skating: インライン スケート
   slopes: ウィンター スポーツの斜面
-
+...

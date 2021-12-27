@@ -1,23 +1,18 @@
-# Translation of Waymarked Trails Website to Arabic (العربية)
+# Messages for Arabic (العربية)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: DRIHEM
 # Author: Maroen1990
 # Author: Meno25
 # Author: OsamaK
 # Author: ديفيد
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: بيانات خريطة © [خريطة الشارع المفتوحة]\n(https://www.openstreetmap.org) تحت
     [رخصة قاعدة البيانات المفتوحة] (https://www.openstreetmap.org/copyright)
   elevation_title: بيانات الارتفاع بواسطة [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: مزيد من التفاصيل
-  no_data: ''
   title: الوجهات
 details:
   GPX: جي بي إكس
@@ -28,20 +23,10 @@ details:
   note: ملاحظة
   official_len: الطول الرسمي
   operator: العامل
-  route_symbol: ''
   subroutes_title: الأقسام
   superroutes_title: جزء من
-  symbol: ''
   tags:
-    key: ''
     title: علامات خريطة الشارع المفتوح
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: موقع الويب
   wikipedia: ويكيبيديا
   zoom_to: أظهر على الخريطة
@@ -52,30 +37,18 @@ elevation:
     altitude: الارتفاع (م)
     distance: المسافة (كم)
   title: ملف تعريف الارتفاع
-  total: ''
   unavailable: لا بيانات ارتفاع تم العثور عليها.
   warn_unsorted: الطريق غير محتمل أو غير مكتمل; قد تكون معلومات الارتفاع غير دقيقة.
 error:
   load_error: خطأ في الاتصال بالخادم.
-  missing_id: ''
-  missing_query: ''
   panel_title: خطأ
 headline:
   last_update: آخر تحديث
 help: معلومات عن الخريطة
 locate_me: حدد موقعي
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: انحدار
+  node: اتصالات شبكة العقدة
 osmc_symbol:
   back: رجوع
   background: الخلفية تعمل بطريقة مماثلة، كما تتكون من لون وشكل، قد تكون الخلفية أيضا
@@ -86,15 +59,15 @@ osmc_symbol:
     أدناه جميع المجموعات المتعارف عليها في هذا الموقع، كما يتعرف على الواجهات الأمامية
     التي تتكون فقط من اسم الشكل، تظهر رموز تلك في العمود الأخير.
   foreground_heading: المقدمة
-  preview: ''
+  preview: |-
+    اكتب قيمة osmc:symbol في حقل الإدخال بالأسفل
+         لترى كيف سيتم عرضها على الخريطة.
   preview_heading: معاينة
 routelist:
   close: أغلق
-  more: ''
   rollup: لف
   title: الطرق
 search:
-  places: ''
   routes: الطرق
   title: بحث
 settings:
@@ -105,19 +78,11 @@ settings:
   route_layer: طبقة الطريق
   title: إعدادات الخريطة
   transparency: شفافية الخريطة
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: ركوب الدراجات
   hiking: المشي لمسافات طويلة
   mtb: الدراجات الجبلية
-  osmc_symbol: ''
   riding: ركوب الخيل
   skating: التزلج على العجلات
   slopes: منحدرات الرياضات الشتوية
-
+...

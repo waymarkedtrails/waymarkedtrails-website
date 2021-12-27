@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Danish (dansk)
+# Messages for Danish (dansk)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Christian List
 # Author: EPO
 # Author: Emilkris33
@@ -8,17 +8,12 @@
 # Author: Joedalton
 # Author: Peter Alberti
 # Author: Saederup92
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Kortdata © [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: højdedata af [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Flere detaljer
-  no_data: ''
   title: Destinationer
 details:
   GPX: GPX
@@ -29,22 +24,11 @@ details:
   note: Melding
   official_len: Officiel længde
   operator: Ansvarlig
-  route_symbol: ''
   subroutes_title: Sektioner
   superroutes_title: Del af
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap-tags
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Hjemmeside
-  wikipedia: ''
   zoom_to: Vis på kort
 elevation:
   ascent: Samlet stigning
@@ -53,31 +37,16 @@ elevation:
     altitude: Højde (m)
     distance: Afstand (km)
   title: Højdeprofil
-  total: ''
   unavailable: Ingen højdedata fundet.
   warn_unsorted: Rute er muligvis ikke ordnet eller ufuldstændig. Elevationinformation
     kan være upræcis.
 error:
   load_error: Fejl ved forbindelse til server.
-  missing_id: ''
-  missing_query: ''
   panel_title: Fejl
 headline:
   last_update: Sidst opdateret
 help: Om kortet
 locate_me: Find mig
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: Tilbage
   background: Baggrunden virker på samme måde. Den består også af en farve og en form.
@@ -90,15 +59,12 @@ osmc_symbol:
     genkender også forgrunde, som kun består af navnet på formen. Symbolerne for disse
     vises i den sidste kolonne.
   foreground_heading: Forgrund
-  preview: ''
   preview_heading: Forhåndsvisning
 routelist:
   close: Luk
-  more: ''
   rollup: Rul op
   title: Ruter
 search:
-  places: ''
   routes: Ruter
   title: Søg
 settings:
@@ -109,19 +75,11 @@ settings:
   route_layer: Ruter
   title: Kortindstillinger
   transparency: Kortets gennemsigtighed
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Cykling
   hiking: Vandreruter
   mtb: Mountainbike
-  osmc_symbol: ''
   riding: Ridning
   skating: Inline-skating
   slopes: Vintersportskråninger
-
+...

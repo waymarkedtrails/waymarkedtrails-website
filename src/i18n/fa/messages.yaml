@@ -1,97 +1,32 @@
-# Translation of Waymarked Trails Website to Persian (فارسی)
+# Messages for Persian (فارسی)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Alireza Ivaz
 # Author: Ebraminio
 # Author: FarsiNevis
 # Author: Hooshmand.hasannia
 # Author: Ladsgroup
 # Author: Reza1615
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
+---
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
   image: تصویر
-  mapped_len: ''
   note: یادداشت
-  official_len: ''
-  operator: ''
-  route_symbol: ''
   subroutes_title: بخش‌ها
   superroutes_title: بخشی از
-  symbol: ''
   tags:
-    key: ''
     title: برچسب‌های نقشه باز شهری
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: وب سایت
   wikipedia: ویکی‌پدیا
-  zoom_to: ''
-elevation:
-  ascent: ''
-  descent: ''
-  diagram:
-    altitude: ''
-    distance: ''
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: خطا
 headline:
   last_update: آخرین روزآمدسازی
-help: ''
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: بازگشت
-  background: ''
   background_heading: پیش‌زمینه
-  examples: ''
-  foreground: ''
-  foreground_heading: ''
-  preview: ''
-  preview_heading: ''
 routelist:
-  close: ''
-  more: ''
-  rollup: ''
   title: مسیرها
 search:
-  places: ''
   routes: مسیرها
   title: جستجو
 settings:
@@ -100,21 +35,8 @@ settings:
   hillshading_layer: سایه تپه
   language: زبان
   route_layer: لایه مسیر
-  title: ''
   transparency: شفافیت نقشه
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: دوچرخه سواری
   hiking: پیاده‌روی
-  mtb: ''
-  osmc_symbol: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-
+...

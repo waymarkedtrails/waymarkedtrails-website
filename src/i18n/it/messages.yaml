@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Italian (italiano)
+# Messages for Italian (italiano)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Beta16
 # Author: Darth Kule
 # Author: Davio
@@ -8,17 +8,12 @@
 # Author: Ontsed
 # Author: Os cf
 # Author: Selven
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Dati mappa © [OpenStreetMap](https://www.openstreetmap.org) con licenza [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: dati di quota da [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Ulteriori dettagli
-  no_data: ''
   title: Destinazioni
 details:
   GPX: GPX
@@ -29,20 +24,13 @@ details:
   note: Note
   official_len: Lunghezza ufficiale
   operator: Operatore
-  route_symbol: ''
   subroutes_title: Sezioni
   superroutes_title: Parte di
-  symbol: ''
   tags:
-    key: ''
     title: Etichette OpenStreetMap
-    value: ''
+    value: valore
   type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
+    node: Nodo
   website: Sito web
   wikipedia: Wikipedia
   zoom_to: Mostra sulla mappa
@@ -53,46 +41,27 @@ elevation:
     altitude: Altitudine (m)
     distance: Distanza (km)
   title: Profilo altimetrico
-  total: ''
   unavailable: Non è stato trovato alcun dato sull'elevazione.
-  warn_unsorted: ''
 error:
   load_error: Errore di connessione al server.
-  missing_id: ''
-  missing_query: ''
   panel_title: Errore
 headline:
   last_update: Ultimo aggiornamento
 help: Informazioni sulla mappa
 locate_me: Localizzami
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: Discesa
 osmc_symbol:
   back: Indietro
-  background: ''
   background_heading: Sfondo
   examples: Esempi
-  foreground: ''
   foreground_heading: In primo piano
-  preview: ''
   preview_heading: Anteprima
 routelist:
   close: Chiudi
-  more: ''
   rollup: Arrotola
   title: Percorsi
 search:
-  places: ''
   routes: Percorsi
   title: Cerca
 settings:
@@ -103,19 +72,11 @@ settings:
   route_layer: Route layer
   title: Impostazioni mappa
   transparency: Trasparenza mappa
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Ciclismo
   hiking: Escursioni a piedi
   mtb: Mountain bike
-  osmc_symbol: ''
   riding: Passeggiate a cavallo
   skating: Pattinaggio in linea
   slopes: Piste per sport invernali
-
+...

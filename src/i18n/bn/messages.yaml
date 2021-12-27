@@ -1,119 +1,47 @@
-# Translation of Waymarked Trails Website to Bangla (বাংলা)
+# Messages for Bangla (বাংলা)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Aftabuzzaman
 # Author: Bellayet
 # Author: Runab
 # Author: Wikisagnik
 # Author: আফতাবুজ্জামান
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
+---
 destination_sign:
   more: আরো বিস্তারিত
-  no_data: ''
-  title: ''
 details:
-  GPX: ''
   KML: KML
-  altitude: ''
   image: চিত্র
   mapped_len: ম্যাপ করা অংশের ধৈর্ঘ্য
   note: টীকা
   official_len: অফিসিয়াল দৈর্ঘ্য
   operator: পরিচালনকারী
-  route_symbol: ''
-  subroutes_title: ''
-  superroutes_title: ''
-  symbol: ''
-  tags:
-    key: ''
-    title: ''
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: ওয়েবসাইট
-  wikipedia: ''
   zoom_to: মানচিত্রে দেখান
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
     altitude: উচ্চতা (মি)
     distance: দূরত্ব (কিমি)
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: ত্রুটি
 headline:
   last_update: সর্বশেষ হালনাগাদ
 help: মানচিত্র সম্পর্কে
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: পিছনে
-  background: ''
-  background_heading: ''
   examples: উদাহরণ
-  foreground: ''
-  foreground_heading: ''
-  preview: ''
   preview_heading: প্রাকদর্শন
 routelist:
-  close: ''
-  more: ''
-  rollup: ''
   title: রুট
 search:
-  places: ''
   routes: রুট
   title: অনুসন্ধান
 settings:
-  base_map: ''
-  browser_language: ''
-  hillshading_layer: ''
   language: ভাষা
-  route_layer: ''
-  title: ''
   transparency: মানচিত্রের স্বচ্ছতা
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: সাইকেল করার পথ
   hiking: পায়ে চলা পথ
   mtb: পাহাড়ী পথ (MTB)
-  osmc_symbol: ''
   riding: অশ্বারোহন
-  skating: ''
-  slopes: ''
-
+...

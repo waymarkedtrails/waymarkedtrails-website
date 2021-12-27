@@ -1,19 +1,14 @@
-# Translation of Waymarked Trails Website to Western Frisian (Frysk)
+# Messages for Western Frisian (Frysk)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: PiefPafPier
 # Author: Robin van der Vliet
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Kaartdata © [OpenStreetMap](https://www.openstreetmap.org) ûnder [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: elevaasjedata troch [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Mear gegevens
-  no_data: ''
   title: Bestimmingen
 details:
   GPX: GPX
@@ -24,20 +19,10 @@ details:
   note: Tink derom
   official_len: Offisjele ôfstân
   operator: Behearder
-  route_symbol: ''
   subroutes_title: Parten
   superroutes_title: Part fan
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap-lebels
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Webstee
   wikipedia: Wikipedy
   zoom_to: Op 'e kaart oanjaan
@@ -48,31 +33,19 @@ elevation:
     altitude: Hichte (m)
     distance: Ofstân (km)
   title: Elevaasjeprofyl
-  total: ''
   unavailable: Gjin elevaasjedata fûn.
   warn_unsorted: De rûte is mooglik net oardere of folslein. De elevaasjegegevens
     kinne ûnkrekt wêze.
 error:
   load_error: Ferbiningsflater mei de tsjinner.
-  missing_id: ''
-  missing_query: ''
   panel_title: Flater
 headline:
   last_update: Lêst bywurke
 help: Oer de kaart
 locate_me: Fyn my
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: ôfdaling
+  node: knooppunterûtes
 osmc_symbol:
   back: Werom
   background: De eftergrûn wurket op deselde wize. Dy bestiet ek út in kleur en in
@@ -85,15 +58,15 @@ osmc_symbol:
     werkent. Hy werkent ek foargrûnen dy't inkeld de namme fan 'e foarm befetsje.
     De symboalen dêrfoar steane yn 'e lêste kolom.
   foreground_heading: Foargrûn
-  preview: ''
+  preview: |-
+    Typ in wearde foar osmc:symbol yn it ynfierfek hjirûnder,
+         om te sjen hoe't it op 'e kaart ôfbylde wurdt.
   preview_heading: Proefbyld
 routelist:
   close: Slute
-  more: ''
   rollup: Oprôlje
   title: Rûtes
 search:
-  places: ''
   routes: Rûtes
   title: Sykje
 settings:
@@ -104,19 +77,11 @@ settings:
   route_layer: Rûtelaach
   title: Kaartynstellings
   transparency: Kaarttrochsichtigens
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Fytse
   hiking: Kuierje
   mtb: Terreinfytse
-  osmc_symbol: ''
   riding: Hynsteride
   skating: Skeelerje
   slopes: Wintersportpystes
-
+...

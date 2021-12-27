@@ -1,20 +1,15 @@
-# Translation of Waymarked Trails Website to British English (British English)
+# Messages for British English (British English)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Andibing
 # Author: Cblair91
 # Author: Pierpao
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Map data © [OpenStreetMap](http://www.openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright)
   elevation_title: elevation data by [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: More details
-  no_data: ''
   title: Destinations
 details:
   GPX: GPX
@@ -25,22 +20,11 @@ details:
   note: Note
   official_len: Official length
   operator: Operator
-  route_symbol: ''
   subroutes_title: Sections
   superroutes_title: Part of
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap tags
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Website
-  wikipedia: ''
   zoom_to: Show on map
 elevation:
   ascent: Accumulated ascent
@@ -49,31 +33,19 @@ elevation:
     altitude: Altitude (m)
     distance: Distance (km)
   title: Elevation profile
-  total: ''
   unavailable: No elevation data found.
   warn_unsorted: Route is potentially unordered or incomplete. Elevation information
     might be inaccurate.
 error:
   load_error: Error connecting to server.
-  missing_id: ''
-  missing_query: ''
   panel_title: Error
 headline:
   last_update: Last update
 help: About the map
 locate_me: Locate me
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: downhill
+  node: node network connections
 osmc_symbol:
   back: Back
   background: The background works in a similar way. It also consists of a colour
@@ -86,15 +58,14 @@ osmc_symbol:
     also recognises foregrounds that consist only of the name of the shape. The symbols
     for those are shown in the last column.
   foreground_heading: Foreground
-  preview: ''
+  preview: Type an osmc:symbol value into the input field below to see how it will
+    be rendered on the map.
   preview_heading: Preview
 routelist:
   close: Close
-  more: ''
   rollup: Roll up
   title: Routes
 search:
-  places: ''
   routes: Routes
   title: Search
 settings:
@@ -105,19 +76,11 @@ settings:
   route_layer: Route layer
   title: Map settings
   transparency: Map transparency
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Cycling
   hiking: Hiking
   mtb: MTB
-  osmc_symbol: ''
   riding: Horse Riding
   skating: Inline Skating
   slopes: Winter Sport Slopes
-
+...

@@ -1,49 +1,26 @@
-# Translation of Waymarked Trails Website to Bulgarian (български)
+# Messages for Bulgarian (български)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: DCLXVI
 # Author: K2
 # Author: StanProg
 # Author: Ted Masters
 # Author: Vodnokon4e
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Картографски данни © [OpenStreetMap](https://www.openstreetmap.org) под [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: височинни данни от [SRTM/ASTER](help/acknowledgements)
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: Картирана дължина
   note: Бележка
   official_len: Официална дължина
   operator: Оператор
-  route_symbol: ''
   subroutes_title: Секции
   superroutes_title: Част от
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap тагове
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Уебсайт
   wikipedia: Уикипедия
-  zoom_to: ''
 elevation:
   ascent: Натрупано изкачване
   descent: Натрупано слизане
@@ -51,69 +28,31 @@ elevation:
     altitude: Височина (м)
     distance: Разстояние (км)
   title: Височинен профил
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: Грешка
 headline:
   last_update: Последно обновяване
-help: ''
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: Връщане
-  background: ''
   background_heading: Фон
-  examples: ''
-  foreground: ''
   foreground_heading: Основен цвят
-  preview: ''
-  preview_heading: ''
 routelist:
   close: Затваряне
-  more: ''
-  rollup: ''
   title: Маршрути
 search:
-  places: ''
   routes: Маршрути
   title: Търсене
 settings:
   base_map: Базова карта
-  browser_language: ''
   hillshading_layer: Светлосенки на релефа
   language: Език
   route_layer: Слой маршрути
-  title: ''
   transparency: Прозрачност картата
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Колоездене
   hiking: Туризъм
   mtb: МТБ
-  osmc_symbol: ''
   riding: Конна езда
   skating: Ролери
   slopes: Ски писти
-
+...

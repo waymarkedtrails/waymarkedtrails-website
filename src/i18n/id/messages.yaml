@@ -1,115 +1,39 @@
-# Translation of Waymarked Trails Website to Indonesian (Bahasa Indonesia)
+# Messages for Indonesian (Bahasa Indonesia)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Farras
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Data peta © [OpenStreetMap](http://www.openstreetmap.org) di bawah [ODbL](http://www.openstreetmap.org/copyright)
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: Ditampilkan di peta
   note: Catatan
   official_len: Panjang resmi
   operator: Operator
-  route_symbol: ''
   subroutes_title: Bagian
   superroutes_title: Bagian dari
-  symbol: ''
   tags:
-    key: ''
     title: Tag OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Situs web
-  wikipedia: ''
-  zoom_to: ''
-elevation:
-  ascent: ''
-  descent: ''
-  diagram:
-    altitude: ''
-    distance: ''
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: Kesalahan
 headline:
   last_update: Pemutakhiran terakhir
-help: ''
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
-  back: ''
-  background: ''
   background_heading: Latar belakang
-  examples: ''
-  foreground: ''
   foreground_heading: Latar depan
-  preview: ''
-  preview_heading: ''
 routelist:
-  close: ''
-  more: ''
-  rollup: ''
   title: Rute
 search:
-  places: ''
   routes: Rute
   title: Cari
 settings:
   base_map: Peta dasar
-  browser_language: ''
   hillshading_layer: Bayangan bukit
-  language: ''
   route_layer: Lapisan rute
-  title: ''
-  transparency: ''
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Bersepeda
   hiking: Mendaki
   mtb: MTB
-  osmc_symbol: ''
-  riding: ''
   skating: Sepatu Roda
-  slopes: ''
-
+...

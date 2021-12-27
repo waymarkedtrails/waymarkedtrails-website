@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Russian (русский)
+# Messages for Russian (русский)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Alexandr Efremov
 # Author: DCamer
 # Author: Eleferen
@@ -10,18 +10,13 @@
 # Author: Movses
 # Author: Okras
 # Author: Sagan
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Данные карты © [OpenStreetMap](https://www.openstreetmap.org) под лицензией
     [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: данные рельефа от [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Подробнее
-  no_data: ''
   title: Места назначения
 details:
   GPX: GPX
@@ -32,20 +27,10 @@ details:
   note: Примечание
   official_len: Официальная длина маршрута
   operator: Оператор
-  route_symbol: ''
   subroutes_title: Разделы
   superroutes_title: Часть
-  symbol: ''
   tags:
-    key: ''
     title: Теги OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Веб-сайт
   wikipedia: Википедия
   zoom_to: Показать на карте
@@ -56,31 +41,19 @@ elevation:
     altitude: Высота (м)
     distance: Расстояние (км)
   title: Профиль рельефа
-  total: ''
   unavailable: Не найдены данные о высотах рельефа
   warn_unsorted: Маршрут потенциально неупорядочен или неполон. Информация о высоте
     может быть неточной.
 error:
   load_error: Ошибка при подключении к серверу.
-  missing_id: ''
-  missing_query: ''
   panel_title: Ошибка
 headline:
   last_update: Последнее обновление
 help: О карте
 locate_me: Найдите меня
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: спуск
+  node: сетевые подключения узла
 osmc_symbol:
   back: Назад
   background: Фон работает похожим образом. Он тоже состоит из цвета и формы. Фон
@@ -93,15 +66,14 @@ osmc_symbol:
     также распознает фон, который состоит лишь из названия формы. Соответствующие
     символы показаны в последнем столбце.
   foreground_heading: Основной цвет
-  preview: ''
+  preview: Заполните поле ниже значением для "osmc:symbol" чтобы увидеть как будет
+    отображаться на карте.
   preview_heading: Предпросмотр
 routelist:
   close: Закрыть
-  more: ''
   rollup: Свернуть
   title: Маршруты
 search:
-  places: ''
   routes: Маршруты
   title: Найти
 settings:
@@ -112,19 +84,11 @@ settings:
   route_layer: Слой маршрутов
   title: Настройки карты
   transparency: Прозрачность карты
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Велоспорт
   hiking: Пешие прогулки
   mtb: Горный велоспорт
-  osmc_symbol: ''
   riding: Верховая езда
   skating: Роликовые коньки
   slopes: Склоны для зимних видов спорта
-
+...

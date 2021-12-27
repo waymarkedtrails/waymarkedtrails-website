@@ -1,115 +1,32 @@
-# Translation of Waymarked Trails Website to Burmese (မြန်မာဘာသာ)
+# Messages for Burmese (မြန်မာဘာသာ)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Dr Lotus Black
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
+---
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
-  mapped_len: ''
   note: မှတ်စု
-  official_len: ''
-  operator: ''
-  route_symbol: ''
   subroutes_title: အပိုင်းများ
-  superroutes_title: ''
-  symbol: ''
-  tags:
-    key: ''
-    title: ''
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: ဝဘ်ဆိုဒ်
   wikipedia: ဝီကီပီးဒီးယား
-  zoom_to: ''
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
-    altitude: ''
     distance: အကွာအဝေး (ကီလိုမီတာ)
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: အမှား
 headline:
   last_update: နောက်ဆုံး မွမ်းမံမှု
 help: မြေပုံအကြောင်း
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: နောက်သို့
-  background: ''
   background_heading: နောက်ခံ
   examples: ဥပမာများ
-  foreground: ''
   foreground_heading: ရှေ့ခံ
-  preview: ''
   preview_heading: ကြိုတင်အစမ်းကြည့်ရှုရန်
 routelist:
   close: ပိတ်ရန်
-  more: ''
-  rollup: ''
-  title: ''
 search:
-  places: ''
-  routes: ''
   title: ရှာဖွေရန်
 settings:
-  base_map: ''
-  browser_language: ''
-  hillshading_layer: ''
   language: ဘာသာစကား
-  route_layer: ''
   title: မြေပုံ အပြင်အဆင်များ
-  transparency: ''
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-site_title:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  osmc_symbol: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-
+...

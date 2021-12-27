@@ -6,6 +6,7 @@
 # Author: Damouns
 # Author: Gomoko
 # Author: JB
+# Author: Paraboule
 # Author: Pyrog
 # Author: Shirayuki
 # Author: Thibaut120094
@@ -157,12 +158,20 @@ hierarchies:
 osmc:
   title: La balise `osmc:symbol`
   text: |-
-    La balise `osmc:symbol` permet de décrire d’une façon lisible par une machine les symboles d’un itinéraire à partir de formes géométriques simples, comme on peut en trouver dans certains pays européens (particulièrement en Allemagne). La carte ne prend en charge qu’une partie de ce qui est décrit dans la page Wiki. Pour pouvoir apparaître sur la carte, la balise doit avoir le format suivant :
+    La balise `osmc:symbol` permet de décrire de manière lisible par une machine
+    des symboles d'itinéraire aux formes géométriques simples comme on en trouve dans certains
+    pays européens (et surtout en Allemagne). La carte ne
+    supporte seulement un sous-ensemble de ce qui est décrit sur la page Wiki. Afin d'être
+    être rendu sur la carte, la balise doit avoir le format suivant :
 
         osmc:symbol=waycolor:background:foreground:text:textcolor
 
     `waycolor` doit être présent mais est ignoré pour cette carte.
-    Un autre `foreground` n’est pas pris en charge. `text` et `textcolor` peuvent être omis.
+    Un second premier plan n'est pas supporté. `text` et `textcolor` peuvent être omis.
+    être omis.
+
+    Voir la page de balises [osmc:symbol](osmc_symbols.html) pour une liste de symboles qui sont supportés par Waymarked Trails.
+    supportés par Waymarked Trails.
 hikinglocal:
   title: Rendu localisé
   text: |-

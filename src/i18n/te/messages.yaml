@@ -1,117 +1,33 @@
-# Translation of Waymarked Trails Website to Telugu (తెలుగు)
+# Messages for Telugu (తెలుగు)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Chaduvari
 # Author: Kiranmayee
 # Author: Veeven
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
+---
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
-  mapped_len: ''
   note: గమనిక
   official_len: అధికారిక పొడవు
   operator: ఆపరేటరు
-  route_symbol: ''
   subroutes_title: విభాగాలు
   superroutes_title: ఇందులో భాగం
-  symbol: ''
   tags:
-    key: ''
     title: ఓపెన్ స్ట్రీట్ మాప్ చిహ్నం
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
-  website: ''
   wikipedia: వికీపీడియా
-  zoom_to: ''
-elevation:
-  ascent: ''
-  descent: ''
-  diagram:
-    altitude: ''
-    distance: ''
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: లోపం
 headline:
   last_update: చివరి మార్పు
-help: ''
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
-  back: ''
-  background: ''
   background_heading: వెనుతలం
-  examples: ''
-  foreground: ''
   foreground_heading: మునుతలం
-  preview: ''
-  preview_heading: ''
 routelist:
-  close: ''
-  more: ''
-  rollup: ''
   title: దారులు
 search:
-  places: ''
   routes: దారులు
   title: వెతుకు
 settings:
   base_map: మూల మ్యాపు
-  browser_language: ''
-  hillshading_layer: ''
   language: భాష
-  route_layer: ''
-  title: ''
   transparency: మ్యాపు పారదర్శకత
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-site_title:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  osmc_symbol: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-
+...

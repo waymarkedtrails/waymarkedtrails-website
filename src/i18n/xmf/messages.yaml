@@ -1,44 +1,22 @@
-# Translation of Waymarked Trails Website to Mingrelian (მარგალური)
+# Messages for Mingrelian (მარგალური)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Narazeni
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
+---
 destination_sign:
   more: უმოსი დეტალეფი
-  no_data: ''
   title: მალობეფი
 details:
   GPX: GPX
   KML: KML
   altitude: სიმაღალა
   image: სურათი
-  mapped_len: ''
   note: ხვილაფა
-  official_len: ''
   operator: ოპერატორი
-  route_symbol: ''
   subroutes_title: გიმნართეფი
-  superroutes_title: ''
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap ხინტკეფი
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: ვებ-ხასჷლა
-  wikipedia: ''
   zoom_to: რუკას ძირაფა
 elevation:
   ascent: ართამი ეშულა
@@ -47,69 +25,32 @@ elevation:
     altitude: სიმაღალა (მ)
     distance: მეძენა (კმ)
   title: რელიეფიშ პროფილი
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
   load_error: სერვერშა მერსხუაფაშ ჩილათა.
-  missing_id: ''
-  missing_query: ''
   panel_title: ჩილათა
 headline:
   last_update: ბოლო გოახალაფა
 help: რუკაშ გეშა
 locate_me: დობგორით
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: უკახალე
-  background: ''
   background_heading: ფონი
   examples: სამანგეფი
-  foreground: ''
   foreground_heading: თარი ფერი
-  preview: ''
   preview_heading: გიწოთოლორაფა
 routelist:
   close: კილუა
-  more: ''
   rollup: ტყობინაფა
   title: მარშრუტეფი
 search:
-  places: ''
   routes: მარშრუტეფი
   title: გორუა
 settings:
   base_map: საბაზე რუკა
-  browser_language: ''
   hillshading_layer: რელიეფიშ ლანდი
   language: ნინა
-  route_layer: ''
   title: რუკაშ პარამეტრეფი
-  transparency: ''
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: ველოსპორტი
-  hiking: ''
-  mtb: ''
-  osmc_symbol: ''
   riding: ცხენენჯუა
-  skating: ''
-  slopes: ''
-
+...

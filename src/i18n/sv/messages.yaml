@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Swedish (svenska)
+# Messages for Swedish (svenska)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Cybjit
 # Author: Danieldegroot2
 # Author: Fader
@@ -11,17 +11,12 @@
 # Author: Tobulos1
 # Author: Warrakkk
 # Author: WikiPhoenix
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Kartdata © [OpenStreetMap](https://www.openstreetmap.org) under licensen [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: höjddata från [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Mer detaljer
-  no_data: ''
   title: Destinationer
 details:
   GPX: GPX
@@ -32,20 +27,10 @@ details:
   note: Not
   official_len: Officiell längd
   operator: Ansvariga
-  route_symbol: ''
   subroutes_title: Delar
   superroutes_title: Del av
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap-taggar
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Webbsida
   wikipedia: Wikipedia
   zoom_to: Visa på karta
@@ -56,31 +41,18 @@ elevation:
     altitude: Höjd (m)
     distance: Avstånd (km)
   title: Höjdprofil
-  total: ''
   unavailable: Inga höjddata hittades.
   warn_unsorted: Rutten är förmodligen oordnad eller ofullständig. Elevationsinformationen
     kan vara felaktig.
 error:
   load_error: Fel vid anslutning till server.
-  missing_id: ''
-  missing_query: ''
   panel_title: Fel
 headline:
   last_update: Senast uppdaterat
 help: Om kartan
 locate_me: Hitta mig
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: störtlopp
 osmc_symbol:
   back: Tillbaka
   background: Bakgrunden fungerar på ett liknande sätt. Den består också av en färg
@@ -93,15 +65,14 @@ osmc_symbol:
     även igen förgrunder som endast består av namnet på formen. Symbolerna för dessa
     visas i den sista kolumnen.
   foreground_heading: Förgrund
-  preview: ''
+  preview: Skriv in ett osmc:symbolvärde i inmatningsfältet nedan för att se hur det
+    kommer se ut på kartan.
   preview_heading: Förhandsgranska
 routelist:
   close: Stäng
-  more: ''
   rollup: Rulla upp
   title: Rutter
 search:
-  places: ''
   routes: Rutter
   title: Sök
 settings:
@@ -112,19 +83,11 @@ settings:
   route_layer: Rutter
   title: Kartinställningar
   transparency: Kartgenomskinlighet
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Cykelrutt
   hiking: Vandringsled
   mtb: Mountainbikerutt
-  osmc_symbol: ''
   riding: Ridning
   skating: Inline skating-rutt
   slopes: Vintersportbackarna
-
+...

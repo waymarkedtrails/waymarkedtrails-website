@@ -1,116 +1,32 @@
-# Translation of Waymarked Trails Website to Southern Balochi (جهلسری بلوچی)
+# Messages for Southern Balochi (جهلسری بلوچی)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Baloch Afghanistan
 # Author: FarsiNevis
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
+---
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
-  mapped_len: ''
   note: نکته
   official_len: Official length
   operator: اوپیراتور
-  route_symbol: ''
   subroutes_title: بخش‌ها
   superroutes_title: بخشی شه
-  symbol: ''
   tags:
-    key: ''
     title: برچسب‌های نقشه باز شهری
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: وب سایت
-  wikipedia: ''
-  zoom_to: ''
-elevation:
-  ascent: ''
-  descent: ''
-  diagram:
-    altitude: ''
-    distance: ''
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: خطا
 headline:
   last_update: آخرین روزآمدسازی
-help: ''
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
-  back: ''
-  background: ''
   background_heading: پیش‌زمینه
-  examples: ''
-  foreground: ''
-  foreground_heading: ''
-  preview: ''
-  preview_heading: ''
 routelist:
-  close: ''
-  more: ''
-  rollup: ''
   title: مسیرها
 search:
-  places: ''
   routes: مسیرها
-  title: ''
 settings:
   base_map: تقشه پایه
-  browser_language: ''
   hillshading_layer: سایه تپه
   language: زبان
   route_layer: لایه مسیر
-  title: ''
   transparency: شفافیت نقشه
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-site_title:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  osmc_symbol: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-
+...

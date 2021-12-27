@@ -1,20 +1,14 @@
-# Translation of Waymarked Trails Website to Tatar (Cyrillic script) (татарча)
+# Messages for Tatar (Cyrillic script) (татарча)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Ерней
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: © [OpenStreetMap](https://www.openstreetmap.org) харитасы мәгълүматлары [ODbL](https://www.openstreetmap.org/copyright)
     рөхсәтнамәсе астында
   elevation_title: '[SRTM/ASTER](help/acknowledgements) тарафыннан биеклек мәгълүматлары'
 destination_sign:
   more: Тулырак
-  no_data: ''
-  title: ''
 details:
   GPX: GPX
   KML: KML
@@ -24,22 +18,11 @@ details:
   note: Искәрмә
   official_len: Рәсми озынлык
   operator: Оператор
-  route_symbol: ''
   subroutes_title: Бүлекләр
   superroutes_title: Өлеш
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap тамгалары
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Веб-сәхифә
-  wikipedia: ''
   zoom_to: Харитада күрсәтү
 elevation:
   ascent: Тупланган менеш
@@ -48,46 +31,27 @@ elevation:
     altitude: Югарылык (м)
     distance: Ераклык (км)
   title: Биеклек өске йөзе
-  total: ''
   unavailable: Биеклек мәгълүматлары табылмаган.
-  warn_unsorted: ''
 error:
   load_error: Сервер белән тоташтыру хатасы.
-  missing_id: ''
-  missing_query: ''
   panel_title: Хата
 headline:
   last_update: Соңгы яңарту
 help: Харита турында
 locate_me: Табыгыз мине
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: төшү юлы
 osmc_symbol:
   back: Кирегә
-  background: ''
   background_heading: Җирлек
   examples: Мисаллар
-  foreground: ''
   foreground_heading: Төп төс
-  preview: ''
   preview_heading: Алдан карау
 routelist:
   close: Ябу
-  more: ''
   rollup: Җыярга
   title: Маршрутлар
 search:
-  places: ''
   routes: Маршрутлар
   title: Эзләү
 settings:
@@ -98,19 +62,11 @@ settings:
   route_layer: Маршрут катламы
   title: Харита көйләнмәләре
   transparency: Харита үтәкүренмәлеге
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Велоспорт
   hiking: Йөреп кайту
   mtb: Таулы велоспорт
-  osmc_symbol: ''
   riding: Атланып йөрү
   skating: Тәгәрмәчле тимераяк шуу
   slopes: Кышкы спорт өчен тау битләре
-
+...

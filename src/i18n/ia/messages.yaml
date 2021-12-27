@@ -1,18 +1,13 @@
-# Translation of Waymarked Trails Website to Interlingua (interlingua)
+# Messages for Interlingua (interlingua)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: McDutchie
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Datos cartographic © [OpenStreetMap](https://www.openstreetmap.org) sub [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: datos altimetric per [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Plus detalios
-  no_data: ''
   title: Destinationes
 details:
   GPX: GPX
@@ -23,22 +18,11 @@ details:
   note: Nota
   official_len: Distantia official
   operator: Operator
-  route_symbol: ''
   subroutes_title: Sectiones
   superroutes_title: Parte de
-  symbol: ''
   tags:
-    key: ''
     title: Etiquettas de OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Sito web
-  wikipedia: ''
   zoom_to: Monstrar in carta
 elevation:
   ascent: Ascension accumulate
@@ -47,31 +31,19 @@ elevation:
     altitude: Altitude (m)
     distance: Distantia (km)
   title: Profilo altimetric
-  total: ''
   unavailable: Nulle datos de elevation trovate.
   warn_unsorted: Le itinerario es possibilemente non ordinate o incomplete. Le information
     de elevation pote esser inexacte.
 error:
   load_error: Error de connexion al servitor.
-  missing_id: ''
-  missing_query: ''
   panel_title: Error
 headline:
   last_update: Ultime actualisation
 help: A proposito del carta
 locate_me: Localisar me
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: descendita
+  node: connexiones de nodos de rete
 osmc_symbol:
   back: Retornar
   background: Le fundo functiona de maniera similar. Illo etiam consiste de un color
@@ -84,15 +56,15 @@ osmc_symbol:
     que iste sito recognosce. Le sito recognosce etiam prime planos que consiste solmente
     del nomine del forma. Le symbolos pro illos appare in le ultime columna.
   foreground_heading: Prime plano
-  preview: ''
+  preview: |-
+    Insere un valor osmc:symbol in le campo de entrata infra
+         pro vider como illo apparera sur le carta.
   preview_heading: Previsualisar
 routelist:
   close: Clauder
-  more: ''
   rollup: Inrolar
   title: Itinerarios
 search:
-  places: ''
   routes: Itinerarios
   title: Cercar
 settings:
@@ -103,19 +75,11 @@ settings:
   route_layer: Strato de itinerarios
   title: Optiones del carta
   transparency: Transparentia del carta
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Cyclismo
   hiking: Tourismo pedestre
   mtb: Bicycletta de montania
-  osmc_symbol: ''
   riding: Equitation
   skating: Patinage in linea
   slopes: Pistas de sport de hiberno
-
+...

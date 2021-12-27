@@ -1,116 +1,32 @@
-# Translation of Waymarked Trails Website to Malayalam (മലയാളം)
+# Messages for Malayalam (മലയാളം)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Akhilan
 # Author: Praveenp
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
+---
 details:
-  GPX: ''
-  KML: ''
-  altitude: ''
-  image: ''
-  mapped_len: ''
   note: കുറിപ്പ്
   official_len: ഔദ്യോഗിക നീളം
-  operator: ''
-  route_symbol: ''
   subroutes_title: പ്രദേശങ്ങൾ
   superroutes_title: ഭാഗമാണ്
-  symbol: ''
-  tags:
-    key: ''
-    title: ''
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: 'വെബ്‌സൈറ്റ്:'
-  wikipedia: ''
-  zoom_to: ''
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
     altitude: ഉയരം (മീ.)
     distance: ദൂരം (കി.മീ.)
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
-  load_error: ''
-  missing_id: ''
-  missing_query: ''
   panel_title: പിഴവ്
 headline:
   last_update: അവസാനം പുതുക്കിയത്
-help: ''
-locate_me: ''
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
-  back: ''
-  background: ''
   background_heading: പശ്ചാത്തലം
-  examples: ''
-  foreground: ''
   foreground_heading: പൂർവ്വതലം
-  preview: ''
-  preview_heading: ''
-routelist:
-  close: ''
-  more: ''
-  rollup: ''
-  title: ''
 search:
-  places: ''
-  routes: ''
   title: തിരയൂ
 settings:
   base_map: അടിസ്ഥാന ഭൂപടം
-  browser_language: ''
-  hillshading_layer: ''
   language: ഭാഷ
-  route_layer: ''
-  title: ''
   transparency: ഭൂപടത്തിന്റെ സുതാര്യത
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: സൈക്ലിങ്ങ്
-  hiking: ''
-  mtb: ''
-  osmc_symbol: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-
+...

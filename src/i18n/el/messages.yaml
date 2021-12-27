@@ -1,49 +1,25 @@
-# Translation of Waymarked Trails Website to Greek (Ελληνικά)
+# Messages for Greek (Ελληνικά)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Crazymadlover
 # Author: Evropi
 # Author: Glavkos
 # Author: NikosLikomitros
 # Author: Nikosgranturismogt
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
-  data: ''
   elevation_title: τα δεδομένα υψομέτρου παρέχονται από το [SRTM/ASTER](help/acknowledgements)
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
 details:
   GPX: GPX
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: Χαρτογραφημένο μήκος
   note: Σημείωση
   official_len: Επίσημο μήκος
   operator: Λειτουργός
-  route_symbol: ''
   subroutes_title: Ενότητες
   superroutes_title: Μέρος του
-  symbol: ''
   tags:
-    key: ''
     title: ετικέτες OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Ιστότοπος
-  wikipedia: ''
-  zoom_to: ''
 elevation:
   ascent: Συσσωρευμένη άνοδος
   descent: Συσσωρευμένη κάθοδος
@@ -51,70 +27,38 @@ elevation:
     altitude: Υψόμετρο (σε μέτρα)
     distance: Απόσταση (χιλιόμετρα)
   title: Προφίλ υψόμετρου
-  total: ''
-  unavailable: ''
   warn_unsorted: Η διαδρομή είναι πιθανώς εκτός σειράς ή ανολοκλήρωτη. Οι πληροφορίες
     υψομέτρου μπορεί να μην είναι σωστές.
 error:
   load_error: Σφάλμα σύνδεσης στο διακομιστή.
-  missing_id: ''
-  missing_query: ''
   panel_title: Σφάλμα
 headline:
   last_update: Τελευταία ενημέρωση
 help: Σχετικά με τον χάρτη
 locate_me: Εντόπισε με
-network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
 osmc_symbol:
   back: Πίσω
-  background: ''
   background_heading: Φόντο
   examples: Παραδείγματα
-  foreground: ''
   foreground_heading: Πρώτο πλάνο
-  preview: ''
-  preview_heading: ''
 routelist:
   close: Κλείσιμο
-  more: ''
-  rollup: ''
   title: Διαδρομές
 search:
-  places: ''
   routes: Διαδρομές
   title: Αναζήτηση
 settings:
   base_map: Βασικός χάρτη
   browser_language: Χρησιμοποιήστε ρυθμίσεις φυλλομετρητή
-  hillshading_layer: ''
   language: Γλώσσα
   route_layer: Στρώση δρομολογίων
   title: Ρυθμίσεις χάρτη
   transparency: Διαφάνεια χάρτη
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Ποδηλασία
   hiking: Πεζοπορία
   mtb: Ποδηλατική Ορειβασία
-  osmc_symbol: ''
   riding: Ιππασία
   skating: Τροχοπέδιλα
   slopes: Πλαγιές χειμερινών αθλημάτων
-
+...

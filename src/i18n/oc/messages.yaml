@@ -1,47 +1,24 @@
-# Translation of Waymarked Trails Website to Occitan (occitan)
+# Messages for Occitan (occitan)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Cedric31
 # Author: Shirayuki
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Donadas cartograficas © [OpenStreetMap](http://www.openstreetmap.org) jos
     [ODbL](http://www.openstreetmap.org/copyright)
   elevation_title: donnadas altimetricas per [SRTM/ASTER](help/acknowledgements)
-destination_sign:
-  more: ''
-  no_data: ''
-  title: ''
 details:
   GPX: GPX
-  KML: ''
-  altitude: ''
-  image: ''
   mapped_len: Longor cartografiada
   note: Nòta
   official_len: Longor oficiala
   operator: Operador
-  route_symbol: ''
   subroutes_title: Seccions
   superroutes_title: Aparten a
-  symbol: ''
   tags:
-    key: ''
     title: Balisas OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Site web
-  wikipedia: ''
-  zoom_to: ''
 elevation:
   ascent: Montada cumulada
   descent: Davalada cumulada
@@ -49,46 +26,23 @@ elevation:
     altitude: Altitud (m)
     distance: Distància (km)
   title: Perfil d’altitud
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
   load_error: Error de connexion al servidor.
-  missing_id: ''
-  missing_query: ''
   panel_title: Error
 headline:
   last_update: Darrièra mesa a jorn
-help: ''
 locate_me: Me localizar
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: davalada
 osmc_symbol:
   back: Retorn
-  background: ''
   background_heading: Rèireplan
-  examples: ''
-  foreground: ''
   foreground_heading: Primièr plan
-  preview: ''
-  preview_heading: ''
 routelist:
   close: Tampar
-  more: ''
   rollup: Enrotlar
   title: Itineraris
 search:
-  places: ''
   routes: Itineraris
   title: Recercar
 settings:
@@ -99,19 +53,11 @@ settings:
   route_layer: Calc dels itineraris
   title: Paramètres de la mapa
   transparency: Transparéncia de la mapa
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: A bicicleta
   hiking: A pè
   mtb: A VTT
-  osmc_symbol: ''
   riding: Equitacion
   skating: En rollers
   slopes: Pistas d'espòrt d’ivèrn
-
+...

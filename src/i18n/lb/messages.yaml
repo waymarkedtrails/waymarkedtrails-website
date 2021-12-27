@@ -1,115 +1,64 @@
-# Translation of Waymarked Trails Website to Luxembourgish (Lëtzebuergesch)
+# Messages for Luxembourgish (Lëtzebuergesch)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Robby
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
-attribution:
-  data: ''
-  elevation_title: ''
+---
 destination_sign:
   more: Méi Detailer
-  no_data: ''
   title: Destinatiounen
 details:
   GPX: GPX
-  KML: ''
   altitude: Héicht
   image: Bild
-  mapped_len: ''
   note: Notiz
   official_len: Offiziell Längt
-  operator: ''
-  route_symbol: ''
   subroutes_title: Abschnitter
   superroutes_title: Deel vu(n)
-  symbol: ''
+  symbol: Symbol
   tags:
-    key: ''
-    title: ''
-    value: ''
+    key: Schlëssel
+    value: Wäert
   type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
+    relation: Relatioun
+    way: Wee
   website: Internetsite
-  wikipedia: ''
   zoom_to: Op der Kaart weisen
 elevation:
-  ascent: ''
-  descent: ''
   diagram:
     altitude: Héicht(m)
     distance: Distanz (km)
-  title: ''
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
+  total: Gesamthéicht
 error:
   load_error: Feeler beim Verbanne mam Server.
-  missing_id: ''
-  missing_query: ''
   panel_title: Feeler
 headline:
   last_update: Lescht Aktualiséierung
 help: Iwwer dës Kaart
 locate_me: Mech lokaliséieren
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: Biergof
+  national: National Stroossen
+  other: Aner Routen
+  regional: Regional Stroossen
+  skitour: Schi-Touren
 osmc_symbol:
   back: Zréck
-  background: ''
   background_heading: Hannergrond
   examples: Beispiller
-  foreground: ''
   foreground_heading: Vierdergrond
-  preview: ''
   preview_heading: Kucken ouni ze späicheren
 routelist:
   close: Zoumaachen
-  more: ''
-  rollup: ''
   title: Strecken
 search:
-  places: ''
+  places: Plazen
   routes: Strecken
   title: Sichen
 settings:
   base_map: Basiskaart
-  browser_language: ''
-  hillshading_layer: ''
   language: Sprooch
-  route_layer: ''
   title: Astellunge vun der Kaart
-  transparency: ''
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Mam Vëlo
   hiking: Zu Fouss
-  mtb: ''
-  osmc_symbol: ''
-  riding: ''
-  skating: ''
-  slopes: ''
-
+...

@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Simplified Chinese (中文（简体）)
+# Messages for Simplified Chinese (中文（简体）)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Anakmalaysia
 # Author: Assoc
 # Author: Deathkon
@@ -13,17 +13,12 @@
 # Author: VulpesVulpes825
 # Author: Yfdyh000
 # Author: 沈澄心
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: 地图数据©[OpenStreetMap](https://www.openstreetmap.org)基于[ODbL](https://www.openstreetmap.org/copyright)授权
   elevation_title: 海拔数据由[SRTM/ASTER](help/acknowledgements)提供
 destination_sign:
   more: 详情
-  no_data: ''
   title: 目的地
 details:
   GPX: GPX
@@ -34,20 +29,10 @@ details:
   note: 注意
   official_len: 官方长度
   operator: 操作者
-  route_symbol: ''
   subroutes_title: 部分
   superroutes_title: 一部分
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap 标志
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: 网站
   wikipedia: 维基百科
   zoom_to: 在地图上显示
@@ -58,30 +43,18 @@ elevation:
     altitude: 海拔高度（米）
     distance: 距离（公里）
   title: 海拔配置文件
-  total: ''
   unavailable: 没有查到海拔数据
   warn_unsorted: 路线可能无序或不完整。海拔信息可能不准确。
 error:
   load_error: 连接至服务器时出错。
-  missing_id: ''
-  missing_query: ''
   panel_title: 错误
 headline:
   last_update: 最后更新
 help: 关于地图
 locate_me: 找到我
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: 下坡
+  node: 节点网络连接
 osmc_symbol:
   back: 返回
   background: 背景以类似方式工作。它也由颜色和形状构成。背景也可以只是一个颜色名（这会产生一个选定颜色的画布）。这显示在第一行。
@@ -89,15 +62,15 @@ osmc_symbol:
   examples: 示例
   foreground: 前景符号由一个颜色和一个由下划线连接的形状组成。下表显示了本网站所认可的所有组合。它还可以识别仅包含形状名称的前景。这些符号显示在最后一列。
   foreground_heading: 前景
-  preview: ''
+  preview: |-
+    在下面的输入框中键osmc:symbol值
+         看看它将如何在地图上呈现。
   preview_heading: 预览
 routelist:
   close: 关闭
-  more: ''
   rollup: 卷起
   title: 路线
 search:
-  places: ''
   routes: 路线
   title: 搜索
 settings:
@@ -108,19 +81,11 @@ settings:
   route_layer: 路线层
   title: 地图设置
   transparency: 地图透明度
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: 骑脚踏车
   hiking: 徒步旅行
   mtb: MTB
-  osmc_symbol: ''
   riding: 骑马
   skating: 轮滑
   slopes: 冬季斜坡运动
-
+...

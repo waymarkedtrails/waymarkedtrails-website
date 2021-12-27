@@ -1,51 +1,42 @@
-# Translation of Waymarked Trails Website to Finnish (suomi)
+# Messages for Finnish (suomi)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Lliehu
+# Author: MITO
 # Author: Nedergard
 # Author: Nike
 # Author: Pyscowicz
 # Author: Silvonen
 # Author: Snidata
 # Author: Veikk0.ma
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Kartta-aineisto © [OpenStreetMap](https://www.openstreetmap.org)  [ODbL-lisenssillä](https://www.openstreetmap.org/copyright)
   elevation_title: korkeustiedot tarjoaa [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Lisätiedot
-  no_data: ''
-  title: ''
+  no_data: Tämän tienviitan kohdetietoja ei ole saatavilla.
 details:
   GPX: GPX
-  KML: ''
   altitude: Korkeus
   image: Kuva
   mapped_len: Kartoitettu pituus
   note: Lisätietoja
   official_len: Virallinen pituus
   operator: Ylläpitäjä
-  route_symbol: ''
   subroutes_title: Osuudet
   superroutes_title: Osa reittiä
-  symbol: ''
+  symbol: Symboli
   tags:
-    key: ''
+    key: avain
     title: OpenStreetMap-tagi
-    value: ''
+    value: arvo
   type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
+    guidepost: Tienviitta
+    node: Piste
+    relation: Relaatio
+    way: Tie
   website: Verkkosivusto
-  wikipedia: ''
-  zoom_to: ''
 elevation:
   ascent: Kertynyt nousu
   descent: Kertynyt laskeutuminen
@@ -53,47 +44,37 @@ elevation:
     altitude: Korkeus (m)
     distance: Etäisyys (km)
   title: Korkeusprofiili
-  total: ''
-  unavailable: ''
+  total: Kokonaiskorkeus
   warn_unsorted: Reitti on mahdollisesti epäjärjestyksessä tai epätäydellinen. Korkeustiedot
     voivat olla epätarkkoja.
 error:
   load_error: Virhe yhdistettäessä palvelimeen.
-  missing_id: ''
-  missing_query: ''
   panel_title: Virhe
 headline:
   last_update: Viimeisin päivitys
 help: Tietoa kartasta
 locate_me: Etsi minulle
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: Alamäki
+  national: Valtakunnalliset reitit
+  nordic: Pohjoismainen hiihto
+  regional: Alueelliset reitit
+  skitour: Hiihtomatkat
+  sled: Pulkkamäki
+  sleigh: Rekirinne
+  winter_hike: Talvivaellus
 osmc_symbol:
   back: Takaisin
-  background: ''
   background_heading: Tausta
   examples: Esimerkit
-  foreground: ''
   foreground_heading: Symboli
-  preview: ''
-  preview_heading: ''
 routelist:
   close: Sulje
-  more: ''
+  more: Tarkenna nähdäksesi lisää reittejä.
   rollup: Roll up
   title: Reitit
 search:
-  places: ''
+  places: Paikat
   routes: Reitit
   title: Haku
 settings:
@@ -105,18 +86,16 @@ settings:
   title: Kartta-asetukset
   transparency: Kartan läpinäkyvyys
 site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
+  cycling: Paikallisia ja pitkän matkan pyöräilyreittejä, karttoja ja tietoja OpenStreetMapista.
+  riding: Ratsastusreitit, karttojen ja tietojen kanssa OpenStreetMapista.
+  skating: Rullaluistelureitit, karttoja ja tietoja OpenStreetMapista.
+  slopes: Talviurheilurinteet, laskettelu, murtomaaluistelu, talvikävely, karttoja
+    ja tietoja OpenStreetMapista.
 site_title:
   cycling: Pyöräily
   hiking: Vaellus
   mtb: Maastopyöräily
-  osmc_symbol: ''
   riding: Ratsastus
   skating: Rullaluistelu
   slopes: Talviurheilurinteet
-
+...

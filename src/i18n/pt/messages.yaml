@@ -1,6 +1,6 @@
-# Translation of Waymarked Trails Website to Portuguese (português)
+# Messages for Portuguese (português)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Athena in Wonderland
 # Author: Hamilton Abreu
 # Author: Imperadeiro98
@@ -9,18 +9,13 @@
 # Author: Rsbarbosa
 # Author: Ruila
 # Author: Vitorvicentevalente
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: Dados cartográficos © [OpenStreetMap](https://www.openstreetmap.org) sob a
     licença [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: dados de elevação por [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Mais detalhes
-  no_data: ''
   title: Destinos
 details:
   GPX: GPX
@@ -31,22 +26,11 @@ details:
   note: Nota
   official_len: Comprimento oficial
   operator: Operador
-  route_symbol: ''
   subroutes_title: Secções
   superroutes_title: Parte de
-  symbol: ''
   tags:
-    key: ''
     title: Etiquetas do OpenStreetMap
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: Sítio na Internet
-  wikipedia: ''
   zoom_to: Mostrar no mapa
 elevation:
   ascent: Ascensão acumulada
@@ -55,31 +39,19 @@ elevation:
     altitude: Altitude (m)
     distance: Distância (km)
   title: Perfil de elevação
-  total: ''
   unavailable: Não foram encontrados dados da elevação.
   warn_unsorted: A rota provavelmente está incompleta e desordenada. A informação
     da elevação pode ter pouca precisão.
 error:
   load_error: Ocorreu um erro na ligação ao servidor.
-  missing_id: ''
-  missing_query: ''
   panel_title: Erro
 headline:
   last_update: Última atualização
 help: Sobre o mapa
 locate_me: Localizar-me
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: downhill
+  node: ligações de rede do nó
 osmc_symbol:
   back: Retroceder
   background: O fundo funciona de maneira parecida. Também contém uma cor e uma forma.
@@ -92,15 +64,15 @@ osmc_symbol:
     por este sítio. Também reconhece os primeiros planos que são formados apenas pelo
     nome da forma. Os símbolos para estes são mostrados na última coluna.
   foreground_heading: Primeiro plano
-  preview: ''
+  preview: |-
+    Introduza um valor osmc:symbol no campo de entrada abaixo
+         para ver como ele será representado no mapa.
   preview_heading: Antever
 routelist:
   close: Fechar
-  more: ''
   rollup: Contrair
   title: Rotas
 search:
-  places: ''
   routes: Rotas
   title: Pesquisa
 settings:
@@ -111,19 +83,11 @@ settings:
   route_layer: Camada de rotas
   title: Definições do mapa
   transparency: Transparência do mapa
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: Ciclismo
   hiking: Pedestrianismo
   mtb: BTT
-  osmc_symbol: ''
   riding: Corridas de Cavalos
   skating: Patinagem em Linha
   slopes: Pistas de desportos de inverno
-
+...

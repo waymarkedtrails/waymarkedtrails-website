@@ -1,25 +1,19 @@
-# Translation of Waymarked Trails Website to Korean (한국어)
+# Messages for Korean (한국어)
 # Exported from translatewiki.net
-#
+# Export driver: phpyaml
 # Author: Garam
 # Author: Idh0854
 # Author: Jerrykim306
 # Author: Kurousagi
 # Author: Ykhwong
 # Author: 아라
-# --
-# This file is part of the Waymarked Trails Map Project
-# Copyright (C) 2011-2016
-# This file is distributed under the same license as the main package.
-#
+---
 attribution:
   data: 지도 데이터는 © [OpenStreetMap](https://www.openstreetmap.org) [ODbL](https://www.openstreetmap.org/copyright)에
     따라 제공
   elevation_title: 고도 데이터는 [SRTM/ASTER](help/acknowledgements) 제공
 destination_sign:
   more: 자세한 내용
-  no_data: ''
-  title: ''
 details:
   GPX: GPX
   KML: KML
@@ -29,20 +23,10 @@ details:
   note: 참고
   official_len: 공식 거리
   operator: 운영자
-  route_symbol: ''
   subroutes_title: 부분
   superroutes_title: '다음의 부분:'
-  symbol: ''
   tags:
-    key: ''
     title: OpenStreetMap 태그
-    value: ''
-  type:
-    guidepost: ''
-    node: ''
-    relation: ''
-    way: ''
-    wayset: ''
   website: 웹사이트
   wikipedia: 위키백과
   zoom_to: 지도에 보이기
@@ -53,46 +37,25 @@ elevation:
     altitude: 고도 (m)
     distance: 거리 (km)
   title: 고도 프로필
-  total: ''
-  unavailable: ''
-  warn_unsorted: ''
 error:
   load_error: 서버 연결 오류.
-  missing_id: ''
-  missing_query: ''
   panel_title: 오류
 headline:
   last_update: 최근 업데이트
 help: 지도 정보
-locate_me: ''
 network:
-  continental: ''
-  downhill: ''
-  national: ''
-  node: ''
-  nordic: ''
-  other: ''
-  regional: ''
-  skitour: ''
-  sled: ''
-  sleigh: ''
-  winter_hike: ''
+  downhill: 내리막길
+  node: 노드 네트워크 연결
 osmc_symbol:
   back: 뒤로
-  background: ''
   background_heading: 배경
   examples: 예시
-  foreground: ''
   foreground_heading: 전경
-  preview: ''
   preview_heading: 미리 보기
 routelist:
   close: 닫기
-  more: ''
-  rollup: ''
   title: 노선
 search:
-  places: ''
   routes: 노선
   title: 검색
 settings:
@@ -103,19 +66,11 @@ settings:
   route_layer: 경로 레이어
   title: 지도 설정
   transparency: 지도 투명도
-site_description:
-  cycling: ''
-  hiking: ''
-  mtb: ''
-  riding: ''
-  skating: ''
-  slopes: ''
 site_title:
   cycling: 자전거 타기
   hiking: 하이킹
   mtb: 산악 자전거
-  osmc_symbol: ''
   riding: 승마
   skating: 인라인 스케이팅
   slopes: 동계 종목 슬로프
-
+...
