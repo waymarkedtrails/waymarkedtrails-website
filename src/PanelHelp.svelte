@@ -107,6 +107,10 @@
         padding-left: 20px;
     }
 
+    .content :global(pre) {
+        background-color: white;
+    }
+
     h1.level-0 {
         font-size: 1.6em;
         padding-top: 20px;
