@@ -67,7 +67,7 @@ osmc_symbol:
   back: Back
   background: The background works in a similar way. It also consists of a color and
     a shape. The background may also be only a color name which results in a canvas
-    of the choosen color.This is shown in the first row.
+    of the chosen color.This is shown in the first row.
   background_heading: Background
   examples: Examples
   foreground: The foreground symbol consists of a color and a shape linked by an underscore.
