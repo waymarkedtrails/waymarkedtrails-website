@@ -38,7 +38,7 @@ elevation:
     altitude: Altitude (m)
     distance: Distance (km)
   title: Elevation profile
-  total: Total elevation
+  total: Total ascent/descent
   unavailable: No elevation data found.
   warn_unsorted: Route is potentially unordered or incomplete. Elevation information
     might be inaccurate.
