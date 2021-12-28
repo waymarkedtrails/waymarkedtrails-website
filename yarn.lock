@@ -1275,15 +1275,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"marked@npm:^4.0.5":
-  version: 4.0.5
-  resolution: "marked@npm:4.0.5"
-  bin:
-    marked: bin/marked.js
-  checksum: c9ab69cf846f4deaaf984cc596923c3251243701f005cee999ee55b704ceb46dd5c9ff454ae774d03eaf725654aed593a3461211076e6a412f1352a2df426d4d
-  languageName: node
-  linkType: hard
-
 "mdurl@npm:^1.0.1":
   version: 1.0.1
   resolution: "mdurl@npm:1.0.1"
@@ -2254,7 +2245,6 @@ resolve@^1.19.0:
     d3-selection: ^2.0.0
     d3-shape: ^2.1.0
     markdown-it: ^12.3.0
-    marked: ^4.0.5
     node-static: ^0.7.11
     ol: ^6.5.0
     rollup: ^2.60.2

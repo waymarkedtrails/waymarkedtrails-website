@@ -14,19 +14,19 @@ about:
         This map shows marked winter sport slopes around the world.
     osm: |
         The routes are overlayed on the standard OpenStreetMap and optionally a hillshading layer. The route map is generated from
-        data from the [OpenStreetMap](http://www.openstreetmap.org) (OSM)
+        data from the [OpenStreetMap](https://www.openstreetmap.org) (OSM)
         project. OSM is a freely editable world map where anybody can
         participate. Which means that it is by no means complete,
         but it also means that you can contribute by adding new routes and
         correcting mistakes in existing ones. To find out more about
         OpenStreetMap, see the
-        [Beginner's guide](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
+        [Beginner's guide](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
 rendering:
     title: Rendering OSM data
     hikingroutes: |
         Hiking routes in OSM need to be entered as relations. How this works is
         described in detail on the tagging page about
-        [walking routes](http://wiki.openstreetmap.org/wiki/Walking_Routes)
+        [walking routes](https://wiki.openstreetmap.org/wiki/Walking_Routes)
         in the OSM wiki. This map shows relations that have at least the
         following tags:
 
@@ -35,34 +35,34 @@ rendering:
     cyclingroutes: |
         Cycling routes in OSM need to be entered as relations. How this works is
         described in detail on the tagging page about
-        [cycling routes](http://wiki.openstreetmap.org/wiki/Cycle_routes) in the
+        [cycling routes](https://wiki.openstreetmap.org/wiki/Cycle_routes) in the
         OSM wiki. This map shows all relations that have at least the following tags:
 
             type = route|superroute
             route = bicycle
 
-        Mountain-biking routes are displayed on a separate [MTB-map](http://mtb.waymarkedtrails.org/en/).
+        Mountain-biking routes are displayed on a separate [MTB-map](https://mtb.waymarkedtrails.org).
     mtbroutes: |
         Mountain-biking routes follow the same tagging schema as cycling routes
         which is described in detail on the OSM wiki page about
-        [cycling routes](http://wiki.openstreetmap.org/wiki/Cycle_routes).
+        [cycling routes](https://wiki.openstreetmap.org/wiki/Cycle_routes).
         Relations that have the following tags are recognized as MTB routes:
 
             type = route|superroute
             route = mtb
 
-        Regular cycling routes are displayed on the [cycling map](http://cycling.waymarkedtrails.org/en/).
+        Regular cycling routes are displayed on the [cycling map](https://cycling.waymarkedtrails.org).
     skatingroutes: |
         Sign-posted skating routes should be tagged like any other route relation.
         For the tagging understood by this map, have a look at the wiki page about
-        [Swiss inline skating routes](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
+        [Swiss inline skating routes](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
         To be recognized as a skating route, the following tags need to be present:
 
             type = route|superroute
             route = inline_skates
     ridingroutes: |
         Sign-posted horse riding routes should be tagged like any other route relation.
-        For details see [the route page in the OSM wiki](http://wiki.openstreetmap.org/wiki/Relation:route).
+        For details see [the route page in the OSM wiki](https://wiki.openstreetmap.org/wiki/Relation:route).
         To be recognized as a horse riding route, the following tags need to be present:
 
             type = route|superroute
@@ -105,9 +105,9 @@ rendering:
     hikinglabels: |
         The label for each route is "guessed" from the tags in the following order:
 
-        1. Check for [localized rendering rules](rendering/hikinglocal).
+        1. Check for [localized rendering rules](#help-hikinglocal).
         2. Try to interpret the `osmc:symbol` tag. For details about which parts
-           are understood, see [osmc:symbol rendering rules](rendering/osmc).
+           are understood, see [osmc:symbol rendering rules](osmc_symbols.html).
         3. If a `ref` tag exists, make a text label with the `ref` tag.
         4. If a `name` tag exists, derive a reference from that, first by using
            only upper-case letters and failing that by using the first letters
@@ -121,9 +121,9 @@ rendering:
            only upper-case letters and failing that by using the first letters of the name.
         3. Give up.
     hierarchy: |
-        The map also supports [relation hierarchies](rendering/hierarchies).
+        The map also supports [relation hierarchies](#help-hierarchies).
     guideposts: |
-        [Guideposts](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+        [Guideposts](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
         are recognized by the following tags:
 
             tourism=information
@@ -203,7 +203,7 @@ hikinglocal:
         routes which are shown in the normal way.
 
         For more information about tagging hiking paths in Switzerland in OSM see:
-        [Swiss hiking network](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+        [Swiss hiking network](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
     italy: |
         ## Italy
 
@@ -220,7 +220,7 @@ hikinglocal:
     uk: |
         ## United Kingdom
 
-        The classification of [UK long-distance paths](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
+        The classification of [UK long-distance paths](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
         (those tagged with `network=uk_ldp`) depends on the `operator` tag. Relations
         with `operator=National Trails` are shown as national trails, all other relations
         appear as regional routes.
@@ -230,7 +230,7 @@ hikinglocal:
         ## Czech Republic
 
         The country uses a trail marking standard based on a set of 7 symbols in 4 different
-        colors. For a description see the [Czech tagging page](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (Czech only).
+        colors. For a description see the [Czech tagging page](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (Czech only).
 
         When a `kct_*` tag is available it is preferred over any `osmc:symbol` tag.
         In addition, the route is reclassified if no valid network tag can be found. Routes
@@ -241,7 +241,7 @@ hikinglocal:
 
         Slovakia uses the same trail marking standard as the Czech Republic. However,
         the tagging schema is slightly different, see the
-        [Slovakian hiking page](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+        [Slovakian hiking page](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
 
         All routes with a tag `operator=KST` are tagged according to that schema. As
         routes in Slovakia should come with a valid network tag, there is no
@@ -250,7 +250,7 @@ hikinglocal:
         ## Hungary
 
         Hungary also uses a system with a fixed set of symbols in different colors. These
-        are marked with their own tag [jel](http://wiki.openstreetmap.org/wiki/Key:jel).
+        are marked with their own tag [jel](https://wiki.openstreetmap.org/wiki/Key:jel).
         The tag is preferred over any `osmc:symbol` tag.
     germany: |
         ## Germany
@@ -270,13 +270,13 @@ hikinglocal:
 elevationprofiles:
     title: Elevation profiles
     general: |
-        The elevation profiles are made with elevation data from the [ASTER global digital elevation model (GDEM) version 2](http://asterweb.jpl.nasa.gov/gdem.asp), the "ele" tag in OpenStreetMap is not taken into account, nor are tunnels and bridges. ASTER GDEM is a product of METI and NASA.
+        The elevation profiles are made with elevation data from the [ASTER global digital elevation model (GDEM) version 2](https://asterweb.jpl.nasa.gov/gdem.asp), the "ele" tag in OpenStreetMap is not taken into account, nor are tunnels and bridges. ASTER GDEM is a product of METI and NASA.
         
         If the route has more than two end points or consists of more than one segment, no profile will be rendered. The direction of the profile follows the route west-east or north-south. If routes had elements with roles such as "start" and "goal", and/or were listed continuously from start to goal, we might be able determine direction from the route relation itself. You might want to bear those things in mind if mapping routes on OpenStreetMap.
         
         There are holes, so called "voids" for which we have no elevation data, these are visualized with holes in the elevation profile line.
         
-        Beware that while ASTER version 2 is probably the best free global DEM, it does have its limitations both when it comes to accuracy and coverage, see their [validation summary report](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) for more information. The inaccuracies are further exacerbated by the inaccuracy of the OSM data, [a smoothing technique](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) that we apply, and the resolution of the profile which becomes lower the longer the route is.
+        Beware that while ASTER version 2 is probably the best free global DEM, it does have its limitations both when it comes to accuracy and coverage, see their [validation summary report](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) for more information. The inaccuracies are further exacerbated by the inaccuracy of the OSM data, [a smoothing technique](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) that we apply, and the resolution of the profile which becomes lower the longer the route is.
 technical:
     title: Technical details
     general: |
@@ -284,29 +284,30 @@ technical:
         OSM server. The date in the upper left corner shows
         the last update. Updates of the underlying Mapnik map are not within this
         site's control. Depending on the current load of the OSM server they take
-        between a minute and a few days.
+        between a minute and a few hours.
 
-        The machine runs standard [Debian Linux](http://www.debian.org/) with
-        a toolchain consisting of [pyosmium](http://osmcode.org/pyosmium/),
-        [Postgresql](http://www.postgresql.org) and [Mapnik 2.0](http://www.mapnik.org).
-        [osgende](https://github.com/waymarkedtrails/osgende) takes care of some postprocessing
-        on the database before rendering. The website is served using
-        [CherryPy](http://cherrypy.org/). The source code
-        is available under a GPL licence. For more information visit the
-        [project page at GitHub](https://github.com/waymarkedtrails/waymarked-trails-site).
+        The source code for this website is available under a GPL license and
+        split over several repositories:
+        * [backend code and map generation](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+        * [API service](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+        * [website frontend](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+        If you just want to report a bug or discuss features of the website,
+        you can use the [issue tracker](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
+        or the [discussion feature](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) of the project repo on Github.
     translation: |
         ## Translations
 
         Translations are managed by the ever helpful people on
-        [translatewiki.net](http://translatewiki.net). If you want to contribute a translation
+        [translatewiki.net](https://translatewiki.net). If you want to contribute a translation
         in your own language or give feedback on existing translations, visit the
-        [translatewiki.net project page](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+        [translatewiki.net project page](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
     title: Legal and Usage Terms
     copyright: |
         The routes overlay is available under the
-        [Creative Commons Attribution-Share Alike 3.0 Germany License](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en), and the GPX tracks under the
-        [ODbL](http://opendatacommons.org/licenses/odbl/).
+        [Creative Commons Attribution-Share Alike 3.0 Germany License](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en), and the GPX tracks under the
+        [ODbL](https://opendatacommons.org/licenses/odbl/).
         They may be reused and changed as long as the resulting work uses a compatible license
         and the OpenStreetMap project and this site are mentioned.
     usage: |
@@ -330,16 +331,16 @@ legal:
 acknowledgements:
     title: Acknowledgements
     text: |
-        All map data provided by [OpenStreetMap and contributors](http://www.openstreetmap.org)
-        and is distributed under the ODbL license. The base map is also courtesy of OSM and available
-        under CC BY-SA 2.0. For more information, see the
-        [OSM copyright page](http://www.openstreetmap.org/copyright).
+        All map data provided by [OpenStreetMap and contributors](https://www.openstreetmap.org)
+        and distributed under the ODbL license. The base map is also courtesy of OSM.
+        For more information, see the
+        [OSM copyright page](https://www.openstreetmap.org/copyright).
 
         Hillshading and elevation data created from a mash-up of SRTM and ASTER GDEM data.
         ASTER GDEM is a product of METI and NASA.
-        Postprocessing was kindly provided by Yves Cainaud from [opensnowmap.org](http://opensnowmap.org).
+        Postprocessing was kindly provided by Yves Cainaud from [opensnowmap.org](https://opensnowmap.org).
 
-        The elevation profile code has been developed by Espen Oldeman Lund in a cooperation between [Kresendo](http://www.kresendo.no) and the [TG4NP project](http://tg4np.eu) at the [Western Norway Research Institute](http://wwww.vestforsk.no).
+        The elevation profile code has been developed by Espen Oldeman Lund in a cooperation between [Kresendo](https://www.kresendo.no) and the TG4NP project at the [Western Norway Research Institute](https://www.vestforsk.no).
 
         The winter sport slopes variant has been developed by Michael Spreng. The riding symbol was
         prepared by Robert Whittaker.
@@ -347,20 +348,17 @@ acknowledgements:
         Guidepost destinations processed by [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Many thanks to Jan Michel for providing the service.
 
         Translations of this site are provided by
-        [translatewiki.net and its contributors](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Special thanks go to the pioneer translators that
+        [translatewiki.net and its contributors](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Special thanks go to the pioneer translators that
         provided translations before translatewiki.net: Yves Cainaud (French),
         Oscar Formaggi (Italian),
-        Gustavo [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (Spanish),
-        [Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (Norwegian bokmål and nynorsk),
+        Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (Spanish),
+        [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (Norwegian bokmål and nynorsk),
         Mads Lumholt/TG4NP (Danish), Magnús Smári Snorrason/TG4NP (Islandic),
         Lars Mikaelsson/TG4NP (Swedish), and Elina Pesonen (Finnish).
-
-        Finally, the server would not exist without the generous support of
-        [Martin Hoffmann](http://www.partim.de).
 contact:
     title: Contact
     text: |
         Questions and comments about this site can be sent to: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-        Bugs can also be reported on [the project's issue tracker on github](https://github.com/lonvia/waymarked-trails-site/issues). Before reporting a bug, please make sure that your problem is
+        Bugs can be reported on [the project's issue tracker on github](https://github.com/lonvia/waymarked-trails-site/issues). Before reporting a bug, please make sure that your problem is
         not with the OSM data.
