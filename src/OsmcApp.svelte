@@ -89,6 +89,21 @@
         color: var(--theme-sub-link-color);
     }
 
+    .preview {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background: rgba(1,1,1,0.1);
+        border: 1pt solid #999;
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+
+    .preview * {
+        margin: 5px;
+    }
+
     .footer {
         height: 50px;
         width: 100%;
@@ -152,14 +167,14 @@
 <p>{$_('osmc_symbol.preview')}</p>
 
 
-<center>
-<p><tt>osmc:symbol = </tt><input type="text" width=50 bind:value={test_symbol} /></p>
+<div class="preview">
+<tt>osmc:symbol = </tt><input type="text" width=150 bind:value={test_symbol} />
 {#if test_symbol}
-    <img src="{API_URL}/symbols/from_tags/NAT?osmc:symbol={encodeURIComponent(test_symbol)}" id="osmc_target" width="50" height="50" />
+    <img src="{API_URL}/symbols/from_tags/NAT?osmc:symbol={encodeURIComponent(test_symbol)}" width="50" height="50" />
 {:else}
     <img src="{MEDIA_URL}img/white.svg" width="50" height="50" />
 {/if}
-</center>
+</div>
 
 </div>
 
