@@ -3,13 +3,13 @@
 # Export driver: phpyaml
 # Author: An13sa
 # Author: EukeneFL
+# Author: Lonvia
 # Author: Sator
 # Author: Subi
 # Author: Theklan
 ---
 attribution:
-  data: Maparen datuak © [OpenStreetMap](https://www.openstreetmap.org) [ODbL](r)en
-    menpean (https://www.openstreetmap.org/copyright)
+  data: Maparen datuak © [OpenStreetMap](https://www.openstreetmap.org) [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: Goratze datuak [SRTM/ASTER](help/acknowledgements)(r)en esku
 destination_sign:
   more: Xehetasun gehiago

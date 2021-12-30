@@ -46,6 +46,7 @@ help: 지도 정보
 network:
   downhill: 내리막길
   node: 노드 네트워크 연결
+  other: 다른 경로
 osmc_symbol:
   back: 뒤로
   background_heading: 배경

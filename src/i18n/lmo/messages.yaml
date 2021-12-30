@@ -1,0 +1,49 @@
+# Messages for Lombard (lombard)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Salvemm el lombard
+---
+details:
+  route_symbol: Simbol del percors
+  symbol: Simbol
+  tags:
+    key: ciav
+    value: valor
+  type:
+    node: Noeud
+    relation: Relazzion
+    way: Senter
+    wayset: Grup de senter
+elevation:
+  total: Elevazzion total
+error:
+  missing_id: A ghe cala el parametro 'id'.
+  missing_query: A ghe cala el parametro 'query'.
+network:
+  continental: Percors continentai
+  downhill: Discesa
+  national: Percors nazionai
+  node: Conession de red del noeud
+  nordic: Sci nordich
+  other: Alter percors
+  regional: Percors regionai
+  skitour: Sci alpinismo
+  sled: Pista per i slitine
+  sleigh: Pista per i slite
+  winter_hike: Escursion invernai
+routelist:
+  more: Ingrandiment per vedé pussee de percors.
+search:
+  places: Sit
+  routes: Percors
+site_description:
+  cycling: Percors locai e distantcon per andà in sgir con la spiciola, con mape e
+    informazzion de OpenStreetMap.
+  hiking: Percorsi de escursionicmo longh e locai e percors per andà a pee, con mape
+    e informazzion de OpenStreetMap.
+  mtb: Percors per el rampeghin (MTB), con di mape e di informazziono de OpenStreetMap.
+  riding: Percors de andà a cavall, con mape e informazzion de OpenStreetMap
+  skating: Percors de patinaggio in linea, con mape e informazzion de OpenStreetMap.
+  slopes: Piste per sport invernai, sci alpin, patinagg de fond, sgiret invernai,
+    con mape e informazzion de OpenStreetMap.
+...

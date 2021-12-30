@@ -15,6 +15,7 @@ attribution:
   elevation_title: Höhendaten von [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Weitere Einzelheiten
+  no_data: Keine Zielinformationen verfügbar für diesen Wegweiser.
   title: Ziele
 details:
   GPX: GPX
@@ -25,10 +26,20 @@ details:
   note: Hinweis
   official_len: Offizielle Länge
   operator: Betreiber
+  route_symbol: Wegzeichen
   subroutes_title: Abschnitte
   superroutes_title: Teil von
+  symbol: Wegzeichen
   tags:
+    key: Schlüssel
     title: OpenStreetMap-Tags
+    value: Wert
+  type:
+    guidepost: Wegweiser
+    node: Node
+    relation: Relation
+    way: Way
+    wayset: Wegesatz
   website: Website
   wikipedia: Wikipedia
   zoom_to: Auf Karte anzeigen
@@ -39,19 +50,31 @@ elevation:
     altitude: Höhe (m)
     distance: Entfernung (km)
   title: Höhenprofil
+  total: Gesamter Auf-/Abstieg
   unavailable: Es wurden keine Höhendaten gefunden.
   warn_unsorted: Der Weg ist möglicherweise nicht sortiert oder unvollständig. Die
     Höheninformationen können ungenau sein.
 error:
   load_error: Fehler beim Verbinden zum Server.
+  missing_id: Fehlender Parameter 'id'.
+  missing_query: Fehlender Parameter 'query'.
   panel_title: Fehler
 headline:
   last_update: Letzte Aktualisierung
 help: Über die Karte
 locate_me: Lokalisiere mich
 network:
-  downhill: bergab
-  node: Knoten-Netzwerkverbindungen
+  continental: Kontinentale Routen
+  downhill: Abfahrt
+  national: Nationale Routen
+  node: Knotennetzwerk-Verbindungen
+  nordic: Langlauf
+  other: Andere Routen
+  regional: Regionale Routen
+  skitour: Tourenski
+  sled: Rodelpiste
+  sleigh: Schlittenweg
+  winter_hike: Winterwandern
 osmc_symbol:
   back: Zurück
   background: Der Hintergrund funktioniert auf ähnliche Weise. Er besteht auch aus
@@ -71,9 +94,11 @@ osmc_symbol:
   preview_heading: Vorschau
 routelist:
   close: Schließen
+  more: Es gibt mehr Routen in der Gegend. Zur Anzeige bitte weiter hineinzoomen.
   rollup: Aufrollen
   title: Routen
 search:
+  places: Orte
   routes: Routen
   title: Suche
 settings:
@@ -84,10 +109,21 @@ settings:
   route_layer: Routen
   title: Karteneinstellungen
   transparency: Kartentransparenz
+site_description:
+  cycling: Lokale Radrouten und Fernradwege mit Karten und Zusatzinformationen von
+    OpenStreetMap.
+  hiking: Lokale Wanderwege und Weitwanderwege mit Karten und Zusatzinformationen
+    von OpenStreetMap.
+  mtb: Routen für Mountainbikes (MTB) mit Karten und Zusatzinformationen von OpenStreetMap.
+  riding: Pferdewanderwege mit Karten und Zusatzinformationen von OpenStreetMap.
+  skating: Routen für Inlineskating mit Karten und Zusatzinformationen von OpenStreetMap.
+  slopes: Pisten für Wintersport, Abfahrsski, Skilanglauf und Routen für Winterwanderwege
+    mit Karten und Zusatzinformationen von OpenStreetMap.
 site_title:
   cycling: Radwege
   hiking: Wanderwege
   mtb: Mountainbike-Routen
+  osmc_symbol: Das Tag „osmc:symbol“
   riding: Reiten
   skating: Inline-Skating
   slopes: Wintersportpisten

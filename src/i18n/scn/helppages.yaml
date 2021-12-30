@@ -1,6 +1,7 @@
 # Messages for Sicilian (sicilianu)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Ajeje Brazorf
 # Author: Sarvaturi
 ---
 about:
@@ -16,26 +17,26 @@ about:
     munnu
   osm: L'itinirari sunnu suvrapposti supra lu standard OpenStreetMap e n opzioni supra
     nu liveddu hill-shading. La mappa dô pircursu veni ginirata dê dati dô pruggettu
-    [OpenStreetMap](http://www.openstreetmap.org) (OSM). OSM è na mappa dô munnu canciàbbili
-    libbiramenti unni ognidunu pò participari. Chistu signìfica ca nun è affattu cumpleta,
-    ma signìfica macari ca poi cuntribbuiri agghiuncennu itinirari novi e currèggiri
-    erruri nta l'esistenti. P'aviri maiuri nfurmazzioni a riguardu, vìsita la [Guida
-    pi principianti](http://wiki.openstreetmap.org/wiki/IT:Beginners%27_guide).
+    [OpenStreetMap](https://www.openstreetmap.org) (OSM). OSM è na mappa dô munnu
+    canciàbbili libbiramenti unni ognidunu pò participari. Chistu signìfica ca nun
+    è affattu cumpleta, ma signìfica macari ca poi cuntribbuiri agghiuncennu itinirari
+    novi e currèggiri erruri nta l'esistenti. P'aviri maiuri nfurmazzioni a riguardu,
+    vìsita la [Guida pi principianti](https://wiki.openstreetmap.org/wiki/IT:Beginners%27_guide).
 rendering:
   title: Visualizzazzioni dê dati OSM
   hikingroutes: "L'itinirari d'escursioni hannu a èssiri nziruti comu rilazzioni.
-    Lu funziunamentu è discrittu n dittagghiu ntâ pàggina tagging nta [walking routes](http://wiki.openstreetmap.org/wiki/Walking_Routes)
+    Lu funziunamentu è discrittu n dittagghiu ntâ pàggina tagging nta [walking routes](https://wiki.openstreetmap.org/wiki/Walking_Routes)
     ntô wiki d'OSM. Sta mappa ammustra li rilazzioni c'hannu armenu li tag siguenti:\n\ntype
     = route|superroute \nroute = foot|walking|hiking"
   cyclingroutes: "L'itinirari ciclàbbili hannu a èssiri nziruti comu rilazzioni. Lu
-    funziunamentu è discrittu n dittagghiu ntâ pàggina tagging nta [cycling routes](http://wiki.openstreetmap.org/wiki/Cycle_routes)
+    funziunamentu è discrittu n dittagghiu ntâ pàggina tagging nta [cycling routes](https://wiki.openstreetmap.org/wiki/Cycle_routes)
     ntô wiki d'OSM. Sta mappa ammustra li rilazzioni c'hannu armenu li tag siguenti:\n\ntype
     = route|superroute \nroute = bicycle\n\nL'itinirari mountain bike vèninu visualizzati
-    nta na [MTB-map] siparata (http://mtb.waymarkedtrails.org/en/)."
+    nta na [MTB-map] siparata (https://mtb.waymarkedtrails.org/)."
   classification: |-
     Nu tag 'route' cu cchiù valuri è suppurtatu quannu iddi sunnu siparati di puntu e vìrgula senza spazzi circustanti.
     La classificazzioni (e quinni lu culuri di l'itinirariu ntâ mappa) è ditirminata dô tag 'network'.
-  hierarchy: La mappa supporta macari [girarchìi di rilazzioni](rendering/hierarchies).
+  hierarchy: La mappa supporta macari [girarchìi di rilazzioni](#help-hierarchies).
 hierarchies:
   title: Girarchìi di rilazzioni
 osmc:
@@ -57,9 +58,9 @@ technical:
     ## Traduzzioni
 
     Li traduzzioni sunnu gistuti di pirsuni sempri dispunìbbili nta
-    [translatewiki.net](http://translatewiki.net). Si voi cuntribbuiri cu na traduzzioni
+    [translatewiki.net](https://translatewiki.net). Si voi cuntribbuiri cu na traduzzioni
     ntâ tò lingua o dàrini nu feedback supra traduzzioni esistenti, vìsita la
-    [la pàggina dô pruggettu translatewiki.net](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+    [la pàggina dô pruggettu translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Cunnizzioni d'usu e tèrmini ligali
   usage: |-
@@ -87,5 +88,5 @@ contact:
   text: |-
     Addumannati e cummenti supra stu situ ponnu èssiri mannati a: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Li bug ponnu èssiri assignalati macari nta [tracker prubblemi dô pruggettu nta github](https://github.com/lonvia/waymarked-trails-site/issues). Prima d'assignalari nu bug, assicùrati ca lu tò prubblema nun arriguarda li dati OSM.
+    Li bug ponnu èssiri assignalati nta [tracker prubblemi dô pruggettu nta github](https://github.com/lonvia/waymarked-trails-site/issues). Prima d'assignalari nu bug, assicùrati ca lu tò prubblema nun arriguarda li dati OSM.
 ...

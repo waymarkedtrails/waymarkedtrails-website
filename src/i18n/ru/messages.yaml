@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Alexandr Efremov
 # Author: DCamer
+# Author: DDPAT
 # Author: Eleferen
 # Author: Express2000
 # Author: Facenapalm
@@ -17,6 +18,7 @@ attribution:
   elevation_title: данные рельефа от [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Подробнее
+  no_data: Информация о пункте назначения для этого указателя недоступна.
   title: Места назначения
 details:
   GPX: GPX
@@ -29,8 +31,11 @@ details:
   operator: Оператор
   subroutes_title: Разделы
   superroutes_title: Часть
+  symbol: Символ
   tags:
+    key: ключ
     title: Теги OpenStreetMap
+    value: значение
   website: Веб-сайт
   wikipedia: Википедия
   zoom_to: Показать на карте
@@ -52,8 +57,8 @@ headline:
 help: О карте
 locate_me: Найдите меня
 network:
-  downhill: спуск
-  node: сетевые подключения узла
+  downhill: Спуск
+  node: Сетевые подключения узла
 osmc_symbol:
   back: Назад
   background: Фон работает похожим образом. Он тоже состоит из цвета и формы. Фон
@@ -66,7 +71,7 @@ osmc_symbol:
     также распознает фон, который состоит лишь из названия формы. Соответствующие
     символы показаны в последнем столбце.
   foreground_heading: Основной цвет
-  preview: Заполните поле ниже значением для "osmc:symbol" чтобы увидеть как будет
+  preview: Заполните поле ниже значением для «osmc:symbol» чтобы увидеть как будет
     отображаться на карте.
   preview_heading: Предпросмотр
 routelist:

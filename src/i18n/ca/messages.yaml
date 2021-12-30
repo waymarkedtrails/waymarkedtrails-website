@@ -48,6 +48,9 @@ headline:
   last_update: Darrera actualització
 help: Sobre el mapa
 locate_me: Localitza’m
+network:
+  downhill: descens
+  node: Connexions de xarxa de nodes
 osmc_symbol:
   back: Enrere
   background: El fons funciona d’una manera similar. També consisteix en un color
@@ -60,6 +63,8 @@ osmc_symbol:
     lloc. També reconeix els primers plans que només consisteixen en el nom de la
     forma. Els símbols d’aquests es mostren a l’última columna.
   foreground_heading: Primer pla
+  preview: Escriu un valor osmc:symbol al camp sota per veure com serà renderitzat
+    al mapa.
   preview_heading: Vista prèvia
 routelist:
   close: Tancar

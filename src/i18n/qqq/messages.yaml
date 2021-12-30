@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Dittaeva
 # Author: Liuxinyu970226
+# Author: Lonvia
 # Author: Metalhead64
 # Author: Nike
 # Author: Robby
@@ -29,7 +30,10 @@ error:
 headline:
   last_update: '{{Identical|Last update}}'
 network:
-  downhill: '{{Identical|Downhill}}'
+  downhill: |-
+    {{Identical|Downhill}}
+
+    The string is meant as a short form of 'Downhill skiing'.
 osmc_symbol:
   back: '{{Identical|Back}}'
   background: |-

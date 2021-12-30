@@ -47,6 +47,8 @@ headline:
   last_update: Sidst opdateret
 help: Om kortet
 locate_me: Find mig
+network:
+  downhill: nedad
 osmc_symbol:
   back: Tilbage
   background: Baggrunden virker på samme måde. Den består også af en farve og en form.
@@ -59,6 +61,8 @@ osmc_symbol:
     genkender også forgrunde, som kun består af navnet på formen. Symbolerne for disse
     vises i den sidste kolonne.
   foreground_heading: Forgrund
+  preview: Indtast en osmc:symbol værdi i indtastningsfeltet nedenfor for at se, hvordan
+    det vil blive vist på kortet.
   preview_heading: Forhåndsvisning
 routelist:
   close: Luk

@@ -38,9 +38,11 @@ locate_me: Mech lokaliséieren
 network:
   downhill: Biergof
   national: National Stroossen
+  nordic: Schilaanglaf
   other: Aner Routen
   regional: Regional Stroossen
   skitour: Schi-Touren
+  sleigh: Schlittepist
 osmc_symbol:
   back: Zréck
   background_heading: Hannergrond
@@ -61,4 +63,5 @@ settings:
 site_title:
   cycling: Mam Vëlo
   hiking: Zu Fouss
+  osmc_symbol: Den Tag osmc:symbol
 ...

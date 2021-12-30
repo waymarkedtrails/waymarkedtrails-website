@@ -5,6 +5,7 @@
 # Author: Deathkon
 # Author: Fanjiayi
 # Author: Gerongfenh
+# Author: GuoPC
 # Author: Hydra
 # Author: Hzy980512
 # Author: Liuxinyu970226
@@ -21,42 +22,42 @@ about:
   slopemap: 此地图显示全世界被标记的用于冬季运动的山坡。
   osm: |-
     路径覆盖在标准OpenStreetMap上和可选的山体阴影层上。路径的数据
-    由[OpenStreetMap](http://www.openstreetmap.org)（OSM）项目生成。
+    由[OpenStreetMap](https://www.openstreetmap.org)（OSM）项目生成。
     OSM是一个自任何人都可以自由参与编辑的世界地图。这意味着它绝不是
     完整无暇的，但这也意味着您可以通过添加新的路线或纠正现有路线
     来做出贡献。要了解更多关于OpenStreetMap的信息，请参阅[新手指南]
-    (http://wiki.openstreetmap.org/wiki/Beginners%27_Guide)。
+    (https://wiki.openstreetmap.org/wiki/Beginners%27_Guide)。
 rendering:
   title: 渲染OSM数据
   hikingroutes: |-
     在OSM中的徒步路线需要被输入为关系。它的实现原理在OSM维基上的
-    [行走路线](http://wiki.openstreetmap.org/wiki/walking_routes)
+    [行走路线](https://wiki.openstreetmap.org/wiki/walking_routes)
     中的标记页面里有详细描述。此地图显示至少具有以下标签的关系：
 
     type = route|superroute
     route = foot|walking|hiking
   cyclingroutes: |-
-    OSM中的骑行路线需要作为关系输入。其工作原理在OSM wiki上有关[骑行路线](http://wiki.openstreetmap.org/wiki/Cycle_routes) 的标签页面中有详细描述。此地图显示所有至少拥有以下标签的关系：
+    OSM中的骑行路线需要作为关系输入。其工作原理在OSM wiki上有关[骑行路线](https://wiki.openstreetmap.org/wiki/Cycle_routes) 的标签页面中有详细描述。此地图显示所有至少拥有以下标签的关系：
 
         type = route|superroute
         route = bicycle
 
-    山地车路线显示于单独的[MTB地图](http://mtb.waymarkedtrails.org/en/) 中。
+    山地车路线显示于单独的[MTB地图](https://mtb.waymarkedtrails.org) 中。
   mtbroutes: |-
-    山地车路线跟随与骑行路线相同的标签模式，在OSM wiki上有关[骑行路线](http://wiki.openstreetmap.org/wiki/Cycle_routes) 的页面中已详细描述。拥有以下标签的关系会被认为是MTB路线：
+    山地车路线跟随与骑行路线相同的标签模式，在OSM wiki上有关[骑行路线](https://wiki.openstreetmap.org/wiki/Cycle_routes) 的页面中已详细描述。拥有以下标签的关系会被认为是MTB路线：
 
         type = route|superroute
         route = mtb
 
-    普通骑行路线显示于[骑行地图](http://mtb.waymarkedtrails.org/en/) 中。
+    普通骑行路线显示于[骑行地图](https://mtb.waymarkedtrails.org) 中。
   skatingroutes: |-
-    设有路标的的滑冰路线应像任何其他路线关系一样标记。要了解该地图能理解的标记，可查看有关[瑞士纵列滑冰路线](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork) 的wiki页面。要确认为滑冰路线，需要提供以下标记：
+    设有路标的的滑冰路线应像任何其他路线关系一样标记。要了解该地图能理解的标记，可查看有关[瑞士纵列滑冰路线](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork) 的wiki页面。要确认为滑冰路线，需要提供以下标记：
 
        type = route|superroute
        route = inline_skates
   ridingroutes: |-
     有记号的骑马路线应该像其他路线关系一样被标记。
-    详见[OSM Wiki上的路线页面](http://wiki.openstreetmap.org/wiki/Relation:route)。
+    详见[OSM Wiki上的路线页面](https://wiki.openstreetmap.org/wiki/Relation:route)。
     要被识别为骑马路线，需要存在以下标签：
 
         type = route|superroute
@@ -91,8 +92,8 @@ rendering:
   hikinglabels: |-
     每条路径的标签都是按以下顺序“猜想”自标签：
 
-    1. 检查[本地渲染规则](rendering/hikinglocal)。
-    2. 尝试解释“osmc:symbol”标签。有关哪些部分可以理解，参见[osmc:symbol渲染规则](rendering/osmc)。
+    1. 检查[本地渲染规则](#help-hikinglocal)。
+    2. 尝试解释“osmc:symbol”标签。有关哪些部分可以理解，参见[osmc:symbol渲染规则](osmc_symbols.html)。
     3. 如果存在“ref”标签，制作一段文本标签带“ref”标签。
     4. 如果“name”标签存在，从那里获取一段参考，首先通过使用纯大写字母，如果做不到就是通过使用名称首字母。
     5. 放弃。
@@ -103,9 +104,9 @@ rendering:
     2.如果存在`name`标签，从中派生出一个引用，
         首先尝试仅使用大写字母，如果失败，就使用名称的第一个字母。
     3.放弃。
-  hierarchy: 地图也支持[关系层级](rendering/hierarchies)。
+  hierarchy: 地图也支持[关系层级](#help-hierarchies)。
   guideposts: |-
-    [Guideposts](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost) 被以下标签认可：
+    [Guideposts](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost) 被以下标签认可：
 
         tourism=information
         information=guidepost
@@ -170,7 +171,7 @@ hikinglocal:
     路线以正常方式显示。
 
     有关在OSM中瑞士远足路径标记的更多信息，请参阅：
-    [瑞士远足网络](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)。
+    [瑞士远足网络](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)。
   italy: |-
     ## 意大利
 
@@ -183,25 +184,25 @@ hikinglocal:
   uk: |-
     ## 英国
 
-    [英国长距离道路](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) 的分类（标记为 “network=uk_ldp”）依赖 “operator” 标记。标记 “operator=National Trails” 的道路显示为国道，其他则为地区道路。
+    [英国长距离道路](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) 的分类（标记为 “network=uk_ldp”）依赖 “operator” 标记。标记 “operator=National Trails” 的道路显示为国道，其他则为地区道路。
 
     “network=lwn/rwn/nwn/iwn” 标记也通常被使用。
   czech: |-
     ## 捷克共和国
 
-    该国使用基于7种符号4种颜色的踪迹标记标准。相关描述详见[捷克标记页面](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) （只有捷克语版）。
+    该国使用基于7种符号4种颜色的踪迹标记标准。相关描述详见[捷克标记页面](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) （只有捷克语版）。
 
     当“kct_*”标签可用时，它将覆盖任何“osmc:symbol”标签。另外，如果没有可用的有效系统标签，道路会重新分级。带“kct_red=major”的道路会成为国道，其他“kct_*=major”会标记为地区道路。
   slovakia: |-
     ## 斯洛伐克
 
-    斯洛伐克使用与捷克共和国相同的道路标志标准。然而，标记模式稍有不同，参见[斯洛伐克徒步页面](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes) 。
+    斯洛伐克使用与捷克共和国相同的道路标志标准。然而，标记模式稍有不同，参见[斯洛伐克徒步页面](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes) 。
 
     所有带标签“operator=KST”的路线均根据上述模式标记。由于斯洛伐克境内的路线应该有一个有效的网络标记，这里不会执行重新分类。
   hungary: |-
     ## 匈牙利
 
-    匈牙利也有一个带不同颜色的固定符号的系统。这些会使用它们自己的标记[jel](http://wiki.openstreetmap.org/wiki/Key:jel) 。标签比任何“osmc:symbol”标签首选。
+    匈牙利也有一个带不同颜色的固定符号的系统。这些会使用它们自己的标记[jel](https://wiki.openstreetmap.org/wiki/Key:jel) 。标签比任何“osmc:symbol”标签首选。
   germany: "## 德国\n\n### Fränkischer Albverein\n\n纽伦堡附近的网络非常密集，因此用`operator=Fränkischer
     Albverein` \n标记的区域路线将出现在比平时低的缩放级别上。"
   ukcycle: |-
@@ -213,27 +214,32 @@ hikinglocal:
 elevationprofiles:
   title: 海拔概况
   general: |-
-    海拔剖面由来自[ASTER全球数字高程模型（GDEM）版本2](http://asterweb.jpl.nasa.gov/gdem.asp)的海拔数据制成，未采用OpenStreetMap中的“ele”标记，隧道和桥梁也是如此。 ASTER GDEM是一个METI和NASA的产品。
+    海拔剖面由来自[ASTER全球数字高程模型（GDEM）版本2](https://asterweb.jpl.nasa.gov/gdem.asp)的海拔数据制成，未采用OpenStreetMap中的“ele”标记，隧道和桥梁也是如此。 ASTER GDEM是一个METI和NASA的产品。
 
     如果路线有两个以上的终点或由多个段组成，则不会显示任何配置文件。轮廓的方向沿着西-东或南-北的路线。如果路线中的元素具有“开始”和“目标”等角色，并且/或者从开始到目标连续列出，我们可能会从路线关系本身确定方向。如果在OpenStreetMap上映射路线，您可能需要考虑这些事情。
 
     有一些洞，所谓的“空洞”，那是由于我们没有海拔数据，它们在海拔剖面线上用孔显示。
 
-    请注意，虽然ASTER第2版可能是最好的免费全球DEM，但它在确保准确性和覆盖率方面都有其局限性，请参阅其[验证总结报告](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf)以获取更多信息。由于我们应用的OSM数据[平滑技术](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)带来的不确定性，以及分辨率的问题，使得路线越长，精确性越会差。
+    请注意，虽然ASTER第2版可能是最好的免费全球DEM，但它在确保准确性和覆盖率方面都有其局限性，请参阅其[验证总结报告](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf)以获取更多信息。由于我们应用的OSM数据[平滑技术](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)带来的不确定性，以及分辨率的问题，使得路线越长，精确性越会差。
 technical:
   title: 技术信息
   general: |-
-    路径覆盖每分钟更新一次，并通常晚于OSM服务器2~5分钟。左上角的日期显示上次更新时间。潜在的Mapnik地图更新不在网站的控制范围。它们基于当前的OSM服务器承载能力，会花费1分钟到数天不等时间。
+    路径覆盖每分钟更新一次，并通常晚于OSM服务器2~5分钟。左上角的日期显示上次更新时间。潜在的Mapnik地图更新不在网站的控制范围。它们基于当前的OSM服务器承载能力，会花费1分钟到数小时不等时间。
 
-    机器运行[Debian Linux](http://www.debian.org/) ，并且其工具链包括[pyosmium](http://osmcode.org/pyosmium/) 、[Postgresql](http://www.postgresql.org) 和[Mapnik 2.0](http://www.mapnik.org) 。[osgende](https://github.com/waymarkedtrails/osgende) 在渲染前会进行数据库上的预传递。网站使用[CherryPy](http://cherrypy.org/) 的服务。源代码基于GPL许可协议提供。更多信息请访问[GitHub上的项目页面](https://github.com/waymarkedtrails/waymarked-trails-site) 。
+    此网站的源代码基于GPL许可协议提供并分为多个存储库：
+    * [后端代码及地图生成](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+    * [API服务](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+    * [网站前端](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+    如果您只是想报告错误或讨论网站的功能，您可以使用Github上项目存储库的[问题跟踪器](https://github.com/waymarkedtrails/waymarked-trails-site/issues) 或者[讨论功能](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) 。
   translation: |-
     ##翻译
 
-    本网站的翻译由[translatewiki.net](http://translatewiki.net) 上的贡献者提供。如果您希望我们网站提供您使用语言的翻译版本或提供现有翻译的反馈，请访问[translatewiki.net项目页面](http://translatewiki.net/wiki/Translating:Waymarked_Trails) 。
+    本网站的翻译由[translatewiki.net](https://translatewiki.net) 上的贡献者提供。如果您希望我们网站提供您使用语言的翻译版本或提供现有翻译的反馈，请访问[translatewiki.net项目页面](https://translatewiki.net/wiki/Translating:Waymarked_Trails) 。
 legal:
   title: 法律和使用条款
-  copyright: 路线覆盖在[知识共享 署名-相同方式共享 3.0 德国协议](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en)
-    下释出，GPX轨迹在[ODbL协议](http://opendatacommons.org/licenses/odbl/) 下释出。只要在兼容的协议下并提及OpenStreetMap及该网站，就可以重新使用及修改他们的作品。
+  copyright: 路线覆盖在[知识共享 署名-相同方式共享 3.0 德国协议](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en)
+    下释出，GPX轨迹在[ODbL协议](https://opendatacommons.org/licenses/odbl/) 下释出。只要在兼容的协议下并提及OpenStreetMap及该网站，就可以重新使用及修改他们的作品。
   usage: |-
     ## 使用政策
 
@@ -255,24 +261,22 @@ legal:
 acknowledgements:
   title: 鸣谢
   text: |-
-    所有地图数据都由[OpenStreetMap及其编者](http://www.openstreetmap.org) 提供，并在ODbL协议下释出。OpenStreetMap的基本地图也是免费的，并在CC BY-SA 2.0协议下释出。欲了解更多信息，请参阅[OSM的版权页](http://www.openstreetmap.org/copyright) 。
+    所有地图数据都由[OpenStreetMap及其编者](https://www.openstreetmap.org) 提供，并在ODbL协议下释出。OpenStreetMap的基本地图也是免费的。欲了解更多信息，请参阅[OSM的版权页](https://www.openstreetmap.org/copyright) 。
 
-    地貌晕渲和海拔数据由混合了SRTM和ASTER GDEM的数据创建。ASTER GDEM是日本经济产业省（METI）和美国国家航天局（NASA）的产品，并由来自[opensnowmap.org](http://opensnowmap.org) 的Yves Cainaud进行后加工处理。
+    地貌晕渲和海拔数据由混合了SRTM和ASTER GDEM的数据创建。ASTER GDEM是日本经济产业省（METI）和美国国家航天局（NASA）的产品，并由来自[opensnowmap.org](https://opensnowmap.org) 的Yves Cainaud进行后加工处理。
 
-    海拔配制文件代码已在位于[西挪威研究研究所](http://wwww.vestforsk.no) 的[Kresendo](http://www.kresendo.no) 和[TG4NP项目](http://tg4np.eu) 之间的合作下，由Espen Oldeman Lund开发。
+    海拔配制文件代码已在位于[西挪威研究研究所](https://www.vestforsk.no) 的[Kresendo](https://www.kresendo.no) 和TG4NP项目之间的合作下，由Espen Oldeman Lund开发。
 
     冬季运动斜坡变体由Michael Spreng开发。骑马标志由Robert Whittaker提供。
 
     路牌目标由[Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm) 处理。非常感谢Jan Michel提供服务。
 
-    该网站的翻译工作由[translatewiki.net及其编者](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators) 完成。特别要感谢那些在translatewiki.net之前提供翻译的翻译先驱：Yves Cainaud（法语）、Oscar Formaggi（意大利语）、Gustavo [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis（西班牙语）、[Guttorm Flatabø](http://guttormflatabo.com) /[TG4NP](http://tg4np.eu) （书面挪威语和新挪威语）、Mads Lumholt/TG4NP（丹麦语）、Magnús Smári Snorrason/TG4NP（冰岛语）、
+    该网站的翻译工作由[translatewiki.net及其编者](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators) 完成。特别要感谢那些在translatewiki.net之前提供翻译的翻译先驱：Yves Cainaud（法语）、Oscar Formaggi（意大利语）、Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis（西班牙语）、[Guttorm Flatabø](https://guttormflatabo.com) /TG4NP（书面挪威语和新挪威语）、Mads Lumholt/TG4NP（丹麦语）、Magnús Smári Snorrason/TG4NP（冰岛语）、
     Lars Mikaelsson/TG4NP（瑞典语）和Elina Pesonen（芬兰语）。
-
-    最后，该服务离不开[Martin Hoffmann](http://www.partim.de) 的大力支持。
 contact:
   title: 联系
   text: |-
     关于此网站的问题和评论可发送至[lonvia@denofr.de](mailto:lonvia@denofr.de) 。
 
-    软件错误也可以汇报至[Github上的项目问题跟踪系统](https://github.com/lonvia/waymarked-trails-site/issues) 。在汇报一个软件错误前，请确保您的问题不是OSM数据问题。
+    软件错误可以汇报至[Github上的项目问题跟踪系统](https://github.com/lonvia/waymarked-trails-site/issues) 。在汇报一个软件错误前，请确保您的问题不是OSM数据问题。
 ...

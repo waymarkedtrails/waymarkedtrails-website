@@ -4,6 +4,7 @@
 # Author: BaRaN6161 TURK
 # Author: Erdemaslancan
 # Author: Hedda
+# Author: Lonvia
 # Author: MuratTheTurkish
 # Author: SaldırganSincap
 ---
@@ -276,14 +277,14 @@ technical:
     sitenin kontrolü. OSM sunucusunun geçerli yüküne bağlı olarak
     bir dakika ile birkaç gün arasında.
 
-    Makine standart [Debian Linux] (https://www.debian.org/) ile çalışır
-    [pyosmium] 'dan oluşan bir alet zinciri (https://osmcode.org/pyosmium/),
-    [Postgresql] (https://www.postgresql.org) ve [Mapnik 2.0] (https://www.mapnik.org).
-    [osgende] (https://github.com/waymarkedtrails/osgende) bazı postprocessing işlemlerini üstlenir
+    Makine standart [Debian Linux](https://www.debian.org/) ile çalışır
+    [pyosmium](https://osmcode.org/pyosmium/) 'dan oluşan bir alet zinciri,
+    [Postgresql](https://www.postgresql.org) ve [Mapnik 2.0](https://www.mapnik.org).
+    [osgende](https://github.com/waymarkedtrails/osgende) bazı postprocessing işlemlerini üstlenir
     oluşturmadan önce veritabanında. Web sitesi kullanılarak servis edilir
-    [CherryPy] (https://cherrypy.org/). Kaynak kodu
+    [CherryPy](https://cherrypy.org/). Kaynak kodu
     GPL lisansı altında bulunmaktadır. Daha fazla bilgi için
-    [GitHub'da proje sayfası] (https://github.com/waymarkedtrails/waymarked-trails-site).
+    [GitHub'da proje sayfası](https://github.com/waymarkedtrails/waymarked-trails-site).
   translation: |-
     ## Çeviriler
 

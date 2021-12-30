@@ -45,6 +45,9 @@ headline:
   last_update: Hizivaet da ziwezhañ
 help: A-zivout ar gartenn
 locate_me: Lec'hiit ac'hanon
+network:
+  downhill: diskenn
+  node: Kevreadur skoulmoù rouedad
 osmc_symbol:
   back: Distro
   background: Labourat a ra an drekleur evel-se ivez. Bez' ez eus anezhi ul liv hag
@@ -57,6 +60,8 @@ osmc_symbol:
     a ra ivez ar rakleurioù a ya anv ar stumm d'o ober hepken. Er bann diwezhañ emañ
     diskouezet an arouezennoù evit ar re-mañ.
   foreground_heading: Talbenn
+  preview: Bizskrivañ un dalvoudegezh osmc:symbol er vaezienn vizskrivañ amañ dindan
+    evit gwelet penaos e vo kinniget war ar gartenn
   preview_heading: Rakwelet
 routelist:
   close: Serriñ

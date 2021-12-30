@@ -4,6 +4,7 @@
 # Author: Geitost
 # Author: Hufkratzer
 # Author: Kghbln
+# Author: Lonvia
 # Author: Metalhead64
 # Author: Nipsky
 # Author: Purodha
@@ -150,12 +151,12 @@ hierarchies:
     Relationen enthalten. Im Augenblick gibt es zwei Hauptanwendungen für solche
     verschachtelten Relationen in OSM: Zum einen werden sie verwendet, um sehr große
     Relationen in kleinere aufzuspalten (zum Beispiel der
-    [E1](http://hiking.waymarkedtrails.org/de/route/European%20walking%20route%20E1)) und
+    [E1](https://hiking.waymarkedtrails.org/#route?id=36367)) und
     zum anderen werden sie benutzt, um mehrfache Arbeit zu sparen, wenn zwei oder mehr
     Routen die gleiche Strecke benutzen (siehe zum Beispiel die Schweizer [Via
-    Francigena](http://hiking.waymarkedtrails.org/de/route/Via%20Francigena,%20Swiss%20part),
+    Francigena](https://hiking.waymarkedtrails.org/#route?id=124582),
     die Teil der Europäischen [Via Romea
-    Francigena](http://hiking.waymarkedtrails.org/route/Via%20Romea%20Francigena) ist).
+    Francigena](https://hiking.waymarkedtrails.org/#route?id=11860709) ist).
     Im ersten Fall sollten die Teilstrecken nicht extra auf der
     Karte erscheinen, im zweiten Fall schon.
 
@@ -174,7 +175,7 @@ hierarchies:
 osmc:
   title: Das Tag „osmc:symbol“
   text: |-
-    Das ``osmc:symbol``-Tag erlaubt, Wanderwegmarkierungen, die aus einfachen
+    Das `osmc:symbol`-Tag erlaubt, Wanderwegmarkierungen, die aus einfachen
     geometrischen Formen bestehen, in maschinenlesbarer Art und Weise zu beschreiben. Die
     Karte unterstützt einen Teil des auf der Wikiseite beschriebenen Formats. Um
     auf der Karte angezeigt zu werden, muss das Tag folgendes Format haben:
@@ -184,6 +185,8 @@ osmc:
     `waycolor` muss vorhanden sein, wird aber von der Karte ignoriert.
     Ein zweiter Vordergrund wird nicht unterstützt. `text` und `textcolor` können
     komplett weggelassen werden.
+
+    Eine Liste der von Waymarkedtrails unterstützten Symbole findet sich auf der Extraseite [osmc:symbol](osmc_symbols.html).
 hikinglocal:
   title: Darstellung regionaler Besonderheiten
   text: |-

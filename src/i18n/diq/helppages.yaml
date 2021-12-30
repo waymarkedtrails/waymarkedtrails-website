@@ -5,6 +5,7 @@
 # Author: Erdemaslancan
 # Author: Gorizon
 # Author: Kumkumuk
+# Author: Lonvia
 # Author: Mirzali
 # Author: Orbot707
 # Author: Shirayuki
@@ -26,7 +27,7 @@ about:
 rendering:
   title: OSM malumat kerden
   hikingroutes: "OSM de rotay payşıyayışi eleqedar dekerdış ganiyo. Eno seni guriyeno
-    pela etiket kerdışi de izah biyo.\n[rayê payşıyayışi] (https://wiki.openstreetmap.org/wiki/Walking_Routes)\nOSM
+    pela etiket kerdışi de izah biyo.\n[rayê payşıyayışi](https://wiki.openstreetmap.org/wiki/Walking_Routes)\nOSM
     wiki'de. No xerite de tewr cêrek ra etiketanê ceri gani ihtiwa wa bıkero \n\n
     \   type = route|superroute\n    route = foot|payşıyayış|payşıyayışê dormey"
   cyclingroutes: |-
