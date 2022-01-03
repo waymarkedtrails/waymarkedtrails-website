@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: DraconicDark
+# Author: ElBe
 # Author: Geitost
 # Author: JOE
 # Author: Kghbln
@@ -15,7 +16,7 @@ attribution:
   elevation_title: Höhendaten von [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Weitere Einzelheiten
-  no_data: Keine Zielinformationen verfügbar für diesen Wegweiser.
+  no_data: Für diesen Wegweiser sind keine Zielinformationen verfügbar.
   title: Ziele
 details:
   GPX: GPX
@@ -29,16 +30,16 @@ details:
   route_symbol: Wegzeichen
   subroutes_title: Abschnitte
   superroutes_title: Teil von
-  symbol: Wegzeichen
+  symbol: Symbol
   tags:
     key: Schlüssel
     title: OpenStreetMap-Tags
     value: Wert
   type:
     guidepost: Wegweiser
-    node: Node
+    node: Knoten
     relation: Relation
-    way: Way
+    way: Weg
     wayset: Wegesatz
   website: Website
   wikipedia: Wikipedia
@@ -94,7 +95,7 @@ osmc_symbol:
   preview_heading: Vorschau
 routelist:
   close: Schließen
-  more: Es gibt mehr Routen in der Gegend. Zur Anzeige bitte weiter hineinzoomen.
+  more: Vergrößere die Karte, um mehr Routen zu sehen.
   rollup: Aufrollen
   title: Routen
 search:

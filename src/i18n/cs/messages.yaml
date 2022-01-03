@@ -5,6 +5,7 @@
 # Author: Chmee2
 # Author: Dittaeva
 # Author: Dvorapa
+# Author: Hugo
 # Author: Jezevec
 # Author: Juandev
 # Author: Kendo13
@@ -43,7 +44,7 @@ elevation:
     altitude: Nadmořská výška (m)
     distance: Vzdálenost (km)
   title: Výškový profil
-  total: Celková Nadmořská výška
+  total: Celkové stoupání/klesání
   unavailable: Údaje o nadmořské výšce nenalezeny
   warn_unsorted: Cesta může být neorganizovaná nebo neúplná. Údaje o nadmořské výšce
     mohou být nepřesné.

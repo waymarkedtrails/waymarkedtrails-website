@@ -9,6 +9,7 @@ attribution:
   elevation_title: elevaasjedata troch [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Mear gegevens
+  no_data: Gjin bestimmingsynformaasje beskikber foar dizze hânwizer.
   title: Bestimmingen
 details:
   GPX: GPX
@@ -19,10 +20,20 @@ details:
   note: Tink derom
   official_len: Offisjele ôfstân
   operator: Behearder
+  route_symbol: Rûtesymboal
   subroutes_title: Parten
   superroutes_title: Part fan
+  symbol: Symboal
   tags:
+    key: kaai
     title: OpenStreetMap-lebels
+    value: wearde
+  type:
+    guidepost: Hânwizer
+    node: Punt
+    relation: Relaasje
+    way: Line
+    wayset: Lineset
   website: Webstee
   wikipedia: Wikipedy
   zoom_to: Op 'e kaart oanjaan
@@ -33,19 +44,31 @@ elevation:
     altitude: Hichte (m)
     distance: Ofstân (km)
   title: Elevaasjeprofyl
+  total: Totaal klimmen/dalen
   unavailable: Gjin elevaasjedata fûn.
   warn_unsorted: De rûte is mooglik net oardere of folslein. De elevaasjegegevens
     kinne ûnkrekt wêze.
 error:
   load_error: Ferbiningsflater mei de tsjinner.
+  missing_id: Untbrekkende parameter 'id'.
+  missing_query: Untbrekkende parameter 'query'.
   panel_title: Flater
 headline:
   last_update: Lêst bywurke
 help: Oer de kaart
 locate_me: Fyn my
 network:
-  downhill: ôfdaling
-  node: knooppunterûtes
+  continental: Kontinintale rûtes
+  downhill: Ofdaling
+  national: Nasjonale rûtes
+  node: Knooppunterûtes
+  nordic: Noardsk skyen
+  other: Oare rûtes
+  regional: Regionale rûtes
+  skitour: Skytochten
+  sled: Slidebaan
+  sleigh: Slidepyste
+  winter_hike: Winterkuierjen
 osmc_symbol:
   back: Werom
   background: De eftergrûn wurket op deselde wize. Dy bestiet ek út in kleur en in
@@ -64,9 +87,11 @@ osmc_symbol:
   preview_heading: Proefbyld
 routelist:
   close: Slute
+  more: Zoom yn om mear rûtes te sjen.
   rollup: Oprôlje
   title: Rûtes
 search:
+  places: Plakken
   routes: Rûtes
   title: Sykje
 settings:
@@ -77,10 +102,19 @@ settings:
   route_layer: Rûtelaach
   title: Kaartynstellings
   transparency: Kaarttrochsichtigens
+site_description:
+  cycling: Lokale en langeôfstânfytsrûtes, mei kaarten en ynformaasje fan OpenStreetMap.
+  hiking: Lokale en langeôfstânkuierrûtes, mei kaarten en ynformaasje fan OpenStreetMap.
+  mtb: Terreinfytsrûtes (MTB), mei kaarten en ynformaasje fan OpenStreetMap.
+  riding: Hynsterydrûtes, mei kaarten en ynformaasje fan OpenStreetMap.
+  skating: Skeelerrûtes, mei kaarten en ynformaasje fan OpenStreetMap.
+  slopes: Wintersportpystes, skyôfdaling, noardsk skeelerjen, winterkuierjen, mei
+    kaarten en ynformaasje fan OpenStreetMap.
 site_title:
   cycling: Fytse
   hiking: Kuierje
   mtb: Terreinfytse
+  osmc_symbol: It 'osmc:symbol'-lebel
   riding: Hynsteride
   skating: Skeelerje
   slopes: Wintersportpystes
