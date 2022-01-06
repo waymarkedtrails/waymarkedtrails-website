@@ -5,6 +5,7 @@
 # Author: Ebraminio
 # Author: FarsiNevis
 # Author: Hooshmand.hasannia
+# Author: Jeeputer
 # Author: Ladsgroup
 # Author: Reza1615
 ---
@@ -13,20 +14,33 @@ details:
   note: یادداشت
   subroutes_title: بخش‌ها
   superroutes_title: بخشی از
+  symbol: نماد
   tags:
+    key: کلید
     title: برچسب‌های نقشه باز شهری
+    value: مقدار
+  type:
+    node: گره
+    way: راه
   website: وب سایت
   wikipedia: ویکی‌پدیا
 error:
   panel_title: خطا
 headline:
   last_update: آخرین روزآمدسازی
+network:
+  national: مسیرهای ملی
+  other: سایر مسیرها
+  regional: مسیرهای منطقه‌ای
+  skitour: تورهای اسکی
 osmc_symbol:
   back: بازگشت
   background_heading: پیش‌زمینه
 routelist:
+  more: برای دیدن مسیرهای بیشتر، بزرگ‌نمایی کنید.
   title: مسیرها
 search:
+  places: مکان‌ها
   routes: مسیرها
   title: جستجو
 settings:

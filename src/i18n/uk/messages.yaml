@@ -20,6 +20,7 @@ attribution:
   elevation_title: дані про рельєф від [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Докладніше
+  no_data: Немає інформації про пункт призначення для цього путівника.
   title: Місця призначення
 details:
   GPX: GPX
@@ -30,11 +31,22 @@ details:
   note: Примітка
   official_len: Офіційна відстань
   operator: Оператор
+  route_symbol: Символ маршруту
   subroutes_title: Розділи
   superroutes_title: Частина
+  symbol: Символ
   tags:
+    key: ключ
     title: Теґи OpenStreetMap
+    value: значення
+  type:
+    guidepost: Путівник
+    node: Точка
+    relation: Відношення
+    way: Шлях
+    wayset: Набір шляхів
   website: Веб-сайт
+  wikipedia: Вікіпедія
   zoom_to: Показати на мапі
 elevation:
   ascent: Сукупний підйом
@@ -43,19 +55,31 @@ elevation:
     altitude: Висота (м)
     distance: Відстань (км)
   title: Профіль рельєфу
+  total: Загальний підйом/спуск
   unavailable: Не знайдені дані о висотах рельєфу.
   warn_unsorted: Шлях є потенційно невпорядкованим чи неповним. Інформація щодо висоти
     може бути неточною.
 error:
   load_error: Помилка підключення до сервера.
+  missing_id: Відсутній параметр «id».
+  missing_query: Відсутній параметр «query».
   panel_title: Помилка
 headline:
   last_update: Останнє оновлення
 help: Про мапу
 locate_me: Моє розташування
 network:
-  downhill: гірськолижний спуск
-  node: мережеві з'єднання вузла
+  continental: Континентальні маршрути
+  downhill: Гірськолижний спуск
+  national: Національні маршрути
+  node: Мережеві з'єднання вузла
+  nordic: Скандинавські лижі
+  other: Інші маршрути
+  regional: Регіональні маршрути
+  skitour: Гірськолижні тури
+  sled: Траса для катання на санках
+  sleigh: Санна траса
+  winter_hike: Зимові походи
 osmc_symbol:
   back: Назад
   background: Тло працює в схожий спосіб. Воно теж складається з кольору та форми.
@@ -73,9 +97,11 @@ osmc_symbol:
   preview_heading: Попередній перегляд
 routelist:
   close: Закрити
+  more: Збільшити масштаб, щоб побачити більше маршрутів.
   rollup: Згорнути
   title: Маршрути
 search:
+  places: Місця
   routes: Маршрути
   title: Пошук
 settings:
@@ -86,10 +112,19 @@ settings:
   route_layer: Шар маршрутів
   title: Налаштування мапи
   transparency: Прозорість мапи
+site_description:
+  cycling: Місцеві та міжміські велосипедні маршрути з мапами та інформацією з OpenStreetMap.
+  hiking: Місцеві та міжміські пішохідні маршрути з мапами та інформацією з OpenStreetMap.
+  mtb: Маршрути для гірських велосипедів (MTB), з мапами та інформацією з OpenStreetMap.
+  riding: Маршрути верхової їзди з мапами та інформацією з OpenStreetMap.
+  skating: Маршрути для катання на роликових ковзанах з мапами та інформацією з OpenStreetMap.
+  slopes: Схили для зимових видів спорту, гірські лижі, бігові ковзани, зимові прогулянки,
+    з мапами та інформацією з OpenStreetMap.
 site_title:
   cycling: Велосипед
   hiking: Пішохідний туризм
   mtb: Гірський велоспорт
+  osmc_symbol: The osmc:symbol tag
   riding: Верхова їзда
   skating: Катання на роликах
   slopes: Маршрути для зимових видів спорту

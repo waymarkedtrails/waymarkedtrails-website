@@ -28,6 +28,7 @@ details:
   superroutes_title: Del af
   tags:
     title: OpenStreetMap-tags
+    value: Værdi
   website: Hjemmeside
   zoom_to: Vis på kort
 elevation:
