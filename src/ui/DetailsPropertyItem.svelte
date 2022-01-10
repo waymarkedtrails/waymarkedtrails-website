@@ -13,14 +13,14 @@
                     formatted_value = value;
                     unit = 'm';
                 } else if (value < 10000) {
-                    formatted_value = (value/1000).toFixed(2);
+                    formatted_value = (value/1000).toFixed(1);
                     unit = 'km';
                 } else {
                     formatted_value = (value/1000).toFixed(0);
                     unit = 'km';
                 }
             } else if (type === 'ele') {
-                formatted_value = value.toFixed(2);
+                formatted_value = value.toFixed(1);
                 unit = 'm';
             } else {
                 formatted_value = value;
