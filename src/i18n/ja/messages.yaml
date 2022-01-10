@@ -1,6 +1,7 @@
 # Messages for Japanese (日本語)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: MathXplore
 # Author: Otokoume
 # Author: Shirayuki
 ---
@@ -14,6 +15,8 @@ details:
   subroutes_title: 節
   tags:
     title: OpenStreetMap タグ
+  type:
+    relation: 関係
   website: Web サイト
 elevation:
   diagram:

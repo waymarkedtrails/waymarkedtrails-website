@@ -4,6 +4,7 @@
 # Author: Alp Er Tunqa
 # Author: Amir a57
 # Author: Arjanizary
+# Author: Bir morty
 # Author: E THP
 # Author: Mousa
 ---
@@ -29,7 +30,7 @@ routelist:
   close: باغلا
   title: مسیر لر
 search:
-  routes: مسیر لر
+  routes: مسیرلر
   title: آختار
 settings:
   base_map: پایه خریطه
