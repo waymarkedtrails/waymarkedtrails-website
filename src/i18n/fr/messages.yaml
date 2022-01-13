@@ -60,7 +60,7 @@ elevation:
     altitude: Altitude (m)
     distance: Distance (km)
   title: Profil d’altitude
-  total: Altitude totale
+  total: Dénivelé total
   unavailable: Aucune donnée d’élévation trouvée.
   warn_unsorted: Le chemin est potentiellement non ordonné ou incomplet. Les informations
     d’altitude peuvent être inexactes.

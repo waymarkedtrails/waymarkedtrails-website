@@ -1,6 +1,7 @@
 # Messages for French (français)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Bmessika
 # Author: Boniface
 # Author: Cquoi
 # Author: Damouns
@@ -26,15 +27,15 @@ about:
   slopemap: Cette carte affiche les pistes de sport d’hiver balisées partout dans
     le monde.
   osm: |-
-    Les itinéraires sont superposés à la carte OpenStreetMap standard et avec le rendu facultatif du relief. La carte des itinéraires est générée d’après les données du projet [OpenStreetMap](http://www.openstreetmap.org) (OSM).
+    Les itinéraires sont superposés à la carte OpenStreetMap standard et avec le rendu facultatif du relief. La carte des itinéraires est générée d’après les données du projet [OpenStreetMap](https://www.openstreetmap.org) (OSM).
     OSM est une carte du monde librement modifiable à laquelle tout le monde peut contribuer. Cela signifie qu’elle n’est en aucun cas complète, mais également que vous pouvez y contribuer en ajoutant de nouveaux itinéraires et en corrigeant les erreurs dans ceux qui existent déjà. Pour en savoir plus sur OpenStreetMap, consultez le
-    [Guide du débutant](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
+    [Guide du débutant](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
 rendering:
   title: Rendu des données OSM
   hikingroutes: |-
     Les itinéraires de randonnée pédestre dans OSM doivent être saisis en tant que relations.
     C’est  expliqué en détails sur la page des balises des
-    [itinéraires de randonnée pédestre](http://wiki.openstreetmap.org/wiki/Walking_Routes)
+    [itinéraires de randonnée pédestre](https://wiki.openstreetmap.org/wiki/Walking_Routes)
     dans le wiki d’OSM. Cette carte montre les relations qui ont au moins les
     balises suivantes :
 
@@ -43,7 +44,7 @@ rendering:
   cyclingroutes: |-
     Les itinéraires cyclables dans OSM doivent être saisis en tant que relations.
     C’est expliqué en détail sur la page des balises des
-    [itinéraires cyclables](http://wiki.openstreetmap.org/wiki/Cycle_routes)
+    [itinéraires cyclables](https://wiki.openstreetmap.org/wiki/Cycle_routes)
     dans le wiki d’OSM. Cette carte montre toutes les relations qui ont au moins les
     balises suivantes :
 
@@ -51,29 +52,29 @@ rendering:
         route = bicycle
 
     Les itinéraires de vélo de montagne sont affichés sur une
-    [carte vélo de montagne](http://mtb.waymarkedtrails.org/en/) distincte.
+    [carte vélo de montagne](https://mtb.waymarkedtrails.org/en/) distincte.
   mtbroutes: |-
     Les itinéraires de vélo de montagne suivent le même schéma de marquage que les itinéraires cyclables
     qui est décrit en détail sur la page wiki d’OSM :
-    [itinéraires cyclables](http://wiki.openstreetmap.org/wiki/Cycle_routes).
+    [itinéraires cyclables](https://wiki.openstreetmap.org/wiki/Cycle_routes).
     Les relations avec les balises suivantes sont reconnues comme des itinéraires de vélo de montagne :
 
         type = route|superroute
         route = mtb
 
     Les itinéraires cyclables classiques sont affichés sur la
-    [carte des itinéraires cyclables](http://cycling.waymarkedtrails.org/fr/).
+    [carte des itinéraires cyclables](https://cycling.waymarkedtrails.org/fr/).
   skatingroutes: |-
     Les itinéraires balisés de rollers doivent être marqués comme toute les autres relations de type `route`.
     Pour le balisage compris par cette carte, jetez un œil sur la page du wiki concernant les
-    [itinéraires de rollers suisses](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
+    [itinéraires de rollers suisses](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
     Pour être reconnus comme des itinéraires de rollers, les balises suivantes doivent être présentes :
 
         type = route|superroute
         route = inline_skates
   ridingroutes: |-
     Les itinéraires balisés pour randonnée équestre doivent être marqués comme toute autre relation d’itinéraire.
-    Pour les détails, voyez [la page de l’itinéraire dans le wiki OSM](http://wiki.openstreetmap.org/wiki/Relation:route).
+    Pour les détails, voyez [la page de l’itinéraire dans le wiki OSM](https://wiki.openstreetmap.org/wiki/Relation:route).
     Pour être reconnues comme itinéraire équestre, les balises suivantes doivent être présentes :
 
         type = route|superroute
@@ -109,11 +110,11 @@ rendering:
     pentes nordiques sont marquées d’un signe qui ne montre que leur couleur, si une
     balise de couleur est présente."
   hikinglabels: |-
-    Le libellé pour chaque trajet est « deviné » d’après les balises, dans l’ordre suivant :
+    Le libellé pour chaque trajet est « deviné » d’après les balises, dans l’ordre suivant :
 
-    1. Suivre les [règles de rendu locales](rendering/hikinglocal) existantes.
+    1. Suivre les [règles de rendu locales](#help-hikinglocal) existantes.
     2. Essayer d interpréter la balise `osmc:symbol`. Pour plus de détails sur quelles parties
-        sont reconnues, voir [Règles de rendu de `osmc:symbol`](rendering/osmc).
+        sont reconnues, voir [Règles de rendu de `osmc:symbol`](osmc_symbols.html).
     3. Si une balise `ref` existe, créer un libellé texte avec la balise `ref`.
     4. Si une balise `name` existe, en déduire une référence, d’abord en utilisant
         uniquement les lettres majuscules, sinon en utilisant les premières lettres du nom.
@@ -125,9 +126,9 @@ rendering:
     2. Si une balise `name` existe, en déduire une référence, d’abord en utilisant
         uniquement les lettres majuscules, sinon en utilisant les premières lettres du nom.
     3. Abandonner.
-  hierarchy: La carte prend également en charge les [hiérarchies de relations](rendering/hierarchies).
+  hierarchy: La carte prend également en charge les [hiérarchies de relations](#help-hierarchies).
   guideposts: |-
-    Les [panneaux indicateurs](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    Les [panneaux indicateurs](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
     doivent être saisis avec les balises suivantes :
 
         tourism=information
@@ -190,7 +191,7 @@ hikinglocal:
     Remarquez que par-dessus ce réseau il y a un certain nombre de chemins nationaux et régionaux qui sont affichés de la manière habituelle.
 
     Pour plus d'information sur le balisage des chemins de randonnée en Suisse dans OSM, voyez :
-    [réseau de randonnée suisse](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+    [réseau de randonnée suisse](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
   italy: |-
     ## Italie
 
@@ -207,26 +208,26 @@ hikinglocal:
   uk: |-
     ## Royaume-Uni
 
-    La classification des [itinéraires de longues randonnées](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) (notés `network=uk_ldp`) dépend de la balise `operator`. Les relations avec `operator=National Trails` sont représentées comme des itinéraires nationaux, les autres apparaissent en tant qu'itinéraires régionaux.
+    La classification des [itinéraires de longues randonnées](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) (notés `network=uk_ldp`) dépend de la balise `operator`. Les relations avec `operator=National Trails` sont représentées comme des itinéraires nationaux, les autres apparaissent en tant qu'itinéraires régionaux.
 
     Les relations avec une balise `network=lwn/rwn/nwn/iwn` sont traitées de manière habituelle.
   czech: |-
     ## République tchèque
 
-    Le pays utilise un balisage des sentiers standard basé sur un ensemble de 7 symboles de 4 couleurs différentes. Pour leur description, voyez la [page de balisage tchèque](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (en langue tchèque uniquement).
+    Le pays utilise un balisage des sentiers standard basé sur un ensemble de 7 symboles de 4 couleurs différentes. Pour leur description, voyez la [page de balisage tchèque](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (en langue tchèque uniquement).
 
     Quand une balise `kct_*` est disponible, elle est préférée à toute autre balide `osmc:symbol`.
     De plus, le chemin est reclassifié, si aucune balise de réseau valide ne peut être trouvée. Les chemins avec `kct_red=major` deviennent des routes nationales, les autres `kct_*=major` sont classés comme régionaux.
   slovakia: "## Slovaquie\n\nLa Slovaquie utilise le même système de marquage que
     la République Tchèque. Cependant, les balises utilisées sont légèrement différentes,
-    voir la [page de randonnée Slovaque](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+    voir la [page de randonnée Slovaque](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
     \n\nTous les itinéraires contenant une balise `operator=KST` sont marquées selon
     ce schéma. Comme les itinéraires en Slovaquie devraient avoir une balise `network`
     valide, aucune reclassification n'est opérée."
   hungary: |-
     ## Hongrie
 
-    La Hongrie utilise également un système avec un ensemble défini de symboles de différentes couleurs. Ceux-ci sont marqués par leurs propres balises : [jel](http://wiki.openstreetmap.org/wiki/Key:jel).
+    La Hongrie utilise également un système avec un ensemble défini de symboles de différentes couleurs. Ceux-ci sont marqués par leurs propres balises : [jel](https://wiki.openstreetmap.org/wiki/Key:jel).
     Cette balise prévaut sur d'éventuelles balises `osmc:symbol`.
   germany: |-
     ## Allemagne
@@ -243,39 +244,41 @@ hikinglocal:
 elevationprofiles:
   title: Profils d'altitude
   general: |-
-    Les profils d'altitude sont construits avec les données d'altitude du [ASTER modèle d'altitude numérique global (GDEM) version 2](http://asterweb.jpl.nasa.gov/gdem.asp), la balise `ele` dans OpenStreetMap n'est pas prise en compte, ni les tunnels et les ponts. GDEM ASTER est un produit de METI et de la NASA.
+    Les profils d'altitude sont construits avec les données d'altitude du [ASTER modèle d'altitude numérique global (GDEM) version 2](https://asterweb.jpl.nasa.gov/gdem.asp), la balise `ele` dans OpenStreetMap n'est pas prise en compte, ni les tunnels et les ponts. GDEM ASTER est un produit de METI et de la NASA.
 
     Si le trajet a plus de deux points terminaux ou consiste en plus d'un segment, aucun profil ne sera rendu. La direction du profil suit le trajet ouest-est ou nord-sud. Si les trajets ont des éléments avec des rôles comme `start` ou `goal`, et/ou sont listés de façon continue du départ à l'arrivée, nous pouvons déterminer la direction depuis la liaison du trajet elle-même. Vous voudrez sans doute garder cela à l'esprit en projetant des trajets sur OpenStreetMap.
 
     Il y a des trous, appelés "vides", pour lesquels nous n'avons pas de données d'altitude; ils sont représentés avec des espaces dans la ligne du profil d'altitude.
 
-    Faites attention que bien que ASTER version 2 soit probablement le meilleur MNT libre global, il a ses limitations, à la fois en termes de précision et de couverture; voyez leur [résumé du rapport de validation](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) pour plus d'information. Les imprécisions sont de plus aggravées par l'imprécision des données OSM, [une technique de lissage](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nous appliquons, et par la résolution du profil qui diminue avec l'allongement du trajet.
+    Faites attention que bien que ASTER version 2 soit probablement le meilleur MNT libre global, il a ses limitations, à la fois en termes de précision et de couverture; voyez leur [résumé du rapport de validation](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) pour plus d'information. Les imprécisions sont de plus aggravées par l'imprécision des données OSM, [une technique de lissage](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nous appliquons, et par la résolution du profil qui diminue avec l'allongement du trajet.
 technical:
   title: Détails techniques
   general: "Les itinéraires sont mis à jour chaque minute et normalement avec un décalage
     de 2-5 minutes par rapport au serveur OSM. La date en haut à gauche indique la
     dernière mise à jour. Les mises à jour de la carte Mapnik sous-jacente ne sont
     pas du ressort de ce site. Selon la charge actuelle du serveur OSM, elles peuvent
-    prendre entre une minute et quelques jours. \n\nLa machine fonctionne sur un système
-    d’exploitation [Debian Linux](http://www.debian.org/) standard avec les logiciels
-    \n[pyosmium](http://osmcode.org/pyosmium/),\n[Postgresql](http://www.postgresql.org)
-    et [Mapnik 2.0](http://www.mapnik.org).\n[osgende](https://github.com/waymarkedtrails/osgende)
-    traite la base de donnée avant le rendu. Le site web tourne en utilisant [CherryPy](http://cherrypy.org/).
-    Le code source est disponible sous licence GPL. Pour plus d’information, visitez
-    la [page du projet sur GitHub](https://github.com/waymarkedtrails/waymarked-trails-site)."
+    prendre entre une minute et quelques heures. \n\nLe code source pour ce site web
+    est disponible sous la licence GPL et\nse divise entre plusieurs dépôts :\n* [code
+    du serveur et génération de la carte](https://github.com/waymarkedtrails/waymarkedtrails-backend/)\n*
+    [services d’API](https://github.com/waymarkedtrails/waymarkedtrails-api/)\n* [frontal
+    du site web](https://github.com/waymarkedtrails/waymarkedtrails-website/)\n\nSi
+    vous voulez simplement signaler un bogue ou discuter des fonctionnalités du site
+    web,\nvous pouvez utiliser le [suivi de problèmes](https://github.com/waymarkedtrails/waymarked-trails-site/issues)\nou
+    la [fonctionnalité de discussion](https://github.com/waymarkedtrails/waymarked-trails-site/discussions)
+    sur le dépôt du projet sur Github."
   translation: |-
     ## Traductions
 
     Les traductions sont gérées par les généreux contributeurs participants de
-    [translatewiki.net](http://translatewiki.net). Si vous voulez contribuer à la traduction
+    [translatewiki.net](https://translatewiki.net). Si vous voulez contribuer à la traduction
     dans votre langue ou donner un avis sur les traductions existantes, visitez la
-    [page du projet sur translatewiki.net](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+    [page du projet sur translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Conditions légales d’utilisation
   copyright: |-
     Les itinéraires sont disponibles sous la
-    [licence Creative Commons Attribution-Share Alike 3.0 Allemagne](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en) et les traces GPX sont sous la
-    [licence ODbL](http://opendatacommons.org/licenses/odbl/).
+    [licence Creative Commons Attribution-Share Alike 3.0 Allemagne](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en) et les traces GPX sont sous la
+    [licence ODbL](https://opendatacommons.org/licenses/odbl/).
     Ils peuvent être réutilisés et modifiés tant que le travail en résultant utilise une licence compatible
     et que le projet OpenStreetMap et ce site soient mentionnés.
   usage: |-
@@ -296,17 +299,17 @@ legal:
 acknowledgements:
   title: Remerciements
   text: |-
-    Toutes les données de la carte sont fournies par [OpenStreetMap et ses contributeurs](http://www.openstreetmap.org)
-    et distribuées sous la license ODbL. La carte de base est également aimablement fournie par OSM et disponible
-    sous licence CC BY-SA 2.0. Pour plus d’informations, voyez la
-    [page de propriété intellectuelle d’OSM](http://www.openstreetmap.org/copyright).
+    Toutes les données de la carte sont fournies par [OpenStreetMap et ses contributeurs](https://www.openstreetmap.org)
+    et distribuées sous la license ODbL. La carte de base est également aimablement fournie par OSM.
+    Pour plus d’informations, voyez la
+    [page de propriété intellectuelle d’OSM](https://www.openstreetmap.org/copyright).
 
     La couche d’ombrage et les données altimétriques ont été créées par un mixage de données de SRTM et ASTER GDEM.
     ASTER GDEM est un produit de METI et de la NASA.
     Le post-traitement a été aimablement fourni par Yvez Cainaud chez [opensnowmap.org](http://opensnowmap.org).
 
     Le profil d’altitude a été développé par Espen Oldeman Lund en coopération avec [Kresendo](http://www.kresendo.no)
-    et le [projet TG4NP](http://tg4np.eu) à l’[Institut de Recherche de Norvège Occidentale](http://wwww.vestforsk.no).
+    et le projet TG4NP à l’[Institut de Recherche de Norvège Occidentale](https://www.vestforsk.no).
 
     La variante des pistes de sport d’hiver a été développée par Michael Spreng. Le symbole d’équitation a été
     préparé par Robert Wittaker.
@@ -314,11 +317,11 @@ acknowledgements:
     Les poteaux indicateurs de destination sont traitées par [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Tous nos remerciements à Jan Michel pour la fourniture de ce service.
 
     Les traductions de ce site sont fournies par
-    [translatewiki.net et ses contributeurs](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Des remerciements particuliers aux premiers traducteurs qui
+    [translatewiki.net et ses contributeurs](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Des remerciements particuliers aux premiers traducteurs qui
     ont fourni les textes avant translatewiki.net : Yves Cainaud (français),
     Oscar Formaggi (italien),
-    Gustave [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (espagnol),
-    [Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (norvégien bokmål et nynorsk),
+    Gustave [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (espagnol),
+    [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (norvégien bokmål et nynorsk),
     Mads Lumholt/TG4NP (danois), Magnús Smári Snorrason/TG4NP (islandais),
     Lars Mikaelsson/TG4NP (suédois) et Elina Pesonen (finlandais).
 
