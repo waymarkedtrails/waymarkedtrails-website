@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: BaRaN6161 TURK
+# Author: Can
 # Author: Emperyan
 # Author: Grkn gll
 # Author: Hedda
@@ -28,10 +29,17 @@ details:
   note: Not
   official_len: Resmi uzunluğu
   operator: Operatör
+  route_symbol: Rota sembolu
   subroutes_title: Bölümler
   superroutes_title: Parçası
+  symbol: Sembol
   tags:
+    key: anahtar
     title: OpenStreetMap etiketleri
+    value: değer
+  type:
+    relation: İlişki
+    way: Yol
   website: Web site
   wikipedia: Vikipedi
   zoom_to: Haritada göster
@@ -47,14 +55,22 @@ elevation:
     yanlış olabilir.
 error:
   load_error: Sunucuya bağlanma hatası.
+  missing_id: Eksik parametre 'id'.
+  missing_query: Eksik parametre 'query'.
   panel_title: Hata
 headline:
   last_update: Son güncelleme
 help: Harita hakkında
 locate_me: Beni bul
 network:
+  continental: Kıtalararası rotalar
   downhill: aşağı
+  national: Ulusal rotalar
   node: düğüm ağ bağlantıları
+  other: Diğer rotalar
+  regional: Bölgesel rotalar
+  skitour: Kaya turları
+  winter_hike: Kış yürüyüşü
 osmc_symbol:
   back: Geri
   background: Arka plan benzer şekilde çalışır. Aynı zamanda bir renk ve bir şekilden
@@ -73,9 +89,11 @@ osmc_symbol:
   preview_heading: Önizleme
 routelist:
   close: Kapat
+  more: Daha fazla rota görmek için yakınlaştır.
   rollup: Topla
   title: Güzergâhlar
 search:
+  places: Yerler
   routes: Güzergâhlar
   title: Ara
 settings:
