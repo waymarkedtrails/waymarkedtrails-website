@@ -7,6 +7,7 @@
 # Author: Happy13241
 # Author: Irus
 # Author: Kaganer
+# Author: Kareyac
 # Author: Lonvia
 # Author: Movses
 # Author: Okras
@@ -179,7 +180,7 @@ hikinglocal:
   czech: |-
     ## Чешская Республика
 
-    Страна использует стандарт маркировки троп, основанный на наборе из 7 символов 4 различных цветов. См. описание на [странице чешской разметки](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (только на чешском).
+    Страна использует стандарт маркировки троп, основанный на наборе из 7 символов 4 различных цветов. См. описание на [странице чешской разметки](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (только на чешском).
 
     При наличии тега «kct_*» ему отдаётся предпочтение перед любым тегом «osmc:symbol».
     Кроме того, маршрут переклассифицируется, если не находятся действительные сетевой тег. Маршруты с «kct_red=major» становятся национальными маршрутами, другие же «kct_*=major» классифицируются как региональные.
@@ -193,7 +194,7 @@ hikinglocal:
   hungary: |-
     ## Венгрия
 
-    Венгрия также использовать систему с фиксированным набором символов разных цветов. Они отмечены своими собственными тегами [jel](http://wiki.openstreetmap.org/wiki/Key:jel).
+    Венгрия также использует систему с фиксированным набором символов разных цветов. Они отмечены своими собственными тегами [jel](https://wiki.openstreetmap.org/wiki/Key:jel).
     Этот тег предпочтительнее любого другого тега «osmc: symbol».
   germany: "## Германия\n\n### Fränkischer Albverein\n\nСеть маршрутов вокруг Нюрнберга
     довольно плотная, поэтому региональные маршруты с тегом \n«operator=Fränkischer
@@ -209,7 +210,7 @@ hikinglocal:
 elevationprofiles:
   title: Профили рельефа
   general: |-
-    Профиль рельефа создаётся с помощью данных о рельефе из [Глобальной цифровой модели рельефа (GDEM) ASTER версии 2](http://asterweb.jpl.nasa.gov/gdem.asp), тег «ele» в OpenStreetMap не учитывается, так же, как туннели и мосты. ASTER GDEM — это продукт METI и НАСА.
+    Профиль рельефа создаётся с помощью данных о рельефе из [Глобальной цифровой модели рельефа (GDEM) ASTER версии 2](https://asterweb.jpl.nasa.gov/gdem.asp), тег «ele» в OpenStreetMap не учитывается, так же, как туннели и мосты. ASTER GDEM — это продукт METI и НАСА.
 
     Если маршрут имеет более двух конечных точек или состоит из более чем одного сегмента, профиль не будет обработан.
 
@@ -217,7 +218,7 @@ elevationprofiles:
 
     Существуют дыры, называемые «пустотами», для которых у нас нет данных по рельефу. Они отображаются дырами в линии профиля рельефа.
 
-    Учтите, что несмотря на то, что ASTER версии 2, наверное, лучшая бесплатная глобальная ЦМР, у неё есть свои ограничения, когда речь идет о точности и охвате, см. их [сводный отчёт о проверке](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) для получения дополнительной информации. Неточности усугубляются неточностью данных OSM, [техникой сглаживания](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), которую мы применяем, и разрешением профиля, которое становится ниже с увеличением длины маршрута.
+    Учтите, что несмотря на то, что ASTER версии 2, наверное, лучшая бесплатная глобальная ЦМР, у неё есть свои ограничения, когда речь идет о точности и охвате, см. их [сводный отчёт о проверке](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) для получения дополнительной информации. Неточности усугубляются неточностью данных OSM, [техникой сглаживания](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), которую мы применяем, и разрешением профиля, которое становится ниже с увеличением длины маршрута.
 technical:
   title: Технические детали
   general: |-
@@ -238,8 +239,8 @@ legal:
   title: Условия использования
   copyright: |-
     Покрытия маршрутов доступны под
-    [Creative Commons Attribution-Share Alike 3.0 Germany License](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en), треки GPX находятся под
-    лицензией [ODbL](http://opendatacommons.org/licenses/odbl/).
+    [Creative Commons Attribution-Share Alike 3.0 Germany License](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en) и треки GPX находятся под
+    лицензией [ODbL](https://opendatacommons.org/licenses/odbl/).
     Они могут быть повторно использованы и изменены до тех пор, пока результат работы используется с совместимой лицензией
     и упоминается проект OpenStreetMap и этот сайт.
   usage: "## Условия использования\n\nВы можете умеренно использовать оверлей на других
@@ -259,21 +260,21 @@ legal:
 acknowledgements:
   title: Благодарности
   text: |-
-    Все картографические данные предоставлены [OpenStreetMap и участниками](http://www.openstreetmap.org) и распространяются по лицензии ODbL. Базовая карта также любезно предоставлена OSM по лицензии CC BY-SA 2.0. Дополнительную информацию можно узнать на странице [авторских прав OSM](http://www.openstreetmap.org/copyright).
+    Все картографические данные предоставлены [OpenStreetMap и участниками](https://www.openstreetmap.org) и распространяются по лицензии ODbL. Базовая карта также любезно предоставлена OSM по лицензии CC BY-SA 2.0. Дополнительную информацию можно узнать на странице [авторских прав OSM](https://www.openstreetmap.org/copyright).
 
     Данные по отмывке рельефа и высотам созданы из смеси данных SRTM и ASTER GDEM.
     ASTER GDEM является продуктом METI и НАСА.
-    Постобработка была любезно произведена Yves Cainaud из [opensnowmap.org](http://opensnowmap.org).
+    Постобработка была любезно произведена Yves Cainaud из [opensnowmap.org](https://opensnowmap.org).
 
-    Код высот профиля был разработан Espen Oldeman Lund в сотрудничестве с [Kresendo](http://www.kresendo.no) и [TG4NP](http://tg4np.eu) в [Западно-норвежском научно-исследовательском институте](http://wwww.vestforsk.no).
+    Код высот профиля был разработан Espen Oldeman Lund в сотрудничестве с [Kresendo](http://www.kresendo.no) и [TG4NP](http://tg4np.eu) в [Западно-норвежском научно-исследовательском институте](https://www.vestforsk.no).
 
     Вариант со склонами для зимних видов спорта был разработан Майклом Спрэнгом. Символ движения был подготовлен Робертом Уиттакером.
 
-    Справочные пункты, обработаны [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm) и большое спасибо Jan Michel за это.
+    Справочные пункты, обработаны [Mueschelsoft](https://osm.mueschelsoft.de/destinationsign/example/index.htm) и большое спасибо Jan Michel за это.
 
-    Перевод этого сайта обеспечивается [translatewiki.net и его участниками](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Особая благодарность пионерам-переводчикам, которые осуществляли перевод до начала использования translatewiki.net: Yves Cainaud (французский), Oscar Formaggi (итальянский), Gustavo [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (испанский), [Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (норвежские букмол и нюнорск), Mads Lumholt/TG4NP (датский), Magnús Smári Snorrason/TG4NP (исландский), Lars Mikaelsson/TG4NP (шведский) и Elina Pesonen (финский).
+    Перевод этого сайта обеспечивается [translatewiki.net и его участниками](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Особая благодарность пионерам-переводчикам, которые осуществляли перевод до начала использования translatewiki.net: Yves Cainaud (французский), Oscar Formaggi (итальянский), Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (испанский), [Guttorm Flatabø](https://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (норвежские букмол и нюнорск), Mads Lumholt/TG4NP (датский), Magnús Smári Snorrason/TG4NP (исландский), Lars Mikaelsson/TG4NP (шведский) и Elina Pesonen (финский).
 
-    И, наконец, сервер не мог бы существовать без щедрой поддержки [Мартина Хоффмана](http://www.partim.de).
+    И, наконец, сервер не мог бы существовать без щедрой поддержки [Мартина Хоффмана](https://www.partim.de).
 contact:
   title: Обратная связь
   text: |-

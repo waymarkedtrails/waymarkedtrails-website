@@ -104,10 +104,14 @@ settings:
   route_layer: Güzergâh katmanı
   title: Harita ayarları
   transparency: Harita şeffaflığı
+site_description:
+  hiking: OpenStreetMap'ten harita ve bilgilerle yerel ve uzun-mesafeli kayak ve yürüme
+    rotaları.
 site_title:
   cycling: Bisiklete binme
   hiking: Doğa yürüyüşü
   mtb: MTB
+  osmc_symbol: osmc:sembol etiketi
   riding: At Binme
   skating: Tekerlekli Paten
   slopes: Kış Sporu Yamaçları
