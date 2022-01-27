@@ -42,8 +42,8 @@ headline:
 help: A proposito del carta
 locate_me: Localisar me
 network:
-  downhill: descendita
-  node: connexiones de nodos de rete
+  downhill: Descendita
+  node: Connexiones de nodos de rete
 osmc_symbol:
   back: Retornar
   background: Le fundo functiona de maniera similar. Illo etiam consiste de un color
