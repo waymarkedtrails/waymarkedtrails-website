@@ -16,6 +16,12 @@ The code is written in Javascript using [Svelte](https://svelte.dev/)
 using [rollup](https://rollupjs.org) and [yarn2](https://yarnpkg.com/)
 for package management.
 
+If you only yarn1 ('classic yarn') available, you can bootstrap yourself
+into using the latest yarn2 with:
+
+    yarn set version berry
+    yarn set version stable
+
 To build the site run:
 
     yarn install
@@ -23,11 +29,20 @@ To build the site run:
 
 The website is then available in the `public/` directory.
 
+Development
+============
+
 If you want to run the site for development run:
 
     yarn dev
 
 The development version will look at `http://localhost:8080` for the API.
+
+You can also force the site to run against the official API by setting a
+couple of environment variables:
+
+    WMT_API_URL='https://hiking.waymarkedtrails.org/api/v1' WMT_MEDIA_URL=https://static.waymarkedtrails.org/ yarn dev
+
 
 Configuration
 =============
