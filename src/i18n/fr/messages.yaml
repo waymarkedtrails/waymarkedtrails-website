@@ -10,8 +10,10 @@
 # Author: Objectivesea
 # Author: Od1n
 # Author: Paraboule
+# Author: PiefPafPier
 # Author: Pyrog
 # Author: Shirayuki
+# Author: StC
 # Author: Thibaut120094
 # Author: Tititou36
 # Author: Urhixidur
@@ -62,7 +64,7 @@ elevation:
   title: Profil d’altitude
   total: Dénivelé total
   unavailable: Aucune donnée d’élévation trouvée.
-  warn_unsorted: Le chemin est potentiellement non ordonné ou incomplet. Les informations
+  warn_unsorted: L'itinéraire est potentiellement non ordonné ou incomplet. Les informations
     d’altitude peuvent être inexactes.
 error:
   load_error: Erreur de connexion au serveur.
@@ -76,14 +78,14 @@ locate_me: Me localiser
 network:
   continental: Itinéraires continentaux
   downhill: descente
-  national: Routes nationales
-  node: Connexions réseau des nœuds
+  national: Itinéraires nationaux
+  node: Connexions entre réseau de carrefours
   nordic: Ski nordique
   other: Autres itinéraires
   regional: Itinéraires régionaux
   skitour: Randonnées à ski
   sled: Piste de luge
-  sleigh: Piste de luge
+  sleigh: Piste de traineau
   winter_hike: Randonnée hivernale
 osmc_symbol:
   back: Retour

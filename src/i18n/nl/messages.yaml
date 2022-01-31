@@ -52,8 +52,8 @@ headline:
 help: Over de kaart
 locate_me: Zoek mij
 network:
-  downhill: bergafwaarts
-  node: knooppuntenroutes
+  downhill: Bergafwaarts
+  node: Knooppuntenroutes
 osmc_symbol:
   back: Terug
   background: Het achtergrondsymbool werkt vergelijkbaar. Dit bestaat ook uit een

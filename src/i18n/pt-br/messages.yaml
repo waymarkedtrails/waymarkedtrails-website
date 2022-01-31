@@ -12,6 +12,7 @@
 # Author: SaldırganSincap
 # Author: TheGabrielZaum
 # Author: Tuliouel
+# Author: Wiiformii
 ---
 attribution:
   data: Dados cartográficos © [OpenStreetMap](https://www.openstreetmap.org) sob a
@@ -29,10 +30,18 @@ details:
   note: Nota
   official_len: Distância oficial
   operator: Operador
+  route_symbol: Símbolo da rota
   subroutes_title: Seções
   superroutes_title: Parte de
+  symbol: símbolo
   tags:
+    key: Chave
     title: Etiquetas do OpenStreetMap
+    value: Valor
+  type:
+    node: Ponto
+    relation: Relação
+    way: Caminho
   website: Site
   wikipedia: Wikipédia
   zoom_to: Mostrar no mapa
@@ -54,8 +63,15 @@ headline:
 help: Sobre o mapa
 locate_me: Localize-me
 network:
+  continental: Rotas continentais
   downhill: descer
+  national: Rotas nacionais
   node: conexões de rede do nó
+  nordic: Esquiando nórdico
+  other: Outras Rotas
+  regional: Rotas regionais
+  skitour: Passeios de esquiando
+  winter_hike: Caminhada no inverno
 osmc_symbol:
   back: Voltar
   background: O fundo funciona de maneira parecida. Também contém uma cor e uma forma.

@@ -18,31 +18,31 @@ about:
   riding: Op deze kaart worden bewegwijzerde paardrijroutes over de hele wereld weergegeven.
   slopemap: Op deze kaart worden wintersportpistes in de hele wereld weergegeven.
   osm: |-
-    De routes worden ingetekend op de standaardkaart van OpenStreetMap. Optioneel is er een kaartlaag beschikbaar met heuvelschaduwen. De routekaart is gemaakt met gegevens van van het project [OpenStreetMap](http://www.openstreetmap.org) (OSM).
-    OSM is een gratis en vrij te bewerken kaart van de wereld waar iedereen aan mee kan doen. De kaart is zeker niet volledig, en u kunt zelf bijdragen door nieuwe routes toe te voegen en bestaande routes te corrigeren. U kunt de [Beginnersgids](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide) raadplegen om meer over OpenStreetMap te weten te komen.
+    De routes worden ingetekend op de standaardkaart van OpenStreetMap. Optioneel is er een kaartlaag beschikbaar met heuvelschaduwen. De routekaart is gemaakt met gegevens van van het project [OpenStreetMap](https://www.openstreetmap.org) (OSM).
+    OSM is een gratis en vrij te bewerken kaart van de wereld waar iedereen aan mee kan doen. De kaart is zeker niet volledig, en u kunt zelf bijdragen door nieuwe routes toe te voegen en bestaande routes te corrigeren. U kunt de [Beginnersgids](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide) raadplegen om meer over OpenStreetMap te weten te komen.
 rendering:
   title: OSM-gegevens weergeven
   hikingroutes: |-
-    Wandelroutes moeten in OSM aangemaakt worden als relaties. Hoe dit werkt wordt in detail beschreven op de pagina over het labelen van [wandelroutes](http://wiki.openstreetmap.org/wiki/Walking_Routes)
+    Wandelroutes moeten in OSM aangemaakt worden als relaties. Hoe dit werkt wordt in detail beschreven op de pagina over het labelen van [wandelroutes](https://wiki.openstreetmap.org/wiki/Walking_Routes)
     in de OSM-wiki. Op deze kaart worden relaties weergegeven die ten minste de volgende labels hebben:
 
         type = route|superroute
         route = foot|walking|hiking
   cyclingroutes: "Fietsroutes moeten in OSM ingevoerd worden als relaties. Hoe dit
-    werkt is\nin detail beschreven op de pagina over het taggen van \n[fietsroutes](http://wiki.openstreetmap.org/wiki/Cycle_routes)
+    werkt is\nin detail beschreven op de pagina over het taggen van \n[fietsroutes](https://wiki.openstreetmap.org/wiki/Cycle_routes)
     in de\nOSM-wiki. Op deze kaart worden alle relaties weergegeven die ten minste
     de volgende labels hebben:\n\n    type = route|superroute\n    route = bicycle\n\nMountainbikeroutes
-    worden weergegeven op een eigen [MTB-kaart](http://mtb.waymarkedtrails.org/en/)."
+    worden weergegeven op een eigen [MTB-kaart](https://mtb.waymarkedtrails.org)."
   mtbroutes: |-
     Mountainbikeroutes volgen hetzelfde labelschema als fietsroutes,
     dat in detail beschreven is op de OSM-wikipagina over
-    [fietsroutes](http://wiki.openstreetmap.org/wiki/Cycle_routes).
+    [fietsroutes](https://wiki.openstreetmap.org/wiki/Cycle_routes).
     Relaties die de volgende labels hebben worden herkend als MTB-routes:
 
         type = route|superroute
         route = mtb
 
-    Reguliere fietsroutes worden weergegeven op de [fietskaart](http://cycling.waymarkedtrails.org/en/).
+    Reguliere fietsroutes worden weergegeven op de [fietskaart](https://cycling.waymarkedtrails.org).
   skatingroutes: |-
     Skateroutes met bewegwijzering moeten net zo getagd worden als andere routerelaties.
     Kijk op de wikipagina over [Zwitserse skateroutes](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork)

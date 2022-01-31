@@ -10,6 +10,7 @@
 # Author: Paraboule
 # Author: Pyrog
 # Author: Shirayuki
+# Author: StC
 # Author: Thibaut120094
 # Author: Urhixidur
 # Author: Verdy p
@@ -80,8 +81,8 @@ rendering:
         type = route|superroute
         route = horse
   sloperoutes: |-
-    Les pentes balisées sont des chemins avec les balises `piste:type`.
-    Pour être reconnus comme pistes, les balises suivantes doivent être associées aux chemins :
+    Les pistes balisées sont des chemins avec les balises `piste:type`.
+    Pour être reconnus comme pistes, les chemins doivent posséder les balises suivantes :
 
        piste:type = downhill|nordic|sled|hike|sleigh
 
@@ -107,8 +108,8 @@ rendering:
     l’utiliser pour en faire un libellé.\n4. Si une relation et une balise `name`
     existent, en dériver une référence, d’abord en utilisant\n   uniquement des lettres
     majuscules, sinon en utilisant les premières lettres du nom.\n5. Abandonner. \n\nLes
-    pentes nordiques sont marquées d’un signe qui ne montre que leur couleur, si une
-    balise de couleur est présente."
+    pistes de ski nordique sont marquées d’un signe qui ne montre que leur couleur,
+    si une balise de couleur est présente."
   hikinglabels: |-
     Le libellé pour chaque trajet est « deviné » d’après les balises, dans l’ordre suivant :
 
