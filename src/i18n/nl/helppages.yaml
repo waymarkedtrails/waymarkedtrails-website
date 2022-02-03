@@ -45,7 +45,7 @@ rendering:
     Reguliere fietsroutes worden weergegeven op de [fietskaart](https://cycling.waymarkedtrails.org).
   skatingroutes: |-
     Skateroutes met bewegwijzering moeten net zo getagd worden als andere routerelaties.
-    Kijk op de wikipagina over [Zwitserse skateroutes](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork)
+    Kijk op de wikipagina over [Zwitserse skateroutes](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork)
     voor hoe u moet taggen zodat de route wordt opgenomen op deze kaart.
     De volgende labels moeten in ieder geval aanwezig zijn:
 
@@ -53,8 +53,8 @@ rendering:
         route = inline_skates
   ridingroutes: |-
     Bewegwijzerde paardrijroutes moeten net als iedere routerelatie gelabeld worden.
-    Zie de [routepagina in de OSM-wiki](http://wiki.openstreetmap.org/wiki/Relation:route) voor meer details.
-    Om herkend te worden als paardrijroute, moeten de volgende labels aanwezig zijn:
+    Zie de [routepagina in de OSM-wiki](https://wiki.openstreetmap.org/wiki/Relation:route) voor meer details.
+    De volgende labels moeten in ieder geval aanwezig zijn:
 
         type = route|superroute
         route = horse
@@ -91,9 +91,9 @@ rendering:
   hikinglabels: |-
     Het label voor iedere route wordt "geraden" op basis van de labels in de volgende volgorde:
 
-    1. Controleer op [gelokaliseerde renderregels](rendering/hikinglocal).
+    1. Controleer op [gelokaliseerde renderregels](#help-hikinglocal).
     2. Probeer het label `osmc:symbol` te interpreteren. Zie
-       [osmc:symbol rendering rules](rendering/osmc) voor details over welke delen
+       [osmc:symbol rendering rules](osmc_symbols.html) voor details over welke delen
        worden begrepen.
     3. Als het label `ref` bestaat, maak dan een tekstlabel met de waarde van `ref`.
     4. Als het label `name` bestaat, leid daar dan een referentie van af, eerst door
@@ -108,9 +108,9 @@ rendering:
        alleen de hoofdletters te gebruiken en als dat niet lukt door de eerste letters
        van de naam te gebruiken.
     3. Geef het op.
-  hierarchy: De kaart ondersteunt ook [relatiehiërarchieën](rendering/hierarchies).
+  hierarchy: De kaart ondersteunt ook [relatiehiërarchieën](#help-hierarchies).
   guideposts: |-
-    [Wegwijzers](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    [Wegwijzers](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
     worden herkend door de volgende labels:
 
         tourism=information
@@ -147,11 +147,13 @@ hierarchies:
 osmc:
   title: Het label osmc:symbol
   text: |-
-    Het label `osmc:symbol` biedt een manier om routesymbolen met eenvoudige geometrische vormen zoals ze in Europese landen worden gebruikt, op een door computers te verwerken manier te beschrijven. De kaart ondersteunt een deelverzameling van wat op de wikipagina wordt beschreven. Om op de kaart weergegeven te kunnen worden, moeten de labels in de volgende opmaak worden ingevoerd:
+    Het label `osmc:symbol` biedt een manier om routesymbolen met eenvoudige geometrische vormen, zoals ze in bepaalde Europese landen (vooral Duitsland) worden gebruikt, op een door computers te verwerken manier te beschrijven. De kaart ondersteunt maar een deel van wat op de wikipagina wordt beschreven. Om op de kaart te verschijnen moeten de labels in de volgende opmaak worden ingevoerd:
 
         osmc:symbol=lijnkleur:achtergrond:voorgrond:tekst:tekstkleur
 
-    `lijnkleur` moet aanwezig zijn, maar wordt voor deze kaart genegeerd. `voorgrond` mag niet leeg zijn; een tweede voorgrond wordt niet ondersteund. `tekst` en `tekstkleur` mogen weggelaten worden. Er is een [lijst met voorgrond- en achtergrondsymbolen beschikbaar voor deze kaart](osmc_legende).
+    `lijnkleur` moet aanwezig zijn, maar wordt voor deze kaart genegeerd. Een tweede voorgrond wordt niet ondersteund. `tekst` en `tekstkleur` mogen weggelaten worden.
+
+    Zie de extra tagpagina [osmc:symbol](osmc_symbols.html) voor een lijst met door Waymarked Trails ondersteunde symbolen.
 hikinglocal:
   title: Landspecifieke rendering
   text: |-
@@ -170,7 +172,7 @@ hikinglocal:
     Merk op dat er bovenop dit netwerk een aantal nationale en regionale routes zijn die op de normale manier worden weergegeven.
 
     Zie voor meer informatie over het taggen van Zwitserse wandelpaden in OSM:
-    [Zwitsers wandelnetwerk](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+    [Zwitsers wandelnetwerk](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
   italy: '''Club Alpino Italiano'' (CAI) onderhoudt het netwerk van bergpaden waaraan
     een moeilijkheidsgraad is toegekend, vergelijkbaar met wat in Zwitserland bestaat.
     Routes gelabeld met ''network=lwn'', ''osmc:symbol=red:...'' en ''cai_scale=...'',
@@ -179,7 +181,7 @@ hikinglocal:
   uk: |-
     ## Verenigd Koninkrijk
 
-    De classificatie van [langeafstandspaden in het VK](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
+    De classificatie van [langeafstandspaden in het VK](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
     (met het label `network=uk_ldp`) hangt af van het label 'operator'. Relaties
     met `operator=National Trails` worden weergegeven als nationale paden, alle andere relaties worden als regionale routes weergegeven.
 
@@ -188,7 +190,7 @@ hikinglocal:
     ## Tsjechië
 
     Tsjechië maakt gebruik van een standaard gebaseerd op een verzameling van 7 symbolen in 4 verschillende kleuren.
-    Zie de [Tsjechische labelpagina](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (alleen in het Tsjechisch).
+    Zie de [Tsjechische labelpagina](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (alleen in het Tsjechisch).
 
     Als er een label 'kct_*' beschikbaar is, heeft dat de voorkeur boven een label van het type `osmc:symbol`.
     Bovendien wordt de route heringedeeld als geen geldige netwerklabel kan worden gevonden.
@@ -196,9 +198,9 @@ hikinglocal:
   slovakia: |-
     ## Slowakije
 
-    Slowakije maakt gebruik van de dezelfde markeringstandaard voor routes als Tsjechië.
+    Slowakije maakt gebruik van de dezelfde markeringsstandaard voor routes als Tsjechië.
     Het labelschema is net iets anders.
-    Zie de [Slowaakse wandelpagina](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+    Zie de [Slowaakse wandelpagina](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
 
     Alle routes met een label `operator=KST` zijn gelabeld volgens dat schema.
     Routes in Slowakije moeten een geldig netwerklabel hebben, er wordt niet heringedeeld.
@@ -206,7 +208,7 @@ hikinglocal:
     ## Hongarije
 
     Hongarije gebruikt ook een systeem met een beperkt aantal symbolen in verschillende kleuren.
-    Deze hebben hun eigen label [jel](http://wiki.openstreetmap.org/wiki/Key:jel).
+    Deze hebben hun eigen label [jel](https://wiki.openstreetmap.org/wiki/Key:jel).
     Dit label heeft de voorkeur boven een `osmc:symbol`-label.
   germany: |-
     ## Duitsland
@@ -226,7 +228,7 @@ hikinglocal:
 elevationprofiles:
   title: Hoogteprofielen
   general: |-
-    De hoogteprofielen zijn gemaakt met hoogtegegevens van het [ASTER global digital elevation model (GDEM) versie 2](http://asterweb.jpl.nasa.gov/gdem.asp). Het label "ele" in OpenStreetMap wordt niet gebruikt. Tunnels en bruggen worden ook niet gebruikt. ASTER GDEM is een product van METI en NASA.
+    De hoogteprofielen zijn gemaakt met hoogtegegevens van het [ASTER global digital elevation model (GDEM) versie 2](https://asterweb.jpl.nasa.gov/gdem.asp). Het label "ele" in OpenStreetMap wordt niet gebruikt. Tunnels en bruggen worden ook niet gebruikt. ASTER GDEM is een product van METI en NASA.
 
     Als de route meer dan twee eindpunten heeft of bestaat uit meer dan één segment, dan wordt geen profiel weergegeven. De richting van het profiel volgt de route van west naar oost of noord naar zuid. Als routes elementen zouden hebben met rollen zoals "start" en "goal" en als routes zouden bestaan uit onafgebroken delen, dan zouden we de richting uit de route zelf kunnen afleiden. Houd hier rekening mee als u routes uitzet op OpenStreetMap.
 
