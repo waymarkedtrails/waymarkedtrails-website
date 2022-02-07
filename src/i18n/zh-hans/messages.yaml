@@ -5,6 +5,7 @@
 # Author: Assoc
 # Author: Deathkon
 # Author: Duolaimi
+# Author: GuoPC
 # Author: Hydra
 # Author: Hzy980512
 # Author: Liuxinyu970226
@@ -19,6 +20,7 @@ attribution:
   elevation_title: 海拔数据由[SRTM/ASTER](help/acknowledgements)提供
 destination_sign:
   more: 详情
+  no_data: 此路标的目的地信息不可用。
   title: 目的地
 details:
   GPX: GPX
@@ -29,10 +31,20 @@ details:
   note: 注意
   official_len: 官方长度
   operator: 操作者
+  route_symbol: 路径符号
   subroutes_title: 部分
   superroutes_title: 一部分
+  symbol: 符号
   tags:
-    title: OpenStreetMap 标志
+    key: 键
+    title: OpenStreetMap 标签
+    value: 值
+  type:
+    guidepost: 路标
+    node: 节点
+    relation: 关系
+    way: 路径
+    wayset: 路径集
   website: 网站
   wikipedia: 维基百科
   zoom_to: 在地图上显示
@@ -43,18 +55,30 @@ elevation:
     altitude: 海拔高度（米）
     distance: 距离（公里）
   title: 海拔配置文件
+  total: 总上升/下降
   unavailable: 没有查到海拔数据
   warn_unsorted: 路线可能无序或不完整。海拔信息可能不准确。
 error:
   load_error: 连接至服务器时出错。
+  missing_id: 缺少“id”参数。
+  missing_query: 缺少“query”参数。
   panel_title: 错误
 headline:
   last_update: 最后更新
 help: 关于地图
 locate_me: 找到我
 network:
+  continental: 大陆路线
   downhill: 下坡
+  national: 国道
   node: 节点网络连接
+  nordic: 北欧滑雪
+  other: 其他路线
+  regional: 区域道路
+  skitour: 滑雪旅行
+  sled: 乘雪橇滑雪道
+  sleigh: 轻型雪橇滑雪道
+  winter_hike: 冬季徒步
 osmc_symbol:
   back: 返回
   background: 背景以类似方式工作。它也由颜色和形状构成。背景也可以只是一个颜色名（这会产生一个选定颜色的画布）。这显示在第一行。
@@ -68,9 +92,11 @@ osmc_symbol:
   preview_heading: 预览
 routelist:
   close: 关闭
+  more: 放大来查看更多路线。
   rollup: 卷起
   title: 路线
 search:
+  places: 地点
   routes: 路线
   title: 搜索
 settings:
@@ -81,10 +107,18 @@ settings:
   route_layer: 路线层
   title: 地图设置
   transparency: 地图透明度
+site_description:
+  cycling: 带有来自 OpenStreetMap 地图与信息的本地与长途自行车路线。
+  hiking: 带有来自 OpenStreetMap 地图与信息的本地与长途徒步、行走路线。
+  mtb: 带有来自 OpenStreetMap 地图与信息的登山自行车路线（Mountain-biking routes，MTB）。
+  riding: 带有来自 OpenStreetMap 地图与信息的骑马路线。
+  skating: 带有来自 OpenStreetMap 地图与信息的直排轮滑路线。
+  slopes: 带有来自 OpenStreetMap 地图与信息的冬季滑坡运动、下坡滑雪、越野轮滑、冬季步行路线。
 site_title:
-  cycling: 骑脚踏车
+  cycling: 骑自行车
   hiking: 徒步旅行
   mtb: MTB
+  osmc_symbol: osmc:symbol 标签
   riding: 骑马
   skating: 轮滑
   slopes: 冬季斜坡运动

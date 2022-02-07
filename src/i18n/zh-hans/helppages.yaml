@@ -15,7 +15,7 @@
 about:
   title: 关于本地图
   hiking: 此地图显示了已标记的世界各地的徒步行走路线。
-  cycling: 此地图显示了已标记的世界各地的自行车道路线。
+  cycling: 此地图显示了已标记的世界各地的自行车路线。
   mtb: 此地图显示了已标记的世界各地的山地自行车道路线。
   skating: 此地图显示了已标记的世界各地的轮滑路线。
   riding: 此地图显示了已标记的世界各地的骑马路线。
@@ -37,19 +37,19 @@ rendering:
     type = route|superroute
     route = foot|walking|hiking
   cyclingroutes: |-
-    OSM中的骑行路线需要作为关系输入。其工作原理在OSM wiki上有关[骑行路线](https://wiki.openstreetmap.org/wiki/Cycle_routes) 的标签页面中有详细描述。此地图显示所有至少拥有以下标签的关系：
+    OSM中的自行车路线需要作为关系输入。其工作原理在OSM wiki上有关[自行车路线](https://wiki.openstreetmap.org/wiki/Cycle_routes) 的标签页面中有详细描述。此地图显示所有至少拥有以下标签的关系：
 
         type = route|superroute
         route = bicycle
 
     山地车路线显示于单独的[MTB地图](https://mtb.waymarkedtrails.org) 中。
   mtbroutes: |-
-    山地车路线跟随与骑行路线相同的标签模式，在OSM wiki上有关[骑行路线](https://wiki.openstreetmap.org/wiki/Cycle_routes) 的页面中已详细描述。拥有以下标签的关系会被认为是MTB路线：
+    山地车路线跟随与自行车路线相同的标签模式，在OSM wiki上有关[骑行路线](https://wiki.openstreetmap.org/wiki/Cycle_routes) 的页面中已详细描述。拥有以下标签的关系会被认为是MTB路线：
 
         type = route|superroute
         route = mtb
 
-    普通骑行路线显示于[骑行地图](https://mtb.waymarkedtrails.org) 中。
+    普通自行车路线显示于[骑行地图](https://mtb.waymarkedtrails.org) 中。
   skatingroutes: |-
     设有路标的的滑冰路线应像任何其他路线关系一样标记。要了解该地图能理解的标记，可查看有关[瑞士纵列滑冰路线](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork) 的wiki页面。要确认为滑冰路线，需要提供以下标记：
 
