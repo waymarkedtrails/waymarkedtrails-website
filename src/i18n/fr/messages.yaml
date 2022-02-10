@@ -27,7 +27,7 @@ attribution:
   elevation_title: données altimétriques par [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Plus de détails
-  no_data: Aucune information sur la destination n'est disponible pour ce poteau indicateur
+  no_data: Aucune information sur la destination n’est disponible pour ce poteau indicateur
   title: Destinations
 details:
   GPX: GPX
@@ -38,9 +38,9 @@ details:
   note: Note
   official_len: Longueur officielle
   operator: Opérateur
-  route_symbol: Symbole de l'itinéraire
+  route_symbol: Symbole de l’itinéraire
   subroutes_title: Sections
-  superroutes_title: Appartient à
+  superroutes_title: Partie de
   symbol: Symbole
   tags:
     key: clé
@@ -51,7 +51,7 @@ details:
     node: Nœud
     relation: Relation
     way: Chemin
-    wayset: Ensemble de chemin
+    wayset: Ensemble de chemins
   website: Site web
   wikipedia: Wikipédia
   zoom_to: Afficher sur la carte
@@ -63,13 +63,13 @@ elevation:
     distance: Distance (km)
   title: Profil d’altitude
   total: Dénivelé total
-  unavailable: Aucune donnée d’élévation trouvée.
+  unavailable: Aucune donnée d’altitude trouvée.
   warn_unsorted: L'itinéraire est potentiellement non ordonné ou incomplet. Les informations
     d’altitude peuvent être inexactes.
 error:
   load_error: Erreur de connexion au serveur.
-  missing_id: Paramètre manquant 'id'
-  missing_query: Le paramètre 'query' est manquant.
+  missing_id: Le paramètre « id » est manquant.
+  missing_query: Le paramètre « query » est manquant.
   panel_title: Erreur
 headline:
   last_update: Dernière mise à jour
@@ -77,9 +77,9 @@ help: À propos de la carte
 locate_me: Me localiser
 network:
   continental: Itinéraires continentaux
-  downhill: descente
+  downhill: Ski alpin
   national: Itinéraires nationaux
-  node: Connexions entre réseau de carrefours
+  node: Connexions de réseau de nœuds
   nordic: Ski nordique
   other: Autres itinéraires
   regional: Itinéraires régionaux
@@ -89,13 +89,13 @@ network:
   winter_hike: Randonnée hivernale
 osmc_symbol:
   back: Retour
-  background: L’arrière-plan travaille de façon similaire. Cela consiste aussi en
-    une couleur et une forme. Le fond peut aussi être uniquement un nom de couleur,
-    ce qui aboutit à une toile unie de la couleur choisie. Cela est visible dans la
-    première ligne.
+  background: L’arrière-plan fonctionne de façon similaire. Il consiste également
+    en une couleur et une forme. L’arrière-plan peut également être uniquement un
+    nom de couleur, ce qui aboutit à fond uni de la couleur choisie. Cela est visible
+    dans la première ligne.
   background_heading: Arrière-plan
   examples: Exemples
-  foreground: Le symbole de premier plan est formé d’une couleur et d’une forme reliées
+  foreground: Le symbole de premier plan consiste en une couleur et une forme reliées
     par un souligné. Le tableau ci-dessous montre toutes les combinaisons reconnues
     par ce site. Il reconnaît aussi les premiers plans constitués uniquement d’un
     nom de forme. Les symboles pour celles-ci sont affichés dans la dernière colonne.
@@ -106,7 +106,7 @@ osmc_symbol:
   preview_heading: Aperçu
 routelist:
   close: Fermer
-  more: Zoomer pour voir plus d'itinéraires.
+  more: Zoomer pour voir davantage d’itinéraires.
   rollup: Enrouler
   title: Itinéraires
 search:
@@ -116,29 +116,29 @@ search:
 settings:
   base_map: Carte de fond
   browser_language: Utiliser les paramètres du navigateur
-  hillshading_layer: Relief
+  hillshading_layer: Ombrage du relief
   language: Langue
   route_layer: Itinéraires
   title: Paramètres de la carte
   transparency: Transparence de la carte
 site_description:
   cycling: Itinéraires cyclables locaux et longue distance, avec des cartes et des
-    informations provenant d'OpenStreetMap.
+    informations provenant d’OpenStreetMap.
   hiking: Itinéraires de randonnée et de promenade locaux et longue distance, avec
-    des cartes et des informations provenant d'OpenStreetMap.
+    des cartes et des informations provenant d’OpenStreetMap.
   mtb: Itinéraires de vélo de montagne (VTT), avec des cartes et des informations
-    provenant d'OpenStreetMap.
-  riding: Itinéraires d'équitation, avec des cartes et des informations provenant
-    d'OpenStreetMap.
+    provenant d’OpenStreetMap.
+  riding: Itinéraires d’équitation, avec des cartes et des informations provenant
+    d’OpenStreetMap.
   skating: Itinéraires de patinage en ligne, avec des cartes et des informations provenant
-    d'OpenStreetMap.
-  slopes: Pistes de sports d'hiver, ski alpin, patinage de fond, randonnée hivernale,
-    avec des cartes et des informations provenant d'OpenStreetMap.
+    d’OpenStreetMap.
+  slopes: Pistes de sports d’hiver, ski alpin, patinage de fond, randonnée hivernale,
+    avec des cartes et des informations provenant d’OpenStreetMap.
 site_title:
   cycling: À vélo
   hiking: À pied
   mtb: En vélo de montagne
-  osmc_symbol: L'étiquette osmc:symbol
+  osmc_symbol: La balise osmc:symbol
   riding: Équitation
   skating: En rollers
   slopes: Pistes de sport d’hiver

@@ -35,7 +35,7 @@ rendering:
   title: Rendu des données OSM
   hikingroutes: |-
     Les itinéraires de randonnée pédestre dans OSM doivent être saisis en tant que relations.
-    C’est  expliqué en détails sur la page des balises des
+    Ceci est expliqué en détail sur la page du wiki OSM relative au balisage des
     [itinéraires de randonnée pédestre](https://wiki.openstreetmap.org/wiki/Walking_Routes)
     dans le wiki d’OSM. Cette carte montre les relations qui ont au moins les
     balises suivantes :
@@ -44,7 +44,7 @@ rendering:
         route = foot|walking|hiking
   cyclingroutes: |-
     Les itinéraires cyclables dans OSM doivent être saisis en tant que relations.
-    C’est expliqué en détail sur la page des balises des
+    Ceci est expliqué en détail sur la page du wiki OSM relative au balisage des
     [itinéraires cyclables](https://wiki.openstreetmap.org/wiki/Cycle_routes)
     dans le wiki d’OSM. Cette carte montre toutes les relations qui ont au moins les
     balises suivantes :
@@ -53,10 +53,10 @@ rendering:
         route = bicycle
 
     Les itinéraires de vélo de montagne sont affichés sur une
-    [carte vélo de montagne](https://mtb.waymarkedtrails.org/en/) distincte.
+    [carte vélo de montagne](https://mtb.waymarkedtrails.org) distincte.
   mtbroutes: |-
     Les itinéraires de vélo de montagne suivent le même schéma de marquage que les itinéraires cyclables
-    qui est décrit en détail sur la page wiki d’OSM :
+    qui est décrit en détail sur la page wiki d’OSM relative aux
     [itinéraires cyclables](https://wiki.openstreetmap.org/wiki/Cycle_routes).
     Les relations avec les balises suivantes sont reconnues comme des itinéraires de vélo de montagne :
 
@@ -64,29 +64,29 @@ rendering:
         route = mtb
 
     Les itinéraires cyclables classiques sont affichés sur la
-    [carte des itinéraires cyclables](https://cycling.waymarkedtrails.org/fr/).
+    [carte des itinéraires cyclables](https://cycling.waymarkedtrails.org).
   skatingroutes: |-
     Les itinéraires balisés de rollers doivent être marqués comme toute les autres relations de type `route`.
-    Pour le balisage compris par cette carte, jetez un œil sur la page du wiki concernant les
-    [itinéraires de rollers suisses](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
+    Pour le balisage compris par cette carte, jetez un œil sur la page du wiki OSM relative au balisage des
+    [itinéraires de rollers en Suisse](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
     Pour être reconnus comme des itinéraires de rollers, les balises suivantes doivent être présentes :
 
         type = route|superroute
         route = inline_skates
   ridingroutes: |-
     Les itinéraires balisés pour randonnée équestre doivent être marqués comme toute autre relation d’itinéraire.
-    Pour les détails, voyez [la page de l’itinéraire dans le wiki OSM](https://wiki.openstreetmap.org/wiki/Relation:route).
+    Pour les détails, voyez la page du wiki OSM relative aux balisage des [itinéraires](https://wiki.openstreetmap.org/wiki/Relation:route).
     Pour être reconnues comme itinéraire équestre, les balises suivantes doivent être présentes :
 
         type = route|superroute
         route = horse
   sloperoutes: |-
     Les pistes balisées sont des chemins avec les balises `piste:type`.
-    Pour être reconnus comme pistes, les chemins doivent posséder les balises suivantes :
+    Pour être reconnus comme pistes, les chemins doivent posséder les balises suivantes :
 
        piste:type = downhill|nordic|sled|hike|sleigh
 
-    Pour les relations, les balises suivantes doivent être présentes :
+    Pour les relations, les balises suivantes doivent être présentes :
 
        type = route|superroute
        route = ski|piste
@@ -101,7 +101,7 @@ rendering:
     La classification (et donc la couleur du trajet sur la carte) est
     déterminée par la balise `network`.
   slopemaplabels: "Le libellé pour les pistes de ski (de descente) est « deviné »
-    d’après les balises dans l’ordre suivant :\n\n1. Si une balise `piste:ref` existe,
+    d’après les balises dans l’ordre suivant :\n\n1. Si une balise `piste:ref` existe,
     l’utiliser pour en faire un libellé.\n2. Si une balise `piste:name` existe, en
     dériver une référence, d’abord en utilisant\n   uniquement des lettres majuscules,
     sinon en utilisant les premières lettres du nom.\n3. Si une balise `ref` existe,
@@ -307,7 +307,7 @@ acknowledgements:
 
     La couche d’ombrage et les données altimétriques ont été créées par un mixage de données de SRTM et ASTER GDEM.
     ASTER GDEM est un produit de METI et de la NASA.
-    Le post-traitement a été aimablement fourni par Yvez Cainaud chez [opensnowmap.org](http://opensnowmap.org).
+    Le post-traitement a été aimablement fourni par Yves Cainaud chez [opensnowmap.org](http://opensnowmap.org).
 
     Le profil d’altitude a été développé par Espen Oldeman Lund en coopération avec [Kresendo](http://www.kresendo.no)
     et le projet TG4NP à l’[Institut de Recherche de Norvège Occidentale](https://www.vestforsk.no).
@@ -325,13 +325,10 @@ acknowledgements:
     [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (norvégien bokmål et nynorsk),
     Mads Lumholt/TG4NP (danois), Magnús Smári Snorrason/TG4NP (islandais),
     Lars Mikaelsson/TG4NP (suédois) et Elina Pesonen (finlandais).
-
-    Enfin, le serveur n’existerait pas sans l’aide généreuse de
-    [Martin Hoffmann](http://www.partim.de).
 contact:
   title: Contact
   text: |-
-    Les questions et commentaires à propos de ce site peuvent être envoyés à :
+    Les questions et commentaires à propos de ce site peuvent être envoyés à :
     [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
     Les problèmes peuvent être remontés au
