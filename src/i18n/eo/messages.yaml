@@ -24,8 +24,14 @@ details:
   operator: Administranto
   subroutes_title: Sekcioj
   superroutes_title: Parto de
+  symbol: Simbolo
   tags:
+    key: ŝlosilo
     title: OpenStreetMap-etikedoj
+    value: valoro
+  type:
+    node: Nodo
+    relation: Rilato
   website: Retejo
   wikipedia: Vikipedio
   zoom_to: Montri sur mapo
@@ -68,6 +74,7 @@ routelist:
   rollup: Suprenvolvi
   title: Kursoj
 search:
+  places: Lokoj
   routes: Kursoj
   title: Serĉi
 settings:
