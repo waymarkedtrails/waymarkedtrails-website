@@ -6,6 +6,7 @@
 # Author: Fader
 # Author: Jopparn
 # Author: LeiLar
+# Author: Sabelöga
 # Author: Sendelbach
 # Author: Sturban
 # Author: Tobulos1
@@ -16,7 +17,7 @@ attribution:
   data: Kartdata © [OpenStreetMap](https://www.openstreetmap.org) under licensen [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: höjddata från [SRTM/ASTER](help/acknowledgements)
 destination_sign:
-  more: Mer detaljer
+  more: Fler detaljer
   title: Destinationer
 details:
   GPX: GPX
