@@ -242,17 +242,15 @@ technical:
     de OSM-server. De datum linksbovenin het venster geeft aan wanneer voor het laatst is
     bijgewerkt. We hebben geen invloed op het bijwerken van de onderliggende Mapnikkaart.
     Afhankelijk van de drukte van de OSM-server, duurt dit tussen een minuut en enkele
-    dagen.
+    uren.
 
-    De machine draait standaard [Debian Linux](http://www.debian.org/) met
-    [osmosis](http://wiki.openstreetmap.org/wiki/Osmosis),
-    [Postgresql](http://www.postgresql.org) en [Mapnik 2.0](http://www.mapnik.org).
-    Met [osgende](https://github.com/lonvia/osgende) worden sommige gegevens bewerkt
-    voordat de kaartweergave wordt gemaakt. De website gebruikt het
-    [Django web framework](http://www.djangoproject.com). De broncode is
-    beschikbaar onder een GPL-licentie. Neem een kijkje op de
-    [projectpagina bij GitHub](https://github.com/lonvia/waymarked-trails-site) voor
-    meer informatie.
+    De broncode van deze website is onder een GPL-licentie beschikbaar en in verscheidene repository's ingedeeld:
+    * [backend-code en kaartaanmaak](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+    * [API-dienst](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+    * [website-frontend](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+    Wil je alleen een fout melden of het over de functies van deze website hebben, gebruik dan de [probleemtracker](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
+    of de [discussiefunctie](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) van de repo van het project op Github.
   translation: |-
     ## Vertalingen
 
@@ -264,8 +262,8 @@ legal:
   title: Juridische en gebruiksvoorwaarden
   copyright: |-
     De kaartlaag met routes is beschikbaar onder de licentie
-    [Creative Commons Naamsvermelding-Gelijk delen 3.0 Duitsland](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en), de GPX-tracks hebben de licentie
-    [ODbL](http://opendatacommons.org/licenses/odbl/).
+    [Creative Commons Naamsvermelding-Gelijk delen 3.0 Duitsland](https://creativecommons.org/licenses/by-sa/3.0/de/deed.nl), de GPX-tracks hebben de licentie
+    [ODbL](https://opendatacommons.org/licenses/odbl/).
     Alle gegevens mogen hergebruikt en gewijzigd worden mits het resulterende werk een compatibele licentie gebruikt en OpenStreetMap en deze site worden vermeld.
   usage: |-
     ## Gebruiksbeleid
