@@ -285,29 +285,29 @@ legal:
     De auteur van deze site heeft geen invloed op de inhoud van deze websites en neemt er geen verantwoordelijkheid voor.
 acknowledgements:
   title: Met dank aan
-  text: "Alle door [OpenStreetMap en bijdragers](http://www.openstreetmap.org) verstrekte
-    kaartgegevens\nworden verspreid onder de ODbL-licentie. De basiskaart is beschikbaar
-    met dank aan OSM \nonder CC BY-SA 2.0. Zie de [auteursrechtenpagina van OSM](http://www.openstreetmap.org/copyright)
-    voor meer informatie.\n\nBergschaduwen en hoogtegegevens zijn samengesteld uit
-    gegevens van SRTM en ASTER GDEM.\nASTER GDEM is een product van METI en NASA.\nDe
-    nabewerking is gemaakt door Yves Cainaud van [opensnowmap.org](http://www.opensnowmap.org).\n\nDe
-    code voor hoogteprofielen is ontwikkeld door Espen Oldeman Lund in samenwerking
-    met [Kresendo](http://www.kresendo.no) en de [TG4NP project](http://tg4np.eu)
-    aan het [Western Norway Research Institute](http://wwww.vestforsk.no).\n\nDe variant
-    voor wintersportpistes is ontwikkeld door Michael Spreng. Het paardrijdenpictogram
-    is gemaakt door Robert Whittaker.\n\nVertalingen van deze site zijn verstrekt
-    door\n[translatewiki.net en zijn bijdragers](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators).
-    Speciale dank gaat naar de eerste vertalers die voor vertalingen hebben gezorgd
-    voordat dit mogelijk was via translatewiki.net: Yves Cainaud (Frans),\nOscar Formaggi
-    (Italiaans),\nGustavo [Tuentibiker](http://www.blogger.com/profile/12473561703699888751)
-    Ramis (Spaans),\n[Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu)
-    (Noors bokmål en nynorsk),\nMads Lumholt/TG4NP (Deens), Magnús Smári Snorrason/TG4NP
-    (IJslands),\nLars Mikaelsson/TG4NP (Zweeds) en Elina Pesonen (Fins).\n\nTenslotte,
-    de server kan niet bestaan zonder de genereuze steun van [Martin Hoffmann](http://www.partim.de)."
+  text: |-
+    Alle door [OpenStreetMap en bijdragers](https://www.openstreetmap.org) verstrekte kaartgegevens
+    worden verspreid onder de ODbL-licentie. De basiskaart is ook beschikbaar dankzij OSM. Zie de [auteursrechtenpagina van OSM](https://www.openstreetmap.org/copyright) voor meer informatie.
+
+    Bergschaduwen en hoogtegegevens zijn samengesteld uit gegevens van SRTM en ASTER GDEM.
+    ASTER GDEM is een product van METI en NASA.
+    De nabewerking is gemaakt door Yves Cainaud van [opensnowmap.org](https://www.opensnowmap.org).
+
+    De code voor hoogteprofielen is ontwikkeld door Espen Oldeman Lund in samenwerking met [Kresendo](https://www.kresendo.no) en het TG4NP-project aan het [Western Norway Research Institute](https://wwww.vestforsk.no).
+
+    De variant voor wintersportpistes is ontwikkeld door Michael Spreng. Het paardrijden-pictogram is gemaakt door Robert Whittaker.
+
+    Vertalingen van deze site zijn verstrekt door
+    [translatewiki.net en zijn bijdragers](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Speciale dank gaat naar de eerste vertalers die voor vertalingen hebben gezorgd voordat dit mogelijk was via translatewiki.net: Yves Cainaud (Frans),
+    Oscar Formaggi (Italiaans),
+    Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (Spaans),
+    [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (Noors bokmål en nynorsk),
+    Mads Lumholt/TG4NP (Deens), Magnús Smári Snorrason/TG4NP (IJslands),
+    Lars Mikaelsson/TG4NP (Zweeds) en Elina Pesonen (Fins).
 contact:
   title: Contact
   text: |-
     Vragen en opmerkingen over deze site kunt u sturen naar [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Problemen kunt u ook melden in [de bugtracker van het project op GitHub](https://github.com/lonvia/waymarked-trails-site/issues). Controleer voordat u een probleem meldt of het probleem niet ontstaat door de OSM-gegevens.
+    Problemen kunt u melden in [de bugtracker van het project op GitHub](https://github.com/lonvia/waymarked-trails-site/issues). Controleer voordat u een probleem meldt of het probleem niet ontstaat door de OSM-gegevens.
 ...
