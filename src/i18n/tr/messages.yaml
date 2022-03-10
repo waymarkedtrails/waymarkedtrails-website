@@ -9,6 +9,7 @@
 # Author: Incelemeelemani
 # Author: JackUKElliott
 # Author: MuratTheTurkish
+# Author: SaldırganSincap
 # Author: Sayginer
 # Author: Sezgin İbiş
 # Author: Stonecy
@@ -64,9 +65,9 @@ help: Harita hakkında
 locate_me: Beni bul
 network:
   continental: Kıtalararası rotalar
-  downhill: aşağı
+  downhill: Aşağı
   national: Ulusal rotalar
-  node: düğüm ağ bağlantıları
+  node: Düğüm ağ bağlantıları
   other: Diğer rotalar
   regional: Bölgesel rotalar
   skitour: Kaya turları

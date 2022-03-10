@@ -16,35 +16,28 @@ about:
   skating: Bu harita, dünya çapında yol tabelalı paten yollarını göstermektedir.
   riding: Bu harita, dünya çapında yol tabelalı at binme rotalarını göstermektedir.
   slopemap: Bu harita, dünya çapında belirgin kış sporu yamaçlarını göstermektedir.
-  osm: |-
-    Güzergahlar standart OpenStreetMap ve isteğe bağlı olarak bir gölgeleme katmanı üzerinde yerleştirilir. Güzergah haritası
-    [OpenStreetMap]'in verileri (http://www.openstreetmap.org) (OSM)
-    projesidir. OSM, herkesin yapabileceği, özgürce düzenlenebilir bir dünya haritasıdır.
-    Bu hiçbir şekilde eksiksiz olmadığı anlamına gelir,
-    ancak yeni yollar ekleyerek katkıda bulunabileceğiniz anlamına da gelir ve
-    var olanlardaki hataları düzeltmektir. Open Street Map Hakkında daha fazla bilgi edinmek için bakınız
-    [Yeni Başlayanlar kılavuzu] (http://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
+  osm: Rotalar, standart OpenStreetMap'te ve isteğe bağlı olarak bir tepe gölgelendirme
+    katmanında kaplanır. Rota haritası, [OpenStreetMap](https://www.openstreetmap.org)
+    (OSM) projesindeki verilerden oluşturulur. OSM, herkesin katılabileceği, serbestçe
+    düzenlenebilir bir dünya haritasıdır. Bu, hiçbir şekilde tamamlanmış olmadığı
+    anlamına gelir, ancak aynı zamanda yeni rotalar ekleyerek ve mevcut rotalardaki
+    hataları düzelterek katkıda bulunabileceğiniz anlamına gelir. OpenStreetMap hakkında
+    daha fazla bilgi edinmek için [Başlangıç kılavuzuna](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide)
+    bakın.
 rendering:
   title: OSM verilerini oluşturma
   hikingroutes: |-
-    OSM'deki yürüyüş rotalarının ilişki olarak girilmesi gerekir. Bu nasıl çalışıyor
-    etiketleme sayfasında ayrıntılı olarak açıklanmıştır
-    [yürüyüş yolları] (https://wiki.openstreetmap.org/wiki/Walking_Routes)
-    OSM wiki'de. Bu harita en azından
-    aşağıdaki etiketleri
+    OSM'deki yürüyüş rotalarının ilişki olarak girilmesi gerekir. Bunun nasıl çalıştığı, OSM vikideki [yürüyüş rotaları](https://wiki.openstreetmap.org/wiki/Walking_Routes) hakkındaki etiketleme sayfasında ayrıntılı olarak açıklanmaktadır. Bu harita, en azından aşağıdaki etiketlere sahip ilişkileri gösterir:
 
         type = route|superroute
-        route = foot|yüryüş|doğa yürüyüş
+        route = foot|walking|hiking
   cyclingroutes: |-
-    OSM'deki bisiklet yollarının ilişki olarak girilmesi gerekir. Bu nasıl çalışıyor
-    etiketleme sayfasında ayrıntılı olarak açıklanmıştır
-    [bisiklet yolları] (http://wiki.openstreetmap.org/wiki/Cycle_routes)
-    OSM wikisi. Bu harita en azından aşağıdaki etiketleri içeren tüm ilişkileri gösterir:
+    OSM'deki bisiklet rotalarının ilişki olarak girilmesi gerekir. Bunun nasıl çalıştığı, OSM vikideki [bisiklet rotaları](https://wiki.openstreetmap.org/wiki/Cycle_routes) hakkındaki etiketleme sayfasında ayrıntılı olarak açıklanmaktadır. Bu harita, en az aşağıdaki etiketlere sahip tüm ilişkileri gösterir:
 
         type = route|superroute
         route = bicycle
 
-    Dağ bisikleti rotaları ayrı bir [MTB haritası] üzerinde gösterilir(http://mtb.waymarkedtrails.org/en/).
+    Dağ bisikleti rotaları ayrı bir [MTB-haritasında](https://mtb.waymarkedtrails.org) gösterilir.
   mtbroutes: |-
     Dağ bisikleti rotaları, OSM viki sayfasında [bisiklet rotaları](http://wiki.openstreetmap.org/wiki/Tr:Cycle_routes) hakkında
     ayrıntılı olarak açıklanan bisiklet rotalarıyla aynı etiketleme
