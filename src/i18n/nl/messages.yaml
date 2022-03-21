@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: A67-A67
+# Author: Danieldegroot2
 # Author: Elderson
 # Author: Elroy
 # Author: Jeleniccz
@@ -27,10 +28,20 @@ details:
   note: Opmerking
   official_len: Officiële afstand
   operator: Beheerder
+  route_symbol: Route-symbool
   subroutes_title: Secties
   superroutes_title: Onderdeel van
+  symbol: Symbool
   tags:
+    key: sleutel
     title: OpenStreetMaplabels
+    value: waarde
+  type:
+    guidepost: Wegwijzer
+    node: Knooppunt
+    relation: Relatie
+    way: Weg
+    wayset: Wegenset
   website: Website
   wikipedia: Wikipedia
   zoom_to: Op kaart weergeven
