@@ -37,6 +37,8 @@ details:
     key: ключ
     title: Теги OpenStreetMap
     value: значение
+  type:
+    relation: Отношение
   website: Веб-сайт
   wikipedia: Википедия
   zoom_to: Показать на карте
@@ -52,14 +54,22 @@ elevation:
     может быть неточной.
 error:
   load_error: Ошибка при подключении к серверу.
+  missing_id: Отсутствует параметр 'id'.
+  missing_query: Отсутствует параметр 'query'.
   panel_title: Ошибка
 headline:
   last_update: Последнее обновление
 help: О карте
 locate_me: Найдите меня
 network:
+  continental: Континентальные маршруты
   downhill: Спуск
+  national: Национальные маршруты
   node: Сетевые подключения узла
+  skitour: Лыжные туры
+  sled: Трасса для санок
+  sleigh: Санная трасса
+  winter_hike: Зимний поход
 osmc_symbol:
   back: Назад
   background: Фон работает похожим образом. Он тоже состоит из цвета и формы. Фон
@@ -80,6 +90,7 @@ routelist:
   rollup: Свернуть
   title: Маршруты
 search:
+  places: Места
   routes: Маршруты
   title: Найти
 settings:
