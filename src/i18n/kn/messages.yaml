@@ -1,0 +1,39 @@
+# Messages for Kannada (ಕನ್ನಡ)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ
+---
+destination_sign:
+  more: ಹೆಚ್ಚಿನ ವಿವರಗಳು
+details:
+  image: ಚಿತ್ರ
+  note: ಟಿಪ್ಪಣಿ
+  official_len: ಅಧಿಕೃತ ಉದ್ದ
+  subroutes_title: ವಿಭಾಗಗಳು
+  symbol: ಚಿಹ್ನೆ
+  website: ಜಾಲತಾಣ
+  wikipedia: ವಿಕಿಪೀಡಿಯ
+elevation:
+  diagram:
+    distance: ದೂರ (ಕಿ.ಮೀ)
+error:
+  panel_title: ದೋಷ
+headline:
+  last_update: ಕೊನೆಯ ಬದಲಾವಣೆ
+osmc_symbol:
+  back: ಹಿಂದಕ್ಕೆ
+  background_heading: ಹಿನ್ನೆಲೆ
+  examples: ಉದಾಹರಣೆಗಳು
+  foreground_heading: ಮುನ್ನೆಲೆ
+  preview_heading: ಮುನ್ನೋಟ
+routelist:
+  close: ಮುಚ್ಚಿ
+  title: ದಾರಿಗಳು
+search:
+  places: ಸ್ಥಳಗಳು
+  routes: ದಾರಿಗಳು
+  title: ಹುಡುಕಿ
+settings:
+  base_map: ಮೂಲ ಭೂಪಟ
+  language: ಭಾಷೆ
+...

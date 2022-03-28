@@ -1,6 +1,7 @@
 # Messages for Finnish (suomi)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Markus Mikkonen
 # Author: Nike
 # Author: Pyscowicz
 # Author: Silvonen
@@ -19,7 +20,7 @@ about:
 rendering:
   title: Renderöidään OSM-aineistoa.
   hikingroutes: |-
-    Vaellusreitit pitää OSM-järjestelmään syöttää relaatioina. Tämä on selitetty yksityiskohtaisemmin [vaellusreitit](http://wiki.openstreetmap.org/wiki/Walking_Routes)-sivulla OSM-wikissä. Tämä kartta näyttää relaatiot joihin on liitetty vähintään seuraavat tagit:
+    Vaellusreitit pitää OSM-järjestelmään syöttää relaatioina. Tämä on selitetty yksityiskohtaisemmin [vaellusreitit](https://wiki.openstreetmap.org/wiki/Walking_Routes)-sivulla OSM-wikissä. Tämä kartta näyttää relaatiot joihin on liitetty vähintään seuraavat tagit:
 
         type = route|superroute
         route = foot|walking|hiking

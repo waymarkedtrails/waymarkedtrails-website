@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Lliehu
 # Author: MITO
+# Author: Markus Mikkonen
 # Author: Nedergard
 # Author: Nike
 # Author: Pyscowicz
@@ -16,6 +17,7 @@ attribution:
 destination_sign:
   more: Lisätiedot
   no_data: Tämän tienviitan kohdetietoja ei ole saatavilla.
+  title: Määränpäät
 details:
   GPX: GPX
   altitude: Korkeus
