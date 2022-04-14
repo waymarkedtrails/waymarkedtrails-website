@@ -7,6 +7,7 @@
 # Author: Hooshmand.hasannia
 # Author: Jeeputer
 # Author: Ladsgroup
+# Author: Mohammad ebz
 # Author: Reza1615
 ---
 details:
@@ -36,6 +37,7 @@ network:
 osmc_symbol:
   back: بازگشت
   background_heading: پیش‌زمینه
+  preview_heading: پیش‌نمایش
 routelist:
   more: برای دیدن مسیرهای بیشتر، بزرگ‌نمایی کنید.
   title: مسیرها
