@@ -14,6 +14,7 @@ attribution:
   elevation_title: údaje o nadmorskej výške podľa [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Viac podrobností
+  no_data: Pre tento smerovník nie sú dostupné informácie o destinácii.
   title: Ciele
 details:
   GPX: GPX
@@ -24,10 +25,20 @@ details:
   note: Poznámka
   official_len: Oficiálna dĺžka
   operator: Operátor
+  route_symbol: Symbol trasy
   subroutes_title: Sekcie
   superroutes_title: Súčasť
+  symbol: Symbol
   tags:
+    key: kľúč
     title: Štítky OpenStreetMap
+    value: hodnota
+  type:
+    guidepost: Smerovník
+    node: Uzol
+    relation: Vzťah
+    way: Cesta
+    wayset: Nastavenie cesty
   website: Webová stránka
   wikipedia: Wikipedia
   zoom_to: Zobraziť na mape
@@ -38,19 +49,31 @@ elevation:
     altitude: Nadmorská výška (m)
     distance: Vzdialenosť (km)
   title: Výškový profil
+  total: Celkové stúpanie/klesanie
   unavailable: Údaje o nadmorskej výške neboli nájdené.
   warn_unsorted: Trasa je pravdepodobne nekompletná. Údaje o nadmorskej výške môžu
     byť nepresné.
 error:
   load_error: Chyba pri pripájaní na server.
+  missing_id: Chýbajúci parameter "id".
+  missing_query: Chýbajúci parameter "query".
   panel_title: Chyba
 headline:
   last_update: Posledná aktualizácia
 help: O mape
 locate_me: Lokalizovať ma
 network:
-  downhill: zjazd
-  node: sieťové pripojenia
+  continental: Kontinentálne cesty
+  downhill: Z kopca
+  national: Národné cesty
+  node: Uzlové sieťové pripojenia
+  nordic: Severské lyžovanie
+  other: Iné cesty
+  regional: Regionálne cesty
+  skitour: Lyžiarske zájazdy
+  sled: Sánkarská dráha
+  sleigh: Sánkarská dráha
+  winter_hike: Zimná turistika
 osmc_symbol:
   back: Späť
   background: Pozadie funguje podobným spôsobom. Skladá sa z farby a tvaru. Pozadie
@@ -65,9 +88,11 @@ osmc_symbol:
   preview_heading: Náhľad
 routelist:
   close: Zavrieť
+  more: Priblížte pre zobrazenie viacerých trás.
   rollup: Zrolovať
   title: Trasy
 search:
+  places: Miesta
   routes: Trasy
   title: Hľadať
 settings:
@@ -78,10 +103,19 @@ settings:
   route_layer: Vrstva trasy
   title: Nastavenia mapy
   transparency: Transparentnosť mapy
+site_description:
+  cycling: Lokálne a dlhé cyklotrasy s mapami a informáciami z OpenStreetMap.
+  hiking: Lokálne a dlhé turistické chodníky s mapami a informáciami z OpenStreetMap.
+  mtb: Horské cyklotrasy s mapami a informáciami z OpenStreetMap.
+  riding: Chodníky pre jazdcov na koni s mapami a informáciami z OpenStreetMap.
+  skating: Inline korčuliarske cesty s mapami a informáciami z OpenStreetMap.
+  slopes: Svahy pre zimné športy, zjazd, bežecké korčuľovanie, zimnú turistiku s mapami
+    a informáciami z OpenStreetMap.
 site_title:
   cycling: Cyklistika
   hiking: Turistika
   mtb: Horská cyklistika
+  osmc_symbol: štítok osmc:symbol
   riding: Jazda na koni
   skating: Inline korčuľovanie
   slopes: Svahy pre zimné športy
