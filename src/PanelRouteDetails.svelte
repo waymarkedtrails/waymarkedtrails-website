@@ -137,6 +137,8 @@
 {/if}
 
 <CollapsibleTagList tags={route.tags} />
+{:else}
+{$_('routelist.loading')}
 {/if}{/key}
 
 <div slot="footer">

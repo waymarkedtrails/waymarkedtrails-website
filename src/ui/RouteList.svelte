@@ -36,5 +36,7 @@
             {/if}
         {/each}
     </ul>
+{:else}
+    {$_('routelist.loading')}
 {/if}
 

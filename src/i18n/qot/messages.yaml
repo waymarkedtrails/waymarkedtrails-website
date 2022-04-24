@@ -79,6 +79,7 @@ osmc_symbol:
     \ it will be rendered on the map."
   preview_heading: Preview
 routelist:
+  loading: Loading...
   close: Close
   more: Zoom in to see more routes.
   rollup: Roll up
