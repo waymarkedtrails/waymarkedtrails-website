@@ -107,6 +107,8 @@
     {#if place_results}
         <ul><SimpleRouteList route_data={place_results} callback={show_place} /></ul>
     {/if}
+{:else}
+{$_('search.help')}
 {/if}
 
 </SidePanel>
