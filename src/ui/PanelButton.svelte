@@ -5,14 +5,11 @@
 
 <style>
     button {
-        background-color: #ccc;
+        background-color: none;
         color: black;
         font-size: 21px;
         padding: 10px 6px 5px 7px;
-        border-left: 1px solid white;
-        border-right: 1px solid #bbb;
-        border-top: none;
-        border-bootom: none;
+        border:none;
     }
 </style>
 

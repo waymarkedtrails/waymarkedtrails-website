@@ -30,16 +30,17 @@
         width: 100%;
         border: none;
         padding-left: 5px;
-        background: #f8f8f8;
+        background: none;
         margin-bottom: 2px;
         display:flex;
         justify-content: space-between;
     }
 
     button:hover {
-        background: #ddd;
+        background: rgba(0, 0, 0, 0.1);
+        cursor:pointer;
     }
-
+   
     img {
         max-width: 32px;
         max-height: 16px;

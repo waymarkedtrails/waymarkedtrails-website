@@ -6,6 +6,8 @@
     span :global(.map-attribution) {
         position: relative;
         background: none;
+        
+            color: #101010;
         padding: 0;
     }
 
@@ -23,7 +25,7 @@
 
     @media (min-width: 900px) {
         span :global(a) {
-            color: var(--theme-sub-link-color);
+            
         }
     }
 
@@ -31,7 +33,6 @@
         span {
             position: absolute;
             left: 0;
-            bottom: 50px;
             z-index: 1;
             background: white;
             color: #101010;

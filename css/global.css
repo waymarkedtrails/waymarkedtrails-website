@@ -11,18 +11,25 @@ a {
 }
 
 .btn-primary {
-    background-color: var(--theme-button-background);
-    color: var(--theme-button-color);
+    background-color: #ffffff;
+    color: #000;
     font-size: 18px;
     padding: 8px 12px;
-    border-color: #bbb;
+    margin: 1px;
+    /* border-color: #fff; */
+    border: 0px;
+}
+.btn-primary:hover {
+    cursor:pointer;
+
 }
 
 .panel-heading {
-    background-color: var(--theme-background-color);
+    background-color: none;
     color: var(--theme-font-color);
-    font-size: small;
-    font-weight: bold;
+    font-size: medium;
+    font-wieght:normal;
+    /*font-weight: bold;*/
     padding: 2px;
     margin: 10px 0px;
 }
@@ -39,8 +46,8 @@ a {
 
 .ol-zoom {
     position: absolute;
-    top: 3px;
-    left: 3px;
+    bottom: 40px;
+    right: 3px;
     display: flex;
     flex-direction: column;
 }
@@ -48,8 +55,8 @@ a {
 .ol-scale-line {
     background: rgba(0,60,136,0.6);
     border-radius: 4px;
-    bottom: 8px;
-    left: 8px;
+    bottom: 20px;
+    right: 8px;
     padding: 2px;
     position: absolute;
 }

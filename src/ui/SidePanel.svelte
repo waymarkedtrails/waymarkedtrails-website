@@ -7,7 +7,7 @@
     import SVGClose from '../svg/Close.svelte';
     import SVGArrowBottom from '../svg/ArrowBarBottom.svelte';
     import SVGArrowTop from '../svg/ArrowBarTop.svelte';
-
+    
     export let osm_type;
     export let osm_id;
     export let title = '';
@@ -23,13 +23,15 @@
 <style>
     .sidepanel {
         position: absolute;
-        top: 5px;
-        height: 100%;
-        right: 0;
+        top: 50px;
+        bottom: 25px;
+        padding-left:5px;
+        left: 5px;
         border: 1px solid var(--theme-sub-color);
         width: 24em;
         max-width: 48%;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.50);
+        backdrop-filter:blur(4px);
         box-shadow: -5px 0 5px rgba(0,0,0,0.15);
         z-index: 2;
         display: flex;
@@ -38,7 +40,7 @@
 
     h3 {
         display: flex;
-        background-color: #ccc;
+        /*background-color: #ccc;*/
         justify-content: space-between;
         align-items: center;
         margin: 0;
@@ -51,8 +53,7 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
-        border-left: 1px solid white;
-        border-right: 1px solid #bbb;
+        
     }
 
     .sidepanel-content {
@@ -100,9 +101,9 @@
         <span>
         {#if fail_message}
             {$_('error.panel_title')}
-        {:else if osm_type}
+            {:else if osm_type}
             <a target="_new" href="https://openstreetmap.org/{osm_type === 'wayset' ? 'way' : osm_type}/{osm_id}">{title}</a>
-        {:else}
+         {:else}
             {title}
         {/if}
         </span>

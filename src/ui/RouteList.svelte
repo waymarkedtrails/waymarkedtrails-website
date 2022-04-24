@@ -13,13 +13,16 @@
         padding: 0;
         margin: 0;
     }
+    
 
     .divider {
-        background-color: var(--theme-background-color);
+        /*background-color: var(--theme-background-color);*/
         color: var(--theme-font-color);
-        font-weight: bold;
+        /*font-weight: bold;*/
         margin-bottom: 5px;
         margin-top: 10px;
+        margin-left:5px;
+        font-size:medium;
     }
 
     .divider:first-of-type {

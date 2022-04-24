@@ -36,10 +36,11 @@
         background-width: var(--headline-total-height);
         background-repeat: no-repeat;
         background-position: right top;
+        /*display:none;*/
     }
 
     .main {
-        display: flex;
+        display: block;
     }
 
     h1 {
@@ -50,20 +51,30 @@
     }
 
     .map_maplinks {
-        margin-left: auto;
+        display:none;
+        position: absolute;
+        margin-left: 0px;
+        width:100%;
         padding-right: 4px;
         padding-top: 12px;
+        z-index:100;
     }
 
     .subheadline {
+        height:14px;
+        padding: 5px;
+        position:fixed;
+        bottom: -1px;
+        z-index: 100;
         display: flex;
         font-size: 14px;
-        padding: 0;
-        background-color: var(--theme-sub-color);
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(4px);
         width: 100%;
-        color: var(--theme-sub-font-color);
-        font-weight: 700;
+        color: black;
+        
     }
+
 
     .subright {
         margin-left: auto;
@@ -83,14 +94,13 @@
         }
 
         .subheadline {
-            font-size: 13px;
+            font-size: 12px;
         }
     }
 </style>
 
 <div bind:this={headline_div} on:click={handleClick} class="headline">
   <div class="main">
-    <h1>Waymarked Trails: {$_('site_title.' + TITLE)}</h1>
     <div class="map_maplinks">
       {#each themes as theme}
         <a class="maplink" href="https://{theme}.{BASE_URL}{map_link_tail}"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" /></a>
