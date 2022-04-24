@@ -88,6 +88,7 @@ search:
   places: Places
   routes: Routes
   title: Search
+  help: Please use keywords to search with. You can search on names of trails (f.e.Eurovelo 2, EV2) or places (f.e. Berlin).
 settings:
   base_map: Base map
   browser_language: Use browser settings
