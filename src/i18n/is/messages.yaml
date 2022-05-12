@@ -10,6 +10,7 @@ attribution:
   elevation_title: hæðargögn frá [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Frekari upplýsingar
+  no_data: Það eru engar upplýsingar um áfangastaði fáanlegar fyrir þennan leiðsögustaur.
   title: Áfangastaðir
 details:
   GPX: GPX
@@ -20,10 +21,20 @@ details:
   note: Ábending
   official_len: Opinber vegalengd
   operator: Umsjón
+  route_symbol: Tákn leiðar
   subroutes_title: Svæði
   superroutes_title: Hluti af
+  symbol: Tákn
   tags:
+    key: lykill
     title: OpenStreetMap-merki
+    value: gildi
+  type:
+    guidepost: Leiðsögustaur
+    node: Hnútur
+    relation: Vensl
+    way: Leið
+    wayset: Leiðasett
   website: Vefsvæði
   wikipedia: Wikipedia
   zoom_to: Sýna á korti
@@ -34,19 +45,31 @@ elevation:
     altitude: Hæð (m)
     distance: Vegalengd (km)
   title: Hæðarsnið
+  total: Hækkun/Lækkun alls
   unavailable: Engin hæðargögn fundust.
   warn_unsorted: Leiðin er mögulega ekki í réttri röð eða ófullgerð. Hæðarupplýsingar
     gætu verið ónákvæmar.
 error:
   load_error: Villa við að tengjast þjóni.
+  missing_id: Vantar 'id' viðfangs.
+  missing_query: Vantar 'query' viðfangs
   panel_title: Villa
 headline:
   last_update: Síðast uppfært
 help: Um landakortið
 locate_me: Staðsetja mig
 network:
-  downhill: brun/svig
-  node: tengingar í hnútaneti
+  continental: Heimsálfuleiðir
+  downhill: Brun
+  national: Þjóðleiðir
+  node: Tengingar í hnútaneti
+  nordic: Gönguskíði
+  other: Aðrar leiðir
+  regional: Héraðsleiðir
+  skitour: Skíðaferðir
+  sled: Sleðaleið
+  sleigh: Sleðabraut
+  winter_hike: Vetrargönguleiðir
 osmc_symbol:
   back: Til baka
   background: Bakgrunnurinn virkar á svipaðan máta. Hann samanstendur af lit og lögun.
@@ -65,9 +88,11 @@ osmc_symbol:
   preview_heading: Forskoðun
 routelist:
   close: Loka
+  more: Renndu að til að sjá fleiri leiðir.
   rollup: Rúlla upp
   title: Leiðir
 search:
+  places: Staðir
   routes: Leiðir
   title: Leit
 settings:
@@ -78,10 +103,21 @@ settings:
   route_layer: Lag með leiðum
   title: Stillingar korts
   transparency: Gegnsæi korts
+site_description:
+  cycling: Hjólaleiðir allt frá litlum leiðum í næsta nágrenni upp í alþjóðleg leiðakerfi,
+    með kortum og upplýsingum frá OpenStreetMap.
+  hiking: Gönguleiðir allt frá litlum leiðum í næsta nágrenni upp í alþjóðleg leiðakerfi,
+    með kortum og upplýsingum frá OpenStreetMap.
+  mtb: Fjallahjólaleiðir (MTB), með kortum og upplýsingum frá OpenStreetMap.
+  riding: Reiðleiðir, með kortum og upplýsingum frá OpenStreetMap.
+  skating: Leiðir fyrir línuskauta, með kortum og upplýsingum frá OpenStreetMap.
+  slopes: Brautir fyrir vetrarsport, skíðaleiðir, skautaleiðir á gönguskíðum, vetrargönguleiðir,
+    með kortum og upplýsingum frá OpenStreetMap.
 site_title:
   cycling: Hjólaleiðir
   hiking: Gönguleiðir
   mtb: Fjallahjólaleiðir
+  osmc_symbol: Merkingin osmc:symbol
   riding: Hestaferðir
   skating: Línuskautaleiðir
   slopes: Brautir fyrir vetraríþróttir
