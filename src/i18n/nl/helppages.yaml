@@ -18,16 +18,16 @@ about:
   riding: Op deze kaart worden bewegwijzerde paardrijroutes over de hele wereld weergegeven.
   slopemap: Op deze kaart worden wintersportpistes in de hele wereld weergegeven.
   osm: |-
-    De routes worden ingetekend op de standaardkaart van OpenStreetMap. Optioneel is er een kaartlaag beschikbaar met heuvelschaduwen. De routekaart is gemaakt met gegevens van van het project [OpenStreetMap](https://www.openstreetmap.org) (OSM).
+    De routes worden ingetekend op de standaardkaart van OpenStreetMap. Er is ook een kaartlaag met heuvelschaduwen. De routekaart wordt gemaakt met gegevens van het project [OpenStreetMap](https://www.openstreetmap.org) (OSM).
     OSM is een gratis en vrij te bewerken kaart van de wereld waar iedereen aan mee kan doen. De kaart is zeker niet volledig, en u kunt zelf bijdragen door nieuwe routes toe te voegen en bestaande routes te corrigeren. U kunt de [Beginnersgids](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide) raadplegen om meer over OpenStreetMap te weten te komen.
 rendering:
   title: OSM-gegevens weergeven
   hikingroutes: |-
     Wandelroutes moeten in OSM aangemaakt worden als relaties. Hoe dit werkt wordt in detail beschreven op de pagina over het labelen van [wandelroutes](https://wiki.openstreetmap.org/wiki/Walking_Routes)
-    in de OSM-wiki. Op deze kaart worden relaties weergegeven die ten minste de volgende labels hebben:
+    in de OSM-wiki. Op deze kaart worden relaties weergegeven die ten minste de volgende labels hebben (| staat voor of):
 
-        type = route|superroute
-        route = foot|walking|hiking
+        type=route|superroute
+        route=foot|walking|hiking
   cyclingroutes: "Fietsroutes moeten in OSM ingevoerd worden als relaties. Hoe dit
     werkt is\nin detail beschreven op de pagina over het taggen van \n[fietsroutes](https://wiki.openstreetmap.org/wiki/Cycle_routes)
     in de\nOSM-wiki. Op deze kaart worden alle relaties weergegeven die ten minste
@@ -43,14 +43,10 @@ rendering:
         route = mtb
 
     Reguliere fietsroutes worden weergegeven op de [fietskaart](https://cycling.waymarkedtrails.org).
-  skatingroutes: |-
-    Skateroutes met bewegwijzering moeten net zo getagd worden als andere routerelaties.
-    Kijk op de wikipagina over [Zwitserse skateroutes](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork)
-    voor hoe u moet taggen zodat de route wordt opgenomen op deze kaart.
-    De volgende labels moeten in ieder geval aanwezig zijn:
-
-        type = route|superroute
-        route = inline_skates
+  skatingroutes: "Skateroutes met bewegwijzering moeten net zo getagd worden als andere
+    routerelaties.\nKijk op de wikipagina over [Zwitserse skateroutes](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork)\nvoor
+    de labels die deze kaart begrijpt om weer te geven. \nDe volgende labels moeten
+    in ieder geval aanwezig zijn:\n\n    type = route|superroute\n    route = inline_skates"
   ridingroutes: |-
     Bewegwijzerde paardrijroutes moeten net als iedere routerelatie gelabeld worden.
     Zie de [routepagina in de OSM-wiki](https://wiki.openstreetmap.org/wiki/Relation:route) voor meer details.
@@ -111,7 +107,7 @@ rendering:
   hierarchy: De kaart ondersteunt ook [relatiehiërarchieën](#help-hierarchies).
   guideposts: |-
     [Wegwijzers](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
-    worden herkend door de volgende labels:
+    worden herkend aan de volgende labels:
 
         tourism=information
         information=guidepost
@@ -163,10 +159,10 @@ hikinglocal:
   swiss: |-
     ## Zwitserland
 
-    Zwitserland heeft een uitgebreid netwerk van gemarkeerde wandelpaden dat het hele land omvat. Het netwerk is een knooppuntennetwerk waar wegwijzers met namen dienst doen als knooppunten. Alle paden zijn consequent gemarkeerd al naargelang hun moeilijkheidsgraad. Op de kaart worden deze paden in het rood weergegeven, waarbij het lijnenpatroon de moeilijkheidsgraad aangeeft.
+    Zwitserland heeft een uitgebreid netwerk van gemarkeerde wandelpaden dat het hele land omvat. Het netwerk is een knooppuntennetwerk waar wegwijzers met namen dienst doen als knooppunten. Alle paden zijn consequent gemarkeerd al naargelang hun moeilijkheidsgraad. Op de kaart worden deze paden in het rood weergegeven, waarbij het lijnpatroon de moeilijkheidsgraad aangeeft.
 
     * ![rode lijn](route_std.png) *wandelpad*, gemarkeerd met ![diamant](yellow_diamond.svg). Gelabeld met `network=lwn` en `osmc:symbol=yellow:[...]`.
-    * ![onderbroken lijn](route_mnt.png) *bergpad*, gemarkeerd met ![wit-rood-wit](white_red_bar.svg). Gelabeld met `network=lwn` en `osmc:symbol=red:[...]`.
+    * ![streepjeslijn](route_mnt.png) *bergpad*, gemarkeerd met ![wit-rood-wit](white_red_bar.svg). Gelabeld met `network=lwn` en `osmc:symbol=red:[...]`.
     * ![stippellijn](route_alp.png) *Alpenpad*, gemarkeerd met ![wit-blauw-wit](white_blue_bar.svg). Gelabeld met `network=lwn` en `osmc:symbol=blue:[...]`.
 
     Merk op dat er bovenop dit netwerk een aantal nationale en regionale routes zijn die op de normale manier worden weergegeven.
@@ -193,7 +189,7 @@ hikinglocal:
     Zie de [Tsjechische labelpagina](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (alleen in het Tsjechisch).
 
     Als er een label 'kct_*' beschikbaar is, heeft dat de voorkeur boven een label van het type `osmc:symbol`.
-    Bovendien wordt de route heringedeeld als geen geldige netwerklabel kan worden gevonden.
+    Bovendien wordt de route heringedeeld als geen geldig netwerklabel kan worden gevonden.
     Routes met `kct_red=major` worden nationale routes, andere `kct_*=major` routes worden ingedeeld als regionaal.
   slovakia: |-
     ## Slowakije
@@ -238,8 +234,8 @@ elevationprofiles:
 technical:
   title: Technische details
   general: |-
-    De overlay met de routes wordt iedere minuut bijgewerkt en loopt meestal 10-15 minuten achter op
-    de OSM-server. De datum linksbovenin het venster geeft aan wanneer voor het laatst is
+    De laag met de routes wordt iedere minuut bijgewerkt en loopt meestal 10-15 minuten achter op
+    de OSM-server. De datum linksbovenin het kaartvenster geeft aan wanneer voor het laatst is
     bijgewerkt. We hebben geen invloed op het bijwerken van de onderliggende Mapnikkaart.
     Afhankelijk van de drukte van de OSM-server, duurt dit tussen een minuut en enkele
     uren.

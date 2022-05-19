@@ -11,6 +11,7 @@
 # Author: Lonvia
 # Author: Movses
 # Author: Okras
+# Author: Pacha Tchernof
 # Author: Volkov
 ---
 about:
@@ -142,6 +143,8 @@ osmc:
        osmc:symbol=waycolor:background:foreground:text:textcolor
 
     «waycolor» (цвет маршрута) должен быть заполнен, несмотря на то, что будет проигнорирован этой картой. Второй передний план не поддерживается. «text» (текст) и «textcolor» (цвет текста) могут быть опущены.
+
+    Посмотрите на дополнительный тег страниц [osmc:symbol] (osmc_symbols.html) для списка символов, которые поддерживаются Waymarked Trails.
 hikinglocal:
   title: Локализованная визуализация
   text: "Существует много разных систем для обозначения пешеходных маршрутов по всему

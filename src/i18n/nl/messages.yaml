@@ -18,6 +18,7 @@ attribution:
   elevation_title: hoogtegegevens via [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Meer gegevens
+  no_data: Er is geen bestemmingsinformatie voor deze wegwijzer.
   title: Bestemmingen
 details:
   GPX: GPX
@@ -26,7 +27,7 @@ details:
   image: Afbeelding
   mapped_len: Lengte op kaart
   note: Opmerking
-  official_len: Officiële afstand
+  official_len: Officiële lengte
   operator: Beheerder
   route_symbol: Route-symbool
   subroutes_title: Secties
@@ -52,19 +53,31 @@ elevation:
     altitude: Hoogte (m)
     distance: Afstand (km)
   title: Hoogteprofiel
+  total: Totale stijging of daling
   unavailable: Geen hoogtegegevens gevonden.
   warn_unsorted: De route is mogelijk ongesorteerd of onvolledig. Hoogte-informatie
     is mogelijk onnauwkeurig.
 error:
   load_error: Fout bij verbinden met server.
+  missing_id: Parameter 'id' ontbreekt.
+  missing_query: Parameter 'query' ontbreekt.
   panel_title: Fout
 headline:
   last_update: Laatst bijgewerkt
 help: Over de kaart
-locate_me: Zoek mij
+locate_me: Vind mij
 network:
+  continental: Continentale routes
   downhill: Bergafwaarts
+  national: Nationale routes
   node: Knooppuntenroutes
+  nordic: Langlaufen
+  other: Andere routes
+  regional: Regionale routes
+  skitour: Ski-rondes
+  sled: Sleehelling
+  sleigh: Sleehelling
+  winter_hike: Winterwandelen
 osmc_symbol:
   back: Terug
   background: Het achtergrondsymbool werkt vergelijkbaar. Dit bestaat ook uit een
@@ -82,9 +95,11 @@ osmc_symbol:
   preview_heading: Voorbeeld
 routelist:
   close: Sluiten
+  more: Zoom in om meer routes te zien.
   rollup: Roll-up
   title: Routes
 search:
+  places: Plaatsen
   routes: Routes
   title: Zoeken
 settings:
@@ -95,10 +110,20 @@ settings:
   route_layer: Routelaag
   title: Kaartinstellingen
   transparency: Kaarttransparantie
+site_description:
+  cycling: Plaatselijke fietsroutes en langeafstandsroutes, met kaarten en informatie
+    uit OpenStreetMap.
+  hiking: Plaatselijke wandelroutes en langeafstandsroutes, met kaarten en informatie
+    uit OpenStreetMap.
+  mtb: Mountainbikeroutes, met kaarten en informatie uit OpenStreetMap.
+  riding: Ruiterroutes, met kaarten en informatie uit OpenStreetMap.
+  skating: Inlineskateroutes, met kaarten en informatie uit OpenStreetMap.
+  slopes: Pistes en routes voor wintersporten, met kaarten en informatie uit OpenStreetMap.
 site_title:
   cycling: Fietsen
   hiking: Wandelen
   mtb: Mountainbiken
+  osmc_symbol: De tag osmc:symbol
   riding: Paardrijden
   skating: Inline skaten
   slopes: Wintersportpistes
