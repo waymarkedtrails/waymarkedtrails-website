@@ -39,29 +39,30 @@ rendering:
 
     Dağ bisikleti rotaları ayrı bir [MTB-haritasında](https://mtb.waymarkedtrails.org) gösterilir.
   mtbroutes: |-
-    Dağ bisikleti rotaları, OSM viki sayfasında [bisiklet rotaları](http://wiki.openstreetmap.org/wiki/Tr:Cycle_routes) hakkında
-    ayrıntılı olarak açıklanan bisiklet rotalarıyla aynı etiketleme
-    şemasını izler.
-    Aşağıdaki etiketleri olan ilişkiler MTB yolları olarak tanınır:
+    Dağ [bisikleti rotaları](https://wiki.openstreetmap.org/wiki/Cycle_routes), OSM wiki sayfasında bisiklet rotaları
+    hakkında ayrıntılı olarak açıklanan bisiklet rotalarıyla aynı
+    etiketleme şemasını takip eder.
+    Aşağıdaki etiketlere sahip ilişkiler MTB yolları olarak tanınır:
 
         type = route|superroute
         route = mtb
 
-    Düzenli bisiklet rotaları, [bisiklet haritası](https://cycling.waymarkedtrails.org/tr/) üzerinde gösterilir.
+    [Bisiklet haritasında](https://cycling.waymarkedtrails.org) düzenli bisiklet rotaları gösterilir.
   skatingroutes: |-
-    Tabela ile kaydedilen paten yolları, diğer herhangi bir rota ilişkisi gibi etiketlenmelidir.
-    Bu harita tarafından anlaşılan etiketleme için, ilgili wiki sayfasına bakın.
-    [İsviçre inline paten yolları] (https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
-    Bir paten rotası olarak tanınması için aşağıdaki etiketlerin bulunması gerekir:
+    İşaretli paten rotaları, diğer rota ilişkileri gibi etiketlenmelidir.
+    Bu harita tarafından anlaşılan etiketleme için, [İsviçre tekerlekli paten yolları](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork)
+    hakkındaki viki sayfasına bakın.
+    Bir paten rotası olarak tanınmak için aşağıdaki etiketlerin mevcut olması gerekir:
 
         type = route|superroute
         route = inline_skates
   ridingroutes: |-
-    İşaretli at sürme rotaları, diğer rota ilişkileri gibi etiketlenmelidir.
-    Ayrıntılar için [OSM wiki'deki rota sayfasını] görün.(https://wiki.openstreetmap.org/wiki/Relation:route).
-    Binicilik rotası olarak tanınmak için aşağıdaki etiketlerin bulunması gerekir:
+    İşaretli binicilik rotaları, diğer rota ilişkileri gibi etiketlenmelidir.
+    Ayrıntılar için [OSM vikideki rota sayfasına](https://wiki.openstreetmap.org/wiki/Relation:route) bakın.
+    Bir binicilik rotası olarak tanınmak için aşağıdaki etiketlerin mevcut olması gerekir:
 
-        type = route|supe
+        type = route|superroute
+        route = horse
   sloperoutes: |-
     İşaretli yamaçlar pist yönteminin yoludur: type tags.
     Bir eğim olarak tanınması için, aşağıdaki etiketlerin yollar için bulunması gerekir:
@@ -96,17 +97,14 @@ rendering:
     5. Pes et.
 
     İskandinav eğimleri, bir renk etiketi varsa, yalnızca renklerini gösteren bir işaretle işaretlenir.
-  hikinglabels: |-
-    Her rota için etiket, aşağıdaki sıraya göre etiketlerden "tahmin edilir":
-
-    1. [yerel hale getirme kurallarını](işleme/yürüyüş yeri) kontrol edin.
-    2. `osmc:symbol` etiketini yorumlamayı deneyin. Hangi parçalarla ilgili ayrıntılar için
-        [osmc:symbol oluşturma kurallarına](render/osmc) bakın.
-    3. Bir `ref` etiketi varsa, `ref` etiketini içeren bir metin etiketi yapın.
-    4. Eğer bir `name` etiketi varsa, önce kullanarak bir kaynak alın.
-        yalnızca büyük harf ve ilk harfleri kullanarak başarısız
-        adsız.
-    5. Pes et.
+  hikinglabels: "Her rotanın etiketi, etiketlerden aşağıdaki sırayla \"tahmin edilir\":\n\n1.
+    [Yerelleştirilmiş oluşturma kurallarını](#help-hikinglocal) kontrol edin.\n2.
+    `osmc:symbol` etiketini yorumlamaya çalışın. Hangi kısımların \n   anlaşıldığına
+    ilişkin ayrıntılar için, [osmc:symbol \n   oluşturma kurallarına](osmc_symbols.html)
+    bakın.\n3. Bir `ref` etiketi varsa, `ref` etiketiyle bir metin etiketi\n   yapın.\n4.
+    Bir `name` etiketi varsa, ilk önce yalnızca büyük harfleri\n   kullanarak ve bunu
+    yapamayarak adın ilk harflerini kullanarak\n   bundan bir referans elde edin.\n5.
+    Pes et."
   labels: |-
     Her rota için etiket, aşağıdaki sıraya göre etiketlerden "tahmin edilir":
 
@@ -114,18 +112,16 @@ rendering:
     2. Eğer bir `name` etiketi varsa, önce kullanarak bir referans alın.
         yalnızca büyük harflerden ve ismin ilk harflerini kullanarak başarısız.
     3. Pes et.
-  hierarchy: Harita ayrıca [ilişki hiyerarşileri]'ni (oluşturma/hiyerarşileri) de
-    destekler.
+  hierarchy: Harita ayrıca [ilişki hiyerarşilerini](#help-hierarchies) de destekler.
   guideposts: |-
-    [Kılavuz destekleri](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
-    aşağıdaki etiketler tarafından tanınır:
+    [Kılavuz direkler](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost) aşağıdaki etiketlerle tanınır:
 
         tourism=information
         information=guidepost
-        name=<name>
-        ele=<altitude>
+        name=<ad>
+        ele=<yükseklik>
 
-    `tourism` ve `information` zorunludur. `name` ve `ele` ihmal edilebilir.
+    `tourism` ve `information` zorunludur. `name` ve `ele` atlanabilir.
 hierarchies:
   title: İlişki hiyerarşileri
   text: |-
@@ -155,17 +151,20 @@ hierarchies:
 osmc:
   title: osmc:symbol etiketi
   text: |-
-    `osmc:symbol` etiketi, makinede okunabilir bir şekilde tanımlamanın bir yolunu sağlar.
-    rota sembollerini bazılarında bulunan basit geometrik şekillerle
-    Avrupa ülkeleri (ve özellikle Almanya'da). Yalnızca harita
-    viki sayfasında anlatılanların alt kümesini destekler. Amacıyla
-    harita üzerinde oluşturulacaksa, etiket şu biçimde olmalıdır:
+    `osmc:symbol` etiketi, rota sembollerini bazı Avrupa ülkelerinde
+    (ve özellikle Almanya'da) bulundukları gibi basit geometrik
+    şekillerde makine tarafından okunabilir bir şekilde tanımlamanın
+    bir yolunu sağlar. Harita, viki sayfasında açıklananların yalnızca
+    bir alt kümesini destekler. Haritada oluşturulabilmesi için
+    etiketin aşağıdaki biçime sahip olması gerekir:
 
           osmc:symbol=waycolor:background:foreground:text:textcolor
 
-    `waycolor` orada olmalı ancak bu harita için göz ardı edildi.
-    İkinci bir ön plan desteklenmiyor. `text` ve `textcolor`
-    çıkarabilir.
+    `waycolor` orada olmalıdır ancak bu harita için yok sayılır.
+    İkinci bir ön plan desteklenmez. `text` ve`textcolor` atlanabilir.
+
+    Waymarked Trails tarafından desteklenen sembollerin listesi için
+    ekstra [osmc:symbol](osmc_symbols.html) etiket sayfasına bakın.
 hikinglocal:
   title: Yerelleştirilmiş oluşturma
   text: |-
@@ -180,19 +179,20 @@ hikinglocal:
   swiss: |-
     ## İsviçre
 
-    İsviçre'yi kapsayan geniş kapsamlı işaretli yürüyüş yolları ağı bütün ülkeye vardır.
-    Ağ, guideposts işlevinin adlandırıldığı bir düğüm ağıdır.
-    Tüm yollar zorluklarına göre tutarlı bir şekilde işaretlenmiştir.
-    Harita bu yolları kırmızı çizgiyle gösterir ve çizgi deseni zorluğu işaretler.
+    İsviçre, tüm ülkeyi kapsayan geniş bir işaretli yürüyüş yolları
+    ağına sahiptir.Ağ, adlandırılmış kılavuz direklerin düğümler olarak
+    işlev gördüğü bir düğüm ağıdır. Tüm yollar, zorluklarına göre
+    tutarlı bir şekilde işaretlenmiştir. Harita, bu yolları, zorluğu
+    işaretleyen çizgi deseni ile kırmızı olarak gösterir.
 
-    * ![red line](route_std.png) *hiking path*, marked with ![diamond](yellow_diamond.svg). Tagged with `network=lwn` and `osmc:symbol=yellow:[...]`.
-    * ![dashed line](route_mnt.png) *mountain path*, marked with ![white-red-white](white_red_bar.svg). Tagged with `network=lwn` and `osmc:symbol=red:[...]`.
-    * ![dotted line](route_alp.png) *alpine path*, marked with ![white-blue-white](white_blue_bar.svg). Tagged with `network=lwn` and `osmc:symbol=blue:[...]`.
+    * ![kırmızı çizgi](route_std.png) *yürüyüş yolu*, ![elmas](yellow_diamond.svg) ile işaretlenmiştir. `network=lwn` ve `osmc:symbol=yellow:[...]` ile etiketlendi.
+    * ![kesik çizgi](route_mnt.png) *dağ yolu*, ![beyaz-kırmızı-beyaz](white_red_bar.svg) ile işaretlenmiştir. `network=lwn` ve`osmc:symbol=red:[...]` ile etiketlendi.
+    * ![noktalı çizgi](route_alp.png) *alp yolu*, ![beyaz-mavi-beyaz](white_blue_bar.svg) ile işaretlenmiştir. `network=lwn` ve `osmc:symbol=blue:[...]` ile etiketlenmiştir.
 
-    Bu ağın tepesinde bir dizi ulusal ve bölgesel olduğunu unutmayın.
-    normal şekilde gösterilen güzergahlar.
+    Bu ağın üzerinde, normal şekilde gösterilen bir dizi ulusal ve
+    bölgesel rota olduğunu unutmayın.
 
-    İsviçre'deki OSM'deki yürüyüş yollarını etiketleme hakkında daha fazla bilgi için bakınız:
+    OSM'de İsviçre'deki yürüyüş yollarını etiketleme hakkında daha fazla bilgi için bakınız:
     [İsviçre yürüyüş ağı](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
   italy: |-
     ## İtalya
@@ -205,21 +205,24 @@ hikinglocal:
   uk: |-
     ## Birleşik Krallık
 
-    The classification of [UK long-distance paths](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
-    (those tagged with `network=uk_ldp`) depends on the `operator` tag. Relations
-    with `operator=National Trails` are shown as national trails, all other relations
-    appear as regional routes.
+    [Birleşik Krallık uzun mesafe yollarının](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
+    (`network=uk_ldp` ile etiketlenenler) sınıflandırması `operatör`
+    etiketine bağlıdır. 'Operatör=Ulusal Yollar' ile olan ilişkiler
+    ulusal yollar olarak, diğer tüm ilişkiler bölgesel güzergahlar
+    olarak görünür.
 
-    `network=lwn/rwn/nwn/iwn` etiketiyle ilişkiler her zamanki gibi işlenir.
+    Bir `network=lwn/rwn/nwn/iwn` etiketiyle ilişkiler her zamanki gibi işlenir.
   czech: |-
-    ## Çek Cumhuriyet
+    ## Çek Cumhuriyeti
 
-    Ülke, 4 farklı 7 sembolden oluşan bir parkur işaretleme renkler standardı kullanıyor.
-    Bir açıklama için [Çek etiketleme sayfasına bakınız](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (yalnızca Çekçe)
+    Ülke, 4 farklı renkte 7 sembolden oluşan bir sete dayanan bir iz
+    işaretleme standardı kullanıyor. Açıklama için
+    [Çek Cumhuriyeti etiketleme sayfasına](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) bakın (yalnızca Çek Cumhuriyeti).
 
-    Bir `kct_ *` etiketi kullanılabilir olduğunda, herhangi bir `osmc:symbol` etiketine tercih edilir.
-    Ayrıca, geçerli bir ağ etiketi bulunamazsa, rota yeniden sınıflandırılır. Rotalar
-    `kct_red=major` ile ulusal yol olur, diğer `kct_*=major` olarak sınıflandırır
+    Bir `kct_*` etiketi mevcut olduğunda, herhangi bir `osmc:symbol`
+    etiketine göre tercih edilir. Ayrıca, geçerli bir ağ etiketi bulunamazsa rota yeniden sınıflandırılır. `kct_red=major` olan
+    güzergahlar ulusal güzergahlar hâline gelir, diğer `kct_*=major`
+    olan güzergahlar bölgesel olarak sınıflandırılır.
   slovakia: |-
     ## Slovakya
 
