@@ -8,6 +8,7 @@ attribution:
   elevation_title: datos altimetric per [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Plus detalios
+  no_data: Nulle information de destination es disponibile pro iste poste indicator.
   title: Destinationes
 details:
   GPX: GPX
@@ -18,11 +19,22 @@ details:
   note: Nota
   official_len: Distantia official
   operator: Operator
+  route_symbol: Symbolo de itinerario
   subroutes_title: Sectiones
   superroutes_title: Parte de
+  symbol: Symbolo
   tags:
+    key: clave
     title: Etiquettas de OpenStreetMap
+    value: valor
+  type:
+    guidepost: Poste indicator
+    node: Nodo
+    relation: Relation
+    way: Via
+    wayset: Insimul de vias
   website: Sito web
+  wikipedia: Wikipedia
   zoom_to: Monstrar in carta
 elevation:
   ascent: Ascension accumulate
@@ -31,19 +43,31 @@ elevation:
     altitude: Altitude (m)
     distance: Distantia (km)
   title: Profilo altimetric
+  total: Total de ascension/descension
   unavailable: Nulle datos de elevation trovate.
   warn_unsorted: Le itinerario es possibilemente non ordinate o incomplete. Le information
     de elevation pote esser inexacte.
 error:
   load_error: Error de connexion al servitor.
+  missing_id: Le parametro 'id' manca.
+  missing_query: Le parametro 'query' manca.
   panel_title: Error
 headline:
   last_update: Ultime actualisation
 help: A proposito del carta
 locate_me: Localisar me
 network:
+  continental: Itinerarios continental
   downhill: Descendita
+  national: Itinerarios national
   node: Connexiones de nodos de rete
+  nordic: Ski nordic
+  other: Altere itinerarios
+  regional: Itinerarios regional
+  skitour: Tours de ski
+  sled: Pista de slitta
+  sleigh: Pista de traha
+  winter_hike: Excursion hibernal a pede
 osmc_symbol:
   back: Retornar
   background: Le fundo functiona de maniera similar. Illo etiam consiste de un color
@@ -62,9 +86,11 @@ osmc_symbol:
   preview_heading: Previsualisar
 routelist:
   close: Clauder
+  more: Face zoom avante pro vider plus itinerarios.
   rollup: Inrolar
   title: Itinerarios
 search:
+  places: Locos
   routes: Itinerarios
   title: Cercar
 settings:
@@ -75,10 +101,22 @@ settings:
   route_layer: Strato de itinerarios
   title: Optiones del carta
   transparency: Transparentia del carta
+site_description:
+  cycling: Itinerarios cyclabile local e de longe distantia, con cartas e informationes
+    de OpenStreetMap.
+  hiking: Itinerarios de excursion a pede e de promenada, local e de longe distantia,
+    con cartas e informationes de OpenStreetMap.
+  mtb: Itinerarios de bicycletta de montania (MTB), con cartas e informationes de
+    OpenStreetMap.
+  riding: Itinerarios de equitation, con cartas e informationes de OpenStreetMap.
+  skating: Itinerarios de patinage in linea, con cartas e informationes de OpenStreetMap.
+  slopes: Pistas de sport hibernal, ski alpin, patinage de fundo e promenada hibernal,
+    con cartas e informationes de OpenStreetMap.
 site_title:
   cycling: Cyclismo
   hiking: Tourismo pedestre
   mtb: Bicycletta de montania
+  osmc_symbol: Le etiquetta osmc:symbol
   riding: Equitation
   skating: Patinage in linea
   slopes: Pistas de sport de hiberno
