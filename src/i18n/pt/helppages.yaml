@@ -252,7 +252,7 @@ elevationprofiles:
 
     Há buracos designados por "voids" (vazios), para os quais não há dados de elevação. Estes são mostrados como buracos na linha do perfil de elevação.
 
-    Tenha em mente que a versão 2 do ASTER é provavelmente o melhor DEM global gratuito, mas também tem as suas limitações tanto nos termos de precisão, como de coberto, consulte o [resumo de relatórios de validação](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) para obter mais informações. As imprecisões são ainda agravadas pela imprecisão dos dados do OSM, [uma técnica de suavização](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nós aplicamos e a resolução do perfil que fica menor quando mais longa for a rota.
+    Tenha em mente que a versão 2 do ASTER é provavelmente o melhor DEM global gratuito, mas também tem as suas limitações tanto nos termos de precisão, como de coberto, consulte o [resumo de relatórios de validação](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) para obter mais informações. As imprecisões são ainda agravadas pela imprecisão dos dados do OSM, [uma técnica de suavização](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nós aplicamos e a resolução do perfil que fica menor quando mais longa for a rota.
 technical:
   title: Detalhes técnicos
   general: |-
@@ -333,5 +333,5 @@ contact:
   text: |-
     Pode enviar comentários e perguntas sobre o sítio no seguinte correio eletrónico: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Também pode informar de qualquer erro no [sistema de registo de defeitos do projeto no github](https://github.com/lonvia/waymarked-trails-site/issues). Antes de relatar qualquer erro, por favor, certifique-se de que o problema não é com os dados do OSM.
+    Também pode informar de qualquer erro no [sistema de registo de defeitos do projeto no github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Antes de relatar qualquer erro, por favor, certifique-se de que o problema não é com os dados do OSM.
 ...

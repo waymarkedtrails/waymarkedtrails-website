@@ -201,7 +201,7 @@ elevationprofiles:
     من أنه في حين أن الإصدار 2 من أستر على الأرجح أفضل علامة تجارية عالمية حرة، فإن
     له حدوده عندما يتعلق الأمر بالدقة والتغطية، راجع [تقرير ملخص التحقق](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf)
     لمزيد من المعلومات، يتفاقم عدم الدقة بشكل أكبر بسبب عدم دقة بيانات خريطة الشارع
-    المفتوحة، [تقنية تمهيد](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)
+    المفتوحة، [تقنية تمهيد](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)
     التي نطبقها، ودقة الملف الشخصي التي تصبح أقل كلما كان المسار أطول."
 technical:
   title: تفاصيل تقنية
@@ -261,5 +261,5 @@ contact:
   text: |-
     يمكن إرسال الأسئلة والتعليقات حول هذا الموقع إلى: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    يمكن أيضا الإبلاغ عن الأخطاء في [متعقب أخطاء المشروع في غيت هب](https://github.com/lonvia/waymarked-trails-site/issues)، قبل الإبلاغ عن خطأ، يُرجَى التأكد من أن مشكلتك لا تتعلق ببيانات خريطة الشارع المفتوحة.
+    يمكن أيضا الإبلاغ عن الأخطاء في [متعقب أخطاء المشروع في غيت هب](https://github.com/waymarkedtrails/waymarked-trails-site/issues)، قبل الإبلاغ عن خطأ، يُرجَى التأكد من أن مشكلتك لا تتعلق ببيانات خريطة الشارع المفتوحة.
 ...

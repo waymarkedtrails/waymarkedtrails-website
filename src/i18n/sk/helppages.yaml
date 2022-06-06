@@ -207,7 +207,7 @@ elevationprofiles:
     ASTER verzia 2 pravdepodobne najlepšia voľne dostupná DEM, má svoje limity pokiaľ
     ide o presnosť a rozsah pokrytia, viď ich [validation summary report](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf)
     pre viac informácií. Nepresnosti sú ešte umocnené o nepresnosti e OSM údajov,
-    [a smoothing technique](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)."
+    [a smoothing technique](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)."
 technical:
   title: Technické detaily
   general: |-
@@ -265,5 +265,5 @@ contact:
   text: |-
     Otázky a pripomienky k tejto stránke môžete poslať na:  [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Chyby môžete nahlásiť na [the project's issue tracker on github](https://github.com/lonvia/waymarked-trails-site/issues). Pred nahlásením chyby sa prosím uistite, že nejde o údaje OSM.
+    Chyby môžete nahlásiť na [the project's issue tracker on github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Pred nahlásením chyby sa prosím uistite, že nejde o údaje OSM.
 ...

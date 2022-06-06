@@ -205,7 +205,7 @@ elevationprofiles:
 
     Vannak olyan lyukak, úgynevezett „üres helyek” (voids), amelyekhez nem rendelkezünk magassági adatokkal. Ezeket a magassági profilvonalban lévő lyukak szemléltetik.
 
-    Vigyázzunk, hogy bár az ASTER 2. verziója valószínűleg a legjobb ingyenes globális digitális magassági modell, vannak korlátai mind a pontosság, mind a lefedettség tekintetében. Részletesebben lásd a [validációs összefoglaló jelentésüket](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf). A pontatlanságokat tovább súlyosbítja az OSM-adatok pontatlansága, az általunk alkalmazott [simítási technika](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), valamint a profil felbontása, amely annál kisebb lesz, minél hosszabb az útvonal.
+    Vigyázzunk, hogy bár az ASTER 2. verziója valószínűleg a legjobb ingyenes globális digitális magassági modell, vannak korlátai mind a pontosság, mind a lefedettség tekintetében. Részletesebben lásd a [validációs összefoglaló jelentésüket](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf). A pontatlanságokat tovább súlyosbítja az OSM-adatok pontatlansága, az általunk alkalmazott [simítási technika](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), valamint a profil felbontása, amely annál kisebb lesz, minél hosszabb az útvonal.
 technical:
   title: Technikai részletek
   general: |-
@@ -213,7 +213,7 @@ technical:
 
     A gép alap [Debian Linux](http://www.debian.org/) alatt fut, a használt eszközök pedig [osmosis](http://wiki.openstreetmap.org/wiki/Osmosis), [Postgresql](http://www.postgresql.org) és [Mapnik 2.0](http://www.mapnik.org) részekből állnak össze.
 
-    Az adatbázis megjelenítés előtti utófeldolgozását az [osgende](https://github.com/lonvia/osgende) végzi. A webhely kiszolgálását a [CherryPy](http://cherrypy.org/) végzi. A forráskód GPL licenc alatt érhető el. További információk a [GitHub projektlapon](https://github.com/lonvia/waymarked-trails-site) érhetőek el.
+    Az adatbázis megjelenítés előtti utófeldolgozását az [osgende](https://github.com/lonvia/osgende) végzi. A webhely kiszolgálását a [CherryPy](http://cherrypy.org/) végzi. A forráskód GPL licenc alatt érhető el. További információk a [GitHub projektlapon](https://github.com/waymarkedtrails/waymarked-trails-site) érhetőek el.
   translation: |-
     ## Fordítások
 
@@ -258,5 +258,5 @@ contact:
   text: |-
     A lappal kapcsolatos kérdéseket az alábbi címre küldheti:  [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    A hibák [a projekt GitHub problémakövetőjében](https://github.com/lonvia/waymarked-trails-site/issues) bejelentkezők. A hiba bejelentése előtt győződjék meg arról, hogy az nem OSM adathibára vezethető vissza.
+    A hibák [a projekt GitHub problémakövetőjében](https://github.com/waymarkedtrails/waymarked-trails-site/issues) bejelentkezők. A hiba bejelentése előtt győződjék meg arról, hogy az nem OSM adathibára vezethető vissza.
 ...

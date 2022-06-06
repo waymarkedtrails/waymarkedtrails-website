@@ -200,7 +200,7 @@ elevationprofiles:
 
     Zuloak daude, "hutsunea" deitzen diegunak, eta hori dela-eta, ez dugu altxatze-daturik, hau da, kotako goratze-profilean zuloak agertuko zaizkigu.
 
-    Gogoan izan ezazu ASTER version 2 seguruenik dohainiko DEM globalik hoberena den arren, bere mugak ere badituela, ikus ezazu [validation summary report](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) informazio gehiagorako. Zehaztasunak areagotu egiten dira OSM datuen ezegonkortasunagatik, [a smoothing technique](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) aplikatzen ditugunak, eta ibilbidearen iraupena txikiagotzen duen profilaren bereizmena.
+    Gogoan izan ezazu ASTER version 2 seguruenik dohainiko DEM globalik hoberena den arren, bere mugak ere badituela, ikus ezazu [validation summary report](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) informazio gehiagorako. Zehaztasunak areagotu egiten dira OSM datuen ezegonkortasunagatik, [a smoothing technique](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) aplikatzen ditugunak, eta ibilbidearen iraupena txikiagotzen duen profilaren bereizmena.
 technical:
   title: Xehetasun teknikoak
   general: |-
@@ -212,7 +212,7 @@ technical:
     [osgende](https://github.com/lonvia/osgende) post-prozezatze batzuetaz arduratzen da,
     datu-basean islatu aurretik. Webguneak
     [Django web framework](http://www.djangoproject.com) erabiltzen du. Iturriaren kodea erabilgarri dago GPL lizentziaren babesean. Informazio gehiagorako, mesedez, ikus ezazu
-    [project page at GitHub](https://github.com/lonvia/waymarked-trails-site).
+    [project page at GitHub](https://github.com/waymarkedtrails/waymarked-trails-site).
   translation: |-
     ## Itzulpenak
 
@@ -266,5 +266,5 @@ contact:
   title: Kontaktua
   text: |-
     Leku honi buruzko galderak eta iruzkinak [lonvia@denofr.de](mailto:lonvia@denofr.de)ra bidali itzazu.
-    Horretaz gain, [the project's issue tracker on github](https://github.com/lonvia/waymarked-trails-site/issues)en akatsen berri eman daiteke. Akatsa jakinarazi beino lehen, mesedez, ziurta ezazu zure arazoak OSM datarekin harremanik ez duela.
+    Horretaz gain, [the project's issue tracker on github](https://github.com/waymarkedtrails/waymarked-trails-site/issues)en akatsen berri eman daiteke. Akatsa jakinarazi beino lehen, mesedez, ziurta ezazu zure arazoak OSM datarekin harremanik ez duela.
 ...

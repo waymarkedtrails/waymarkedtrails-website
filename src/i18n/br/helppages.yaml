@@ -198,7 +198,7 @@ elevationprofiles:
 
     Toulloù zo a reer "ichoù" anezho. Evit ar re-mañ n'eus ket a roadennoù uhelder ; diskwelet int gant esaouennoù e linenn ar profil uhelder.
 
-    Diwallit mat, ha pa vefe hep mar ASTER stumm 2 an DEM frank a wirioù gwellañ, n'eo ket diharz e varregezhioù, kement war dachenn ar pizhder ha war hini ar goloadur.; gwelet [diverrañ o danevell gadarnaat](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) evit gouzout hiroc'h. War ar marc'had eo gwashaet an diresisder gant diresisder roadennoù OSM, [un teknik levnaat](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) a lakaomp e pleustr, ha gant pizhder ar profil a vihana a-feur ma hira an tennad-hent.
+    Diwallit mat, ha pa vefe hep mar ASTER stumm 2 an DEM frank a wirioù gwellañ, n'eo ket diharz e varregezhioù, kement war dachenn ar pizhder ha war hini ar goloadur.; gwelet [diverrañ o danevell gadarnaat](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) evit gouzout hiroc'h. War ar marc'had eo gwashaet an diresisder gant diresisder roadennoù OSM, [un teknik levnaat](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) a lakaomp e pleustr, ha gant pizhder ar profil a vihana a-feur ma hira an tennad-hent.
 technical:
   title: Munudoù teknikel
   general: |-
@@ -247,5 +247,5 @@ contact:
   title: Darempred
   text: |-
     Gallout a rit kas ho koulennoù hag evezhiadennoù diwar-benn al lec'hienn-mañ da : [lonvia@denofr.de](mailto:lonvia@denofr.de).
-    Kelaouiñ diwar-benn ar c'hudennnoù a c'haller ober war [furcher drein raktres github](https://github.com/lonvia/waymarked-trails-site/issues). A-raok kas keloù diwar-benn un draen, gwiriit mat n'emañ ket an dalc'h gant roadennoù OSM.
+    Kelaouiñ diwar-benn ar c'hudennnoù a c'haller ober war [furcher drein raktres github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). A-raok kas keloù diwar-benn un draen, gwiriit mat n'emañ ket an dalc'h gant roadennoù OSM.
 ...

@@ -163,7 +163,7 @@ technical:
     Rute-kartlaget blir oppdatert hvert minutt, og er normalt 10-15 minutt bak OSM-tenerene. Datoen i øvre venstre hjørne viser dato for siste oppdatering. Oppdateringer på bakgrunnskartet skjer hos OSM, og tar fra ett minutt til en uke, avhengig av type endring og belastning av OSM-tenerene.
 
     Teneren kjører standard [Debian Linux](http://www.debian.org/) med [osmosis](http://wiki.openstreetmap.org/wiki/Osmosis),
-    [Postgresql](http://www.postgresql.org) og [Mapnik 2.0](http://www.mapnik.org). [osgende](https://github.com/lonvia/osgende) tar seg av bearbeiding av databasen før framstilling av kartlaget. Nettstedet bruker [Django web framework](http://www.djangoproject.com). Kildekoden er tilgjengeleg med GPL-lisens, se [prosjektsida på GitHub](https://github.com/lonvia/waymarked-trails-site) for mer informasjon.
+    [Postgresql](http://www.postgresql.org) og [Mapnik 2.0](http://www.mapnik.org). [osgende](https://github.com/lonvia/osgende) tar seg av bearbeiding av databasen før framstilling av kartlaget. Nettstedet bruker [Django web framework](http://www.djangoproject.com). Kildekoden er tilgjengeleg med GPL-lisens, se [prosjektsida på GitHub](https://github.com/waymarkedtrails/waymarked-trails-site) for mer informasjon.
   translation: |-
     ## Oversettelse
 
@@ -207,5 +207,5 @@ contact:
   text: |-
     Spørsmål og kommentarer kan sendes til [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Tekniske feil kan også rapporteres [på github](https://github.com/lonvia/waymarked-trails-site/issues). Forsikre deg først om at problemet du rapporterer ikke skyldes problem med dataene i OpenStreetMap.
+    Tekniske feil kan også rapporteres [på github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Forsikre deg først om at problemet du rapporterer ikke skyldes problem med dataene i OpenStreetMap.
 ...

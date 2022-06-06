@@ -196,7 +196,7 @@ elevationprofiles:
     datay berzeya quli estê, nê xeta profilê berzey dı pê qulana şekıl deyayo. \n\nASTER
     versiyon 2 muhtemelen tewr bêpere global DEM, hem raştay hem zi ihtiwa mewzu bahis
     beno se, sinornayışan rê diqet bıkerê; GDEM/ver2Validation/ Summary_GDEM2_validation_report_final.pdf)
-    zêde melumati rê. Xetay tetbiqiya datayanê OSM  [jew teknikê duz kerdışi] (https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)
+    zêde melumati rê. Xetay tetbiqiya datayanê OSM  [jew teknikê duz kerdışi] (https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)
     u agoznayışê profilê cı çend hidetın bo u çend derg bo hend kemi beno."
 technical:
   title: Teknik detayi
@@ -255,6 +255,6 @@ acknowledgements:
 contact:
   title: İrtıbat
   text: "Na site de perai vatışê şıma: [lonvia@denofr.de] (mailto:lonvia@denofr.de).\n\nXırabey
-    reyna [github de temaşekerê preocey xırabi] ra rapor bena.  (https://github.com/lonvia/waymarked-trails-site/issues).
+    reyna [github de temaşekerê preocey xırabi] ra rapor bena.  (https://github.com/waymarkedtrails/waymarked-trails-site/issues).
     Verê co ye xırabey ra go emel bê. \nPê datayanê OSM ya nê ."
 ...

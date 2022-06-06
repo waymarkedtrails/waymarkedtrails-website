@@ -194,7 +194,7 @@ elevationprofiles:
 
     有些被稱為「裂縫」的洞代表著我們沒有對此的海拔資料，因此在海拔輪廓線條上是以洞狀來視覺化之。
 
-    另外請注意 ASTER 第 2 版雖然可能是目前最好的自由全球數位海拔模型，仍有著精準度和覆蓋範圍的侷限性，請查看它們的[驗證總結報告]（https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf）來獲取更多訊息。開放街圖資料的不精準會影響往後的準確性，我們套用的[平滑技術]（https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2）是用於解決較短和較長路線方面輪廓的解決手法。
+    另外請注意 ASTER 第 2 版雖然可能是目前最好的自由全球數位海拔模型，仍有著精準度和覆蓋範圍的侷限性，請查看它們的[驗證總結報告]（https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf）來獲取更多訊息。開放街圖資料的不精準會影響往後的準確性，我們套用的[平滑技術]（https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2）是用於解決較短和較長路線方面輪廓的解決手法。
 technical:
   title: 相關技術細節
   general: |-
@@ -245,5 +245,5 @@ contact:
   text: |-
     有關此網站的問題與提議可寄送電郵至：[lonvia@denofr.de](mailto:lonvia@denofr.de)。
 
-    程式錯誤方面可回報至[ Github 上的專案問題追蹤](https://github.com/lonvia/waymarked-trails-site/issues)。另外在回報錯誤之前，請先確定您的回報內容不是開放街圖方面的資料問題。
+    程式錯誤方面可回報至[ Github 上的專案問題追蹤](https://github.com/waymarkedtrails/waymarked-trails-site/issues)。另外在回報錯誤之前，請先確定您的回報內容不是開放街圖方面的資料問題。
 ...

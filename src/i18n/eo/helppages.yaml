@@ -191,7 +191,7 @@ elevationprofiles:
 
     Ekzistas lokoj por kiuj ni ne havas datumoj pri altitudo, ili estas vidigataj kiel truojn en linio de la terena profilo.
 
-    Atentu, ke ASTER versio 2 estas probable la plej bona senpaga tutmonda cifereca mapo de altitudo, ĝi estas limigita en kaj akurateco kaj en kovro, vidu ilian [sumiga raporto pri validigo](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) por pli da informoj. La malprecizaĵoj estas eĉ malbonigitaj de malprecizaĵoj de OSM-datumoj, kaj de [glatiga teĥniko](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) uzita de ni, kaj de la distingivo de la profilo kiu igas des pli malgrandan, ju pli longa la kurso estas.
+    Atentu, ke ASTER versio 2 estas probable la plej bona senpaga tutmonda cifereca mapo de altitudo, ĝi estas limigita en kaj akurateco kaj en kovro, vidu ilian [sumiga raporto pri validigo](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) por pli da informoj. La malprecizaĵoj estas eĉ malbonigitaj de malprecizaĵoj de OSM-datumoj, kaj de [glatiga teĥniko](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) uzita de ni, kaj de la distingivo de la profilo kiu igas des pli malgrandan, ju pli longa la kurso estas.
 technical:
   title: Teĥnikaj detaloj
   general: |-
@@ -248,5 +248,5 @@ contact:
   text: |-
     Demandoj kaj komentoj pri ĉi tiu retejo povas esti senditaj al [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Eraroj ankaŭ povas esti raportitaj per [la projekta erar-spurilo en github](https://github.com/lonvia/waymarked-trails-site/issues). Antaŭ vi raportos eraron, certigu ke ĝi ne estas problemo kun OSM-datumoj.
+    Eraroj ankaŭ povas esti raportitaj per [la projekta erar-spurilo en github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Antaŭ vi raportos eraron, certigu ke ĝi ne estas problemo kun OSM-datumoj.
 ...

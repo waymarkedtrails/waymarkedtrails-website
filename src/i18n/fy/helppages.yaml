@@ -273,7 +273,7 @@ elevationprofiles:
 
     Der binne gatten, saneamde "voids" dêr't wy gjin elevaasjedata foar hawwe. Dy wurde útbylde mei gatten yn 'e elevaasjeprofylline.
 
-    Tink derom dat, hoewol't ASTER ferzje 2 nei alle gedachten it bêste frij te brûken GDEM is, it syn beheinings hat mei sawol de krektens as de dekking. Sjoch har [falidaasjegearfetting](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) foar mear ynformaasje. De ûnkrektichheden wurde noch slimmer troch de ûnkrektens fan 'e OSM-data, [in ôfflaktechnyk](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) dy't wy tapasse, en de resolúsje fan 't profyl dy't leger wurdt hoe langer de rûte is.
+    Tink derom dat, hoewol't ASTER ferzje 2 nei alle gedachten it bêste frij te brûken GDEM is, it syn beheinings hat mei sawol de krektens as de dekking. Sjoch har [falidaasjegearfetting](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) foar mear ynformaasje. De ûnkrektichheden wurde noch slimmer troch de ûnkrektens fan 'e OSM-data, [in ôfflaktechnyk](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) dy't wy tapasse, en de resolúsje fan 't profyl dy't leger wurdt hoe langer de rûte is.
 technical:
   title: Technyske bysûnderheden
   general: |-
@@ -353,6 +353,6 @@ contact:
   text: |-
     Fragen en opmerkings oer dit webstee kinne stjoerd wurde nei: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Flaters kinne trochjûn wurde yn 'e [probleemfolger fan 't projekt op GitHub](https://github.com/lonvia/waymarked-trails-site/issues). Gean foar it trochjaan fan in flater asjebleaft nei oft jo probleem
+    Flaters kinne trochjûn wurde yn 'e [probleemfolger fan 't projekt op GitHub](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Gean foar it trochjaan fan in flater asjebleaft nei oft jo probleem
     net troch de OSM-data komt.
 ...

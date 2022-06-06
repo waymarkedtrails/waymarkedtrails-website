@@ -204,14 +204,14 @@ elevationprofiles:
 
     Terdapat lubang atau "kekosongan" yang mana kami ketiadaan data ketinggian dan digambarkan dengan lubang dalam garis profil ketinggian.
 
-    Sila ingat bahawa walaupun ASTER versi 2 mungkin merupakan model ketinggian digital sejagat percuma yang terbaik, namun ia ada batasnya dari segi ketepatan dan liputan; sila baca [laporan ringkasan pengesahannya](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) untuk maklumat lanjut. Ketidaktepatan ini diburukkan lagi oleh ketidaktepatan data OSM, iaitu sejenis [teknik pelicinan](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) yang kami terapkan, dan resolusi profil yang semakin rendah apabila laluan bertambah panjang.
+    Sila ingat bahawa walaupun ASTER versi 2 mungkin merupakan model ketinggian digital sejagat percuma yang terbaik, namun ia ada batasnya dari segi ketepatan dan liputan; sila baca [laporan ringkasan pengesahannya](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) untuk maklumat lanjut. Ketidaktepatan ini diburukkan lagi oleh ketidaktepatan data OSM, iaitu sejenis [teknik pelicinan](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) yang kami terapkan, dan resolusi profil yang semakin rendah apabila laluan bertambah panjang.
 technical:
   title: Butiran teknikal
   general: |-
     Tindanan laluan ini dikemaskinikan setiap minit dan lazimnya ketinggalan 10-15 minit di belakang pelayan OSM. Tarikh di sudut kiri atas memaparkan kemas kini terkini. Kemas kini pada peta Mapnik yang bertindan tiada di dalam kawalan tapak ini. Bergantung pada muatan semasa pelayan OSM, ia memakan masa antara seminit dan beberapa hari.
 
     Jentera ini menjalankan [Debian Linux](http://www.debian.org/) piawai dengan rantaian alat yang terdiri daripada [osmosis](http://wiki.openstreetmap.org/wiki/Osmosis), [Postgresql](http://www.postgresql.org) dan [Mapnik 2.0](http://www.mapnik.org). [osgende](https://github.com/lonvia/osgende) menguruskan sesetengah pascapemprosesan pada pangkalan data sebelum pemaparan. Tapak sesawang ini menggunakan [kerangka sesawang Django](http://www.djangoproject.com). Kod sumbernya terdapat dengan lesen GPL. Untuk keterangan lanjut, kunjungi
-    [halaman projek di GitHub](https://github.com/lonvia/waymarked-trails-site).
+    [halaman projek di GitHub](https://github.com/waymarkedtrails/waymarked-trails-site).
   translation: |-
     ## Penterjemahan
 
@@ -254,5 +254,5 @@ contact:
   text: |-
     Sebarang soalan dan ulasan tentang tapak sesawang ini boleh dihantar ke: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Pepijat juga boleh dilaporkan pada [penjejak masalah projek ini di github](https://github.com/lonvia/waymarked-trails-site/issues). Sebelum melaporkan pepijat, sila pastikan bahawa masalah anda bukan berkenaan data OSM.
+    Pepijat juga boleh dilaporkan pada [penjejak masalah projek ini di github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Sebelum melaporkan pepijat, sila pastikan bahawa masalah anda bukan berkenaan data OSM.
 ...

@@ -214,7 +214,7 @@ elevationprofiles:
 
     Der er huller, såkaldte "tomrum", hvor vi ikke har nogen højdedata. Disse vises med huller i højdeprofillinjen.
 
-    Bemærk, at selvom ASTER version 2 nok er den bedste, frie, globale DEM, har den sine begrænsninger med hensyn til nøjagtighed og dækning, se deres [konklusionsrapport angående valideringen](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) for flere oplysninger. Unøjagtighederne forværres yderligere af unøjagtigheden af dataene i OSM, [en udglatningsteknik](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), vi anvender, og opløsningen af profilen, som bliver lavere, jo længere ruten bliver.
+    Bemærk, at selvom ASTER version 2 nok er den bedste, frie, globale DEM, har den sine begrænsninger med hensyn til nøjagtighed og dækning, se deres [konklusionsrapport angående valideringen](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) for flere oplysninger. Unøjagtighederne forværres yderligere af unøjagtigheden af dataene i OSM, [en udglatningsteknik](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), vi anvender, og opløsningen af profilen, som bliver lavere, jo længere ruten bliver.
 technical:
   title: Tekniske detaljer
   general: |-
@@ -270,5 +270,5 @@ contact:
   text: |-
     Spørgsmål og kommentarer til denne hjemmeside kan sendes til: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Tekniske fejl kan også rapporteres på [projektets fejlhåndtering på [github](https://github.com/lonvia/waymarked-trails-site/issues). Før du indrapporterer en fejl, bedes du kontrollere at problemet ikke skyldes dataene i OSM.
+    Tekniske fejl kan også rapporteres på [projektets fejlhåndtering på [github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Før du indrapporterer en fejl, bedes du kontrollere at problemet ikke skyldes dataene i OSM.
 ...

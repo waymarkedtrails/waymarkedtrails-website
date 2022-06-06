@@ -27,5 +27,5 @@ contact:
   text: |-
     이 사이트의 질문과 의견은 여기로 보낼 수 있습니다: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    버그는 [깃허브에 있는 프로젝트 이슈 트래커](https://github.com/lonvia/waymarked-trails-site/issues)에 보고할 수 있습니다. 버그를 보고하기 전에 문제가 OSM 데이터에 있지는 않은지 확인해 주십시오.
+    버그는 [깃허브에 있는 프로젝트 이슈 트래커](https://github.com/waymarkedtrails/waymarked-trails-site/issues)에 보고할 수 있습니다. 버그를 보고하기 전에 문제가 OSM 데이터에 있지는 않은지 확인해 주십시오.
 ...

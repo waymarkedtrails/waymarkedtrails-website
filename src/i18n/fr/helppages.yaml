@@ -252,13 +252,13 @@ hikinglocal:
 elevationprofiles:
   title: Profils d'altitude
   general: |-
-    Les profils d'altitude sont construits avec les données d’altitude du [ASTER modèle d’altitude numérique global (GDEM) version 2](https://asterweb.jpl.nasa.gov/gdem.asp), la balise `ele` dans OpenStreetMap n’est pas prise en compte, ni les tunnels et les ponts. GDEM ASTER est un produit de METI et de la NASA.
+    Les profils d'altitude sont construits avec les données d’altitude du [ASTER modèle d’altitude numérique global (GDEM) version 2](https://asterweb.jpl.nasa.gov/gdem.asp), la balise `ele` dans OpenStreetMap n’est pas prise en compte, ni les tunnels et les ponts. ASTER GDEM est un produit de METI et de la NASA.
 
-    Si le trajet a plus de deux points terminaux ou consiste en plus d’un segment, aucun profil ne sera rendu. La direction du profil suit le trajet ouest-est ou nord-sud. Si les trajets ont des éléments avec des rôles comme `start` ou `goal`, ou bien sont listés de façon continue du départ à l'arrivée, nous pouvons déterminer la direction depuis la liaison du trajet elle-même. Vous voudrez sans doute garder cela à l’esprit en projetant des trajets sur OpenStreetMap.
+    Si le trajet a plus de deux points terminaux ou consiste en plus d’un segment, aucun profil ne sera rendu. La direction du profil suit le trajet ouest-est ou nord-sud. Si les trajets ont des éléments avec des rôles comme `start` ou `goal`, ou bien qui sont listés de façon continue du départ à l’arrivée, nous pouvons déterminer la direction depuis la relation de trajet elle-même. Vous voudrez sans doute garder cela à l’esprit en projetant des trajets sur OpenStreetMap.
 
     Il y a des trous, appelés « vides », pour lesquels nous n’avons pas de données d'altitude, qui sont représentés avec des espaces dans la ligne du profil d’altitude.
 
-    Faites attention que bien qu’ASTER version 2 soit probablement le meilleur MNT libre global, il a ses limitations, à la fois en termes de précision et de couverture ; voyez leur [résumé du rapport de validation](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) pour plus d’informations. Les imprécisions sont de plus aggravées par l'’imprécision des données OSM, [une technique de lissage](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nous appliquons et par la résolution du profil qui diminue avec l’allongement du trajet.
+    Prenez garde que bien qu’ASTER version 2 soit probablement le meilleur MNT libre global, il a ses limitations, à la fois en termes de précision et de couverture ; voyez leur [résumé du rapport de validation](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) pour plus d’informations. Les imprécisions sont de plus aggravées par l’imprécision des données OSM, [une technique de lissage](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nous appliquons et par la résolution du profil qui diminue avec l’allongement du trajet.
 technical:
   title: Détails techniques
   general: |-
@@ -334,8 +334,7 @@ contact:
     Les questions et commentaires à propos de ce site peuvent être envoyés à :
     [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Les problèmes peuvent être remontés au
-    [traqueur d’anomalies du projet sur github](https://github.com/lonvia/waymarked-trails-site/issues).
-    Avant de signaler une anomalie, merci de vérifier que le problème ne provient
-    pas des données OSM.
+    Les anomalies peuvent être remontées au
+    [traqueur d’anomalies du projet sur Github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Avant de signaler une anomalie, merci de vérifier que le problème ne provient
+    pas des données d’OSM.
 ...

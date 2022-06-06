@@ -225,7 +225,7 @@ elevationprofiles:
 
     Istnieją miejsca niezawierające danych wysokościowych, są one wyświetlane jako dziury na krzywej profilu terenu.
 
-    Miej na uwadze, że ASTER wersja 2 jest prawdopodobnie najlepszą bezpłatną ogólnoświatową cyfrową mapą wysokościową, ale jest on ograniczony pod względem dokładności i pokrycia, aby dowiedzieć się więcej, zobacz ich [podsumowujący raport dot. poprawności](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf). Niedokładności są jeszcze pogłębiane przez niedokładności danych OSM, i przez stosowaną przez nas [technikę wygładzania](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), i przez rozdzielczość profilu, która jest tym słabsza, im dłuższa jest trasa.
+    Miej na uwadze, że ASTER wersja 2 jest prawdopodobnie najlepszą bezpłatną ogólnoświatową cyfrową mapą wysokościową, ale jest on ograniczony pod względem dokładności i pokrycia, aby dowiedzieć się więcej, zobacz ich [podsumowujący raport dot. poprawności](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf). Niedokładności są jeszcze pogłębiane przez niedokładności danych OSM, i przez stosowaną przez nas [technikę wygładzania](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), i przez rozdzielczość profilu, która jest tym słabsza, im dłuższa jest trasa.
 technical:
   title: Szczegóły techniczne
   general: "Nakładka tras jest aktualizowana co minutę, i normalnie jest\n10-15 minut
@@ -238,7 +238,7 @@ technical:
     zajmuje się postprocessingiem\n bazy danych przed renderowaniem. Strona internetowa
     korzysta\n[frameworku webowego Django](http://www.djangoproject.com). Kod źródłowy\n
     jest dostępny na licencji GPL. Aby uzyskać więcej informacji odwiedź\n[stronę
-    projektu na GitHub](https://github.com/lonvia/waymarked-trails-site)."
+    projektu na GitHub](https://github.com/waymarkedtrails/waymarked-trails-site)."
   translation: |-
     ## Tłumaczenia
 
@@ -295,5 +295,5 @@ contact:
   title: Kontakt
   text: |-
     Pytania i uwagi dotyczące tej strony można wysyłać na: [lonvia@denofr.de](mailto:lonvia@denofr.de).
-    Błędy mogą być również zgłaszane przez [system śledzenia błędów na github](https://github.com/lonvia/waymarked-trails-site/issues). Zanim zgłosisz błąd, należy się upewnić, że problem nie wynika z danych OSM.
+    Błędy mogą być również zgłaszane przez [system śledzenia błędów na github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Zanim zgłosisz błąd, należy się upewnić, że problem nie wynika z danych OSM.
 ...

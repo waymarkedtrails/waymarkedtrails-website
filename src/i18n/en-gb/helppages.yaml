@@ -267,7 +267,7 @@ elevationprofiles:
 
     There are holes, so called "voids" for which we have no elevation data, these are visualised with holes in the elevation profile line.
 
-    Beware that while ASTER version 2 is probably the best free global DEM, it does have its limitations both when it comes to accuracy and coverage, see their [validation summary report](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) for more information. The inaccuracies are further exacerbated by the inaccuracy of the OSM data, [a smoothing technique](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) that we apply, and the resolution of the profile which becomes lower the longer the route is.
+    Beware that while ASTER version 2 is probably the best free global DEM, it does have its limitations both when it comes to accuracy and coverage, see their [validation summary report](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) for more information. The inaccuracies are further exacerbated by the inaccuracy of the OSM data, [a smoothing technique](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) that we apply, and the resolution of the profile which becomes lower the longer the route is.
 technical:
   title: Technical details
   general: |-
@@ -344,5 +344,5 @@ contact:
   text: |-
     Questions and comments about this site can be sent to: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Bugs can also be reported on [the project's issue tracker on github](https://github.com/lonvia/waymarked-trails-site/issues). Before reporting a bug, please make sure that your problem is not with the OSM data.
+    Bugs can also be reported on [the project's issue tracker on github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Before reporting a bug, please make sure that your problem is not with the OSM data.
 ...

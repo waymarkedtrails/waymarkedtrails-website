@@ -220,7 +220,7 @@ elevationprofiles:
 
     有一些洞，所谓的“空洞”，那是由于我们没有海拔数据，它们在海拔剖面线上用孔显示。
 
-    请注意，虽然ASTER第2版可能是最好的免费全球DEM，但它在确保准确性和覆盖率方面都有其局限性，请参阅其[验证总结报告](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf)以获取更多信息。由于我们应用的OSM数据[平滑技术](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)带来的不确定性，以及分辨率的问题，使得路线越长，精确性越会差。
+    请注意，虽然ASTER第2版可能是最好的免费全球DEM，但它在确保准确性和覆盖率方面都有其局限性，请参阅其[验证总结报告](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf)以获取更多信息。由于我们应用的OSM数据[平滑技术](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2)带来的不确定性，以及分辨率的问题，使得路线越长，精确性越会差。
 technical:
   title: 技术信息
   general: |-
@@ -278,5 +278,5 @@ contact:
   text: |-
     关于此网站的问题和评论可发送至[lonvia@denofr.de](mailto:lonvia@denofr.de) 。
 
-    软件错误可以汇报至[Github上的项目问题跟踪系统](https://github.com/lonvia/waymarked-trails-site/issues) 。在汇报一个软件错误前，请确保您的问题不是OSM数据问题。
+    软件错误可以汇报至[Github上的项目问题跟踪系统](https://github.com/waymarkedtrails/waymarked-trails-site/issues) 。在汇报一个软件错误前，请确保您的问题不是OSM数据问题。
 ...

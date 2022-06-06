@@ -287,7 +287,7 @@ elevationprofiles:
 
     Es gibt Löcher, sogenannte „Lücken“ für etwas, was keine Höhendaten besitzt. Diese werden mit Löchern in der Höhenprofillinie dargestellt.
 
-    Vorsicht vor ASTER, Version 2, dem möglicherweise besten und freien digitalen globalen Höhenmodell. Es hat Beschränkungen in der Genauigkeit und Abdeckung. Siehe die [Validierungszusammenfassung](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) für mehr Informationen. Die Ungenauigkeiten werden weiter verschlimmert durch die Ungenauigkeit der OSM-Daten, [unserer eingesetzten Glättungstechnik](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) und der Auflösung des Profils, die niedriger wird, desto länger die Route ist.
+    Vorsicht vor ASTER, Version 2, dem möglicherweise besten und freien digitalen globalen Höhenmodell. Es hat Beschränkungen in der Genauigkeit und Abdeckung. Siehe die [Validierungszusammenfassung](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) für mehr Informationen. Die Ungenauigkeiten werden weiter verschlimmert durch die Ungenauigkeit der OSM-Daten, [unserer eingesetzten Glättungstechnik](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) und der Auflösung des Profils, die niedriger wird, desto länger die Route ist.
 technical:
   title: Technische Einzelheiten
   general: |-
@@ -373,7 +373,7 @@ contact:
     Fragen und Kommentare können an [lonvia@denofr.de](mailto:lonvia@denofr.de) gesendet werden.
 
     Fehler können im [Issuetracker auf
-    GitHub](https://github.com/lonvia/waymarked-trails-site/issues) gemeldet werden.
+    GitHub](https://github.com/waymarkedtrails/waymarked-trails-site/issues) gemeldet werden.
     Überprüfe bitte vor einer Fehlermeldung, dass das Problem nicht an fehlerhaften
     OSM-Daten liegt.
 ...

@@ -254,7 +254,7 @@ elevationprofiles:
 
     Hai furacos, llamaos "voids" para los que nun tenemos datos d'altitú, estos vense como furacos na llinia del perfil d'altitú.
 
-    Ten en cuenta que anque ASTER versión 2 probablemente ye'l meyor DEM global llibre, tien ciertos llímites tanto en precisión como en cobertura, llei el so [informe resume de validación](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) pa más información. Les imprecisiones agravense inda más pola inexautitú de los datos d'OSM, [una técnica de suavizáu](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) qu'aplicamos, y la resolución del perfil que faise menor cuanto más llarga ye la ruta.
+    Ten en cuenta que anque ASTER versión 2 probablemente ye'l meyor DEM global llibre, tien ciertos llímites tanto en precisión como en cobertura, llei el so [informe resume de validación](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) pa más información. Les imprecisiones agravense inda más pola inexautitú de los datos d'OSM, [una técnica de suavizáu](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) qu'aplicamos, y la resolución del perfil que faise menor cuanto más llarga ye la ruta.
 technical:
   title: Detalles téunicos
   general: |-
@@ -326,5 +326,5 @@ contact:
   text: |-
     Les entrugues y comentarios tocante a esti sitiu se puen unviar a [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Tamién se pue informar de los fallos nel [siguimientu de fallos del proyeutu en github](https://github.com/lonvia/waymarked-trails-site/issues). Enantes d'informar d'un fallu, por favor, asegurate de que'l problema nun ye colos datos d'OSM.
+    Tamién se pue informar de los fallos nel [siguimientu de fallos del proyeutu en github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Enantes d'informar d'un fallu, por favor, asegurate de que'l problema nun ye colos datos d'OSM.
 ...

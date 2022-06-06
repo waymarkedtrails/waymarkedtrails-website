@@ -240,7 +240,7 @@ elevationprofiles:
 
     Hay agujeros, llamados "voids" (vacíos) para los que no tenemos datos de altitud, estos se visualizan como agujeros en la línea de perfil de altitud.
 
-    Ten en cuenta que si bien ASTER versión 2 es probablemente el mejor DEM global gratuito, tiene sus limitaciones tanto en cuanto a precisión como a cobertura, consulta su [informe resumen de validación](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) para obtener más información. Las imprecisiones se agravan adicionalmente por la inexactitud de los datos de OSM, [una técnica de suavizado](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que aplicamos, y la resolución del perfil que se hace menor cuanto más larga es la ruta.
+    Ten en cuenta que si bien ASTER versión 2 es probablemente el mejor DEM global gratuito, tiene sus limitaciones tanto en cuanto a precisión como a cobertura, consulta su [informe resumen de validación](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) para obtener más información. Las imprecisiones se agravan adicionalmente por la inexactitud de los datos de OSM, [una técnica de suavizado](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que aplicamos, y la resolución del perfil que se hace menor cuanto más larga es la ruta.
 technical:
   title: Detalles técnicos
   general: |-
@@ -257,7 +257,7 @@ technical:
     en la base de datos antes de la representación. El sitio web usa la
     [infraestructura web Django](http://www.djangoproject.com). El código fuente
     está disponible bajo licencia GPL. Para encontrar más información, visita la
-    [página del proyecto en GitHub](https://github.com/lonvia/waymarked-trails-site).
+    [página del proyecto en GitHub](https://github.com/waymarkedtrails/waymarked-trails-site).
   translation: |-
     ## Traducciones
 
@@ -310,5 +310,5 @@ contact:
   text: |-
     Preguntas y comentarios a este sitio pueden ser enviados a [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Los errores pueden reportarse al [sistema de incidencias del proyecto en github](https://github.com/lonvia/waymarked-trails-site/issues). Antes de reportar un error, asegúrate que tu problema no sea con los datos de OSM.
+    Los errores pueden reportarse al [sistema de incidencias del proyecto en github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Antes de reportar un error, asegúrate que tu problema no sea con los datos de OSM.
 ...

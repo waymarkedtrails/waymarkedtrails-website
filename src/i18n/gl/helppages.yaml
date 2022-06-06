@@ -269,7 +269,7 @@ elevationprofiles:
 
     Hai buratos, chamados "voids" ("ocos"), para os que non hai datos de elevación. Estes visualízanse coma buratos na liña do perfil de elevación.
 
-    Teña en conta que, malia que ASTER versión 2 é probábelmente o mellor DEM global de balde, ten as súas limitacións tanto en termos de precisión coma de cobertura; consulte o [informe de validación](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) para obter máis información. As inexactitudes están máis agravadas pola inexactitude dos datos do OSM, [unha técnica de suavizado](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nós aplicamos e a resulución do perfil que se fai menor canto máis longa é a ruta.
+    Teña en conta que, malia que ASTER versión 2 é probábelmente o mellor DEM global de balde, ten as súas limitacións tanto en termos de precisión coma de cobertura; consulte o [informe de validación](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) para obter máis información. As inexactitudes están máis agravadas pola inexactitude dos datos do OSM, [unha técnica de suavizado](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nós aplicamos e a resulución do perfil que se fai menor canto máis longa é a ruta.
 technical:
   title: Detalles técnicos
   general: |-
@@ -352,5 +352,5 @@ contact:
   text: |-
     Pode enviar comentarios e preguntas sobre o sitio ó seguinte enderezo: [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Tamén pode informar de calquera erro no [xestor de erros do proxecto no github](https://github.com/lonvia/waymarked-trails-site/issues). Antes de informar sobre un erro, asegúrese de que o problema non é dos datos do OSM.
+    Tamén pode informar de calquera erro no [xestor de erros do proxecto no github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Antes de informar sobre un erro, asegúrese de que o problema non é dos datos do OSM.
 ...

@@ -263,7 +263,7 @@ elevationprofiles:
 
     "Boşluk" olarak adlandırılan ve yükseklik verisi olmayan delikler vardır, bunlar yükseklik profili hattında deliklerle görselleştirilir.
 
-    ASTER sürüm 2 muhtemelen en iyi ücretsiz global DEM olmasına rağmen, hem doğruluk hem de kapsama söz konusu olduğunda sınırlamalarının olmasına dikkat edin; GDEM/ver2Validation/ Summary_GDEM2_validation_report_final.pdf) daha fazla bilgi için. hatalar daha uyguladığımız OSM verilerinin doğru olmamasına [bir düzleştirme tekniği] (https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) ve profilin çözünürlüğü şiddetlenir olan rota ne kadar uzun olursa o kadar düşük olur.
+    ASTER sürüm 2 muhtemelen en iyi ücretsiz global DEM olmasına rağmen, hem doğruluk hem de kapsama söz konusu olduğunda sınırlamalarının olmasına dikkat edin; GDEM/ver2Validation/ Summary_GDEM2_validation_report_final.pdf) daha fazla bilgi için. hatalar daha uyguladığımız OSM verilerinin doğru olmamasına [bir düzleştirme tekniği] (https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) ve profilin çözünürlüğü şiddetlenir olan rota ne kadar uzun olursa o kadar düşük olur.
 technical:
   title: Teknik ayrıntılar
   general: |-
@@ -345,6 +345,6 @@ contact:
   text: |-
     Bu site hakkında sorularınız ve yorumlarınız: [lonvia@denofr.de] (mailto:lonvia@denofr.de).
 
-    Hatalar ayrıca [github'da projenin sorun izleyicisi] de rapor edilebilir (https://github.com/lonvia/waymarked-trails-site/issues). Bir hatayı bildirmeden önce, lütfen sorununun olduğundan emin olun
+    Hatalar ayrıca [github'da projenin sorun izleyicisi] de rapor edilebilir (https://github.com/waymarkedtrails/waymarked-trails-site/issues). Bir hatayı bildirmeden önce, lütfen sorununun olduğundan emin olun
     OSM verileriyle değil.
 ...

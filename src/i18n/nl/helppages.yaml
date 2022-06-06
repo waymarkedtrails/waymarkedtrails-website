@@ -230,7 +230,7 @@ elevationprofiles:
 
     Er zijn gaten ("voids") waar we geen hoogtegegevens voor hebben. Deze worden weergegeven als gaten in de hoogteprofielen.
 
-    Hoewel ASTER versie 2 waarschijnlijk de beste vrije werelddekkende DEM is, kent deze datacollectie ook beperkingen in nauwkeurigheid en dekking. Zie de [validatiesamenvatting van hun rapport](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) voor meer informatie. De onjuistheden worden verder vergroot door de onnauwkeurigheid van de OSM-gegevens, een [manier om de gegevens vloeiend te maken](https://github.com/lonvia/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) die we toepassen en de resolutie van het profiel, die lager wordt als de route langer is.
+    Hoewel ASTER versie 2 waarschijnlijk de beste vrije werelddekkende DEM is, kent deze datacollectie ook beperkingen in nauwkeurigheid en dekking. Zie de [validatiesamenvatting van hun rapport](http://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) voor meer informatie. De onjuistheden worden verder vergroot door de onnauwkeurigheid van de OSM-gegevens, een [manier om de gegevens vloeiend te maken](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) die we toepassen en de resolutie van het profiel, die lager wordt als de route langer is.
 technical:
   title: Technische details
   general: |-
@@ -305,5 +305,5 @@ contact:
   text: |-
     Vragen en opmerkingen over deze site kunt u sturen naar [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Problemen kunt u melden in [de bugtracker van het project op GitHub](https://github.com/lonvia/waymarked-trails-site/issues). Controleer voordat u een probleem meldt of het probleem niet ontstaat door de OSM-gegevens.
+    Problemen kunt u melden in [de bugtracker van het project op GitHub](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Controleer voordat u een probleem meldt of het probleem niet ontstaat door de OSM-gegevens.
 ...
