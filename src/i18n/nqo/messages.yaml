@@ -21,6 +21,9 @@ details:
   superroutes_title: ߝߊ߲߭ ߘߏ߫
   tags:
     title: ߏߔߌ߲ߛߑߕߙߌߕߑߡߊߔ ߘߎ߲ߛߓߍ
+  type:
+    way: ߛߌߟߊ
+    wayset: ߛߌߟߊ ߟߎ߬ ߟߊߞߊ߬ߝߏ߬ߣߍ߲
   website: ߓߟߐߟߐ߫ ߞߍߦߙߐ
   wikipedia: ߥߞߌߔߋߘߌߦߊ
   zoom_to: ߊ߬ ߦߌ߬ߘߊ߬ ߡߊߔ ߞߊ߲߬
@@ -35,6 +38,9 @@ headline:
   last_update: ߟߏ߲ߘߐߦߊߟߌ ߞߐ߯ߟߕߊ
 help: ߞߊ߬ ߓߍ߲߬ ߡߊߔ ߡߊ߬
 locate_me: ߒ ߘߌ߲߬ߞߌߙߊ ߦߌ߬ߘߊ߬
+network:
+  national: ߝߊ߬ߛߏ ߛߌߟߊ ߟߎ߬
+  node: ߥߎߙߋ߲ߛߋ߲ ߞߙߏ߬ߝߏ ߜߊ߲߬ߞߎ߲߬ߠߌ߲
 osmc_symbol:
   back: ߌ ߞߐߛߊ߬ߦߌ߬
   background_heading: ߝߊ߲߬ߝߘߊ ߞߘߐߟߊ
