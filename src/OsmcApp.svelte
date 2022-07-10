@@ -13,13 +13,17 @@
 
     const colors = ['black', 'blue', 'brown', 'gray', 'green', 'orange',
                     'purple', 'red', 'white', 'yellow'];
-    const foregrounds = ['arch', 'backslash', 'bar', 'circle', 'corner',
-                         'cross', 'diamond_line', 'diamond', 'dot', 'fork',
+    const foregrounds = ['arch', 'arrow', 'backslash', 'bar',
+                         'bowl', 'circle', 'corner', 'corner_left', 'crest',
+                         'cross', 'diamond_line', 'diamond', 'diamond_left',
+                         'diamond_right', 'dot', 'drop', 'drop_line', 'fork',
+                         'house', 'L', 'left', 'left_arrow', 'left_pointer',
                          'lower', 'right', 'pointer', 'rectangle_line',
-                         'rectangle', 'red_diamond', 'slash', 'stripe',
+                         'rectangle', 'red_diamond', 'right_arrow',
+                         'right_pointer', 'slash', 'stripe',
                          'triangle_line', 'triangle', 'triangle_turned',
-                         'turned_T', 'x', 'hexagon', 'shell', 'shell_modern',
-                         'hiker', 'wheel'];
+                         'turned_T', 'upper', 'upper_bowl', 'x',
+                         'hexagon', 'shell', 'shell_modern', 'hiker', 'wheel'];
     const backgrounds = ['circle', 'frame', 'round'];
 
     $: {
