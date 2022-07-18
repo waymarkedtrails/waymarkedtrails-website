@@ -67,7 +67,7 @@
             data.get(key).push(route);
         });
 
-        load_routes(json.results);
+        load_routes(json.results, json.bbox);
         route_data = data;
     }, function(error) { fail_message = $_('error.load_error'); });
 

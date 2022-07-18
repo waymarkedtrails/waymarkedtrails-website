@@ -7,7 +7,7 @@
     let getMap;
     let vtile_layer, vector_layer;
 
-    export function load_routes(routes) {
+    export function load_routes(routes, extent) {
         if (!is_vtiles_active() && routes && routes.length) {
             let ids = {};
             routes.forEach(function(r, i) {
@@ -16,8 +16,6 @@
                 else
                     ids[r.type] = '' + r.id;
             });
-            let map = getMap();
-            let extent = map.getView().calculateExtent(map.getSize());
             let segment_url = API_URL + "/list/segments?bbox=" + extent;
             for (let k in ids) {
                 segment_url += '&' + k + 's=' + ids[k];

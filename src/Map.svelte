@@ -45,12 +45,25 @@
         map.on('moveend', function(evt) {
             let view = evt.map.getView();
             let center = transform(view.getCenter(), "EPSG:3857", "EPSG:4326");
+            let extent = view.calculateExtent(evt.map.getSize());
+
+            let fx = center[0];
+            if (fx > 180) {
+                fx = (fx + 180) % 360 - 180;
+                let shift = (center[0] - fx) / 360 * 2 * 20037508.34;
+                extent = [extent[0] - shift, extent[1],
+                                extent[2] - shift, extent[3]]
+            } else if (fx < -180) {
+                fx = 180 - (-fx - 180) % 360;
+                let shift = (center[0] - fx) / 360 * 2 * 20037508.34;
+                extent = [extent[0] - shift, extent[1],
+                                extent[2] - shift, extent[3]]
+            }
 
             let zoom = Math.round(view.getZoom());
-            let x = (Math.round(center[0] * 10000) / 10000);
+            let x = (Math.round(fx * 10000) / 10000);
             let y = (Math.round(center[1] * 10000) / 10000);
-            map_view.set({center: [x, y], zoom: zoom,
-                          extent: view.calculateExtent(evt.map.getSize())});
+            map_view.set({center: [x, y], zoom: zoom, extent: extent});
         });
     });
 

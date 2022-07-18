@@ -2,7 +2,7 @@
     import { _ } from 'svelte-i18n';
     import { onDestroy } from 'svelte';
     import { API_URL } from './config.js';
-    import { page_state } from './app_state.js';
+    import { map_view, page_state } from './app_state.js';
     import SidePanel from './ui/SidePanel.svelte';
     import { json_loader } from './util/load_json.js';
     import { load_routes } from './map/LayerVectorData.svelte';
@@ -22,6 +22,7 @@
     let osm_id = '';
     let fail_message = '';
     let route;
+    let extent = $map_view.extent;
 
     const loader = json_loader(function(json) {
         route = json;
@@ -44,7 +45,7 @@
             });
         }
 
-        load_routes([].concat(route.subroutes || [], route.superroutes || []));
+        load_routes([].concat(route.subroutes || [], route.superroutes || []), extent);
 
         fail_message = '';
     },
