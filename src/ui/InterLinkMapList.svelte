@@ -1,5 +1,5 @@
 <script>
-  import { TITLE, MEDIA_URL } from '../config.js';
+  import { TITLE, MEDIA_URL, BASE_URL } from '../config.js';
   import { _ } from 'svelte-i18n';
 
   const theme_color = {
@@ -12,6 +12,7 @@
   };
 
   export let themes;
+  export let map_link_tail = '';
 </script>
 
 <style>
@@ -37,7 +38,7 @@
 <ul>
 {#each themes as theme}
 <li style="background-color:{theme_color[theme]}">
-  <a class="maplink_btn" href="https://{theme}.waymarkedtrails.org"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" />{$_('site_title.' + theme)}</a></li>
+  <a class="maplink_btn" href="https://{theme}.{BASE_URL}{map_link_tail}"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" />{$_('site_title.' + theme)}</a></li>
 {/each}
 </ul>
 

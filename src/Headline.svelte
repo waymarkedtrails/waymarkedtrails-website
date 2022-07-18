@@ -97,7 +97,7 @@
       {/each}
     </div>
   </div>
-{#if show_maplink_menu}<InterLinkMapList {themes} />{/if}
+{#if show_maplink_menu}<InterLinkMapList {themes} {map_link_tail}/>{/if}
 <div class="subheadline">
 {#if false}<slot></slot>{/if}
 <span><slot name="subleft"></slot></span>
