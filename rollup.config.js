@@ -5,7 +5,7 @@ import json from '@rollup/plugin-json';
 import yaml from '@rollup/plugin-yaml';
 import livereload from 'rollup-plugin-livereload';
 import css from 'rollup-plugin-css-porter';
-import { terser } from 'rollup-plugin-terser';
+import { terser } from '@chiogen/rollup-plugin-terser';
 import virtual from '@rollup/plugin-virtual';
 import marked from 'markdown-it';
 
