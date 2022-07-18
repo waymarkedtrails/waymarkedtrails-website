@@ -20,8 +20,13 @@ details:
   subroutes_title: ߕߍߕߍ߮ ߟߎ߬
   superroutes_title: ߝߊ߲߭ ߘߏ߫
   tags:
+    key: ߞߏ߲ߢߌ߲
     title: ߏߔߌ߲ߛߑߕߙߌߕߑߡߊߔ ߘߎ߲ߛߓߍ
+    value: ߡߐ߬ߟߐ߲
   type:
+    guidepost: ߟߊ߬ߛߌ߲߬ߠߌ߲߫ ߟߐ߲
+    node: ߥߎߙߋ߲ߛߋ߲
+    relation: ߕߍߓߊ߯ߦߊ
     way: ߛߌߟߊ
     wayset: ߛߌߟߊ ߟߎ߬ ߟߊߞߊ߬ߝߏ߬ߣߍ߲
   website: ߓߟߐߟߐ߫ ߞߍߦߙߐ
@@ -39,8 +44,11 @@ headline:
 help: ߞߊ߬ ߓߍ߲߬ ߡߊߔ ߡߊ߬
 locate_me: ߒ ߘߌ߲߬ߞߌߙߊ ߦߌ߬ߘߊ߬
 network:
+  downhill: ߣߍߣߍߞߊ߲߫ ߕߏߙߏ߲ߘߏ
   national: ߝߊ߬ߛߏ ߛߌߟߊ ߟߎ߬
   node: ߥߎߙߋ߲ߛߋ߲ ߞߙߏ߬ߝߏ ߜߊ߲߬ߞߎ߲߬ߠߌ߲
+  other: ߛߌߟߊ߫ ߜߘߍ ߟߎ߬
+  regional: ߕߌ߲߬ߞߎߘߎ߲ ߛߌߟߊ
 osmc_symbol:
   back: ߌ ߞߐߛߊ߬ߦߌ߬
   background_heading: ߝߊ߲߬ߝߘߊ ߞߘߐߟߊ
