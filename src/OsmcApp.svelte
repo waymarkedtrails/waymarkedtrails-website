@@ -57,7 +57,16 @@
 
 
 
-    locale.subscribe(async lang => { if (lang) { content = await contentFunc(lang)();} });
+    locale.subscribe(async lang => {
+        if (lang) {
+            let loaded = await contentFunc(lang)();
+            if ('osmc' in loaded && 'text' in loaded['osmc']) {
+                content = loaded;
+            } else {
+                content = await help_languages['en']();
+            }
+        }
+    });
 
 </script>
 
