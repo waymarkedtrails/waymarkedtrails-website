@@ -28,8 +28,17 @@
     }
 
     onMount(async () => {
+        const qot = await help_languages['en']();
         const current = contentFunc(get(locale));
         content = await current();
+        let temp = {};
+
+        for (let key in content) {
+            temp[key] = {...qot[key], ...content[key]};
+        }
+        content = {...qot, ...temp};
+
+        console.log(content);
 
         const handle_any_click = (event) => {
           if (helpbox && !helpbox.contains(event.target)) {
