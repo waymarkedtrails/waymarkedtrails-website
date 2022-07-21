@@ -33,6 +33,7 @@ osmc_symbol:
   examples: 例
   foreground_heading: 前景
 routelist:
+  loading: 読み込み中...
   close: 閉じる
   title: 経路
 search:

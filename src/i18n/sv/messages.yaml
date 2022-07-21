@@ -70,6 +70,7 @@ osmc_symbol:
     kommer se ut på kartan.
   preview_heading: Förhandsgranska
 routelist:
+  loading: Laddar...
   close: Stäng
   rollup: Rulla upp
   title: Rutter

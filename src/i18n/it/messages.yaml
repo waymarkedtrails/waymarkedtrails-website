@@ -58,6 +58,7 @@ osmc_symbol:
   foreground_heading: In primo piano
   preview_heading: Anteprima
 routelist:
+  loading: Caricamento...
   close: Chiudi
   rollup: Arrotola
   title: Percorsi

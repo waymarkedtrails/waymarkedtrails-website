@@ -8,6 +8,7 @@
 # Author: Dömcsi
 # Author: GBAB
 # Author: Grin
+# Author: Hanna Tardos
 # Author: Misibacsi
 # Author: Wolf Rex
 ---
@@ -69,12 +70,15 @@ osmc_symbol:
     hogyan fog megjelenni a térképen.
   preview_heading: Előnézet
 routelist:
+  loading: Betöltés…
   close: Bezárás
   rollup: Fel
   title: Útvonalak
 search:
   routes: Útvonalak
   title: Keresés
+  help: 'Kérjük, használjon kulcsszavakat a kereséshez! Rákereshet túraútvonalakra
+    (pl.: Appalachian Trail, E2) vagy helyekre is (pl.: Berlin).'
 settings:
   base_map: Alaptérkép
   browser_language: Használja a böngésző beállításait

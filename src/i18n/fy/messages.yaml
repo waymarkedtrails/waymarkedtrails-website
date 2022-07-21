@@ -86,6 +86,7 @@ osmc_symbol:
          om te sjen hoe't it op 'e kaart ôfbylde wurdt.
   preview_heading: Proefbyld
 routelist:
+  loading: Laden ...
   close: Slute
   more: Sûm yn om mear rûtes te sjen.
   rollup: Oprôlje
@@ -94,6 +95,8 @@ search:
   places: Plakken
   routes: Rûtes
   title: Sykje
+  help: Brûk trefwurden om te sykjen. Jo kinne sykje op nammen fan paden (bgl. Appalachian
+    Trail, E2) as plakken (bgl. Berlyn).
 settings:
   base_map: Basiskaart
   browser_language: Webblêderynstellings brûke

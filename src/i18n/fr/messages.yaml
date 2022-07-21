@@ -105,6 +105,7 @@ osmc_symbol:
          pour voir comment il sera rendu sur la carte.
   preview_heading: Aperçu
 routelist:
+  loading: Chargement...
   close: Fermer
   more: Zoomer pour voir davantage d’itinéraires.
   rollup: Enrouler
@@ -113,6 +114,9 @@ search:
   places: Lieux
   routes: Itinéraires
   title: Rechercher
+  help: Veuillez utiliser des mots-clés pour effectuer une recherche. Vous pouvez
+    effectuer une recherche sur les noms de sentiers (par exemple Sentier des Appalaches,
+    E2) ou des lieux (par exemple Berlin).
 settings:
   base_map: Carte de fond
   browser_language: Utiliser les paramètres du navigateur

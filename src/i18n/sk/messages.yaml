@@ -87,6 +87,7 @@ osmc_symbol:
     na mape.
   preview_heading: Náhľad
 routelist:
+  loading: Načítava sa...
   close: Zavrieť
   more: Priblížte pre zobrazenie viacerých trás.
   rollup: Zrolovať
@@ -95,6 +96,8 @@ search:
   places: Miesta
   routes: Trasy
   title: Hľadať
+  help: Na vyhľadávanie použite kľúčové slová. Môžete vyhľadávať podľa názvov trás
+    (napr. Appalachian Trail, E2) alebo miest (napr. Berlín).
 settings:
   base_map: Základná mapa
   browser_language: Použiť nastavenia prehliadača

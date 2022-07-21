@@ -82,6 +82,7 @@ osmc_symbol:
   preview: 在以下欄位輸入 osmc:symbol 值來查看如何在地圖上呈現。
   preview_heading: 預覽
 routelist:
+  loading: 載入中…
   close: 關閉
   more: 放大來查看更多路線。
   rollup: 捲起
@@ -90,6 +91,7 @@ search:
   places: 地點
   routes: 路線
   title: 搜尋
+  help: 請使用關鍵字搜索。您可以搜索路徑（例如：Appalachian Trail、E2）或地點（例如：Berlin）的名稱。
 settings:
   base_map: 底圖
   browser_language: 使用瀏覽器設定
