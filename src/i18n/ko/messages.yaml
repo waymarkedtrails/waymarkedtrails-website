@@ -54,6 +54,7 @@ osmc_symbol:
   foreground_heading: 전경
   preview_heading: 미리 보기
 routelist:
+  loading: 불러오는 중...
   close: 닫기
   title: 노선
 search:
