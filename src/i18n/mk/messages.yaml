@@ -64,6 +64,7 @@ osmc_symbol:
          за да видите како ќе се исцрта на картата.
   preview_heading: Преглед
 routelist:
+  loading: Вчитувам...
   close: Затвори
   rollup: Собери
   title: Маршрути

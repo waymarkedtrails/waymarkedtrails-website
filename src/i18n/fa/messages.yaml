@@ -39,6 +39,7 @@ osmc_symbol:
   background_heading: پیش‌زمینه
   preview_heading: پیش‌نمایش
 routelist:
+  loading: در حال بارگیری...
   more: برای دیدن مسیرهای بیشتر، بزرگ‌نمایی کنید.
   title: مسیرها
 search:
