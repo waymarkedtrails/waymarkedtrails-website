@@ -294,12 +294,12 @@ legal:
 
     Les traces GPX sont fournies pour la commodité des visiteurs de ce site. Le téléchargement en masse
     n’est pas autorisé.
-  disclaimer: "## Avertissement \n\nNi l’exactitude ni la complétude de la carte ne
-    sont garanties. Si vous allez randonner,\nprenez une carte papier décente, un
-    équipement adapté et ne laissez pas votre bon sens chez vous. \nLa nature peut
+  disclaimer: "## Avertissement \n\nNi l’exactitude, ni la complétude de la carte
+    ne sont garanties. Si vous allez randonner,\nprenez une carte papier décente,
+    un équipement adapté et ne laissez pas votre bon sens chez vous. \nLa nature peut
     être aussi impitoyable que belle.\n\nCe site contient des liens vers des sites
-    Internet externes. L’auteur du présent site n’a aucune influence sur\nleur contenu
-    et n’engage pas sa responsabilité sur celui-ci."
+    Internet externes. L’auteur du présent site n’a aucune influence\nsur le contenu
+    de ces sites externes, pour lesquels il n’engage pas sa responsabilité."
 acknowledgements:
   title: Remerciements
   text: |-

@@ -12,6 +12,7 @@
 # Author: NeverBehave
 # Author: Qiyue2001
 # Author: VulpesVulpes825
+# Author: Wzl19371
 # Author: Yfdyh000
 # Author: 沈澄心
 ---
@@ -91,6 +92,7 @@ osmc_symbol:
          看看它将如何在地图上呈现。
   preview_heading: 预览
 routelist:
+  loading: 载入中…
   close: 关闭
   more: 放大来查看更多路线。
   rollup: 卷起

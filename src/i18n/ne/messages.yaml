@@ -1,6 +1,7 @@
 # Messages for Nepali (नेपाली)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Bada Kaji
 # Author: RajeshPandey
 # Author: सरोज कुमार ढकाल
 # Author: हिमाल सुबेदी
@@ -29,6 +30,7 @@ network:
 osmc_symbol:
   background_heading: पृष्ठभूमि
 routelist:
+  loading: खुल्दै छ…
   title: बाटाहरू
 search:
   routes: बाटाहरू

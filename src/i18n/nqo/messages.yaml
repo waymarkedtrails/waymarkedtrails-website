@@ -56,7 +56,9 @@ osmc_symbol:
   foreground_heading: ߝߊ߲߬ߝߘߊ߬ ߝߟߐ
   preview_heading: ߊ߬ ߘߐߜߍ߫ ߡߎߣߎ߲߬
 routelist:
+  loading: ߟߊ߬ߢߎ߲߬ߠߌ߲...
   close: ߊ߬ ߘߊߕߎ߲߯
+  more: ߊ߬ ߡߊߛߊ߬ߡߊ߲߫ ߞߊ߬ ߛߌߟߊ߫ ߜߘߍ߫ ߟߎ߫ ߦߋ߫.
   title: ߛߌߟߊ
 search:
   routes: ߛߌߟߊ

@@ -5,6 +5,7 @@
 # Author: Bellayet
 # Author: Runab
 # Author: Wikisagnik
+# Author: আজিজ
 # Author: আফতাবুজ্জামান
 ---
 destination_sign:
@@ -32,6 +33,7 @@ osmc_symbol:
   examples: উদাহরণ
   preview_heading: প্রাকদর্শন
 routelist:
+  loading: লোড হচ্ছে...
   title: রুট
 search:
   routes: রুট
