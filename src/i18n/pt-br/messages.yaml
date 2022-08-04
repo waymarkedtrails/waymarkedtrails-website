@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: !Silent
 # Author: Athena in Wonderland
+# Author: Duke of Wikipädia
 # Author: Eduardo Addad de Oliveira
 # Author: Eduardoaddad
 # Author: Fasouzafreitas
@@ -20,6 +21,7 @@ attribution:
   elevation_title: dados de relevo de [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Mais detalhes
+  no_data: Nenhuma informação de destino disponível para este guia.
   title: Destinos
 details:
   GPX: GPX
@@ -39,6 +41,7 @@ details:
     title: Etiquetas do OpenStreetMap
     value: Valor
   type:
+    guidepost: Posto guia
     node: Ponto
     relation: Relação
     way: Caminho

@@ -9,6 +9,7 @@
 # Author: Facenapalm
 # Author: Ice bulldog
 # Author: Irus
+# Author: Kareyac
 # Author: Movses
 # Author: Okras
 # Author: Sagan
@@ -86,6 +87,7 @@ osmc_symbol:
     отображаться на карте.
   preview_heading: Предпросмотр
 routelist:
+  loading: Загрузка…
   close: Закрыть
   rollup: Свернуть
   title: Маршруты

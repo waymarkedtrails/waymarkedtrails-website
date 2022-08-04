@@ -35,6 +35,7 @@ osmc_symbol:
   foreground_heading: Հիմնական գույնը
   preview_heading: Նախադիտում
 routelist:
+  loading: Բեռնվում է…
   close: Փակել
   rollup: Գլորում
   title: Երթուղիներ

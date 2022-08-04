@@ -5,6 +5,7 @@
 # Author: Nerogaf
 # Author: Nieszczarda2
 # Author: Red Winged Duck
+# Author: Renessaince
 ---
 attribution:
   data: Зьвесткі мапы © [OpenStreetMap](https://www.openstreetmap.org) паводле ліцэнзіі
@@ -12,6 +13,7 @@ attribution:
   elevation_title: зьвесткі вышыняў паводле [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Падрабязьней
+  no_data: Для гэтага паказальніка недаступная інфармацыя пра пункт прызначэньня.
   title: Месцы прызначэньня
 details:
   GPX: GPX
@@ -25,8 +27,13 @@ details:
   route_symbol: Сымбаль маршруту
   subroutes_title: Разьдзелы
   superroutes_title: Частка
+  symbol: Сымбаль
   tags:
+    key: ключ
     title: Цэтлікі OpenStreetMap
+    value: значэньне
+  type:
+    guidepost: Даведнік
   website: Вэб-сайт
   zoom_to: Паказаць на мапе
 elevation:
