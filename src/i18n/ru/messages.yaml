@@ -12,6 +12,7 @@
 # Author: Kareyac
 # Author: Movses
 # Author: Okras
+# Author: Pacha Tchernof
 # Author: Sagan
 ---
 attribution:
@@ -87,7 +88,7 @@ osmc_symbol:
     отображаться на карте.
   preview_heading: Предпросмотр
 routelist:
-  loading: Загрузка…
+  loading: Загружается…
   close: Закрыть
   rollup: Свернуть
   title: Маршруты
