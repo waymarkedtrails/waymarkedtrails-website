@@ -18,11 +18,20 @@ details:
   note: Искәрмә
   official_len: Рәсми озынлык
   operator: Оператор
+  route_symbol: Маршрут билгесе
   subroutes_title: Бүлекләр
   superroutes_title: Өлеш
+  symbol: Билге
   tags:
+    key: ачкыч
     title: OpenStreetMap тамгалары
+    value: мәгънә
+  type:
+    node: Төен
+    relation: Мөнәсәбәт
+    way: Юл
   website: Веб-сәхифә
+  wikipedia: Википедия
   zoom_to: Харитада күрсәтү
 elevation:
   ascent: Тупланган менеш
@@ -31,6 +40,7 @@ elevation:
     altitude: Югарылык (м)
     distance: Ераклык (км)
   title: Биеклек өске йөзе
+  total: Барлыгы менү/тешү
   unavailable: Биеклек мәгълүматлары табылмаган.
 error:
   load_error: Сервер белән тоташтыру хатасы.
@@ -40,7 +50,10 @@ headline:
 help: Харита турында
 locate_me: Табыгыз мине
 network:
-  downhill: төшү юлы
+  continental: Континент маршрутлары
+  downhill: Төшү юлы
+  other: Башка маршрутлар
+  sleigh: Чана юлы
 osmc_symbol:
   back: Кирегә
   background_heading: Җирлек
@@ -48,10 +61,12 @@ osmc_symbol:
   foreground_heading: Төп төс
   preview_heading: Алдан карау
 routelist:
+  loading: Төяү бара…
   close: Ябу
   rollup: Җыярга
   title: Маршрутлар
 search:
+  places: Урыннар
   routes: Маршрутлар
   title: Эзләү
 settings:
