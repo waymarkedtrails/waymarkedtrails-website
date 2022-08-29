@@ -3,6 +3,7 @@
     import { onDestroy } from 'svelte';
     import { API_URL } from './config.js';
     import { map_view, page_state } from './app_state.js';
+    import { set_map_view } from './Map.svelte';
     import SidePanel from './ui/SidePanel.svelte';
     import { json_loader } from './util/load_json.js';
     import { load_routes } from './map/LayerVectorData.svelte';
@@ -43,6 +44,10 @@
                 route.title = make_route_title(route);
                 route.subtitle = make_route_subtitle(route);
             });
+        }
+
+        if (!extent && route.bbox) {
+            set_map_view(route.bbox);
         }
 
         load_routes([].concat(route.subroutes || [], route.superroutes || []), extent);
