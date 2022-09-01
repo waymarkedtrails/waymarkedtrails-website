@@ -85,6 +85,7 @@ osmc_symbol:
          pro vider como illo apparera sur le carta.
   preview_heading: Previsualisar
 routelist:
+  loading: Cargamento…
   close: Clauder
   more: Face zoom avante pro vider plus itinerarios.
   rollup: Inrolar
