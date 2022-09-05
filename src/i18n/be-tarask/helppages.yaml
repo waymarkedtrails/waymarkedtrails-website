@@ -34,19 +34,19 @@ rendering:
 
     Маршруты для горнага ровару паказаныя на асобнай [MTB-мапе](https://mtb.waymarkedtrails.org/en/).
   mtbroutes: |-
-    Маршруты горнага ровара адпавядаюць схемам роварных маршрутаў, што падрабязна апісана ў OSM-вікі пра [роварныя маршруты](http://wiki.openstreetmap.org/wiki/Cycle_routes). Сувязі, якія маюць наступныя тэгі, распазнаюцца як MTB-маршруты:
+    Маршруты горнага ровара адпавядаюць схемам роварных маршрутаў, што падрабязна апісана ў OSM-вікі пра [роварныя маршруты](https://wiki.openstreetmap.org/wiki/Cycle_routes). Сувязі, якія маюць наступныя тэгі, распазнаюцца як MTB-маршруты:
 
         type = route|superroute
         route = mtb
 
-    Звычайныя роварныя маршруты паказаныя на [роварнай мапе](http://cycling.waymarkedtrails.org/en/).
+    Звычайныя роварныя маршруты паказаныя на [роварнай мапе](https://cycling.waymarkedtrails.org/en/).
   skatingroutes: |-
-    Разьмечаныя маршруты для ролікавых канькоў павінныя быць пазначаныя, як любы іншы маршрут сувязяў. Каб зразумець схему гэтай мапы, паглядзіце вікістаронку пра [маршруты для ролікавых канькоў у Швайцарыі](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork). Дзеля вызначэньня ў якасьці маршруту для ролікавых канькоў трэба, каб прысутнічалі наступныя тэгі:
+    Разьмечаныя маршруты для ролікавых канькоў павінныя быць пазначаныя, як любы іншы маршрут сувязяў. Каб зразумець схему гэтай мапы, паглядзіце вікістаронку пра [маршруты для ролікавых канькоў у Швайцарыі](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork). Дзеля вызначэньня ў якасьці маршруту для ролікавых канькоў трэба, каб прысутнічалі наступныя тэгі:
 
         type = route|superroute
         route = inline_skates
   ridingroutes: |-
-    Разьмечаныя маршруты для конных прагулак павінныя быць пазначаныя, як любы іншы маршрут сувязяў. Дзеля падрабязнасьцяў глядзіце [старонку маршрутаў у OSM-вікі](http://wiki.openstreetmap.org/wiki/Relation:route). Дзеля вызначэньня ў якасьці коннага маршруту трэба, каб прысутнічалі наступныя тэгі:
+    Разьмечаныя маршруты для конных прагулак павінныя быць пазначаныя, як любы іншы маршрут сувязяў. Дзеля падрабязнасьцяў глядзіце [старонку маршрутаў у OSM-вікі](https://wiki.openstreetmap.org/wiki/Relation:route). Дзеля вызначэньня ў якасьці коннага маршруту трэба, каб прысутнічалі наступныя тэгі:
 
         type = route|superroute
         route = horse
@@ -78,8 +78,8 @@ rendering:
   hikinglabels: |-
     Метка для кожнага маршруту выводзіцца з тэгаў у наступным парадку:
 
-    1. Праверыць [лякалізаваныя правілы адлюстраваньня](rendering/hikinglocal).
-    2. Паспрабаваць інтэрпрэтаваць тэг «osmc:symbol». Дзеля падрабязнасьцяў пра зразумелыя часткі глядзіце [правілы адлюстраваньня osmc:symbol](rendering/osmc).
+    1. Праверыць [лякалізаваныя правілы адлюстраваньня](#help-hikinglocal).
+    2. Паспрабаваць інтэрпрэтаваць тэг «osmc:symbol». Дзеля падрабязнасьцяў пра зразумелыя часткі глядзіце [правілы адлюстраваньня osmc:symbol](osmc_symbols.html).
     3. Калі тэг «ref» існуе, зрабіць тэкставую метку з тэгу «ref».
     4. Калі тэг «name» існуе, атрымаць спасылку зь яго, спачатку толькі зь вялікіх літараў, а калі не атрымалася, зь першых літараў назвы.
     5. Здацца.
@@ -89,9 +89,9 @@ rendering:
     1. Калі тэг «ref» існуе, зрабіць тэкставую метку з тэгу «ref».
     2. Калі тэг «name» існуе, атрымаць спасылку зь яго, спачатку толькі зь вялікіх літараў, а калі не атрымалася, зь першых літараў назвы.
     3. Здацца.
-  hierarchy: Мапа таксама падтрымлівае [герархію сувязяў](rendering/hierarchies).
+  hierarchy: Мапа таксама падтрымлівае [герархію сувязяў](#help-hierarchies).
   guideposts: |-
-    [Паказальнікі](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost) вызначаюцца з наступных тэгаў:
+    [Паказальнікі](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost) вызначаюцца з наступных тэгаў:
 
         tourism=information
         information=guidepost
@@ -119,6 +119,8 @@ osmc:
         osmc:symbol=waycolor:background:foreground:text:textcolor
 
     «waycolor» мусіць прысутнічаць, але будзе праігнараваны для гэтай мапы. Другі «foreground» не падтрымліваецца. «text» і «textcolor» могуць быць прапушчаныя.
+
+    Сьпіс сымбаляў, якія падтрымлівае Waymarked Trails, глядзіце на дадатковай [osmc:symbol](osmc_symbols.html) старонцы цэтлікаў.
 hikinglocal:
   title: Лякалізаваная візуалізацыя
   text: |-
@@ -136,7 +138,7 @@ hikinglocal:
 
     Заўважце, што па-над гэтай сеткай існуе шэраг нацыянальных і рэгіянальных маршрутаў, якія паказаныя ў звычайным выглядзе.
 
-    Дадатковыя зьвесткі пра меткі пешаходных маршрутаў у Швайцарыі ў OSM глядзіце: [Швайцарская пешаходная сетка](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+    Дадатковыя зьвесткі пра меткі пешаходных маршрутаў у Швайцарыі ў OSM глядзіце: [Швайцарская пешаходная сетка](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
   italy: |-
     ## Італія
 
@@ -149,25 +151,25 @@ hikinglocal:
   uk: |-
     ## Злучанае каралеўства
 
-    Клясыфікацыя [доўгіх маршрутаў Злучанага каралеўства](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) (пазначаныя меткай «network=uk_ldp») залежаць ад меткі «operator». Сувязі з «operator=National Trails» паказваюцца як нацыянальныя шляхі, усе іншыя сувязі будуць паказаныя як рэгіянальныя маршруты.
+    Клясыфікацыя [доўгіх маршрутаў Злучанага каралеўства](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) (пазначаныя меткай «network=uk_ldp») залежаць ад меткі «operator». Сувязі з «operator=National Trails» паказваюцца як нацыянальныя шляхі, усе іншыя сувязі будуць паказаныя як рэгіянальныя маршруты.
 
     Сувязі зь меткай «network=lwn/rwn/nwn/iwn» апрацоўваюцца як звычайна.
   czech: |-
     ## Чэхія
 
-    У краіне выкарыстоўваецца стандарт разьметкі сьцежак, заснаваны на наборы з 7 сымбаляў 4 розных колераў. Глядзіце апісаньне на [старонцы чэскай разьметкі](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (толькі чэскай мовай).
+    У краіне выкарыстоўваецца стандарт разьметкі сьцежак, заснаваны на наборы з 7 сымбаляў 4 розных колераў. Глядзіце апісаньне на [старонцы чэскай разьметкі](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (толькі чэскай мовай).
 
     Калі ёсьць метка «kct_*», яна мае перавагу над любой меткай «osmc:symbol». Дадаткова маршрут пераклясыфікуецца, калі ня можа быць знойдзеная слушная метка сеткі. Маршруты з «kct_red=major» робяцца нацыянальнымі, іншыя «kct_*=major» клясыфікуюцца як рэгіянальныя.
   slovakia: |-
     ## Славаччына
 
-    Славаччына выкарыстоўвае той жа стандарт разьметкі сьцежак, што і Чэхія. Тым ня менш, схема разьметкі крыху адрозьніваецца, глядзіце [старонку славацкіх пешаходных шляхоў](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+    Славаччына выкарыстоўвае той жа стандарт разьметкі сьцежак, што і Чэхія. Тым ня менш, схема разьметкі крыху адрозьніваецца, глядзіце [старонку славацкіх пешаходных шляхоў](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
 
     Усе маршруты зь меткай «operator=KST» адзначаныя паводле гэтай схемы. Праз тое, што маршруты ў Славаччыне павінны ісьці з адпаведнай сеткавай меткай, рэклясыфікацыя не выконваецца.
   hungary: |-
     ## Вугоршчына
 
-    Вугоршчына таксама ўжывае фіксаваны набор сымбаляў розных колераў. Яны пазначаныя ўласным тэгам [jel](http://wiki.openstreetmap.org/wiki/Key:jel). Гэты тэг мае перавагу над любым тэгам «osmc:symbol».
+    Вугоршчына таксама ўжывае фіксаваны набор сымбаляў розных колераў. Яны пазначаныя ўласным тэгам [jel](https://wiki.openstreetmap.org/wiki/Key:jel). Гэты тэг мае перавагу над любым тэгам «osmc:symbol».
   germany: |-
     ## Нямеччына
 
@@ -193,18 +195,25 @@ elevationprofiles:
 technical:
   title: Тэхнічныя дэталі
   general: |-
-    Слой маршрутаў абнаўляецца штохвілінна і звычайна спазьняецца за сэрвэрам OSM на 2—5 хвілінаў. Дата ў верхнім левым куце паказвае апошняе абнаўленьне. Абнаўленьні базавай мапы Mapnik не кантралююцца гэтым сайтам. У залежнасьці ад цяперашняй нагрузкі сэрвэру OSM яны займаюць ад адной хвіліны да некалькіх дзён.
+    Слой маршрутаў абнаўляецца штохвілінна і звычайна адстае ад сэрвэру OSM на 2—5 хвілінаў. Дата ў верхнім левым куце паказвае апошняе абнаўленьне. Абнаўленьні базавай мапы Mapnik не кантралююцца гэтым сайтам. У залежнасьці ад цяперашняй нагрузкі сэрвэру OSM яны займаюць ад адной хвіліны да некалькіх гадзінаў.
 
-    Сэрвэр працуе на стандартным [Debian Linux](http://www.debian.org/) з наборам інструмэнтаў, які складаецца з [pyosmium](http://osmcode.org/pyosmium/), [Postgresql](http://www.postgresql.org) і [Mapnik 2.0](http://www.mapnik.org). [osgende](https://github.com/waymarkedtrails/osgende) робіць некаторую постапрацоўку ў базе зьвестак перад адлюстраваньнем. Сайт абслугоўваецца [CherryPy](http://cherrypy.org/). Крынічны код даступны пад ліцэнзіяй GPL. Дзеля дадатковых зьвестак наведайце [старонку праекту на GitHub](https://github.com/waymarkedtrails/waymarked-trails-site).
+    Крынічнік гэтай вэб-бачыны даступны пад ліцэнзіяй GPL і падзелены на некалькі сховішчаў:
+    * [сэрвэрны код і генэрацыя мапаў](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+    * [Служба API](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+    * [інтэрфэйс вэб-бачыны](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+    Калі вы проста хочаце паведаміць пра хібу ці абмеркаваць здольнасьці вэб-бачыны,
+    можаце скарыстацца [адсочваньнем праблемаў](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
+    альбо [магчымасьцю абмеркаваньня](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) сховішча праекту на Github.
   translation: |-
     ## Пераклады
 
-    Пераклады робяцца добраахвотнікамі на [translatewiki.net](http://translatewiki.net). Калі вы жадаеце дапамагчы зь перакладам на вашую мову або пакінуць водгук пра пераклад, наведайце [старонку праекту на translatewiki.net](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+    Пераклады робяцца добраахвотнікамі на [translatewiki.net](https://translatewiki.net). Калі вы жадаеце дапамагчы зь перакладам на вашую мову або пакінуць водгук пра пераклад, наведайце [старонку праекту на translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Правы і ўмовы выкарыстаньня
   copyright: Пакрыцьцё маршрутаў даступнае на ўмовах [Creative Commons Attribution-Share
-    Alike 3.0 Germany License](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en),
-    GPX-трэкі на ўмовах [ODbL](http://opendatacommons.org/licenses/odbl/). Яны могуць
+    Alike 3.0 Germany License](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en),
+    GPX-трэкі на ўмовах [ODbL](https://opendatacommons.org/licenses/odbl/). Яны могуць
     быць паўторна выкарыстаныя і зьмененыя, пакуль вынік ужываецца паводле сумяшчальнай
     ліцэнзіі, а таксама згадваюцца праект OpenStreetMap і гэты сайт.
   usage: |-
@@ -222,19 +231,17 @@ legal:
 acknowledgements:
   title: Падзякі
   text: |-
-    Усе зьвесткі мапаў забясьпечваюцца [OpenStreetMap і яе ўкладальнікамі](http://www.openstreetmap.org) і распаўсюджваюцца згодна з умовамі ліцэнзіі ODbL. Базавая мапа таксама паходзіць з OSM і даступная паводле CC BY-SA 2.0. Дзеля дадатковых зьвестак глядзіце [старонку аўтарскіх правоў OSM](http://www.openstreetmap.org/copyright).
+    Усе зьвесткі мапаў забясьпечваюцца [OpenStreetMap і яе ўкладальнікамі](https://www.openstreetmap.org) і распаўсюджваюцца згодна з умовамі ліцэнзіі ODbL. Базавая мапа таксама паходзіць з OSM. Дзеля дадатковых зьвестак глядзіце [старонку аўтарскіх правоў OSM](https://www.openstreetmap.org/copyright).
 
-    Зьвесткі пра рэльеф і вышыні створаныя з сумесі зьвестак SRTM і ASTER GDEM data. ASTER GDEM — гэта прадукт METI і NASA. Постапрацоўка выкананая Івам Кэно з [opensnowmap.org](http://opensnowmap.org).
+    Зьвесткі пра рэльеф і вышыні створаныя з сумесі зьвестак SRTM і ASTER GDEM data. ASTER GDEM — гэта прадукт METI і NASA. Постапрацоўка выкананая Івам Кэно з [opensnowmap.org](https://opensnowmap.org).
 
-    Код профілю вышыні быў распрацаваны Эспэнам Ольдэманам Люндам у супрацы з [Kresendo](http://www.kresendo.no) і [праектам TG4NP](http://tg4np.eu) у [Заходненарвэскім дасьледчым інстытуце](http://wwww.vestforsk.no).
+    Код профілю вышыні быў распрацаваны Эспэнам Ольдэманам Люндам у супрацы з [Kresendo](https://www.kresendo.no) і праектам TG4NP у [Заходненарвэскім дасьледчым інстытуце](https://www.vestforsk.no).
 
     Варыянт схілаў для зімовых відаў спорту распрацаваны Міхаэлем Шпрэнгам. Сымбаль руху падрыхтаваны Робэртам Ўітакерам.
 
     Кірункі Guidepost апрацаваныя [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Вялікі дзякуй Жану Мішэлю за пададзены сэрвіс.
 
-    Пераклад гэтага сайту забясьпечвае [translatewiki.net і яго ўкладальнікі](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Асаблівая падзяка першым перакладчыкам, якія рабілі іх да translatewiki.net: Іў Кэно (француская мова), Оскар Фармаджы (італьянская), Густава [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Раміс (гішпанская), [Гутарм Флетабё](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (нарвэскія букмаль і нюнорск), Мадс Люмгольт/TG4NP (дацкая), Магнус Смары Снорасан/TG4NP (ісьляндзкая), Лярс Мікаэльсан/TG4NP (швэдзкая) і Эліна Пэсанэн (фінская).
-
-    І, урэшце, сэрвэр не існаваў бы бяз шчырай падтрымкі [Мартына Гофмана](http://www.partim.de).
+    Пераклад гэтага сайту забясьпечвае [translatewiki.net і яго ўкладальнікі](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Асаблівая падзяка першым перакладчыкам, якія рабілі іх да translatewiki.net: Іў Кэно (француская мова), Оскар Фармаджы (італьянская), Густава [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Раміс (гішпанская), [Гутарм Флетабё](https://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (нарвэскія букмаль і нюнорск), Мадс Люмгольт/TG4NP (дацкая), Магнус Смары Снорасан/TG4NP (ісьляндзкая), Лярс Мікаэльсан/TG4NP (швэдзкая) і Эліна Пэсанэн (фінская).
 contact:
   title: Кантакты
   text: |-

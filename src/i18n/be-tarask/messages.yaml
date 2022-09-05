@@ -34,7 +34,12 @@ details:
     value: значэньне
   type:
     guidepost: Даведнік
+    node: Вузел
+    relation: Адносіны
+    way: Шлях
+    wayset: Набор шляхоў
   website: Вэб-сайт
+  wikipedia: Вікіпэдыя
   zoom_to: Паказаць на мапе
 elevation:
   ascent: Сумарны пад’ём
