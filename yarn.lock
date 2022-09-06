@@ -707,6 +707,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"earcut@npm:^2.2.3":
+  version: 2.2.4
+  resolution: "earcut@npm:2.2.4"
+  checksum: aea0466cb2f24e0c3c57148d8d28ac9846f53c4f43ee66780826474303ac851b305ef988152d0bdeb31e8f7ca939dc0df737e7505cfb1c1bdf2ff9d7f9ea2faa
+  languageName: node
+  linkType: hard
+
 "ecc-jsbn@npm:~0.1.1":
   version: 0.1.2
   resolution: "ecc-jsbn@npm:0.1.2"
@@ -1538,25 +1545,26 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"ol-mapbox-style@npm:^8.0.5":
-  version: 8.2.0
-  resolution: "ol-mapbox-style@npm:8.2.0"
+"ol-mapbox-style@npm:9.1.0":
+  version: 9.1.0
+  resolution: "ol-mapbox-style@npm:9.1.0"
   dependencies:
     "@mapbox/mapbox-gl-style-spec": ^13.23.1
     mapbox-to-css-font: ^2.4.1
-  checksum: a1bb0a8789e86cba4f1577c22b22add94bc8504a38df2625f1ee40b6bdacb515bfd574ecb738e72af54e2ca9a58764ca25386f931bb76f8b978280a5623b97b6
+  checksum: 587a41456b76e1bd592b7594c288661ee8c651e9f1cd038a53ff5c01654b68081911088a6feba6ee3ac133f34072d629f171dbf35cd2f13dab3908d519268978
   languageName: node
   linkType: hard
 
-"ol@npm:^6.15.1":
-  version: 6.15.1
-  resolution: "ol@npm:6.15.1"
+"ol@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "ol@npm:7.1.0"
   dependencies:
+    earcut: ^2.2.3
     geotiff: 2.0.4
-    ol-mapbox-style: ^8.0.5
+    ol-mapbox-style: 9.1.0
     pbf: 3.2.1
     rbush: ^3.0.1
-  checksum: 61199a0cfd11830919861f92cc7dcd50f94077972cd5777691834186991cfc0f59da69a5c35281047c64a8e0b857a228cc37e663b5579c93b5fb08d2eb0f4b4d
+  checksum: 0935be63be953d29e142ea38191e0161c58ec75375bd60640f7e54c4c831dd5d0401c55f4144ede159e90c0bb3c3e6bc7a71c1f82e640208df6dfc9325da5abd
   languageName: node
   linkType: hard
 
@@ -1925,9 +1933,9 @@ resolve@^1.19.0:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.77.0":
-  version: 2.77.0
-  resolution: "rollup@npm:2.77.0"
+"rollup@npm:^2.79.0":
+  version: 2.79.0
+  resolution: "rollup@npm:2.79.0"
   dependencies:
     fsevents: ~2.3.2
   dependenciesMeta:
@@ -1935,7 +1943,7 @@ resolve@^1.19.0:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 74ccc98429709984a89af636250833e7502d87f1d9c6d96ebfe4b52030ebf94b9f6b84b8ab476670329a61d54b681d35eecdc601bac5b5396b099b1ea69970ef
+  checksum: 166f1ffea1898e157003920065b3a328e7012ea6808860ee8fe5d1ce94804fcce9985c95a3c0f7fe9c611aff0d09a70f073f1d6f715c8faba28e4e40f71ee3bb
   languageName: node
   linkType: hard
 
@@ -2130,10 +2138,10 @@ resolve@^1.19.0:
   languageName: node
   linkType: hard
 
-"svelte@npm:^3.49.0":
-  version: 3.49.0
-  resolution: "svelte@npm:3.49.0"
-  checksum: 5b7cb8dbf6b6581b50fab1de63cbcb81816081a1240b03e234b299268fff2f3237bf8f92b683a848f95453353b5694dfe26fa05a55da185a4bb0cd8b80d87dd4
+"svelte@npm:^3.50.0":
+  version: 3.50.0
+  resolution: "svelte@npm:3.50.0"
+  checksum: cc8e8fd14bac3add208b00b9c2ffd64d343f29f84a626899762b3c9d00010cab5f49dce44d376acb270f996c860ad49b727d2bf140f434f2b959061b22249548
   languageName: node
   linkType: hard
 
@@ -2300,13 +2308,13 @@ resolve@^1.19.0:
     d3-shape: ^3.1.0
     markdown-it: ^13.0.1
     node-static: ^0.7.11
-    ol: ^6.15.1
-    rollup: ^2.77.0
+    ol: ^7.1.0
+    rollup: ^2.79.0
     rollup-plugin-css-porter: ^1.0.2
     rollup-plugin-hash: ^1.3.0
     rollup-plugin-livereload: ^2.0.5
     rollup-plugin-svelte: ^7.1.0
-    svelte: ^3.49.0
+    svelte: ^3.50.0
     svelte-i18n: ^3.4.0
   languageName: unknown
   linkType: soft
