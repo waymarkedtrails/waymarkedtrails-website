@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: DRIHEM
+# Author: Dr-Taher
 # Author: Maroen1990
 # Author: Meno25
 # Author: OsamaK
@@ -13,6 +14,7 @@ attribution:
   elevation_title: بيانات الارتفاع بواسطة [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: مزيد من التفاصيل
+  no_data: لا توجد معلومات وجهة متاحة لهذا الدليل الإرشادي.
   title: الوجهات
 details:
   GPX: جي بي إكس
@@ -25,8 +27,15 @@ details:
   operator: العامل
   subroutes_title: الأقسام
   superroutes_title: جزء من
+  symbol: رمز
   tags:
+    key: مفتاح
     title: علامات خريطة الشارع المفتوح
+    value: قيمة
+  type:
+    guidepost: دليل
+    relation: علاقة
+    way: طريق
   website: موقع الويب
   wikipedia: ويكيبيديا
   zoom_to: أظهر على الخريطة
@@ -37,10 +46,13 @@ elevation:
     altitude: الارتفاع (م)
     distance: المسافة (كم)
   title: ملف تعريف الارتفاع
+  total: إجمالي صاعد/هابط
   unavailable: لا بيانات ارتفاع تم العثور عليها.
   warn_unsorted: الطريق غير محتمل أو غير مكتمل; قد تكون معلومات الارتفاع غير دقيقة.
 error:
   load_error: خطأ في الاتصال بالخادم.
+  missing_id: المعلمة "id" مفقودة.
+  missing_query: المعلمة "استعلام" مفقودة.
   panel_title: خطأ
 headline:
   last_update: آخر تحديث
@@ -49,6 +61,8 @@ locate_me: حدد موقعي
 network:
   downhill: انحدار
   node: اتصالات شبكة العقدة
+  other: طرق أخرى
+  skitour: جولات تزلج
 osmc_symbol:
   back: رجوع
   background: الخلفية تعمل بطريقة مماثلة، كما تتكون من لون وشكل، قد تكون الخلفية أيضا
@@ -64,10 +78,13 @@ osmc_symbol:
          لترى كيف سيتم عرضها على الخريطة.
   preview_heading: معاينة
 routelist:
+  loading: تحميل...
   close: أغلق
+  more: قم بالتكبير لرؤية المزيد من الطرق.
   rollup: لف
   title: الطرق
 search:
+  places: أماكن
   routes: الطرق
   title: بحث
 settings:
