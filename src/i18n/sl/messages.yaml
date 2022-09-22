@@ -9,7 +9,7 @@
 # Author: Shirayuki
 ---
 attribution:
-  data: Podatki zemljevidov  © [OpenStreetMap](http://www.openstreetmap.org) pod [ODbL](http://www.openstreetmap.org/copyright).
+  data: Podatki zemljevida  © [OpenStreetMap](https://www.openstreetmap.org) pod [ODbL](https://www.openstreetmap.org/copyright).
   elevation_title: višinski podatki [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Več podrobnosti
@@ -41,7 +41,7 @@ headline:
 help: O zemljevidu
 locate_me: Poiščite me
 network:
-  downhill: navzdol
+  downhill: Navzdol
 osmc_symbol:
   back: Nazaj
   background_heading: Ozadje

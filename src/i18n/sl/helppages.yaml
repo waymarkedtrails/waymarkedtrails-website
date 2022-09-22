@@ -15,20 +15,20 @@ rendering:
   title: Upodabljanje OSM podatkov
   hikingroutes: |-
     Pohodniške poti morate v OSM vnesti kot zveze (relations). To je podrobno opisano na strani o označevanju
-    [walking routes](http://wiki.openstreetmap.org/wiki/Walking_Routes) v dokumentaciji wikija OSM. Ta zemljevid prikazuje zveze, ki imajo vsaj naslednje oznake:
+    [walking routes](https://wiki.openstreetmap.org/wiki/Walking_Routes) v dokumentaciji wikija OSM. Ta zemljevid prikazuje zveze, ki imajo vsaj naslednje oznake:
 
         type = route|superroute
         route = foot|walking|hiking
   cyclingroutes: "Kolesarske poti morate v OSM vnesti kot zveze (relations). To je
-    podrobno opisano na strani o označevanju \n[cycling routes](http://wiki.openstreetmap.org/wiki/Cycle_routes)
+    podrobno opisano na strani o označevanju \n[cycling routes](https://wiki.openstreetmap.org/wiki/Cycle_routes)
     v dokumentaciji wikija OSM. Ta zemljevid prikazuje zveze, ki imajo vsaj naslednje
     oznake:\n\n    type = route|superroute\n    route = bicycle\n\nPoti za gorsko
-    kolesarjenje so prikazane na ločenem [MTB zemljevidu](http://mtb.waymarkedtrails.org/sl/)."
+    kolesarjenje so prikazane na ločenem [MTB zemljevidu](https://mtb.waymarkedtrails.org/sl/)."
   mtbroutes: "Gorske kolesarske poti morate v OSM vnesti kot zveze (relations). To
-    je podrobno opisano na strani o označevanju \n[cycling routes](http://wiki.openstreetmap.org/wiki/Cycle_routes)
+    je podrobno opisano na strani o označevanju \n[cycling routes](https://wiki.openstreetmap.org/wiki/Cycle_routes)
     v dokumentaciji wikija OSM. Ta zemljevid prikazuje zveze, ki imajo vsaj naslednje
     oznake:\n\n    type = route|superroute\n    route = mtb\n\nKolesarske poti so
-    prikazane na ločenem [kolesarskem zemljevidu](http://cycling.waymarkedtrails.org/sl/)."
+    prikazane na ločenem [kolesarskem zemljevidu](https://cycling.waymarkedtrails.org/sl/)."
 elevationprofiles:
   title: Višinski profil
 technical:
