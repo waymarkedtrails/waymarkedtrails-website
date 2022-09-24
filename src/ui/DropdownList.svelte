@@ -40,7 +40,7 @@
         font-size: 18px;
         padding: 8px 12px;
         background-color: #f2f2f2;
-        boder-color: #ddd;
+        border-color: #ddd;
     }
 
     .dropdown-menu {
