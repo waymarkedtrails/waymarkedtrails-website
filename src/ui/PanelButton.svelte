@@ -12,7 +12,7 @@
         border-left: 1px solid white;
         border-right: 1px solid #bbb;
         border-top: none;
-        border-bootom: none;
+        border-bottom: none;
     }
 </style>
 
