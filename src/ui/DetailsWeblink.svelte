@@ -8,7 +8,6 @@
 <style>
     div {
         display: flex;
-        align-items: center;
     }
 
     a {
