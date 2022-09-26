@@ -94,6 +94,7 @@ osmc_symbol:
     op de kaart getoond zal worden.
   preview_heading: Voorbeeld
 routelist:
+  loading: Laden...
   close: Sluiten
   more: Zoom in om meer routes te zien.
   rollup: Roll-up
@@ -102,6 +103,8 @@ search:
   places: Plaatsen
   routes: Routes
   title: Zoeken
+  help: Gebruik trefwoorden om mee te zoeken. U kunt zoeken op namen van routes (bijv.
+    Appalachian Trail, E2) of plaatsen (bijv. Berlijn).
 settings:
   base_map: Basiskaart
   browser_language: Gebruik de instellingen van de browser
