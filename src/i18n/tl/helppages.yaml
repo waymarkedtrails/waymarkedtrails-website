@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: AnakngAraw
+# Author: GinawaSaHapon
 # Author: Shirayuki
 ---
 about:
@@ -14,6 +15,10 @@ about:
     mayroong nakapaskil na palatandaan sa paligid ng mundo.
   skating: Ang mapang ito ay nagpapakita ng mga ruta ng pag-iiskeyt na mayroong nakapaskil
     na palatandaan sa paligid ng mundo.
+  riding: Ipinapakita ng mapa na ito ang mga naka-sign post na ruta sa pangangabayo
+    sa iba't-ibang bahagi ng mundo.
+  slopemap: Ipinapakita ng mapa na ito ang mga markadong ruta sa winter sport slopes
+    sa iba't-ibang bahagi ng mundo.
 rendering:
   title: Paghaharap ng dato ng OSM
   classification: Ang klasipikasyon (at kung gayon ang kulay ng ruta na nasa loob

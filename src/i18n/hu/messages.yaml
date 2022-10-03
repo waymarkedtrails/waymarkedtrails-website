@@ -18,6 +18,7 @@ attribution:
   elevation_title: magassági adatok [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: További részletek
+  no_data: Ehhez az útirányjelző táblához nincs megadva útirány.
   title: Úti célok
 details:
   GPX: GPX
@@ -28,11 +29,22 @@ details:
   note: Megjegyzés
   official_len: Hivatalos hossz
   operator: Üzemeltető
+  route_symbol: Útjelzés
   subroutes_title: Szakaszok
   superroutes_title: 'Része ennek:'
+  symbol: Szimbólum
   tags:
+    key: kulcs
     title: OpenStreetMap címkék
+    value: érték
+  type:
+    guidepost: Útirányjelző tábla
+    node: Pont
+    relation: Kapcsolat
+    way: Vonal
+    wayset: Vonalkészlet
   website: Weboldal
+  wikipedia: Wikipédia
   zoom_to: Megjelenítés a térképen
 elevation:
   ascent: Összesített emelkedés
@@ -41,19 +53,31 @@ elevation:
     altitude: Magasság (m)
     distance: Távolság (km)
   title: Magassági profil
+  total: Összes emelkedés/lejtés
   unavailable: Nem találhatók magassági adatok.
   warn_unsorted: Lehet, hogy az útvonal rendezetlen vagy hiányos. A magassági adatok
     pontatlanok lehetnek.
 error:
   load_error: Nem sikerült csatlakozni a szerverhez.
+  missing_id: Hiányzik az „id” paraméter.
+  missing_query: Hiányzik a „query” paraméter.
   panel_title: Hiba
 headline:
   last_update: Utolsó frissítés
 help: A térképről
 locate_me: Hol vagyok most?
 network:
-  downhill: lesiklás
-  node: ponthálózat-kapcsolatok
+  continental: Kontinentális útvonalak
+  downhill: Lesiklás
+  national: Országos útvonalak
+  node: Ponthálózat-kapcsolatok
+  nordic: Sífutás
+  other: Más útvonalak
+  regional: Regionális útvonalak
+  skitour: Sítúrák
+  sled: Szánkópálya
+  sleigh: Lovasszán-útvonal
+  winter_hike: Téli túrázás
 osmc_symbol:
   back: Vissza
   background: A háttér hasonlóan működik. Ez is egy színből és egy alakzatból áll.
@@ -72,9 +96,11 @@ osmc_symbol:
 routelist:
   loading: Betöltés…
   close: Bezárás
+  more: Nagyítson további útvonalak megtekintéséhez.
   rollup: Fel
   title: Útvonalak
 search:
+  places: Helyek
   routes: Útvonalak
   title: Keresés
   help: 'Kérjük, használjon kulcsszavakat a kereséshez! Rákereshet túraútvonalakra
@@ -87,10 +113,22 @@ settings:
   route_layer: Útvonalréteg
   title: Térképbeállítások
   transparency: Térkép átlátszósága
+site_description:
+  cycling: Helyi és távolsági kerékpáros útvonalak az OpenStreetMapről származó térképekkel
+    és adatokkal.
+  hiking: Helyi és távolsági túra- és gyalogosútvonalak az OpenStreetMapről származó
+    térképekkel és adatokkal.
+  mtb: Hegyikerékpáros (MTB) útvonalak az OpenStreetMapről származó térképekkel és
+    adatokkal.
+  riding: Lovaglóútvonalak az OpenStreetMapről származó térképekkel és adatokkal.
+  skating: Görkorcsolya-útvonalak az OpenStreetMapről származó térképekkel és adatokkal.
+  slopes: Télisport-pályák, sípályák, sífutónyomok, téli túrák az OpenStreetMapről
+    származó térképekkel és adatokkal.
 site_title:
   cycling: Kerékpározás
   hiking: Túrázás
   mtb: Mountain bike
+  osmc_symbol: Az osmc:symbol címke
   riding: Lovaglás
   skating: Görkorcsolya
   slopes: Télisport-pályák

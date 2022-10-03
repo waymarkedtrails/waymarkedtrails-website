@@ -25,34 +25,34 @@ about:
 rendering:
   title: OSM-adatok megjelenítése
   hikingroutes: |-
-    A túraútvonalakat az OSM-ben kapcsolatként (relation) kell megadni. Ennek működését részletesen az OSM wikiben a [Walking routes](http://wiki.openstreetmap.org/wiki/Walking_Routes) címkézési oldalon olvashatja el. Ez a térkép azokat a kapcsolatokat jeleníti meg, amelyek legalább a következő címkékkel rendelkeznek:
+    A túraútvonalakat az OSM-ben kapcsolatként (relation) kell megadni. Ennek működését részletesen az OSM wikiben a [Walking routes](https://wiki.openstreetmap.org/wiki/Walking_Routes) címkézési oldalon olvashatja el. Ez a térkép azokat a kapcsolatokat jeleníti meg, amelyek legalább a következő címkékkel rendelkeznek:
 
         type = route|superroute
         route = foot|walking|hiking
   cyclingroutes: |-
-    Az OSM-ben a kerékpáros útvonalakat kapcsolatokként (relation) kell megadni. Ennek működését részletesen az OSM wiki [Cycle routes](http://wiki.openstreetmap.org/wiki/Cycle_routes) címkézési oldala írja le. Ez a térkép az összes olyan kapcsolatot megjeleníti, amely legalább a következő címkékkel rendelkezik:
+    Az OSM-ben a kerékpáros útvonalakat kapcsolatokként (relation) kell megadni. Ennek működését részletesen az OSM wiki [Cycle routes](https://wiki.openstreetmap.org/wiki/Cycle_routes) címkézési oldala írja le. Ez a térkép az összes olyan kapcsolatot megjeleníti, amely legalább a következő címkékkel rendelkezik:
 
         type = route|superroute
         route = bicycle
 
-    A hegyi kerékpáros útvonalak egy külön [MTB-térképen](http://mtb.waymarkedtrails.org/en/) láthatók.
+    A hegyi kerékpáros útvonalak egy külön [MTB-térképen](https://mtb.waymarkedtrails.org) láthatók.
   mtbroutes: |-
-    A hegyikerékpáros-útvonalak ugyanazt a címkézési sémát követik, mint a kerékpáros útvonalak, amelyet részletesen az OSM wiki [Cycle routes](http://wiki.openstreetmap.org/wiki/Cycle_routes) oldala ismertet.
+    A hegyikerékpáros-útvonalak ugyanazt a címkézési sémát követik, mint a kerékpáros útvonalak, amelyet részletesen az OSM wiki [Cycle routes](https://wiki.openstreetmap.org/wiki/Cycle_routes) oldala ismertet.
     MTB-útvonalként a legalább a következő címkékkel rendelkező kapcsolatok jelennek meg:
 
         type = route|superroute
         route = mtb
 
-    A rendes kerékpáros útvonalak a [kerékpáros térképen](http://cycling.waymarkedtrails.org/en/) jelennek meg.
+    A rendes kerékpáros útvonalak a [kerékpáros térképen](https://cycling.waymarkedtrails.org) jelennek meg.
   skatingroutes: |-
-    A jelzett görkorcsolya-útvonalakat ugyanúgy kell címkézni, mint bármely más útvonalkapcsolatot. Az e térkép által értelmezett címkézésért nézd meg a [Swiss inline skating routes](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork) wikioldalt.
+    A jelzett görkorcsolya-útvonalakat ugyanúgy kell címkézni, mint bármely más útvonalkapcsolatot. Az e térkép által értelmezett címkézésért nézd meg a [Swiss inline skating routes](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork) wikioldalt.
     Ahhoz, hogy görkorcsolyaútvonalként megjelenjék, az útvonalnak legalább a következő címkéket kell tartalmaznia:
 
         type = route|superroute
         route = inline_skates
   ridingroutes: |-
     A jelzett lovagló-útvonalakat ugyanúgy kell címkézni, mint bármely más útvonalkapcsolatot.
-    A részletekért lásd [az OSM wiki útvonal oldalát](http://wiki.openstreetmap.org/wiki/Relation:route).
+    A részletekért lásd [az OSM wiki útvonal oldalát](https://wiki.openstreetmap.org/wiki/Relation:route).
     Ahhoz, hogy lovaglóútvonalként megjelenjék, a kapcsolatnak legalább a következő címkékkel kell rendelkeznie:
 
         type = route|superroute
@@ -86,8 +86,8 @@ rendering:
   hikinglabels: |-
     Az egyes útvonalak feliratát a térkép a következő sorrendben „találja ki” a címkékből:
 
-    1. Ellenőrzi a [helyi megjelenítési szabályokat](rendering/hikinglocal).
-    2. Megpróbálja értelmezni az `osmc:symbol` címkét. Az értelmezendő részletekről lásd az [osmc:symbol rendering rules](rendering/osmc) oldalt.
+    1. Ellenőrzi a [helyi megjelenítési szabályokat](#help-hikinglocal).
+    2. Megpróbálja értelmezni az `osmc:symbol` címkét. Az értelmezendő részletekről lásd az [osmc:symbol rendering rules](osmc_symbols.html) oldalt.
     3. Ha van `ref` címke, akkor ennek az értékéből lesz a felirat.
     4. Ha van `name` címke, akkor ebből készül felirat a nagybetűk (ezek hiányában az első betűk) felhasználásával.
     5. Feladja…
@@ -97,9 +97,9 @@ rendering:
     1. Ha van `ref` címke, akkor ennek az értéke lesz a felirat.
     2. Ha van `name` címke, akkor ebből készül a felirat a nagybetűk (ezek hiányában az első betűk) felhasználásával.
     3. Feladja…
-  hierarchy: A térkép a [kapcsolati hierarchiákat](rendering/hierarchies) is támogatja.
+  hierarchy: A térkép a [kapcsolati hierarchiákat](#help-hierarchies) is támogatja.
   guideposts: |-
-    Az [útirányjelző táblák](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost) a következő címkék szerint jelennek meg:
+    Az [útirányjelző táblák](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost) a következő címkék szerint jelennek meg:
 
         tourism=information
         information=guidepost
@@ -129,6 +129,8 @@ osmc:
 
     Az `waycolor`-nak meg kell lennie, de ezen a térképen figyelmen kívül hagyjuk.
     A második előtér nem támogatott. A `text` és a `textcolor` elhagyható.
+
+    A Waymarked Trails által támogatott további szimbólumok megtekinthetők az [osmc:symbol](osmc_symbols.html) címkeoldalon.
 hikinglocal:
   title: Helyi megjelenítés
   text: |-
@@ -148,7 +150,7 @@ hikinglocal:
     Megjegyzendő, hogy ezen a hálózaton kívül számos országos és regionális turistaút is van, amelyek a szokásos módon jelennek meg.
 
     A svájci turistautak OSM-ben történő címkézésével kapcsolatos további információkért lásd:
-    [Swiss hiking network](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+    [Swiss hiking network](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
   italy: |-
     ## Olaszország
 
@@ -161,13 +163,13 @@ hikinglocal:
   uk: |-
     ## Egyesült Királyság
 
-    Az [Egyesült Királyság hosszútávú turistaútjainak](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) (amelyek a `network=uk_ldp` címkével vannak jelölve) besorolása az `operator` címkétől függ. Az `operator=National Trails` címkével jelzett kapcsolatok országos turistaútként jelennek meg, minden más kapcsolat regionális turistaútként.
+    Az [Egyesült Királyság hosszútávú turistaútjainak](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) (amelyek a `network=uk_ldp` címkével vannak jelölve) besorolása az `operator` címkétől függ. Az `operator=National Trails` címkével jelzett kapcsolatok országos turistaútként jelennek meg, minden más kapcsolat regionális turistaútként.
 
     A `network=lwn/rwn/nwn/nwn/iwn` címkéjű kapcsolatok a szokásos módon kezeltetnek.
   czech: |-
     ## Csehország
 
-    Az ország egy 4 színű, 7 szimbólumból álló turistaútjelölési szabványt használ. A részleteket lásd a [cseh jelölési oldalon](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (csak csehül).
+    Az ország egy 4 színű, 7 szimbólumból álló turistaútjelölési szabványt használ. A részleteket lásd a [cseh jelölési oldalon](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (csak csehül).
 
     Ha van `kct_*` címke, akkor az előnyben részesül az `osmc:symbol` címkékkel szemben.
 
@@ -175,13 +177,13 @@ hikinglocal:
   slovakia: |-
     ## Szlovákia
 
-    Szlovákiában ugyanazt a turistaútjelölési szabványt használják, mint Csehországban. A címkézési séma ugyanakkor egy kicsit különbözik, amelynek a részletei a [szlovák turistautak wikioldlán](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes) olvashatók el.
+    Szlovákiában ugyanazt a turistaútjelölési szabványt használják, mint Csehországban. A címkézési séma ugyanakkor egy kicsit különbözik, amelynek a részletei a [szlovák turistautak wikioldlán](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes) olvashatók el.
 
     Az `operator=KST` címkével rendelkező utak e séma szerint vannak címkézve. Mivel a turistautaknak Szlovákiában érvényes hálózatcímkével kell rendelkezniük, így átminősítésre nem kerül sor.
   hungary: |-
     ## Magyarország
 
-    Magyarország szintén egy több színű, rögzített szimbólumkészletet tartalmazó rendszert használ. Ezeket saját [jel](http://wiki.openstreetmap.org/wiki/Key:jel) címkével jelölik.
+    Magyarország szintén egy több színű, rögzített szimbólumkészletet tartalmazó rendszert használ. Ezeket saját [jel](https://wiki.openstreetmap.org/wiki/Key:jel) címkével jelölik.
 
     A címke előnyben részesül az `osmc:symbol` címkékkel szemben.
   germany: |-
@@ -217,11 +219,11 @@ technical:
   translation: |-
     ## Fordítások
 
-    A fordítások segítőkész emberek segítségével készül a [translatewiki.net-en](http://translatewiki.net). Ha szeretne hozzájárulni a fordításokhoz a saját nyelvén, vagy visszajelzést adni a meglévő fordításokról, látogasson el a [translatewiki.net megfelelő projektoldalára](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+    A fordítások segítőkész emberek segítségével készül a [translatewiki.net-en](https://translatewiki.net). Ha szeretne hozzájárulni a fordításokhoz a saját nyelvén, vagy visszajelzést adni a meglévő fordításokról, látogasson el a [translatewiki.net megfelelő projektoldalára](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Jogi és használati feltételek
   copyright: |-
-    Az útvonalakat tartalmazó fedőréteg a [Creative Commons Attribution-Share Alike 3.0 Germany licenc](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en), a GPX nyomvonalak pedig az [ODbL licenc](http://opendatacommons.org/licenses/odbl/) szerint állnak rendelkezésre.
+    Az útvonalakat tartalmazó fedőréteg a [Creative Commons Attribution-Share Alike 3.0 Germany licenc](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en), a GPX nyomvonalak pedig az [ODbL licenc](https://opendatacommons.org/licenses/odbl/) szerint állnak rendelkezésre.
     Ezek újrafelhasználhatók és módosíthatók, amennyiben az így létrejövő mű a fentiekkel összeegyeztethető licencet használ, továbbá megemlíti az OpenStreetMap projektet és ezt az oldalt.
   usage: |-
     ## Felhasználási szabályzat

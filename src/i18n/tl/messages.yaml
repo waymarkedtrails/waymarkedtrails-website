@@ -2,40 +2,127 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: AnakngAraw
+# Author: GinawaSaHapon
 ---
 attribution:
-  data: Dato ng mapa ng [OpenStreetMap](http://www.openstreetmap.org) at mga mang-aambag
-    ([CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/))
+  data: Data ng mapa © [OpenStreetMap](https://www.openstreetmap.org) sa ilalim ng
+    [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: data sa elevation ng [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Karagdagang detalye
+  no_data: Walang binigay na impormasyon sa destinasyon para sa guidepost na ito.
+  title: Mga destinasyon
 details:
+  GPX: GPX
+  KML: KML
+  altitude: Taas
+  image: Larawan
   mapped_len: Ipinapakita sa mapa
   note: Tala
   official_len: Opisyal na haba
   operator: Tagapagpaandar
+  route_symbol: Simbolo ng ruta
   subroutes_title: Mga bahagi
   superroutes_title: Bahagi ng
+  symbol: Simbolo
   tags:
+    key: key
     title: Mga tatak ng OpenStreetMap
+    value: value
+  type:
+    guidepost: Guidepost
+    node: Node
+    relation: Relasyon
+    way: Daan
+    wayset: Wayset
   website: Pook sa sapot
   wikipedia: Wikipedia
+  zoom_to: Ipakita sa mapa
+elevation:
+  ascent: Naakyat
+  descent: Nababa
+  diagram:
+    altitude: Taas (m)
+    distance: Layo (km)
+  title: Profile ng elevation
+  total: Kabuuang naakyat/nababa
+  unavailable: Walang nakitang data sa elevation
+  warn_unsorted: Posibleng hindi maayos o kumpleto ang ruta. Pwedeng mali ang impormasyon
+    sa elevation.
 error:
+  load_error: Nagka-error habang kumokonekta sa server.
+  missing_id: Nawawalang parameter na 'id'.
+  missing_query: Nawawalang parameter na 'query'.
   panel_title: Kamalian
 headline:
   last_update: Huling pagsasapanahon
+help: Patungkol sa mapa
+locate_me: Hanapin ako
+network:
+  continental: Mga rutang pangkontinente
+  downhill: Downhill
+  national: Mga rutang pambansa
+  node: Mga koneksyon sa node network
+  nordic: Nordic skiing
+  other: Iba pang mga ruta
+  regional: Mga rutang panrehiyon
+  skitour: Mga ski tour
+  sled: Sledding piste
+  sleigh: Sleigh piste
+  winter_hike: Winter hiking
 osmc_symbol:
+  back: Balik
+  background: Gumagana rin sa parehong paraan ang likuranm Naglalaman din ito ng kulay
+    at hugis. Posible ring pangalan ng kulay lang ang likuran na nagreresulta sa isang
+    canvas na may piniling kulay. Ipapakita ito sa unang row.
   background_heading: Panlikuran
+  examples: Mga halimbawa
+  foreground: Naglalaman ang simbolo sa harapan ng kulay at hugis na konektado dahil
+    sa underscore. Ipinapakita sa baba ang isang table na naglalaman ng lahat ng mga
+    kombinasyong kinikilala ng site na ito. Kinikilala rin niyo ang mga harapan na
+    naglalaman lang ng pangalan ng hugis. Ipapakita ang mga simbolo para sa mga yon
+    sa huling column.
   foreground_heading: Pangharapan
+  preview: Mag-type ng isang osmc:symbol na value sa input field sa baba para makita
+    kung papaano ito mare-render sa mapa.
+  preview_heading: Pasilip
 routelist:
+  loading: Naglo-load...
+  close: Isara
+  more: Lumapit para makakita pa ng mga ruta.
+  rollup: Irolyo
   title: Mga ruta
 search:
+  places: Mga lugar
   routes: Mga ruta
   title: Maghanap
+  help: Mangyaring gumamit ng mga keyword na hahanapin. Pwede kang maghanap ng mga
+    pangalan ng daan (hal. Appalachian Trail, E2) o lugar (hal. Berlin).
 settings:
   base_map: Mapa ng himpilan
+  browser_language: Gamitin ang pagsasaayos ng browser
   hillshading_layer: Pagsangga sa burol
+  language: Wika
   route_layer: Patong na ruta
+  title: Pagsasaayos sa mapa
+  transparency: Transparency ng mapa
+site_description:
+  cycling: Mga rutang pambisikleta lokal at pang-malalayo, gamit ang mga mapa at impormasyon
+    mula OpenStreetMap.
+  hiking: Mga rutang pang-hiking at malalakad na lokal at pang-malalayo, gamit ang
+    mga mapa at impormasyon mula OpenStreetMap.
+  mtb: Mga rutang mountain-biking (MTB), gamit ang mga mapa at impormasyon mula OpenStreetMap.
+  riding: Mga ruta sa pangangabayo, gamit ang mga mapa at impormasyon mula OpenStreetMap.
+  skating: Mga rutang pang-inline skating, gamit ang mga mapa at impormasyon mula
+    OpenStreetMap.
+  slopes: Mga winter sport slope, downhill skiing, cross-country skiing, winter walking,
+    gamit ang mga mapa at impormasyon mula OpenStreetMap.
 site_title:
   cycling: Pagbibisikleta
   hiking: Pang-aliw na paglalakad nang mahaba
   mtb: MTB
+  osmc_symbol: Ang tag ng osmc:symbol
+  riding: Pangangabayo
   skating: Iskeyting na Nasa Guhit
+  slopes: Winter Sport Slopes
 ...
