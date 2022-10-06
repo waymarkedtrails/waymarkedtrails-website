@@ -19,6 +19,13 @@ about:
     sa iba't-ibang bahagi ng mundo.
   slopemap: Ipinapakita ng mapa na ito ang mga markadong ruta sa winter sport slopes
     sa iba't-ibang bahagi ng mundo.
+  osm: Naka-overlay ang mga ruta sa isang standard na OpenStreetMal at pwedeng magkaroon
+    ng layer na hillshading. Gine-generate ang mapa ng ruta nula sa data mula sa proyektong
+    [OpenStreetMap](https://www.openstreetmap.org) (OSM). Ang OSM ay isang mae-edit
+    na pandaigdigang mapa kung saan pwedeng sumali ang kahit sino. Ibig sabihin, hindi
+    ito dapat ituring na kumpleto, pero ibig sabihin din na pwede ka ring mag-ambag
+    ng mga bagong ruta at magtama ng mga mali sa mga rutang nakalagay na rito. Para
+    matuto pa tungkol sa OpenStreetMap, tingnan ang [Beginner's guide](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
 rendering:
   title: Paghaharap ng dato ng OSM
   classification: Ang klasipikasyon (at kung gayon ang kulay ng ruta na nasa loob
