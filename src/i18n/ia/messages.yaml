@@ -15,7 +15,7 @@ details:
   KML: KML
   altitude: Altitude
   image: Imagine
-  mapped_len: Distantia in carta
+  mapped_len: Distantia sur carta
   note: Nota
   official_len: Distantia official
   operator: Operator
@@ -35,7 +35,7 @@ details:
     wayset: Insimul de vias
   website: Sito web
   wikipedia: Wikipedia
-  zoom_to: Monstrar in carta
+  zoom_to: Monstrar sur carta
 elevation:
   ascent: Ascension accumulate
   descent: Descension accumulate
