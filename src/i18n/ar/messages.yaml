@@ -34,6 +34,7 @@ details:
     value: قيمة
   type:
     guidepost: دليل
+    node: عقدة
     relation: علاقة
     way: طريق
   website: موقع الويب
@@ -99,6 +100,7 @@ site_title:
   cycling: ركوب الدراجات
   hiking: المشي لمسافات طويلة
   mtb: الدراجات الجبلية
+  osmc_symbol: وسم osmc:symbol
   riding: ركوب الخيل
   skating: التزلج على العجلات
   slopes: منحدرات الرياضات الشتوية
