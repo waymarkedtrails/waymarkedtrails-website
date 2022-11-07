@@ -25,6 +25,7 @@ details:
   note: ملاحظة
   official_len: الطول الرسمي
   operator: العامل
+  route_symbol: رمز الطريق
   subroutes_title: الأقسام
   superroutes_title: جزء من
   symbol: رمز
@@ -37,6 +38,7 @@ details:
     node: عقدة
     relation: علاقة
     way: طريق
+    wayset: Wayset
   website: موقع الويب
   wikipedia: ويكيبيديا
   zoom_to: أظهر على الخريطة
@@ -60,10 +62,17 @@ headline:
 help: معلومات عن الخريطة
 locate_me: حدد موقعي
 network:
+  continental: الطرق القارية
   downhill: انحدار
+  national: الطرق الوطنية
   node: اتصالات شبكة العقدة
+  nordic: التزلج الشمالي
   other: طرق أخرى
+  regional: الطرق الإقليمية
   skitour: جولات تزلج
+  sled: زلاجة زلاجة
+  sleigh: مزلقة الزلاجة
+  winter_hike: المشي لمسافات طويلة في فصل الشتاء
 osmc_symbol:
   back: رجوع
   background: الخلفية تعمل بطريقة مماثلة، كما تتكون من لون وشكل، قد تكون الخلفية أيضا
@@ -88,6 +97,8 @@ search:
   places: أماكن
   routes: الطرق
   title: بحث
+  help: الرجاء استخدام الكلمات الرئيسية للبحث مع. يمكنك البحث عن أسماء الممرات (مثل
+    Appalachian Trail و E2) أو الأماكن (مثل برلين).
 settings:
   base_map: الخريطة الأساسية
   browser_language: استخدم إعدادات المتصفح
@@ -96,6 +107,14 @@ settings:
   route_layer: طبقة الطريق
   title: إعدادات الخريطة
   transparency: شفافية الخريطة
+site_description:
+  cycling: طرق ركوب الدراجات المحلية والطويلة ، مع خرائط ومعلومات من OpenStreetMap.
+  hiking: طرق التنزه والمشي المحلية والطويلة ، مع الخرائط والمعلومات من OpenStreetMap.
+  mtb: طرق ركوب الدراجات الجبلية (MTB) ، مع خرائط ومعلومات من OpenStreetMap.
+  riding: طرق ركوب الخيل ، مع الخرائط والمعلومات من OpenStreetMap.
+  skating: طرق التزلج المضمنة ، مع الخرائط والمعلومات من OpenStreetMap.
+  slopes: منحدرات الرياضات الشتوية ، والتزلج على المنحدرات ، والتزلج الريفي على الثلج
+    ، والمشي الشتوي ، مع خرائط ومعلومات من OpenStreetMap.
 site_title:
   cycling: ركوب الدراجات
   hiking: المشي لمسافات طويلة

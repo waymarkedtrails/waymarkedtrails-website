@@ -9,22 +9,36 @@
 # Author: Shirayuki
 ---
 attribution:
-  data: Podatki zemljevida  © [OpenStreetMap](https://www.openstreetmap.org) pod [ODbL](https://www.openstreetmap.org/copyright).
+  data: Podatki zemljevida © [OpenStreetMap](https://www.openstreetmap.org) pod [ODbL](https://www.openstreetmap.org/copyright).
   elevation_title: višinski podatki [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Več podrobnosti
-  title: Destinacije
+  no_data: Za ta kažipot niso na voljo nobene informacije o cilju.
+  title: Cilji
 details:
+  GPX: GPX
+  KML: KML
   altitude: Nadmorska višina
-  mapped_len: Prikazano na zemljevidu
+  image: Slika
+  mapped_len: Kartografska dolžina
   note: Opomba
   official_len: Uradna dolžina
   operator: Upravljavec
+  route_symbol: Simbol poti
   subroutes_title: Odseki
   superroutes_title: Del
+  symbol: Simbol
   tags:
-    title: OpenStreetMap oznake
-  website: Spletna stran
+    key: ključ
+    title: Značke OpenStreetMap
+    value: vrednost
+  type:
+    guidepost: Kažipot
+    node: Vozlišče
+    relation: Zveza
+    way: Pot
+    wayset: Nabor poti
+  website: Spletno mesto
   wikipedia: Wikipedija
   zoom_to: Prikaži na zemljevidu
 elevation:
@@ -34,37 +48,82 @@ elevation:
     altitude: Nadmorska višina (m)
     distance: Razdalja (km)
   title: Višinski profil
+  total: Skupni vzpon/spust
+  unavailable: Ni najdenih podatkov o nadmorski višini.
+  warn_unsorted: Pot je morda neurejena ali nepopolna. Informacije o nadmorski višini
+    so morda netočne.
 error:
+  load_error: Napaka pri povezovanju s strežnikom.
+  missing_id: Manjka parameter »id«.
+  missing_query: Manjka parameter »query«.
   panel_title: Napaka
 headline:
   last_update: Zadnja posodobitev
 help: O zemljevidu
-locate_me: Poiščite me
+locate_me: Poišči me
 network:
-  downhill: Navzdol
+  continental: Celinske poti
+  downhill: Spust
+  national: Nacionalne poti
+  node: Povezave mreže vozlišč
+  nordic: Nordijsko smučanje
+  other: Druge poti
+  regional: Regionalne poti
+  skitour: Smučarske ture
+  sled: Steza za bob
+  sleigh: Sankaška steza
+  winter_hike: Zimsko pohodništvo
 osmc_symbol:
   back: Nazaj
+  background: Ozadje deluje na podoben način. Sestavljeno je tudi iz barve in oblike.
+    Ozadje je lahko tudi samo ime barve, kar ima za posledico platno izbrane barve.
+    To je prikazano v prvi vrstici.
   background_heading: Ozadje
-  examples: Primeri
+  examples: Zgledi
+  foreground: Simbol v ospredju je sestavljen iz barve in oblike, ki sta povezani
+    s podčrtajem. Spodnja tabela prikazuje vse kombinacije, ki jih prepozna to spletno
+    mesto. Prepozna tudi ospredja, ki so sestavljena samo iz imena oblike. Simboli
+    zanje so prikazani v zadnjem stolpcu.
   foreground_heading: Ospredje
+  preview: |-
+    V spodnje vnosno polje vnesite vrednost osmc:symbol,
+         da vidite, kako bo upodobljeno na zemljevidu.
   preview_heading: Predogled
 routelist:
+  loading: Nalaganje ...
   close: Zapri
+  more: Povečajte, če želite videti več poti.
+  rollup: Zavihaj
   title: Poti
 search:
+  places: Kraji
   routes: Poti
   title: Iskanje
+  help: Za iskanje uporabite ključne besede. Iščete lahko po imenih poti (npr. Apalaška
+    pot, E2) ali krajev (npr. Berlin).
 settings:
   base_map: Osnovni zemljevid
-  hillshading_layer: Senčenje hribov
+  browser_language: Uporabi nastavitve brskalnika
+  hillshading_layer: Senčenje vzpetin
   language: Jezik
-  route_layer: Plast poti
+  route_layer: Sloj poti
   title: Nastavitve zemljevida
-  transparency: Prozornost zemljevida
+  transparency: Prosojnost zemljevida
+site_description:
+  cycling: Lokalne in dolge kolesarske poti z zemljevidi in informacijami iz OpenStreetMap.
+  hiking: Lokalne in dolge pohodniške in sprehajalne poti z zemljevidi in informacijami
+    iz OpenStreetMap.
+  mtb: Gorskokolesarske poti (MTB) z zemljevidi in informacijami iz OpenStreetMap.
+  riding: Jahalne poti z zemljevidi in informacijami iz OpenStreetMap.
+  skating: Poti za rolanje z zemljevidi in informacijami iz OpenStreetMap.
+  slopes: Zimske športne proge, spustno smučanje, tek na smučeh, zimska hoja, z zemljevidi
+    in informacijami iz OpenStreetMap.
 site_title:
   cycling: Kolesarjenje
   hiking: Planinarjenje
   mtb: Gorsko kolesarjenje
+  osmc_symbol: Značka osmc:symbol
   riding: Jahanje konjev
   skating: Rolanje
+  slopes: Zimske športne proge
 ...
