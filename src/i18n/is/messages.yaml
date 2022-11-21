@@ -87,6 +87,7 @@ osmc_symbol:
          til að sjá hvernig það mun birtast á korti.
   preview_heading: Forskoðun
 routelist:
+  loading: Hleð inn...
   close: Loka
   more: Renndu að til að sjá fleiri leiðir.
   rollup: Rúlla upp
@@ -95,6 +96,8 @@ search:
   places: Staðir
   routes: Leiðir
   title: Leit
+  help: Notaðu stikkorð til að leita með. Hægt er að leita að nöfnum á gönguleiðum
+    (t.d. Appalachian Trail, E2) eða stöðum (t.d. Berlín).
 settings:
   base_map: Grunnkort
   browser_language: Nota stillingar vafra

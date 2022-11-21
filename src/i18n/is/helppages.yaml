@@ -17,6 +17,92 @@ about:
     en það þýðir líka að þú getur sett inn nýjar leiðir og leiðrétt mistök sem þú finnur í fyrirliggjandi leiðum. Til að læra meira um OpenStreetMap, ættirðu t.d. að skoða [leiðbeiningar fyrir byrjendur](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
 rendering:
   title: Myndgerð OSM-gagna
+  hikingroutes: |-
+    Gönguleiðir í OSM þarf að setja inn sem vensl. Hvernig það virkar
+    er lýst nánar á merkingasíðunni sem tengist
+    [gönguleiðum](https://wiki.openstreetmap.org/wiki/Walking_Routes)
+    á OSM-wikinu. Þetta kort birtir vensl sem hafa að minnsta kosti
+    eftirfarandi merki:
+
+        type = route|superroute
+        route = foot|walking|hiking
+  cyclingroutes: |-
+    Hjólaleiðir í OSM þarf að setja inn sem vensl. Hvernig það virkar
+    er lýst nánar á merkingasíðunni sem tengist
+    [hjólaleiðum](https://wiki.openstreetmap.org/wiki/Cycle_Routes)
+    á OSM-wikinu. Þetta kort birtir vensl sem hafa að minnsta kosti
+    eftirfarandi merki:
+
+        type = route|superroute
+        route = bicycle
+
+    Fjallahjólaleiðir eru birtar á sérstöku [MTB-landakorti](https://mtb.waymarkedtrails.org).
+  mtbroutes: |-
+    Fjallahjólaleiðir fylgja sama merkingarkerfi og hjólaleiðir
+    sem lýst er ítarlega á OSM wiki síðunni um
+    [hjólaleiðir](https://wiki.openstreetmap.org/wiki/Cycle_routes).
+    Vensl sem hafa eftirfarandi merki eru viðurkennd sem MTB-leiðir:
+
+     type = route|superroute
+     route = mtb
+
+    Venjulegar hjólaleiðir eru birtar á [hjólakortinu](https://cycling.waymarkedtrails.org).
+  skatingroutes: |-
+    Stikaðar línuskautaleiðir ættu að vera merktar eins og öll önnur leiðavensl.
+    Til að þetta kort skilji merkingarnar, skaltu skoða wiki-síðuna um
+    [Svissneskar línuskautaleiðir](https://wiki.openstreetmap .org/wiki/Switzerland/InlineNetwork).
+    Til að vera viðurkennt sem línuskautaleið þurfa eftirfarandi merki að vera til staðar:
+
+        type = route|superroute
+        route = inline_skates
+  ridingroutes: |-
+    Stikaðar reiðleiðir ættu að vera merktar eins og öll önnur leiðavensl.
+    Fyrir nánari upplýsingar má skoða [leiðarsíðuna á OSM-wikinu](https://wiki.openstreetmap.org/wiki/Relation:route).!N !Til að vera viðurkennt sem reiðleið þurfa eftirfarandi merki að vera til staðar:
+
+        type = route|superroute
+        route = horse
+  sloperoutes: |-
+    Stikaðar rennslisleiðir eru brautir með piste:type merkjum.
+    Til að vera þekkt sem rennslisleið, verða eftirfarandi merki að vera til staðar:
+
+        piste:type = downhill|nordic|sled|hike|sleigh
+
+    Firir venslin, verða eftirfarandi merki að vera til staðar:
+
+        type = route|superroute
+        route = ski|piste
+        piste:type = downhill|nordic|sled|hike|sleigh
+  slopeclassification: "Flokkun skíðabrekka (brekka niður) er ákvörðuð út \nfrá merkinu
+    `piste:difficulty` og er notað\n til að velja lit í myndgerð."
+  classification: "'route'-merki með mörgum gildum eru studd þegar þau eru aðskilin
+    með \nsemíkommu án nokkurra aðliggjandi bila.\nFlokkunin (og þar af leiðandi litur
+    leiðarinnar á kortinu) er\nákvörðuð út frá 'network'-merkinu."
+  slopemaplabels: |-
+    Merking fyrir skíðaleiðir (niður brekkur) er gerð með því að "giska á" út frá merkjunum í eftirfarandi röð:
+
+    1. Ef `piste:ref`-merki er til, er búin til textamerking með `piste:ref`-merki.
+    2. Ef `piste:name`-merki er til, er afleidd tilvísun út frá því, fyrst með því að nota
+     aðeins hástafi og ef það tekst ekki með því að nota fyrstu stafina
+     í nafninu.
+    3. Ef `ref`-merki er til, er búin til textamerking með `ref`-merki.
+    4. Ef þetta eru vensl og `name`-merki er til staðar, er afleidd tilvísun út frá því,
+      fyrst með því að nota aðeins hástafi og ef það tekst ekki með því að nota fyrstu
+      stafina í nafninu.
+    5. Gefast upp.
+
+    Gönguskíðaleiðir eru merktar með tákni sem sýnir bara lit þeirra, ef litamerki er til staðar.
+  hikinglabels: "Merking fyrir hverja leið er gerð með því að \"giska á\" út frá merkjunum
+    í eftirfarandi röð:\n\n1. Athugað með [staðfærðar myndgerðarreglur](#help-hikinglocal).\n2.
+    Reynt að túlka `osmc:symbol`-merkið. Til að sjá nánar hvaða hlutar\n   skiljist,
+    skoðaðu [osmc:symbol myndgerðarreglur](osmc_symbols.html).\n3. Ef `ref`-merki
+    er til, er gerð textamerking með `ref`-merki.\n4. Ef `name`-merki er til, er afleidd
+    tilvísun frá því, fyrst með því að nota \n   aðeins hástafi og ef það tekst ekki
+    með því að nota fyrstu\n   stafina í nafninu.\n5. Gefast upp."
+  labels: "Merking fyrir hverja leið er gerð með því að \"giska á\" út frá merkjunum
+    í eftirfarandi röð:\n\n1. Ef `ref`-merki er til, er gerð textamerking með `ref`-merki.\n2.
+    Ef `name`-merki er til, er afleidd tilvísun frá því, fyrst með því að nota \n
+    \  aðeins hástafi og ef það tekst ekki með því að nota fyrstu\n   stafina í nafninu.\n3.
+    Gefast upp."
   hierarchy: Kortið styður einnig [stigskipan vensla](#help-hierarchies).
   guideposts: |-
     [Leiðsögustaura](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
@@ -30,6 +116,23 @@ rendering:
     `tourism` og `information` eru nauðsynleg. `name` og `ele` má sleppa.
 hierarchies:
   title: Stigskipan vensla
+  text: "Landakortið styður einnig földuð vensl (nested relations), það eru vensl
+    sem \ninnihalda sjálf vensl. Slík stigveldi (hierarchies) eru notuð á tvo mismunandi
+    vegu\ní OSM gagnagrunninum: þau eru annað hvort notuð til að skipta upp mjög löngum
+    leiðum\n(t.d. [E1](https://hiking.waymarkedtrails.org/#route?id= 36367)) eða þau
+    eru notuð\ntil að forðast tvítekna vinnu þar sem tvær leiðir liggja sömu leið
+    (sjá\ntil dæmis svissnesku [ViaFrancigena](https://hiking.waymarkedtrails.org/#route?id
+    =124582)\nsem er hluti af evrópsku [Via Francigena](https://hiking.waymarkedtrails.org/#route?id=11860709)
+    leiðinni).\nÍ fyrra tilvikinu eru undirvenslin ekki fullgerðar leiðir\nsem slík
+    og ætti því ekki að sýna sjálfstætt á kortinu.\n\nHvernig undirvensl er nákvæmlega
+    meðhöndluð af myndgerðinni fer svo eftir\n`network`-merkinu:\n\n* Ef vensl forvera
+    og afleiðu deila sama `network`-merkinu, er gert \n  ráð fyrir að afleiðuvenslin
+    séu aðeins hluti af forveravenslum. \n  Þannig er leið þeirra bætt við forveravenslin
+    og afleiðuvenslin þá \n  ekki birt á kortinu.\n* Ef `network`-merki á forvera-
+    og afleiðuvenslum er annað, er\n  gert ráð fyrir að venslin séu óháð. Leið afleiðuvenslann\n
+    \ er bætt við forvera og bæði venslin þá birt á kortinu.\n\n*Athugaðu:* þú getur
+    alltaf skoðað undirvensl í gegnum leiðavafra. Veldu einfaldlega forveravenslin
+    og mun þá birtast veljanlegur listi yfir undirvensl þeirra."
 osmc:
   title: Merkingin osmc:symbol
   text: |-
@@ -45,22 +148,108 @@ hikinglocal:
     Í heiminum eru í notkun eru mörg mismunandi kerfi til að skilgreina göngileiðir. Þrátt fyrir að reynt sé að láta þetta kort nota algengustu og almennustu merkingarnar svo að myndgerð leiðanna verði ásættanleg, þá er sú tilraun dæmd til að mistakast í sumum kerfum, sérstaklega þar sem um net gönguleiða er að ræða. Til að hægt sé að ráða við slík kerfi, er hægt að staðfæra kortið fyrir þau svæði sem stöðluð framsetning gengur ekki upp.
 
     Hér fyrir neðan er listi yfir svæði sem nota sérstök kortatákn. Til þess að láta héraðið þitt verða myndgert á einhvern ákveðinn hátt, ættirðu að lesa ábendingarnar neðst á síðunni.
+  swiss: |-
+    ## Sviss
+
+    Sviss er með umfangsmikið net merktra gönguleiða sem nær yfir
+    allt landið. Netið er hnútanet þar sem nefndir vegprestarar virka
+    sem hnútar. Allar leiðir eru kerfisbundið merktar eftir erfiðleikastigi þeirra.
+    Kortið sýnir þessar leiðir í rauðu með línumynstri sem táknar erfiðleikastig
+
+    * ![red line](route_std.png) *göngustígur*, merkt með ![diamond](yellow_diamond.svg). Merkt með `network=lwn` og `osmc:symbol=yellow:[...]`.
+    * ![dashed line](route_mnt.png) *fjallastígur*, merktur með ![white-red-white](white_red_bar.svg). Merkt með `network=lwn` og `osmc:symbol=red:[...]`.
+    * ![dotted line](route_alp.png) *alpastígur*, merktur með ![white-blue-white ](white_blue_bar.svg). Merkt með `network=lwn` og `osmc:symbol=blue:[...]`.
+
+    Athugaðu að ofan á þessu neti eru nokkrar lands- og svæðisleiðir sem eru birtar á venjulegan hátt.
+
+    Nánari upplýsingar um merkingu gönguleiða í Sviss á OSM má skoða á:
+    [Svissneska gönguleiðaneti](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  italy: |-
+    ## Ítalía
+
+    Ítalski alpaklúbburinn (CAI) heldur úti neti fjallastíga
+    sem flokkast eftir erfiðleikum svipað og gildir í Sviss.
+    Leiðir merktar með 'network=lwn', 'osmc:symbol=red:..' og 'cai_scale'
+    merki verða viðurkennd sem leiðir viðhaldið af CAI og birtast sem rauðar línur
+    út frá erfiðleikastigi þeirra.
+
+    * ![red line](route_std.png) cai_scale=T
+    * ![dashed line](route_mnt1.png) cai_scale=E
+    * ![dashed line](route_mnt2.png) cai_scale=EE
+    * ![dotted line](route_alp.png) cai_scale=EEA*
+  uk: |-
+    ## Bretland
+
+    Flokkun á [lengri leiðum á Bretlandi](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
+    (þær sem merktar eru með 'network=uk_ldp') fer eftir 'operator'-merkinu. Vensl
+    við 'operator=National Trails' eru sýnd sem landsleiðir, öll önnur vensl
+    birtast sem svæðisleiðir.
+
+    Vensl með 'network=lwn/rwn/nwn/iwn'-merki eru meðhöndluð eins og venjulega.
+  czech: |-
+    ## Tékkland
+
+    Landið notar leiðamerkingastaðal sem byggir á setti af 7 táknum í 4 mismunandi
+    litum. Sjá lýsingu á [tékknesku merkingasíðunni](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (einungis tékkneska).
+
+    Þegar `kct_*`-merkið er tiltækt, er það valið fram yfir hvaða `osmc:symbol`-merki sem er.
+    Auk þess er leiðin endurflokkuð ef ekkert gilt `network`-merki finnst. Leiðir
+    með `kct_red=major` verða landsleiðir, önnur `kct_*=major`-merki flokkast sem
+    svæðisleiðir.
+  slovakia: |-
+    ## Slóvakía
+
+    Slóvakía notar sama leiðamerkingarstaðal og Tékkland. Hins vegar er
+    merkingakerfið lítillega frábrugðið, eins og sjá má á [slóvakísku gönguleiðasíðunni](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+
+    Allar leiðir með merkinu `operator=KST` eru merktar samkvæmt því kerfi. Þar sem
+    leiðir í Slóvakíu ættu að vera með gilt `network`-merki, er engin
+    endurflokkun framkvæmd.
+  hungary: |-
+    ## Ungverjaland
+
+    Ungverjaland notar einnig kerfi með föstu setti af táknum í mismunandi litum. Leiðisnar
+    eru merktar með sínu eigin merki [jel](https://wiki.openstreetmap.org/wiki/Key:jel).
+    Merkið er tekið fram yfir hvaða 'osmc:symbol'-merki sem er.
+  germany: |-
+    ## Þýskaland
+
+    ### Fränkischer Albverein
+
+    Leiðanetið í kringum Nürnberg er nokkuð þétt, því munu svæðisleiðir merktar
+    með 'operator=Fränkischer Albverein' birtast á lægri aðdráttarstigum en venjulega .
+  ukcycle: |-
+    ## Bretland
+
+    ### Norwich
+
+    Norwich notar kerfi litakóðaða leiða. Leiðir merktar með
+    'operator=Norwich City Council' eru merktar með lituðum ferningi samkvæmt
+    við 'colour'-merkinu.
 elevationprofiles:
   title: Hæðarsnið
+  general: |-
+    Hæðarsniðin eru gerð með hæðargögnum frá [ASTER alþjóðlega stafræna hæðarlíkaninu (GDEM) útgáfu 2](https://asterweb.jpl.nasa.gov/gdem.asp), ekki er tekið tillit til 'ele'-merkisins í OpenStreetMap, né gangna eða brúa. ASTER GDEM er gert af METI og NASA.
+
+    Ef leiðin hefur fleiri en tvo endapunkta eða samanstendur af fleiri en einum hluta verður ekkert snið birt. Stefna sniðsins fylgir leiðinni vest-austur eða norður-suður. Ef leiðir væru með einingar með hlutverkum eins og „byrjun“ og „mark“ og/eða væru skráðar stöðugt frá upphafi til marks, gætum við getað ákvarðað stefnu út frá sjálfum leiðavenslunum. Þú gætir viljað hafa þetta í huga ef þú kortleggur leiðir á OpenStreetMap.
+
+    Það eru holur, svokölluð "voids" sem við höfum engin hæðargögn fyrir, þau eru sýnd með holum í hæðarsniðslínunni.
+
+    Gættu þess að þó að ASTER útgáfa 2 sé líklega besta ókeypis alþjóðlega stafræna hæðalíkanið (DEM - Digital elevation model), hefur það sínar takmarkanir bæði hvað varðar nákvæmni og umfang, sjá [samantektarskýrslu um sannvottun](https://www.jspacesystems.or) .jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) fyrir frekari upplýsingar. Ónákvæmni eykst enn frekar vegna ónákvæmni OSM-gagna, [sléttunartækninnar](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a) sem við beitum og þess að upplausnin sem við notum verður minni eftir því sem leiðin er lengri.
 technical:
   title: Tæknileg atriði
   general: "Leiðayfirlagið er uppfært á mínútu fresti og er venjulega 2-5 mínútur
     á eftir\nOSM-þjóninum. Dagsetningin og tíminn efst í vinstra horninu sýnir hvenær
-    síðasta uppfærsla átti sér stað. Uppfærslur á undirliggjandi Mapnik-landakorti
+    \nsíðasta uppfærsla átti sér stað. Uppfærslur á undirliggjandi Mapnik-landakorti
     \neru ekki undir stjórn þessa vefsvæðis. Það fer eftir álaginu á OSM-þjóninn,
-    en töf á uppfærslu þess getur allt frá mínútu og að nokkrum dögum.\n\nVélin keyrir
-    staðlaða [Debian Linux](https://www.debian.org/) dreifingu með verkfæralínu sem
-    samanstendur af [pyosmium](http://osmcode.org/pyosmium/),\n[Postgresql](http://www.postgresql.org)
-    og [Mapnik 2.0](http://www.mapnik.org).\n[osgende](https://github.com/waymarkedtrails/osgende)
-    sér um nokkra eftirvinnslu á gagnagrunni áður en myndgerð fer fram. Vefsvæðinu
-    er mokað út með\n[CherryPy](http://cherrypy.org/). Grunnkóðinn er tiltækur með
-    GPL-notkunarleyfi. Til að fræðast nánar er hægt að skoða [síðu verkefnisins á
-    GitHub](https://github.com/waymarkedtrails/waymarked-trails-site)."
+    en \ntöf á uppfærslu þess getur allt frá mínútu og að nokkrum klukkustundum.\n\nGrunnkóðinn
+    er tiltækur með GPL-notkunarleyfi og skiptist á nokkur hugbúnaðarsöfn:\n* [kóði
+    bakenda og kortagerðar](https://github.com/waymarkedtrails/waymarkedtrails-backend/)\n*
+    [API-þjónusta](https://github.com/waymarkedtrails/waymarkedtrails-api/)\n* [viðmót
+    vefsvæðis](https://github.com/waymarkedtrails/waymarkedtrails-website/)\n\nEf
+    þú vilt bara tilkynna villu eða ræða eiginleika vefsvæðisins,þú getur notað [verkbeiðnakerfið](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
+    \neða [umræður](https://github.com/waymarkedtrails/waymarked-trails-site /umræður)
+    tengdar hugbúnaðarsafni verkefnisins á Github."
   translation: |-
     ## Þýðingar
 
