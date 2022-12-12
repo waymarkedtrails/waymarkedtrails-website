@@ -254,14 +254,14 @@ technical:
     za strežnikom\nOSM. Zadnjo posodobitev prikazuje datum v zgornjem levem kotu.
     Posodobitve osnovnega zemljevida Mapnik niso pod nadzorom tega spletnega mesta.
     Odvisno od trenutne obremenitve strežnika OSM trajajo\nmed minuto in nekaj urami.\n\nIzvorna
-    koda za to spletno mesto je na voljo pod licenco GPL in je\nrazdeljena v več repozitorijih:\n*
+    koda za to spletno mesto je na voljo pod licenco GPL in je\nrazdeljena v več shrambah:\n*
     [zaledna koda in generiranje zemljevidov](https://github.com/waymarkedtrails/waymarkedtrails-backend/)\n*
     [API-storitev](https://github.com/waymarkedtrails/waymarkedtrails-api/) \n* [obličje
     spletnega mesta](https://github.com/waymarkedtrails/waymarkedtrails-website/)\n\nČe
     želite samo prijaviti napako ali razpravljati o možnostih spletnega mesta,\nlahko
     uporabite [sledilnik težav](https://github.com/waymarkedtrails/waymarked-trails-site/issues)\nali
     [možnost za razpravljanje](https://github.com/waymarkedtrails/waymarked-trails-site
-    /razprave) repozitorija projekta v Githubu."
+    /razprave) shrambe projekta v Githubu."
   translation: |-
     ## Prevodi
 

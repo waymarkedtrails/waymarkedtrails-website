@@ -11,6 +11,7 @@
 # Author: VegaDark
 # Author: Vivaelcelta
 # Author: Xuacu
+# Author: Yel Martinez Seo
 ---
 attribution:
   data: Datos cartográficos © de [OpenStreetMap](https://www.openstreetmap.org), disponibles
@@ -18,6 +19,7 @@ attribution:
   elevation_title: datos de altitud por [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Más detalles
+  no_data: No hay información de destino disponible para este punto de referencia.
   title: Destinos
 details:
   GPX: GPX
@@ -28,10 +30,20 @@ details:
   note: Nota
   official_len: Distancia oficial
   operator: Operador
+  route_symbol: Símbolo de ruta
   subroutes_title: Secciones
   superroutes_title: Parte de
+  symbol: Símbolo
   tags:
+    key: llave
     title: Etiquetas de OpenStreetMap
+    value: valor
+  type:
+    guidepost: poste indicador
+    node: Nodo
+    relation: Relación
+    way: Vía
+    wayset: Establecer ruta
   website: Sitio web
   wikipedia: Wikipedia
   zoom_to: Mostrar en el mapa
@@ -42,19 +54,31 @@ elevation:
     altitude: Altitud (m)
     distance: Distancia (km)
   title: Perfil de altitud
+  total: Ascenso/descenso total
   unavailable: No se encontró datos de elevación
   warn_unsorted: La ruta es potencialmente desordenada o incompleta. La información
     de altitud podría ser inexacta.
 error:
   load_error: Error de conexión al servidor.
+  missing_id: Falta el parámetro 'id'.
+  missing_query: Falta el parámetro 'consulta'.
   panel_title: Error
 headline:
   last_update: Última actualización
 help: Acerca del mapa
 locate_me: Localizarme
 network:
+  continental: rutas continentales
   downhill: descenso
-  node: conexiones de red por nodo
+  national: rutas nacionales
+  node: Conexiones de red de nodos
+  nordic: Esquí nórdico
+  other: Otras rutas
+  regional: Rutas regionales
+  skitour: Excursiones de esquí
+  sled: pista de trineo
+  sleigh: pista de trineo
+  winter_hike: Senderismo invernal
 osmc_symbol:
   back: Volver
   background: El fondo funciona de manera similar. También contiene un color y una
@@ -71,12 +95,17 @@ osmc_symbol:
     en el mapa.
   preview_heading: Previsualizar
 routelist:
+  loading: Cargando...
   close: Cerrar
+  more: Haz zoom para ver más rutas.
   rollup: Contraer
   title: Rutas
 search:
+  places: Lugares
   routes: Rutas
   title: Buscar
+  help: Utilice palabras clave para la búsqueda. Puede buscar por nombres de senderos
+    (por ejemplo, Sendero de los Apalaches, E2) o lugares (por ejemplo, Berlín).
 settings:
   base_map: Mapa base
   browser_language: Usar la configuración del navegador
@@ -85,10 +114,21 @@ settings:
   route_layer: Capa de rutas
   title: Opciones del mapa
   transparency: Transparencia del mapa
+site_description:
+  cycling: Rutas ciclistas locales y de largo recorrido, con mapas e información de
+    OpenStreetMap.
+  hiking: Rutas de senderismo locales y de larga distancia, con mapas e información
+    de OpenStreetMap.
+  mtb: Rutas de bicicleta de montaña (BTT), con mapas e información de OpenStreetMap.
+  riding: Rutas a caballo, con mapas e información de OpenStreetMap.
+  skating: Rutas de patinaje en línea, con mapas e información de OpenStreetMap.
+  slopes: Pistas de deportes de invierno, esquí alpino, patinaje de fondo, senderismo
+    invernal, con mapas e información de OpenStreetMap.
 site_title:
   cycling: Ciclismo
   hiking: Senderismo
   mtb: MTB
+  osmc_symbol: Etiqueta osmc:symbol
   riding: Equitación
   skating: Patín en línea
   slopes: Pistas para deportes de invierno
