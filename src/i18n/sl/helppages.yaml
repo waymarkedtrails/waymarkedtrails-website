@@ -245,17 +245,17 @@ elevationprofiles:
 
     Če ima pot več kot dve končni točki ali če je sestavljena iz več kot enega segmenta, profil ne bo upodobljen. Smer profila sledi trasi zahod–vzhod ali sever–jug. Če bi imele poti elemente z vlogami, kot sta »start« (začetek) in »goal« (cilj), in/ali če bi bile navedene neprekinjeno od začetka do cilja, bi morda lahko določili smer iz same zveze poti. To boste morda želeli imeti v mislih, če boste kartirali poti v OpenStreetMap.
 
-    Obstajajo vrzeli, tako imenovane »praznine«, za katere nimamo podatkov o nadmorski višini, te so prikazane s prekinitvami v črti višinskega profila.
+    Obstajajo vrzeli, tako imenovane »praznine«, za katere nimamo podatkov o nadmorski višini. Te so prikazane s prekinitvami v črti višinskega profila.
 
     Upoštevajte, da je različica ASTER 2 sicer verjetno najboljša prosta globalna DEM, vendar ima svoje omejitve tako glede natančnosti kot pokritosti; za več informacij glejte [poročilo o povzetku validacije](https://www.jspacesystems.or .jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf). Netočnosti so še večje zaradi netočnosti podatkov OSM, [tehnike mehčanja](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), ki jo uporabljamo, in ločljivosti profila, ki je tem manjša, čim daljša je pot.
 technical:
   title: Tehnični podatki
-  general: "Prekrivanje poti se posodablja vsako minuto in običajno zaostaja 2–5 minut
-    za strežnikom\nOSM. Zadnjo posodobitev prikazuje datum v zgornjem levem kotu.
-    Posodobitve osnovnega zemljevida Mapnik niso pod nadzorom tega spletnega mesta.
-    Odvisno od trenutne obremenitve strežnika OSM trajajo\nmed minuto in nekaj urami.\n\nIzvorna
-    koda za to spletno mesto je na voljo pod licenco GPL in je\nrazdeljena v več shrambah:\n*
-    [zaledna koda in generiranje zemljevidov](https://github.com/waymarkedtrails/waymarkedtrails-backend/)\n*
+  general: "Prekrivni sloj poti se posodablja vsako minuto in običajno zaostaja 2–5
+    minut za strežnikom\nOSM. Zadnjo posodobitev prikazuje datum v zgornjem levem
+    kotu. Posodobitve osnovnega zemljevida Mapnik niso pod nadzorom tega spletnega
+    mesta. Odvisno od trenutne obremenitve strežnika OSM trajajo\nmed minuto in nekaj
+    urami.\n\nIzvorna koda za to spletno mesto je na voljo pod licenco GPL in je\nrazdeljena
+    v več shrambah:\n* [zaledna koda in generiranje zemljevidov](https://github.com/waymarkedtrails/waymarkedtrails-backend/)\n*
     [API-storitev](https://github.com/waymarkedtrails/waymarkedtrails-api/) \n* [obličje
     spletnega mesta](https://github.com/waymarkedtrails/waymarkedtrails-website/)\n\nČe
     želite samo prijaviti napako ali razpravljati o možnostih spletnega mesta,\nlahko
@@ -277,9 +277,9 @@ legal:
     jih naprej uporabljate in spreminjate, če nastalo delo uporablja združljivo licenco\nter
     sta omenjena projekt OpenStreetMap in to spletno mesto."
   usage: |-
-    ## Politika uporabe
+    ## Pravilnik o uporabi
 
-    Sloj poti lahko uporabljate na drugih spletnih mestih, če so stopnje dostopa zmerne. Prosimo, čim pogosteje predpomnite ploščice in uporabite pravilno nastavljenega napotitelja. Masovni prenos ploščic je močno odsvetovan.
+    Ta prekrivni sloj lahko uporabljate na drugih spletnih mestih, če so stopnje dostopa zmerne. Prosimo, čim pogosteje predpomnite ploščice in uporabite pravilno nastavljenega napotitelja. Masovni prenos ploščic je močno odsvetovan.
 
     Obiskovalcem tega spletnega mesta so za priročnost na voljo sledi GPX. Masovni prenos ni dovoljen.
   disclaimer: |-

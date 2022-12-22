@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Minh Nguyen
+# Author: Nguyenphutrong2
 ---
 about:
   title: Giới thiệu về bản đồ
@@ -44,23 +45,28 @@ legal:
 acknowledgements:
   title: Ghi công
   text: |-
-    Tất cả các dữ liệu bản đồ do [OpenStreetMap và những người đóng góp](http://www.openstreetmap.org) cung cấp và được phát hành theo giấy phép ODbL. Lớp bản đồ gốc cũng do OSM cung cấp và được phát hành theo [giấy phép CC BY-SA 2.0](http://creativecommons.org/licenses/by-sa/2.0/deed.vi).
+    Tất cả dữ liệu bản đồ được cung cấp bởi [OpenStreetMap và những người đóng góp](https://www.openstreetmap.org)
+    và được phân phối theo giấy phép ODbL. Bản đồ cơ sở cũng được cung cấp bởi OSM.
+    Để biết thêm thông tin, hãy xem
+    [trang bản quyền OSM](https://www.openstreetmap.org/copyright).
 
-    Lớp đồi bóng và dữ liệu độ cao được tập hợp từ dữ liệu SRTM và ASTER GDEM.
-    ASTER GDEM là một sản phẩm của METI và NASA.
-    Yves Cainaud của [opensnowmap.org](http://opensnowmap.org) đã vui lòng thực hiện việc xử lý sau.
+    Dữ liệu độ cao và bóng đồi được tạo từ sự kết hợp dữ liệu SRTM và ASTER GDEM.
+    ASTER GDEM là sản phẩm của METI và NASA.
+    Quá trình xử lý hậu kỳ được cung cấp bởi Yves Cainaud từ [opensnowmap.org](https://opensnowmap.org ).
 
-    Lớp bóng đồi do [Hike & Bike Map](http://hikebikemap.de) đẹp đẽ cung cấp; nó dựa trên cơ sở dữ liệu SRTM3 v2 của NASA thuộc phạm vi công cộng.
+    Mã hồ sơ độ cao đã được phát triển bởi Espen Oldeman Lund với sự hợp tác giữa [Kresendo](https://www.kresendo.no) và dự án TG4NP tại [Viện nghiên cứu Tây Na Uy]( https://www.vestforsk.no).
 
-    Mã nguồn biểu đồ cao độ do Espen Oldeman Lund phát triển trong việc [Kresendo](http://www.kresendo.no) hợp tác với [dự án TG4NP](http://tg4np.eu) tại [Viện nghiên cứu Tây Na Uy](http://wwww.vestforsk.no).
+    Biến thể thể thao trượt dốc mùa đông đã được phát triển bởi Michael Spreng. Biểu tượng cưỡi ngựa là
+    do Robert Whittaker chuẩn bị.
 
-    Kiểu dốc thể thao mùa đông do Michael Spreng phát triển. Hình đi xe trượt tuyết do Robert Whittaker vẽ.
+    Các điểm đến trong bảng hướng dẫn do [Mueschelsoft] xử lý (http://osm.mueschelsoft.de/destinationsign/example/index.htm). Xin chân thành cảm ơn Jan Michel đã cung cấp dịch vụ.
 
-    Các địa điểm trên bảng hướng dẫn đến do [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm) xử lý. Chân thành cảm ơn Jan Michel đã cung cấp dịch vụ này.
-
-    Các bản dịch của trang này do [translatewiki.net và những người đóng góp](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators?uselang=vi) cung cấp. Cám ơn đặc biệt cho những người đi đầu biên dịch trước khi có thể sử dụng translatewiki.net: Yves Cainaud (tiếng Pháp), Oscar Formaggi (Ý), Gustavo [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (Tây Ban Nha), [Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (Na Uy, cả bokmål và nynorsk), Mads Lumholt/TG4NP (Đan Mạch), Magnús Smári Snorrason/TG4NP (Iceland), Lars Mikaelsson/TG4NP (Thụy Điển), and Elina Pesonen (Phần Lan).
-
-    Cuối cùng, máy chủ này có sẵn nhờ sự hỗ trợ hào phóng của [Martin Hoffmann](http://www.partim.de).
+    Bản dịch của trang web này được cung cấp bởi https://www.facebook.com/bach.nguyen.12327?mibextid=LQQJ4d
+    [ và global used:nguyenphutrong2](https://translatewiki.net/wiki/Category:nguyenphutrong2_dịch). Xin gửi lời cảm ơn đặc biệt tới những dịch giả tiên phong đã cung cấp bản dịch trước khi translatewiki.net: Nguyễn Xuân Bách (tiếng Việt), Yves Cainaud (tiếng Pháp),
+    Oscar Formaggi (tiếng Ý), Gustavo [Tuentibiker](https://www.blogger.com /profile/124735617036999888751) Ramis (tiếng Tây Ban Nha),
+    [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (tiếng Na Uy bokmål và nynorsk),
+    Mads Lumholt/TG4NP (tiếng Đan Mạch), Magnús Smári Snorrason/ TG4NP (Islandic),
+    Lars Mikaelsson/TG4NP (Thụy Điển) và Elina Pesonen (Phần Lan).
 contact:
   title: Liên lạc
   text: |-
