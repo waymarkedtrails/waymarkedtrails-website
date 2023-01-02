@@ -80,4 +80,69 @@ rendering:
   classification: |-
     Un etiquetta `route` con plure valores es supportate quando illos es separate per un puncto-e-virgula sin spatios circumferente.
     Le classification (e dunque le color del itinerario sur le carta) es determinate per le etiquetta `network`.
+  slopemaplabels: |-
+    Le etiquetta pro routes de ski (in descendita) es "divinate" a partir del tags in le sequente ordine:
+
+    1. Si un tag `piste:ref` existe, crear un etiquetta de texto con le tag
+       `piste:ref`.
+    2. Si un tag `piste:name` existe, derivar un referentia de illo, usante
+       solmente litteras majuscule o, si isto falle, usante le prime litteras
+       del nomine.
+    3. Si un tag `ref` existe, crear un etiquetta de texto con le tag `ref`.
+    4. Si illo es un relation e un tag `name` existe, derivar un referentia
+       de illo, usante solmente litteras majuscule o, si isto falle, usante
+       le prime litteras del nomine.
+    5. Abandonar.
+
+    Le pistas de ski nordic es marcate con un signo que solmente monstra lor color, si un tag de color es presente.
+  hikinglabels: |-
+    Le etiquetta pro cata route es "divinate" a partir del tags in le sequente ordine:
+
+    1. Verificar si existe [regulas de rendition localisate](#help-hikinglocal).
+    2. Tentar interpretar le tag `osmc:symbol`. Pro detalios sur qual partes
+       es comprendite, vide le [regulas de rendition de osmc:symbol](osmc_symbols.html).
+    3. Si un tag `ref` existe, facer un etiquetta de texto con le tag `ref`.
+    4. Si un tag `name` existe, derivar un referentia de illo, usante solmente
+       litteras majuscule o, si isto falle, usante le prime litteras del
+       nomine.
+    5. Abandonar.
+  labels: |-
+    Le etiquetta pro cata route es "divinate" a partir del tags in le sequente ordine:
+
+    1. Si un tag `ref` existe, facer un etiquetta de texto con le tag `ref`.
+    2. Si un tag `name` existe, derivar un referentia de illo, usante solmente
+       litteras majuscule o, si isto falle, usante le prime litteras del
+       nomine.
+    3. Abandonar.
+  hierarchy: Le carta etiam supporta [hierarchias de relation](#help-hierarchies).
+  guideposts: |-
+    [Pannellos indicator](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    es recognoscite per le sequente tags:
+
+        tourism=information
+        information=guidepost
+        name=<name>
+        ele=<altitude>
+
+    `tourism` e `information` es obligatori. `name` e `ele` pote esser omittite.
+hierarchies:
+  title: Hierarchias de relation
+  text: |-
+    Le carta supporta equalmente relationes annidate, i.e. relationes que contine relationes illos mesme. Iste hierarchias es usate in duo manieras differente in le base de datos OSM: illos es o usate pro divider routes multo longe (exemplo: [E1](https://hiking.waymarkedtrails.org/#route?id=36367)) o illos es usate pro evitar labor duplicate ubi duo routes recurre le mesme cammino (vide per exemplo, le suisse [ViaFrancigena](https://hiking.waymarkedtrails.org/#route?id=124582)
+    que es parte del [Via Francigena](https://hiking.waymarkedtrails.org/#route?id=11860709) europee). In le prime caso le sub-relationes non es routes complete illos mesme e pro isto non debe esser monstrate sur le carta independentemente.
+
+    Como exactemente un subrelation es tractate per le renditor depende del tag `network`:
+
+    * Si le relation genitor e le relation filio ha le mesme tag
+      `network`, le relation filio es considerate como solmente un stadio
+      del relation genitor. Assi, su route es addite al relation genitor
+      e le relation filio non es monstrate sur le carta.
+    * Si le tag `network' del relation genitor e le relation filio es
+      differente, le relationes se suppone de esser independente. Le route
+      del relation filio es addite al relation genitor e ambe relationes es
+      monstrate sur le carta.
+
+    *Nota*: tu pote sempre inspectar subrelationes via le navigator de routes. Simplemente selige le relation genitor e un lista seligibile de su subrelationes es monstrate.
+osmc:
+  title: Le tag osmc:symbol
 ...

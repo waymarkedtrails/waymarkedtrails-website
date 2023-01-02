@@ -94,6 +94,8 @@ search:
   places: Locos
   routes: Itinerarios
   title: Cercar
+  help: 'Per favor usa parolas-clave pro cercar. Tu pote cercar nomines de sentieros
+    (exemplo: Appalachian Trail, E2) o locos (exemplo: Berlin).'
 settings:
   base_map: Carta de base
   browser_language: Usar le configuration del navigator
