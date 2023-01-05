@@ -13,8 +13,8 @@ Installation
 ============
 
 The code is written in Javascript using [Svelte](https://svelte.dev/)
-using [rollup](https://rollupjs.org) and [yarn2](https://yarnpkg.com/)
-for package management.
+using [rollup 3](https://rollupjs.org) and [yarn2](https://yarnpkg.com/)
+for package management. Note that Roolup3 requires Node 14.18+ to run.
 
 If you only yarn1 ('classic yarn') available, you can bootstrap yourself
 into using the latest yarn2 with:
