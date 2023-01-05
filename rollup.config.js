@@ -8,6 +8,7 @@ import css from 'rollup-plugin-css-porter';
 import { terser } from '@chiogen/rollup-plugin-terser';
 import virtual from '@rollup/plugin-virtual';
 import marked from 'markdown-it';
+import { spawn } from 'child_process';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -36,7 +37,7 @@ function serve() {
 	return {
 		writeBundle() {
 			if (server) return;
-			server = require('child_process').spawn('yarn', ['start', '--', '--dev'], {
+			server = spawn('yarn', ['start', '--', '--dev'], {
 				stdio: ['ignore', 'inherit', 'inherit'],
 				shell: true
 			});
