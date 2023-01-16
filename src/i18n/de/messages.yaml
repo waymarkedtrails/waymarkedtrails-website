@@ -5,6 +5,7 @@
 # Author: ElBe
 # Author: Geitost
 # Author: JOE
+# Author: Justman10000
 # Author: Kghbln
 # Author: Lonvia
 # Author: Metalhead64
@@ -51,7 +52,7 @@ elevation:
     altitude: Höhe (m)
     distance: Entfernung (km)
   title: Höhenprofil
-  total: Gesamter Auf-/Abstieg
+  total: Gesamtaufstieg/-abstieg
   unavailable: Es wurden keine Höhendaten gefunden.
   warn_unsorted: Der Weg ist möglicherweise nicht sortiert oder unvollständig. Die
     Höheninformationen können ungenau sein.
@@ -94,6 +95,7 @@ osmc_symbol:
     um zu sehen, wie er auf der Karte dargestellt wird.
   preview_heading: Vorschau
 routelist:
+  loading: Laden...
   close: Schließen
   more: Vergrößere die Karte, um mehr Routen zu sehen.
   rollup: Aufrollen
@@ -102,6 +104,8 @@ search:
   places: Orte
   routes: Routen
   title: Suche
+  help: Bitte verwende Schlüsselwörter für die Suche. Du kannst nach Namen von Wanderwegen
+    (z.B. Appalachian Trail, E2) oder Orten (z.B. Berlin) suchen.
 settings:
   base_map: Basiskarte
   browser_language: Browsereinstellungen verwenden

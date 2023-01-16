@@ -145,4 +145,138 @@ hierarchies:
     *Nota*: tu pote sempre inspectar subrelationes via le navigator de routes. Simplemente selige le relation genitor e un lista seligibile de su subrelationes es monstrate.
 osmc:
   title: Le tag osmc:symbol
+  text: |-
+    Le etiquetta `osmc:symbol` forni un modo de describer in un modo legibile per machina symbolos de route in formas geometric simple como illos se trova in alcun paises europee (particularmente in Germania). Le carta solmente supporta un parte de lo que es describite sur le pagina wiki. Pro esser rendite sur le carta, le etiquetta debe haber le formato sequente:
+
+        osmc:symbol=waycolor:background:foreground:text:textcolor
+
+    `waycolor` debe esser presente ma es ignorate pro iste carta. Un secunde color de prime plano non es supportate. `text` e `textcolor` pote esser omittite.
+
+    Vide le pagina de etiquettas extra [osmc:symbol](osmc_symbols.html) pro un lista de symbolos supportate per Waymarked Trails.
+hikinglocal:
+  title: Rendition localisate
+  text: |-
+    Il ha multe systemas differente pro marcar sentieros de excursionismo in tote le mundo. Ben que le carta tenta usar le etiquettas le plus general pro dar un representation decente, illo pote non functionar pro certe systemas, particularmente pro retes de sentieros de excursionismo. Pro accommodar iste systemas, le carta pote esser localisate pro regiones ubi le rendition standard es insufficiente.
+
+    Infra es un lista de regiones que usa symbolos cartographic special. Pro haber tu proprie region rendite in un modo special, lege le consilios al fin del pagina.
+  swiss: |-
+    ## Suissa
+
+    Suissa ha un extense rete de sentieros de excursionismo marcate que coperi tote le pais. Le rete es un rete de nodos ubi le indicatores de direction nominate functiona como le nodos. Tote le sentieros es marcate consistentemente secundo lor difficultate. Le carta monstra iste sentieros in rubie, le patrono de linea marcante le difficultate.
+
+    * ![linea rubie](route_std.png) *sentiero de excursionismo*, marcate con ![diamante](yellow_diamond.svg). Etiquettate con `network=lwn` e `osmc:symbol=yellow:[...]`.
+    * ![linea a lineettas](route_mnt.png) *sentiero de montania*, marcate con ![blanc-rubie-blanc](white_red_bar.svg). Etiquettate con `network=lwn` e `osmc:symbol=red:[...]`.
+    * ![linea a punctos](route_alp.png) *sentiero alpin*, marcate con ![blanc-blau-blanc](white_blue_bar.svg). Etiquettate con `network=lwn` e `osmc:symbol=blue:[...]`.
+
+    Nota que ultra iste rete existe un numero de itinerarios national e regional que es monstrate in le modo normal.
+
+    Pro plus information sur le etiquettage de sentieros de excursionismo in Suissa in OSM, vide:
+    [rete suisse de excursionismo](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  italy: |-
+    ## Italia
+
+    Le Club Alpin Italian (CAI) mantene le rete de sentieros de montania que es classificate per difficultate similar a lo que existe in Suissa. Itinerarios marcate con `network=lwn`, `osmc:symbol=red:..` e un etiquetta `cai_scale` essera recognoscite como itinerarios mantenite per CAI e monstrate como lineas rubie secundo lor difficultate.
+
+    * ![linea rubie](route_std.png) cai_scale=T
+    * ![linea a lineettas](route_mnt1.png) cai_scale=E
+    * ![linea a lineettas](route_mnt2.png) cai_scale=EE
+    * ![linea a lineettas](route_alp.png) cai_scale=EEA*
+  uk: |-
+    ## Regno Unite
+
+    Le classification de [sentieros a longa distantia del RU](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) (illos etiquettate con `network=uk_ldp`) depende del etiquetta `operator`. Relationes con `operator=National Trails` es monstrate como itinerarios national, tote le altere relationes appare como itinerarios regional.
+
+    Relationes con un etiquetta `network=lwn/rwn/nwn/iwn` es gerite como de habitude.
+  czech: |-
+    ## Republica Chec
+
+    Le pais usa un standard de marcation de sentieros basate sur un insimul de 7 symbolos in 4 colores differente. Pro un description vide le [pagina de etiquettas chec](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (solmente in checo).
+
+    Quando un etiquetta `kct_*` es disponibile, illo es preferite a qualcunque etiquetta `osmc:symbol`. In addition, le itinerario es reclassificate si nulle etiquetta valide de rete pote esser trovate. Itinerarios con `kct_red=major` deveni itinerarios national, altere `kct_*=major` es classificate como regional.
+  slovakia: |-
+    ## Slovachia
+
+    Slovachia usa le mesme standard de marcation de sentieros como Republica Chec. Nonobstante, le schema de etiquettas es legiermente differente, vide le [pagina de excursionismo slovac](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+
+    Tote le itinerarios con un etiquetta `operator=KST` es etiquettate secundo iste schema. Perque le itinerarios in Slovachia deberea ja haber un etiquetta valide de rete, necun reclassification es facite.
+  hungary: |-
+    ## Hungaria
+
+    Hungaria anque usa un systema con un insimul fixe de symbolos in differente colores. Illos es marcate con lor proprie etiquetta [jel](https://wiki.openstreetmap.org/wiki/Key:jel). Le etiquetta es preferite a qualcunque etiquetta `osmc:symbol`.
+  germany: |-
+    ## Germania
+
+    ### Fränkischer Albverein
+
+    Le rete in le area de Nuremberg es assatis dense, dunque le itinerarios regional marcate con `operator=Fränkischer Albverein` apparera a nivellos de zoom plus basse que de habitude.
+  ukcycle: |-
+    ## Regno Unite
+
+    ### Norwich
+
+    Norwich usa un systema de itinerarios con codice de color. Itinerarios marcate con `operator=Norwich City Council` es marcate con un quadrato colorate secundo le etiquetta `colour`.
+elevationprofiles:
+  title: Profilos de elevation
+  general: |-
+    Le profilos de elevation es facite con datos de elevation del [model;o digital global de elevation ASTER (GDEM) version 2](https://asterweb.jpl.nasa.gov/gdem.asp), le etiquetta "ele" in OpenStreetMap non es prendite in consideration, ni tunnels e pontes. ASTER GDEM es un producto de METI e NASA.
+
+    Si le itinerario ha plus de duo punctos final o consiste de plus de un segmento, nulle profilo essera generate. Le direction del profilo seque le itinerario west-est o nord-sud. Si itinerarios habeva elementos con rolos como "start" (initio) e "goal" (destination), e/o esseva listate continuemente del initio al fin, nos poterea determinar le direction ab le relation del itinerario mesme. Es consiliate considerar iste cosas traciante itinerarios sur OpenStreetMap.
+
+    Il ha lacunas, cosas appellate "vacuos" pro le quales nos non ha datos de elevation; istes es visualisate con lacunas in le linea del profilo de elevation.
+
+    Attention: ben que ASTER version 2 es probabilemente le melior DEM global gratuite, illo ha su limitationes tanto in accuratessa como in copertura; vide su [reporto de summario de validation](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) pro plus information. Le inaccuratessas es exacerbate ulteriormente per le inaccuratessa del datos OSM, [un technica de lisiamento](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) que nos applica, e le resolution del profilo le qual deveni plus basse quanto le itinerario es plus longe.
+technical:
+  title: Detalios technic
+  general: |-
+    Le superposition del itinerario es actualisate cata minuta e normalmente es 2-5 minutas detra le servitor OSM. Le data in le angulo superior sinistre monstra le ultime actualisation. Actualisationes del carta Mapnik subjacente non es sub le controlo de iste sito. Dependente del carga actual del servitor OSM, illos prende inter un minuta e alcun horas.
+
+    Le codice fonte de iste sito web es disponibile sub un licentia GPL e dividite in plure repositorios:
+    * [codice de servitor e generation de carta](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+    * [servicio API](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+    * [interfacie del sito web](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+    Si tu solo vole signalar un error o discuter functionalitates del sito web, tu pote usar le [traciator de problemas](https://github.com/waymarkedtrails/waymarked-trails-site/issues) o le [function de discussion](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) del repositorio del projecto sur Github.
+  translation: |-
+    ## Traductiones
+
+    Le traductiones es gerite per le gente sempre servicial de [translatewiki.net](https://translatewiki.net). Si tu vole contribuer un traduction in tu proprie lingua o dar retroaction sur traductiones existente, visita le [pagina de projecto de translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
+legal:
+  title: Conditiones de uso e terminos juridic
+  copyright: Le superposition del itinerarios es disponibile sub le licentia [Creative
+    Commons Attribution-Share Alike 3.0 Germania](https://creativecommons.org/licenses/by-sa/3.0/de/deed.ia),
+    e le tracias GPX sub le [ODbL](https://opendatacommons.org/licenses/odbl/). Illos
+    pote esser reutilisate e modificate a condition que le obra resultante usa un
+    licentia compatibile e le projecto OpenStreetMap e iste sito es mentionate.
+  usage: |-
+    ## Politica de uso
+
+    Tu pote usar le superposition sur altere sitos a condition que le frequentia de accesso es moderate. Per favor, immagazina le tegulas in cache tanto sovente como possibile e usa un referente correcte. Le discargamento massive de tegulas es fortemente discoragiate.
+
+    Le tracias GPX es fornite pro le commoditate del visitatores de iste sito. Le discargamento massive non es permittite.
+  disclaimer: |-
+    ## Declaration de non-responsabilitate
+
+    Ni le exactitude ni le completessa del carta pote esser garantite. Si tu va foras pro un excursion, per favor obtene un carta de papiro decente, equipamento appropriate e non lassa tu senso commun a casa. La natura pote esser tanto implacabile como belle.
+
+    Iste sito contine ligamines a sitos web externe. Le autor de iste sito non ha influentia sur le contento de iste sitos e non assume alcun responsabilitate pro illos.
+acknowledgements:
+  title: Recognoscimentos
+  text: |-
+    Tote le datos cartographic es fornite per [OpenStreetMap e contribuentes](https://www.openstreetmap.org) e distribuite sub le licentia ODbL. Le carta de base es tamben fornite per OSM. Pro plus information, vide le [pagina de copyright de OSM](https://www.openstreetmap.org/copyright).
+
+    Le umbras de collinas e le datos de elevation es create ex un mixtura de datos SRTM e ASTER GDEM. ASTER GDEM es un producto de METI e NASA. Le post-processamento ha essite amabilemente fornite per Yves Cainaud de [opensnowmap.org](https://opensnowmap.org).
+
+    Le codice del profilo de elevation ha essite disveloppate per Espen Oldeman Lund in un cooperation inter [Kresendo](https://www.kresendo.no) e le projecto TG4NP al [Instituto de Recerca de Norvegia Occidental](https://www.vestforsk.no).
+
+    Le variante de pistas de sport de hiberno ha essite disveloppate per Michael Spreng. Le symbolo de equitation esseva preparate per Robert Whittaker.
+
+    Le destinationes de palos de guida es processate per [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Multe gratias a Jan Michel pro fornir le servicio.
+
+    Le traductiones de iste sito es fornite per [translatewiki.net e su contribuentes](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Gratias special va al traductores pioner que forniva traductiones ante translatewiki.net: Yves Cainaud (francese), Oscar Formaggi (italiano), Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (espaniol), [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (norvegiano bokmål e nynorsk), Mads Lumholt/TG4NP (danese), Magnús Smári Snorrason/TG4NP (islandese), Lars Mikaelsson/TG4NP (svedese), e Elina Pesonen (finnese).
+contact:
+  title: Contacto
+  text: |-
+    Questiones e commentos sur iste sito pote esser inviate a: [lonvia@denofr.de](mailto:lonvia@denofr.de).
+
+    Errores pote esser signalate in [le traciator de problemas del projecto sur GitHub](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Ante de signalar un error, per favor assecura te que tu problema non es con le datos OSM.
 ...

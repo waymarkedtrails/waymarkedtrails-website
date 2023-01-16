@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Aue Nai
+# Author: 咽頭べさ
 ---
 details:
   GPX: GPX
@@ -20,6 +21,7 @@ osmc_symbol:
   back: ကလေင်
   background_heading: စးဒုၚ်ကြဴ
   examples: ဥပမာဂမၠိုင်
+  preview_heading: ဗဵုရံၚ်ဗီုပြၚ်
 routelist:
   close: ကၟာတ်
   rollup: ခၟောပတိုန်

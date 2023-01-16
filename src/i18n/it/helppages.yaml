@@ -4,6 +4,7 @@
 # Author: Beta16
 # Author: Davio
 # Author: Gianfranco
+# Author: McDutchie
 ---
 about:
   title: Informazioni sulla mappa
@@ -59,8 +60,8 @@ hikinglocal:
     ### Norwich
 
     Norwich utilizza un sistema di percorsi codificati per colore. Gli itinerari con etichetta
-    `operatore=comune di Norwich` sono contrassegnati da un quadrato colorato coordinato con
-    il tag `colore`.
+    `operator=Norwich City Council` sono contrassegnati da un quadrato colorato coordinato con
+    il tag `colour`.
 elevationprofiles:
   title: Profili di elevazione
 technical:
