@@ -2,12 +2,14 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Robby
+# Author: Volvox
 ---
 destination_sign:
   more: Méi Detailer
   title: Destinatiounen
 details:
   GPX: GPX
+  KML: KML
   altitude: Héicht
   image: Bild
   note: Notiz
@@ -22,6 +24,7 @@ details:
     relation: Relatioun
     way: Wee
   website: Internetsite
+  wikipedia: Wikipedia
   zoom_to: Op der Kaart weisen
 elevation:
   diagram:
@@ -43,6 +46,7 @@ network:
   regional: Regional Stroossen
   skitour: Schi-Touren
   sleigh: Schlittepist
+  winter_hike: Wanterwanderen
 osmc_symbol:
   back: Zréck
   background_heading: Hannergrond
@@ -50,6 +54,7 @@ osmc_symbol:
   foreground_heading: Vierdergrond
   preview_heading: Kucken ouni ze späicheren
 routelist:
+  loading: Lueden...
   close: Zoumaachen
   title: Strecken
 search:
@@ -58,10 +63,15 @@ search:
   title: Sichen
 settings:
   base_map: Basiskaart
+  browser_language: Browserastellunge benotzen
   language: Sprooch
   title: Astellunge vun der Kaart
+  transparency: Kaartentransparenz
 site_title:
   cycling: Mam Vëlo
   hiking: Zu Fouss
   osmc_symbol: Den Tag osmc:symbol
+  riding: Reiden
+  skating: Inline-Skating
+  slopes: Wantersportpisten
 ...
