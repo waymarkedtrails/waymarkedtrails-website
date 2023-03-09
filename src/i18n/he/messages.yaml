@@ -24,8 +24,14 @@ details:
   subroutes_title: מקטעים
   superroutes_title: חלק מתוך
   tags:
+    key: מפתח
     title: תגי OpenStreetMap
+    value: ערך
+  type:
+    relation: יחס
+    way: דרך
   website: אתר אינטרנט
+  wikipedia: ויקיפדיה
   zoom_to: הצגה במפה
 elevation:
   ascent: עלייה מצטברת
@@ -42,6 +48,9 @@ headline:
   last_update: עדכון אחרון
 help: על אודות המפה
 locate_me: איתור עצמי
+network:
+  national: מסלולים לאומיים
+  skitour: טיולי סקי
 osmc_symbol:
   back: חזרה
   background_heading: רקע
