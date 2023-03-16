@@ -39,6 +39,7 @@ details:
     relation: Relaatio
     way: Tie
   website: Verkkosivusto
+  zoom_to: Näytä kartalla
 elevation:
   ascent: Kertynyt nousu
   descent: Kertynyt laskeutuminen
@@ -60,6 +61,7 @@ network:
   downhill: Alamäki
   national: Valtakunnalliset reitit
   nordic: Pohjoismainen hiihto
+  other: Muut reitit
   regional: Alueelliset reitit
   skitour: Hiihtomatkat
   sled: Pulkkamäki
@@ -70,7 +72,9 @@ osmc_symbol:
   background_heading: Tausta
   examples: Esimerkit
   foreground_heading: Symboli
+  preview_heading: Esikatselu
 routelist:
+  loading: Ladataan...
   close: Sulje
   more: Tarkenna nähdäksesi lisää reittejä.
   rollup: Roll up
