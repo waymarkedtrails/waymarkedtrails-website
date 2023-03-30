@@ -47,7 +47,7 @@ elevation:
     altitude: Korkeus (m)
     distance: Etäisyys (km)
   title: Korkeusprofiili
-  total: Kokonaiskorkeus
+  total: Kokonaisnousu/lasku
   warn_unsorted: Reitti on mahdollisesti epäjärjestyksessä tai epätäydellinen. Korkeustiedot
     voivat olla epätarkkoja.
 error:
@@ -58,6 +58,7 @@ headline:
 help: Tietoa kartasta
 locate_me: Etsi minulle
 network:
+  continental: Mannerreitit
   downhill: Alamäki
   national: Valtakunnalliset reitit
   nordic: Pohjoismainen hiihto
