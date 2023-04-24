@@ -66,10 +66,12 @@ osmc_symbol:
     det vil blive vist på kortet.
   preview_heading: Forhåndsvisning
 routelist:
+  loading: Indlæser...
   close: Luk
   rollup: Rul op
   title: Ruter
 search:
+  places: Steder
   routes: Ruter
   title: Søg
 settings:
@@ -80,6 +82,8 @@ settings:
   route_layer: Ruter
   title: Kortindstillinger
   transparency: Kortets gennemsigtighed
+site_description:
+  cycling: Lokale og langdistance cykelruter, med kort og information fra OpenStreetMap.
 site_title:
   cycling: Cykling
   hiking: Vandreruter
