@@ -32,6 +32,7 @@ details:
   note: Примечание
   official_len: Официальная длина маршрута
   operator: Оператор
+  route_symbol: Символ маршрута
   subroutes_title: Разделы
   superroutes_title: Часть
   symbol: Символ
@@ -40,6 +41,7 @@ details:
     title: Теги OpenStreetMap
     value: значение
   type:
+    guidepost: Указательный столб
     relation: Отношение
   website: Веб-сайт
   wikipedia: Википедия
@@ -51,6 +53,7 @@ elevation:
     altitude: Высота (м)
     distance: Расстояние (км)
   title: Профиль рельефа
+  total: Всего подъёмов/спусков
   unavailable: Не найдены данные о высотах рельефа
   warn_unsorted: Маршрут потенциально неупорядочен или неполон. Информация о высоте
     может быть неточной.
@@ -68,6 +71,9 @@ network:
   downhill: Спуск
   national: Национальные маршруты
   node: Сетевые подключения узла
+  nordic: Беговые лыжи
+  other: Другие маршруты
+  regional: Региональные маршруты
   skitour: Лыжные туры
   sled: Трасса для санок
   sleigh: Санная трасса
@@ -90,12 +96,15 @@ osmc_symbol:
 routelist:
   loading: Загружается…
   close: Закрыть
+  more: Увеличьте масштаб, чтобы увидеть больше маршрутов.
   rollup: Свернуть
   title: Маршруты
 search:
   places: Места
   routes: Маршруты
   title: Найти
+  help: Используйте для поиска ключевые слова. Вы можете искать по названиям троп
+    (например, Аппалачская тропа, E2) или местам (например, Берлин).
 settings:
   base_map: Базовая карта
   browser_language: Использовать настройки браузера
@@ -104,10 +113,15 @@ settings:
   route_layer: Слой маршрутов
   title: Настройки карты
   transparency: Прозрачность карты
+site_description:
+  cycling: Местные и междугородние велосипедные маршруты с картами и информацией из
+    OpenStreetMap.
+  riding: Маршруты для верховой езды с картами и информацией из OpenStreetMap.
 site_title:
   cycling: Велоспорт
   hiking: Пешие прогулки
   mtb: Горный велоспорт
+  osmc_symbol: Тег osmc:symbol
   riding: Верховая езда
   skating: Роликовые коньки
   slopes: Склоны для зимних видов спорта

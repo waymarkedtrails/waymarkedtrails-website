@@ -240,21 +240,19 @@ legal:
 acknowledgements:
   title: Köszönetnyilvánítás
   text: |-
-    Az összes térképadatot az [OpenStreetMap és közreműködői](http://www.openstreetmap.org) bocsátotják rendelkezésre, és az ODbL licenc alapján terjesztik. Az alaptérkép szintén az OSM jóvoltából készült, és CC BY-SA 2.0 licenc alatt érhető el. További információért lásd az [OSM szerzői jogi oldalát](http://www.openstreetmap.org/copyright).
+    Az összes térképadatot az [OpenStreetMap és közreműködői](https://www.openstreetmap.org) bocsátotják rendelkezésre, és az ODbL licenc alapján terjesztik. Az alaptérkép szintén az OSM jóvoltából készült. További információért lásd az [OSM szerzői jogi oldalát](https://www.openstreetmap.org/copyright).
 
     Az SRTM és az ASTER GDEM adatok összevonásából létrehozott domborzati és magassági adatok.
     Az ASTER GDEM a METI és a NASA terméke.
-    Az utófeldolgozást Yves Cainaud, az [opensnowmap.org](http://opensnowmap.org) oldal alkotója szíveskedett elvégezni.
+    Az utófeldolgozást Yves Cainaud, az [opensnowmap.org](https://opensnowmap.org) oldal alkotója szíveskedett elvégezni.
 
-    A magassági profil kódját a [Nyugat-Norvégiai Kutatóintézetben](http://wwww.vestforsk.no) Espen Oldeman Lund fejlesztette ki a [Kresendo](http://www.kresendo.no) és a [TG4NP projekt](http://tg4np.eu) közötti együttműködés keretében.
+    A magassági profil kódját a [Nyugat-Norvégiai Kutatóintézetben](https://www.vestforsk.no) Espen Oldeman Lund fejlesztette ki a [Kresendo](https://www.kresendo.no) és a [TG4NP projekt](http://tg4np.eu) közötti együttműködés keretében.
 
     A télisport-pályák változatát Michael Spreng fejlesztette ki. A lovas szimbólumot Robert Whittaker készítette.
 
     Az útirányjelző táblák célpontjait a [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm) dolgozta fel. Köszönetet mondunk Jan Michelnek a szolgáltatás biztosításáért.
 
-    Az oldal fordításait a [translatewiki.net és közreműködői](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators) biztosítják. Külön köszönet illeti az úttörő fordítókat, akik a fordításokat már a translatewiki.net előtt biztosították: Yves Cainaud (francia), Oscar Formaggi (olasz), Gustavo [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (spanyol), [Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (norvég bokmål és nynorsk), Mads Lumholt/TG4NP (dán), Magnús Smári Snorrason/TG4NP (izlandi), Lars Mikaelsson/TG4NP (svéd) és Elina Pesonen (finn).
-
-    Végül, a szerver nem létezne [Martin Hoffmann](http://www.partim.de) nagylelkű támogatása nélkül.
+    Az oldal fordításait a [translatewiki.net és közreműködői](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators) biztosítják. Külön köszönet illeti az úttörő fordítókat, akik a fordításokat már a translatewiki.net előtt biztosították: Yves Cainaud (francia), Oscar Formaggi (olasz), Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (spanyol), [Guttorm Flatabø](https://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (norvég bokmål és nynorsk), Mads Lumholt/TG4NP (dán), Magnús Smári Snorrason/TG4NP (izlandi), Lars Mikaelsson/TG4NP (svéd) és Elina Pesonen (finn).
 contact:
   title: Kapcsolat
   text: |-
