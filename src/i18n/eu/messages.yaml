@@ -3,13 +3,14 @@
 # Export driver: phpyaml
 # Author: An13sa
 # Author: EukeneFL
+# Author: Garaolaza
 # Author: Lonvia
 # Author: Sator
 # Author: Subi
 # Author: Theklan
 ---
 attribution:
-  data: Maparen datuak © [OpenStreetMap](https://www.openstreetmap.org) [ODbL](https://www.openstreetmap.org/copyright)
+  data: Mapako datuak © [OpenStreetMap](https://www.openstreetmap.org) [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: Goratze datuak [SRTM/ASTER](help/acknowledgements)(r)en esku
 destination_sign:
   more: Xehetasun gehiago
@@ -80,9 +81,9 @@ settings:
   transparency: Maparen gardentasuna
 site_title:
   cycling: Txirrindularitza
-  hiking: Mendi-igoerak
+  hiking: Oinezko ibilbideak
   mtb: Mendiko txirrindularitza
-  riding: Zaldi ibilaldiak
+  riding: Zaldi-ibilbideak
   skating: Lerro-patinaketa
   slopes: Negurako kirol-aldapak
 ...
