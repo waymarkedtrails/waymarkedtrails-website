@@ -69,7 +69,7 @@
 
         load_routes(json.results, json.bbox);
         route_data = data;
-    }, function(error) { fail_message = $_('error.load_error'); });
+    }, function(error) { fail_message = $_(error); });
 
 </script>
 

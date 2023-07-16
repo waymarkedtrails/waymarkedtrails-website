@@ -10,9 +10,9 @@
         if (data.server_status == 'OK') {
             db_update = new Date(Date.parse(data.last_update));
         } else {
-            error_msg = "API unavailable";
+            error_msg = $_('error.api_unavailable');
         }
-    }, function(error) { error_msg = error; });
+    }, function(error) { error_msg = $_(error); });
 
     onMount(function() { loader.load('/status'); });
     onDestroy(function() { loader.abort(); });

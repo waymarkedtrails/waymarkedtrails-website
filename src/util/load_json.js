@@ -12,12 +12,14 @@ export function json_loader(done, error, base_url = API_URL) {
                     if (my_request == current) {
                         if (response.ok) {
                             response.json().then(done);
+                        } else if (response.status == 404) {
+                            error('error.object_not_found');
                         } else {
-                            error(response.statusText);
+                            error('error.load_error');
                         }
                     }
                 })
-                .catch(error);
+                .catch(function(e) { error('error.load_error'); });
         },
         abort : function() { ++current; }
     };

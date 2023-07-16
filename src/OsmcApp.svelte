@@ -183,9 +183,9 @@
 <div class="preview">
 <tt>osmc:symbol = </tt><input type="text" width=150 bind:value={test_symbol} />
 {#if test_symbol}
-    <img src="{API_URL}/symbols/from_tags/NAT?osmc:symbol={encodeURIComponent(test_symbol)}" width="50" height="50" />
+    <img src="{API_URL}/symbols/from_tags/NAT?osmc:symbol={encodeURIComponent(test_symbol)}" alt="result shield" width="50" height="50" />
 {:else}
-    <img src="{MEDIA_URL}img/white.svg" width="50" height="50" />
+    <img src="{MEDIA_URL}img/white.svg" alt="no symbol yet" width="50" height="50" />
 {/if}
 </div>
 
