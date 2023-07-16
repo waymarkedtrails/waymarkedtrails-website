@@ -54,7 +54,7 @@
 
         fail_message = '';
     },
-    function(error) { fail_message = $_('error.load_error'); });
+    function(error) { fail_message = $_(error); });
 
     onDestroy(page_state.subscribe((value) => {
         if (value.page !== 'route') {

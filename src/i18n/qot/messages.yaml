@@ -47,6 +47,8 @@ error:
   missing_id: Missing parameter 'id'.
   missing_query: Missing parameter 'query'.
   panel_title: Error
+  object_not_found: Object not found.
+  api_unavailable: API not available.
 headline:
   last_update: Last update
 help: About the map

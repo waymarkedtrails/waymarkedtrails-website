@@ -53,7 +53,7 @@
 
         destinations = json.data;
 
-    }, function(error) { fail_message = $_('error.load_error'); },
+    }, function(error) { fail_message = $_(error); },
        'https://osm.mueschelsoft.de/destinationsign');
 
     onMount(() => {

@@ -27,7 +27,7 @@
         guidepost.location = new Point([guidepost.x, guidepost.y]);
         set_highlight_point(guidepost.location);
     },
-    function(error) { fail_message = $_('error.load_error'); });
+    function(error) { fail_message = $_(error); });
 
     onDestroy(page_state.subscribe((value) => {
         if (value.page !== 'guidepost') {

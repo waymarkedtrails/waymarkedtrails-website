@@ -13,7 +13,7 @@
     let fail_message = '';
 
     const loader = json_loader((json) => { profile = json; },
-                               (error) => { fail_message = $_('error.load_error'); });
+                               (error) => { fail_message = $_(error); });
 
     onMount(() => {
         profile = false;
