@@ -57,6 +57,8 @@ error:
   missing_id: Manjka parameter »id«.
   missing_query: Manjka parameter »query«.
   panel_title: Napaka
+  object_not_found: Objekt ni bil najden.
+  api_unavailable: API ni na voljo.
 headline:
   last_update: Zadnja posodobitev
 help: O zemljevidu

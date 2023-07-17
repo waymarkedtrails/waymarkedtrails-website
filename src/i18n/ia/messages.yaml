@@ -52,6 +52,8 @@ error:
   missing_id: Le parametro 'id' manca.
   missing_query: Le parametro 'query' manca.
   panel_title: Error
+  object_not_found: Objecto non trovate.
+  api_unavailable: API non disponibile.
 headline:
   last_update: Ultime actualisation
 help: A proposito del carta

@@ -8,6 +8,7 @@
 # Author: Eduardoaddad
 # Author: Fasouzafreitas
 # Author: Gusta
+# Author: Jaideraf
 # Author: Luckas
 # Author: Rodrigo codignoli
 # Author: SaldırganSincap
@@ -61,6 +62,8 @@ elevation:
 error:
   load_error: Erro ao conectar com o servidor.
   panel_title: Erro
+  object_not_found: Objeto não encontrado.
+  api_unavailable: API não disponível.
 headline:
   last_update: Última atualização
 help: Sobre o mapa

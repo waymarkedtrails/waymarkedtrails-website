@@ -71,6 +71,8 @@ error:
   missing_id: Le paramètre « id » est manquant.
   missing_query: Le paramètre « query » est manquant.
   panel_title: Erreur
+  object_not_found: Objet non trouvé.
+  api_unavailable: API non disponible.
 headline:
   last_update: Dernière mise à jour
 help: À propos de la carte
