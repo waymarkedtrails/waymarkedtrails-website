@@ -45,6 +45,8 @@ elevation:
 error:
   load_error: Errore di connessione al server.
   panel_title: Errore
+  object_not_found: Oggetto non trovato.
+  api_unavailable: API non disponibile.
 headline:
   last_update: Ultimo aggiornamento
 help: Informazioni sulla mappa

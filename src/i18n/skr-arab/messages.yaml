@@ -18,6 +18,7 @@ elevation:
     distance: فاصلہ (کلومیٹر)
 error:
   panel_title: نقص
+  api_unavailable: اے پی آئی دستیاب کائنی۔
 headline:
   last_update: چھیکڑی تبدیلی
 help: نقشے بارے
