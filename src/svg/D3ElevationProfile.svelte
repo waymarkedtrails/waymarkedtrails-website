@@ -32,7 +32,7 @@
             .range([y_axis_width, w - margin]);
 
         const y_scale = scaleLinear()
-            .domain([data.min_elevation, data.max_elevation]).nice()
+            .domain([data.min_elevation, Math.max(data.min_elevation + 100, data.max_elevation)]).nice()
             .range([h - x_axis_width, margin]);
 
         const line = d3_line()
