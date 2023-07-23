@@ -62,9 +62,11 @@
 <SidePanel osm_type="node" osm_id={osm_id} title="{$_('details.type.guidepost')} {osm_id}" fail_message={fail_message}>
 {#key guidepost}{#if guidepost}
 
-<DetailsHeader img_alt={$_('details.type.guidepost')} img_src="/img/guidepost.svg">
+<DetailsHeader img_alt={$_('details.type.guidepost')} img_src="/img/guidepost.svg" ref={guidepost.ref}>
     {#if guidepost.name}
         {guidepost.name}
+    {:else if guidepost.ref}
+        {guidepost.ref}
     {:else}
         <i>{$_('details.type.guidepost')} {osm_id}</i>
     {/if}
