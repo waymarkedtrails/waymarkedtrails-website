@@ -1,5 +1,5 @@
 <script>
-    import { TITLE, MEDIA_URL, BASE_URL } from './config.js';
+    import { TITLE, MEDIA_URL, BASE_URL, THEME_URL } from './config.js';
     import { _ } from 'svelte-i18n';
     import InterLinkMapList from './ui/InterLinkMapList.svelte';
     import { map_view } from './app_state.js';
@@ -24,6 +24,10 @@
         if (headline_div.clientWidth <= 650) {
             show_maplink_menu = !show_maplink_menu;
         }
+    }
+
+    function substitute_theme_in_url(theme) {
+        return THEME_URL.replace('{theme}', theme);
     }
 </script>
 
@@ -93,7 +97,8 @@
     <h1>Waymarked Trails: {$_('site_title.' + TITLE)}</h1>
     <div class="map_maplinks">
       {#each themes as theme}
-        <a class="maplink" href="https://{theme}.{BASE_URL}{map_link_tail}"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" /></a>
+        {@const theme_url = substitute_theme_in_url(theme)}
+        <a class="maplink" href="{theme_url}{map_link_tail}"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" /></a>
       {/each}
     </div>
   </div>

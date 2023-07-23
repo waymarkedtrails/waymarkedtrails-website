@@ -16,12 +16,14 @@ const base_url = process.env.WMT_BASE_URL || 'waymarkedtrails.org';
 const media_url = process.env.WMT_MEDIA_URL ||
                    (production ? 'https://static.' + base_url + '/' : '');
 const api_url = process.env.WMT_API_URL ||
-                   (production ? '' : 'http://localhost:8080/v1');
+                   (production ? 'https://{theme}.' + base_url + '/api/v1'
+                               : 'http://localhost:8080/v1');
 const symbol_url = process.env.WMT_SYMBOL_URL ||
                    (production ? 'https://static.' + base_url + '/symbols'
                                : api_url + '/symbols/id');
 const tile_base_url = process.env.WMT_TILE_BASE || ('https://tile.' + base_url);
 const tile_url = process.env.WMT_TILE_URL || '';
+const theme_url = process.env.WMT_THEME_URL || ('https://{theme}.' + base_url);
 
 function export_str(content) {
     return `export default '` + content + `'`;
@@ -86,7 +88,8 @@ export default {
           'CFG_SYMBOL_URL' : export_str(symbol_url),
           'CFG_API_URL' : export_str(api_url),
           'CFG_TILE_BASE_URL' : export_str(tile_base_url),
-          'CFG_TILE_URL' : export_str(tile_url)
+          'CFG_TILE_URL' : export_str(tile_url),
+          'CFG_THEME_URL' : export_str(theme_url)
         }),
 
 		svelte({
