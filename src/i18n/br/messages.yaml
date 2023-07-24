@@ -1,6 +1,7 @@
 # Messages for Breton (brezhoneg)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Adriendelucca
 # Author: Fohanno
 # Author: Fulup
 # Author: Gwenn-Ael
@@ -41,6 +42,7 @@ elevation:
 error:
   load_error: Fazi kevreañ ouzh ar servijer.
   panel_title: Fazi
+  object_not_found: N'eo ket bet kavet an draezenn.
 headline:
   last_update: Hizivaet da ziwezhañ
 help: A-zivout ar gartenn
