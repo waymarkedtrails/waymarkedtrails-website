@@ -54,6 +54,8 @@ error:
   missing_id: Vantar 'id' viðfangs.
   missing_query: Vantar 'query' viðfangs
   panel_title: Villa
+  object_not_found: Hlutur fannst ekki.
+  api_unavailable: API-kerfisviðmót ekki tiltækt.
 headline:
   last_update: Síðast uppfært
 help: Um landakortið

@@ -12,19 +12,31 @@ attribution:
   elevation_title: datos de elevación de [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Máis detalles
+  no_data: Non hai información de destino dispoñible para este marco.
   title: Destinos
 details:
   GPX: GPX
   KML: KML
   altitude: Altitude
+  image: Imaxe
   mapped_len: Lonxitude cartografada
   note: Nota
   official_len: Lonxitude oficial
   operator: Operador
+  route_symbol: Símbolo de ruta
   subroutes_title: Seccións
   superroutes_title: Parte de
+  symbol: Símbolo
   tags:
+    key: clave
     title: Etiquetas do OpenStreetMap
+    value: valor
+  type:
+    guidepost: Marco
+    node: Nó
+    relation: Relación
+    way: Vía
+    wayset: Conxunto de vías
   website: Páxina web
   wikipedia: Wikipedia
   zoom_to: Amosar no mapa
@@ -35,20 +47,35 @@ elevation:
     altitude: Altitude (m)
     distance: Distancia (km)
   title: Perfil de elevación
-  unavailable: Non foron atoparon datos de elevación.
-  warn_unsorted: Seica a rota está incompleta ou desordenada. A información da elevación
-    pode ter pouca precisión.
+  total: Desnivel total
+  unavailable: Non se atoparon datos de elevación.
+  warn_unsorted: Seica a ruta está incompleta ou desordenada. A información da elevación
+    pode ser pouco precisa.
 error:
   load_error: Erro ó conectarse ó servidor.
+  missing_id: Falta o parámetro "id".
+  missing_query: Falta o parámetro "query".
   panel_title: Erro
+  object_not_found: Non se atopou o obxecto.
+  api_unavailable: A API non está dispoñible.
 headline:
   last_update: Última actualización
 help: Acerca do mapa
 locate_me: Localizarme
 network:
-  downhill: descenso
+  continental: Rutas continentais
+  downhill: Descenso
+  national: Rutas nacionais
+  node: Conexións da rede de nós
+  nordic: Esquí nórdico
+  other: Outras rutas
+  regional: Rutas rexionais
+  skitour: Esquí de montaña
+  sled: Pista de zorra
+  sleigh: Pista de zorra
+  winter_hike: Sendeirismo invernal
 osmc_symbol:
-  back: Voltar
+  back: Volver
   background: O fondo funciona de xeito semellante. Tamén contén unha cor e unha forma.
     O fondo tamén pode ser só un nome de cor que resulta nun cadro da cor escollida.
     Isto amósase na primeira fila.
@@ -64,12 +91,17 @@ osmc_symbol:
           para ollar de que xeito se representará no mapa.
   preview_heading: Vista previa
 routelist:
+  loading: Cargando...
   close: Pechar
+  more: Achegue para ollar máis rutas.
   rollup: Agochar
   title: Rutas
 search:
+  places: Lugares
   routes: Rutas
   title: Procurar
+  help: Use palabras clave para buscar. Pode procurar nomes de rutas (por exemplo,
+    sendeiro dos Apalaches, E2) ou lugares (por exemplo, Berlín).
 settings:
   base_map: Mapa de base
   browser_language: Empregar os axustes do navegador
@@ -78,10 +110,21 @@ settings:
   route_layer: Capa de rutas
   title: Axustes do mapa
   transparency: Transparencia do mapa
+site_description:
+  cycling: Rutas ciclistas locais e de longa distancia, con mapas e información do
+    OpenStreetMap.
+  hiking: Rutas de sendeirismo local e de longa distancia, con mapas e información
+    do OpenStreetMap.
+  mtb: Rutas de ciclismo de montaña, con mapas e información do OpenStreetMap.
+  riding: Rutas de equitación, con mapas e información do OpenStreetMap.
+  skating: Rutas de patinaxe en liña, con mapas e información do OpenStreetMap.
+  slopes: Pistas de deportes de inverno, descenso en esquí, patinaxe de fondo, sendeirismo
+    invernal, con mapas e información do OpenStreetMap.
 site_title:
   cycling: Ciclismo
   hiking: Sendeirismo
   mtb: Ciclismo de montaña
+  osmc_symbol: A etiqueta osmc:symbol
   riding: Equitación
   skating: Patinaxe en liña
   slopes: Pistas de deportes de inverno
