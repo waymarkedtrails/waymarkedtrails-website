@@ -39,8 +39,6 @@ elevation:
 error:
   load_error: Lỗi kết nối với máy chủ.
   panel_title: Lỗi
-  object_not_found: Không tìm thấy đối tượng.
-  api_unavailable: UAA không sẵn có
 headline:
   last_update: Lúc cập nhật
 help: Giới thiệu về bản đồ
