@@ -1,6 +1,7 @@
 # Messages for Talysh (tolışi)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Patriot Kor
 # Author: Patriot Kur
 # Author: Гусейн
 ---
@@ -47,7 +48,7 @@ search:
   routes: Marşruton
   title: Bınəv
 settings:
-  base_map: Əsosə xəritə
+  base_map: Asosa xarita
   hillshading_layer: Relyefi nişo doy
   language: Zıvon
   route_layer: Marşruton ğat
