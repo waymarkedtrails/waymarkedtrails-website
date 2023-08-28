@@ -5,6 +5,7 @@
 # Author: Davio
 # Author: Gianfranco
 # Author: McDutchie
+# Author: Ontsed
 ---
 about:
   title: Informazioni sulla mappa
@@ -19,12 +20,12 @@ about:
     intorno al mondo.
   slopemap: Questa mappa mostra la segnaletica delle piste per sport invernali intorno
     al mondo.
-  osm: Gli itinerari sono sovrapposti sullo standard OpenStreetMap e opzionalmente
-    su un livello hill-shading. La mappa del percorso viene generata dai dati del
+  osm: Gli itinerari sono sovrapposti sulla mappa standard OpenStreetMap e opzionalmente
+    su un livello hill-shading. La mappa degli itinerari viene generata dai dati del
     progetto [OpenStreetMap](https://www.openstreetmap.org) (OSM). OSM è una mappa
-    del mondo modificabile liberamente dove ognuno può partecipare. Questo significa
-    che non è affatto completa, ma significa anche che puoi contribuire aggiungendo
-    nuovi itinerari e correggere errori negli esistenti. Per avere maggiori informazioni
+    del mondo modificabile liberamente in cui ognuno può partecipare. Ciò significa
+    che non è affatto completa, ma anche che puoi contribuire aggiungendo nuovi itinerari
+    e correggere gli errori in quelli già presenti. Per avere maggiori informazioni
     a riguardo, visita la [Guida per principianti](https://wiki.openstreetmap.org/wiki/IT:Beginners%27_guide).
 rendering:
   title: Visualizzazione dei dati OSM
@@ -41,12 +42,33 @@ rendering:
     Un tag 'route' con più valori è supportato quando essi sono separati da punto e virgola senza spazi circostanti.
     La classificazione (e quindi il colore dell'itinerario nella mappa) è determinata dal tag 'network'.
   hierarchy: La mappa supporta anche [gerarchie di relazione](#help-hierarchies).
+  guideposts: |-
+    I [luoghi di posa](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost) vengono riconosciuti mediante i seguenti tag:
+
+        tourism=information
+        information=guidepost
+        name=<nome>
+        ele=<altitudine>
+
+    `tourism` e `information` sono obbligatori. `name` e `ele` possono essere omessi.
 hierarchies:
   title: Gerarchie di relazione
 osmc:
   title: Il tag osmc:symbol
 hikinglocal:
   title: Rendering localizzato
+  swiss: |-
+    ## Svizzera
+
+    La Svizzera dispone di una vasta rete di sentieri escursionistici segnalati che copre l'intero paese. Si tratta di una rete di nodi in cui i nodi sono rappresentati dalle paline indicatrici. Tutti i sentieri sono contrassegnati in base alla loro difficoltà. La mappa mostra questi sentieri in rosso con un particolare pattern di linea che ne indica la difficoltà
+
+    * ![linea rossa](route_std.png) *sentiero escursionistico*, contrassegnato con ![losanga](yellow_diamond.svg). Mappato con `network=lwn` e `osmc:symbol=yellow:[...]`.
+    * ![linea tratteggiata](route_mnt.png) *sentiero di montagna*, contrassegnato con ![bianco-rosso-bianco](white_red_bar.svg). Mappato con `network=lwn` e `osmc:symbol=red:[...]`.
+    * ![linea punteggiata](route_alp.png) *sentiero alpino*, contrassegnato con ![bianco-blu-bianco](white_blue_bar.svg). Mappato con `network=lwn` e `osmc:symbol=blue:[...]`.
+
+    Tieni presente che sopra a a questa rete vi sono un certo numero di itinerari nazionali e regionali che vengono mostrati in modo normale.
+
+    Per ulteriori informazioni sulla mappatura dei percorsi escursionistici in Svizzera leggi: [Rete escursionistica svizzera](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
   italy: "## Italia\n\nIl Club Alpino Italiano (CAI) mantiene la rete di percorsi
     montani che\nsono classificati per difficoltà in modo simile a quanto avviene
     in Svizzera.\nI percorsi contrassegnati con `network=lwn`, `osmc:symbol=red:..`
@@ -95,6 +117,31 @@ legal:
     contenuto di quei siti e non si assume alcuna responsabilità per essi.
 acknowledgements:
   title: Riconoscimenti
+  text: |-
+    Tutti i dati cartografici sono forniti da [OpenStreetMap e collaboratori](https://www.openstreetmap.org)
+    e distribuiti con licenza ODbL. Anche la mappa di base è per gentile concessione di OSM.
+    Per ulteriori informazioni, vedi la
+    [pagina del copyright di OSM](https://www.openstreetmap.org/copyright).
+
+    Hillshading e dati sull'altitudine sono stati creati da una combinazione dei dati SRTM e ASTER GDEM.
+    ASTER GDEM è un prodotto di METI e NASA.
+    Il lavoro di post-produzione è stato gentilmente fornito da Yves Cainaud di [opensnowmap.org](https://opensnowmap.org).
+
+    Il codice del profilo altimetrico è stato sviluppato da Espen Oldeman Lund in una collaborazione tra [Kresendo](https://www.kresendo.no) e il progetto TG4NP presso il [Western Norway Research Institute]( https://www.vestforsk.no).
+
+    La variante delle piste per gli sport invernali è stata sviluppata da Michael Spreng. Il simbolo dell'equitazione è stato
+    preparato da Robert Whittaker.
+
+    Le paline indicatrici sono elaborate da [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Mille grazie a Jan Michel per aver fornito il servizio.
+
+    Le traduzioni di questo sito sono fornite da
+    [translatewiki.net e i suoi contributori](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Un ringraziamento speciale va ai traduttori pionieri che
+    hanno fornito le traduzioni prima di Translatewiki.net: Yves Cainaud (francese),
+    Oscar Formaggi (italiano),
+    Gustavo [Tuentibiker](https://www.blogger.com /profile/12473561703699888751) Ramis (spagnolo),
+    [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (norvegese bokmål e nynorsk),
+    Mads Lumholt/TG4NP (danese), Magnús Smári Snorrason/ TG4NP (islandese),
+    Lars Mikaelsson/TG4NP (svedese) ed Elina Pesonen (finlandese).
 contact:
   title: Contatti
   text: |-

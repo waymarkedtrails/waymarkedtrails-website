@@ -14,6 +14,8 @@ attribution:
   elevation_title: dati di quota da [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Ulteriori dettagli
+  no_data: Nessuna informazione sulle destinazioni disponibile per questo luogo di
+    posa.
   title: Destinazioni
 details:
   GPX: GPX
@@ -24,13 +26,19 @@ details:
   note: Nota
   official_len: Lunghezza ufficiale
   operator: Operatore
+  route_symbol: Simbolo itinerario
   subroutes_title: Sezioni
   superroutes_title: Parte di
+  symbol: Simbolo
   tags:
+    key: chiave
     title: Etichette OpenStreetMap
     value: valore
   type:
+    guidepost: Luogo di posa
     node: Nodo
+    relation: Relazione
+    way: Percorso
   website: Sito web
   wikipedia: Wikipedia
   zoom_to: Mostra sulla mappa
@@ -41,9 +49,14 @@ elevation:
     altitude: Altitudine (m)
     distance: Distanza (km)
   title: Profilo altimetrico
+  total: Salita/discesa totale
   unavailable: Non è stato trovato alcun dato sull'elevazione.
+  warn_unsorted: Il percorso è potenzialmente non ordinato o incompleto. Le informazioni
+    sull'altitudine potrebbero essere imprecise.
 error:
   load_error: Errore di connessione al server.
+  missing_id: Il parametro ‘id’ è mancante.
+  missing_query: Il parametro ‘query’ è mancante.
   panel_title: Errore
   object_not_found: Oggetto non trovato.
   api_unavailable: API non disponibile.
@@ -52,7 +65,16 @@ headline:
 help: Informazioni sulla mappa
 locate_me: Localizzami
 network:
+  continental: Itinerari continentali
   downhill: Discesa
+  national: Itinerari nazionali
+  nordic: Sci nordico
+  other: Altri itinerari
+  regional: Itinerari regionali
+  skitour: Escursioni su sci
+  sled: Piste per slittino
+  sleigh: Piste per slitte
+  winter_hike: Escursioni invernali
 osmc_symbol:
   back: Indietro
   background_heading: Sfondo
@@ -62,10 +84,12 @@ osmc_symbol:
 routelist:
   loading: Caricamento...
   close: Chiudi
+  more: Ingrandisci per vedere più itinerari.
   rollup: Arrotola
-  title: Percorsi
+  title: Itinerari
 search:
-  routes: Percorsi
+  places: Luoghi
+  routes: Itinerari
   title: Cerca
 settings:
   base_map: Mappa di base
