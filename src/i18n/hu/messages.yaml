@@ -62,6 +62,8 @@ error:
   missing_id: Hiányzik az „id” paraméter.
   missing_query: Hiányzik a „query” paraméter.
   panel_title: Hiba
+  object_not_found: Az objektum nem található.
+  api_unavailable: API nem érhető el.
 headline:
   last_update: Utolsó frissítés
 help: A térképről

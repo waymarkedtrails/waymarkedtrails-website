@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Baloch Afghanistan
 # Author: FarsiNevis
+# Author: Moshtank
 ---
 details:
   note: نکته
@@ -14,7 +15,7 @@ details:
     title: برچسب‌های نقشه باز شهری
   website: وب سایت
 error:
-  panel_title: خطا
+  panel_title: مِشتک
 headline:
   last_update: آخرین روزآمدسازی
 osmc_symbol:

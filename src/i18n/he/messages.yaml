@@ -11,6 +11,7 @@ attribution:
   elevation_title: נתוני גובה מאת [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: פרטים נוספים
+  no_data: אין פירוט יעד זמין לתמרור זה.
   title: יעדים
 details:
   GPX: GPX
@@ -21,13 +22,17 @@ details:
   note: פתק
   official_len: אורך רשמי
   operator: מפעיל
+  route_symbol: סמל מסלול
   subroutes_title: מקטעים
   superroutes_title: חלק מתוך
+  symbol: סמל
   tags:
     key: מפתח
     title: תגי OpenStreetMap
     value: ערך
   type:
+    guidepost: תמרור
+    node: נקודה
     relation: יחס
     way: דרך
   website: אתר אינטרנט
@@ -50,6 +55,7 @@ help: על אודות המפה
 locate_me: איתור עצמי
 network:
   national: מסלולים לאומיים
+  nordic: סקי נורדי
   skitour: טיולי סקי
 osmc_symbol:
   back: חזרה
@@ -58,6 +64,7 @@ osmc_symbol:
   foreground_heading: חזית
   preview_heading: תצוגה מקדימה
 routelist:
+  loading: בטעינה…
   close: סגירה
   title: נתיבים
 search:
