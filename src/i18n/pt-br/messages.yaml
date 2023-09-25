@@ -7,6 +7,7 @@
 # Author: Eduardo Addad de Oliveira
 # Author: Eduardoaddad
 # Author: Fasouzafreitas
+# Author: Felipe L. Ewald
 # Author: Gusta
 # Author: Jaideraf
 # Author: Luckas
@@ -36,16 +37,17 @@ details:
   route_symbol: Símbolo da rota
   subroutes_title: Seções
   superroutes_title: Parte de
-  symbol: símbolo
+  symbol: Símbolo
   tags:
-    key: Chave
+    key: chave
     title: Etiquetas do OpenStreetMap
-    value: Valor
+    value: valor
   type:
     guidepost: Posto guia
     node: Ponto
     relation: Relação
     way: Caminho
+    wayset: Wayset
   website: Site
   wikipedia: Wikipédia
   zoom_to: Mostrar no mapa
@@ -56,11 +58,14 @@ elevation:
     altitude: Altitude (m)
     distance: Distância (km)
   title: Perfil de relevo
+  total: Total de subida/descida
   unavailable: Nenhum dado de elevação encontrado.
   warn_unsorted: A rota provavelmente está incompleta e desordenada. A informação
     da elevação pode ter pouca precisão.
 error:
   load_error: Erro ao conectar com o servidor.
+  missing_id: Falta o parâmetro 'id'.
+  missing_query: Falta o parâmetro 'query'.
   panel_title: Erro
   object_not_found: Objeto não encontrado.
   api_unavailable: API não disponível.
@@ -70,13 +75,15 @@ help: Sobre o mapa
 locate_me: Localize-me
 network:
   continental: Rotas continentais
-  downhill: descer
+  downhill: Morro abaixo
   national: Rotas nacionais
-  node: conexões de rede do nó
+  node: Conexões de rede do nó
   nordic: Esquiando nórdico
   other: Outras Rotas
   regional: Rotas regionais
   skitour: Passeios de esquiando
+  sled: Pista de trenó
+  sleigh: Pista de trenó
   winter_hike: Caminhada no inverno
 osmc_symbol:
   back: Voltar
@@ -95,12 +102,17 @@ osmc_symbol:
           para ver como será processado no mapa.
   preview_heading: Pré-visualizar
 routelist:
+  loading: Carregando...
   close: Fechar
+  more: Aumente o zoom para ver mais rotas.
   rollup: Rolar acima
   title: Rotas
 search:
+  places: Locais
   routes: Rotas
   title: Buscar
+  help: Use palavras-chave para fazer a pesquisa. Você pode pesquisar nomes de trilhas
+    (por exemplo, Appalachian Trail, E2) ou lugares (por exemplo, Berlim).
 settings:
   base_map: Mapa base
   browser_language: Usar as configurações do navegador
@@ -109,10 +121,21 @@ settings:
   route_layer: Camada de rotas
   title: Configurações do mapa
   transparency: Transparência do mapa
+site_description:
+  cycling: Rotas de ciclismo locais e de longa distância, com mapas e informações
+    do OpenStreetMap.
+  hiking: Rotas locais e de longa distância para caminhadas e passeios a pé, com mapas
+    e informações do OpenStreetMap.
+  mtb: Rotas de mountain bike (MTB), com mapas e informações do OpenStreetMap.
+  riding: Rotas de cavalgadas, com mapas e informações do OpenStreetMap.
+  skating: Rotas de patinação inline, com mapas e informações do OpenStreetMap.
+  slopes: Pistas de esportes de inverno, esqui alpino, patinação cross-country, caminhada
+    de inverno, com mapas e informações do OpenStreetMap.
 site_title:
   cycling: Ciclismo
   hiking: Excursionismo
   mtb: BTT
+  osmc_symbol: A tag osmc:symbol
   riding: Corridas de cavalos
   skating: Patinação em linha
   slopes: Pistas para esportes de inverno
