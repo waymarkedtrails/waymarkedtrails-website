@@ -1,6 +1,7 @@
 # Messages for Romanian (română)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Buraddo
 # Author: Minisarm
 ---
 about:
@@ -12,8 +13,18 @@ about:
   riding: Această hartă afișează traseele de echitație marcate din toată lumea.
   slopemap: Această hartă afișează traseele de pârtii de zăpadă marcate din toată
     lumea.
+  osm: |-
+    Rutele sunt suprapuse pe OpenStreetMap standard și, opțional, un strat de umbrire a dealurilor. Harta rutei este generată folosind date din proiectul [OpenStreetMap](https://www.openstreetmap.org) (OSM). OSM este o hartă a lumii care poate fi editată gratuit la care oricine poate
+    participa. Ceea ce înseamnă că nu este deloc complet,
+    dar înseamnă și că poți contribui prin adăugarea de rute noi și corectând greșelile din cele existente. Pentru a afla mai multe despre OpenStreetMap, consultați [Ghidul pentru începători](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
 rendering:
   title: Randarea datelor OSM
+  hikingroutes: |-
+    Traseele de drumeții în OSM trebuie introduse ca relații. Cum funcționează acest lucru este descris în detaliu pe pagina de etichetare despre [trasee de mers pe jos](https://wiki.openstreetmap.org/wiki/Walking_Routes) în wikiul OSM. Această hartă arată relații care au cel puțin
+    următoarele etichete:
+
+     type = route|superroute
+     route = foot|walking|hiking
 hierarchies:
   title: Ierarhii de relații
 osmc:

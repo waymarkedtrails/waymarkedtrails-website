@@ -1,23 +1,41 @@
 # Messages for Romanian (română)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Buraddo
 # Author: Minisarm
 # Author: Shirayuki
 ---
 attribution:
-  data: Date hartă © [OpenStreetMap](http://www.openstreetmap.org) sub [ODbL](http://www.openstreetmap.org/copyright)
+  data: Date hartă © [OpenStreetMap](https://www.openstreetmap.org) sub [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: datele despre altitudine de la [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Mai multe detalii
+  no_data: Nu există informații despre destinație pentru acest marcaj.
+  title: Destinații
 details:
   GPX: GPX
+  KML: KML
+  altitude: Altitudine
+  image: Imagine
   mapped_len: Afișată pe hartă
   note: Notă
   official_len: Lungime oficială
   operator: Operator
+  route_symbol: Simbol traseu
   subroutes_title: Secțiuni
   superroutes_title: Parte din
+  symbol: Simbol
   tags:
+    key: cheie
     title: Etichete OpenStreetMap
+    value: valoare
+  type:
+    guidepost: Marcaj
+    node: Nod
+    relation: Relație
+    way: Cale
   website: Site web
+  zoom_to: Arată pe hartă
 elevation:
   ascent: Urcare cumulată
   descent: Coborâre cumulată
@@ -25,24 +43,53 @@ elevation:
     altitude: Altitudine (m)
     distance: Distanță (km)
   title: Profil de altitudine
+  total: Urcare/coborâre totală
+  unavailable: Nu s-au găsit date de altitudine.
+  warn_unsorted: Traseul este potențial neordonat sau incomplet. Informațiile despre
+    altitudine pot fi inexacte.
 error:
   load_error: Eroare de conectare la server.
+  missing_id: Lipsește parametrul „id”.
+  missing_query: Lipsește parametrul „query”.
   panel_title: Eroare
+  object_not_found: Obiectul nu a fost găsit.
+  api_unavailable: API-ul nu este disponibil.
 headline:
   last_update: Ultima actualizare
+help: Despre hartă
 locate_me: Localizează-mă
 network:
-  downhill: coborâre
+  continental: Rute continentale
+  downhill: Coborâre
+  national: Rute naționale
+  node: Conexiuni de rețea de noduri
+  nordic: Schi nordic
+  other: Alte rute
+  regional: Rute regionale
+  skitour: Schi de tură
+  sled: Pârtie de sanie
+  sleigh: Pârtie de sanie
+  winter_hike: Drumeții de iarnă
 osmc_symbol:
   back: Înapoi
   background_heading: Fundal
+  examples: Exemple
   foreground_heading: Prim plan
+  preview: Introduceți o valoare osmc:symbol în câmpul de de mai jos pentru a vedea
+    cum va fi redat pe hartă.
+  preview_heading: Previzualizare
 routelist:
+  loading: Se încarcă...
   close: Închide
+  more: Măriți pentru a vedea mai multe rute.
+  rollup: Rulează
   title: Trasee
 search:
+  places: Locuri
   routes: Trasee
   title: Căutare
+  help: Vă rugăm să utilizați cuvinte cheie pentru a căuta. Puteți căuta numele de
+    trasee (de exemplu, Traseul Appalachian, E2) sau locuri (de exemplu, Berlin).
 settings:
   base_map: Harta de bază
   browser_language: Utilizează setările din navigator
@@ -51,10 +98,21 @@ settings:
   route_layer: Stratul traseelor
   title: Setări hartă
   transparency: Transparența hărții
+site_description:
+  cycling: Trasee de ciclism locale și pe distanțe lungi, cu hărți și informații din
+    OpenStreetMap.
+  hiking: Trasee de drumeție locale și pe distanțe lungi, cu hărți și informații din
+    OpenStreetMap.
+  mtb: Trasee de ciclism montan (MTB), cu hărți și informații din OpenStreetMap.
+  riding: Trasee de călărie, cu hărți și informații din OpenStreetMap.
+  skating: Trasee de patinaj, cu hărți și informații din OpenStreetMap.
+  slopes: Pârtii pentru sporturi de iarnă, schi alpin, patinaj fond, plimbări de iarnă,
+    cu hărți și informații din OpenStreetMap.
 site_title:
   cycling: Ciclism
   hiking: Drumeții
   mtb: MTB
+  osmc_symbol: Eticheta osmc:symbol
   riding: Echitație
   skating: Patinaj cu role
   slopes: Pârtii pentru sporturi de iarnă

@@ -1,0 +1,60 @@
+# Messages for Chechen (нохчийн)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Умар
+---
+destination_sign:
+  more: Ма-дарра
+details:
+  altitude: Локхалла
+  image: Сурт
+  mapped_len: Гайта картин тӀехь
+  note: Билгалдаккхар
+  operator: Оператор
+  subroutes_title: Дакъош
+  superroutes_title: Дакъа
+  symbol: Хьаьрк
+  tags:
+    key: догӀа
+    title: OpenStreetMap тегаш
+    value: маьӀна
+  wikipedia: Википеди
+  zoom_to: Гайта картин тӀехь
+elevation:
+  diagram:
+    altitude: Локхалла (м)
+    distance: Йукъ (км)
+error:
+  panel_title: ГӀалат
+headline:
+  last_update: ТӀаьххьара карлайаккхар
+help: Картех лаьцна
+locate_me: Со кара ве(йе)
+network:
+  continental: Континенталан маршруташ
+  downhill: Охьане
+  national: Къоман маршруташ
+osmc_symbol:
+  back: Йуха
+  examples: Масалаш
+  preview_heading: Хьалххе хьажар
+routelist:
+  loading: Чуйолуш йу…
+  close: ДӀачӀагӀа
+  title: Маршруташ
+search:
+  places: Меттигаш
+  routes: Маршруташ
+  title: Лахар
+settings:
+  base_map: Базин карта
+  browser_language: Лелабе браузеран нисдаран гӀирс
+  language: Мотт
+  route_layer: Маршрутийн чкъор
+  title: Картин нисдаран гӀирс
+  transparency: Чекх са го картанаш
+site_title:
+  cycling: Велоспорт
+  mtb: Ломан велоспорт
+  osmc_symbol: osmc:symbol тег
+...
