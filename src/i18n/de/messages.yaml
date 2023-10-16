@@ -8,6 +8,7 @@
 # Author: Justman10000
 # Author: Kghbln
 # Author: Lonvia
+# Author: Magiczocker
 # Author: Metalhead64
 # Author: Purodha
 # Author: Tobi 406
@@ -61,6 +62,8 @@ error:
   missing_id: Fehlender Parameter 'id'.
   missing_query: Fehlender Parameter 'query'.
   panel_title: Fehler
+  object_not_found: Objekt nicht gefunden.
+  api_unavailable: API nicht verfügbar.
 headline:
   last_update: Letzte Aktualisierung
 help: Über die Karte
