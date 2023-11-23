@@ -2,9 +2,12 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Farras
+# Author: Veracious
 ---
 attribution:
   data: Data peta © [OpenStreetMap](http://www.openstreetmap.org) di bawah [ODbL](http://www.openstreetmap.org/copyright)
+destination_sign:
+  title: Destinasi-destinasi
 details:
   mapped_len: Ditampilkan di peta
   note: Catatan
@@ -14,9 +17,11 @@ details:
   superroutes_title: Bagian dari
   tags:
     title: Tag OpenStreetMap
+  type:
+    relation: Relasi
   website: Situs web
 error:
-  panel_title: Kesalahan
+  panel_title: Galat
 headline:
   last_update: Pemutakhiran terakhir
 osmc_symbol:
