@@ -1875,7 +1875,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.30.0, magic-string@npm:^0.30.3":
+"magic-string@npm:^0.30.3, magic-string@npm:^0.30.4":
   version: 0.30.5
   resolution: "magic-string@npm:0.30.5"
   dependencies:
@@ -2734,9 +2734,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:4.2.0":
-  version: 4.2.0
-  resolution: "svelte@npm:4.2.0"
+"svelte@npm:^4.2.8":
+  version: 4.2.8
+  resolution: "svelte@npm:4.2.8"
   dependencies:
     "@ampproject/remapping": "npm:^2.2.1"
     "@jridgewell/sourcemap-codec": "npm:^1.4.15"
@@ -2749,9 +2749,9 @@ __metadata:
     estree-walker: "npm:^3.0.3"
     is-reference: "npm:^3.0.1"
     locate-character: "npm:^3.0.0"
-    magic-string: "npm:^0.30.0"
+    magic-string: "npm:^0.30.4"
     periscopic: "npm:^3.1.0"
-  checksum: 70de82baaed4fd91152063cb40526bee56e8ce4345be7acc8526b91999f68a6f36864a3d506ab4e901b7a1da44d32530eb0a8376dd33b70797427c34431d406d
+  checksum: 60d1ee8a67bf4d640eb417a36987d14169e4a8328e7f836917c53c75c8138f1e0e73900891cf95a35f456e112ca55778695e3291c4fd4ba60f22e36f63fc1537
   languageName: node
   linkType: hard
 
@@ -2911,7 +2911,7 @@ __metadata:
     rollup-plugin-hash: "npm:^1.3.0"
     rollup-plugin-livereload: "npm:^2.0.5"
     rollup-plugin-svelte: "npm:^7.1.6"
-    svelte: "npm:4.2.0"
+    svelte: "npm:^4.2.8"
     svelte-i18n: "npm:^4.0.0"
   languageName: unknown
   linkType: soft

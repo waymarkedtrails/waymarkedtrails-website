@@ -18,6 +18,7 @@
     import {transform} from 'ol/proj';
     import {Attribution, ScaleLine, defaults as defaultControls} from 'ol/control';
 
+    let has_map = false;
     let component;
 
     setContext('olContext', () => map);
@@ -41,6 +42,8 @@
                   controls: defaultControls({attribution: false})
                              .extend([attribution, new ScaleLine()]),
               });
+
+        has_map = true;
 
         map.on('moveend', function(evt) {
             let view = evt.map.getView();
@@ -78,5 +81,5 @@
 </style>
 
 <div bind:this={component}>
-{#if map}<slot></slot>{/if}
+{#if has_map}<slot></slot>{/if}
 </div>
