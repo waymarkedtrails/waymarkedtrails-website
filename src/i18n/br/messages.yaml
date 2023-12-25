@@ -25,9 +25,17 @@ details:
   operator: Oberataer
   subroutes_title: Rannoù
   superroutes_title: Lodenn eus
+  symbol: Arouez
   tags:
+    key: alc'hwez
     title: Tikedennoù OpenStreetMap
+    value: talvoud
+  type:
+    node: Skoulm
+    relation: Darempred
+    way: Hent
   website: Lec'hienn Genrouedad
+  wikipedia: Wikipedia
   zoom_to: Diskouez war ar gartenn
 elevation:
   ascent: Sav berniet
@@ -48,8 +56,14 @@ headline:
 help: A-zivout ar gartenn
 locate_me: Lec'hiit ac'hanon
 network:
+  continental: Hentoù kevandirel
   downhill: dinaou
+  national: Hentoù broadel
   node: Kevreadur skoulmoù rouedad
+  other: Hentoù all
+  regional: Hentoù rannvroel
+  sled: Roudenn luj
+  sleigh: Roudenn treinell
 osmc_symbol:
   back: Distro
   background: Labourat a ra an drekleur evel-se ivez. Bez' ez eus anezhi ul liv hag
@@ -66,10 +80,13 @@ osmc_symbol:
     evit gwelet penaos e vo kinniget war ar gartenn
   preview_heading: Rakwelet
 routelist:
+  loading: O kargañ...
   close: Serriñ
+  more: Zoumañ evit gwelet muioc'h a hentoù.
   rollup: Punañ
   title: Hentoù
 search:
+  places: Lec'hioù
   routes: Hentoù
   title: Klask
 settings:
@@ -80,10 +97,13 @@ settings:
   route_layer: Gwiskad hentoù
   title: Arventennoù ar gartenn
   transparency: Treuzweluster ar gartenn
+site_description:
+  riding: Hentoù marc'hegezh, gant kartennoù ha titouroù diouzh OpenStreetMap.
 site_title:
   cycling: Marc'h-houarn
   hiking: Bale
   mtb: MTB
+  osmc_symbol: An dikedenn osmc:symbol
   riding: Marc'hegerezh
   skating: Botoù-ruilh
   slopes: Roudennoù evit ar sportoù goañv

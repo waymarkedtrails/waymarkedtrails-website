@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Aftabuzzaman
+# Author: Aishik Rehman
 # Author: Bellayet
 # Author: Runab
 # Author: Wikisagnik
@@ -9,7 +10,7 @@
 # Author: আফতাবুজ্জামান
 ---
 destination_sign:
-  more: আরো বিস্তারিত
+  more: আরও বিস্তারিত
 details:
   KML: KML
   image: চিত্র
