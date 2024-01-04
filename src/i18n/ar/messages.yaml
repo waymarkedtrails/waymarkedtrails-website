@@ -6,6 +6,7 @@
 # Author: Maroen1990
 # Author: Meno25
 # Author: OsamaK
+# Author: Sandra Hanbo
 # Author: ديفيد
 ---
 attribution:
@@ -57,6 +58,8 @@ error:
   missing_id: المعلمة "id" مفقودة.
   missing_query: المعلمة "استعلام" مفقودة.
   panel_title: خطأ
+  object_not_found: لم يُعثر على الكائن.
+  api_unavailable: واجهة برمجة التطبيقات غير متوفرة.
 headline:
   last_update: آخر تحديث
 help: معلومات عن الخريطة
