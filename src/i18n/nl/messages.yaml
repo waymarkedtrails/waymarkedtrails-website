@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: A67-A67
 # Author: Danieldegroot2
+# Author: Dimitar
 # Author: Elderson
 # Author: Elroy
 # Author: Jeleniccz
@@ -14,7 +15,7 @@
 # Author: Siebrand
 ---
 attribution:
-  data: Kaartgegevens © [OpenStreetMap](http://www.openstreetmap.org) onder [ODbL](http://www.openstreetmap.org/copyright)
+  data: Kaartgegevens © [OpenStreetMap](https://www.openstreetmap.org) onder [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: hoogtegegevens via [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Meer gegevens

@@ -1,11 +1,12 @@
 # Messages for Serbian (Latin script) (srpski (latinica))
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Dimitar
 # Author: Rancher
 ---
 attribution:
-  data: Kartografski podaci © [Openstritmap](http://www.openstreetmap.org) pod licencom
-    [ODbL](http://www.openstreetmap.org/copyright)
+  data: Kartografski podaci © [Openstritmap](https://www.openstreetmap.org) pod licencom
+    [ODbL](https://www.openstreetmap.org/copyright)
 details:
   mapped_len: Prikazano na mapi
   note: Beleška

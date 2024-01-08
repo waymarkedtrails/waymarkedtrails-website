@@ -2,9 +2,10 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: AivoK
+# Author: Dimitar
 ---
 attribution:
-  data: Kaardi andmed © [OpenStreetMap](http://www.openstreetmap.org) [ODbL litsentsiga](http://www.openstreetmap.org/copyright)
+  data: Kaardi andmed © [OpenStreetMap](https://www.openstreetmap.org) [ODbL litsentsiga](https://www.openstreetmap.org/copyright)
   elevation_title: reljeefi info [SRTM/ASTER](help/acknowledgements)
 details:
   mapped_len: Kaardistatud pikkus

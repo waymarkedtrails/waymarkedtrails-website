@@ -1,12 +1,13 @@
 # Messages for Japanese (日本語)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Dimitar
 # Author: MathXplore
 # Author: Otokoume
 # Author: Shirayuki
 ---
 attribution:
-  data: 地図データ © [OpenStreetMap](http://www.openstreetmap.org) 、ライセンス [ODbL](http://www.openstreetmap.org/copyright)
+  data: 地図データ © [OpenStreetMap](https://www.openstreetmap.org) 、ライセンス [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: '標高データ提供: [SRTM/ASTER](help/acknowledgements)'
 details:
   note: 注釈

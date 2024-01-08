@@ -1,6 +1,7 @@
 # Messages for Zazaki (Zazaki)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Dimitar
 # Author: Erdemaslancan
 # Author: Gorizon
 # Author: Kumkumuk
@@ -9,7 +10,7 @@
 # Author: Orbot707
 ---
 attribution:
-  data: Melumatê xerita © [OpenStreetMap](http://www.openstreetmap.org) sera [ODbL](http://www.openstreetmap.org/copyright)
+  data: Melumatê xerita © [OpenStreetMap](https://www.openstreetmap.org) sera [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: Malumata berziye  [SRTM/ASTER](desteg/teşekuri)
 destination_sign:
   more: Tayêna melumat

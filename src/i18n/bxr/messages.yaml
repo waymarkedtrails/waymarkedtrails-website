@@ -2,10 +2,11 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Bjargal
+# Author: Dimitar
 ---
 attribution:
-  data: Газарай зурагай үгэгдэлые © [OpenStreetMap](http://www.openstreetmap.org)
-    [ODbL](http://www.openstreetmap.org/copyright) лицензиин ёһоор хангаба.
+  data: Газарай зурагай үгэгдэлые © [OpenStreetMap](https://www.openstreetmap.org)
+    [ODbL](https://www.openstreetmap.org/copyright) лицензиин ёһоор хангаба.
 details:
   mapped_len: Газарай зурагта харуулагдаха
   note: Тэмдэглэл

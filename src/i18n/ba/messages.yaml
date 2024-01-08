@@ -2,10 +2,11 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: AiseluRB
+# Author: Dimitar
 # Author: Sagan
 ---
 attribution:
-  data: Карта мәғлүмәте © [OpenStreetMap](http://www.openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright)
+  data: Карта мәғлүмәте © [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)
 details:
   mapped_len: Картала күрһәтергә
   note: Иҫкәртмә

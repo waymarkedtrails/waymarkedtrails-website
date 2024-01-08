@@ -2,12 +2,13 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: AZISS
+# Author: Dimitar
 # Author: Toghrul Rahimli
 # Author: Şeyx Şamil
 ---
 attribution:
-  data: Xəritə məlumatları © [OpenStreetMap](http://www.openstreetmap.org) üzərindən
-    [ODbL](http://www.openstreetmap.org/copyright)
+  data: Xəritə məlumatları © [OpenStreetMap](https://www.openstreetmap.org) üzərindən
+    [ODbL](https://www.openstreetmap.org/copyright)
 details:
   mapped_len: Xəritədə göstər
   note: Qeyd

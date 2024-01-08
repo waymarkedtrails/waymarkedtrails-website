@@ -2,9 +2,10 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Anakmalaysia
+# Author: Dimitar
 ---
 attribution:
-  data: Data peta © [OpenStreetMap](http://www.openstreetmap.org) di bawah [ODbL](http://www.openstreetmap.org/copyright)
+  data: Data peta © [OpenStreetMap](https://www.openstreetmap.org) di bawah [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: data ketinggian oleh [SRTM/ASTER](help/acknowledgements)
 details:
   mapped_len: Kepanjangan terpeta

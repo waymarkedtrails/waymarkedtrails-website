@@ -1,10 +1,11 @@
 # Messages for Faroese (føroyskt)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Dimitar
 # Author: EileenSanda
 ---
 attribution:
-  data: Kort dáta © [OpenStreetMap](http://www.openstreetmap.org) undir [ODbL](http://www.openstreetmap.org/copyright)
+  data: Kort dáta © [OpenStreetMap](https://www.openstreetmap.org) undir [ODbL](https://www.openstreetmap.org/copyright)
 details:
   mapped_len: Vís longdina á kortinum
   note: Viðmerking

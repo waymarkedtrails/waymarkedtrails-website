@@ -1,6 +1,7 @@
 # Messages for Lithuanian (lietuvių)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Dimitar
 # Author: Dittaeva
 # Author: Eitvys200
 # Author: Mantak111
@@ -8,7 +9,8 @@
 # Author: Zygimantus
 ---
 attribution:
-  data: Žemėlapio duomenys © [OpenStreetMap](http://www.openstreetmap.org) pagal [ODbL](http://www.openstreetmap.org/copyright)
+  data: Žemėlapio duomenys © [OpenStreetMap](https://www.openstreetmap.org) pagal
+    [ODbL](https://www.openstreetmap.org/copyright)
 details:
   GPX: GPX
   note: Pastaba

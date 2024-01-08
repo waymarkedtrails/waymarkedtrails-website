@@ -1,12 +1,13 @@
 # Messages for Colognian (Ripoarisch)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Dimitar
 # Author: Dittaeva
 # Author: Purodha
 ---
 attribution:
-  data: Kaate-Daate sin_er © vun [OpenStreetMap](http://www.openstreetmap.org), ze
-    han onger dä [ODbL](http://www.openstreetmap.org/copyright)
+  data: Kaate-Daate sin_er © vun [OpenStreetMap](https://www.openstreetmap.org), ze
+    han onger dä [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: Daate övver de Hühde vun [SRTM/ASTER](Hölp un Aanäkännonge)
 details:
   mapped_len: Op dä Landkaat aanjezeisch

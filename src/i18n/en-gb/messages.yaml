@@ -3,10 +3,11 @@
 # Export driver: phpyaml
 # Author: Andibing
 # Author: Cblair91
+# Author: Dimitar
 # Author: Pierpao
 ---
 attribution:
-  data: Map data © [OpenStreetMap](http://www.openstreetmap.org) under [ODbL](http://www.openstreetmap.org/copyright)
+  data: Map data © [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: elevation data by [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: More details

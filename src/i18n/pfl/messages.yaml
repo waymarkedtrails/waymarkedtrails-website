@@ -1,11 +1,12 @@
 # Messages for Palatine German (Pälzisch)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Dimitar
 # Author: Manuae
 ---
 attribution:
-  data: Kaadedaade vun [OpenStreetMap](http://www.openstreetmap.org) un Midawaida
-    ([CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/))
+  data: Kaadedaade vun [OpenStreetMap](https://www.openstreetmap.org) un Midawaida
+    ([CC BY-SA](https://creativecommons.org/licenses/by-sa/2.0/))
 details:
   mapped_len: Uffde Kaad gzaischd
   note: Hiewees

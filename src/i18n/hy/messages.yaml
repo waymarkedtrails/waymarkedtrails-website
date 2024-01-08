@@ -1,10 +1,11 @@
 # Messages for Armenian (հայերեն)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Dimitar
 # Author: Kareyac
 ---
 attribution:
-  data: Քարտեզի տվյալները © [OpenStreetMap](http://www.openstreetmap.org) [ODbL](http://www.openstreetmap.org/copyright)
+  data: Քարտեզի տվյալները © [OpenStreetMap](https://www.openstreetmap.org) [ODbL](https://www.openstreetmap.org/copyright)
     լիցենզիայի տակ
 destination_sign:
   title: Ուղղություններ

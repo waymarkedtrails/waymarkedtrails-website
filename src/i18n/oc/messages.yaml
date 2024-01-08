@@ -2,11 +2,12 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Cedric31
+# Author: Dimitar
 # Author: Shirayuki
 ---
 attribution:
-  data: Donadas cartograficas © [OpenStreetMap](http://www.openstreetmap.org) jos
-    [ODbL](http://www.openstreetmap.org/copyright)
+  data: Donadas cartograficas © [OpenStreetMap](https://www.openstreetmap.org) jos
+    [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: donnadas altimetricas per [SRTM/ASTER](help/acknowledgements)
 details:
   GPX: GPX
