@@ -5,6 +5,9 @@
 # Author: Patriot Kur
 # Author: Гусейн
 ---
+attribution:
+  data: Xəritə məlimot © [OpenStreetMap](https://www.openstreetmap.org) de lisenzijə
+    [ODbL](https://www.openstreetmap.org/copyright)
 destination_sign:
   more: Чәмин
   title: Шә вырон
@@ -19,9 +22,16 @@ details:
   operator: Operator
   subroutes_title: Baxşəon
   superroutes_title: Поә
+  symbol: Rəmz
   tags:
+    key: kilid
     title: OpenStreetMap nışonon
+    value: məno
+  type:
+    relation: Əloǧə
+    way: Ro
   website: Vebsoyt
+  zoom_to: Xəritədə nišon doj
 elevation:
   ascent: Умуми пеше
   descent: Умуми етат
@@ -41,7 +51,9 @@ osmc_symbol:
   background_heading: Zəmin
   examples: Misolon
   foreground_heading: Əsosi ranq
+  preview_heading: Syftənə nišon doj
 routelist:
+  loading: Əlovə kardejdə…
   close: Жәј
   title: Marşruton
 search:
