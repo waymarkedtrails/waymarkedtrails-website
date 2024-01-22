@@ -7,7 +7,6 @@
 # Author: Pierpao
 ---
 attribution:
-  data: Map data © [OpenStreetMap](https://www.openstreetmap.org) under [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: elevation data by [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: More details
