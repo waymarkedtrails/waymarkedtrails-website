@@ -51,6 +51,7 @@ error:
   load_error: Fazi kevreañ ouzh ar servijer.
   panel_title: Fazi
   object_not_found: N'eo ket bet kavet an draezenn.
+  api_unavailable: An API n'eo ket da gaout.
 headline:
   last_update: Hizivaet da ziwezhañ
 help: A-zivout ar gartenn
@@ -64,6 +65,7 @@ network:
   regional: Hentoù rannvroel
   sled: Roudenn luj
   sleigh: Roudenn treinell
+  winter_hike: Tro-vale goañv
 osmc_symbol:
   back: Distro
   background: Labourat a ra an drekleur evel-se ivez. Bez' ez eus anezhi ul liv hag
@@ -90,7 +92,7 @@ search:
   routes: Hentoù
   title: Klask
 settings:
-  base_map: Kartenn ziazez
+  base_map: Kartenn diazez
   browser_language: Implijout arventennoù ar merdeer
   hillshading_layer: Skeud an tosennoù
   language: Yezh
