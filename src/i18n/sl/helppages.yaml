@@ -88,14 +88,14 @@ rendering:
   hikinglabels: |-
     Oznaka za vsako pot se »ugane« iz značk v naslednjem vrstnem redu:
 
-    1. Preverite [lokalna pravila upodabljanja](#help-hikinglocal).
-    2. Poskusite interpretirati značko »osmc:symbol«. Za podrobnosti o tem, kateri deli
+    1. Preverjanje [lokalnih pravil upodabljanja](#help-hikinglocal).
+    2. Poskus interpretacije značke »osmc:symbol«. Za podrobnosti o tem, kateri deli
      se razumejo, glejte [pravila upodabljanja osmc:symbol](osmc_symbols.html).
-    3. Če obstaja značka »ref«, uporabite besedilno oznako z značko »ref«.
-    4. Če obstaja značka »name«, izpeljite referenco iz nje, najprej z uporabo
-     samo velikh črk, če pa to spodleti, pa z uporabo prvih črk
+    3. Če obstaja značka »ref«, se uporabi besedilna oznaka z značko »ref«.
+    4. Če obstaja značka »name«, se referenca izpelje iz nje, najprej z uporabo
+     samo velikih črk, če pa to spodleti, pa z uporabo prvih črk
      imena.
-    5. Odnehajte.
+    5. Odnehanje.
   labels: |-
     Oznaka za vsako pot se »ugane« iz značk v naslednjem vrstnem redu:
 
