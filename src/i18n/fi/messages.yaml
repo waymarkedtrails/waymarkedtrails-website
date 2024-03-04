@@ -52,7 +52,11 @@ elevation:
     voivat olla epätarkkoja.
 error:
   load_error: Virhe yhdistettäessä palvelimeen.
+  missing_id: Puuttuva parametri 'id'.
+  missing_query: Puuttuva parametri 'query'.
   panel_title: Virhe
+  object_not_found: Kohdetta ei löytynyt.
+  api_unavailable: API ei saatavilla.
 headline:
   last_update: Viimeisin päivitys
 help: Tietoa kartasta
@@ -61,6 +65,7 @@ network:
   continental: Mannerreitit
   downhill: Alamäki
   national: Valtakunnalliset reitit
+  node: Solmuverkkoyhteydet
   nordic: Pohjoismainen hiihto
   other: Muut reitit
   regional: Alueelliset reitit
