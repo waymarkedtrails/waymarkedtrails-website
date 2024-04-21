@@ -31,6 +31,8 @@
  }
 
  a {
+    display: flex;
+    align-items: center;
     font-weight: 700
  }
 </style>
@@ -38,7 +40,7 @@
 <ul>
 {#each themes as theme}
 <li style="background-color:{theme_color[theme]}">
-  <a class="maplink_btn" href="https://{theme}.{BASE_URL}{map_link_tail}"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" />{$_('site_title.' + theme)}</a></li>
+  <a href="https://{theme}.{BASE_URL}{map_link_tail}"><img src="{MEDIA_URL}img/map_{theme}.png" alt="{$_('site_title.' + theme)}" title="{$_('site_title.' + theme)}" />{$_('site_title.' + theme)}</a></li>
 {/each}
 </ul>
 
