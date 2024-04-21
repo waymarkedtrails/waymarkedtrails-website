@@ -35,6 +35,14 @@
     align-items: center;
     font-weight: 700
  }
+
+ li a:link {
+    color: #eee;
+ }
+
+ li a:visited {
+    color: #eee;
+ }
 </style>
 
 <ul>
