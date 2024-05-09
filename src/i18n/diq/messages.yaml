@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Dimitar
 # Author: Erdemaslancan
+# Author: GolyatGeri
 # Author: Gorizon
 # Author: Kumkumuk
 # Author: Marmase
@@ -24,10 +25,20 @@ details:
   note: Not
   official_len: Resmi dergey
   operator: Operator
+  route_symbol: Sembolê rotay
   subroutes_title: Warey
   superroutes_title: Letey
+  symbol: Sembol
   tags:
+    key: kılit
     title: Etiketê OpenStreetMapi
+    value: erc
+  type:
+    guidepost: Rısteyrehberi
+    node: Qedyin
+    relation: Elaqe
+    way: Ray
+    wayset: Raysaz
   website: Keyepele
   wikipedia: Wikipediya
   zoom_to: Xerita de bımocne
@@ -38,18 +49,28 @@ elevation:
     altitude: Berziye (m)
     distance: Dûriye (km)
   title: Profilê berziye
+  total: Deye/Nisab pêro
   unavailable: Berziya datay nêvineyê.
   warn_unsorted: Rota raşt hesab nêbiya û kemiya. Melumatê berziye belkiya çewto.
 error:
   load_error: Gırêbiyayışê serveri de xeta.
+  missing_id: Parametreyo kemi 'id'.
+  missing_query: Parametreyo kemi 'query'.
   panel_title: Xeta
+  object_not_found: Obce nêvinê ya.
 headline:
   last_update: Resnayışo Peyên
 help: Heqa xerita de
 locate_me: Mı bıvêne
 network:
-  downhill: cêrê gedugi
-  node: gıreyê torre çıniyo
+  continental: Rotayı mabênêqıtayan
+  downhill: Cêrê gedugi
+  national: Rotay milli
+  node: Gozgırey torre
+  other: Rotay bini
+  regional: Rotay wareyi
+  skitour: Turê Ski
+  winter_hike: Payadey zımıstani
 osmc_symbol:
   back: Peyser
   background: Plano peyên enê usul ra guriyeno. Plano peyên yew reng u şekıl ra vıraziyayo.
@@ -64,10 +85,13 @@ osmc_symbol:
     cêr.
   preview_heading: Verqayt
 routelist:
+  loading: Bar beno...
   close: Kip ke
+  more: Zeder rotay rê nezdı kerên
   rollup: Loğe ke
   title: Rota
 search:
+  places: Cayi
   routes: Rota
   title: Cı geyre
 settings:
