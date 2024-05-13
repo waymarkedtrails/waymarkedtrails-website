@@ -34,8 +34,8 @@ rendering:
     = route|superroute \nroute = bicycle\n\nL'itinirari mountain bike vèninu visualizzati
     nta na [MTB-map] siparata (https://mtb.waymarkedtrails.org/)."
   classification: |-
-    Nu tag 'route' cu cchiù valuri è suppurtatu quannu iddi sunnu siparati di puntu e vìrgula senza spazzi circustanti.
-    La classificazzioni (e quinni lu culuri di l'itinirariu ntâ mappa) è ditirminata dô tag 'network'.
+    Nu tag 'route' cu cchiù valuri è suppurtatu quannu iḍḍi sunnu siparati di puntu e vìrgula senza spazzi circustanti.
+    La classificazzioni (e quinni lu culuri di l’itinirariu ntâ mappa) è ditirminata dô tag 'network'.
   hierarchy: La mappa supporta macari [girarchìi di rilazzioni](#help-hierarchies).
 hierarchies:
   title: Girarchìi di rilazzioni
@@ -75,12 +75,11 @@ legal:
   disclaimer: |-
     ## Disclaimer
 
-    La cumplitizza e la currittizza dâ mappa nun ponnu èssiri garantiti. Si vai n
+    La cumpritizza e la currittizza dâ mappa nun ponnu èssiri garantiti. Si vai n
     escursioni, prucùrati na mappa di carta bona, equipaggiamentu adiguatu, e nun ti scurdari a casa lu bonu senzu.
-    La natura pò èssiri tantu spiatata, quantu bedda.
+    La natura pò èssiri tantu spiatata, quantu beḍḍa.
 
-    Stu situ cunteni link a siti esterni. L'auturi di stu situ nun havi nudda nfluenza supra lu
-    cuntinutu di ddi siti e nun s'assumi nudda rispunzabbilità p'iddi.
+    Stu situ cunteni lijami a siti esterni. L’auturi di stu situ nun havi nuḍḍa nfluenza supra lu cuntinutu dî siti e nun s’assumi nuḍḍa rispunzabbilità p’iḍḍi.
 acknowledgements:
   title: Ricanuscimenti
 contact:
