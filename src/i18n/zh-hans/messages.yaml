@@ -15,6 +15,7 @@
 # Author: VulpesVulpes825
 # Author: Wzl19371
 # Author: Yfdyh000
+# Author: 列维劳德
 # Author: 沈澄心
 ---
 attribution:
@@ -104,6 +105,7 @@ search:
   places: 地点
   routes: 路线
   title: 搜索
+  help: 请使用关键词搜索。您可以搜索路线名（例如：阿帕拉契小径，E2）或地名（例如：柏林）。
 settings:
   base_map: 底图
   browser_language: 使用浏览器设置
