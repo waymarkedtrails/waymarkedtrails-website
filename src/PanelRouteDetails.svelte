@@ -144,13 +144,14 @@
 {/if}
 
 <CollapsibleTagList tags={route.tags} />
-{:else}
-{$_('routelist.loading')}
-{/if}{/key}
 
 <Collapsible title={$_('details.analyze.title')} init_collapsed={true}>
     <RouteAnalyzeView />
 </Collapsible>
+
+{:else}
+{$_('routelist.loading')}
+{/if}{/key}
 
 <div slot="footer">
     <DetailsFooter {route} />
