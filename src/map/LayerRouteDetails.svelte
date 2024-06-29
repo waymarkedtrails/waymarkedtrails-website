@@ -13,6 +13,21 @@
         src.addFeature(new Feature(pt));
         layer.setSource(src);
     };
+
+    export function get_geometry() {
+        let src = layer.getSource();
+        if (src === null) {
+            return null;
+        }
+
+        let features = src.getFeatures();
+
+        if (features !== null && features.length > 0) {
+            return features[0].getGeometry();
+        }
+
+        return null;
+    }
 </script>
 
 <script>

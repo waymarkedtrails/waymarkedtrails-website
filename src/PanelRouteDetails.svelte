@@ -16,6 +16,7 @@
     import DetailsHeader from './ui/DetailsHeader.svelte';
     import DetailsWeblink from './ui/DetailsWeblink.svelte';
     import ElevationView from './ElevationView.svelte';
+    import RouteAnalyzeView from './RouteAnalyzeView.svelte';
     import ItineraryLine from './ui/ItineraryLine.svelte';
     import DetailsFooter from './ui/DetailsFooter.svelte';
 
@@ -146,6 +147,10 @@
 {:else}
 {$_('routelist.loading')}
 {/if}{/key}
+
+<Collapsible title={$_('details.analyze.title')} init_collapsed={true}>
+    <RouteAnalyzeView />
+</Collapsible>
 
 <div slot="footer">
     <DetailsFooter {route} />

@@ -31,6 +31,19 @@ details:
   website: Website
   wikipedia: Wikipedia
   zoom_to: Show on map
+  analyze:
+    title: Analyze relation
+    summary: This relation has {num} segments.
+    disclaimer: |
+      This shows the route segments as they were computed by waymarkedtrails
+      from the relation. Be aware that relation roles and roundabouts are
+      not handled properly at the moment. Use the presented information
+      with care.
+    legend: |
+      Black lines show the segments. The dashed lines are the virtual
+      connections between the end of one segment and the beginning of the
+      next. Red dots mark open ends in the route. Green dots show where
+      two or more segments meet.
 elevation:
   ascent: Accumulated ascent
   descent: Accumulated descent
