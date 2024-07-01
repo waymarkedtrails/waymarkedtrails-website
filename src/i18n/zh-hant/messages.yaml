@@ -42,6 +42,9 @@ details:
   website: 網站
   wikipedia: 維基百科
   zoom_to: 顯示在地圖上
+  analyze:
+    title: 分析關係
+    summary: 此關係有 {num} 個段。
 elevation:
   ascent: 累積上升
   descent: 累積下降

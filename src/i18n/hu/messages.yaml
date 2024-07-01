@@ -46,6 +46,16 @@ details:
   website: Weboldal
   wikipedia: Wikipédia
   zoom_to: Megjelenítés a térképen
+  analyze:
+    title: Kapcsolat elemzése
+    summary: A kapcsolat {num} szakaszból áll.
+    disclaimer: Ez úgy mutatja az útvonalszakaszokat, ahogyan azokat a Waymarked Trails
+      a kapcsolatból kiszámította. Vedd figyelembe, hogy a kapcsolatszerepek és a
+      körforgalmak egyelőre nincsenek megfelelően kezelve. Az itt látható információt
+      óvatosan használd fel.
+    legend: A fekete vonal a szakaszt jeleníti meg. A szaggatott vonal virtuális kapcsolat
+      az egyik szakasz vége és a következő szakasz eleje között. A vörös pont az útvonal
+      nyitott végét jelzik. A zöld pont azt a helyet mutatja, ahol szakaszok találkoznak.
 elevation:
   ascent: Összesített emelkedés
   descent: Összesített ereszkedés
