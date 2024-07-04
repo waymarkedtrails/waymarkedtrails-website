@@ -40,6 +40,19 @@ details:
   website: Páxina web
   wikipedia: Wikipedia
   zoom_to: Amosar no mapa
+  analyze:
+    title: Analizar a relación
+    summary: Esta relación ten {num} segmentos.
+    disclaimer: |-
+      Isto mostra os segmentos de ruta tal e como foron calculados por rutas marcadas
+      da relación. Teña en conta que os roles de relación e as rotondas
+      non se xestionan correctamente nestes intres. Use a información presentada
+      con coidado.
+    legend: |-
+      As liñas negras mostran os segmentos. As liñas discontinuas son as
+      conexións virtuais entre o final dun segmento e o comezo do
+      seguinte. Os puntos vermellos marcan os extremos abertos da ruta. Os puntos verdes indican onde
+      se xuntan dous ou máis segmentos.
 elevation:
   ascent: Ascenso acumulado
   descent: Descenso acumulado
