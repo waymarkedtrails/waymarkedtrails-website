@@ -55,6 +55,9 @@ details:
   website: Site web
   wikipedia: Wikipédia
   zoom_to: Afficher sur la carte
+  analyze:
+    title: Analyser la relation
+    summary: Cette relation a {num} segments.
 elevation:
   ascent: Montée cumulée
   descent: Descente cumulée
