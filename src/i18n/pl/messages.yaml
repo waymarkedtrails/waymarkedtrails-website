@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: BeginaFelicysym
 # Author: Chrumps
+# Author: Frozengeist
 # Author: Kastanoto
 # Author: Rezonansowy
 # Author: Royas
@@ -13,14 +14,21 @@
 attribution:
   data: Dane mapy © [OpenStreetMap](https://www.openstreetmap.org) na licencji [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: dane wysokościowe [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Więcej szczegółów
 details:
   GPX: GPX
+  KML: KML
+  altitude: Wysokość
+  image: Obraz
   mapped_len: Długość na mapie
   note: Uwaga
   official_len: Długość oficjalna
   operator: Operator
+  route_symbol: Symbol trasy
   subroutes_title: Sekcje
   superroutes_title: Jest częścią
+  symbol: Symbol
   tags:
     title: Znaczniki OpenStreetMap
   website: Strona internetowa
@@ -55,10 +63,12 @@ osmc_symbol:
     - ich symbole są wyświetlone w ostatniej kolumnie.
   foreground_heading: Pierwszy plan
 routelist:
+  loading: Ładowanie...
   close: Zamknij
   rollup: Zwiń
   title: Trasy
 search:
+  places: Miejsca
   routes: Trasy
   title: Szukaj
 settings:
