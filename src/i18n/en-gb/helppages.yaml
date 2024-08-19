@@ -5,6 +5,7 @@
 # Author: Captaindogfish
 # Author: Cblair91
 # Author: Chase me ladies, I'm the Cavalry
+# Author: Piano1forte2
 # Author: Shirayuki
 ---
 about:
@@ -65,8 +66,8 @@ rendering:
         route = inline_skates
   ridingroutes: |-
     Sign-posted horse riding routes should be tagged like any other route relation.
-    For details see [the route page in the OSM wiki](http://wiki.openstreetmap.org/wiki/Relation:route).
-    To be recognized as a horse riding route, the following tags need to be present:
+    For details see [the route page in the OSM wiki](https://wiki.openstreetmap.org/wiki/Relation:route).
+    To be recognised as a horse riding route, the following tags need to be present:
 
         type = route|superroute
         route = horse
@@ -107,9 +108,9 @@ rendering:
   hikinglabels: |-
     The label for each route is "guessed" from the tags in the following order:
 
-    1. Check for [localised rendering rules](rendering/hikinglocal).
+    1. Check for [localised rendering rules](#help-hikinglocal).
     2. Try to interpret the `osmc:symbol` tag. For details about which parts
-       are understood, see [osmc:symbol rendering rules](rendering/osmc).
+       are understood, see [osmc:symbol rendering rules](osmc_symbols.html).
     3. If a `ref` tag exists, make a text label with the `ref` tag.
     4. If a `name` tag exists, derive a reference from that, first by using
        only upper-case letters and failing that by using the first letters
@@ -124,7 +125,7 @@ rendering:
     3. Give up.
   hierarchy: The map also supports [relation hierarchies](rendering/hierarchies).
   guideposts: |-
-    [Guideposts](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    [Guideposts](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
     are recognised by the following tags:
 
         tourism=information
@@ -241,8 +242,8 @@ hikinglocal:
   hungary: |-
     ## Hungary
 
-    Hungary also use a system with a fixed set of symbols in different colours. These
-    are marked with their own tag [jel](http://wiki.openstreetmap.org/wiki/Key:jel).
+    Hungary also uses a system with a fixed set of symbols in different colours. These
+    are marked with their own tag [jel](https://wiki.openstreetmap.org/wiki/Key:jel).
     The tag is preferred over any `osmc:symbol` tag.
   germany: |-
     ## Germany
@@ -275,26 +276,27 @@ technical:
     OSM server. The date in the upper left corner shows
     the last update. Updates of the underlying Mapnik map are not within this
     site's control. Depending on the current load of the OSM server they take
-    between a minute and a few days.
+    between a minute and a few hours.
 
-    The machine runs standard [Debian Linux](http://www.debian.org/) with
-    a toolchain consisting of [pyosmium](http://osmcode.org/pyosmium/),
-    [Postgresql](http://www.postgresql.org) and [Mapnik 2.0](http://www.mapnik.org).
-    [osgende](https://github.com/waymarkedtrails/osgende) takes care of some postprocessing
-    on the database before rendering. The website is served using
-    [CherryPy](http://cherrypy.org/). The source code
-    is available under a GPL licence. For more information visit the
-    [project page at GitHub](https://github.com/waymarkedtrails/waymarked-trails-site).
+    The source code for this website is available under a GPL licence and
+    split over several repositories:
+    * [backend code and map generation](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+    * [API service](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+    * [website frontend](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+    If you just want to report a bug or discuss features of the website,
+    you can use the [issue tracker](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
+    or the [discussion feature](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) of the project repo on Github.
   translation: |-
     ## Translations
 
-    Translations are managed by the ever helpful people on [translatewiki.net](http://translatewiki.net). If you want to contribute a translation in your own language or give feedback on existing translations, visit the [translatewiki.net project page](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+    Translations are managed by the ever helpful people on [translatewiki.net](https://translatewiki.net). If you want to contribute a translation in your own language or give feedback on existing translations, visit the [translatewiki.net project page](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Legal and Usage Terms
   copyright: |-
     The routes overlay is available under the
-    [Creative Commons Attribution-Share Alike 3.0 Germany Licence](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en), and the GPX tracks under the
-    [ODbL](http://opendatacommons.org/licenses/odbl/).
+    [Creative Commons Attribution-Share Alike 3.0 Germany Licence](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en), and the GPX tracks under the
+    [ODbL](https://opendatacommons.org/licenses/odbl/).
     They may be reused and changed as long as the resulting work uses a compatible licence
     and the OpenStreetMap project and this site are mentioned.
   usage: |-
@@ -312,16 +314,16 @@ legal:
 acknowledgements:
   title: Acknowledgements
   text: |-
-    All map data provided by [OpenStreetMap and contributors](http://www.openstreetmap.org)
-    and is distributed under the ODbL license. The base map is also courtesy of OSM and available
-    under CC BY-SA 2.0. For more information, see the
-    [OSM copyright page](http://www.openstreetmap.org/copyright).
+    All map data provided by [OpenStreetMap and contributors](https://www.openstreetmap.org)
+    and distributed under the ODbL licence. The base map is also courtesy of OSM.
+    For more information, see the
+    [OSM copyright page](https://www.openstreetmap.org/copyright).
 
     Hillshading and elevation data created from a mash-up of SRTM and ASTER GDEM data.
     ASTER GDEM is a product of METI and NASA.
-    Postprocessing was kindly provided by Yves Cainaud from [opensnowmap.org](http://opensnowmap.org).
+    Postprocessing was kindly provided by Yves Cainaud from [opensnowmap.org](https://opensnowmap.org).
 
-    The elevation profile code has been developed by Espen Oldeman Lund in a cooperation between [Kresendo](http://www.kresendo.no) and the [TG4NP project](http://tg4np.eu) at the [Western Norway Research Institute](http://wwww.vestforsk.no).
+    The elevation profile code has been developed by Espen Oldeman Lund in a cooperation between [Kresendo](https://www.kresendo.no) and the TG4NP project at the [Western Norway Research Institute](https://www.vestforsk.no).
 
     The winter sport slopes variant has been developed by Michael Spreng. The riding symbol was
     prepared by Robert Whittaker.
@@ -329,16 +331,13 @@ acknowledgements:
     Guidepost destinations processed by [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Many thanks to Jan Michel for providing the service.
 
     Translations of this site are provided by
-    [translatewiki.net and its contributors](http://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Special thanks go to the pioneer translators that
+    [translatewiki.net and its contributors](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Special thanks go to the pioneer translators that
     provided translations before translatewiki.net: Yves Cainaud (French),
     Oscar Formaggi (Italian),
-    Gustavo [Tuentibiker](http://www.blogger.com/profile/12473561703699888751) Ramis (Spanish),
-    [Guttorm Flatabø](http://guttormflatabo.com)/[TG4NP](http://tg4np.eu) (Norwegian bokmål and nynorsk),
+    Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (Spanish),
+    [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (Norwegian bokmål and nynorsk),
     Mads Lumholt/TG4NP (Danish), Magnús Smári Snorrason/TG4NP (Islandic),
     Lars Mikaelsson/TG4NP (Swedish), and Elina Pesonen (Finnish).
-
-    Finally, the server would not exist without the generous support of
-    [Martin Hoffmann](http://www.partim.de).
 contact:
   title: Contact
   text: |-
