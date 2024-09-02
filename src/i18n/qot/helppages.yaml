@@ -195,15 +195,26 @@ hikinglocal:
         as the nodes. All paths are marked consistently according to their difficulty.
         The map shows these paths in red with the line pattern marking the difficulty
 
-        * ![red line](route_std.png) *hiking path*, marked with ![diamond](yellow_diamond.svg). Tagged with `network=lwn` and `osmc:symbol=yellow:[...]`.
-        * ![dashed line](route_mnt.png) *mountain path*, marked with ![white-red-white](white_red_bar.svg). Tagged with `network=lwn` and `osmc:symbol=red:[...]`.
-        * ![dotted line](route_alp.png) *alpine path*, marked with ![white-blue-white](white_blue_bar.svg). Tagged with `network=lwn` and `osmc:symbol=blue:[...]`.
+        * ![red line](route_std.png) *hiking path*, marked with ![diamond](yellow_diamond.svg). Tagged with `network=lwn` and `osmc:symbol=yellow:[...]:yellow_diamond`.
+        * ![dashed line](route_mnt.png) *mountain path*, marked with ![white-red-white](white_red_bar.svg). Tagged with `network=lwn` and `osmc:symbol=red:white:red_bar`.
+        * ![dotted line](route_alp.png) *alpine path*, marked with ![white-blue-white](white_blue_bar.svg). Tagged with `network=lwn` and `osmc:symbol=blue:white:blue_bar`.
 
         Note that on top of this network there are a number of national and regional
         routes which are shown in the normal way.
 
         For more information about tagging hiking paths in Switzerland in OSM see:
         [Swiss hiking network](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+    austria: |
+        ## Austria
+
+        The region of Vorarlberg uses a similar classification system as
+        Switzerland. Routes with tags `operator=Land Vorarlberg`, `network=rwn`
+        and `network:type=basic_network` will be marked with a difficulty-based schema:
+
+        * ![red line](route_std.png) osmc:symbol=yellow:white:yellow_upper
+        * ![dashed line](route_mnt.png) osmc:symbol=red:white:red_bar
+        * ![dotted line](route_alp.png) osmc:symbol=blue:white:blue_bar
+
     italy: |
         ## Italy
 
