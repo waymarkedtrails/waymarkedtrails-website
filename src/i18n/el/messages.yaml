@@ -4,52 +4,94 @@
 # Author: Crazymadlover
 # Author: Evropi
 # Author: Glavkos
+# Author: Jimkats
 # Author: NikosLikomitros
 # Author: Nikosgranturismogt
 ---
 attribution:
+  data: Δεδομένα χάρτη © [OpenStreetMap](https://www.openstreetmap.org) υπό [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: τα δεδομένα υψομέτρου παρέχονται από το [SRTM/ASTER](help/acknowledgements)
+destination_sign:
+  more: Περισσότερες λεπτομέρειες
+  title: Προορισμοί
 details:
   GPX: GPX
+  KML: KML
+  altitude: Υψόμετρο
+  image: Εικόνα
   mapped_len: Χαρτογραφημένο μήκος
   note: Σημείωση
   official_len: Επίσημο μήκος
   operator: Λειτουργός
+  route_symbol: Σύμβολο διαδρομής
   subroutes_title: Ενότητες
   superroutes_title: Μέρος του
+  symbol: Σύμβολο
   tags:
+    key: κλειδί
     title: ετικέτες OpenStreetMap
+    value: τιμή
+  type:
+    node: Κόμβος
+    relation: Σχέση
+    way: Γραμμή
   website: Ιστότοπος
+  wikipedia: Βικιπαίδεια
+  zoom_to: Εμφάνιση σε χάρτη
+  analyze:
+    title: Ανάλυση σχέσης
+    summary: Αυτή η σχέση έχει {num} τμήματα.
 elevation:
   ascent: Συσσωρευμένη άνοδος
   descent: Συσσωρευμένη κάθοδος
   diagram:
-    altitude: Υψόμετρο (σε μέτρα)
+    altitude: Υψόμετρο (μέτρα)
     distance: Απόσταση (χιλιόμετρα)
   title: Προφίλ υψόμετρου
+  total: Συνολική ανάβαση/κατάβαση
+  unavailable: Δεν βρέθηκαν υψομετρικά δεδομένα.
   warn_unsorted: Η διαδρομή είναι πιθανώς εκτός σειράς ή ανολοκλήρωτη. Οι πληροφορίες
     υψομέτρου μπορεί να μην είναι σωστές.
 error:
   load_error: Σφάλμα σύνδεσης στο διακομιστή.
+  missing_id: Λείπει η παράμετρος 'id'.
+  missing_query: Λείπει η παράμετρος 'query'.
   panel_title: Σφάλμα
+  object_not_found: Το αντικείμενο δεν βρέθηκε.
+  api_unavailable: Το API δεν είναι διαθέσιμο.
 headline:
   last_update: Τελευταία ενημέρωση
 help: Σχετικά με τον χάρτη
 locate_me: Εντόπισε με
+network:
+  continental: Ηπειρωτικές διαδρομές
+  national: Εθνικές διαδρομές
+  node: Συνδέσεις δικτύου κόμβων
+  nordic: Σκανδιναβικό σκι
+  other: Άλλες διαδρομές
+  regional: Περιφερειακές διαδρομές
 osmc_symbol:
   back: Πίσω
   background_heading: Φόντο
   examples: Παραδείγματα
-  foreground_heading: Πρώτο πλάνο
+  foreground_heading: Προσκήνιο
+  preview: |-
+    Γράψτε μια τιμή για το osmc:symbol στο πεδίο από κάτω
+         για να δείτε πως θα απεικονιστεί στον χάρτη.
+  preview_heading: Προεπισκόπηση
 routelist:
+  loading: Φόρτωση...
   close: Κλείσιμο
+  more: Εστιάστε για να δείτε περισσότερες διαδρομές.
   title: Διαδρομές
 search:
+  places: Μέρη
   routes: Διαδρομές
   title: Αναζήτηση
 settings:
   base_map: Βασικός χάρτη
   browser_language: Χρησιμοποιήστε ρυθμίσεις φυλλομετρητή
+  hillshading_layer: Σκίαση λόφων
   language: Γλώσσα
   route_layer: Στρώση δρομολογίων
   title: Ρυθμίσεις χάρτη
@@ -58,6 +100,7 @@ site_title:
   cycling: Ποδηλασία
   hiking: Πεζοπορία
   mtb: Ποδηλατική Ορειβασία
+  osmc_symbol: Η ετικέτα osmc:symbol
   riding: Ιππασία
   skating: Τροχοπέδιλα
   slopes: Πλαγιές χειμερινών αθλημάτων
