@@ -156,22 +156,26 @@ hikinglocal:
     以下是使用特殊地图符号的地区列表。为了让您的区域
     以特殊方式呈现，请阅读页面末尾的提示。
   swiss: |-
-    ##瑞士
+    ## 瑞士
 
-    瑞士拥有遍布全国的标志性远足路径。
-    网络是一个节点网络，其中指定的路标作为节点。
-    所有路径根据其难度标记一致。地图以红色
-    显示这些路径，并标出难度
+    瑞士拥有遍布全国的徒步路径标记网络。该网络是一个节点网络，其中指定的路标作为节点。所有路径一致根据难度来标记。地图以带有线条的红色路径标出路径难度
 
-    *![红线](route_std.png)*远足路径*，标有![菱形](yellow_diamond.svg)。标签为`network=lwn`和`osmc:symbol=yellow:[...]`。
-    *![虚线](route_mnt.png)*山路*，标有![白-红-白](white_red_bar.svg)。标签为`network=lwn`和`osmc:symbol=red:[...]`。
-    *![虚线](route_alp.png)*高山路径*，标有![白-蓝-白](white_blue_bar.svg)。标签为`network=lwn`和`osmc:symbol=blue:[...]`。
+    * ![红线](route_std.png) *徒步路径*，标有![菱形](yellow_diamond.svg)记号。带有`network=lwn`和`osmc:symbol=yellow:[...]:yellow_diamond`标签。
+    * ![虚线](route_mnt.png) *山路*，标有![白-红-白](white_red_bar.svg)记号。带有`network=lwn`和`osmc:symbol=red:white:red_bar`标签。
+    * ![点状线](route_alp.png) *高山路径*，标有![白-蓝-白](white_blue_bar.svg)记号。带有`network=lwn`和`osmc:symbol=blue:white:blue_bar`标签。
 
-    请注意，在这个网络之上，有一些国家和地区
-    路线以正常方式显示。
+    请注意在网络上方的国道和区域道路以正常方式显示。
 
-    有关在OSM中瑞士远足路径标记的更多信息，请参阅：
-    [瑞士远足网络](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)。
+    在OSM中有关瑞士徒步路径标签的更多信息，请参阅：
+    [瑞士徒步网络](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)。
+  austria: |-
+    ## 奥地利
+
+    福拉尔贝格地区使用与瑞士类似的分类系统。带有标签`operator=Land Vorarlberg`、`network=rwn`和`network:type=basic_network`的路径会使用基于难度的模式来标记：
+
+    * ![红线](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![虚线](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![点状线](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     ## 意大利
 

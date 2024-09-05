@@ -13,11 +13,11 @@ about:
   skating: 此地圖顯示世界各地已標示的輪鞋路線。
   riding: 此地圖顯示世界各地已標示的騎馬路線。
   slopemap: 此地圖顯示世界各地已標示的冬季滑坡運動路線。
-  osm: 路線是覆蓋在標準開放街圖及選用地形陰影圖層。路線地圖是由來自[開放街圖](https://www.openstreetmap.org)資料所產生。開放街圖是任何人皆可自由參予編輯的世界地圖。這代表著雖然內容可能並不完整，但可透過您的貢獻來增加新路徑或修正裡頭的錯誤。要了解更多有關開放街圖訊息請看[初始者手冊](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide)。
+  osm: 路線是覆蓋在標準開放街圖及選用地形陰影圖層。路線地圖是由來自[開放街圖](https://www.openstreetmap.org)資料所產生。開放街圖是任何人皆可自由參予編輯的世界地圖。這代表著雖然內容可能並不完整，但可透過您的貢獻來增加新路徑或修正裡頭的錯誤。要了解更多有關開放街圖訊息請看[新手入門指南](https://wiki.openstreetmap.org/wiki/Zh-hant:%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E6%8C%87%E5%8D%97)。
 rendering:
   title: 呈現開放街圖資料
   hikingroutes: |-
-    開放街圖裡的徒步旅行路線需要被輸入作為關聯內容。在開放街圖 wiki 網站中[行走路線]（https://wiki.openstreetmap.org/wiki/Walking_Routes）的標籤頁面裡有描述其運作方式細節。此地圖顯示所有至少有關以下標籤關連內容：
+    開放街圖裡的徒步旅行路線需要被輸入作為關聯內容。在開放街圖 wiki 網站中[行走路線](https://wiki.openstreetmap.org/wiki/Walking_Routes)的標籤頁面裡有描述其運作方式細節。此地圖顯示所有至少有關以下標籤關連內容：
 
        type = route|superroute
        route = foot|walking|hiking
@@ -29,22 +29,22 @@ rendering:
 
     山地自行車路線則另顯示於 [MTB-地圖](https://mtb.waymarkedtrails.org/)
   mtbroutes: |-
-    登山自行車路線沿用與自行車路線相同的標籤架構，在開放街圖 wiki 網站中[自行車路線]（https//wiki.openstreetmap.org/wiki/Cycle_routes）的頁面裡有描述細節。擁有以下關聯的標籤會視被視為登山自行車路線：
+    登山自行車路線沿用與自行車路線相同的標籤架構，在開放街圖 wiki 網站中[自行車路線](https//wiki.openstreetmap.org/wiki/Cycle_routes)的頁面裡有描述細節。擁有以下關聯的標籤會視被視為登山自行車路線：
 
        type = route|superroute
        route = mtb
 
-    一般自行車路線則另顯示於[自行車地圖]（https://cycling.waymarkedtrails.org/）
+    一般自行車路線則另顯示於[自行車地圖](https://cycling.waymarkedtrails.org/)
   skatingroutes: |-
     告示輪鞋路線應標示成像其它任何相關路線模樣。
-    關於地圖所理解的標示內容，可以參考[瑞士直排輪路線]（https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork）的 wiki 頁面。
+    關於地圖所理解的標示內容，可以參考[瑞士直排輪路線](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork)的 wiki 頁面。
     要被識別為直排輪路線，需要以下標籤：
 
         type = route|superroute
         route = inline_skates
   ridingroutes: |-
     告示騎馬路線應標示成像其它任何相關路線模樣。
-    相關細節可以查看[在開放街圖上的路線頁面]（https://wiki.openstreetmap.org/wiki/Relation:route）。
+    相關細節可以查看[在開放街圖上的路線頁面](https://wiki.openstreetmap.org/wiki/Relation:route)。
     要被識別為騎馬路線，需要以下標籤：
 
         type = route|superroute
@@ -77,8 +77,8 @@ rendering:
   hikinglabels: |-
     任何路線的標記都是從以下順序的標籤來「猜測」：
 
-    1. 檢查[本地化呈現規範]（#help-hikinglocal）。
-    2. 嘗試解讀「osmc:symbol」標籤。關於有哪些部分是可以理解的細節內容，查看[osmc:symbol呈現規範]（osmc_symbols.html）。
+    1. 檢查[本地化呈現規範](#help-hikinglocal)。
+    2. 嘗試解讀「osmc:symbol」標籤。關於有哪些部分是可以理解的細節內容，查看[osmc:symbol呈現規範](osmc_symbols.html)。
     3. 如果存在一個「ref」標籤，讓「ref」標籤產生一個文字標記。
     4. 如果存在一個「name」標籤，於此取得一段參考，首先僅使用大寫的字母，若失敗則改用名稱的第一個字母。
     5. 放棄猜測。
@@ -90,7 +90,7 @@ rendering:
     3. 放棄猜測。
   hierarchy: 此地圖也支援[關係層級](#help-hierarchies)。
   guideposts: |-
-    [路標]（https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost）
+    [路標](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
     是以下列標籤定義:
 
         tourism=訊息
@@ -115,12 +115,11 @@ osmc:
   title: osmc:symbol 標籤
   text: |-
     「osmc:symbol」標籤提供於一些歐洲國家（尤其在德國）所採用的以簡單幾何外形之機器可讀路線符號來描述。地圖僅支援在 Wiki 頁面上描述的子集。而為了要讓地圖能呈現出，標籤必須包含以下格式：
-
         osmc:symbol=waycolor:background:foreground:text:textcolor
 
     其中「waycolor」雖然會被地圖所忽略，但必須出現在標籤裡。另外「foreground」不被支援，「text」與「textcolor」則可省略。
 
-    被 Waymarked Trails 支援的符號清單，請查看額外的 [osmc:symbol]（osmc_symbols.html）標籤頁面。
+    被 Waymarked Trails 支援的符號清單，請查看額外的 [osmc:symbol](osmc_symbols.html)標籤頁面。
 hikinglocal:
   title: 本地化呈現
   text: |-
@@ -132,13 +131,21 @@ hikinglocal:
 
     瑞士擁有覆蓋全國、且廣泛的徒步路線標記網路。該網路是以名為路標功能之節點的節點網路。所有路徑一致以根據路線難度來作記號。地圖裡以帶有線條的紅色路徑作為路線難度
 
-    * ![red line](route_std.png) *徒步路徑*，帶有![diamond](yellow_diamond.svg)記號。 標記帶有「network=lwn` and `osmc:symbol=yellow:[...]」。
-    * ![dashed line](route_mnt.png) *山路*，帶有![white-red-white](white_red_bar.svg)記號。標記帶有「network=lwn` and `osmc:symbol=red:[...]」。
-    * ![dotted line](route_alp.png) *高山路徑*，帶有![white-blue-white](white_blue_bar.svg)記號。標記帶有「network=lwn` and `osmc:symbol=blue:[...]」。
+    * ![red line](route_std.png) *徒步路徑*，帶有![diamond](yellow_diamond.svg)記號。 標記帶有「network=lwn」與「osmc:symbol=yellow:[...]:yellow_diamond」。
+    * ![dashed line](route_mnt.png) *山路*，帶有![white-red-white](white_red_bar.svg)記號。標記帶有「network=lwn」與「osmc:symbol=red:white:red_bar」。
+    * ![dotted line](route_alp.png) *高山路徑*，帶有![white-blue-white](white_blue_bar.svg)記號。標記帶有「network=lwn」與「osmc:symbol=blue:white:blue_bar」。
 
     另外注意在網路上方的國道和區域道路是以正常方式顯示。
 
     在開放街圖上更多有關瑞士的標記徒步路徑，請查看：[瑞士徒步網路](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)。
+  austria: |-
+    ## 奧地利
+
+    福拉爾貝格邦地區使用和瑞士類似的分類系統。帶有標籤「operator=Land Vorarlberg」、「network=rwn」和「network:type=basic_network」的路線，會標記基於略圖的路線難度：
+
+    * ![red line](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![dashed line](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![dotted line](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     ## 義大利
 
@@ -165,14 +172,13 @@ hikinglocal:
   slovakia: |-
     ## 斯洛伐克
 
-    斯洛伐克使用與捷克相同標準的路徑標誌。然而標記架構略有不同，相關訊息請查看
-    [斯洛伐克徒步頁面](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes)。
+    斯洛伐克使用與捷克相同標準的路徑標誌。然而標記架構略有不同，相關訊息請查看[斯洛伐克徒步頁面](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes)。
 
     雖然帶有標籤「operator=KST」的路線是根據以上架構所標記出。然而在斯洛伐克的路線應會帶有一個有效網路標籤，因此不會進行重新分類。
   hungary: |-
     ## 匈牙利
 
-    匈牙利也使用帶有不同色彩的固定符號系統。是以他們自有的標籤 [jel]（https://wiki.openstreetmap.org/wiki/Key:jel）來標註。這些標籤比任何「osmc:symbol」類型標籤優先使用。
+    匈牙利也使用帶有不同色彩的固定符號系統。是以他們自有的標籤 [jel](https://wiki.openstreetmap.org/wiki/Key:jel)來標註。這些標籤比任何「osmc:symbol」類型標籤優先使用。
   germany: |-
     ## 德國
 

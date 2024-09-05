@@ -62,9 +62,9 @@ hikinglocal:
 
     La Svizzera dispone di una vasta rete di sentieri escursionistici segnalati che copre l'intero paese. Si tratta di una rete di nodi in cui i nodi sono rappresentati dalle paline indicatrici. Tutti i sentieri sono contrassegnati in base alla loro difficoltà. La mappa mostra questi sentieri in rosso con un particolare pattern di linea che ne indica la difficoltà
 
-    * ![linea rossa](route_std.png) *sentiero escursionistico*, contrassegnato con ![losanga](yellow_diamond.svg). Mappato con `network=lwn` e `osmc:symbol=yellow:[...]`.
-    * ![linea tratteggiata](route_mnt.png) *sentiero di montagna*, contrassegnato con ![bianco-rosso-bianco](white_red_bar.svg). Mappato con `network=lwn` e `osmc:symbol=red:[...]`.
-    * ![linea punteggiata](route_alp.png) *sentiero alpino*, contrassegnato con ![bianco-blu-bianco](white_blue_bar.svg). Mappato con `network=lwn` e `osmc:symbol=blue:[...]`.
+    * ![linea rossa](route_std.png) *sentiero escursionistico*, contrassegnato con ![losanga](yellow_diamond.svg). Mappato con `network=lwn` e `osmc:symbol=yellow:[...]:yellow_diamond`.
+    * ![linea tratteggiata](route_mnt.png) *sentiero di montagna*, contrassegnato con ![bianco-rosso-bianco](white_red_bar.svg). Mappato con `network=lwn` e `osmc:symbol=red:white:red_bar`.
+    * ![linea punteggiata](route_alp.png) *sentiero alpino*, contrassegnato con ![bianco-blu-bianco](white_blue_bar.svg). Mappato con `network=lwn` e `osmc:symbol=blue:white:blue_bar`.
 
     Tieni presente che sopra a a questa rete vi sono un certo numero di itinerari nazionali e regionali che vengono mostrati in modo normale.
 
