@@ -164,9 +164,9 @@ hikinglocal:
 
     Suissa ha un extense rete de sentieros de excursionismo marcate que coperi tote le pais. Le rete es un rete de nodos ubi le indicatores de direction nominate functiona como le nodos. Tote le sentieros es marcate consistentemente secundo lor difficultate. Le carta monstra iste sentieros in rubie, le patrono de linea marcante le difficultate.
 
-    * ![linea rubie](route_std.png) *sentiero de excursionismo*, marcate con ![diamante](yellow_diamond.svg). Etiquettate con `network=lwn` e `osmc:symbol=yellow:[...]`.
-    * ![linea a lineettas](route_mnt.png) *sentiero de montania*, marcate con ![blanc-rubie-blanc](white_red_bar.svg). Etiquettate con `network=lwn` e `osmc:symbol=red:[...]`.
-    * ![linea a punctos](route_alp.png) *sentiero alpin*, marcate con ![blanc-blau-blanc](white_blue_bar.svg). Etiquettate con `network=lwn` e `osmc:symbol=blue:[...]`.
+    * ![linea rubie](route_std.png) *sentiero de excursionismo*, marcate con ![diamante](yellow_diamond.svg). Etiquettate con `network=lwn` e `osmc:symbol=yellow:[...]:yellow_diamond`.
+    * ![linea a lineettas](route_mnt.png) *sentiero de montania*, marcate con ![blanc-rubie-blanc](white_red_bar.svg). Etiquettate con `network=lwn` e `osmc:symbol=red:white:red_bar`.
+    * ![linea a punctos](route_alp.png) *sentiero alpin*, marcate con ![blanc-blau-blanc](white_blue_bar.svg). Etiquettate con `network=lwn` e `osmc:symbol=blue:white:blue_bar`.
 
     Nota que ultra iste rete existe un numero de itinerarios national e regional que es monstrate in le modo normal.
 

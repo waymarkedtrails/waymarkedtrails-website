@@ -41,6 +41,9 @@ details:
   website: Вэб-сайт
   wikipedia: Вікіпэдыя
   zoom_to: Паказаць на мапе
+  analyze:
+    title: Аналіз адносінаў
+    summary: Гэтыя адносіны маюць {num} сэгмэнтаў.
 elevation:
   ascent: Сумарны пад’ём
   descent: Сумарны спуск
