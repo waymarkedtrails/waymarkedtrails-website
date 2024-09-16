@@ -192,21 +192,31 @@ hikinglocal:
     coma nós. Todos os camiños están marcados segundo a súa dificultade.
     O mapa amosa estes camiños en vermello cun patrón de liñas que marca a dificultade:
 
-    * ![red line](route_std.png) *camiño de sendeirismo*, marcado con ![diamond](yellow_diamond.svg). Etiquetado con `network=lwn` e `osmc:symbol=yellow:[...]`.
-    * ![dashed line](route_mnt.png) *camiño de montaña*, marcado con ![white-red-white](white_red_bar.svg). Etiquetado con `network=lwn` e `osmc:symbol=red:[...]`.
-    * ![dotted line](route_alp.png) *camiño alpino*, marcado con ![white-blue-white](white_blue_bar.svg). Etiquetado con `network=lwn` e `osmc:symbol=blue:[...]`.
+    * ![red line](route_std.png) *camiño de sendeirismo*, marcado con ![diamond](yellow_diamond.svg). Etiquetado con `network=lwn` e `osmc:symbol=yellow:[...]:yellow_diamond`.
+    * ![dashed line](route_mnt.png) *camiño de montaña*, marcado con ![white-red-white](white_red_bar.svg). Etiquetado con `network=lwn` e `osmc:symbol=red:white:red_bar`.
+    * ![dotted line](route_alp.png) *camiño alpino*, marcado con ![white-blue-white](white_blue_bar.svg). Etiquetado con `network=lwn` e `osmc:symbol=blue:white:blue_bar`.
 
     Sobre esta rede hai un número de rutas nacionais e rexionais
     que se amosan do xeito habitual.
 
     Para obter máis información sobre a etiquetaxe dos camiños de sendeirismo de Suíza no OSM consulte:
     [rede de sendeirismo suíza](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## Austria
+
+    A rexión de Vorarlberg utiliza un sistema de clasificación semellante
+    ao suízo. As rutas coas etiquetas `operator=Land Vorarlberg`, `network=rwn`
+    e `network:type=basic_network` marcaranse cun esquema baseado na dificultade:
+
+    * ![red line](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![dashed line](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![dotted line](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     ## Italia
 
-    O Clube Alpino Italiano (CAI) mantén a rede de camiños de montaña que están clasificados por dificultade semellante á existente en Suíza.
+    O Club Alpino Italiano (CAI) mantén a rede de camiños de montaña que están clasificados por dificultade semellante á existente en Suíza.
     As rutas marcadas con `network=lwn`, `osmc:symbol=red:..` e unha etiqueta `cai_scale`
-    serán recoñecidas coma camiños mantidos polo CAI e están amosados como liñas vermellas dacordo coa súa dificultade.
+    serán recoñecidas coma camiños mantidos polo CAI e amósanse como liñas vermellas de acordo coa súa dificultade.
 
     * ![red line](route_std.png) cai_scale=T
     * ![dashed line](route_mnt1.png) cai_scale=E
