@@ -6,6 +6,7 @@
 # Author: Justman10000
 # Author: Kghbln
 # Author: Lonvia
+# Author: Memverse
 # Author: Metalhead64
 # Author: Nipsky
 # Author: Purodha
@@ -205,9 +206,18 @@ hikinglocal:
     \ werden vorausgesetzt.\n* ![dotted line](route_alp.png) *Alpiner Weg*, markiert
     als ![white-blue-white](white_blue_bar.svg).\n  Getaggt als `network=lwn` und
     `osmc:symbol=blue:[...]`.  \n  Alpine Erfahurng sowie angepasste Ausrüstung sind
-    unabdingbar.\n\nZusätzlich zu diesem lokalen Wegenetz gibt es noch regionale und
-    nationale\nWanderrouten, die wie üblich angezeigt werden.\n\nMehr Informationen
-    zum Tagging Schweizer Wanderwege findet sich im OSM Wiki unter\n[Swiss Hiking\nNetwork](https://wiki.openstreetmap.org/wiki/DE:Switzerland/HikingNetwork)."
+    unabdingbar.\n\nBeachte, dass zu diesem lokalen Wegenetz noch regionale und nationale\nWanderrouten
+    existieren, die wie üblich angezeigt werden.\n\nMehr Informationen zum Tagging
+    Schweizer Wanderwege finden sich im OSM Wiki unter\n[Swiss Hiking\nNetwork](https://wiki.openstreetmap.org/wiki/DE:Switzerland/HikingNetwork)."
+  austria: |-
+    ## Österreich
+
+    Die Region Vorarlberg verwendet ein ähnliches Klassifizierungssystem wie die Schweiz. Routen mit den Tags `operator=Land Vorarlberg`, `network=rwn`
+    und `network:type=basic_network` werden mit einem schwierigkeitsbasierten Schema gekennzeichnet:
+
+    * ![red line](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![dashed line](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![dotted line](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     ## Italien
 

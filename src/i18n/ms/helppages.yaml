@@ -4,6 +4,7 @@
 # Author: Anakmalaysia
 # Author: Dittaeva
 # Author: Jeluang Terluang
+# Author: Tofeiku
 ---
 about:
   title: Perihal peta ini
@@ -150,14 +151,14 @@ hikinglocal:
     Switzerland mempunyai rangkaian luas laluan kembara bertanda yang meliputi seluruh negara tersebut. Rangkaian ini merupakan rangkaian nod yang mana pos panduan bernama berfungsi sebagai nodus. Semua laluan ditandai secara sejajar mengikut kesukarannya.
     Peta ini memaparkan laluan-laluan ini dengan warna merah dengan corak garis sebagai tanda kesukaran
 
-    * ![merah](route_std.png) *laluan kembara*, bertanda ![daiman](yellow_diamond.svg). Berteg `network=lwn` dan `osmc:symbol=yellow:[...]`.
+    * ![merah](route_std.png) *laluan kembara*, bertanda ![daiman](yellow_diamond.svg). Berteg `network=lwn` dan `osmc:symbol=yellow:[...] :yellow_diamond`.
     * ![satar](route_mnt.png) *laluan gunung*, bertanda ![putih-merah-putih](white_red_bar.svg). Berteg `network=lwn` dan `osmc:symbol=red:[...]`.
-    * ![titik](route_alp.png) *laluan alp*, bertanda ![putih-biru-putih](white_blue_bar.svg). Berteg `network=lwn` dan `osmc:symbol=blue:[...]`.
+    * ![titik](route_alp.png) *laluan alp*, bertanda ![putih-biru-putih](white_blue_bar.svg). Berteg `network=lwn` dan `osmc:symbol=blue:white:blue_bar`.
 
     Perhatian: selain rangkaian ini, terdapat sebilangan laluan senegara dan setempat yang dipaparkan mengikut cara biasa.
 
     Untuk keterangan lanjut tentang menambahkan teg pada laluan kembara di Switzerland di OSM, sila rujuk:
-    [Rangkaian kembara Switzerland](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+    [Rangkaian kembara Switzerland](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
   uk: |-
     ## United Kingdom
 
