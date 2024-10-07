@@ -172,6 +172,14 @@ hikinglocal:
 
     Pro plus information sur le etiquettage de sentieros de excursionismo in Suissa in OSM, vide:
     [rete suisse de excursionismo](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## Austria
+
+    Le region Vorarlberg usa un systema de classification similar a illo de Suissa. Le itinerarios con etiquettas `operator=Land Vorarlberg`, `network=rwn` e `network:type=basic_network` essera marcate con un schema a base de difficultate:
+
+    * ![red line](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![dashed line](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![dotted line](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     ## Italia
 
