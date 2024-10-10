@@ -55,7 +55,7 @@ details:
       óvatosan használd fel.
     legend: A fekete vonal a szakaszt jeleníti meg. A szaggatott vonal virtuális kapcsolat
       az egyik szakasz vége és a következő szakasz eleje között. A vörös pont az útvonal
-      nyitott végét jelzik. A zöld pont azt a helyet mutatja, ahol szakaszok találkoznak.
+      nyitott végét, a zöld pedig a szakaszok találkozását jelzi.
 elevation:
   ascent: Összesített emelkedés
   descent: Összesített ereszkedés

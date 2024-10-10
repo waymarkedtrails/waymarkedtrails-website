@@ -143,14 +143,22 @@ hikinglocal:
     Svájc kiterjedt, az egész országot lefedő, jelzett turistaút-hálózattal rendelkezik. A hálózat egy csomóponthálózat, ahol a megnevezett útirányjelző táblák működnek csomópontként. Minden útvonal következetesen, a nehézségének megfelelően van jelölve.
     A térképen ezek az ösvények pirossal jelennek meg, a nehézségi fokot pedig vonalminta mutatja.
 
-    * ![piros vonal](route_std.png) *turistaút*, ![rombusz](yellow_diamond.svg) jelöléssel. Címkézés: `network=lwn` és `osmc:symbol=yellow:[…]`.
-    * ![szaggatott vonal](route_mnt.png) *hegyi ösvény*, ![fehér-piros-fehér](white_red_bar.svg) jelöléssel. Címkézés: `network=lwn` és `osmc:symbol=red:[…]`.
-    * ![szaggatott vonal](route_alp.png) *alpesi útvonal*, ![fehér-kék-fehér](white_blue_bar.svg) jelöléssel. Címkézés: `network=lwn` és `osmc:symbol=blue:[…]`.
+    * ![piros vonal](route_std.png) *turistaút*, ![rombusz](yellow_diamond.svg) jelöléssel. Címkézés: `network=lwn` és `osmc:symbol=yellow:[…]:yellow_diamond`.
+    * ![szaggatott vonal](route_mnt.png) *hegyi ösvény*, ![fehér-piros-fehér](white_red_bar.svg) jelöléssel. Címkézés: `network=lwn` és `osmc:symbol=red:white:red_bar`.
+    * ![szaggatott vonal](route_alp.png) *alpesi útvonal*, ![fehér-kék-fehér](white_blue_bar.svg) jelöléssel. Címkézés: `network=lwn` és `osmc:symbol=blue:white:blue_bar`.
 
     Megjegyzendő, hogy ezen a hálózaton kívül számos országos és regionális turistaút is van, amelyek a szokásos módon jelennek meg.
 
     A svájci turistautak OSM-ben történő címkézésével kapcsolatos további információkért lásd:
     [Swiss hiking network](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## Ausztria
+
+    Vorarlberg régiója hasonló besorolási rendszert használ, mint Svájc. Az `operator=Land Vorarlberg`, `network=rwn` és `network:type=basic_network` címkéjű útvonalak nehézségi alapú sémával lesznek megjelölve:
+
+    * ![piros vonal](route_std .png) osmc:symbol=yellow:white:yellow_upper
+    * ![szaggatott vonal](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![pontozott vonal](route_alp.png) osmc :symbol=blue:white:blue_bar
   italy: |-
     ## Olaszország
 
