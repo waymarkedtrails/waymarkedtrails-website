@@ -7,6 +7,7 @@
 # Author: Hpetit
 # Author: IAlex
 # Author: JB
+# Author: Mahabarata
 # Author: Objectivesea
 # Author: Od1n
 # Author: Paraboule
@@ -58,6 +59,14 @@ details:
   analyze:
     title: Analyser la relation
     summary: Cette relation a {num} segments.
+    disclaimer: Ceci montre les segments d'itinéraire tels qu'ils ont été calculés
+      par waymarkedtrails à partir de la relation. Sachez que les rôles de la relation
+      et les ronds-points ne sont pas gérés correctement pour le moment. Utilisez
+      les informations présentées avec précaution.
+    legend: Les lignes noires indiquent les segments. Les lignes en pointillés représentent
+      les connexions virtuelles entre la fin d'un segment et le début du suivant.
+      Les points rouges indiquent les extrémités ouvertes de l'itinéraire. Les points
+      verts indiquent l'endroit où deux segments ou plus se rencontrent.
 elevation:
   ascent: Montée cumulée
   descent: Descente cumulée

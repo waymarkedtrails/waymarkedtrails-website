@@ -7,6 +7,7 @@
 # Author: Damouns
 # Author: Gomoko
 # Author: JB
+# Author: Mahabarata
 # Author: Paraboule
 # Author: Pyrog
 # Author: Shirayuki
@@ -190,14 +191,24 @@ hikinglocal:
 
     La Suisse a un important réseau de chemins de randonnée balisés couvrant tout le pays. Le réseau est un réseau de nœuds où les panneaux nommés servent de nœuds. Tous les chemins sont balisés en fonction de leur difficulté. La carte affiche ces chemins en rouge avec le type de pointillé indiquant la difficulté :
 
-    * ![ligne rouge](route_std.png) *chemin de randonnée*, balisé par des ![losanges](yellow_diamond.svg). Marqué avec `network=lwn` et `osmc:symbol=yellow:[...]`.
-    * ![lignes tiretée](route_mnt.png) *chemin de montagne*, balisé par des ![blanc-rouge-blanc](white_red_bar.svg). Marqué avec `network=lwn` et `osmc:symbol=red:[...]`.
-    * ![ligne pointillée](route_alp.png) *route alpine*, balisée avec ![blanc-bleu-blanc](white_blue_bar.svg). Marqué avec `network=lwn` et `osmc:symbol=blue:[...]`.
+    * ![ligne rouge](route_std.png) *chemin de randonnée*, balisé par des ![losanges](yellow_diamond.svg). Marqué avec `network=lwn` et `osmc:symbol=yellow:[...]:yellow_diamond`.
+    * ![ligne tiretée](route_mnt.png) *chemin de montagne*, balisé par des ![blanc-rouge-blanc](white_red_bar.svg). Marqué avec `network=lwn` et `osmc:symbol=red:white:red_bar`.
+    * ![ligne pointillée](route_alp.png) *route alpine*, balisée avec ![blanc-bleu-blanc](white_blue_bar.svg). Marqué avec `network=lwn` et `osmc:symbol=blue:white:blue_bar`.
 
     Remarquez que par-dessus ce réseau il y a un certain nombre de chemins nationaux et régionaux qui sont affichés de la manière habituelle.
 
     Pour plus d’informations sur le balisage des chemins de randonnée en Suisse dans OSM, voyez :
     [réseau de randonnée suisse](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## Autriche
+
+    La région du Vorarlberg utilise un système de classification similaire à celui de la
+    Suisse. Les itinéraires avec les attributs `operator=Land Vorarlberg`, `network=rwn`
+    et `network:type=basic_network` seront marqués avec un schéma basé sur la difficulté :
+
+    * ![ligne rouge](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![ligne tiretée](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![ligne pointillée](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     ## Italie
 
