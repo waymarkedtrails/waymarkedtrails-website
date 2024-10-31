@@ -29,8 +29,15 @@ details:
   tags:
     title: OpenStreetMap-tags
     value: Værdi
+  type:
+    node: Punkt
+    relation: Relation
+    way: Linjestreng
   website: Hjemmeside
   zoom_to: Vis på kort
+  analyze:
+    title: Analyser relation
+    summary: Denne relation har {num} segmenter.
 elevation:
   ascent: Samlet stigning
   descent: Samlet fald
@@ -68,12 +75,15 @@ osmc_symbol:
 routelist:
   loading: Indlæser...
   close: Luk
+  more: Zoom ind for at se flere ruter.
   rollup: Rul op
   title: Ruter
 search:
   places: Steder
   routes: Ruter
   title: Søg
+  help: Brug nøgleord til at søge med. Du kan søge på navne på stier (f.eks. Appalachian
+    Trail, E2) eller steder (f.eks. Berlin).
 settings:
   base_map: Baggrundskort
   browser_language: Brug browserens indstillinger.
