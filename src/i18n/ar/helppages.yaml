@@ -150,6 +150,16 @@ hikinglocal:
 
     لمزيد من المعلومات حول وسم مسارات المشي لمسافات طويلة في سويسرا في OSM، راجع:
     [شبكة المشي لمسافات طويلة السويسرية](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## النمسا
+
+    تستخدم منطقة فورارلبرغ نظام تصنيف مشابه لنظام
+    سويسرا. سيتم تمييز المسارات التي تحمل العلامات `operator=Land Vorarlberg` و`network=rwn`
+    و`network:type=basic_network` بمخطط يعتمد على الصعوبة:
+
+    * ![red line](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![dashed line](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![dotted line](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: "##إيطاليا \n\nيحتفظ نادي جبال الألب الإيطالي (CAI) بشبكة من المسارات الجبلية
     \nالتي تُصنَّف بواسطة صعوبة مماثلة لما يوجد في سويسرا، \nالمسارات المعلمة بـ`network=lwn`
     و`osmc:symbol=red = red: .. `ووسم `cai_scale`\nسيتم التعرف عليها كمسارات صِيغت
