@@ -112,7 +112,7 @@
         let p1 = map.getCoordinateFromPixel([evt.pixel[0] - 5, evt.pixel[1] - 5]);
         let p2 = map.getCoordinateFromPixel([evt.pixel[0] + 5, evt.pixel[1] + 5]);
 
-        var feats = vtile_layer.getSource().getFeaturesInExtent(boundingExtent([p1, p2]));
+        var feats = vtile_layer.getFeaturesInExtent(boundingExtent([p1, p2]));
 
         let relations = [];
         let ways = [];

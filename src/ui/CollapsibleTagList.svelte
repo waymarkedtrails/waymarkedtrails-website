@@ -34,10 +34,12 @@
 
 <Collapsible title={$_('details.tags.title')}>
     <table>
-        <tr><th>{$_('details.tags.key')}</th><th>{$_('details.tags.value')}</th></tr>
+        <thead><tr><th>{$_('details.tags.key')}</th><th>{$_('details.tags.value')}</th></tr></thead>
+        <tbody>
         {#each keys as key, idx}
             <tr class={idx % 2 === 0 ? "even" : "odd"}><td>{key}</td><td>{tags[key]}</td></tr>
         {/each}
+        </tbody>
     </table>
 </Collapsible>
 

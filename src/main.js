@@ -1,8 +1,7 @@
 import './i18n.js';
+import { mount } from 'svelte';
 import App from './App.svelte';
 
-var app = new App({
-	target: document.body
-});
+const app = mount(App, {target: document.body});
 
 export default app;

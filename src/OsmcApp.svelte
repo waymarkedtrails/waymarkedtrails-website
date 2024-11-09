@@ -131,7 +131,7 @@
     Loading...
 {:else}
 <div class="screen">
-<Headline><span slot="subleft"><a href="#" onclick="window.history.back()">{$_('osmc_symbol.back')}</a></span></Headline>
+<Headline><span slot="subleft"><a href="#" on:click={() => window.history.back()}>{$_('osmc_symbol.back')}</a></span></Headline>
 
 <div class="main">
 
@@ -142,7 +142,10 @@
 <p>{$_('osmc_symbol.foreground')}</p>
 
 <table>
-{#each colors as color}<th>{color}_*</th>{/each}<th><i>none</i></th><th></th>
+<thead><tr>
+  {#each colors as color}<th>{color}_*</th>{/each}<th><i>none</i></th><th></th>
+</tr></thead>
+<tbody>
 {#each foregrounds as fg}
 <tr>
   {#each colors as color}
@@ -152,13 +155,17 @@
   <td>*{fg}</td>
 </tr>
 {/each}
+</tbody>
 </table>
 
 <h2>{$_('osmc_symbol.background_heading')}</h2>
 <p>{$_('osmc_symbol.background')}</p>
 
 <table>
-{#each colors as color}<th>{color}_*</th>{/each}<th></th>
+<thead><tr>
+  {#each colors as color}<th>{color}_*</th>{/each}<th></th>
+</tr></thead>
+<tbody>
 <tr>
   {#each colors as color}
   <td><img alt="{color}" src="{API_URL}/symbols/from_tags/NAT?osmc:symbol=:{color}" /></td>
@@ -174,6 +181,7 @@
   <td>*{bg}</td>
 </tr>
 {/each}
+</tbody>
 </table>
 
 <h2>{$_('osmc_symbol.preview_heading')}</h2>
