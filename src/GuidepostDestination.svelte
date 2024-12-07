@@ -1,22 +1,16 @@
 <script>
     import { _ } from 'svelte-i18n';
     import { onMount } from 'svelte';
-    import { json_loader } from './util/load_json.js';
+    import { json_load } from './util/load_json.js';
     import HourGlass from './svg/HourGlass.svelte';
-    export let osm_id;
 
-    let destinations;
-    let fail_message = '';
+    let { osm_id } = $props();
 
-    const loader = json_loader(function(json) {
-        if (json.error) {
-            fail_message = json.error;
-            return;
-        }
+    let loader = $state();
 
+    function convert_result(json) {
         if (!json.data) {
-            fail_message = $_('destination_sign.no_data');
-            return;
+            throw new Error('destination_sign.no_data');
         }
 
         for (let feat of json.data) {
@@ -51,24 +45,22 @@
             prev_id = feat.id;
         }
 
-        destinations = json.data;
-
-    }, function(error) { fail_message = $_(error); },
-       'https://osm.mueschelsoft.de/destinationsign');
+        return json.data;
+    };
 
     onMount(() => {
-        destinations = false;
-        fail_message = '';
+        let controller = new AbortController();
+        const signal = controller.signal;
+        loader = json_load('https://osm.mueschelsoft.de/destinationsign/code/generate.pl?',
+                           {nodeid : osm_id,
+                            namedroutes : '',
+                            fromarrow : '',
+                            format : 'json',
+                            distunit : 'm',
+                            fast : 1}, signal)
+                  .then((json) => convert_result(json));
 
-        loader.load('/code/generate.pl?',
-                    {nodeid : osm_id,
-                     namedroutes : '',
-                     fromarrow : '',
-                     format : 'json',
-                     distunit : 'm',
-                     fast : 1});
-
-        return () => { loader.abort(); };
+        return () => { if (controller) controller.abort(); };
     });
 
     function duration_in_min(dur) {
@@ -128,10 +120,12 @@
     }
 </style>
 
-{#if fail_message}
-{fail_message}
-{:else if destinations}
+{#if loader}
+{#await loader}
+    <HourGlass />
+{:then destinations}
 <table>
+  <tbody>
     {#each destinations as dest}
     <tr class:first-in-rel={dest.first_in_rel} class:odd-row={dest.dir_num % 2 == 1}>
         <td><div class="arrow" style="transform: rotate({dest.dir}deg)">{@html dest.arrow_link}</div></td>
@@ -143,8 +137,10 @@
         <td>{@html dest.formatted_distance}</td>
     </tr>
   {/each}
+  </tbody>
 </table>
 <div><a target="_new" href="https://osm.mueschelsoft.de/destinationsign/example/index.htm#node={osm_id}">{$_('destination_sign.more')}</a></div>
-{:else}
-    <HourGlass />
+{:catch error}
+    {$_(error.message)}
+{/await}
 {/if}

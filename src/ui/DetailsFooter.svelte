@@ -6,7 +6,7 @@
     import SVGZoom from '../svg/Zoom.svelte';
     import SVGDownload from '../svg/Download.svelte';
 
-    export let route;
+    let { osm_type, osm_id, bbox } = $props();
 </script>
 
 <style>
@@ -34,19 +34,19 @@
     }
 </style>
 
-{#if route}
+{#if osm_type}
 <div>
-    <button type="button" on:click|preventDefault={set_map_view(route.bbox)}>
+    <button type="button" onclick={(ev) => {ev.preventDefault(); set_map_view(bbox)}}>
         <span class="btn-img"><SVGZoom /></span>
         {$_('details.zoom_to')}
     </button>
 
-    <a href="{API_URL}/details/{route.type}/{route.id}/geometry/gpx">
+    <a href="{API_URL}/details/{osm_type}/{osm_id}/geometry/gpx">
         <span class="btn-img"><SVGDownload /></span>
         {$_('details.GPX')}
     </a>
 
-    <a href="{API_URL}/details/{route.type}/{route.id}/geometry/kml">
+    <a href="{API_URL}/details/{osm_type}/{osm_id}/geometry/kml">
         <span class="btn-img"><SVGDownload /></span>
         {$_('details.KML')}
     </a>

@@ -11,8 +11,7 @@
     slopes: "#a2a2a2"
   };
 
-  export let themes;
-  export let map_link_tail = '';
+  let { themes, map_link_tail = '' } = $props();
 </script>
 
 <style>

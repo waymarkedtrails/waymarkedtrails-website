@@ -2,20 +2,14 @@
     import { _ } from 'svelte-i18n';
     import { show_page } from '../app_state.js';
 
-    import PanelButton from './PanelButton.svelte';
     import SVGBack from '../svg/Back.svelte';
     import SVGClose from '../svg/Close.svelte';
     import SVGArrowBottom from '../svg/ArrowBarBottom.svelte';
     import SVGArrowTop from '../svg/ArrowBarTop.svelte';
 
-    export let osm_type;
-    export let osm_id;
-    export let title = '';
-    export let fail_message = '';
+    let { title, content, footer } = $props();
 
-    let hidden = false;
-
-    function back() {}
+    let hidden = $state(false);
 
     function toggle_hidden() { hidden = !hidden; }
 </script>
@@ -76,7 +70,7 @@
     }
 
     @media (min-width: 550px) {
-        .sidepanel :global(.smallonly) {
+        .sidepanel .smallonly {
             display: none;
         }
     }
@@ -89,31 +83,30 @@
         }
     }
 
+    button {
+        background-color: #ccc;
+        color: black;
+        font-size: 21px;
+        padding: 10px 6px 5px 7px;
+        border-left: 1px solid white;
+        border-right: 1px solid #bbb;
+        border-top: none;
+        border-bottom: none;
+    }
+
 </style>
 
 
 <div class="sidepanel" class:small={hidden}>
     <h3>
-        <PanelButton title="{$_('routelist.rollup')}" classes="smallonly" on:click={() => toggle_hidden()}>
+        <button title={$_('routelist.rollup')} class="smallonly" onclick={toggle_hidden}>
             {#if hidden}<SVGArrowBottom />{:else}<SVGArrowTop />{/if}
-        </PanelButton>
-        <span>
-        {#if fail_message}
-            {$_('error.panel_title')}
-        {:else if osm_type}
-            <a target="_new" href="https://openstreetmap.org/{osm_type === 'wayset' ? 'way' : osm_type}/{osm_id}">{title}</a>
-        {:else}
-            {title}
-        {/if}
-        </span>
-        <PanelButton title="{$_('routelist.close')}" on:click={() => show_page()}><SVGClose /></PanelButton>
+        </button>
+        <span>{@render title?.()}</span>
+        <button title={$_('routelist.close')} onclick={() => show_page()}><SVGClose /></button>
     </h3>
     <div class="sidepanel-content">
-        {#if fail_message}
-            {fail_message}
-        {:else}
-            <div class="sidepanel-page"><slot></slot></div>
-        {/if}
+        <div class="sidepanel-page">{@render content?.()}</div>
     </div>
-    <div class="sidepanel-footer"><slot name="footer"></slot></div>
+    <div class="sidepanel-footer">{@render footer?.()}</div>
 </div>

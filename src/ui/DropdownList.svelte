@@ -1,10 +1,11 @@
 <script>
     import { onMount } from 'svelte';
 
-    export let title;
+    let { title, children } = $props();
+    const children_render = $derived(children);
 
-    let expanded = false;
-    let menu_button = null;
+    let expanded = $state(false);
+    let menu_button;
 
     onMount(() => {
         const handle_any_click = (event) => {
@@ -25,8 +26,9 @@
         return () => {
             document.removeEventListener('click', handle_any_click, false);
             document.removeEventListener('keyup', handle_esc, false);
-    };
-  });
+        };
+    });
+
 </script>
 
 <style>
@@ -62,12 +64,12 @@
 </style>
 
 <div class="dropdown">
-  <button on:click={() => (expanded = !expanded)} type="button" id="BaseMapButton" bind:this={menu_button}>
+  <button onclick={() => {expanded = !expanded;}} type="button" id="BaseMapButton" bind:this={menu_button}>
  {title}
   </button>
   {#if expanded}
   <div class="dropdown-menu" aria-labelledby="BaseMapButton">
-    <slot></slot>
+    {@render children_render?.()}
   </div>
   {/if}
 </div>

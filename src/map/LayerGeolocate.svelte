@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
     let geolocate;
 
     export function enable_geolocation() {

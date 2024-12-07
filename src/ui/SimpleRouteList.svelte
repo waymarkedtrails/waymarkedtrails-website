@@ -1,5 +1,6 @@
 <script>
     import { onDestroy } from 'svelte';
+    import { preventDefault } from 'svelte/legacy';
     import { API_URL } from '../config.js';
     import { show_page } from '../app_state.js';
     import {set_visible as set_map_details_visible } from '../map/LayerRouteDetails.svelte';
@@ -21,8 +22,7 @@
 
     onDestroy(end_hover);
 
-    export let route_data;
-    export let callback = show_route;
+    let { route_data, callback = show_route } = $props();
 </script>
 
 <style>
@@ -88,7 +88,7 @@
 {#if route_data}
 {#each route_data as route}
     <li>
-        <button type="button" on:click|preventDefault={callback(route)} on:mouseenter={() => begin_hover(route.id, route.type)} on:mouseleave={end_hover}>
+        <button type="button" onclick={() => preventDefault(callback(route))} onmouseenter={() => begin_hover(route.id, route.type)} onmouseleave={end_hover}>
         <div class="route-symbol">
             {#if route.icon}
                 <img alt="place icon" src="{route.icon}" />

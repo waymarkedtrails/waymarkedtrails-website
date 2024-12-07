@@ -2,18 +2,16 @@
     import { _ } from 'svelte-i18n';
     import Collapsible from './Collapsible.svelte';
 
-    export let tags;
-    $: keys = get_sorted_tag_keys(tags);
-
-    function get_sorted_tag_keys(tags) {
-        let keys = [];
+    let { tags } = $props();
+    let keys = $derived.by(() => {
+        let kl = [];
         for (var k in tags) {
-            keys.push(k);
+            kl.push(k);
         }
-        keys.sort((a, b) => a.localeCompare(b));
+        kl.sort((a, b) => a.localeCompare(b));
 
-        return keys;
-    }
+        return kl;
+    });
 </script>
 
 <style>

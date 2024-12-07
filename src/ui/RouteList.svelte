@@ -3,8 +3,7 @@
     import { show_page } from '../app_state.js';
     import SimpleRouteList from './SimpleRouteList.svelte';
 
-    export let route_data;
-    export let groups;
+    let { route_data, groups } = $props();
 </script>
 
 <style>

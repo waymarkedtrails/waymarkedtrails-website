@@ -1,34 +1,22 @@
 <script>
-    export let title = '';
-    export let value;
-    export let type = '';
+    let { title = '', value, type = '' } = $props();
 
-    let formatted_value;
-    let unit;
-
-    $: {
+    let formatted = $derived.by(() => {
         if (value) {
             if (type === 'km') {
                 if (value < 1000) {
-                    formatted_value = value;
-                    unit = 'm';
-                } else if (value < 10000) {
-                    formatted_value = (value/1000).toFixed(1);
-                    unit = 'km';
-                } else {
-                    formatted_value = (value/1000).toFixed(0);
-                    unit = 'km';
+                    return {value: value, unit: 'm'};
                 }
+                if (value < 10000) {
+                    return {value: (value/1000).toFixed(1), unit: 'km'};
+                }
+                return {value: (value/1000).toFixed(0), unit: 'km'};
             } else if (type === 'ele') {
-                formatted_value = value.toFixed(1);
-                unit = 'm';
-            } else {
-                formatted_value = value;
-                unit = ''
+                return {value: value.toFixed(1), unit: 'm'};
             }
         }
-    }
-
+        return {value: value, unit: ''}
+    });
 </script>
 
 <style>
@@ -45,5 +33,5 @@
 </style>
 
 {#if value}
-<dt class="title">{title}:</dt><dd class="value">{formatted_value}&thinsp;{unit}</dd>
+<dt class="title">{title}:</dt><dd class="value">{formatted.value}&thinsp;{formatted.unit}</dd>
 {/if}

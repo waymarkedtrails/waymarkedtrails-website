@@ -4,10 +4,11 @@
     import Point from 'ol/geom/Point';
 
     import { page_state } from './app_state.js';
-    import { json_loader } from './util/load_json.js';
+    import { json_load } from './util/load_json.js';
+    import { set_map_view } from './Map.svelte';
 
     import SidePanel from './ui/SidePanel.svelte';
-    import ButtonRouteZoom from './ui/ButtonRouteZoom.svelte';
+    import OsmObjectLink from './ui/OsmObjectLink.svelte';
     import DetailsHeader from './ui/DetailsHeader.svelte';
     import DetailsPropertyList from './ui/DetailsPropertyList.svelte';
     import DetailsPropertyItem from './ui/DetailsPropertyItem.svelte';
@@ -15,19 +16,19 @@
     import Collapsible from './ui/Collapsible.svelte';
     import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
     import GuidepostDestination from './GuidepostDestination.svelte';
+    import SVGZoom from './svg/Zoom.svelte';
+    import HourGlass from './svg/HourGlass.svelte';
     import { set_highlight_point } from './map/LayerRouteDetails.svelte';
 
-    let osm_id = '';
-    let fail_message = '';
-    let guidepost;
+    let osm_id = $state();
+    let loader = $state();
 
-    const loader = json_loader(function(json) {
-        guidepost = json;
-
-        guidepost.location = new Point([guidepost.x, guidepost.y]);
-        set_highlight_point(guidepost.location);
-    },
-    function(error) { fail_message = $_(error); });
+    function onMapFocus(ev) {
+        ev.preventDefault();
+        if (guidepost) {
+            set_map_view(guidepost.location);
+        }
+    }
 
     onDestroy(page_state.subscribe((value) => {
         if (value.page !== 'guidepost') {
@@ -36,11 +37,19 @@
 
         osm_id = value.params.get('id');
         if (typeof osm_id === 'undefined') {
-            fail_message = $_('error.missing_id');
+            loader = Promise.reject(new Error('error.missing_id'));
             return;
         }
 
-        loader.load('/details/guidepost/' + osm_id);
+        let controller = new AbortController();
+        const signal = controller.signal;
+
+        loader = json_load('/details/guidepost/' + osm_id, {}, signal)
+                     .then((json) => {
+                        json.location = new Point([json.x, json.y]);
+                        set_highlight_point(json.location);
+                        return json;
+                        });
     }));
 </script>
 
@@ -57,11 +66,33 @@
         padding: 10px;
         display: flex;
     }
+
+    button {
+        width: 100%;
+        flex-grow: 1;
+        background-color: #cecece;
+        color: black;
+        font-size: 16px;
+        padding: 6px 0px;
+        border-color: #bbb;
+        text-align: center;
+        border-top: 1px solid #eee;
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #bbb;
+        border-right: 1px solid #bbb;
+    }
 </style>
 
-<SidePanel osm_type="node" osm_id={osm_id} title="{$_('details.type.guidepost')} {osm_id}" fail_message={fail_message}>
-{#key guidepost}{#if guidepost}
+<SidePanel>
+{#snippet title()}
+    <OsmObjectLink osm_type="guidepost" osm_id={osm_id} />
+{/snippet}
 
+{#snippet content()}
+{#if loader}
+{#await loader}
+    <HourGlass />
+{:then guidepost}
 <DetailsHeader img_alt={$_('details.type.guidepost')} img_src="/img/guidepost.svg" ref={guidepost.ref}>
     {#if guidepost.name}
         {guidepost.name}
@@ -72,14 +103,10 @@
     {/if}
 </DetailsHeader>
 
-<div class="btn-group" role="group">
-  <ButtonRouteZoom bbox={guidepost.location} />
-</div>
-
 {#if guidepost.description}<div class="description">{guidepost.description}</div>{/if}
 
 <dl class="properties">
-    <DetailsPropertyItem title={$_('details.altitude')} value="{guidepost.ele}" />
+    <DetailsPropertyItem title={$_('details.altitude')} value={guidepost.ele} />
     <DetailsPropertyItem title={$_('details.operator')} value={guidepost.tags.operator} />
 </dl>
 
@@ -96,5 +123,16 @@
 </Collapsible>
 
 <CollapsibleTagList tags={guidepost.tags} />
-{/if}{/key}
+{:catch error}
+    {$_(error.message)}
+{/await}
+{/if}
+{/snippet}
+
+{#snippet footer()}
+    <button type="button" onclick={onMapFocus}>
+        <span class="btn-img"><SVGZoom /></span>
+       {$_('details.zoom_to')}
+    </button>
+{/snippet}
 </SidePanel>

@@ -7,8 +7,7 @@
     import { HELP } from './config.js';
     import { page_state, show_page }  from './app_state.js';
 
-    let content;
-    let helpbox;
+    let content = $state();
 
     function contentFunc(locale) {
         if (help_languages.hasOwnProperty(locale)) {
@@ -38,16 +37,14 @@
         }
         content = {...qot, ...temp};
 
-        console.log(content);
-
         const handle_any_click = (event) => {
-          if (helpbox && !helpbox.contains(event.target)) {
+          if (!event.target.closest('.helppanel')) {
             show_page('');
           }
         };
 
         const handle_esc = (event) => {
-          if (helpbox && event.key === 'Escape') {
+          if (event.key === 'Escape') {
             show_page('');
           }
         };
@@ -141,7 +138,7 @@
 </style>
 
 <div class="background">
-<div class="helppanel" bind:this={helpbox}>
+<div class="helppanel">
 {#if content}
     <nav class="nav flex-column">
         {#each HELP as part}

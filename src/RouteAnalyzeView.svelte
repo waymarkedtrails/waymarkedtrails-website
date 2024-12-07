@@ -9,7 +9,7 @@
     import Point from 'ol/geom/Point.js';
     import LineString from 'ol/geom/LineString.js';
 
-    let num_segments = 0;
+    let num_segments = $state(0);
     let segments = [];
     let layer = null;
     const getMap = getContext('olContext');

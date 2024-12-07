@@ -1,7 +1,5 @@
 <script>
-    export let name = 'none';
-    export let title = '';
-    export let value = 0.5;
+    let { name = 'none', title = '', value = $bindable(0.5) } = $props();
 </script>
 
 <style>

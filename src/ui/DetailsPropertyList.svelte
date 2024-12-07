@@ -1,7 +1,12 @@
+<script>
+    let { children } = $props();
+    const children_render = $derived(children);
+</script>
+
 <style>
     dl {
         font-size: smaller
     }
 </style>
 
-<dl><slot></slot></dl>
+<dl>{@render children_render?.()}</dl>

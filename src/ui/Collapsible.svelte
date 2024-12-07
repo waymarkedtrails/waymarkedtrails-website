@@ -1,10 +1,7 @@
 <script>
-    export let title = '';
-    export let init_collapsed = false;
+    let { title = '', init_collapsed = false, children } = $props();
 
-    let collapsed = init_collapsed;
-
-    let collapse = function() { collapsed = !collapsed;}
+    let collapsed = $state(init_collapsed);
 </script>
 
 <style>
@@ -15,7 +12,7 @@
     }
 </style>
 
-<h4 class="panel-heading" on:click={collapse}>
+<h4 class="panel-heading" onclick={() => {collapsed = !collapsed}}>
     {#if collapsed}
         <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
@@ -29,5 +26,5 @@
 </h4>
 
 {#if !collapsed}
-<div><slot></slot></div>
+<div>{@render children?.()}</div>
 {/if}

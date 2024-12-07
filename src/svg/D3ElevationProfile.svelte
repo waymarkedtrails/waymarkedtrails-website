@@ -7,12 +7,12 @@
     import { bisector } from 'd3-array' ;
     import { set_elevation_point, unset_elevation_point } from '../map/LayerElevation.svelte';
 
-    export let data;
-    export let width;
-    export let height;
-    export let x_axis_width = 20;
-    export let y_axis_width = 40;
-    export let margin = 5;
+    let {data,
+         width,
+         height,
+         x_axis_width = 20,
+         y_axis_width = 40,
+         margin = 5} = $props();
 
     let component;
 

@@ -1,8 +1,7 @@
 <script>
     import SVGForward from '../svg/Forward.svelte';
 
-    export let url;
-    export let title;
+    let { url, title } = $props();
 </script>
 
 <style>

@@ -5,7 +5,8 @@
     import { map_view, page_state } from './app_state.js';
     import { set_map_view } from './Map.svelte';
     import SidePanel from './ui/SidePanel.svelte';
-    import { json_loader } from './util/load_json.js';
+    import OsmObjectLink from './ui/OsmObjectLink.svelte';
+    import { json_load } from './util/load_json.js';
     import { load_routes } from './map/LayerVectorData.svelte';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
     import Collapsible from './ui/Collapsible.svelte';
@@ -20,14 +21,14 @@
     import ItineraryLine from './ui/ItineraryLine.svelte';
     import DetailsFooter from './ui/DetailsFooter.svelte';
 
-    let osm_type = '';
-    let osm_id = '';
-    let fail_message = '';
-    let route;
-    let extent = $map_view.extent;
+    let osm_type = $state();
+    let osm_id = $state();
+    let bbox = $state();
 
-    const loader = json_loader(function(json) {
-        route = json;
+    let loader = $state();
+
+    function process_route(route) {
+        let extent = $map_view.extent;
 
         if (route.wikipedia) {
             route.wiki_url = API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink';
@@ -50,12 +51,11 @@
         if (!extent && route.bbox) {
             set_map_view(route.bbox);
         }
+        bbox = route.bbox;
 
         load_routes([].concat(route.subroutes || [], route.superroutes || []), extent);
-
-        fail_message = '';
-    },
-    function(error) { fail_message = $_(error); });
+        return route;
+    }
 
     onDestroy(page_state.subscribe((value) => {
         if (value.page !== 'route') {
@@ -63,13 +63,17 @@
         }
 
         osm_id = value.params.get('id');
+        osm_type = value.params.get('type') || 'relation';
         if (typeof osm_id === 'undefined') {
-            fail_message = $_('error.missing_id');
+            loader = Promise.reject('error.missing_id');
             return;
         }
-        osm_type = value.params.get('type') || 'relation';
 
-        loader.load('/details/' + osm_type + '/' + osm_id);
+        let controller = new AbortController();
+        const signal = controller.signal;
+
+        loader = json_load('/details/' + osm_type + '/' + osm_id, signal)
+            .then((json) => process_route(json));
     }));
 
 </script>
@@ -100,61 +104,67 @@
     }
 </style>
 
-<SidePanel osm_type={osm_type} osm_id={osm_id} title="{$_('details.type.' + osm_type)} {osm_id}" fail_message={fail_message}>
-{#key route}{#if route}
-<ItineraryLine itinerary={route.itinerary} />
+<SidePanel>
+{#snippet title()}
+    <OsmObjectLink osm_type={osm_type} osm_id={osm_id}/>
+{/snippet}
+{#snippet content()}
+    {#if loader}{#await loader}
+        {$_('routelist.loading')}
+    {:then route}
+    <ItineraryLine itinerary={route.itinerary} />
 
-<DetailsHeader img_alt="{$_('details.route_symbol')}" img_src="{API_URL}/symbols/id/{route.symbol_id}" ref={route.ref}>
-    {make_route_title(route)}
-    {#if route.local_name}<div class="subtitle">{route.local_name}</div>{/if}
-</DetailsHeader>
-
-
-{#if route.description}<div class="description">{route.description}</div>{/if}
-
-<dl class="properties">
-    <DetailsPropertyItem title={$_('details.mapped_len')} value={route.mapped_length} type="km" />
-    <DetailsPropertyItem title={$_('details.official_len')} value={route.official_length} type="km" />
-    <DetailsPropertyItem title={$_('details.operator')} value={route.operator} />
-    <DetailsPropertyItem title={$_('details.symbol')} value={route.symbol} />
-</dl>
+    <DetailsHeader img_alt={$_('details.route_symbol')} img_src="{API_URL}/symbols/id/{route.symbol_id}" ref={route.ref}>
+        {make_route_title(route)}
+        {#if route.local_name}<div class="subtitle">{route.local_name}</div>{/if}
+    </DetailsHeader>
 
 
-<div class="weblinks">
-    <DetailsWeblink title={$_('details.website')} url={route.url} />
-    <DetailsWeblink title={$_('details.wikipedia')} url={route.wiki_url} />
-</div>
+    {#if route.description}<div class="description">{route.description}</div>{/if}
 
-{#if route.note}<div class="note"><i>{$_('details.note')}:</i> {route.note}</div>{/if}
+    <dl class="properties">
+        <DetailsPropertyItem title={$_('details.mapped_len')} value={route.mapped_length} type="km" />
+        <DetailsPropertyItem title={$_('details.official_len')} value={route.official_length} type="km" />
+        <DetailsPropertyItem title={$_('details.operator')} value={route.operator} />
+        <DetailsPropertyItem title={$_('details.symbol')} value={route.symbol} />
+    </dl>
 
-<Collapsible title={$_('elevation.title')} init_collapsed={true}>
-    <ElevationView osm_type={osm_type} osm_id={osm_id} length={route.mapped_length} />
-</Collapsible>
 
-{#if route.subroutes}
-<Collapsible title={$_('details.subroutes_title')} init_collapsed={true}>
-    <ul><SimpleRouteList route_data={route.subroutes} /></ul>
-</Collapsible>
-{/if}
+    <div class="weblinks">
+        <DetailsWeblink title={$_('details.website')} url={route.url} />
+        <DetailsWeblink title={$_('details.wikipedia')} url={route.wiki_url} />
+    </div>
 
-{#if route.superroutes}
-<Collapsible title={$_('details.superroutes_title')} init_collapsed={true}>
-    <ul><SimpleRouteList route_data={route.superroutes} /></ul>
-</Collapsible>
-{/if}
+    {#if route.note}<div class="note"><i>{$_('details.note')}:</i> {route.note}</div>{/if}
 
-<CollapsibleTagList tags={route.tags} />
+    <Collapsible title={$_('elevation.title')} init_collapsed={true}>
+        <ElevationView osm_type={osm_type} osm_id={osm_id} length={route.mapped_length} />
+    </Collapsible>
 
-<Collapsible title={$_('details.analyze.title')} init_collapsed={true}>
-    <RouteAnalyzeView />
-</Collapsible>
+    {#if route.subroutes}
+    <Collapsible title={$_('details.subroutes_title')} init_collapsed={true}>
+        <ul><SimpleRouteList route_data={route.subroutes} /></ul>
+    </Collapsible>
+    {/if}
 
-{:else}
-{$_('routelist.loading')}
-{/if}{/key}
+    {#if route.superroutes}
+    <Collapsible title={$_('details.superroutes_title')} init_collapsed={true}>
+        <ul><SimpleRouteList route_data={route.superroutes} /></ul>
+    </Collapsible>
+    {/if}
 
-<div slot="footer">
-    <DetailsFooter {route} />
-<div>
+    <CollapsibleTagList tags={route.tags} />
+
+    <Collapsible title={$_('details.analyze.title')} init_collapsed={true}>
+        <RouteAnalyzeView />
+    </Collapsible>
+    {:catch error}
+        {$_(error.message)}
+    {/await}{/if}
+{/snippet}
+
+{#snippet footer()}
+    <DetailsFooter {osm_type} {osm_id} {bbox} />
+{/snippet}
 
 </SidePanel>

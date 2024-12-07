@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
     import VectorSource from 'ol/source/Vector';
     import GeoJSON from 'ol/format/GeoJSON';
     import { API_URL } from '../config.js';

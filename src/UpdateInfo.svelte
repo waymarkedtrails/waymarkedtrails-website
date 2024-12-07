@@ -1,21 +1,30 @@
 <script>
     import { _, date, time } from 'svelte-i18n';
-    import { onMount, onDestroy } from 'svelte';
-    import { json_loader } from './util/load_json.js';
+    import { onMount } from 'svelte';
+    import { json_load } from './util/load_json.js';
 
-    let db_update = '';
-    let error_msg = '';
+    let loader = $state();
 
-    const loader = json_loader(function(data) {
-        if (data.server_status == 'OK') {
-            db_update = new Date(Date.parse(data.last_update));
-        } else {
-            error_msg = $_('error.api_unavailable');
-        }
-    }, function(error) { error_msg = $_(error); });
+    onMount(() => {
+        let controller = new AbortController();
+        const signal = controller.signal;
+        loader = json_load('/status', {}, signal)
+            .then((data) => {
+                if (data.server_status != 'OK') {
+                    throw new Error('error.api_unavailable');
+                }
+                return new Date(Date.parse(data.last_update));
+            });
 
-    onMount(function() { loader.load('/status'); });
-    onDestroy(function() { loader.abort(); });
+        return () => { if (controller) controller.abort(); };
+    });
 </script>
 
-{$_('headline.last_update')}: {#if error_msg}{error_msg}{:else}{$date(db_update)} {$time(db_update)}{/if}
+{$_('headline.last_update')}:
+{#if loader}
+{#await loader then db_update}
+    {$date(db_update)} {$time(db_update)}
+{:catch error}
+    {$_(error.message)}
+{/await}
+{/if}

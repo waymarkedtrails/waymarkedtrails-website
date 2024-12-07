@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
     import {Vector as VectorSource} from 'ol/source';
     import Feature from 'ol/Feature';
 

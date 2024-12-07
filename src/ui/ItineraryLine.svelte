@@ -1,6 +1,7 @@
 <script>
     import SVGChevron from '../svg/DoubleChevron.svelte';
-    export let itinerary;
+
+    let { itinerary } = $props();
 </script>
 
 <style>

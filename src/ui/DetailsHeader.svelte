@@ -1,7 +1,6 @@
 <script>
-    export let img_alt;
-    export let img_src;
-    export let ref = '';
+    let { img_alt, img_src, ref = '', children } = $props();
+    const children_render = $derived(children);
 </script>
 
 <style>
@@ -35,7 +34,7 @@
 </style>
 
 <h1>
-    <div class="title"><slot></slot></div>
+    <div class="title">{@render children_render?.()}</div>
     <div class="img-ref">
         <img alt={img_alt} src={img_src} />
         <div class="ref">{ref}</div>

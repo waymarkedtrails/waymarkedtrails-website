@@ -4,9 +4,10 @@
     import InterLinkMapList from './ui/InterLinkMapList.svelte';
     import { map_view } from './app_state.js';
 
-    let headline_div;
-    let show_maplink_menu = false;
-    let map_link_tail = '';
+    let { subleft, subright } = $props();
+
+    let show_maplink_menu = $state(false);
+    let map_link_tail = $state('');
 
     map_view.subscribe(function (value) {
         if (value === false) {
@@ -20,8 +21,10 @@
 
     const themes = ['hiking', 'cycling', 'mtb', 'skating', 'riding', 'slopes'];
 
-    function handleClick(ev) {
-        if (headline_div.clientWidth <= 650) {
+    function onclick(ev) {
+        let target = ev.target.closest('.main');
+
+        if (show_maplink_menu || (target && target.clientWidth <= 650)) {
             show_maplink_menu = !show_maplink_menu;
         }
     }
@@ -92,7 +95,7 @@
     }
 </style>
 
-<div bind:this={headline_div} on:click={handleClick} class="headline">
+<div {onclick} class="headline">
   <div class="main">
     <h1>Waymarked Trails: {$_('site_title.' + TITLE)}</h1>
     <div class="map_maplinks">
@@ -104,8 +107,7 @@
   </div>
 {#if show_maplink_menu}<InterLinkMapList {themes} {map_link_tail}/>{/if}
 <div class="subheadline">
-{#if false}<slot></slot>{/if}
-<span><slot name="subleft"></slot></span>
-<span class="subright"><slot name="subright"></slot></span>
+<span>{@render subleft?.()}</span>
+<span class="subright">{@render subright?.()}</span>
 </div>
 </div>

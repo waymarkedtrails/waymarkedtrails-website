@@ -4,15 +4,11 @@
 
     import SVGSearch from '../svg/Search.svelte';
 
-    let searchterm;
-    let params;
-    $: params = [['query', searchterm]];
+    let searchterm = $state();
 
-    function turn_page() {
-        page_state.set({page: 'search', params: new Map(params)});
-    }
-
-    function toggle_search_box() {
+    function turn_page(ev) {
+        ev.preventDefault();
+        page_state.set({page: 'search', params: new Map([['query', searchterm]])});
     }
 </script>
 
@@ -26,7 +22,7 @@
     }
 </style>
 
-<form class="input-group" action=""  on:submit|preventDefault={turn_page}>
+<form class="input-group" action=""  onsubmit={turn_page}>
     <input bind:value={searchterm} type="search" results=5 name=s placeholder={$_('search.title')}>
     <button type="submit" class="btn-primary"><SVGSearch /></button>
 </form>

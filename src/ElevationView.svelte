@@ -1,27 +1,21 @@
 <script>
     import { _ } from 'svelte-i18n';
     import { onMount } from 'svelte';
-    import { json_loader } from './util/load_json.js';
+    import { json_load } from './util/load_json.js';
     import HourGlass from './svg/HourGlass.svelte';
     import D3ElevationProfile from './svg/D3ElevationProfile.svelte';
 
-    export let osm_type;
-    export let osm_id;
-    export let length = 0;
+    let { osm_type, osm_id, length = 0 } = $props();
 
-    let profile;
-    let fail_message = '';
-
-    const loader = json_loader((json) => { profile = json; },
-                               (error) => { fail_message = $_(error); });
+    let loader = $state();
 
     onMount(() => {
-        profile = false;
-        fail_message = '';
+        let controller = new AbortController();
+        const signal = controller.signal;
+        loader = json_load('/details/' + osm_type + '/' + osm_id + '/elevation',
+                            {}, signal);
 
-        loader.load('/details/' + osm_type + '/' + osm_id + '/elevation');
-
-        return () => { loader.abort(); };
+        return () => { if (controller) controller.abort(); };
     });
 </script>
 
@@ -58,9 +52,10 @@
     }
 </style>
 
-{#if fail_message}
-{fail_message}
-{:else if profile}
+{#if loader}
+{#await loader}
+   <HourGlass />
+{:then profile}
 {#if length > 0 && length * 1.1 < profile.end_position}
 <p class="warn-unsorted">{$_('elevation.warn_unsorted')}</p>
 {/if}
@@ -73,6 +68,7 @@
     <span>↗ {profile.ascent}m</span>
     <span>↘ {profile.descent}m</span>
 </div>
-{:else}
-    <HourGlass />
+{:catch error}
+  {$_(error.message)}
+{/await}
 {/if}

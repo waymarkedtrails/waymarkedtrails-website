@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
     import Feature from 'ol/Feature';
     import {Circle, Style, Fill, Stroke} from 'ol/style';
     import {Point} from 'ol/geom';

@@ -23,18 +23,18 @@
     import PanelHelp from './PanelHelp.svelte';
     import UpdateInfo from './UpdateInfo.svelte';
 
-    let sidepanel = '';
+    let sidepanel = $state();
     let showhelp = false;
 
     onDestroy(page_state.subscribe(value => sidepanel = value.page));
 
-    $: {
+    $effect(() => {
         if (!$isLoading) {
             document.title = 'Waymarked Trails - ' + $_('site_title.' + TITLE);
             document.getElementById('meta-description')
                     .setAttribute('content', $_('site_description.' + TITLE));
         }
-    }
+    });
 
     function handlePopState() {
         let hash = WindowHash();
@@ -56,31 +56,37 @@
   <link rel="shortcut icon" href="/img/map_{TITLE}.ico" />
 </svelte:head>
 
-<svelte:window on:popstate={handlePopState} />
+<svelte:window onpopstate={handlePopState} />
 
 {#if $isLoading}
     Loading...
 {:else}
 <div class="screen">
     <Headline>
-      <span slot="subleft"><UpdateInfo /></span>
-      <span slot="subright"><MapAttribution /></span>
+        {#snippet subleft()}
+            <UpdateInfo />
+        {/snippet}
+        {#snippet subright()}
+            <MapAttribution />
+        {/snippet}
     </Headline>
 
     <Map>
-      <MapXYZLayer {...BASEMAPS[$basemap_id]} opacity={$map_opacity_base}/>
-      <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={$map_opacity_shade} attribution='elevation' />
-      <MapXYZLayer name="routelayer" url={TILE_URL} opacity={$map_opacity_route}/>
-      <MapGeolocateLayer />
-      <MapLayerRouteDetails />
-      <MapLayerVectorData />
-      <MapLayerElevation />
+        {#snippet overlay()}
+            <MapXYZLayer {...BASEMAPS[$basemap_id]} opacity={$map_opacity_base}/>
+            <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={$map_opacity_shade} attribution='elevation' />
+            <MapXYZLayer name="routelayer" url={TILE_URL} opacity={$map_opacity_route}/>
+            <MapGeolocateLayer />
+            <MapLayerRouteDetails />
+            <MapLayerVectorData />
+            <MapLayerElevation />
 
-      {#if sidepanel === 'settings'}<PanelSettings/>{/if}
-      {#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
-      {#if sidepanel === 'route'}<PanelRouteDetails />{/if}
-      {#if sidepanel === 'search'}<PanelSearch />{/if}
-      {#if sidepanel === 'guidepost'}<PanelGuidepost />{/if}
+            {#if sidepanel === 'settings'}<PanelSettings/>{/if}
+            {#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
+            {#if sidepanel === 'route'}<PanelRouteDetails />{/if}
+            {#if sidepanel === 'search'}<PanelSearch />{/if}
+            {#if sidepanel === 'guidepost'}<PanelGuidepost />{/if}
+        {/snippet}
     </Map>
 
     <Footer {sidepanel} />

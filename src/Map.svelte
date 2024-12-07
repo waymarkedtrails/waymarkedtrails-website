@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
     let map;
 
     export function set_map_view(bbox) {
@@ -18,7 +18,9 @@
     import {transform} from 'ol/proj';
     import {Attribution, ScaleLine, defaults as defaultControls} from 'ol/control';
 
-    let has_map = false;
+    let { overlay } = $props();
+
+    let has_map = $state(false);
     let component;
 
     setContext('olContext', () => map);
@@ -69,7 +71,6 @@
             map_view.set({center: [x, y], zoom: zoom, extent: extent});
         });
     });
-
 </script>
 
 <style>
@@ -81,5 +82,5 @@
 </style>
 
 <div bind:this={component}>
-{#if has_map}<slot></slot>{/if}
+{#if has_map}{@render overlay?.()}{/if}
 </div>

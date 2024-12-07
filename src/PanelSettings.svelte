@@ -9,8 +9,7 @@
     import OpacitySlider from './ui/OpacitySlider.svelte';
     import DropdownList from './ui/DropdownList.svelte';
 
-    let current_language = null;
-    let current_lang_title = null;
+    let current_lang_title = $state();
 
     function set_language(ev) {
         set_stored_locale(ev.target.getAttribute('data-lang'));
@@ -18,7 +17,7 @@
     }
 
     onMount(() => {
-        current_language = get_stored_locale();
+        const current_language = get_stored_locale();
 
         if (current_language !== null) {
             languages.forEach((item, idx) => {
@@ -36,13 +35,15 @@
     }
 </style>
 
-<SidePanel title={$_('settings.title')}>
+<SidePanel>
+{#snippet title()}{$_('settings.title')}{/snippet}
+{#snippet content()}
     <h2 class="panel-heading">{$_('settings.language')}</h2>
 
     <DropdownList title={current_lang_title || $_('settings.browser_language')}>
-        <button class="dropdown-item" type="button" on:click={set_language}>{$_('settings.browser_language')}</button>
+        <button class="dropdown-item" type="button" onclick={set_language}>{$_('settings.browser_language')}</button>
         {#each languages as lang}
-            <button class="dropdown-item" type="button" data-lang={lang[0]} data-title={lang[1]} on:click={set_language}>{lang[1]}</button>
+            <button class="dropdown-item" type="button" data-lang={lang[0]} data-title={lang[1]} onclick={set_language}>{lang[1]}</button>
         {/each}
     </DropdownList>
 
@@ -50,7 +51,7 @@
 
     <DropdownList title={BASEMAPS[$basemap_id].name}>
         {#each BASEMAPS as cfg, idx}
-            <button class="dropdown-item" type="button" on:click="{() => basemap_id.set(idx)}">{cfg.name}</button>
+            <button class="dropdown-item" type="button" onclick="{() => basemap_id.set(idx)}">{cfg.name}</button>
         {/each}
     </DropdownList>
 
@@ -61,4 +62,5 @@
       <OpacitySlider name="route" title={$_('settings.route_layer')} bind:value={$map_opacity_route} />
       <OpacitySlider name="shade" title={$_('settings.hillshading_layer')} bind:value={$map_opacity_shade} />
     </table>
+{/snippet}
 </SidePanel>

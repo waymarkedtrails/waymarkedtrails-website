@@ -1,7 +1,8 @@
 <script>
-    export let title = '';
+    let {children, ...button_props} = $props();
+    const children_render = $derived(children);
 </script>
 
-<button class="btn-primary" title={title} type="button" on:click>
-<slot></slot>
+<button class="btn-primary" type="button" {...button_props}>
+{@render children_render?.()}
 </button>

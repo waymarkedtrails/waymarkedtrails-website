@@ -8,8 +8,8 @@
     import help_languages from './i18n/help.js';
     import Headline from './Headline.svelte';
 
-    let content;
-    let test_symbol;
+    let content = $state();
+    let test_symbol = $state();
 
     const colors = ['black', 'blue', 'brown', 'gray', 'green', 'orange',
                     'purple', 'red', 'white', 'yellow'];
@@ -26,11 +26,11 @@
                          'hexagon', 'shell', 'shell_modern', 'hiker', 'wheel'];
     const backgrounds = ['circle', 'frame', 'round'];
 
-    $: {
+    $effect(() =>  {
         if (!$isLoading) {
             document.title = 'Waymarked Trails - ' + $_('site_title.osmc_symbol');
         }
-    }
+    });
 
     function bgColor(color) {
         if (color == 'white')
@@ -98,8 +98,10 @@
         text-align: center;
     }
 
-    a {
+    button {
         color: var(--theme-sub-link-color);
+        background-color: var(--theme-sub-color);
+        border: 0pt;
     }
 
     .preview {
@@ -131,7 +133,11 @@
     Loading...
 {:else}
 <div class="screen">
-<Headline><span slot="subleft"><a href="#" on:click={() => window.history.back()}>{$_('osmc_symbol.back')}</a></span></Headline>
+<Headline>
+    {#snippet subleft()}
+        <button onclick={() => window.history.back()}>{$_('osmc_symbol.back')}</button>
+    {/snippet}
+</Headline>
 
 <div class="main">
 
