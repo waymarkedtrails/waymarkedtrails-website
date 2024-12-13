@@ -6,8 +6,7 @@
     import SidePanel from './ui/SidePanel.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
     import HourGlass from './svg/HourGlass.svelte';
-    import { onDestroy } from 'svelte';
-    import { page_state } from './app_state.js';
+    import { page_state } from './page_state.svelte.js';
     import { set_map_view } from './Map.svelte';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
 
@@ -25,12 +24,12 @@
         set_map_view(ext);
     };
 
-    onDestroy(page_state.subscribe((value) => {
-        if (value.page !== 'search') {
+    $effect(() => {
+        if (page_state.page !== 'search') {
             return;
         }
 
-        query = value.params.get('query') || '';
+        query = page_state.params.get('query') || '';
         if (query === '') {
             return;
         }
@@ -62,7 +61,7 @@
                 });
                 return json;
             });
-    }));
+    });
 </script>
 
 <style>

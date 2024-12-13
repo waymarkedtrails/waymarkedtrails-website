@@ -3,8 +3,8 @@
 
     import { TITLE, BASEMAPS, HILLSHADING_URL, TILE_URL } from './config.js';
     import { isLoading, _ } from 'svelte-i18n';
-    import { onDestroy } from 'svelte';
-    import { basemap_id, map_opacity_base, map_opacity_shade, map_opacity_route, page_state } from './app_state.js';
+    import { page_state } from './page_state.svelte.js';
+    import { map_state } from './map_state.svelte.js';
     import { WindowHash } from './util/window_hash.js';
     import Map from './Map.svelte';
     import MapXYZLayer from './map/XYZLayer.svelte';
@@ -23,10 +23,7 @@
     import PanelHelp from './PanelHelp.svelte';
     import UpdateInfo from './UpdateInfo.svelte';
 
-    let sidepanel = $state();
     let showhelp = false;
-
-    onDestroy(page_state.subscribe(value => sidepanel = value.page));
 
     $effect(() => {
         if (!$isLoading) {
@@ -36,9 +33,44 @@
         }
     });
 
+    $effect(() => {
+        if (map_state.extent !== false) {
+            let map_param = map_state.zoom.toFixed(1)
+                            + '/' + map_state.center[1]
+                            + '/' + map_state.center[0];
+
+            localStorage.setItem('position', map_param);
+
+            const h = new WindowHash();
+            h.set_param("map", map_param)
+            h.replace_history();
+        }
+    });
+
+    $effect(() => {
+        const mapid = map_state.basemap_id;
+        localStorage.setItem('basemap-id', BASEMAPS[mapid].id);
+    });
+
+    $effect(() => {
+        localStorage.setItem('opacity-base-layer', (map_state.map_opacity_base * 100).toFixed(0));
+    });
+
+    $effect(() => {
+        localStorage.setItem('opacity-route-layer', (map_state.map_opacity_route * 100).toFixed(0));
+    });
+
+    $effect(() => {
+        localStorage.setItem('opacity-shade-layer', (map_state.map_opacity_shade * 100).toFixed(0));
+    });
+
+    $effect(() => {
+        new WindowHash(page_state.page, page_state.params).push_history();
+    });
+
     function handlePopState() {
-        let hash = WindowHash();
-        page_state.set({page: hash.get_page(), params: hash.get_params()});
+        const hash = new WindowHash();
+        page_state.show_page(hash.page, hash.params);
     }
 </script>
 
@@ -73,25 +105,25 @@
 
     <Map>
         {#snippet overlay()}
-            <MapXYZLayer {...BASEMAPS[$basemap_id]} opacity={$map_opacity_base}/>
-            <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={$map_opacity_shade} attribution='elevation' />
-            <MapXYZLayer name="routelayer" url={TILE_URL} opacity={$map_opacity_route}/>
+            <MapXYZLayer {...BASEMAPS[map_state.basemap_id]} opacity={map_state.map_opacity_base}/>
+            <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={map_state.map_opacity_shade} attribution='elevation' />
+            <MapXYZLayer name="routelayer" url={TILE_URL} opacity={map_state.map_opacity_route}/>
             <MapGeolocateLayer />
             <MapLayerRouteDetails />
             <MapLayerVectorData />
             <MapLayerElevation />
 
-            {#if sidepanel === 'settings'}<PanelSettings/>{/if}
-            {#if sidepanel === 'routelist'}<PanelRouteList/>{/if}
-            {#if sidepanel === 'route'}<PanelRouteDetails />{/if}
-            {#if sidepanel === 'search'}<PanelSearch />{/if}
-            {#if sidepanel === 'guidepost'}<PanelGuidepost />{/if}
+            {#if page_state.page === 'settings'}<PanelSettings/>{/if}
+            {#if page_state.page === 'routelist'}<PanelRouteList/>{/if}
+            {#if page_state.page === 'route'}<PanelRouteDetails />{/if}
+            {#if page_state.page === 'search'}<PanelSearch />{/if}
+            {#if page_state.page === 'guidepost'}<PanelGuidepost />{/if}
         {/snippet}
     </Map>
 
-    <Footer {sidepanel} />
+    <Footer />
 </div>
 
-{#if sidepanel.startsWith('help')}<PanelHelp />{/if}
+{#if page_state.page?.startsWith('help')}<PanelHelp />{/if}
 
 {/if}

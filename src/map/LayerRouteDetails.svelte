@@ -31,8 +31,8 @@
 </script>
 
 <script>
-    import { getContext, onDestroy } from 'svelte';
-    import { page_state } from '../app_state.js';
+    import { getContext } from 'svelte';
+    import { page_state } from '../page_state.svelte.js';
     import VectorLayer from 'ol/layer/Vector';
     import GeoJSON from 'ol/format/GeoJSON';
     import { API_URL } from '../config.js';
@@ -42,11 +42,12 @@
     layer = new VectorLayer({source: null, style: null});
     getMap().addLayer(layer);
 
-    onDestroy(page_state.subscribe((value) => {
-        if (value.page === 'route') {
-            let osm_id = value.params.get('id');
+    $effect(() => {
+        let page_name = page_state.page;
+        if (page_name === 'route') {
+            let osm_id = page_state.params.get('id');
             if (typeof osm_id !== 'undefined') {
-                let osm_type = value.params.get('type') || 'relation';
+                let osm_type = page_state.params.get('type') || 'relation';
 
                 layer.setStyle(highlight_stroke);
                 layer.setSource(new VectorSource({
@@ -57,13 +58,12 @@
 
                 return;
             }
-        }
-        if (value.page === 'guidepost') {
+        } else if (page_name === 'guidepost') {
             layer.setStyle(highlight_circle);
             return;
         }
 
         layer.setStyle(null);
         layer.setSource(null);
-    }));
+    });
 </script>

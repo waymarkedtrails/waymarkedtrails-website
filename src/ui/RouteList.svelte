@@ -1,6 +1,5 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import { show_page } from '../app_state.js';
     import SimpleRouteList from './SimpleRouteList.svelte';
 
     let { route_data, groups } = $props();

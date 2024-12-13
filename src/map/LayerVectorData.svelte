@@ -74,12 +74,12 @@
 </script>
 
 <script>
-    import { getContext, onDestroy } from 'svelte';
+    import { getContext } from 'svelte';
     import VectorLayer from 'ol/layer/Vector';
     import VectorTileLayer from 'ol/layer/VectorTile';
     import VectorTileSource from 'ol/source/VectorTile';
     import { boundingExtent } from 'ol/extent'
-    import { show_page } from '../app_state.js';
+    import { page_state } from '../page_state.svelte.js';
 
     getMap = getContext('olContext');
 
@@ -130,7 +130,7 @@
                 }
             }
             if (current_zoom > 13 && props.type === 'guidepost') {
-                show_page('guidepost', [['id', props.osm_id]]);
+                page_state.show_page('guidepost', [['id', props.osm_id]]);
                 return;
             }
         }
@@ -150,11 +150,11 @@
 
         if (total == 1) {
             if (relations.length) {
-                show_page('route', [['id', relations[0]]]);
+                page_state.show_page('route', [['id', relations[0]]]);
             } else if (waysets.length) {
-                show_page('route', [['id', waysets[0]], ['type', 'wayset']]);
+                page_state.show_page('route', [['id', waysets[0]], ['type', 'wayset']]);
             } else if (ways.length) {
-                show_page('route', [['id', ways[0]], ['type', 'way']]);
+                page_state.show_page('route', [['id', ways[0]], ['type', 'way']]);
             }
         } else if (total > 1) {
             let args = [];
@@ -167,7 +167,7 @@
             if (ways.length) {
                 args.push(['ways', ways.join()]);
             }
-            show_page('routelist', args);
+            page_state.show_page('routelist', args);
         }
     }
 </script>

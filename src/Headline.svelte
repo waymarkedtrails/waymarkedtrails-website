@@ -2,20 +2,20 @@
     import { TITLE, MEDIA_URL, BASE_URL, THEME_URL } from './config.js';
     import { _ } from 'svelte-i18n';
     import InterLinkMapList from './ui/InterLinkMapList.svelte';
-    import { map_view } from './app_state.js';
+    import { map_state } from './map_state.svelte.js';
 
     let { subleft, subright } = $props();
 
     let show_maplink_menu = $state(false);
     let map_link_tail = $state('');
 
-    map_view.subscribe(function (value) {
-        if (value === false) {
+    $effect(() => {
+        if (map_state.extent === false) {
             map_link_tail = '';
         } else {
-            map_link_tail = "#?map=" + value.zoom.toFixed(1)
-                            + '/' + value.center[1]
-                            + '/' + value.center[0];
+            map_link_tail = "#?map=" + map_state.zoom.toFixed(1)
+                            + '/' + map_state.center[1]
+                            + '/' + map_state.center[0];
         }
     });
 

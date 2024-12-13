@@ -5,7 +5,7 @@
     import { aliases } from './i18n.js';
     import help_languages from './i18n/help.js';
     import { HELP } from './config.js';
-    import { page_state, show_page }  from './app_state.js';
+    import { page_state }  from './page_state.svelte.js';
 
     let content = $state();
 
@@ -39,24 +39,22 @@
 
         const handle_any_click = (event) => {
           if (!event.target.closest('.helppanel')) {
-            show_page('');
+            page_state.show_page();
+            document.removeEventListener('click', handle_any_click, false);
+            document.removeEventListener('keyup', handle_esc, false);
           }
         };
 
         const handle_esc = (event) => {
           if (event.key === 'Escape') {
-            show_page('');
+            page_state.show_page();
+            document.removeEventListener('click', handle_any_click, false);
+            document.removeEventListener('keyup', handle_esc, false);
           }
         };
 
         document.addEventListener('click', handle_any_click, false);
         document.addEventListener('keyup', handle_esc, false);
-
-        return () => {
-            document.removeEventListener('click', handle_any_click, false);
-            document.removeEventListener('keyup', handle_esc, false);
-    };
-
     });
 </script>
 

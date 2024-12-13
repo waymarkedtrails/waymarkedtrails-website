@@ -1,8 +1,8 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import { onDestroy } from 'svelte';
     import { API_URL } from './config.js';
-    import { map_view, page_state } from './app_state.js';
+    import { page_state } from './page_state.svelte.js';
+    import { map_state } from './map_state.svelte.js';
     import { set_map_view } from './Map.svelte';
     import SidePanel from './ui/SidePanel.svelte';
     import OsmObjectLink from './ui/OsmObjectLink.svelte';
@@ -26,10 +26,9 @@
     let bbox = $state();
 
     let loader = $state();
+    let extra_routes_in_view = $state([]);
 
     function process_route(route) {
-        let extent = $map_view.extent;
-
         if (route.wikipedia) {
             route.wiki_url = API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink';
         }
@@ -48,22 +47,31 @@
             });
         }
 
+        const extent = map_state.extent;
         if (!extent && route.bbox) {
             set_map_view(route.bbox);
         }
         bbox = route.bbox;
+        extra_routes_in_view = [].concat(route.subroutes || [], route.superroutes || []);
 
-        load_routes([].concat(route.subroutes || [], route.superroutes || []), extent);
         return route;
     }
 
-    onDestroy(page_state.subscribe((value) => {
-        if (value.page !== 'route') {
+    $effect(() => {
+        const extent = map_state.extent;
+
+        if (extent && extra_routes_in_view.length > 0) {
+            load_routes(extra_routes_in_view, extent);
+        }
+    });
+
+    $effect(() => {
+        if (page_state.page !== 'route') {
             return;
         }
 
-        osm_id = value.params.get('id');
-        osm_type = value.params.get('type') || 'relation';
+        osm_id = page_state.params.get('id');
+        osm_type = page_state.params.get('type') || 'relation';
         if (typeof osm_id === 'undefined') {
             loader = Promise.reject('error.missing_id');
             return;
@@ -74,7 +82,7 @@
 
         loader = json_load('/details/' + osm_type + '/' + osm_id, signal)
             .then((json) => process_route(json));
-    }));
+    });
 
 </script>
 

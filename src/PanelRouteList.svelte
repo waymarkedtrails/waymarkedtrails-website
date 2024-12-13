@@ -4,7 +4,8 @@
     import { json_load } from './util/load_json.js';
     import SidePanel from './ui/SidePanel.svelte';
     import RouteList from './ui/RouteList.svelte';
-    import { map_view, page_state } from './app_state.js';
+    import { page_state } from './page_state.svelte.js';
+    import { map_state } from './map_state.svelte.js';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
     import { load_routes } from './map/LayerVectorData.svelte';
 
@@ -35,11 +36,10 @@
     };
 
     $effect(() => {
-        let page = $page_state;
-        if (page.page === 'routelist') {
-            let rel_ids = page.params.get('relations');
-            let ws_ids = page.params.get('waysets');
-            let way_ids = page.params.get('ways');
+        if (page_state.page === 'routelist') {
+            let rel_ids = page_state.params.get('relations');
+            let ws_ids = page_state.params.get('waysets');
+            let way_ids = page_state.params.get('ways');
             let do_ids = false;
 
             let args = {};
@@ -69,8 +69,8 @@
     });
 
     $effect(() => {
-        let extent = $map_view.extent;
-        if (!is_id_mode && typeof extent !== 'undefined') {
+        const extent = map_state.extent;
+        if (!is_id_mode && extent) {
             aborter?.abort()
             aborter = new AbortController();
             const signal = aborter.signal;

@@ -4,7 +4,7 @@
     import { BASEMAPS } from './config.js';
     import languages from './i18n/languages.js';
     import { set_stored_locale, get_stored_locale } from './i18n.js';
-    import { basemap_id, map_opacity_base, map_opacity_route, map_opacity_shade } from './app_state.js';
+    import { map_state } from './map_state.svelte.js';
     import SidePanel from './ui/SidePanel.svelte';
     import OpacitySlider from './ui/OpacitySlider.svelte';
     import DropdownList from './ui/DropdownList.svelte';
@@ -49,18 +49,18 @@
 
     <h2 class="panel-heading">{$_('settings.base_map')}</h2>
 
-    <DropdownList title={BASEMAPS[$basemap_id].name}>
+    <DropdownList title={BASEMAPS[map_state.basemap_id].name}>
         {#each BASEMAPS as cfg, idx}
-            <button class="dropdown-item" type="button" onclick="{() => basemap_id.set(idx)}">{cfg.name}</button>
+            <button class="dropdown-item" type="button" onclick="{() => map_state.basemap_id =idx}">{cfg.name}</button>
         {/each}
     </DropdownList>
 
     <h2 class="panel-heading">{$_('settings.transparency')}</h2>
 
     <table class="sliders">
-      <OpacitySlider name="base" title={$_('settings.base_map')} bind:value={$map_opacity_base} />
-      <OpacitySlider name="route" title={$_('settings.route_layer')} bind:value={$map_opacity_route} />
-      <OpacitySlider name="shade" title={$_('settings.hillshading_layer')} bind:value={$map_opacity_shade} />
+      <OpacitySlider name="base" title={$_('settings.base_map')} bind:value={map_state.map_opacity_base} />
+      <OpacitySlider name="route" title={$_('settings.route_layer')} bind:value={map_state.map_opacity_route} />
+      <OpacitySlider name="shade" title={$_('settings.hillshading_layer')} bind:value={map_state.map_opacity_shade} />
     </table>
 {/snippet}
 </SidePanel>

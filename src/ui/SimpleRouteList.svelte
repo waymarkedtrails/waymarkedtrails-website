@@ -2,12 +2,12 @@
     import { onDestroy } from 'svelte';
     import { preventDefault } from 'svelte/legacy';
     import { API_URL } from '../config.js';
-    import { show_page } from '../app_state.js';
+    import { page_state } from '../page_state.svelte.js';
     import {set_visible as set_map_details_visible } from '../map/LayerRouteDetails.svelte';
     import {highlight_route, unhighlight_route } from '../map/LayerVectorData.svelte';
 
     function show_route(route) {
-        show_page('route', [['id', route.id], ['type', route.type]]);
+        page_state.show_page('route', [['id', route.id], ['type', route.type]]);
     }
 
     function begin_hover(route_id, route_type) {

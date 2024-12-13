@@ -1,9 +1,8 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import { onDestroy } from 'svelte';
     import Point from 'ol/geom/Point';
 
-    import { page_state } from './app_state.js';
+    import { page_state } from './page_state.svelte.js';
     import { json_load } from './util/load_json.js';
     import { set_map_view } from './Map.svelte';
 
@@ -30,12 +29,12 @@
         }
     }
 
-    onDestroy(page_state.subscribe((value) => {
-        if (value.page !== 'guidepost') {
+    $effect(() => {
+        if (page_state.page !== 'guidepost') {
             return;
         };
 
-        osm_id = value.params.get('id');
+        osm_id = page_state.params.get('id');
         if (typeof osm_id === 'undefined') {
             loader = Promise.reject(new Error('error.missing_id'));
             return;
@@ -50,7 +49,7 @@
                         set_highlight_point(json.location);
                         return json;
                         });
-    }));
+    });
 </script>
 
 <style>

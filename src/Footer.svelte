@@ -2,7 +2,7 @@
     import { _ } from 'svelte-i18n';
 
     import { enable_geolocation } from './map/LayerGeolocate.svelte';
-    import { show_page } from './app_state.js';
+    import { page_state } from './page_state.svelte.js';
 
     import SearchForm from './ui/SearchForm.svelte';
     import ButtonFooter from './ui/ButtonFooter.svelte';
@@ -12,8 +12,6 @@
     import SvgQuestion from './svg/Question.svelte';
     import SVGListTask from './svg/ListTask.svelte';
     import SVGSearch from './svg/Search.svelte';
-
-    let { sidepanel = '' } = $props();
 </script>
 
 <style>
@@ -46,14 +44,14 @@
 
 <div class="toolbar" >
     <div class="mobile-no"><SearchForm /></div>
-    <div class="mobile-yes"><ButtonFooter title={$_('search.title')} onclick={() => show_page(sidepanel === 'search' ? '' : 'search')}><SVGSearch /></ButtonFooter></div>
+    <div class="mobile-yes"><ButtonFooter title={$_('search.title')} onclick={() => page_state.toggle_page('search')}><SVGSearch /></ButtonFooter></div>
     <div>
-        <ButtonFooter title={$_('settings.title')} onclick={() => show_page('settings')}><SvgGear /></ButtonFooter>
+        <ButtonFooter title={$_('settings.title')} onclick={() => page_state.toggle_page('settings')}><SvgGear /></ButtonFooter>
         <ButtonFooter title={$_('locate_me')} onclick={enable_geolocation}><SvgGeoPin /></ButtonFooter>
-        <ButtonFooter title={$_('help')} onclick={() => show_page(sidepanel.startsWith('help')?'':'help-about')}><SvgQuestion /></ButtonFooter>
+        <ButtonFooter title={$_('help')} onclick={() => page_state.show_page(page_state.page?.startsWith('help')?'':'help-about')}><SvgQuestion /></ButtonFooter>
     </div>
     <div>
-        <ButtonFooter onclick={() => show_page(sidepanel === 'routelist' ? '' : 'routelist')}>
+        <ButtonFooter onclick={() => page_state.toggle_page('routelist')}>
           <span class="mobile-yes"><SVGListTask /></span>
           <span class="mobile-no">{$_('routelist.title')}</span>
           </ButtonFooter>

@@ -10,9 +10,8 @@
 
 <script>
     import { onMount, setContext } from 'svelte';
-    import { map_view } from './app_state.js';
-    import { get_mapview } from './util/saved_state.js';
-    import { get} from 'svelte/store';
+    import { map_state } from './map_state.svelte.js';
+    import { WindowHash } from './util/window_hash.js';
 
     import {Map, View} from 'ol';
     import {transform} from 'ol/proj';
@@ -24,6 +23,33 @@
     let component;
 
     setContext('olContext', () => map);
+
+    function get_mapview() {
+        let center = [-7.9, 34.6];
+        let zoom = 3;
+
+        let parse_coords = function(mapview) {
+            let parts = mapview.split('/');
+            if (parts.length !== 3) {
+                parts = mapview.split('!');
+            }
+            if (parts.length === 3) {
+              zoom = parseFloat(parts[0]);
+              center = [parseFloat(parts[2]), parseFloat(parts[1])];
+            }
+        };
+
+        let stored_pos = localStorage.getItem('position');
+        if (stored_pos !== null) {
+            parse_coords(stored_pos);
+        }
+        new WindowHash().with_param('map', parse_coords);
+
+        return {center: [((center[0] + 180) % 360) - 180,
+                         ((center[1] + 90) % 180) - 90],
+                zoom: zoom};
+    };
+
 
     onMount(() => {
         let m = get_mapview();
@@ -65,10 +91,9 @@
                                 extent[2] - shift, extent[3]]
             }
 
-            let zoom = Math.round(view.getZoom());
-            let x = (Math.round(fx * 10000) / 10000);
-            let y = (Math.round(center[1] * 10000) / 10000);
-            map_view.set({center: [x, y], zoom: zoom, extent: extent});
+            map_state.zoom = Math.round(view.getZoom());
+            map_state.center = [Math.round(fx * 10000) / 10000, Math.round(center[1] * 10000) / 10000];
+            map_state.extent = extent;
         });
     });
 </script>

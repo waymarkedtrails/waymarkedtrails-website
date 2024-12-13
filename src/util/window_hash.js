@@ -1,74 +1,66 @@
-export function WindowHash(page, params = new Map()) {
-    var obj = {};
+export class WindowHash {
+    #page;
+    #params;
 
-    obj.set_page = function(page_name) {
-        page = page_name;
-    };
+    #to_str () {
+        let h = '#' + this.#page;
 
-    obj.get_page = function() {
-        return page;
-    }
-
-    obj.get_params = function() {
-        return params;
-    }
-
-    obj.with_param = function(k, f) {
-        if (params.has(k)) {
-            f(params.get(k));
-        }
-    }
-
-    obj.set_param = function(k, v) {
-        params.set(k, v);
-    };
-
-    obj.clear = function() {
-        params.clear();
-    };
-
-    let to_str = function() {
-        let h = '#' + page;
-
-        if (params.size > 0) {
+        if (this.#params.size > 0) {
             let delim = '?';
-            for (const k of params.keys()) {
-                h += delim + encodeURI(k) + '=' + encodeURI(params.get(k));
+            for (const k of this.#params.keys()) {
+                h += delim + encodeURI(k) + '=' + encodeURI(this.#params.get(k));
                 delim = '&';
             }
         }
 
         return h;
-    };
-
-    obj.replace_history = function() {
-        window.history.replaceState(window.history.state, document.title, to_str());
-    };
-
-    obj.push_history = function() {
-        window.history.pushState({}, '', to_str());
-    };
-
-    if (typeof page !== 'undefined') {
-        return obj;
     }
 
-    if (!window.location.hash) {
-        page = '';
-        return obj;
-    }
+    constructor (page, params) {
+        this.#params = params ?? new Map();
 
-    let parts = window.location.hash.substr(1).split('?', 2);
-    page = parts[0];
+        if (typeof page !== 'undefined') {
+            this.#page = page;
+        } else if (!window.location.hash) {
+            this.#page = '';
+        } else {
+            const parts = window.location.hash.substr(1).split('?', 2);
+            this.#page = parts[0];
 
-    if (parts.length > 1) {
-        parts[1].split('&').forEach(function(param) {
-            let kv = param.split('=');
-            if (kv.length == 2) {
-                params.set(decodeURI(kv[0]), decodeURI(kv[1]));
+            if (parts.length > 1) {
+                for (const part of parts[1].split('&')) {
+                    const kv = part.split('=');
+                    if (kv.length == 2) {
+                        this.#params.set(decodeURI(kv[0]), decodeURI(kv[1]));
+                    }
+                }
             }
-        });
+        }
     }
 
-    return obj;
+    get page() {
+        return this.#page;
+    }
+
+    get params() {
+        return this.#params;
+    }
+
+    with_param(key, func) {
+        if (this.#params.has(key)) {
+            func(this.#params.get(key));
+        }
+    }
+
+    set_param(k, v) {
+        this.#params.set(k, v);
+    }
+
+    replace_history() {
+        window.history.replaceState(window.history.state, document.title, this.#to_str());
+    }
+
+    push_history() {
+        window.history.pushState({}, '', this.#to_str());
+    }
 };

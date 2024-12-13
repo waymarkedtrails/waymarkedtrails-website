@@ -1,6 +1,6 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import { show_page } from '../app_state.js';
+    import { page_state } from '../page_state.svelte.js';
 
     import SVGBack from '../svg/Back.svelte';
     import SVGClose from '../svg/Close.svelte';
@@ -103,7 +103,7 @@
             {#if hidden}<SVGArrowBottom />{:else}<SVGArrowTop />{/if}
         </button>
         <span>{@render title?.()}</span>
-        <button title={$_('routelist.close')} onclick={() => show_page()}><SVGClose /></button>
+        <button title={$_('routelist.close')} onclick={() => page_state.show_page()}><SVGClose /></button>
     </h3>
     <div class="sidepanel-content">
         <div class="sidepanel-page">{@render content?.()}</div>

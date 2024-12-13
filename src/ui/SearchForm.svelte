@@ -1,14 +1,13 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import { page_state } from '../app_state.js';
-
+    import { page_state } from '../page_state.svelte.js';
     import SVGSearch from '../svg/Search.svelte';
 
-    let searchterm = $state();
+    let searchterm = '';
 
     function turn_page(ev) {
         ev.preventDefault();
-        page_state.set({page: 'search', params: new Map([['query', searchterm]])});
+        page_state.show_page('search', [['query', searchterm]]);
     }
 </script>
 
