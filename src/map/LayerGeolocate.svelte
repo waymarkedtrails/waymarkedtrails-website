@@ -7,7 +7,6 @@
 </script>
 
 <script>
-    import { getContext } from 'svelte';
     import Feature from 'ol/Feature';
     import {Icon, Style} from 'ol/style';
     import {Vector as VectorLayer} from 'ol/layer';
@@ -15,10 +14,9 @@
     import {Vector as VectorSource} from 'ol/source';
     import Geolocation from 'ol/Geolocation';
     import { MEDIA_URL } from '../config.js';
+    import { map_state } from '../map_state.svelte.js';
 
-
-    const getMap = getContext('olContext');
-    const map = getMap();
+    const map = map_state.map;
 
     const marker = new Feature();
 

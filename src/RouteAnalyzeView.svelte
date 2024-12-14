@@ -1,8 +1,9 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import { onMount, onDestroy, getContext } from 'svelte';
+    import { onMount, onDestroy } from 'svelte';
     import { get_geometry } from './map/LayerRouteDetails.svelte';
     import { analyze_line, highlight_circle } from './map/styles.js';
+    import { map_state } from './map_state.svelte.js';
     import VectorLayer from 'ol/layer/Vector';
     import VectorSource from 'ol/source/Vector';
     import Feature from 'ol/Feature.js';
@@ -12,7 +13,6 @@
     let num_segments = $state(0);
     let segments = [];
     let layer = null;
-    const getMap = getContext('olContext');
 
     onMount(() => {
         let geom = get_geometry();
@@ -74,14 +74,14 @@
 
         layer = new VectorLayer({source: new VectorSource({features: features}),
                                  style: analyze_line});
-        getMap().addLayer(layer);
+        map_state.map.addLayer(layer);
 
         segments = new_segments;
     });
 
     onDestroy(() => {
         if (layer !== null) {
-            getMap().removeLayer(layer);
+            map_state.map.removeLayer(layer);
             layer = null;
         }
     });

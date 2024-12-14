@@ -1,28 +1,16 @@
-<script module>
-    let map;
-
-    export function set_map_view(bbox) {
-        if (bbox && map) {
-            map.getView().fit(bbox, {size: map.getSize(), maxZoom: 18});
-        }
-    };
-</script>
-
 <script>
-    import { onMount, setContext } from 'svelte';
+    import { onMount } from 'svelte';
     import { map_state } from './map_state.svelte.js';
     import { WindowHash } from './util/window_hash.js';
 
-    import {Map, View} from 'ol';
+    import {View} from 'ol';
     import {transform} from 'ol/proj';
-    import {Attribution, ScaleLine, defaults as defaultControls} from 'ol/control';
+    import {Attribution, ScaleLine, Zoom} from 'ol/control';
 
     let { overlay } = $props();
 
     let has_map = $state(false);
     let component;
-
-    setContext('olContext', () => map);
 
     function get_mapview() {
         let center = [-7.9, 34.6];
@@ -53,23 +41,22 @@
 
     onMount(() => {
         let m = get_mapview();
-        let attribution = new Attribution({
-            className: 'map-attribution',
-            target: 'map-attribution',
-            collapsible: false,
-            label: ''
-        });
-        map = new Map({
-                  target: component,
-                  view: new View({
+        let map = map_state.map;
+        map.setTarget(component);
+        map.setView(new View({
                       center: transform(m.center, "EPSG:4326", "EPSG:3857"),
                       zoom: m.zoom,
                       maxZoom: 18,
                       constrainResolution: true
-                  }),
-                  controls: defaultControls({attribution: false})
-                             .extend([attribution, new ScaleLine()]),
-              });
+        }));
+        map.addControl(new Zoom());
+        map.addControl(new Attribution({
+            className: 'map-attribution',
+            target: 'map-attribution',
+            collapsible: false,
+            label: ''
+        }));
+        map.addControl(new ScaleLine());
 
         has_map = true;
 

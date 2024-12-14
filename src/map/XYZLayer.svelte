@@ -1,13 +1,12 @@
 <script>
     import { _, locale } from 'svelte-i18n';
-    import { getContext } from 'svelte';
     import TileLayer from 'ol/layer/Tile';
     import XYZ from 'ol/source/XYZ';
+    import { map_state } from '../map_state.svelte.js';
 
     let { url, attribution = '', opacity } = $props();
 
-    const getMap = getContext('olContext');
-    const map = getMap();
+    const map = map_state.map;
 
     let all_attribution = $derived.by(() => {
         let secondary = '';

@@ -7,7 +7,7 @@
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
     import HourGlass from './svg/HourGlass.svelte';
     import { page_state } from './page_state.svelte.js';
-    import { set_map_view } from './Map.svelte';
+    import { map_state } from './map_state.svelte.js';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
 
     let query = $state('');
@@ -21,7 +21,7 @@
             parseFloat(place.boundingbox[3]),
             parseFloat(place.boundingbox[1])];
         ext = transformExtent(ext, "EPSG:4326", "EPSG:3857");
-        set_map_view(ext);
+        map_state.set_map_view(ext);
     };
 
     $effect(() => {

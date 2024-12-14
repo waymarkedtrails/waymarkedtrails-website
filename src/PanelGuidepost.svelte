@@ -4,7 +4,7 @@
 
     import { page_state } from './page_state.svelte.js';
     import { json_load } from './util/load_json.js';
-    import { set_map_view } from './Map.svelte';
+    import { map_state } from './map_state.svelte.js';
 
     import SidePanel from './ui/SidePanel.svelte';
     import OsmObjectLink from './ui/OsmObjectLink.svelte';
@@ -21,11 +21,12 @@
 
     let osm_id = $state();
     let loader = $state();
+    let guidepost_location;
 
     function onMapFocus(ev) {
         ev.preventDefault();
-        if (guidepost) {
-            set_map_view(guidepost.location);
+        if (guidepost_location) {
+            map_state.set_map_view(guidepost_location);
         }
     }
 
@@ -47,6 +48,7 @@
                      .then((json) => {
                         json.location = new Point([json.x, json.y]);
                         set_highlight_point(json.location);
+                        guidepost_location = json.location;
                         return json;
                         });
     });

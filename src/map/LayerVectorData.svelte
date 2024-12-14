@@ -3,8 +3,8 @@
     import GeoJSON from 'ol/format/GeoJSON';
     import { API_URL } from '../config.js';
     import { highlight_stroke } from './styles.js';
+    import { map_state } from '../map_state.svelte.js';
 
-    let getMap;
     let vtile_layer, vector_layer;
 
     export function load_routes(routes, extent) {
@@ -68,24 +68,23 @@
     }
 
     const is_vtiles_active = function() {
-        return getMap().getView().getZoom() >= 12;
+        return map_state.map.getView()?.getZoom() >= 12;
     }
 
 </script>
 
 <script>
-    import { getContext } from 'svelte';
     import VectorLayer from 'ol/layer/Vector';
     import VectorTileLayer from 'ol/layer/VectorTile';
     import VectorTileSource from 'ol/source/VectorTile';
     import { boundingExtent } from 'ol/extent'
     import { page_state } from '../page_state.svelte.js';
 
-    getMap = getContext('olContext');
+    const map = map_state.map;
 
     // Simple vector layer to use when vtiles are inactive.
     vector_layer = new VectorLayer({source: null, style: null});
-    getMap().addLayer(vector_layer);
+    map.addLayer(vector_layer);
 
     // Vtile layer.
     vtile_layer = new VectorTileLayer({
@@ -98,12 +97,12 @@
         minZoom: 12,
         style: null
     });
-    getMap().addLayer(vtile_layer);
+    map.addLayer(vtile_layer);
 
-    getMap().on('singleclick', showFeatureInfo);
+    map.on('singleclick', showFeatureInfo);
 
     function showFeatureInfo(evt) {
-        let map = getMap();
+        let map = map_state.map;
         let current_zoom = map.getView().getZoom();
         if (current_zoom < 12) {
             return;

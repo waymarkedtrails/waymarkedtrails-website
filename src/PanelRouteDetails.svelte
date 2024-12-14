@@ -3,7 +3,6 @@
     import { API_URL } from './config.js';
     import { page_state } from './page_state.svelte.js';
     import { map_state } from './map_state.svelte.js';
-    import { set_map_view } from './Map.svelte';
     import SidePanel from './ui/SidePanel.svelte';
     import OsmObjectLink from './ui/OsmObjectLink.svelte';
     import { json_load } from './util/load_json.js';
@@ -49,7 +48,7 @@
 
         const extent = map_state.extent;
         if (!extent && route.bbox) {
-            set_map_view(route.bbox);
+            map_state.set_map_view(route.bbox);
         }
         bbox = route.bbox;
         extra_routes_in_view = [].concat(route.subroutes || [], route.superroutes || []);

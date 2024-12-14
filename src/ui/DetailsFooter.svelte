@@ -1,6 +1,6 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import { set_map_view } from '../Map.svelte';
+    import { map_state } from '../map_state.svelte.js';
     import { API_URL } from '../config.js';
 
     import SVGZoom from '../svg/Zoom.svelte';
@@ -36,7 +36,7 @@
 
 {#if osm_type}
 <div>
-    <button type="button" onclick={(ev) => {ev.preventDefault(); set_map_view(bbox)}}>
+    <button type="button" onclick={(ev) => {ev.preventDefault(); map_state.set_map_view(bbox)}}>
         <span class="btn-img"><SVGZoom /></span>
         {$_('details.zoom_to')}
     </button>

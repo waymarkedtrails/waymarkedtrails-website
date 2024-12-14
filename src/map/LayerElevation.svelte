@@ -23,13 +23,11 @@
 </script>
 
 <script>
-    import { getContext } from 'svelte';
     import {Vector as VectorLayer} from 'ol/layer';
     import {Vector as VectorSource} from 'ol/source';
+    import { map_state } from '../map_state.svelte.js';
 
-    const getMap = getContext('olContext');
-
-    getMap().addLayer(new VectorLayer({
+    map_state.map.addLayer(new VectorLayer({
         source: new VectorSource({
             features: [marker]
         })

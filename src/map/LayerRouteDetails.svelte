@@ -31,16 +31,15 @@
 </script>
 
 <script>
-    import { getContext } from 'svelte';
     import { page_state } from '../page_state.svelte.js';
+    import { map_state } from '../map_state.svelte.js';
     import VectorLayer from 'ol/layer/Vector';
     import GeoJSON from 'ol/format/GeoJSON';
     import { API_URL } from '../config.js';
     import { highlight_stroke, highlight_circle } from './styles.js';
 
-    const getMap = getContext('olContext');
     layer = new VectorLayer({source: null, style: null});
-    getMap().addLayer(layer);
+    map_state.map.addLayer(layer);
 
     $effect(() => {
         let page_name = page_state.page;
