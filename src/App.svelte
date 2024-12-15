@@ -104,22 +104,21 @@
     </Headline>
 
     <Map>
-        {#snippet overlay()}
-            <MapXYZLayer {...BASEMAPS[map_state.basemap_id]} opacity={map_state.map_opacity_base}/>
-            <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={map_state.map_opacity_shade} attribution='elevation' />
-            <MapXYZLayer name="routelayer" url={TILE_URL} opacity={map_state.map_opacity_route}/>
-            <MapGeolocateLayer />
-            <MapLayerRouteDetails />
-            <MapLayerVectorData />
-            <MapLayerElevation />
-
-            {#if page_state.page === 'settings'}<PanelSettings/>{/if}
-            {#if page_state.page === 'routelist'}<PanelRouteList/>{/if}
-            {#if page_state.page === 'route'}<PanelRouteDetails />{/if}
-            {#if page_state.page === 'search'}<PanelSearch />{/if}
-            {#if page_state.page === 'guidepost'}<PanelGuidepost />{/if}
-        {/snippet}
+        {#if page_state.page === 'settings'}<PanelSettings/>
+        {:else if page_state.page === 'routelist'}<PanelRouteList/>
+        {:else if page_state.page === 'route'}<PanelRouteDetails />
+        {:else if page_state.page === 'search'}<PanelSearch />
+        {:else if page_state.page === 'guidepost'}<PanelGuidepost />
+        {/if}
     </Map>
+
+    <MapXYZLayer {...BASEMAPS[map_state.basemap_id]} opacity={map_state.map_opacity_base}/>
+    <MapXYZLayer name="hillshading" url={HILLSHADING_URL} opacity={map_state.map_opacity_shade} attribution='elevation' />
+    <MapXYZLayer name="routelayer" url={TILE_URL} opacity={map_state.map_opacity_route}/>
+    <MapGeolocateLayer />
+    <MapLayerRouteDetails />
+    <MapLayerVectorData />
+    <MapLayerElevation />
 
     <Footer />
 </div>

@@ -7,9 +7,9 @@
     import {transform} from 'ol/proj';
     import {Attribution, ScaleLine, Zoom} from 'ol/control';
 
-    let { overlay } = $props();
+    let { children } = $props();
+    const children_render = $derived(children);
 
-    let has_map = $state(false);
     let component;
 
     function get_mapview() {
@@ -58,8 +58,6 @@
         }));
         map.addControl(new ScaleLine());
 
-        has_map = true;
-
         map.on('moveend', function(evt) {
             let view = evt.map.getView();
             let center = transform(view.getCenter(), "EPSG:3857", "EPSG:4326");
@@ -94,5 +92,5 @@
 </style>
 
 <div bind:this={component}>
-{#if has_map}{@render overlay?.()}{/if}
+    {@render children_render?.()}
 </div>
