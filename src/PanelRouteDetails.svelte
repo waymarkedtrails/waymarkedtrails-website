@@ -1,12 +1,12 @@
 <script>
     import { _ } from 'svelte-i18n';
+    import { onDestroy } from 'svelte';
     import { API_URL } from './config.js';
     import { page_state } from './page_state.svelte.js';
     import { map_state } from './map_state.svelte.js';
     import SidePanel from './ui/SidePanel.svelte';
     import OsmObjectLink from './ui/OsmObjectLink.svelte';
     import { json_load } from './util/load_json.js';
-    import { load_routes } from './map/LayerVectorData.svelte';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
     import Collapsible from './ui/Collapsible.svelte';
     import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
@@ -51,7 +51,7 @@
             map_state.set_map_view(route.bbox);
         }
         bbox = route.bbox;
-        extra_routes_in_view = [].concat(route.subroutes || [], route.superroutes || []);
+        map_state.vector_routes = [].concat(route.subroutes || [], route.superroutes || []);
 
         return route;
     }
@@ -69,8 +69,16 @@
             return;
         }
 
-        osm_id = page_state.params.get('id');
-        osm_type = page_state.params.get('type') || 'relation';
+        let new_osm_id = page_state.params.get('id');
+        let new_osm_type = page_state.params.get('type') || 'relation';
+
+        if (osm_id === new_osm_id && osm_type === new_osm_type) {
+            return;
+        }
+
+        osm_id = new_osm_id;
+        osm_type = new_osm_type;
+
         if (typeof osm_id === 'undefined') {
             loader = Promise.reject('error.missing_id');
             return;
@@ -83,6 +91,9 @@
             .then((json) => process_route(json));
     });
 
+    onDestroy(() => {
+        map_state.vector_routes = [];
+    });
 </script>
 
 <style>

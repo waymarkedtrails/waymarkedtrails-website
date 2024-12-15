@@ -1,89 +1,57 @@
-<script module>
+<script>
     import VectorSource from 'ol/source/Vector';
     import GeoJSON from 'ol/format/GeoJSON';
     import { API_URL } from '../config.js';
     import { highlight_stroke } from './styles.js';
     import { map_state } from '../map_state.svelte.js';
-
-    let vtile_layer, vector_layer;
-
-    export function load_routes(routes, extent) {
-        if (!is_vtiles_active() && routes && routes.length) {
-            let ids = {};
-            routes.forEach(function(r, i) {
-                if (r.type in ids)
-                    ids[r.type] += ',' + r.id;
-                else
-                    ids[r.type] = '' + r.id;
-            });
-            let segment_url = API_URL + "/list/segments?bbox=" + extent;
-            for (let k in ids) {
-                segment_url += '&' + k + 's=' + ids[k];
-            }
-
-            vector_layer.setSource(new VectorSource({
-                url : segment_url,
-                format: new GeoJSON()
-            }));
-        }
-    }
-
-    export function highlight_route(rid, rtype) {
-        if (is_vtiles_active()) {
-            vtile_layer.setStyle(function(feature, resolution) {
-                let prop = feature.getProperties();
-                if (rtype === 'relation') {
-                    if (prop.type === 'way' &&
-                        (((prop.top_relations && prop.top_relations.indexOf(rid) >= 0)
-                        || (prop.child_relations && prop.child_relations.indexOf(rid) >= 0)))) {
-                        return highlight_stroke;
-                    }
-                } else {
-                    if (prop.type =='wayset' &&
-                        ((rtype === 'way' && prop.way_id == rid)
-                         || (rtype === 'wayset' && prop.wayset_ids && prop.wayset_ids.indexOf(rid) >= 0))) {
-                        return highlight_stroke;
-                    }
-                }
-
-                return null;
-            });
-        } else {
-            if (rtype === 'wayset') {
-                rtype = 'way';
-            }
-            vector_layer.setStyle(function(feature, resolution) {
-                if (feature.getId() == rid && feature.getProperties().type == rtype) {
-                    return highlight_stroke;
-                }
-
-                return null;
-            });
-        }
-    }
-
-    export function unhighlight_route() {
-        vtile_layer.setStyle(null);
-        vector_layer.setStyle(null);
-    }
-
-    const is_vtiles_active = function() {
-        return map_state.map.getView()?.getZoom() >= 12;
-    }
-
-</script>
-
-<script>
     import VectorLayer from 'ol/layer/Vector';
     import VectorTileLayer from 'ol/layer/VectorTile';
     import VectorTileSource from 'ol/source/VectorTile';
     import { boundingExtent } from 'ol/extent'
     import { page_state } from '../page_state.svelte.js';
 
+    let segment_fragment = $derived.by(() => {
+        const routes = map_state.vector_routes;
+        if (routes.length == 0) {
+            return;
+        }
+
+        let ids = {};
+        for (const r of routes) {
+            if (r.type in ids)
+                ids[r.type] += ',' + r.id;
+            else
+                ids[r.type] = '' + r.id;
+        }
+        let segment_url = '';
+        for (let [key, vals] of Object.entries(ids)) {
+                segment_url += `&${key}s=${vals}`;
+        }
+
+        return segment_url;
+    });
+
     const map = map_state.map;
 
+    let vtile_layer, vector_layer;
+
+    function getSegmentsUrl(extent) {
+        vector_layer.getSource().clear();
+        let url = `${API_URL}/list/segments?bbox=${extent}${segment_fragment}`;
+        console.log(url);
+        return url;
+    }
+
     // Simple vector layer to use when vtiles are inactive.
-    vector_layer = new VectorLayer({source: null, style: null});
+    vector_layer = new VectorLayer({
+        source: new VectorSource({
+            format: new GeoJSON(),
+            url: getSegmentsUrl,
+            strategy: (extent) => { return segment_fragment ? [extent] : []; }
+        }),
+        maxZoom: 11,
+        style: null
+    });
     map.addLayer(vector_layer);
 
     // Vtile layer.
@@ -98,6 +66,40 @@
         style: null
     });
     map.addLayer(vtile_layer);
+
+    $effect(() => {
+        const route = map_state.highlighted_route;
+        if (!route) {
+            vtile_layer.setStyle(null);
+            vector_layer.setStyle(null);
+        } else {
+            vtile_layer.setStyle(function(feature, resolution) {
+                let prop = feature.getProperties();
+                if (route.type === 'relation') {
+                    if (prop.type === 'way' &&
+                        (((prop.top_relations && prop.top_relations.indexOf(route.id) >= 0)
+                        || (prop.child_relations && prop.child_relations.indexOf(route.id) >= 0)))) {
+                        return highlight_stroke;
+                    }
+                } else {
+                    if (prop.type =='wayset' &&
+                        ((route.type === 'way' && prop.way_id == route.id)
+                         || (route.type === 'wayset' && prop.wayset_ids && prop.wayset_ids.indexOf(route.id) >= 0))) {
+                        return highlight_stroke;
+                    }
+                }
+
+                return null;
+            });
+            vector_layer.setStyle(function(feature, resolution) {
+                if (feature.getId() == route.id && feature.getProperties().type == route.type) {
+                    return highlight_stroke;
+                }
+
+                return null;
+            });
+        }
+    });
 
     map.on('singleclick', showFeatureInfo);
 

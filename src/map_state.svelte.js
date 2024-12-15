@@ -36,6 +36,8 @@ class MapState {
     map_opacity_base = $state();
     map_opacity_route = $state();
     map_opacity_shade = $state();
+    vector_routes = $state.raw([]); // routes that need to be available as vector data
+    highlighted_route = $state.raw();
 
     // derived properties
     zoom = 0;

@@ -1,5 +1,6 @@
 <script>
     import { _ } from 'svelte-i18n';
+    import { onDestroy } from 'svelte';
     import { ROUTE_GROUPS } from './config.js';
     import { json_load } from './util/load_json.js';
     import SidePanel from './ui/SidePanel.svelte';
@@ -7,7 +8,6 @@
     import { page_state } from './page_state.svelte.js';
     import { map_state } from './map_state.svelte.js';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
-    import { load_routes } from './map/LayerVectorData.svelte';
 
     const max_routes = 20;
     let is_id_mode = false;
@@ -31,7 +31,7 @@
             data.get(key).push(route);
         });
 
-        load_routes(json.results, json.bbox);
+        map_state.vector_routes = json.results;
         return {data: data, has_more: has_more};
     };
 
@@ -78,6 +78,10 @@
                                signal)
                 .then((json) => process_result(json));
         }
+    });
+
+    onDestroy(() => {
+        map_state.vector_routes = [];
     });
 </script>
 
