@@ -1,10 +1,15 @@
 <script>
     import { _ } from 'svelte-i18n';
+    import { onDestroy } from 'svelte';
     import Point from 'ol/geom/Point';
+    import {Vector as VectorLayer} from 'ol/layer';
+    import {Vector as VectorSource} from 'ol/source';
+    import Feature from 'ol/Feature';
 
     import { page_state } from './page_state.svelte.js';
     import { json_load } from './util/load_json.js';
     import { map_state } from './map_state.svelte.js';
+    import { highlight_circle } from './map/styles.js';
 
     import SidePanel from './ui/SidePanel.svelte';
     import OsmObjectLink from './ui/OsmObjectLink.svelte';
@@ -17,16 +22,22 @@
     import GuidepostDestination from './GuidepostDestination.svelte';
     import SVGZoom from './svg/Zoom.svelte';
     import HourGlass from './svg/HourGlass.svelte';
-    import { set_highlight_point } from './map/LayerRouteDetails.svelte';
 
     let osm_id = $state();
     let loader = $state();
-    let guidepost_location;
+
+    const marker = new Feature();
+    const layer = new VectorLayer({source: new VectorSource({features: [marker]}),
+                                   style: highlight_circle,
+                                   visible: false});
+
+    map_state.map.addLayer(layer);
 
     function onMapFocus(ev) {
         ev.preventDefault();
-        if (guidepost_location) {
-            map_state.set_map_view(guidepost_location);
+        const loc = marker.getGeometry();
+        if (loc && layer.getVisible()) {
+            map_state.set_map_view(loc);
         }
     }
 
@@ -35,9 +46,17 @@
             return;
         };
 
-        osm_id = page_state.params.get('id');
-        if (typeof osm_id === 'undefined') {
+        let new_osm_id = page_state.params.get('id');
+
+        if (new_osm_id === osm_id) {
+            layer.setVisible(true);
+            return;
+        }
+        osm_id = new_osm_id;
+
+        if (typeof new_osm_id === 'undefined') {
             loader = Promise.reject(new Error('error.missing_id'));
+            layer.setVisible(false);
             return;
         }
 
@@ -46,12 +65,13 @@
 
         loader = json_load('/details/guidepost/' + osm_id, {}, signal)
                      .then((json) => {
-                        json.location = new Point([json.x, json.y]);
-                        set_highlight_point(json.location);
-                        guidepost_location = json.location;
+                        marker.setGeometry(new Point([json.x, json.y]));
+                        layer.setVisible(true);
                         return json;
-                        });
+                     });
     });
+
+    onDestroy(() => { layer.setVisible(false); });
 </script>
 
 <style>

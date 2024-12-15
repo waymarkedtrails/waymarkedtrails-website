@@ -129,6 +129,7 @@
                 }
             }
             if (current_zoom > 13 && props.type === 'guidepost') {
+                page_state.show_page();
                 page_state.show_page('guidepost', [['id', props.osm_id]]);
                 return;
             }
@@ -148,6 +149,7 @@
         let total = relations.length + waysets.length + ways.length;
 
         if (total == 1) {
+            page_state.show_page();
             if (relations.length) {
                 page_state.show_page('route', [['id', relations[0]]]);
             } else if (waysets.length) {

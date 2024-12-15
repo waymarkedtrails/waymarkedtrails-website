@@ -8,12 +8,6 @@
         layer.setVisible(state);
     };
 
-    export function set_highlight_point(pt) {
-        let src = new VectorSource();
-        src.addFeature(new Feature(pt));
-        layer.setSource(src);
-    };
-
     export function get_geometry() {
         let src = layer.getSource();
         if (src === null) {
@@ -36,9 +30,9 @@
     import VectorLayer from 'ol/layer/Vector';
     import GeoJSON from 'ol/format/GeoJSON';
     import { API_URL } from '../config.js';
-    import { highlight_stroke, highlight_circle } from './styles.js';
+    import { highlight_stroke } from './styles.js';
 
-    layer = new VectorLayer({source: null, style: null});
+    layer = new VectorLayer({source: null, style: highlight_stroke});
     map_state.map.addLayer(layer);
 
     $effect(() => {
@@ -48,7 +42,6 @@
             if (typeof osm_id !== 'undefined') {
                 let osm_type = page_state.params.get('type') || 'relation';
 
-                layer.setStyle(highlight_stroke);
                 layer.setSource(new VectorSource({
                                     url: API_URL + "/details/" + osm_type + "/" + osm_id + '/geometry/geojson',
                                     format: new GeoJSON()
@@ -57,12 +50,7 @@
 
                 return;
             }
-        } else if (page_name === 'guidepost') {
-            layer.setStyle(highlight_circle);
-            return;
         }
-
-        layer.setStyle(null);
         layer.setSource(null);
     });
 </script>

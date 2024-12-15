@@ -2799,9 +2799,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^5.9.0":
-  version: 5.9.0
-  resolution: "svelte@npm:5.9.0"
+"svelte@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "svelte@npm:5.14.0"
   dependencies:
     "@ampproject/remapping": "npm:^2.3.0"
     "@jridgewell/sourcemap-codec": "npm:^1.5.0"
@@ -2816,7 +2816,7 @@ __metadata:
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.11"
     zimmerframe: "npm:^1.1.2"
-  checksum: 10/4d1fe7d3968710bcf55ce49ccd304583d6ade0b02828fdb981bf24cdcc095b3e4a819259b71b7779a2a0e2b0ad125af0b2f328fea726849561f6450abff49651
+  checksum: 10/959b55ea26111c6f7f0e2565f5115a29c7b78117265f893e9260b485fc877cfc3649f1c9691c2efa8474e7ae068a5619a06c3aa9109abac8bb9ad41678955bae
   languageName: node
   linkType: hard
 
@@ -2983,7 +2983,7 @@ __metadata:
     rollup-plugin-hash: "npm:^1.3.0"
     rollup-plugin-livereload: "npm:^2.0.5"
     rollup-plugin-svelte: "npm:^7.2.2"
-    svelte: "npm:^5.9.0"
+    svelte: "npm:^5.14.0"
     svelte-i18n: "npm:^4.0.1"
   languageName: unknown
   linkType: soft
