@@ -5,7 +5,12 @@
     import { line as d3_line, curveCardinal } from 'd3-shape';
     import { axisBottom, axisLeft } from 'd3-axis';
     import { bisector } from 'd3-array' ;
-    import { set_elevation_point, unset_elevation_point } from '../map/LayerElevation.svelte';
+    import { elevation_point } from '../map/styles.js';
+    import Feature from 'ol/Feature';
+    import { Point } from 'ol/geom';
+    import { Vector as VectorLayer } from 'ol/layer';
+    import { Vector as VectorSource } from 'ol/source';
+    import { map_state } from '../map_state.svelte.js';
 
     let {data,
          width,
@@ -16,6 +21,13 @@
 
     let component;
 
+    const marker = new Feature()
+
+    map_state.map.addLayer(new VectorLayer({
+        style: elevation_point,
+        source: new VectorSource({features: [marker]})
+    }));
+
     onMount(() => {
         let w = component.clientWidth;
         let h = component.clientHeight;
@@ -23,7 +35,7 @@
             .attr("viewbox", '0 0 ' + w + ' ' + h)
             .on("mousemove touchmove", hoverEle)
             .on("mouseleave", () => {
-                unset_elevation_point();
+                marker.setGeometry(null);
                 rule.attr("opacity", 0);
             });
 
@@ -103,13 +115,13 @@
 
                 let i = dataBisect(segment.elevation, x);
                 if (i != null) {
-                    set_elevation_point(segment.elevation[i].x, segment.elevation[i].y);
+                    marker.setGeometry(new Point([segment.elevation[i].x, segment.elevation[i].y]));
                     found = true;
                     break;
                 }
             }
             if (!found) {
-                unset_elevation_point();
+                marker.setGeometry(null);
             }
         }
 

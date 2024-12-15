@@ -10,7 +10,6 @@
     import MapXYZLayer from './map/XYZLayer.svelte';
     import MapLayerRouteDetails from './map/LayerRouteDetails.svelte';
     import MapLayerVectorData from './map/LayerVectorData.svelte';
-    import MapLayerElevation from './map/LayerElevation.svelte';
     import MapAttribution from './map/MapAttribution.svelte';
     import Headline from './Headline.svelte';
     import Footer from './Footer.svelte';
@@ -116,7 +115,6 @@
     <MapXYZLayer name="routelayer" url={TILE_URL} opacity={map_state.map_opacity_route}/>
     <MapLayerRouteDetails />
     <MapLayerVectorData />
-    <MapLayerElevation />
 
     <Footer />
 </div>

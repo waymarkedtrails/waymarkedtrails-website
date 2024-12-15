@@ -50,3 +50,11 @@ export const analyze_line = [
   }
 }
 ];
+
+export const elevation_point = new Style({
+            image: new Circle({
+                radius: 5,
+                fill: new Fill({color: '#0000ff'}),
+                stroke: new Stroke({color: '#000', width: 1})
+            })
+       });
