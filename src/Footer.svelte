@@ -1,11 +1,11 @@
 <script>
     import { _ } from 'svelte-i18n';
 
-    import { enable_geolocation } from './map/LayerGeolocate.svelte';
     import { page_state } from './page_state.svelte.js';
 
     import SearchForm from './ui/SearchForm.svelte';
     import ButtonFooter from './ui/ButtonFooter.svelte';
+    import ButtonGeolocate from './ButtonGeolocate.svelte';
 
     import SvgGeoPin from './svg/GeoPin.svelte';
     import SvgGear from './svg/Gear.svelte';
@@ -47,7 +47,7 @@
     <div class="mobile-yes"><ButtonFooter title={$_('search.title')} onclick={() => page_state.toggle_page('search')}><SVGSearch /></ButtonFooter></div>
     <div>
         <ButtonFooter title={$_('settings.title')} onclick={() => page_state.toggle_page('settings')}><SvgGear /></ButtonFooter>
-        <ButtonFooter title={$_('locate_me')} onclick={enable_geolocation}><SvgGeoPin /></ButtonFooter>
+        <ButtonGeolocate />
         <ButtonFooter title={$_('help')} onclick={() => page_state.show_page(page_state.page?.startsWith('help')?'':'help-about')}><SvgQuestion /></ButtonFooter>
     </div>
     <div>
