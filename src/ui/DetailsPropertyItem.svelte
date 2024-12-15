@@ -5,7 +5,7 @@
         if (value) {
             if (type === 'km') {
                 if (value < 1000) {
-                    return {value: value, unit: 'm'};
+                    return {value: value.toFixed(0), unit: 'm'};
                 }
                 if (value < 10000) {
                     return {value: (value/1000).toFixed(1), unit: 'km'};
