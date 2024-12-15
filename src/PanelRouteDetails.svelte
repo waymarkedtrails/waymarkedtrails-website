@@ -51,7 +51,9 @@
             map_state.set_map_view(route.bbox);
         }
         bbox = route.bbox;
-        map_state.vector_routes = [].concat(route.subroutes || [], route.superroutes || []);
+        map_state.vector_routes = [{type: route.type, id: route.id}]
+                                   .concat(route.subroutes || [], route.superroutes || []);
+        map_state.highlighted_route = {type: route.type, id: route.id};
 
         return route;
     }
@@ -87,7 +89,7 @@
         let controller = new AbortController();
         const signal = controller.signal;
 
-        loader = json_load('/details/' + osm_type + '/' + osm_id, signal)
+        loader = json_load('/details/' + osm_type + '/' + osm_id, {}, signal)
             .then((json) => process_route(json));
     });
 
@@ -161,20 +163,20 @@
 
     {#if route.subroutes}
     <Collapsible title={$_('details.subroutes_title')} init_collapsed={true}>
-        <ul><SimpleRouteList route_data={route.subroutes} /></ul>
+        <ul><SimpleRouteList route_data={route.subroutes} parent_route={route} /></ul>
     </Collapsible>
     {/if}
 
     {#if route.superroutes}
     <Collapsible title={$_('details.superroutes_title')} init_collapsed={true}>
-        <ul><SimpleRouteList route_data={route.superroutes} /></ul>
+        <ul><SimpleRouteList route_data={route.superroutes} parent_route={route} /></ul>
     </Collapsible>
     {/if}
 
     <CollapsibleTagList tags={route.tags} />
 
     <Collapsible title={$_('details.analyze.title')} init_collapsed={true}>
-        <RouteAnalyzeView />
+        <RouteAnalyzeView {route} />
     </Collapsible>
     {:catch error}
         {$_(error.message)}

@@ -3,26 +3,24 @@
     import { preventDefault } from 'svelte/legacy';
     import { API_URL } from '../config.js';
     import { page_state } from '../page_state.svelte.js';
-    import { set_visible as set_map_details_visible } from '../map/LayerRouteDetails.svelte';
     import { map_state } from '../map_state.svelte.js';
 
     function show_route(route) {
+        page_state.show_page();
         page_state.show_page('route', [['id', route.id], ['type', route.type]]);
     }
 
     function begin_hover(route_id, route_type) {
-        set_map_details_visible(false);
         map_state.highlighted_route = {id: route_id, type: route_type};
     }
 
     function end_hover() {
-        set_map_details_visible(true);
-        map_state.highlighted_route = false;
+        map_state.highlighted_route = parent_route;
     }
 
     onDestroy(end_hover);
 
-    let { route_data, callback = show_route } = $props();
+    let { route_data, callback = show_route, parent_route = false } = $props();
 </script>
 
 <style>

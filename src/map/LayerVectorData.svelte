@@ -38,7 +38,6 @@
     function getSegmentsUrl(extent) {
         vector_layer.getSource().clear();
         let url = `${API_URL}/list/segments?bbox=${extent}${segment_fragment}`;
-        console.log(url);
         return url;
     }
 
