@@ -7,6 +7,7 @@
     import SidePanel from './ui/SidePanel.svelte';
     import OsmObjectLink from './ui/OsmObjectLink.svelte';
     import { json_load } from './util/load_json.js';
+    import { make_route_details } from './util/route_details.js';
     import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
     import Collapsible from './ui/Collapsible.svelte';
     import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
@@ -26,10 +27,8 @@
 
     let loader = $state();
 
-    function process_route(route) {
-        if (route.wikipedia) {
-            route.wiki_url = API_URL + '/details/' + osm_type + '/' + osm_id + '/wikilink';
-        }
+    function process_route(json) {
+        const route = make_route_details(json);
 
         if (route.subroutes) {
             route.subroutes.forEach(function(route) {
@@ -171,6 +170,7 @@
     </Collapsible>
     {:catch error}
         {$_(error.message)}
+        {console.log(error)}
     {/await}{/if}
 {/snippet}
 
