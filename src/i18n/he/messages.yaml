@@ -11,7 +11,7 @@ attribution:
   elevation_title: נתוני גובה מאת [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: פרטים נוספים
-  no_data: אין פירוט יעד זמין לתמרור הזה.
+  no_data: אין פירוט יעד זמין לתמרור ההכוונה הזה.
   title: יעדים
 details:
   GPX: GPX
@@ -31,7 +31,7 @@ details:
     title: תגי OpenStreetMap
     value: ערך
   type:
-    guidepost: תמרור
+    guidepost: תמרור הכוונה
     node: נקודה
     relation: יחס
     way: דרך
