@@ -25,7 +25,6 @@
     let bbox = $state();
 
     let loader = $state();
-    let extra_routes_in_view = $state([]);
 
     function process_route(route) {
         if (route.wikipedia) {
@@ -57,14 +56,6 @@
 
         return route;
     }
-
-    $effect(() => {
-        const extent = map_state.extent;
-
-        if (extent && extra_routes_in_view.length > 0) {
-            load_routes(extra_routes_in_view, extent);
-        }
-    });
 
     $effect(() => {
         if (page_state.page !== 'route') {
