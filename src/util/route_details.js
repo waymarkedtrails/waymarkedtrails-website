@@ -1,4 +1,6 @@
 import { API_URL } from '../config.js';
+import LineString from 'ol/geom/LineString.js';
+import Feature from 'ol/Feature.js';
 
 function make_route_title(route) {
     if (route.name)
@@ -10,7 +12,7 @@ function make_route_title(route) {
     if (route.ref)
       return '[' + route.ref + ']';
     return '(' + route.id + ')';
-};
+}
 
 function make_route_subtitle(route) {
     if (route.local_name)
@@ -18,7 +20,43 @@ function make_route_subtitle(route) {
     if (route.name && route.itinerary)
         return route.itinerary.join(' - ');
     return '';
-};
+}
+
+function add_features(flist, route, role, inrel) {
+    if (route.route_type === 'route') {
+        const newinrel = inrel.slice();
+        newinrel.push(route.id);
+        for (const seg of route.main) {
+            add_features(flist, seg, role, newinrel);
+        }
+        for (const alt of route.appendices) {
+            for (const seg of alt.main) {
+                add_features(flist, seg, role || alt.role, newinrel);
+            }
+        }
+    } else if (route.route_type === 'split') {
+        for (const seg of route.forward) {
+            add_features(flist, seg, role, inrel);
+        }
+        for (const seg of route.backward) {
+            add_features(flist, seg, role, inrel);
+        }
+    } else if (route.route_type === 'linear') {
+        var coords = [];
+        for (const way of route.ways) {
+            coords.pop();
+            coords = coords.concat(way.geometry.coordinates);
+        }
+        flist.push(new Feature({
+            id: route.ways[0].id,
+            role: role,
+            relations: inrel,
+            dir: route.ways[0].direction,
+            geometry: new LineString(coords)
+        }));
+    }
+}
+
 
 
 class RouteOverview {
@@ -74,6 +112,14 @@ class RouteDetails {
 
         return sections;
     }
+
+    get_features() {
+        const flist = [];
+        add_features(flist, this.route, '', []);
+
+        return flist;
+    }
+
 }
 
 export function make_route_details(json) {

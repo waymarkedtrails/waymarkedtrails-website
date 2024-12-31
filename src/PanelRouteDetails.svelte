@@ -8,6 +8,7 @@
     import OsmObjectLink from './ui/OsmObjectLink.svelte';
     import { json_load } from './util/load_json.js';
     import { make_route_details } from './util/route_details.js';
+    import { WindowHash } from './util/window_hash.js';
     import Collapsible from './ui/Collapsible.svelte';
     import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
@@ -19,6 +20,10 @@
     import RouteAnalyzeView from './RouteAnalyzeView.svelte';
     import ItineraryLine from './ui/ItineraryLine.svelte';
     import DetailsFooter from './ui/DetailsFooter.svelte';
+    import VectorLayer from 'ol/layer/Vector';
+    import VectorSource from 'ol/source/Vector';
+    import Collection from 'ol/Collection.js';
+    import { make_style, make_shadow_style } from './map/style_details.js';
 
     let osm_type = $state();
     let osm_id = $state();
@@ -26,17 +31,28 @@
 
     let loader = $state();
 
+    const vsrc = new VectorSource();
+    const shadow_layer = new VectorLayer({
+        source: vsrc,
+        style: make_shadow_style(),
+        zIndex: 10});
+    map_state.map.addLayer(shadow_layer);
+    const draw_layer = new VectorLayer({
+        source: vsrc,
+        style: make_style(),
+        zIndex: 11});
+    map_state.map.addLayer(draw_layer);
+
     function process_route(json) {
         const route = make_route_details(json);
 
-        const extent = map_state.extent;
-        if (!extent && route.bbox) {
+        const hash = new WindowHash();
+        if (route.bbox && !hash.params.has('map')) {
             map_state.set_map_view(route.bbox);
         }
         bbox = route.bbox;
-        map_state.vector_routes = [{type: route.type, id: route.id}]
-                                   .concat(route.subroutes || [], route.superroutes || []);
-        map_state.highlighted_route = {type: route.type, id: route.id};
+
+        vsrc.addFeatures(route.get_features());
 
         return route;
     }
@@ -52,6 +68,8 @@
         if (osm_id === new_osm_id && osm_type === new_osm_type) {
             return;
         }
+
+        vsrc.clear();
 
         osm_id = new_osm_id;
         osm_type = new_osm_type;
@@ -69,8 +87,16 @@
     });
 
     onDestroy(() => {
-        map_state.vector_routes = [];
+        vsrc.clear();
     });
+
+    function begin_hover(route) {
+        draw_layer.setStyle(make_style(route.id));
+    }
+
+    function end_hover() {
+        draw_layer.setStyle(make_style());
+    }
 </script>
 
 <style>
@@ -138,13 +164,13 @@
 
     {#if route.subroutes}
     <Collapsible title={$_('details.subroutes_title')} init_collapsed={true}>
-        <ul><SimpleRouteList route_data={route.section_list()} parent_route={route} /></ul>
+        <ul><SimpleRouteList route_data={route.section_list()} {begin_hover} {end_hover} /></ul>
     </Collapsible>
     {/if}
 
     {#if route.superroutes}
     <Collapsible title={$_('details.superroutes_title')} init_collapsed={true}>
-        <ul><SimpleRouteList route_data={route.parent_list()} parent_route={route} /></ul>
+        <ul><SimpleRouteList route_data={route.parent_list()} begin_hover={() => {}} end_hover={() => {}} /></ul>
     </Collapsible>
     {/if}
 
