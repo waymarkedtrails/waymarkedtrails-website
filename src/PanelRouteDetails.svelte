@@ -113,6 +113,10 @@
         margin: 10px;
     }
 
+    .subproperties {
+        margin-left: 2em;
+    }
+
     ul {
         list-style: none;
         margin: 2px;
@@ -145,6 +149,13 @@
 
     <dl class="properties">
         <DetailsPropertyItem title={$_('details.mapped_len')} value={route.route.length} type="km" />
+        {#if route.route.appendices}
+        <dl class="subproperties">
+          {#each Object.entries(route.appendix_lengths()) as app}
+          <DetailsPropertyItem title='+ "{app[0]}"' value={app[1]} type="km" />
+          {/each}
+        </dl>
+        {/if}
         <DetailsPropertyItem title={$_('details.official_len')} value={route.official_length} type="km" />
         <DetailsPropertyItem title={$_('details.operator')} value={route.operator} />
         <DetailsPropertyItem title={$_('details.symbol')} value={route.symbol} />
