@@ -10,17 +10,21 @@
         page_state.show_page('route', [['id', route.id], ['type', route.type]]);
     }
 
-    function begin_hover(route_id, route_type) {
-        map_state.highlighted_route = {id: route_id, type: route_type};
+    function default_begin_hover(route) {
+        map_state.highlighted_route = {id: route.id, type: route.type};
     }
 
-    function end_hover() {
-        map_state.highlighted_route = parent_route;
+    function default_end_hover() {
+        map_state.highlighted_route = false;
     }
+
+    let { route_data,
+          callback = show_route,
+          begin_hover = default_begin_hover,
+          end_hover = default_end_hover
+        } = $props();
 
     onDestroy(end_hover);
-
-    let { route_data, callback = show_route, parent_route = false } = $props();
 </script>
 
 <style>
@@ -86,7 +90,7 @@
 {#if route_data}
 {#each route_data as route}
     <li>
-        <button type="button" onclick={() => preventDefault(callback(route))} onmouseenter={() => begin_hover(route.id, route.type)} onmouseleave={end_hover}>
+        <button type="button" onclick={() => preventDefault(callback(route))} onmouseenter={() => begin_hover(route)} onmouseleave={end_hover}>
         <div class="route-symbol">
             {#if route.icon}
                 <img alt="place icon" src="{route.icon}" />
