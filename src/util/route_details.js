@@ -57,6 +57,16 @@ function add_features(flist, route, role, inrel) {
     }
 }
 
+function add_appendix_lengths(lengths, route) {
+        for (const seg of route.appendices) {
+            lengths[seg.role] = (lengths[seg.role] || 0) + seg.length;
+        }
+        for (const seg of route.main) {
+            if (seg.route_type === 'route') {
+                add_appendix_lengths(lengths, seg);
+            }
+        }
+}
 
 
 class RouteOverview {
@@ -120,6 +130,12 @@ class RouteDetails {
         return flist;
     }
 
+    appendix_lengths() {
+        const lengths = {};
+        add_appendix_lengths(lengths, this.route);
+
+        return lengths;
+    }
 }
 
 export function make_route_details(json) {
