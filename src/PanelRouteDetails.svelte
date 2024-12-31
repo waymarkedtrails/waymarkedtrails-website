@@ -8,7 +8,6 @@
     import OsmObjectLink from './ui/OsmObjectLink.svelte';
     import { json_load } from './util/load_json.js';
     import { make_route_details } from './util/route_details.js';
-    import { make_route_title, make_route_subtitle } from './util/route_transforms.js';
     import Collapsible from './ui/Collapsible.svelte';
     import CollapsibleTagList from './ui/CollapsibleTagList.svelte';
     import SimpleRouteList from './ui/SimpleRouteList.svelte';
@@ -29,20 +28,6 @@
 
     function process_route(json) {
         const route = make_route_details(json);
-
-        if (route.subroutes) {
-            route.subroutes.forEach(function(route) {
-                route.title = make_route_title(route);
-                route.subtitle = make_route_subtitle(route);
-            });
-        }
-
-        if (route.superroutes) {
-            route.superroutes.forEach(function(route) {
-                route.title = make_route_title(route);
-                route.subtitle = make_route_subtitle(route);
-            });
-        }
 
         const extent = map_state.extent;
         if (!extent && route.bbox) {
@@ -125,7 +110,7 @@
     <ItineraryLine itinerary={route.itinerary} />
 
     <DetailsHeader img_alt={$_('details.route_symbol')} img_src="{API_URL}/symbols/id/{route.symbol_id}" ref={route.ref}>
-        {make_route_title(route)}
+        {route.title}
         {#if route.local_name}<div class="subtitle">{route.local_name}</div>{/if}
     </DetailsHeader>
 
@@ -133,7 +118,7 @@
     {#if route.description}<div class="description">{route.description}</div>{/if}
 
     <dl class="properties">
-        <DetailsPropertyItem title={$_('details.mapped_len')} value={route.mapped_length} type="km" />
+        <DetailsPropertyItem title={$_('details.mapped_len')} value={route.route.length} type="km" />
         <DetailsPropertyItem title={$_('details.official_len')} value={route.official_length} type="km" />
         <DetailsPropertyItem title={$_('details.operator')} value={route.operator} />
         <DetailsPropertyItem title={$_('details.symbol')} value={route.symbol} />
@@ -153,13 +138,13 @@
 
     {#if route.subroutes}
     <Collapsible title={$_('details.subroutes_title')} init_collapsed={true}>
-        <ul><SimpleRouteList route_data={route.subroutes} parent_route={route} /></ul>
+        <ul><SimpleRouteList route_data={route.section_list()} parent_route={route} /></ul>
     </Collapsible>
     {/if}
 
     {#if route.superroutes}
     <Collapsible title={$_('details.superroutes_title')} init_collapsed={true}>
-        <ul><SimpleRouteList route_data={route.superroutes} parent_route={route} /></ul>
+        <ul><SimpleRouteList route_data={route.parent_list()} parent_route={route} /></ul>
     </Collapsible>
     {/if}
 
@@ -170,7 +155,6 @@
     </Collapsible>
     {:catch error}
         {$_(error.message)}
-        {console.log(error)}
     {/await}{/if}
 {/snippet}
 
