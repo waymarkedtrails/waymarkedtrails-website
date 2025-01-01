@@ -1,6 +1,6 @@
 <script>
     import { _ } from 'svelte-i18n';
-    import { onMount, onDestroy } from 'svelte';
+    import { onDestroy } from 'svelte';
     import { analyze_line, highlight_circle } from './map/styles.js';
     import { map_state } from './map_state.svelte.js';
     import { json_load } from './util/load_json.js';
@@ -14,86 +14,86 @@
     let { route } = $props();
 
     let num_segments = $state(0);
-    let layer = new VectorLayer({source: null, style: analyze_line});
+    let layer = new VectorLayer({
+        source: new VectorSource(),
+        style: analyze_line,
+        zIndex: 20});
 
     map_state.map.addLayer(layer);
 
-    function loadFromSource(extent, resolution, projection, success, failure) {
-        let controller = new AbortController();
-        const signal = controller.signal;
+    let featID;
 
-        json_load(`/details/${route.type}/${route.id}/geometry/geojson`, {}, signal)
-            .then((json) => {
+    function add_virtual(pt1, pt2) {
+        if (pt1) {
+            const line = new LineString([pt1, pt2]);
+            if (line.getLength() > 0.01) {
                 const source = layer.getSource();
-                let geom = source.getFormat().readFeatures(json);
+                source.addFeature(new Feature({geometry: line, virtual: 1, id: featID++}));
+                source.addFeature(new Feature({
+                         geometry: new Point(pt1),
+                         id: featID++}));
+                source.addFeature(new Feature({
+                         geometry: new Point(pt2),
+                         id: featID++}));
 
-                if (geom.length < 1) {
-                    return;
-                }
-
-                geom = geom[0].getGeometry();
-
-                if (!geom) {
-                    return;
-                }
-
-                let lines = [];
-
-                if (geom.getType() == 'LineString') {
-                    lines = [geom];
-                } else if (geom.getType() == 'MultiLineString') {
-                    lines = geom.getLineStrings();
-                }
-
-                num_segments = lines.length;
-                let new_segments = [];
-
-                let intersections = {};
-                let line_id = 0;
-                let prev_point = null;
-                for (const line of lines) {
-                    let coords = line.getCoordinates();
-
-                    for (let i = 0; i < coords.length; i++) {
-                        let weight = (i == 0 || i == coords.length - 1) ? 1.0 : 0.6;
-                        let c = coords[i];
-                        let old_weight = intersections[c] ? intersections[c].num : 0.0;
-                        intersections[c] = {obj: c,
-                                            num: old_weight + weight}
-                    }
-
-                    let feat = new Feature({geometry: line, virtual: 0});
-                    feat.setId(line_id++);
-                    source.addFeature(feat);
-
-                    if (prev_point !== null) {
-                        feat = new Feature({geometry: new LineString(
-                                                           [prev_point, line.getFirstCoordinate()]),
-                                            virtual: 1});
-                        feat.setId(line_id++);
-                        source.addFeature(feat);
-                    }
-
-                    prev_point = line.getLastCoordinate();
-                }
-
-                let coord_id = 10000;
-                for (const c of Object.values(intersections)) {
-                    if (c.num > 0.6) {
-                        let feat = new Feature({geometry: new Point(c.obj),
-                                                numlines: c.num});
-                        feat.setId(coord_id++);
-                        source.addFeature(feat);
-                    }
-                }
-            });
+            }
+        }
     }
 
-    onMount(() => {
-        layer.setSource(new VectorSource({loader: loadFromSource, format: new GeoJSON()}));
-        layer.setVisible(true);
+    function traverse_segments(intersections, start, segments) {
+        let prev_point = start;
+        for (const seg of segments) {
+            if (seg.route_type === 'linear') {
+                add_virtual(prev_point, seg.ways[0].geometry.coordinates[0]);
+                for (const way of seg.ways) {
+                    const wlen = way.geometry.coordinates.length;
+                    for (let i = 0; i < wlen - 1; i++) {
+                        const c = way.geometry.coordinates[i];
+                        const old_weight = intersections[c] ? intersections[c].num : 0.0;
+                        intersections[c] = {obj: c, num: old_weight + 0.6}
+                    }
+                }
+                const c = seg.ways[0].geometry.coordinates[0];
+                intersections[c] = {obj: c, num: intersections[c].num + 0.4}
+                prev_point = seg.ways.at(-1).geometry.coordinates.at(-1);
+                const old_weight = intersections[prev_point] ? intersections[prev_point].num : 0.0;
+                intersections[prev_point] = {obj: prev_point, num: old_weight + 1.0}
 
-        return () => { layer.setVisible(false); };
+            } else if (seg.route_type === 'split') {
+                add_virtual(prev_point, seg.first);
+                let last = traverse_segments(intersections, seg.first, seg.forward);
+                add_virtual(last, seg.last);
+                last = traverse_segments(intersections, seg.first, seg.backward);
+                add_virtual(last, seg.last);
+                prev_point = seg.last;
+            } else if (seg.route_type === 'route') {
+                prev_point = traverse_segments(intersections, prev_point, seg.main);
+            }
+        }
+
+        return prev_point;
+    }
+
+    $effect(() => {
+        const source = layer.getSource();
+        source.clear();
+
+        const rte = route.route;
+        if (rte) {
+            const intersections = {};
+            featID = 1;
+            traverse_segments(intersections, null, rte.main);
+            let seg_count = 1;
+            layer.getSource().forEachFeature((feat) => {
+                if (feat.getProperties().virtual)
+                    seg_count += 1;
+            });
+            num_segments = seg_count;
+        }
+    });
+
+    onDestroy(() => {
+        layer.getSource().clear();
     });
 </script>
 
