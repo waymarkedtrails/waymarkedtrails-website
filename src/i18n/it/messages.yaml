@@ -5,6 +5,7 @@
 # Author: Darth Kule
 # Author: Davio
 # Author: Gianfranco
+# Author: Mannivu
 # Author: Ontsed
 # Author: Os cf
 # Author: Selven
@@ -35,7 +36,7 @@ details:
     title: Etichette OpenStreetMap
     value: valore
   type:
-    guidepost: Luogo di posa
+    guidepost: Cartello d'indicazione
     node: Nodo
     relation: Relazione
     way: Percorso
