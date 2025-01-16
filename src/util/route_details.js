@@ -68,6 +68,50 @@ function add_appendix_lengths(lengths, route) {
         }
 }
 
+function append_elevation_segments(segments, route, ele) {
+    if (route.route_type === 'route') {
+        for (const seg of route.main) {
+            append_elevation_segments(segments, seg, ele);
+        }
+    } else if (route.route_type === 'split') {
+        for (const seg of route.forward) {
+            append_elevation_segments(segments, seg, ele);
+        }
+    } else if (route.route_type === 'linear') {
+        let current = segments[segments.length - 1].elevation;
+
+        if (current.length > 0
+                && Math.abs(current[current.length - 1].pos - route.start) > 1) {
+            segments.push({elevation: []});
+            current = segments[segments.length - 1].elevation;
+        }
+
+        let needfirst = current.length == 0;
+
+        for (const way of route.ways) {
+            const wayele = ele[way.id];
+            if (wayele) {
+                let usept = needfirst;
+                for (const pt of wayele.elevation) {
+                    if (usept) {
+                        current.push({
+                            x: pt.x,
+                            y: pt.y,
+                            ele: pt.ele,
+                            pos: way.start + pt.pos
+                        });
+                    } else {
+                        usept = true;
+                    }
+                }
+                needfirst = false;
+            } else {
+                needfirst = true;
+            }
+        }
+    }
+}
+
 
 class RouteOverview {
 
@@ -135,6 +179,25 @@ class RouteDetails {
         add_appendix_lengths(lengths, this.route);
 
         return lengths;
+    }
+
+    get_elevation_profile(ele) {
+        const profile = { ascent: 0, descent: 0,
+                          min_elevation: ele.min_elevation,
+                          max_elevation: ele.max_elevation,
+                          end_position: 0,
+                          segments: []};
+
+        const segments = [{elevation: []}];
+        append_elevation_segments(segments, this.route, ele.segments);
+        console.log('ELE segs', segments);
+
+        const endsegment = segments[segments.length - 1].elevation;
+        return { ascent: 0, descent: 0,
+                 min_elevation: ele.min_elevation,
+                 max_elevation: ele.max_elevation,
+                 end_position: endsegment[endsegment.length - 1].pos,
+                 segments: segments};
     }
 }
 

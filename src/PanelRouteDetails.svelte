@@ -170,7 +170,7 @@
     {#if route.note}<div class="note"><i>{$_('details.note')}:</i> {route.note}</div>{/if}
 
     <Collapsible title={$_('elevation.title')} init_collapsed={true}>
-        <ElevationView osm_type={osm_type} osm_id={osm_id} length={route.mapped_length} />
+        <ElevationView {osm_type} {osm_id} {route} />
     </Collapsible>
 
     {#if route.subroutes}
