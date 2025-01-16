@@ -5,15 +5,17 @@
     import HourGlass from './svg/HourGlass.svelte';
     import D3ElevationProfile from './svg/D3ElevationProfile.svelte';
 
-    let { osm_type, osm_id, length = 0 } = $props();
+    let { osm_type, osm_id, route } = $props();
 
     let loader = $state();
 
     onMount(() => {
         let controller = new AbortController();
         const signal = controller.signal;
-        loader = json_load('/details/' + osm_type + '/' + osm_id + '/elevation',
-                            {}, signal);
+        const maxlen = route.route.length < 5000 ? 10 : route.route.length / 500;
+        loader = json_load('/details/' + osm_type + '/' + osm_id + '/way-elevation',
+                            {simplify: Math.floor(maxlen)}, signal)
+                  .then((ele) => {  return route.get_elevation_profile(ele) });
 
         return () => { if (controller) controller.abort(); };
     });
@@ -56,7 +58,7 @@
 {#await loader}
    <HourGlass />
 {:then profile}
-{#if length > 0 && length * 1.1 < profile.end_position}
+{#if route.continuity === 'none'}
 <p class="warn-unsorted">{$_('elevation.warn_unsorted')}</p>
 {/if}
 <div>
