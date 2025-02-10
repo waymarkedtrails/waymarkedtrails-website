@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Xuacu
+# Author: YoaR
 ---
 about:
   title: Tocante al mapa
@@ -297,7 +298,7 @@ legal:
 
     Nun pue garantizase que'l mapa seya exactu nin tea completu. Si sal d'escursión, consiga un bon mapa, un equipamientu afayadizu, y nun dexe'l bon xaciu en casa. La natura ye tan guapa como despiadada.
 
-    Esti sitiu contien enllaces a sitios web esternos. L'autor d'esti sitiu nun tien influencia dala sobro'l conteníu d'esos sitios web y nun asume nenguna responsabilidá por ellos.
+    Esti sitiu contién enllaces a sitios web esternos. L'autor d'esti sitiu nun tien influencia dala sobro'l conteníu d'esos sitios web y nun asume nenguna responsabilidá por ellos.
 acknowledgements:
   title: Reconocimientos
   text: "Tolos datos de los mapes proporciónenlos \n[OpenStreetMap y collaboradores](http://www.openstreetmap.org)

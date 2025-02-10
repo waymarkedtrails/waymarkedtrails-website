@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: 1917 Ekim Devrimi
 # Author: Erdemaslancan
+# Author: GolyatGeri
 # Author: Gorizon
 # Author: Kumkumuk
 # Author: Lonvia
@@ -19,7 +20,7 @@ about:
   riding: Na xerita dınya de rotaya degmesi sopa bergiran mocneno.
   slopemap: Ena xerita dınya sero vıradanê sporê zımıstani mocnena.
   osm: "Guzergahi standart OpenStreetMap u keyfi heta yew qabığe sersi kerdışi sero
-    neyene pıro. Xeritay guzergahi datayanê \n[OpenStreetMap]'i de procey (http://www.openstreetmap.org)
+    neyene pıro. Xeritay guzergahi datayanê \n[OpenStreetMap]'i de procey (https://www.openstreetmap.org)
     (OSM)'iyo . OSM, vurniyaye, şayaye yew xeritay dınyayo.\nNo yeno manê ke qet yew
     heti ra kemi niyo, lakin no rayanê neweyan şenê cıkereu estbıyaye xerita u rayan
     şenê bıvurnê zi. Heqê Open Street Map zêde melumati rê\n[Rehberê karberanê neweyan]
@@ -33,17 +34,17 @@ rendering:
   cyclingroutes: |-
     OSM de rayê bisikletana eleqe debiyê tede. No seni xebtiyeno.
     Pera etiket bıyayışi de teferuatın izah biyo
-    [ray bisikletan] (http://wiki.openstreetmap.org/wiki/Cycle_routes)
+    [ray bisikletan] (https://wiki.openstreetmap.org/wiki/Cycle_routes)
     OSM wiki. Na xerita qebê ke etiketanê cêrênan ihtiwa kerden eleqeyan musnena:
 
         type = route|superroute
         route = bicycle
 
-    Rotay bisikletanê koyi ciya ju [Xeritay MTB] sero musniyena (http://mtb.waymarkedtrails.org/en/).
+    Rotay bisikletanê koyi ciya ju [Xeritay MTB] sero musniyena (https://mtb.waymarkedtrails.org/en/).
   mtbroutes: "Rotay bisikletanê koyi, pela OSM viki de [rotay bisikletan](http://wiki.openstreetmap.org/wiki/Tr:Cycle_routes)
     heqa\ndetayın izahê rotayanê bisikletana zey pê şemay etiketi taqib kena. \nCêr
     dı eleqey etiketanê rayanê MTB şınasneno:\n    type = route|superroute\n    route
-    = mtb\n\nSabit rotay bisikleti, [Xeritay bisikletan](https://cycling.waymarkedtrails.org/tr/)
+    = mtb\n\nSabit rotay bisikleti, [Xeritay bisikletan](https://cycling.waymarkedtrails.org/diq/)
     sero nusneyêno."
   skatingroutes: "Pê tabelaya qeyd bıyaye ray patenan, zey rotayanê binan eleqedar
     etiket bıbê.\nTerefê na xeritay ra fahm bıyaye etiketan rê eleqeyın pera wiki
@@ -84,14 +85,14 @@ rendering:
   hikinglabels: "Seba herg rptay rê etiket, gorey rêze etiketanê cêrênan  \"texmin
     benê\":\n\n1. [şertê lokal kerdışi] kontrol kerê (cay guriyayışi/payşıyayışi).\n2.
     \ Etiketê `osmc:symbol` werênayışi bıcerrebnê.  [osmc:şertê sembol vıraştışi]
-    (render/osmc).\n3. Eger ke etiketê `ref` esto se, etiketê `ref` ihtiwa kerden
+    (osmc_symbols.html).\n3. Eger ke etiketê `ref` esto se, etiketê `ref` ihtiwa kerden
     etiketê metini vırazê. \n4. Eger ke etiketê `name` esto se, veror yew referans
     bıgêrên \n5. Bıgêrê cor"
   labels: "Qandê herg rota etiket, gorey rêza cêrêni \"texmin beno\":\n\n1. Etiketê
     `ref` esto se, etiketê `ref` ihtiwa kerden etiketê metini vırazê. \n2. Etiketê
     `name` esto se, veror gurenayışê referansê bıgêrê. \n\n    Teyna herfanê gırsan
     u gurenayışê herfa sıfteyına nameyi xırab biya.\n3. Pes bıke."
-  hierarchy: '[Eleqey hiyerarşiyan](rendering/hierarchies) na xerita keda qebul.'
+  hierarchy: '[Eleqey hiyerarşiyan](#help/hierarchies) na xerita kerda qebul.'
   guideposts: |-
     [Pheştiya Kılavuzi ](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
     be terefê etiketanê cêrênan ra şınasiyenê:
@@ -106,10 +107,9 @@ hierarchies:
   title: Hiyerarşiya elekeyıney
   text: "Xeritay fına haling bıyaye eleqeyan zi peşti dano. \nHoya eleqey pê. Nê hiyerarşiy
     dı babeti ya gurweyniye no: ya zaf derg rotaya heti kerdışi rê gırweyniyenê \n(mesela
-    , [E1](https://hiking.waymarkedtrails.org/route/Auropean%20walking%20route%20E1))
-    yana gureniyeno \nDı ray eyni ray ra pêra abırnayışi rê (\nQandê mesela İsviçreyıc
-    [Via Francigena](https://hiking.waymarkedtrails.org/route/Via%20Francigena,%20Swiss%20part)\nJew
-    letey Ewropa [Via Romea Francigena] (https://hiking.waymarkedtrails.org/route/Via%20Romea%20Francigena)
+    , [E1](https://hiking.waymarkedtrails.org/#route?id=36367)) yana gureniyeno \nDı
+    ray eyni ray ra pêra abırnayışi rê (\nQandê mesela İsviçreyıc [Via Francigena](https://hiking.waymarkedtrails.org/route/Via%20Francigena,%20Swiss%20part)\nJew
+    letey Ewropa [Via Romea Francigena] (https://hiking.waymarkedtrails.org/#route?id=11860709)
     bıvinê).\nWeziyetê sıfteyın dı, bın-eleqe nê ho tam ray niyê degmesi ray gênê
     u lazımo kı xeritay sero xoser nêmısneyê.\n\nKışta vıraştoği ra fonksiyonê eleqey
     bınêni seni gırweyeno \nEtiketê `network`:\n\n* Eleqey kuflet u qeçan eyni pirık
@@ -125,7 +125,8 @@ osmc:
     Almanya dı). Teyna xerita \npera wiki kumey bınêna vaciyayi desteg dana.  Meqsed\nEk
     xerita sero vıraziyo, harita, etiketê cı wa bıçinê zey ney bo:\n\n      osmc:symbol=waycolor:background:foreground:text:textcolor\n\n`waycolor`
     uca dı wa bıbo lakin qandê na Xerita peygoş biyo.\nÊ dıyın planê vêri rê desteg
-    nêdano. `text` u `textcolor`\nveciyeno ."
+    nêdano. `text` u `textcolor`\nveciyeno .\n\n\nVêşêri [osmc:symbol](osmc_symbols.html)
+    etiketê perlan  lista sembolan bê terefê  Waymarked Trails ra beno desteg"
 hikinglocal:
   title: Lokalize kerden
   text: "Dınya dı rayanê pay şıyayışi işaret kerdışi rê sistemê ciyay estê. Xerita
@@ -137,15 +138,15 @@ hikinglocal:
   swiss: "## İsviçre\n\nİsviçre ihtiwa kerden hera işaret bıyaye rayê pay şıyayışi
     dewlet pêroyi dı esto. \nPirık, fonksiyonê namey guideposts ya jû pirıka gozgıreyi
     ya. \nRay pêro çetıney heta nizami işaret biyê.\nXerita dı nê ray renga sura aseno
-    u dê senê xeter çetıneya rayber mısneno. \n\n* ![red line](route_std.png) *hiking
+    u dê senê xeter çetıneya rayber mısneno. \n\n* ![red line](route_std.svg) *hiking
     path*, marked with ![diamond](yellow_diamond.svg). Tagged with `network=lwn` and
-    `osmc:symbol=yellow:[...]`.\n* ![dashed line](route_mnt.png) *mountain path*,
-    marked with ![white-red-white](white_red_bar.svg). Tagged with `network=lwn` and
-    `osmc:symbol=red:[...]`.\n* ![dotted line](route_alp.png) *alpine path*, marked
-    with ![white-blue-white](white_blue_bar.svg). Tagged with `network=lwn` and `osmc:symbol=blue:[...]`.\n\nSeraniya
-    na pirık sero şarani mıntıqewi rotay işaret biyê. \nNormal usul dı mısneyaye guzergahi\n\nİsviçre
-    dı rayê pay şıyayış OSM sero etiket kerdışi rê zêde melumati rê bıweyni rê :\n[İsviçre
-    pirıka rayan](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)."
+    `osmc:symbol=yellow:[...]:yellow_diomand'.\n* ![dashed line](route_mnt.png) *mountain
+    path*, marked with ![white-red-white](white_red_bar.svg). Tagged with `network=lwn`
+    and `osmc:symbol=red:white:red_bar`.\n* ![dotted line](route_alp.png) *alpine
+    path*, marked with ![white-blue-white](white_blue_bar.svg). Tagged with `network=lwn`
+    and `osmc:symbol=blue:[...]`.\n\nSeraniya na pirık sero şarani mıntıqewi rotay
+    işaret biyê. \nNormal usul dı mısneyaye guzergahi\n\nİsviçre dı rayê pay şıyayış
+    OSM sero etiket kerdışi rê zêde melumati rê bıweyni rê :\n[İsviçre pirıka rayan](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)."
   italy: "## İtalya\n\nİtalyan Klubê Alpi (CAI) rayê koyi hewna estê \nZey İsviçre
     sınıf kerdışa cı çetına\n`network=lwn`,`osmc:symbol=red:...` u yew  `cai_scale`
     ya nışan bıyaye rotay b etiketê CAI ya şeveknaye ray şınasiyenê u xetê suri deyne
