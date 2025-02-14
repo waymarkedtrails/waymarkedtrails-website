@@ -55,7 +55,6 @@ export function make_style(hilight) {
         })];
 
         if (props.dir && res < 10) {
-            console.log(res)
             styles.push(new Style({
                 text: new Text({
                         text: props.dir > 0 ? '❯' : '❮',
