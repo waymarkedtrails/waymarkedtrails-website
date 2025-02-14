@@ -112,6 +112,19 @@ function append_elevation_segments(segments, route, ele) {
     }
 }
 
+function smooth_elevation_segment(segment) {
+    let ascent = 0;
+
+    let prev_ele = false;
+    for (const pt of segment.elevation) {
+        if (prev_ele !== false && prev_ele < pt.ele) {
+            ascent += pt.ele - prev_ele;
+        }
+        prev_ele = pt.ele;
+    }
+
+    return ascent;
+}
 
 class RouteOverview {
 
@@ -190,10 +203,21 @@ class RouteDetails {
 
         const segments = [{elevation: []}];
         append_elevation_segments(segments, this.route, ele.segments);
-        console.log('ELE segs', segments);
-
         const endsegment = segments[segments.length - 1].elevation;
-        return { ascent: 0, descent: 0,
+
+        let total_ascent = 0;
+        for (let seg of segments) {
+            total_ascent += smooth_elevation_segment(seg);
+        }
+        let total_descent = segments[0].elevation[0].ele
+                          - endsegment[endsegment.length - 1].ele
+                          + total_ascent;
+        if (total_descent < 0) {
+            total_descent = 0;
+        }
+
+        return { ascent: total_ascent,
+                 descent: total_descent,
                  min_elevation: ele.min_elevation,
                  max_elevation: ele.max_elevation,
                  end_position: endsegment[endsegment.length - 1].pos,

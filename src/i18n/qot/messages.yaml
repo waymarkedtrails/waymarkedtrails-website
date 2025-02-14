@@ -18,6 +18,10 @@ details:
   subroutes_title: Sections
   superroutes_title: Part of
   symbol: Symbol
+  linear:
+    "yes": The relation for this route is sorted and in one piece.
+    "sorted": The relation for this route is in one piece but members are not sorted.
+    "no": The relation has holes or other issues.
   tags:
     key: key
     title: OpenStreetMap tags

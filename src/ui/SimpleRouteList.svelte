@@ -4,6 +4,7 @@
     import { API_URL } from '../config.js';
     import { page_state } from '../page_state.svelte.js';
     import { map_state } from '../map_state.svelte.js';
+    import LinearState from './LinearState.svelte';
 
     function show_route(route) {
         page_state.show_page();
@@ -100,7 +101,8 @@
         </div>
         <div class="main-info">
             <div class="title-line">
-                <div class="route-title">{route.title}</div>
+                <div class="route-title">{route.title}<LinearState state={route.linear} />
+                </div>
                 <div class="route-ref">{route.ref || ''}</div>
             </div>
             {#if route.subtitle}

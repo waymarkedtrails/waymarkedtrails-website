@@ -48,5 +48,5 @@ export const elevation_point = new Style({
                 fill: new Fill({color: '#0000ff'}),
                 stroke: new Stroke({color: '#000', width: 1})
             }),
-            zindex: 2
+            zindex: 1
        });
