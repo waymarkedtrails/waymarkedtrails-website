@@ -132,6 +132,48 @@ rendering:
             ele=<altitude>
 
         `tourism` and `information` are mandatory. `name` and `ele` can be omitted.
+route_order:
+    title: Ordering of routes
+    text: |
+        waymarkedtrails needs properly sorted routes for showing the
+        elevation profile and for GPX and KML download. When analysing a route,
+        it tries to respect as much as possible the order of member ways within
+        the relation because this makes it easiest for mappers to influence
+        the order without having to resort to trial and error. If a relation
+        appears to be unsorted, then waymarkedtrails will still put the
+        ways into an order if and only if the ways can form an unbroken
+        linear route.
+
+        Relations roles are taken into account, when sorting the route.
+        `forward` and `backward` roles can be used to mark sections where
+        the route should be followed on different parts depending on the
+        direction. Remember that these roles are defined relative to the
+        direction of the way, not the route! If you have such a split section,
+        make sure that the ways for each direction appear directly subsequent
+        to each other in the relation and that the ways still follow the
+        order of the route.
+
+        Any other role are considered side paths of one form or another and
+        ignored for the general sorting of the route. They still appear on
+        the map.
+
+        waymarkedtrails is able to handle unsplit roundabouts within a
+        route. Simply add the closed way without any role and the roundabout
+        will be internally split up into appropriate sections. This even works
+        when there is a V approach to the roundabout which is split up in
+        forward and backward. There are two cases, where this handling fails:
+
+        * if for some reason the roundabout was split up in multiple ways,
+          then you _must_ add the parts with the appropriate `forward` and
+          `backward` roles.
+        * if the roundabout is part of a directional section, you must
+          split up the roundabout and add the used part with the appropriate
+          role.
+
+        General rule of thumb for ordering: if the JOSM relation editor
+        shows the route as continuous, then waymakedtrails should be able to
+        show a linear route as well.
+
 hierarchies:
     title: Relation hierarchies
     text: |

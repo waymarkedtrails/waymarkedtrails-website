@@ -20,10 +20,27 @@ export const highlight_circle =
 
 
 export const analyze_line = [
-{ style: {
+{ filter: ['==', ['get', 'pointpos'], -1],
+  style: {
     'circle-radius': 8,
     'circle-fill-color': '#ff2533',
     'circle-stroke-color': [211, 255, 5, 0.4],
+    'circle-stroke-width': 3,
+  }
+},
+{ filter: ['==', ['get', 'pointpos'], 0],
+  style: {
+    'circle-radius': 9,
+    'circle-fill-color': '#ff2533',
+    'circle-stroke-color': '#000',
+    'circle-stroke-width': 2,
+  }
+},
+{ filter: ['==', ['get', 'pointpos'], 1],
+  style: {
+    'circle-radius': 9,
+    'circle-fill-color': '#ff2533',
+    'circle-stroke-color': '#FFF',
     'circle-stroke-width': 3,
   }
 },
@@ -35,8 +52,8 @@ export const analyze_line = [
 },
 { filter: ['==', ['get', 'virtual'], 1],
   style: {
-    'stroke-width': 1.5,
-    'stroke-color': '#000',
+    'stroke-width': 2,
+    'stroke-color': '#C33',
     'stroke-line-dash': [10, 5]
   }
 }

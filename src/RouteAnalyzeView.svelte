@@ -31,12 +31,20 @@
                 source.addFeature(new Feature({geometry: line, virtual: 1, id: featID++}));
                 source.addFeature(new Feature({
                          geometry: new Point(pt1),
+                         pointpos: -1,
                          id: featID++}));
                 source.addFeature(new Feature({
                          geometry: new Point(pt2),
+                         pointpos: -1,
                          id: featID++}));
 
             }
+        } else {
+            const source = layer.getSource();
+            source.addFeature(new Feature({
+                     geometry: new Point(pt2),
+                     pointpos: 0,
+                     id: featID++}));
         }
     }
 
@@ -82,7 +90,12 @@
         if (rte) {
             const intersections = {};
             featID = 1;
-            traverse_segments(intersections, null, rte.main);
+            const final_point = traverse_segments(intersections, null, rte.main);
+            source.addFeature(new Feature({
+                     geometry: new Point(final_point),
+                     pointpos: 1,
+                     id: featID++}));
+
             let seg_count = 1;
             layer.getSource().forEachFeature((feat) => {
                 if (feat.getProperties().virtual)

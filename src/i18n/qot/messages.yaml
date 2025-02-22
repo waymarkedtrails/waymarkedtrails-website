@@ -40,14 +40,14 @@ details:
     summary: This relation has {num} segments.
     disclaimer: |
       This shows the route segments as they were computed by waymarkedtrails
-      from the relation. Be aware that relation roles and roundabouts are
-      not handled properly at the moment. Use the presented information
-      with care.
+      from the relation, which may not always be correct. For more information
+      how waymarkedtrails sorts routes, visit the help pages.
     legend: |
-      Black lines show the segments. The dashed lines are the virtual
-      connections between the end of one segment and the beginning of the
-      next. Red dots mark open ends in the route. Green dots show where
-      two or more segments meet.
+      Red dots mark open ends of each segment in the route. The red dot
+      with the black casing markeds the beginning of the route and the
+      red dot with the white casing shows the end. The red dashed lines show
+      the virtual connections between end of one segments and beginning of
+      the next.
 elevation:
   ascent: Accumulated ascent
   descent: Accumulated descent
