@@ -15,6 +15,7 @@ attribution:
   elevation_title: Malumata berziye  [SRTM/ASTER](desteg/teşekuri)
 destination_sign:
   more: Tayêna melumat
+  no_data: Melumatê nê destinasyon nê rehberi de gureyena
   title: Hedefi
 details:
   GPX: GPX
@@ -42,6 +43,9 @@ details:
   website: Keyepele
   wikipedia: Wikipediya
   zoom_to: Xerita de bımocne
+  analyze:
+    title: Eleqeyın analizi
+    summary: No eleqe de segmenta {num} esta
 elevation:
   ascent: Verecoro komkerde
   descent: Verecoro komkerde
@@ -58,6 +62,7 @@ error:
   missing_query: Parametreyo kemi 'query'.
   panel_title: Xeta
   object_not_found: Obce nêvinê ya.
+  api_unavailable: API mukum niyo
 headline:
   last_update: Resnayışo Peyên
 help: Heqa xerita de
@@ -67,9 +72,12 @@ network:
   downhill: Cêrê gedugi
   national: Rotay milli
   node: Gıreyê torreyê bestoği
+  nordic: Paysiyena zımeyi
   other: Rotay bini
   regional: Rotay wareyi
   skitour: Turê Ski
+  sled: Pista Vawıyayışi
+  sleigh: Pista Qızaxi
   winter_hike: Payadey zımıstani
 osmc_symbol:
   back: Peyser
@@ -106,6 +114,7 @@ site_title:
   cycling: Ramıtış
   hiking: Geme geyrayış
   mtb: Bisikleta Koya
+  osmc_symbol: Be osmc:symbol tag
   riding: Bergir nışayış
   skating: Patena Teqerın
   slopes: Sud spore zımıstani

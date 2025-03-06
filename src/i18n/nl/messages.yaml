@@ -107,7 +107,7 @@ osmc_symbol:
     op de kaart getoond zal worden.
   preview_heading: Voorbeeld
 routelist:
-  loading: Laden...
+  loading: Bezig met laden…
   close: Sluiten
   more: Zoom in om meer routes te zien.
   rollup: Roll-up

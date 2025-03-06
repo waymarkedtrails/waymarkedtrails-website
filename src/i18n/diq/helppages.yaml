@@ -153,7 +153,7 @@ hikinglocal:
     do bıasê \nGorey çetıney.\n\n* ![red line](route_std.png) cai_scale=T\n* ![dashed
     line](route_mnt1.png) cai_scale=E\n* ![dashed line](route_mnt2.png) cai_scale=EE\n*
     ![dotted line](route_alp.png) cai_scale=EEA*"
-  uk: "## Qıraliya Yewbiyayi \n\nSınıfkerdışê [UK long-distance paths](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)\n(those
+  uk: "## Qıraliya Yewbiyayi \n\nSınıfkerdışê [UK long-distance paths](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)\n(those
     tagged with `network=uk_ldp`) depends on the `operator` tag. Relations\nwith `operator=National
     Trails` are shown as national trails, zewbina eleqeyın binî lokal mıntıqey asenê.\n\n`network=lwn/rwn/nwn/iwn`
     etiketiya tımzi gureyniyaye."
