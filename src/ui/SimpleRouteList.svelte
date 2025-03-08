@@ -55,8 +55,9 @@
     .main-info {
         display: flex;
         flex-direction: column;
-        flex-grow: 1;
-        align-items: flex-start
+        flex: 1 1 auto;
+        align-items: flex-start;
+        min-width: 20px
     }
 
     .subtitle {
@@ -66,7 +67,8 @@
 
     .title-line {
         display: flex;
-        width: 100%
+        width: 100%;
+        min-width: 20px
     }
 
     .route-title {
@@ -74,8 +76,15 @@
         text-overflow: ellipsis;
         overflow: hidden;
         text-align: left;
-        flex: 1 1 auto;
-        width: 5px;
+        flex: 0 1 auto;
+        min-width: 20px
+    }
+
+    .route-state {
+        white-space: nowrap;
+        padding-left: 2px;
+        flex: 1 0 15px;
+        text-align: left;
     }
 
     .route-ref {
@@ -101,8 +110,8 @@
         </div>
         <div class="main-info">
             <div class="title-line">
-                <div class="route-title">{route.title}<LinearState state={route.linear} />
-                </div>
+                <div class="route-title">{route.title}</div>
+                <div class="route-state"><LinearState state={route.linear} /></div>
                 <div class="route-ref">{route.ref || ''}</div>
             </div>
             {#if route.subtitle}
