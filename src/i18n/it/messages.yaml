@@ -31,6 +31,11 @@ details:
   subroutes_title: Sezioni
   superroutes_title: Parte di
   symbol: Simbolo
+  linear:
+    "yes": La relazione di questo itinerario è ordinata e in un unico pezzo.
+    sorted: La relazione di questo itinerario è in un unico pezzo ma i suoi membri
+      non sono ordinati.
+    "no": La relazione presenta buchi o altri problemi.
   tags:
     key: chiave
     title: Etichette OpenStreetMap
@@ -43,6 +48,17 @@ details:
   website: Sito web
   wikipedia: Wikipedia
   zoom_to: Mostra sulla mappa
+  analyze:
+    title: Analizza relazione
+    summary: Questa relazione ha {num} segmenti.
+    disclaimer: Questo mostra i segmenti dell'itinerario così come sono stati calcolati
+      da waymarkedtrails a partire dalla relazione che potrebbe non essere sempre
+      corretta. Per ulteriori informazioni su come waymarkedtrails ordina gli itinerari,
+      visita le pagine di assistenza.
+    legend: I punti rossi segnano le estremità aperte di ogni segmento dell'itinerario.
+      I punti rossi con bordo nero indicano l'inizio dell'itinerario mentre i punti
+      rossi con bordo bianco la fine. Le linee rosse tratteggiate mostrano le connessioni
+      virtuali tra la fine di un segmento e l'inizio di quello successivo.
 elevation:
   ascent: Ascesa accumulata
   descent: Discesa accumulata
@@ -78,9 +94,15 @@ network:
   winter_hike: Escursioni invernali
 osmc_symbol:
   back: Indietro
+  background: Lo sfondo funziona in modo simile. È composto anch’esso da un colore
+    e una forma. Lo sfondo può anche essere solo un nome colorato che si traduce in
+    un canvas del colore scelto. Ciò viene mostrato nella prima riga.
   background_heading: Sfondo
   examples: Esempi
   foreground_heading: In primo piano
+  preview: |-
+    Digita un valore osmc:symbol nel campo di input sottostante
+         per vedere come verrà visualizzato sulla mappa.
   preview_heading: Anteprima
 routelist:
   loading: Caricamento...
@@ -92,6 +114,8 @@ search:
   places: Luoghi
   routes: Itinerari
   title: Cerca
+  help: Utilizza le parole chiave per la ricerca. È possibile cercare nomi di sentieri
+    (ad es. Appalachian Trail, E2) o luoghi (ad es. Roma).
 settings:
   base_map: Mappa di base
   browser_language: Usa impostazioni del browser
@@ -100,10 +124,21 @@ settings:
   route_layer: Route layer
   title: Impostazioni mappa
   transparency: Trasparenza mappa
+site_description:
+  cycling: Percorsi ciclabili locali e a lunga distanza, con mappe e informazioni
+    da OpenStreetMap.
+  hiking: Itinerari escursionistici e passeggiate locali e a lunga distanza, con mappe
+    e informazioni da OpenStreetMap.
+  mtb: Percorsi per mountain bike (MTB), con mappe e informazioni da OpenStreetMap.
+  riding: Itinerari a cavallo, con mappe e informazioni da OpenStreetMap.
+  skating: Percorsi per pattinaggio in linea, con mappe e informazioni da OpenStreetMap.
+  slopes: Piste per sport invernali, sci alpino, pattinaggio di fondo, escursioni
+    invernali, con mappe e informazioni da OpenStreetMap.
 site_title:
   cycling: Ciclismo
   hiking: Escursioni a piedi
   mtb: Mountain bike
+  osmc_symbol: L'etichetta osmc:symbol
   riding: Passeggiate a cavallo
   skating: Pattinaggio in linea
   slopes: Piste per sport invernali

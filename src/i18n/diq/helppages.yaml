@@ -147,6 +147,15 @@ hikinglocal:
     and `osmc:symbol=blue:[...]`.\n\nSeraniya na pirık sero şarani mıntıqewi rotay
     işaret biyê. \nNormal usul dı mısneyaye guzergahi\n\nİsviçre dı rayê pay şıyayış
     OSM sero etiket kerdışi rê zêde melumati rê bıweyni rê :\n[İsviçre pirıka rayan](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)."
+  austria: |-
+    ## Austurya
+
+    Die Region Vorarlberg verwendet ein ähnliches Klassifizierungssystem wie die Schweiz. Routen mit den Tags `operator=Land Vorarlberg`, `network=rwn`
+    und `network:type=basic_network` werden mit einem schwierigkeitsbasierten Schema gekennzeichnet:
+
+    * ![red line](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![dashed line](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![dotted line](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: "## İtalya\n\nİtalyan Klubê Alpi (CAI) rayê koyi hewna estê \nZey İsviçre
     sınıf kerdışa cı çetına\n`network=lwn`,`osmc:symbol=red:...` u yew  `cai_scale`
     ya nışan bıyaye rotay b etiketê CAI ya şeveknaye ray şınasiyenê u xetê suri deyne

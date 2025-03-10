@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Cquoi
 # Author: Crochet.david
+# Author: Dittograp
 # Author: Gomoko
 # Author: Hpetit
 # Author: IAlex
@@ -43,6 +44,8 @@ details:
   subroutes_title: Sections
   superroutes_title: Partie de
   symbol: Symbole
+  linear:
+    "no": La relation comporte des trous ou a d'autres problèmes.
   tags:
     key: clé
     title: Balises OpenStreetMap
@@ -63,10 +66,10 @@ details:
       par waymarkedtrails à partir de la relation. Sachez que les rôles de la relation
       et les ronds-points ne sont pas gérés correctement pour le moment. Utilisez
       les informations présentées avec précaution.
-    legend: Les lignes noires indiquent les segments. Les lignes en pointillés représentent
-      les connexions virtuelles entre la fin d'un segment et le début du suivant.
-      Les points rouges indiquent les extrémités ouvertes de l'itinéraire. Les points
-      verts indiquent l'endroit où deux segments ou plus se rencontrent.
+    legend: |-
+      Les points rouges indiquent les extrémités ouvertes de chaque segment de l'itinéraire.
+      Le point rouge entouré de noirs indiquent le début de l'itinéraire et le point rouge entouré de blanc indique la fin.
+      Les lignes rouges en pointillés représentent les connexions virtuelles entre la fin d'un segment et le début du suivant.
 elevation:
   ascent: Montée cumulée
   descent: Descente cumulée

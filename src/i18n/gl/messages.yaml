@@ -27,6 +27,11 @@ details:
   subroutes_title: Seccións
   superroutes_title: Parte de
   symbol: Símbolo
+  linear:
+    "yes": A relación para esta ruta está ordenada e nun único anaco.
+    sorted: A relación para esta ruta está nun único anaco, pero os membros non están
+      ordenados.
+    "no": A relación ten buratos ou outros problemas.
   tags:
     key: clave
     title: Etiquetas do OpenStreetMap
@@ -45,14 +50,14 @@ details:
     summary: Esta relación ten {num} segmentos.
     disclaimer: |-
       Isto mostra os segmentos de ruta tal e como foron calculados por rutas marcadas
-      da relación. Teña en conta que os roles de relación e as rotondas
-      non se xestionan correctamente nestes intres. Use a información presentada
-      con coidado.
+      da relación, algo que non sempre é correcto. Para atopar máis información
+      sobre como se ordenan as rutas, visite as páxinas de axuda.
     legend: |-
-      As liñas negras mostran os segmentos. As liñas discontinuas son as
-      conexións virtuais entre o final dun segmento e o comezo do
-      seguinte. Os puntos vermellos marcan os extremos abertos da ruta. Os puntos verdes indican onde
-      se xuntan dous ou máis segmentos.
+      Os puntos vermellos sinalan os extremos abertos de cada segmento da ruta. O punto vermello
+      co recadro negro marca o inicio da ruta e o
+      punto vermello coa carcasa branca indica o final. As liñas descontinuas vermellas amosan
+      as conexións virtuais entre o final dun segmento e o comezo do
+      seguinte.
 elevation:
   ascent: Ascenso acumulado
   descent: Descenso acumulado

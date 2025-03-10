@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Ajeje Brazorf
+# Author: GianAntonucci
 # Author: Sarvaturi
 ---
 attribution:
@@ -54,7 +55,7 @@ routelist:
 search:
   places: Lochi
   routes: Pircursi
-  title: Arricerca
+  title: Cerca
 settings:
   base_map: Mappa di basi
   browser_language: Usa mpustazzioni dû browser

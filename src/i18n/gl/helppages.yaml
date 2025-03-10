@@ -132,6 +132,8 @@ rendering:
         ele=<altitude>
 
     `tourism` e `information` son obrigatorias. `name` e `ele` pódense omitir.
+route_order:
+  title: Ordenación de rutas
 hierarchies:
   title: Relacións de xerarquía
   text: |-
