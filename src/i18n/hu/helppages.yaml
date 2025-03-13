@@ -107,6 +107,22 @@ rendering:
         ele=<tsz.f. magasság>
 
     A `tourism` és az `information` kötelező. A `name` és az `ele` elhagyható.
+route_order:
+  title: Útvonal sorba rendezése
+  text: |-
+    A Waymarked Trails-nek megfelelően rendezett útvonalakra van szüksége a magassági profil megjelenítéséhez, valamint a GPX és KML fájlok letöltéshez. Egy útvonal elemzésekor igyekszik a lehető legnagyobb mértékben tiszteletben tartani a tagvonalak kapcsolaton belüli sorrendjét, mert a térképezők így tudják legkönnyebben módosítani a sorrendet anélkül, hogy próba-szerencse módszerhez kellene folyamodniuk. A Waymarked Trails akkor is sorrendbe állítja a vonalakat, ha egy kapcsolat rendezetlennek tűnik, de csak akkor, ha a vonalak egy összefüggő lineáris útvonalat alkotnak.
+
+    Az útvonal sorba rendezésénél a kapcsolattagok szerepét is figyelembe veszi a rendszer.
+    A `forward` (előre) és `backward` (hátra) szerep olyan szakaszok jelölésére használható, ahol az iránytól függően az útvonalnak különböző részeit kell használni. Fontos, hogy ezek a szerepek a vonal irányához képest vannak definiálva, nem pedig az útvonalhoz képest. Ha ilyen osztott szakasszal dolgozol, győződj meg arról, hogy az egyes irányokhoz tartozó vonalak közvetlenül egymás után jelennek meg a kapcsolatban, és hogy a vonalak továbbra is az útvonal sorrendjét követik.
+
+    Minden más szerep valamilyen mellékútnak minősül, és nincs figyelembe véve az útvonal általános rendezésénél. A térképen azonban továbbra is megjelenik.
+
+    A Waymarked Trails az útvonalon előforduló osztatlan körforgalmakat is képes kezelni. Egyszerűen addd hozzá a zárt vonalat (szerep nélkül), és a körforgalom belülről fel lesz osztva megfelelő szakaszokra. Ez még akkor is működik, ha a körforgalmat V alakban közelítik meg a vonalak, amelyeken előre és hátrafelé lehet közlekedni. Két olyan eset van, amikor ez a kezelés nem működik:
+
+    * ha a körforgalom több vonalra van osztva, akkor _muszáj hozzáadni_ a megfelelő `forward` és `backward` szerepű részeket.
+    * ha a körforgalom egy irányított útvonalszakasz része, akkor fel kell osztani a körforgalmat, és hozzá kell adni a használt részt a megfelelő szereppel.
+
+    A sorrendiség ökölszabálya: ha a JOSM kapcsolatszerkesztője folyamatosnak mutatja az útvonalat, akkor a Waymaked Trails-nek is képesnek kell lennie azt lineáris útvonalként megjeleníteni.
 hierarchies:
   title: Kapcsolathierarchiák
   text: |-

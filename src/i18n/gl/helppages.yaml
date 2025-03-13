@@ -134,6 +134,45 @@ rendering:
     `tourism` e `information` son obrigatorias. `name` e `ele` pódense omitir.
 route_order:
   title: Ordenación de rutas
+  text: |-
+    waymarkedtrails necesita rutas correctamente ordenadas para amosar o
+    perfil de elevación e para as descargas en formato GPX e KML. Ao analizar unha ruta,
+    intenta respectar o máximo posible a orde dos camiños que hai dentro
+    da relación porque isto fai que os cartógrafos poidan influír máis facilmente
+    na orde sen ter que recorrer a proba e erro. Se unha relación
+    semella non estar ordenada, entón waymarkedtrails ordenará igualmente os
+    camiños se, e só se, os camiños poden formar unha ruta
+    linear ininterrompida.
+
+    Os roles de relacións téñense en conta ao ordenar a ruta.
+    Os roles `forward` e `backward` poden usarse para sinalar as seccións
+    nas que se debe seguir a ruta dependendo da
+    dirección. Lembra que estes roles se definen en relación á
+    dirección do camiño, non á ruta! Se tes unha sección dividida deste tipo,
+    asegúrate de que os camiños para cada dirección aparecen un xusto a continuación
+    do outro na relación e que os camiños seguen a
+    orde da ruta.
+
+    Calquera outro rol considérase como un camiño lateral dunha forma ou outra e
+    ignórase para a ordenación xeral da ruta. Con todo, aparecen no
+    mapa.
+
+    waymarkedtrails é capaz de manexar rotondas non divididas dentro dunha
+    ruta. Simplemente engade o camiño pechado sen ningún rol e a rotonda
+    dividirase internamente nas seccións adecuadas. Isto mesmo funciona
+    cando hai unha aproximación en V á rotonda que se divide en
+    adiante e atrás. Hai dous casos nos que falla:
+
+    * se, por algún motivo, a rotonda se dividiu de varias maneiras,
+      entón _debes_ engadir os anacos cos roles `forward` e
+      `backward` axeitados.
+    * se a rotonda forma parte dun tramo direccional, debes
+      dividir a rotonda e engadir a parte usada co rol
+      axeitado.
+
+    Regra xeral para a ordenación: se o editor de relacións JOSM
+    amosa a ruta como continua, entón waymakedtrails debería ser capaz de
+    amosar tamén unha ruta linear.
 hierarchies:
   title: Relacións de xerarquía
   text: |-

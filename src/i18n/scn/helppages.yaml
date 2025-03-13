@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Ajeje Brazorf
+# Author: GianAntonucci
 # Author: Sarvaturi
 ---
 about:
@@ -57,10 +58,10 @@ technical:
   translation: |-
     ## Traduzzioni
 
-    Li traduzzioni sunnu gistuti di pirsuni sempri dispunìbbili nta
-    [translatewiki.net](https://translatewiki.net). Si voi cuntribbuiri cu na traduzzioni
-    ntâ tò lingua o dàrini nu feedback supra traduzzioni esistenti, vìsita la
-    [la pàggina dô pruggettu translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
+    Li traduzzioni sunnu manijati dî genti sempri dispunìbbili nta
+    [translatewiki.net](https://translatewiki.net). Siḍḍu voi cuntribbuiri cu na traduzzioni
+    ntâ to lingua o lassàrini un riscontru ncapu a traduzzioni chi già cci sunnu, vìsita
+    [la pàggina dû pruggettu translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Cunnizzioni d'usu e tèrmini ligali
   usage: |-

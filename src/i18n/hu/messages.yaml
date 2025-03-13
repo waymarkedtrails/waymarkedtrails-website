@@ -33,6 +33,11 @@ details:
   subroutes_title: Szakaszok
   superroutes_title: 'Része ennek:'
   symbol: Szimbólum
+  linear:
+    "yes": Az útvonalat megjelenítő kapcsolat sorba van rendezve és egy darabban van.
+    sorted: Az útvonalat megjelenítő kapcsolat egy darabban van, de a tagjai nincsenek
+      sorba rendezve.
+    "no": A kapcsolat hézagos vagy más probléma van vele.
   tags:
     key: kulcs
     title: OpenStreetMap címkék
@@ -50,12 +55,12 @@ details:
     title: Kapcsolat elemzése
     summary: A kapcsolat {num} szakaszból áll.
     disclaimer: Ez úgy mutatja az útvonalszakaszokat, ahogyan azokat a Waymarked Trails
-      a kapcsolatból kiszámította. Vedd figyelembe, hogy a kapcsolatszerepek és a
-      körforgalmak egyelőre nincsenek megfelelően kezelve. Az itt látható információt
-      óvatosan használd fel.
-    legend: A fekete vonal a szakaszt jeleníti meg. A szaggatott vonal virtuális kapcsolat
-      az egyik szakasz vége és a következő szakasz eleje között. A vörös pont az útvonal
-      nyitott végét, a zöld pedig a szakaszok találkozását jelzi.
+      a kapcsolatból kiszámította, ami nem feltétlenül helyes. A súgó oldalon található
+      további információ arról, hogy a Waymarked Trails hogyan rendezi sorba a kapcsolatokat.
+    legend: A vörös pont az útvonal egy-egy szakaszának nyitott végét jelöli. A fekete
+      körvonalú vörös pont az útvonal kezdetét, a fehér burkolatú vörös pont pedig
+      a végét jelzi. A vörös szaggatott vonal virtuális kapcsolat az egyik szakasz
+      vége és a következő szakasz kezdete között.
 elevation:
   ascent: Összesített emelkedés
   descent: Összesített ereszkedés
