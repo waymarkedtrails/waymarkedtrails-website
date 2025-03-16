@@ -29,15 +29,6 @@
             if (line.getLength() > 0.01) {
                 const source = layer.getSource();
                 source.addFeature(new Feature({geometry: line, virtual: 1, id: featID++}));
-                source.addFeature(new Feature({
-                         geometry: new Point(pt1),
-                         pointpos: -1,
-                         id: featID++}));
-                source.addFeature(new Feature({
-                         geometry: new Point(pt2),
-                         pointpos: -1,
-                         id: featID++}));
-
             }
         } else {
             const source = layer.getSource();
@@ -62,10 +53,10 @@
                     }
                 }
                 const c = seg.ways[0].geometry.coordinates[0];
-                intersections[c] = {obj: c, num: intersections[c].num + 0.4}
+                intersections[c] = {obj: c, num: intersections[c].num - 0.2}
                 prev_point = seg.ways.at(-1).geometry.coordinates.at(-1);
                 const old_weight = intersections[prev_point] ? intersections[prev_point].num : 0.0;
-                intersections[prev_point] = {obj: prev_point, num: old_weight + 1.0}
+                intersections[prev_point] = {obj: prev_point, num: old_weight + 0.4}
 
             } else if (seg.route_type === 'split') {
                 add_virtual(prev_point, seg.first);
@@ -96,6 +87,15 @@
                      pointpos: 1,
                      id: featID++}));
 
+            for (const c of Object.values(intersections)) {
+                if (c.num < 0.6 || c.num > 0.6) {
+                    source.addFeature(new Feature({geometry: new Point(c.obj),
+                                                   pointpos: -1,
+                                                   numlines: c.num,
+                                                   id: featID++}));
+                }
+            }
+
             let seg_count = 1;
             layer.getSource().forEachFeature((feat) => {
                 if (feat.getProperties().virtual)
@@ -110,7 +110,34 @@
     });
 </script>
 
+<style>
+    .outer {
+        margin: 4px
+    }
+    .dot-openend {
+        color: #ff2533;
+        font-size: 200%;
+        padding-right: 8px;
+    }
+    .dot-multiend {
+        color: #58e5f1;
+        font-size: 200%;
+        padding-right: 8px;
+    }
+    .dot-twoend {
+        color: #999;
+        font-size: 150%;
+        padding-right: 8px;
+    }
+
+</style>
 
 <p>{$_('details.analyze.summary', {values: {num: num_segments}})}</p>
-<p>{$_('details.analyze.legend')}</p>
+
+<div class="outer">
+  <div><span class="dot-openend">●</span><span class="dot-text">{$_('details.analyze.open_end')}</span></div>
+  <div><span class="dot-multiend">●</span><span class="dot-text">{$_('details.analyze.multi_end')}</span></div>
+  <div><span class="dot-twoend">●</span><span class="dot-text">{$_('details.analyze.two_end')}</span></div>
+</div>
+
 <p><i>{$_('details.analyze.disclaimer')}</i></p>

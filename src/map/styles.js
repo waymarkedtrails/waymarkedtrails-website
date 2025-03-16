@@ -20,11 +20,27 @@ export const highlight_circle =
 
 
 export const analyze_line = [
-{ filter: ['==', ['get', 'pointpos'], -1],
+{ filter: ['<', ['get', 'numlines'], 0.5],
   style: {
     'circle-radius': 8,
     'circle-fill-color': '#ff2533',
     'circle-stroke-color': [211, 255, 5, 0.4],
+    'circle-stroke-width': 3,
+  }
+},
+{ filter: ['between', ['get', 'numlines'], 0.7, 0.9],
+  style: {
+    'circle-radius': 6,
+    'circle-fill-color': '#999',
+    'circle-stroke-color': [211, 255, 5, 0.4],
+    'circle-stroke-width': 3,
+  }
+},
+{ filter: ['>', ['get', 'numlines'], 0.9],
+  style: {
+    'circle-radius': 8,
+    'circle-fill-color': '#58e5f1',
+    'circle-stroke-color': [35, 56, 56, 0.2],
     'circle-stroke-width': 3,
   }
 },

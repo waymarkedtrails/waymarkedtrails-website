@@ -42,12 +42,11 @@ details:
       This shows the route segments as they were computed by waymarkedtrails
       from the relation, which may not always be correct. For more information
       how waymarkedtrails sorts routes, visit the help pages.
-    legend: |
-      Red dots mark open ends of each segment in the route. The red dot
-      with the black casing markeds the beginning of the route and the
-      red dot with the white casing shows the end. The red dashed lines show
-      the virtual connections between end of one segments and beginning of
-      the next.
+    open_end: Open end in the route.
+    multi_end: More than two segments of the route meet in this point.
+    two_end: |
+      Point where route is interrupted because relation is not sorted.
+      The red dashed lines shows where the route continues.
 elevation:
   ascent: Accumulated ascent
   descent: Accumulated descent
