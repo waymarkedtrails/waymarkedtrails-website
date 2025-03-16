@@ -22,6 +22,7 @@
     map_state.map.addLayer(layer);
 
     let featID;
+    let bad_points;
 
     function add_virtual(pt1, pt2) {
         if (pt1) {
@@ -29,6 +30,8 @@
             if (line.getLength() > 0.01) {
                 const source = layer.getSource();
                 source.addFeature(new Feature({geometry: line, virtual: 1, id: featID++}));
+                bad_points[pt1] = 1;
+                bad_points[pt2] = 1;
             }
         } else {
             const source = layer.getSource();
@@ -81,6 +84,7 @@
         if (rte) {
             const intersections = {};
             featID = 1;
+            bad_points = {};
             const final_point = traverse_segments(intersections, null, rte.main);
             source.addFeature(new Feature({
                      geometry: new Point(final_point),
@@ -88,7 +92,7 @@
                      id: featID++}));
 
             for (const c of Object.values(intersections)) {
-                if (c.num < 0.6 || c.num > 0.6) {
+                if (bad_points[c.obj]) {
                     source.addFeature(new Feature({geometry: new Point(c.obj),
                                                    pointpos: -1,
                                                    numlines: c.num,
