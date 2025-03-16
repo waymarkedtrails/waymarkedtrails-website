@@ -24,6 +24,10 @@
         text-align: left;
     }
 
+    .tag-value {
+        overflow-wrap: anywhere;
+    }
+
     .even {
         background-color: #f3f3f3;
     }
@@ -35,7 +39,7 @@
         <thead><tr><th>{$_('details.tags.key')}</th><th>{$_('details.tags.value')}</th></tr></thead>
         <tbody>
         {#each keys as key, idx}
-            <tr class={idx % 2 === 0 ? "even" : "odd"}><td>{key}</td><td>{tags[key]}</td></tr>
+            <tr class={idx % 2 === 0 ? "even" : "odd"}><td>{key}</td><td class="tag-value">{tags[key]}</td></tr>
         {/each}
         </tbody>
     </table>
