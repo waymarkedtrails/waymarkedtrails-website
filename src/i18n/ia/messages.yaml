@@ -42,10 +42,6 @@ details:
     disclaimer: Isto monstra le segmentos del itinerario que WaymarkedTrails ha computate
       desde le relation. Nota ben que le rolos de relation e le rotundas non es gerite
       correctemente in iste momento. Usa le information presentate con cura.
-    legend: Lineas nigre monstra le segmentos. Le lineas discontinue es le connexiones
-      virtual inter le fin de un segmento e le initio del proxime. Punctos rubie marca
-      fines aperte del itinerario. Punctos verde monstra ubi duo o plus segmentos
-      se incontra.
 elevation:
   ascent: Ascension accumulate
   descent: Descension accumulate

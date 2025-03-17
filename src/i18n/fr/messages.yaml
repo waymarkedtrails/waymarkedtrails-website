@@ -66,10 +66,6 @@ details:
       par waymarkedtrails à partir de la relation. Sachez que les rôles de la relation
       et les ronds-points ne sont pas gérés correctement pour le moment. Utilisez
       les informations présentées avec précaution.
-    legend: |-
-      Les points rouges indiquent les extrémités ouvertes de chaque segment de l'itinéraire.
-      Le point rouge entouré de noirs indiquent le début de l'itinéraire et le point rouge entouré de blanc indique la fin.
-      Les lignes rouges en pointillés représentent les connexions virtuelles entre la fin d'un segment et le début du suivant.
 elevation:
   ascent: Montée cumulée
   descent: Descente cumulée

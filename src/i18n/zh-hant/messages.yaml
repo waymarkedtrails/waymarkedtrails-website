@@ -46,7 +46,6 @@ details:
     title: 分析關係
     summary: 此關係有 {num} 個段。
     disclaimer: 這顯示出由 waymarkedtrails 從關係裡計算出的路線段。請注意，關係角色和圓環路口目前尚未正確處理。請小心使用所提供的資訊！
-    legend: 黑線顯示路段。虛線是一個路段末端和下一個路段起始之間的虛擬連接。紅點標示路線的開端。綠點顯示兩個或更多路段的交會。
 elevation:
   ascent: 累積上升
   descent: 累積下降

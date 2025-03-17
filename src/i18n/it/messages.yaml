@@ -55,10 +55,6 @@ details:
       da waymarkedtrails a partire dalla relazione che potrebbe non essere sempre
       corretta. Per ulteriori informazioni su come waymarkedtrails ordina gli itinerari,
       visita le pagine di assistenza.
-    legend: I punti rossi segnano le estremità aperte di ogni segmento dell'itinerario.
-      I punti rossi con bordo nero indicano l'inizio dell'itinerario mentre i punti
-      rossi con bordo bianco la fine. Le linee rosse tratteggiate mostrano le connessioni
-      virtuali tra la fine di un segmento e l'inizio di quello successivo.
 elevation:
   ascent: Ascesa accumulata
   descent: Discesa accumulata

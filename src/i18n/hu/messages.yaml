@@ -57,10 +57,6 @@ details:
     disclaimer: Ez úgy mutatja az útvonalszakaszokat, ahogyan azokat a Waymarked Trails
       a kapcsolatból kiszámította, ami nem feltétlenül helyes. A súgó oldalon található
       további információ arról, hogy a Waymarked Trails hogyan rendezi sorba a kapcsolatokat.
-    legend: A vörös pont az útvonal egy-egy szakaszának nyitott végét jelöli. A fekete
-      körvonalú vörös pont az útvonal kezdetét, a fehér burkolatú vörös pont pedig
-      a végét jelzi. A vörös szaggatott vonal virtuális kapcsolat az egyik szakasz
-      vége és a következő szakasz kezdete között.
 elevation:
   ascent: Összesített emelkedés
   descent: Összesített ereszkedés

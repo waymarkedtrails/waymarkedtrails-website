@@ -55,7 +55,6 @@ details:
     title: 分析关系
     summary: 此关系有{num}个段。
     disclaimer: 这显示了waymarkedtrails根据关系计算出的路线段。请注意，关系角色和环岛目前尚未正确处理。请谨慎使用所提供的信息。
-    legend: 黑线表示路段。虚线是一条路段的末端和下一条路段的起点之间的虚拟连接。红点标记路线的开端。绿点表示两条或多条路段的交会处。
 elevation:
   ascent: 累计上坡
   descent: 累计下坡

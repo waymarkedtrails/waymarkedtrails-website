@@ -52,12 +52,6 @@ details:
       Isto mostra os segmentos de ruta tal e como foron calculados por rutas marcadas
       da relación, algo que non sempre é correcto. Para atopar máis información
       sobre como se ordenan as rutas, visite as páxinas de axuda.
-    legend: |-
-      Os puntos vermellos sinalan os extremos abertos de cada segmento da ruta. O punto vermello
-      co recadro negro marca o inicio da ruta e o
-      punto vermello coa carcasa branca indica o final. As liñas descontinuas vermellas amosan
-      as conexións virtuais entre o final dun segmento e o comezo do
-      seguinte.
 elevation:
   ascent: Ascenso acumulado
   descent: Descenso acumulado

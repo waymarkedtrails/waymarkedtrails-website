@@ -54,10 +54,6 @@ details:
       Hier werden die Routensegmente angezeigt, wie sie von waymarkedtrails
       aus der Relation berechnet wurden. Beachte, dass Relationsrollen und Kreisverkehre
       zurzeit nicht richtig behandelt werden. Verwende die angezeigten Informationen mit Vorsicht.
-    legend: |-
-      Schwarze Linien zeigen die Segmente. Die gestrichelten Linien sind die virtuellen
-      Verbindungen zwischen dem Ende eines Segments und dem Anfang des
-      nächsten. Rote Punkte markieren offene Enden der Route. Grüne Punkte zeigen, wo zwei oder mehr Segmente zusammentreffen.
 elevation:
   ascent: Kumulierter Anstieg
   descent: Kumulierter Abstieg
