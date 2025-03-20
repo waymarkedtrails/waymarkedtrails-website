@@ -52,6 +52,11 @@ details:
       Isto mostra os segmentos de ruta tal e como foron calculados por rutas marcadas
       da relación, algo que non sempre é correcto. Para atopar máis información
       sobre como se ordenan as rutas, visite as páxinas de axuda.
+    open_end: Final aberto na ruta.
+    multi_end: Neste punto conflúen máis de dous tramos do percorrido.
+    two_end: |-
+      Punto onde se interrompe a ruta porque a relación non está ordenada.
+      As liñas descontinuas vermellas indican onde continúa a ruta.
 elevation:
   ascent: Ascenso acumulado
   descent: Descenso acumulado

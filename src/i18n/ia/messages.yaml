@@ -23,6 +23,10 @@ details:
   subroutes_title: Sectiones
   superroutes_title: Parte de
   symbol: Symbolo
+  linear:
+    "yes": Le relation de iste itinerario es ordinate e in un sol pecia.
+    sorted: Le relation de iste itinerario es in un sol pecia ma su membros non es
+      ordinate.
   tags:
     key: clave
     title: Etiquettas de OpenStreetMap
@@ -40,8 +44,12 @@ details:
     title: Analysar relation
     summary: Iste relation ha {num} segmentos.
     disclaimer: Isto monstra le segmentos del itinerario que WaymarkedTrails ha computate
-      desde le relation. Nota ben que le rolos de relation e le rotundas non es gerite
-      correctemente in iste momento. Usa le information presentate con cura.
+      desde le relation, lo que pote non sempre esser correcte. Pro plus information
+      sur como WaymarkedTrails ordina le itinerarios, visita le paginas de adjuta.
+    open_end: Fin aperte in le itinerario.
+    multi_end: Plus de duo segmentos del itinerario se incontra in iste puncto.
+    two_end: Le puncto ubi le itinerario es interrumpite perque le relation non es
+      ordinate. Le lineas discontinue rubie monstra ubi le itinerario continua.
 elevation:
   ascent: Ascension accumulate
   descent: Descension accumulate

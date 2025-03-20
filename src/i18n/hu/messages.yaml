@@ -57,6 +57,10 @@ details:
     disclaimer: Ez úgy mutatja az útvonalszakaszokat, ahogyan azokat a Waymarked Trails
       a kapcsolatból kiszámította, ami nem feltétlenül helyes. A súgó oldalon található
       további információ arról, hogy a Waymarked Trails hogyan rendezi sorba a kapcsolatokat.
+    open_end: Az útvonal nyílt végpontja.
+    multi_end: Legalább három útvonalszakasz találkozási pontja.
+    two_end: Az útvonal megszakad ennél a pontnál, mert a kapcsolat nincs sorba rendezve.
+      A szaggatott vörös vonal mutatja az útvonal folytatódását.
 elevation:
   ascent: Összesített emelkedés
   descent: Összesített ereszkedés

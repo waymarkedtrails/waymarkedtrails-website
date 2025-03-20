@@ -50,9 +50,9 @@ details:
   analyze:
     title: Relatie analyseren
     summary: Deze relatie heeft {num} segment(en).
-    disclaimer: |-
-      Hier worden de routesegmenten weergegeven zoals ze zijn berekend door bewegwijzerde routes uit de relatie. Houd er rekening mee dat relatierollen en rotondes op dit moment niet goed afgehandeld worden. Gebruik de gepresenteerde informatie
-      met zorg.
+    disclaimer: Hier worden de routesegmenten weergegeven zoals ze zijn berekend door
+      bewegwijzerde routes uit de relatie, die niet altijd correct is. Voor meer informatie
+      over hoe WaymarkedTrails routes sorteert, bekijkt u de hulppagina’s.
 elevation:
   ascent: Totaal gestegen
   descent: Totaal gedaald

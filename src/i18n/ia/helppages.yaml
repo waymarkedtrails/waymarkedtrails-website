@@ -125,6 +125,21 @@ rendering:
         ele=<altitude>
 
     `tourism` e `information` es obligatori. `name` e `ele` pote esser omittite.
+route_order:
+  title: Ordination de itinerarios
+  text: |-
+    WaymarkedTrails require itinerarios ben ordinate pro monstrar le profilo de elevation e pro le discargamento de GPX e KML. Quando on analysa un itinerario, le systema tenta respectar tanto como possibile le ordine del vias membros in le relation, perque isto facilita que le cartographos influentia le ordinamento sin necessitate de facer tentativas repetite. Si un relation pare disordinate, WaymarkedTrails totevia ponera le vias in ordine, ma solmente si illos pote formar un itinerario linear sin interruption.
+
+    Le rolos de relationes es prendite in consideration in le ordinamento del itinerario. Le rolos `forward` e `backward` pote esser usate pro marcar sectiones ubi le itinerario debe esser sequite sur differente partes, dependente del direction. Non oblida que iste rolos es definite secundo le direction del via, non le itinerario! Si tu ha un tal section dividite, assecura te que le vias pro cata direction appare immediatemente consecutive in le relation e que illos seque le ordine del itinerario.
+
+    Omne altere rolos es considerate como camminos lateral de un forma o altere e es ignorate pro le ordinamento general del itinerario. Nonobstante, illos appare sur le carta.
+
+    WaymarkedTrails pote manipular rotundas non dividite in un itinerario. Simplemente adde le via claudite sin rolo, e le rotunda essera internemente dividite in sectiones appropriate. Isto functiona etiam quando existe un approche in forma de "V" al rotunda, que es dividite in `forward` e `backward`. Il ha duo casos ubi iste tractamento falle:
+
+    * Si, pro alcun ration, le rotunda ha essite dividite in multiple vias, tu _debe_ adder le partes con le rolos `forward` e `backward` appropriate.
+    * Si le rotunda face parte de un section directional, tu debe divider le rotunda e adder le parte usate con le rolo appropriate.
+
+    Regula general pro le ordinamento: si le editor de relationes JOSM monstra le itinerario como continue, alora WaymarkedTrails pote probabilemente monstrar un itinerario linear tamben.
 hierarchies:
   title: Hierarchias de relation
   text: |-
