@@ -68,6 +68,31 @@ function add_appendix_lengths(lengths, route) {
         }
 }
 
+function has_same_direction(way, ele) {
+    if (way.at(0) == way.at(-1)) {
+        const waysum = way.reduce(
+            function(acc, cur) {
+                return {sum: acc.sum + (cur[0] - acc.prev[0])*(cur[1] + acc.prev[1]),
+                        prev: cur}
+            },
+            {sum: 0, prev: way[0]}
+        ).sum;
+        const elesum = way.reduce(
+            function (acc, cur) {
+                return {sum: acc.sum + (cur.x - acc.prev.x)*(cur.y + acc.prev.y),
+                        prev: cur};
+            },
+            {sum: 0, prev: way[0]}
+        ).sum;
+        return (waysum <= 0) == (elesum <= 0);
+    }
+
+    const frontdiff = Math.hypot(way[0][0] - ele[0].x, way[0][1] - ele[0].y);
+    const backdiff = Math.hypot(way[0][0] - ele.at(-1).x, way[0][1] - ele.at(-1).y);
+
+    return frontdiff < backdiff;
+}
+
 function append_elevation_segments(segments, route, ele) {
     if (route.route_type === 'route') {
         for (const seg of route.main) {
@@ -92,13 +117,21 @@ function append_elevation_segments(segments, route, ele) {
             const wayele = ele[way.id];
             if (wayele) {
                 let usept = needfirst;
+                let posfunc;
+                if (has_same_direction(way.geometry.coordinates, wayele.elevation)) {
+                    posfunc = pos => way.start + pos;
+                } else {
+                    wayele.elevation.reverse();
+                    const elelen = wayele.elevation[0].pos;
+                    posfunc = pos => way.start + elelen - pos;
+                }
                 for (const pt of wayele.elevation) {
                     if (usept) {
                         current.push({
                             x: pt.x,
                             y: pt.y,
                             ele: pt.ele,
-                            pos: way.start + pt.pos
+                            pos: posfunc(pt.pos)
                         });
                     } else {
                         usept = true;
