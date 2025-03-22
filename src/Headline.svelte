@@ -7,17 +7,9 @@
     let { subleft, subright } = $props();
 
     let show_maplink_menu = $state(false);
-    let map_link_tail = $state('');
-
-    $effect(() => {
-        if (map_state.extent === false) {
-            map_link_tail = '';
-        } else {
-            map_link_tail = "#?map=" + map_state.zoom.toFixed(1)
-                            + '/' + map_state.center[1]
-                            + '/' + map_state.center[0];
-        }
-    });
+    const map_link_tail = $derived(map_state.extent
+        ? `#?map=${map_state.zoom.toFixed(1)}/${map_state.center[1]}/${map_state.center[0]}`
+        : '');
 
     const themes = ['hiking', 'cycling', 'mtb', 'skating', 'riding', 'slopes'];
 
