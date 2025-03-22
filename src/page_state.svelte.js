@@ -8,6 +8,10 @@ class PageState {
 
     show_page(page = '', params = []) {
         this.params = new Map(params);
+        if (page == this.page) {
+            // force a refresh of the page
+            this.page = '';
+        }
         this.page = page;
     }
 
