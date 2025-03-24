@@ -115,6 +115,21 @@ rendering:
         ele=<altitude>
 
     `tourism` en `information` zijn verplicht. `name` en `ele` mogen weggelaten worden.
+route_order:
+  title: Ordening van routes
+  text: |-
+    WaymarkedTrails heeft goed gesorteerde routes nodig om het hoogteprofiel te tonen en voor GPX- en KML-download. Bij het analyseren van een route wordt geprobeerd zoveel mogelijk de volgorde van lidwegen binnen de relatie te respecteren. Zo kan de volgorde beïnvloed worden zonder van alles te hoeven uitproberen. Als een relatie ongesorteerd lijkt, zal WaymarkedTrails de wegen toch in een volgorde zetten, maar alleen als de wegen een ononderbroken lineaire route kunnen vormen.
+
+    Relatierollen worden in aanmerking genomen bij het sorteren van de route. De rollen `forward` en `backward` kunnen worden gebruikt om op verschillende delen, afhankelijk van de richting, secties te markeren waar de route moet worden gevolgd. Vergeet niet dat deze rollen worden gedefinieerd ten opzichte van de richting van de weg, en niet van de route! Als u zo'n gesplitste sectie hebt, zorg er dan voor dat de wegen voor elke richting direct na elkaar in de relatie verschijnen en dat de wegen nog de volgorde van de route volgen.
+
+    Alle andere rollen worden beschouwd als zijpaden van de een of andere vorm en worden genegeerd voor de algemene sortering van de route. Wel verschijnen ze op de kaart.
+
+    WaymarkedTrails kan niet-gesplitste rotondes binnen een route verwerken. Als u de gesloten weg zonder rol toevoegt, wordt de rotonde intern gesplitst in de juiste secties. Dit werkt ook wanneer er een V-vormige toegangsweg is naar de rotonde die is gesplitst in `forward` en `backward`. Er zijn twee gevallen waarin deze afhandeling mislukt:
+
+    * als de rotonde om een of andere reden op meerdere manieren is gesplitst, dan _moet_ u de delen met de juiste rollen `forward` en `backward` toevoegen.
+    * Als de rotonde deel uitmaakt van een richtingsgedeelte, moet u de rotonde opsplitsen en het gebruikte deel toevoegen met de juiste rol.
+
+    Algemene vuistregel voor het ordenen: als de JOSM-relatie-editor de route als doorlopend weergeeft, dan zou ook WaymakedTrails een lineaire route moeten kunnen weergeven.
 hierarchies:
   title: Relatiehiërarchieën
   text: |-

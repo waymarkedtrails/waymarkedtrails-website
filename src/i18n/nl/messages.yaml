@@ -34,6 +34,10 @@ details:
   subroutes_title: Secties
   superroutes_title: Onderdeel van
   symbol: Symbool
+  linear:
+    "yes": De relatie voor deze route is gesorteerd en in één stuk.
+    sorted: De relatie voor deze route is één geheel, maar de leden zijn niet gesorteerd.
+    "no": Er zitten gaten of andere problemen in de relatie.
   tags:
     key: sleutel
     title: OpenStreetMaplabels
@@ -53,6 +57,11 @@ details:
     disclaimer: Hier worden de routesegmenten weergegeven zoals ze zijn berekend door
       bewegwijzerde routes uit de relatie, die niet altijd correct is. Voor meer informatie
       over hoe WaymarkedTrails routes sorteert, bekijkt u de hulppagina’s.
+    open_end: Open einde in de route.
+    multi_end: Op dit punt komen meer dan twee routesegmenten samen.
+    two_end: |-
+      Punt waar de route wordt onderbroken omdat de relatie niet is gesorteerd.
+      De rode stippellijnen geven aan waar de route verdergaat.
 elevation:
   ascent: Totaal gestegen
   descent: Totaal gedaald
