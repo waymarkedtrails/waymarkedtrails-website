@@ -35,9 +35,9 @@ details:
   superroutes_title: Onderdeel van
   symbol: Symbool
   linear:
-    "yes": De relatie voor deze route is gesorteerd en in één stuk.
+    "yes": De relatie voor deze route is gesorteerd en is één geheel.
     sorted: De relatie voor deze route is één geheel, maar de leden zijn niet gesorteerd.
-    "no": Er zitten gaten of andere problemen in de relatie.
+    "no": Er zitten onderbrekingen of andere problemen in de relatie.
   tags:
     key: sleutel
     title: OpenStreetMaplabels
@@ -54,13 +54,13 @@ details:
   analyze:
     title: Relatie analyseren
     summary: Deze relatie heeft {num} segment(en).
-    disclaimer: Hier worden de routesegmenten weergegeven zoals ze zijn berekend door
-      bewegwijzerde routes uit de relatie, die niet altijd correct is. Voor meer informatie
-      over hoe WaymarkedTrails routes sorteert, bekijkt u de hulppagina’s.
+    disclaimer: Hier worden de routesegmenten weergegeven zoals ze door WaymarkedTrails
+      zijn berekend, wat niet altijd correct is. Voor meer informatie over hoe WaymarkedTrails
+      routes sorteert, kun je de hulppagina’s raadplegen.
     open_end: Open einde in de route.
     multi_end: Op dit punt komen meer dan twee routesegmenten samen.
     two_end: |-
-      Punt waar de route wordt onderbroken omdat de relatie niet is gesorteerd.
+      Punt waar de route onderbroken is, omdat de relatie niet gesorteerd is.
       De rode stippellijnen geven aan waar de route verdergaat.
 elevation:
   ascent: Totaal gestegen
@@ -110,7 +110,7 @@ osmc_symbol:
   foreground_heading: Voorgrond
   preview: Tik een waarde voor osmc:symbol in het veld hieronder om te zien hoe het
     op de kaart getoond zal worden.
-  preview_heading: Voorbeeld
+  preview_heading: Resultaat
 routelist:
   loading: Bezig met laden…
   close: Sluiten
@@ -121,7 +121,7 @@ search:
   places: Plaatsen
   routes: Routes
   title: Zoeken
-  help: Gebruik trefwoorden om mee te zoeken. U kunt zoeken op namen van routes (bijv.
+  help: Gebruik trefwoorden om op te zoeken. Je kunt zoeken op namen van routes (bijv.
     Appalachian Trail, E2) of plaatsen (bijv. Berlijn).
 settings:
   base_map: Basiskaart
