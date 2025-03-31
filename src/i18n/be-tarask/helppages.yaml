@@ -99,6 +99,8 @@ rendering:
         ele=<altitude>
 
     «tourism» і «information» — абавязковыя. «name» і «ele» могуць адсутнічаць.
+route_order:
+  title: Парадкаваньне маршрутаў
 hierarchies:
   title: Герархія сувязяў
   text: |-

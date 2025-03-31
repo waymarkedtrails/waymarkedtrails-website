@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: A67-A67
+# Author: ABPMAB
 # Author: Danieldegroot2
 # Author: Dimitar
 # Author: Elderson
@@ -110,7 +111,7 @@ osmc_symbol:
   foreground_heading: Voorgrond
   preview: Tik een waarde voor osmc:symbol in het veld hieronder om te zien hoe het
     op de kaart getoond zal worden.
-  preview_heading: Resultaat
+  preview_heading: Voorvertoning
 routelist:
   loading: Bezig met laden…
   close: Sluiten
