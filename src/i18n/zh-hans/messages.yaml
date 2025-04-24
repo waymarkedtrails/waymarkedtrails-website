@@ -12,6 +12,7 @@
 # Author: Liuxinyu970226
 # Author: NeverBehave
 # Author: Qiyue2001
+# Author: TFX202X
 # Author: VulpesVulpes825
 # Author: Wzl19371
 # Author: Yfdyh000
@@ -38,6 +39,10 @@ details:
   subroutes_title: 部分
   superroutes_title: 一部分
   symbol: 符号
+  linear:
+    "yes": 这条路线的关系网已经整理好了，而且完好无损。
+    sorted: 这条路线的关系网是一体的，但成员没有排序。
+    "no": 关系网存在漏洞或其他问题。
   tags:
     key: 键
     title: OpenStreetMap 标签
@@ -54,7 +59,7 @@ details:
   analyze:
     title: 分析关系
     summary: 此关系有{num}个段。
-    disclaimer: 这显示了waymarkedtrails根据关系计算出的路线段。请注意，关系角色和环岛目前尚未正确处理。请谨慎使用所提供的信息。
+    disclaimer: 这表明了由waymarkedtrails根据关系计算出的路线段，这些可能并不总是准确。要了解更多关于waymarkedtrails如何排序路线的信息，请访问帮助页面。
 elevation:
   ascent: 累计上坡
   descent: 累计下坡
