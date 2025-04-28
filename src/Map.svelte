@@ -27,11 +27,15 @@
             }
         };
 
-        let stored_pos = localStorage.getItem('position');
-        if (stored_pos !== null) {
-            parse_coords(stored_pos);
+        let win = new WindowHash();
+
+        if (win.params.size === 0) {
+            let stored_pos = localStorage.getItem('position');
+            if (stored_pos !== null) {
+                parse_coords(stored_pos);
+            }
         }
-        new WindowHash().with_param('map', parse_coords);
+        win.with_param('map', parse_coords);
 
         return {center: [((center[0] + 180) % 360) - 180,
                          ((center[1] + 90) % 180) - 90],
