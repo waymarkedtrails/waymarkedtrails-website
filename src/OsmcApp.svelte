@@ -24,7 +24,8 @@
                          'triangle_line', 'triangle', 'triangle_turned',
                          'turned_T', 'upper', 'upper_bowl', 'x',
                          'hexagon', 'shell', 'shell_modern', 'hiker', 'wheel'];
-    const backgrounds = ['circle', 'frame', 'round'];
+    const backgrounds = ['circle', 'frame', 'round', 'stripe', 'bar',
+                         'diamond', 'diamond_line'];
 
     $effect(() =>  {
         if (!$isLoading) {
@@ -90,8 +91,8 @@
     }
 
     .main h2, .main p, .main table {
-        width: 95%;
-        max-width: 800pt;
+        width: 90%;
+        max-width: 600pt;
     }
 
     td {
@@ -105,14 +106,40 @@
     }
 
     .preview {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
         background: rgba(1,1,1,0.1);
         border: 1pt solid #999;
-        padding: 20px;
         margin-top: 10px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
+        width: 80%;
+        max-width: 600pt;
+
+    }
+
+    .preview h3 {
+        border: 1pt solid rgba(1,0.9,0.9,0.3);
+        padding: 3px;
+        margin: 0;
+        background: rgba(1,1,1,0.1);
+
+    }
+
+    .preview-content {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .preview-content img {
+        align-self: center
+    }
+
+    input {
+        width: 80%
+    }
+
+    .intro :global(pre) {
+        margin: 10px 25px;
+        padding: 3px;
+        background: rgba(255,255,255,0.7);
     }
 
     .preview * {
@@ -141,10 +168,30 @@
 
 <div class="main">
 
-{#if content}<p>{@html content['osmc'].text}</p>{/if}
+<h2>{$_('osmc_symbol.intro_header')}</h2>
+
+{#if content}
+  <p class="intro">{@html content['osmc'].text}
+  {@html content['osmc'].reference_footer}</p>
+{/if}
+
+<div class="preview">
+  <h3>{$_('osmc_symbol.preview_heading')}</h3>
+  <div class="preview-content">
+  <p>{$_('osmc_symbol.preview')}</p>
+  <label><tt>osmc:symbol = </tt><input type="text" width=150 bind:value={test_symbol} /></label>
+  {#if test_symbol}
+    <img src="{API_URL}/symbols/from_tags/NAT?osmc:symbol={encodeURIComponent(test_symbol)}" alt="result shield" width="80" height="80" />
+  {:else}
+    <img src="{MEDIA_URL}img/white.svg" alt="no symbol yet" width="80" height="80" />
+  {/if}
+  </div>
+</div>
 
 
-<h2>{$_('osmc_symbol.foreground_heading')}</h2>
+<h2>{$_('osmc_symbol.symbol_reference_heading')}</h2>
+
+<h3>{$_('osmc_symbol.foreground_heading')}</h3>
 <p>{$_('osmc_symbol.foreground')}</p>
 
 <table>
@@ -164,12 +211,12 @@
 </tbody>
 </table>
 
-<h2>{$_('osmc_symbol.background_heading')}</h2>
+<h3>{$_('osmc_symbol.background_heading')}</h3>
 <p>{$_('osmc_symbol.background')}</p>
 
 <table>
 <thead><tr>
-  {#each colors as color}<th>{color}_*</th>{/each}<th></th>
+  {#each colors as color}<th>{color}*</th>{/each}<th></th>
 </tr></thead>
 <tbody>
 <tr>
@@ -184,24 +231,11 @@
   {#each colors as color}
   <td><img alt="{color}_{bg}" src="{API_URL}/symbols/from_tags/NAT?osmc:symbol=:{color}_{bg}" /></td>
   {/each}
-  <td>*{bg}</td>
+  <td>*_{bg}</td>
 </tr>
 {/each}
 </tbody>
 </table>
-
-<h2>{$_('osmc_symbol.preview_heading')}</h2>
-<p>{$_('osmc_symbol.preview')}</p>
-
-
-<div class="preview">
-<tt>osmc:symbol = </tt><input type="text" width=150 bind:value={test_symbol} />
-{#if test_symbol}
-    <img src="{API_URL}/symbols/from_tags/NAT?osmc:symbol={encodeURIComponent(test_symbol)}" alt="result shield" width="50" height="50" />
-{:else}
-    <img src="{MEDIA_URL}img/white.svg" alt="no symbol yet" width="50" height="50" />
-{/if}
-</div>
 
 </div>
 

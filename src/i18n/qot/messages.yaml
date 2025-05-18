@@ -93,9 +93,11 @@ osmc_symbol:
     foregrounds that consist only of the name of the shape. The symbols for those
     are shown in the last column.
   foreground_heading: Foreground
+  intro_header: Overview
   preview: "Type an osmc:symbol value into the input field below\n     to see how\
     \ it will be rendered on the map."
   preview_heading: Preview
+  symbol_reference_heading: Full list of supported symbols
 routelist:
   loading: Loading...
   close: Close

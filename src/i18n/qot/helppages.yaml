@@ -203,18 +203,37 @@ hierarchies:
 osmc:
     title: The osmc:symbol tag
     text: |
-        The `osmc:symbol` tag provides a way to describe in a machine-readable way
-        route symbols in simple geometric shapes like they are found in some
-        European countries (and especially in Germany). The map only
-        supports a subset of what is described on the Wiki page. In order to
-        be rendered on the map, the tag must have the following format:
+        The `osmc:symbol` tag provides a way to describe route shields in
+        a machine-readable way. It is mainly meant for symbols that are
+        made up of simple geometric shapes. For a full description and
+        history of the tag, visit the
+        [osmc:symbol page](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)
+        on the OSM wiki. waymarkedtrails largely follows the syntag described
+        on the wiki page with some restrictions and extensions described here.
 
-            osmc:symbol=waycolor:background:foreground:text:textcolor
+        In order to
+        be rendered on the map, the tag must have one of the following formats:
 
-        `waycolor` must be there but is ignored for this map.
-        A second foreground is not supported. `text` and `textcolor` can
-        be omitted.
+            waycolor:background
+            waycolor:background:foreground
+            waycolor:background:foreground:foreground2
+            waycolor:background:foreground:foreground2:text:textcolor
+            waycolor:background:foreground:text:textcolor
 
+        The `waycolor` must always be present but is ignored for this map.
+        Furthermore you must specify a background, although you can leave
+        the field empty. Next follow a maximum of two different foregrounds.
+        In the end you may optionally add a small reference text to be added
+        on top. The color of the text must always be specified. Note that
+        waymarkedtrails will ignore reference texts when they become to long.
+        How long the text can be depends on the chosen backgrounds: the
+        hard limit is 4 characters, diamond-shaped background only take
+        a single charaters, stripe- and bar-shaped backgrounds take no
+        reference text at all.
+    reference_footer: |
+        You find the full list of colors and shapes that waymarkedtrails
+        can render in the reference below.
+    footer: |
         See the extra [osmc:symbol](osmc_symbols.html) tag page for a list of symbols that are
         supported by Waymarked Trails.
 
