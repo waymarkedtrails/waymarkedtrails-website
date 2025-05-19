@@ -19,7 +19,7 @@
                          'diamond_right', 'dot', 'drop', 'drop_line', 'fork',
                          'house', 'L', 'left', 'left_arrow', 'left_pointer',
                          'lower', 'right', 'pointer', 'rectangle_line',
-                         'rectangle', 'red_diamond', 'right_arrow',
+                         'rectangle', 'right_arrow',
                          'right_pointer', 'slash', 'stripe',
                          'triangle_line', 'triangle', 'triangle_turned',
                          'turned_T', 'upper', 'upper_bowl', 'x',
