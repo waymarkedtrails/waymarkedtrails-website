@@ -9,6 +9,7 @@
 # Author: Sabelöga
 # Author: Sendelbach
 # Author: Sturban
+# Author: Teaparty
 # Author: Tobulos1
 # Author: Warrakkk
 # Author: WikiPhoenix
@@ -35,6 +36,8 @@ details:
   website: Webbsida
   wikipedia: Wikipedia
   zoom_to: Visa på karta
+  analyze:
+    summary: Denna relation har {num} segment.
 elevation:
   ascent: Ackumulerad stigning
   descent: Ackumulerad nedstigning

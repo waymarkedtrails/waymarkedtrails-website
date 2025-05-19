@@ -96,10 +96,12 @@ osmc_symbol:
   background_heading: Sfondo
   examples: Esempi
   foreground_heading: In primo piano
+  intro_header: Panoramica
   preview: |-
     Digita un valore osmc:symbol nel campo di input sottostante
          per vedere come verrà visualizzato sulla mappa.
   preview_heading: Anteprima
+  symbol_reference_heading: Elenco completo dei simboli supportati
 routelist:
   loading: Caricamento...
   close: Chiudi
