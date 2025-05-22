@@ -4,6 +4,7 @@
 # Author: Aftabuzzaman
 # Author: Aishik Rehman
 # Author: Bellayet
+# Author: Nokib Sarkar
 # Author: Runab
 # Author: Wikisagnik
 # Author: আজিজ
@@ -32,7 +33,9 @@ help: মানচিত্র সম্পর্কে
 osmc_symbol:
   back: পিছনে
   examples: উদাহরণ
+  intro_header: একনজরে
   preview_heading: প্রাকদর্শন
+  symbol_reference_heading: সমর্থিত প্রতীকগুলির সম্পূর্ণ তালিকা
 routelist:
   loading: লোড হচ্ছে...
   title: রুট

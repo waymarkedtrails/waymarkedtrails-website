@@ -203,17 +203,37 @@ osmc:
   title: A etiqueta osmc:symbol
   text: |-
     A etiqueta `osmc:symbol` fornece un modo de describir dun xeito comprensíbel para a máquina
-    símbolos de rutas en formas xeométricas sinxelas coma se atopan nalgúns
-    países europeos (e especialmente en Alemaña). O mapa só
-    soporta un subconxunto de todo o que se describe na páxina do wiki. Co fin de
-    ser renderizada no mapa, a etiqueta debe seguir o seguinte formato:
+    os sinais de tráfico. Está pensada principalmente para os símbolos que están
+    feitos de formas xeométricas sinxelas. Para obter unha descrición completa e
+    a historia da etiqueta, visite a
+    [páxina osmc:symbol](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)
+    no wiki do OSM. waymarkedtrails segue en gran medida a sintaxe de etiquetas descrita
+    na páxina do wiki, con algunas restricións e extensións descritas aquí.
 
-        osmc:symbol=waycolor:background:foreground:text:textcolor
+    Co fin de
+    ser renderizada no mapa, a etiqueta debe seguir un dos seguintes formatos:
 
-    O mapa ignora `waycolor`, pero debe estar aí. Un segundo `foreground` non está soportado. `text` e `textcolor` pódense
-    omitir.
+        waycolor:background
+        waycolor:background:foreground
+        waycolor:background:foreground:foreground2
+        waycolor:background:foreground:foreground2:text:textcolor
+        waycolor:background:foreground:text:textcolor
 
-    Consulte a páxina da etiqueta [osmc:symbol](osmc_symbols.html) para ver a lista de símbolos que están soportados por Waymarked Trails.
+    O mapa ignora `waycolor`, pero debe estar presente.
+    Ademais, cómpre especificar un fondo, pero o campo pode
+    quedar baleiro. Deseguido, un máximo de dous primeiros planos diferentes.
+    Ao final, pode engadir de xeito opcional un pequeno texto de referencia para
+    amosar na parte superior. É obrigatorio indicar a cor do texto. Teña en conta que
+    waymarkedtrails ignorará os textos de referencia que sexan demasiado longos.
+    A lonxitude máxima do texto dependerá do fondo elixido: o
+    límite fixo son 4 caracteres, os fondos con forma de diamante só aceptan
+    un único carácter e os fondos con raias e barras non aceptan ningún
+    texto de referencia.
+  reference_footer: |-
+    Atopará a lista completa de cores e formas que waymarkedtrails
+    pode renderizar na seguinte referencia.
+  footer: Consulte a páxina de etiquetas [osmc:symbol](osmc_symbols.html) para obter
+    unha lista dos símbolos que non son compatibles con Waymarked Trails.
 hikinglocal:
   title: Renderización local
   text: |-

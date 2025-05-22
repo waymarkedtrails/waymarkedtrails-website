@@ -8,6 +8,7 @@
 # Author: Piano1forte2
 # Author: Reedy
 # Author: Shirayuki
+# Author: Wheelygay
 ---
 about:
   title: About the map
@@ -177,6 +178,12 @@ osmc:
     be omitted. There is a
     [list of foreground and background symbols rendered in this map](osmc_legende)
     available.
+  reference_footer: |-
+    You find the full list of colours and shapes that waymarkedtrails
+    can render in the reference below.
+  footer: |-
+    See the extra [osmc:symbol](osmc_symbols.html) tag page for a list of symbols that are
+    supported by Waymarked Trails.
 hikinglocal:
   title: Localised rendering
   text: |-

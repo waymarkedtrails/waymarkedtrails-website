@@ -52,7 +52,9 @@ osmc_symbol:
   background_heading: Hannergrond
   examples: Beispiller
   foreground_heading: Vierdergrond
+  intro_header: Iwwersiicht
   preview_heading: Kucken ouni ze späicheren
+  symbol_reference_heading: Vollstänneg Lëscht vun ënnerstëtzte Symboler
 routelist:
   loading: Lueden...
   close: Zoumaachen

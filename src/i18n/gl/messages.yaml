@@ -98,15 +98,17 @@ osmc_symbol:
     Isto amósase na primeira fila.
   background_heading: Fondo
   examples: Exemplos
-  foreground: O símbolo da fronte está formado por unha cor e unha forma ligadas por
-    un guión baixo. A táboa de abaixo amosa tódalas combinacións recoñecidas por este
-    sitio. Tamén recoñece frontes que formadas só polo nome da forma. Os símbolos
+  foreground: O símbolo do primeiro plano está formado por unha cor e unha forma ligadas
+    por un guión baixo. A táboa de abaixo amosa tódalas combinacións recoñecidas por
+    este sitio. Tamén recoñece frontes que formadas só polo nome da forma. Os símbolos
     para estes amósanse na última columna.
   foreground_heading: Primeiro plano
+  intro_header: Vista xeral
   preview: |-
     Escriba un valor osmc:symbol no campo de entrada
           para ollar de que xeito se representará no mapa.
   preview_heading: Vista previa
+  symbol_reference_heading: Lista completa de símbolos compatibles
 routelist:
   loading: Cargando...
   close: Pechar
