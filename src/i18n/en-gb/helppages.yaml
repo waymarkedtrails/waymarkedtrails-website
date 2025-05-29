@@ -181,9 +181,6 @@ osmc:
   reference_footer: |-
     You find the full list of colours and shapes that waymarkedtrails
     can render in the reference below.
-  footer: |-
-    See the extra [osmc:symbol](osmc_symbols.html) tag page for a list of symbols that are
-    supported by Waymarked Trails.
 hikinglocal:
   title: Localised rendering
   text: |-
