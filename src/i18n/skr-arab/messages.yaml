@@ -25,6 +25,7 @@ help: نقشے بارے
 osmc_symbol:
   back: پچھوں
   examples: مثالاں
+  intro_header: اُتلی نظر
 routelist:
   close: بند کرو
   title: رستے
