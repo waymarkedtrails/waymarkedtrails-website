@@ -161,13 +161,34 @@ hierarchies:
 osmc:
   title: Le tag osmc:symbol
   text: |-
-    Le etiquetta `osmc:symbol` forni un modo de describer in un modo legibile per machina symbolos de route in formas geometric simple como illos se trova in alcun paises europee (particularmente in Germania). Le carta solmente supporta un parte de lo que es describite sur le pagina wiki. Pro esser rendite sur le carta, le etiquetta debe haber le formato sequente:
+    Le etiquetta `osmc:symbol` forni un methodo pro describer insignias de
+    itinere in un maniera legibile per machinas. Illo es principalmente
+    destinate a symbolos componite de simple formas geometric. Pro un
+    description complete e un historia del etiquetta, visita le
+    [pagina osmc:symbol](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)
+    sur le wiki de OSM. Waymarkedtrails generalmente seque le syntaxe
+    describite sur le pagina wiki, con alcun restrictiones e extensiones
+    describite hic.
 
-        osmc:symbol=waycolor:background:foreground:text:textcolor
+    A fin de esser rendite sur le carta, le etiquetta debe haber un del
+    sequente formatos:
 
-    `waycolor` debe esser presente ma es ignorate pro iste carta. Un secunde color de prime plano non es supportate. `text` e `textcolor` pote esser omittite.
+        colordelvia:fundo
+        colordelvia:fundo:primeplano
+        colordelvia:fundo:primeplano:primeplano2
+        colordelvia:fundo:primeplano:primeplano2:texto:colordeltexto
+        colordelvia:fundo:primeplano:texto:colordeltexto
 
-    Vide le pagina de etiquettas extra [osmc:symbol](osmc_symbols.html) pro un lista de symbolos supportate per Waymarked Trails.
+    Le `colordelvia` debe sempre esser presente ma es ignorate pro iste
+    carta. Etiam es obligatori specificar un fundo, ma tu pote lassar le
+    campo vacue. Post isto seque un maximo de duo differente prime planos.
+    Al fin tu pote adjunger optionalmente un curte texto de referentia que
+    essera inserite al initio. Le color del texto debe sempre esser
+    specificate. Nota que Waymarkedtrails ignora le textos de referentia
+    troppo longe. Quanto longe le texto pote esser depende del fundos
+    eligite: le limite dur es 4 characteres, fundos in forma de diamante
+    accepta solmente un singule character, fundos in forma de banda o
+    barra non accepta alcun texto de referentia.
 hikinglocal:
   title: Rendition localisate
   text: |-

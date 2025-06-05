@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Cquoi
 # Author: Crochet.david
+# Author: Derugon
 # Author: Dittograp
 # Author: Gomoko
 # Author: Hpetit
@@ -45,6 +46,9 @@ details:
   superroutes_title: Partie de
   symbol: Symbole
   linear:
+    "yes": La relation pour cet itinéraire est triée et en une seule partie.
+    sorted: La relation pour cet itinéraire est en une seule partie, mais ses membres
+      ne sont pas triés.
     "no": La relation comporte des trous ou a d'autres problèmes.
   tags:
     key: clé
@@ -62,10 +66,15 @@ details:
   analyze:
     title: Analyser la relation
     summary: Cette relation a {num} segments.
-    disclaimer: Ceci montre les segments d'itinéraire tels qu'ils ont été calculés
-      par waymarkedtrails à partir de la relation. Sachez que les rôles de la relation
-      et les ronds-points ne sont pas gérés correctement pour le moment. Utilisez
-      les informations présentées avec précaution.
+    disclaimer: |-
+      Ceci montre les segments d’itinéraire tels qu’ils ont été calculés par waymarkedtrails
+      à partir de la relation, qui peut ne pas troujours être correcte. Pour plus d’informations
+      sur la façon dont waymarkedtrails trie les itinéraires, consultez les pages d’aide.
+    open_end: Fin ouverte dans l’itinéraire.
+    multi_end: Plus de deux segments de l’itinéraire se rejoignent en ce point.
+    two_end: |-
+      Point où l’itinéraire est interrompu car la relation n’est pas triée.
+      Les lignes pointillées rouges indiquent où l’itinéraire continue.
 elevation:
   ascent: Montée cumulée
   descent: Descente cumulée
@@ -113,10 +122,12 @@ osmc_symbol:
     par ce site. Il reconnaît aussi les premiers plans constitués uniquement d’un
     nom de forme. Les symboles pour celles-ci sont affichés dans la dernière colonne.
   foreground_heading: Premier plan
+  intro_header: Vue d’ensemble
   preview: |-
     Saisir une valeur osmc:symbol dans le champ de saisie ci-dessous
          pour voir comment il sera rendu sur la carte.
   preview_heading: Aperçu
+  symbol_reference_heading: Liste complète des symboles pris en charge
 routelist:
   loading: Chargement...
   close: Fermer

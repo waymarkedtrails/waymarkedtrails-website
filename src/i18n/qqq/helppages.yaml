@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Liuxinyu970226
+# Author: McDutchie
 # Author: Shirayuki
 # Author: Siebrand
 # Author: Verdy p
@@ -37,7 +38,7 @@ osmc:
   title: '{{doc-important|Do not translate the name of tags like "osmc:symbol".}}'
   text: |-
     {{doc-markdown}}
-    {{doc-important|Do not translate the name of tags like "network".}}
+    {{doc-important|Do not translate the name of tags like "osmc:symbol".}}
 hikinglocal:
   swiss: |-
     {{doc-markdown}}

@@ -10,6 +10,7 @@
 # Author: Green Zero
 # Author: Ice bulldog
 # Author: Ignatgg
+# Author: Mike140
 # Author: Movses
 # Author: Olvin
 # Author: Piramidion
@@ -37,6 +38,10 @@ details:
   subroutes_title: Розділи
   superroutes_title: Частина
   symbol: Символ
+  linear:
+    "yes": Зв'язок для цього маршруту відсортований і цілий.
+    sorted: Зв'язок для цього маршруту є цілим, але члени зв'язку не відсортовані.
+    "no": У зв'язку є прогалини або інші проблеми.
   tags:
     key: ключ
     title: Теґи OpenStreetMap
@@ -50,6 +55,17 @@ details:
   website: Веб-сайт
   wikipedia: Вікіпедія
   zoom_to: Показати на мапі
+  analyze:
+    title: Аналіз зв'язку
+    summary: Цей зв'язок має {num} сегментів.
+    disclaimer: |-
+      Тут показано сегменти маршруту, як вони були обчислені за допомогою waymarkedtrails
+      зі зв'язку, який може бути не завжди правильним. Щоб отримати додаткову інформацію про те, як waymarkedtrails сортує маршрути, відвідайте сторінки довідки.
+    open_end: Відкрити кінець маршруту.
+    multi_end: У цій точці зустрічаються більше двох сегментів маршруту.
+    two_end: |-
+      Точка, де маршрут переривається, оскільки зв'язок не відсортований.
+      Червоні пунктирні лінії показують, де маршрут продовжується.
 elevation:
   ascent: Сукупний підйом
   descent: Сукупний спуск
@@ -66,6 +82,8 @@ error:
   missing_id: Відсутній параметр «id».
   missing_query: Відсутній параметр «query».
   panel_title: Помилка
+  object_not_found: Об'єкт не знайдено.
+  api_unavailable: API недоступний.
 headline:
   last_update: Останнє оновлення
 help: Про мапу
@@ -94,9 +112,11 @@ osmc_symbol:
     розпізнає тло, яке складається лише з назви форми. Відповідні символи показано
     в останньому стовпці.
   foreground_heading: Передній план
+  intro_header: Огляд
   preview: Заповніть поле нижче значенням для "osmc:symbol" щоб побачити як буде відображатися
     на мапі.
   preview_heading: Попередній перегляд
+  symbol_reference_heading: Повний список підтримуваних символів
 routelist:
   loading: Завантаження…
   close: Закрити

@@ -5,6 +5,7 @@
 # Author: Boniface
 # Author: Cquoi
 # Author: Damouns
+# Author: Derugon
 # Author: Gomoko
 # Author: JB
 # Author: Mahabarata
@@ -115,18 +116,19 @@ rendering:
     Le libellé pour chaque trajet est « deviné » d’après les balises, dans l’ordre suivant :
 
     1. Vérifier les [règles de rendu locales](#help-hikinglocal) existantes.
-    2. Essayer d’interpréter la balise `osmc:symbol`. Pour plus de détails sur quelles parties
-        sont reconnues, voir [Règles de rendu de `osmc:symbol`](osmc_symbols.html).
+    2. Essayer d’interpréter la balise `osmc:symbol`. Pour plus de détails sur
+       quelles parties sont reconnues, voir les [règles de rendu de `osmc:symbol`](osmc_symbols.html).
     3. Si une balise `ref` existe, créer un libellé texte avec la balise `ref`.
-    4. Si une balise `name` existe, en déduire une référence, d’abord en utilisant uniquement
-        les lettres majuscules, sinon en utilisant les premières lettres du nom.
+    4. Si une balise `name` existe, en déduire une référence, d’abord en utilisant
+       uniquement les lettres majuscules, sinon en utilisant les premières lettres
+       du nom.
     5. Abandonner.
   labels: |-
     Le libellé de chaque trajet est « deviné » à partir des balises dans l’ordre suivant :
 
     1. Si une balise `ref` existe, créer un libellé texte avec la balise `ref`.
-    2. Si une balise `name` existe, en déduire une référence, d’abord en utilisant uniquement
-        les lettres majuscules, sinon en utilisant les premières lettres du nom.
+    2. Si une balise `name` existe, en déduire une référence, d’abord en utilisant
+       uniquement les lettres majuscules, sinon en utilisant les premières lettres du nom.
     3. Abandonner.
   hierarchy: La carte prend également en charge les [hiérarchies de relations](#help-hierarchies).
   guideposts: |-
@@ -139,6 +141,47 @@ rendering:
         ele=<altitude>
 
     `tourism` et `information` sont obligatoires. `name` et `ele` peuvent être omis.
+route_order:
+  title: Ordre des itinéraires
+  text: |-
+    waymarkedtrails a besoin d’itinéraires correctement triés pour
+    afficher le profil d’altitude et pouvoir télécharger des fichiers GPX
+    et KML. Lors de l’analyse d’un itinéraire, il s’efforce de respecter
+    autant que possible l’ordre des chemins membres au sein de la relation,
+    afin d’aider les cartographes à influencer cet ordre sans avoir
+    à procéder par tâtonnements. Si une relation semble non triée,
+    waymarkedtrails triera tout de même les chemins si et seulement
+    s’ils forment un itinéraire linéaire continu.
+
+    Les rôles des relations sont pris en compte lors du tri de l’itinéraire.
+    Les rôles `forward` et `backward` permettent de marquer les sections
+    où l’itinéraire doit être suivi en parties différentes selon la
+    direction. N’oubliez pas que ces rôles sont définis par rapport
+    à la direction du chemin, pas de l’itinéraire ! Si vous avez une
+    section divisée par rapport à ce dernier, assurez-vous que les chemins
+    de chaque direction apparaissent directement les uns après les autres
+    dans la relation et qu’ils suivent toujours l’ordre de l’itinéraire.
+
+    Tout autre rôle est considéré comme un chemin secondaire,
+    sous une forme ou une autre, et est ignoré lors du tri général
+    de l’itinéraire. Il apparaît toutefois toujours sur la carte.
+
+    waymarkedtrails est capable de gérer les ronds-points non divisés
+    au sein d'un itinéraire. Ajoutez simplement le chemin fermé sans
+    aucun rôle et le rond-point sera divisé en sections appropriées.
+    Ceci fonctionne même avec une approche en V du rond-point, divisée
+    en avant et en arrière. Il existe deux cas où cette gestion échoue :
+
+    * si, pour une raison quelconque, le rond-point a été divisé
+      en plusieurs parties, alors vous _devez_ ajouter les parties
+      avec les rôles `forward` et `backward` appropriés.
+    * si le rond-point fait partie d’une section directionnelle, vous
+      devez diviser le rond-point et ajouter la partie utilisée avec
+      le rôle approprié.
+
+    Règle générale pour le classement : si l’éditeur de relations JOSM
+    affiche l’itinéraire comme continu, alors waymakedtrails devrait
+    pouvoir afficher également un itinéraire linéaire.
 hierarchies:
   title: Hiérarchies de relations
   text: |-
