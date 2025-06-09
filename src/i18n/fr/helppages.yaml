@@ -204,20 +204,42 @@ hierarchies:
 osmc:
   title: La balise `osmc:symbol`
   text: |-
-    La balise `osmc:symbol` permet de décrire de manière lisible par une machine
-    des symboles d’itinéraire aux formes géométriques simples comme on en trouve
-    dans certains pays européens (et notamment en Allemagne). La carte ne prend
-    en charge qu’un sous-ensemble de ce qui est décrit sur la page Wiki. Afin
-    d’être rendu sur la carte, la balise doit avoir le format suivant :
+    La balise `osmc:symbol` permet de décrire des panneaux d’itinéraire de
+    manière lisible par une machine. Elle est principalement destinée aux
+    symboles composés de formes géométriques simples. Pour une description
+    complète et un historique de la balise, consultez la
+    [page osmc:symbol](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)
+    sur le wiki d’OSM. waymarkedtrails suit en grande partie la syntaxe
+    décrite sur la page du wiki, avec les quelques restrictions et
+    extensions décrites ci-dessous.
 
-        osmc:symbol=waycolor:background:foreground:text:textcolor
+    Pour être affichée sur la carte, la balise doit avoir l’un des formats
+    suivants :
 
-    `waycolor` doit être présent mais est ignoré pour cette carte.
-    Une deuxième couleur de premier plan n’est pas pris en charge.
-    `text` et `textcolor` peuvent être omis.
+        waycolor:background
+        waycolor:background:foreground
+        waycolor:background:foreground:foreground2
+        waycolor:background:foreground:foreground2:text:textcolor
+        waycolor:background:foreground:text:textcolor
 
-    Voir la page de balises [`osmc:symbol`](osmc_symbols.html) pour une liste de symboles
-    qui sont pris en charge par Waymarked Trails.
+    La couleur du chemin (`waycolor`) doit toujours être présente, mais est
+    ignorée pour cette carte. De plus, vous devez spécifier un arrière-plan
+    (`background`), mais vous pouvez laisser ce champ vide. Ensuite, vous
+    pouvez choisir au maximum deux premiers plans (`foreground`) différents.
+    Enfin, vous pouvez éventuellement ajouter un petit texte de référence
+    (`text`) à ajouter au-dessus. La couleur du texte (`textcolor`) doit
+    toujours être spécifiée. Notez que waymarkedtrails ignorera les textes
+    de référence lorsqu’ils seront trop longs. La longueur du texte peut
+    dépendre des arrière-plans choisis : sa limite stricte est de 4
+    caractères, les arrière-plans en forme de losange ne prennent qu'un
+    seul caractère, ceux en forme de bande et de barre ne prennent aucun
+    texte de référence.
+  reference_footer: |-
+    Vous trouverez la liste complète des couleurs et des formes que
+    waymarkedtrails peut afficher sur la référence ci-dessous.
+  footer: |-
+    Consultez la page de la balise supplémentaire [osmc:symbol](osmc_symbols.html)
+    pour obtenir une liste des symboles pris en charge par Waymarked Trails.
 hikinglocal:
   title: Rendu localisé
   text: |-
