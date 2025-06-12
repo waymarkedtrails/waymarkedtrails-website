@@ -14,6 +14,7 @@ attribution:
   elevation_title: højdedata af [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Flere detaljer
+  no_data: Ingen destinationsoplysninger tilgængelige for denne vejviser.
   title: Destinationer
 details:
   GPX: GPX
@@ -24,20 +25,37 @@ details:
   note: Melding
   official_len: Officiel længde
   operator: Ansvarlig
+  route_symbol: Rutesymbol
   subroutes_title: Sektioner
   superroutes_title: Del af
+  symbol: Symbol
+  linear:
+    "yes": Relationen for denne rute er sorteret og i ét stykke.
+    sorted: Relationen for denne rute er i ét stykke, men medlemmerne er ikke sorteret.
+    "no": Relationen har huller eller andre problemer.
   tags:
+    key: nøgle
     title: OpenStreetMap-tags
     value: Værdi
   type:
+    guidepost: Vejviser
     node: Punkt
     relation: Relation
     way: Linjestreng
+    wayset: Linjestrengssæt
   website: Hjemmeside
   zoom_to: Vis på kort
   analyze:
     title: Analyser relation
     summary: Denne relation har {num} segmenter.
+    disclaimer: Dette viser rutesegmenterne, som de blev beregnet af waymarkedtrails
+      ud fra relationen, hvilket ikke altid er korrekt. Få mere information om, hvordan
+      waymarkedtrails sorterer ruter ved at besøg hjælpesiderne.
+    open_end: Åben ende i ruten.
+    multi_end: Mere end to segmenter af ruten mødes på dette punkt.
+    two_end: |-
+      Punkt, hvor ruten afbrydes, fordi relationen ikke er sorteret.
+      De røde stiplede linjer viser, hvor ruten fortsætter.
 elevation:
   ascent: Samlet stigning
   descent: Samlet fald
@@ -45,18 +63,33 @@ elevation:
     altitude: Højde (m)
     distance: Afstand (km)
   title: Højdeprofil
+  total: Samlet opstigning/nedstigning
   unavailable: Ingen højdedata fundet.
   warn_unsorted: Rute er muligvis ikke ordnet eller ufuldstændig. Elevationinformation
     kan være upræcis.
 error:
   load_error: Fejl ved forbindelse til server.
+  missing_id: Manglende parameter 'id'.
+  missing_query: Manglende parameter 'query'.
   panel_title: Fejl
+  object_not_found: Objekt ikke fundet.
+  api_unavailable: API ikke tilgængelig.
 headline:
   last_update: Sidst opdateret
 help: Om kortet
 locate_me: Find mig
 network:
+  continental: Kontinentale ruter
   downhill: nedad
+  national: Nationale ruter
+  node: Knudenetværksforbindelser
+  nordic: Langrend
+  other: Andre ruter
+  regional: Regionale ruter
+  skitour: Skiture
+  sled: Kælkepiste
+  sleigh: Slædepiste
+  winter_hike: Vintervandring
 osmc_symbol:
   back: Tilbage
   background: Baggrunden virker på samme måde. Den består også af en farve og en form.
@@ -69,9 +102,11 @@ osmc_symbol:
     genkender også forgrunde, som kun består af navnet på formen. Symbolerne for disse
     vises i den sidste kolonne.
   foreground_heading: Forgrund
+  intro_header: Oversigt
   preview: Indtast en osmc:symbol værdi i indtastningsfeltet nedenfor for at se, hvordan
     det vil blive vist på kortet.
   preview_heading: Forhåndsvisning
+  symbol_reference_heading: Fuld liste over understøttede symboler
 routelist:
   loading: Indlæser...
   close: Luk
@@ -94,10 +129,17 @@ settings:
   transparency: Kortets gennemsigtighed
 site_description:
   cycling: Lokale og langdistance cykelruter, med kort og information fra OpenStreetMap.
+  hiking: Lokale og langdistance cykelruter med kort og information fra OpenStreetMap.
+  mtb: Mountainbikeruter (MTB) med kort og information fra OpenStreetMap.
+  riding: Rideruter med kort og information fra OpenStreetMap.
+  skating: Inline-skating-ruter med kort og information fra OpenStreetMap.
+  slopes: Vintersportspister, alpint skiløb, langrend, vintervandring, med kort og
+    information fra OpenStreetMap.
 site_title:
   cycling: Cykling
   hiking: Vandreruter
   mtb: Mountainbike
+  osmc_symbol: osmc:symbol-tagget
   riding: Ridning
   skating: Inline-skating
   slopes: Vintersportskråninger
