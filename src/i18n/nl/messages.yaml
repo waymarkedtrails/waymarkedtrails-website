@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: A67-A67
 # Author: ABPMAB
+# Author: Baggeraar
 # Author: Danieldegroot2
 # Author: Dimitar
 # Author: Elderson
@@ -109,6 +110,7 @@ osmc_symbol:
     voorgrondsymbolen die alleen een vormnaam hebben worden herkend. De laatste kolom
     toont die symbolen.
   foreground_heading: Voorgrond
+  intro_header: Overzicht
   preview: Tik een waarde voor osmc:symbol in het veld hieronder om te zien hoe het
     op de kaart getoond zal worden.
   preview_heading: Voorvertoning
