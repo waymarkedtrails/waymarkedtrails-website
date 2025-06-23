@@ -107,9 +107,11 @@ osmc_symbol:
     kombinációt mutatja. Az olyan előtereket is felismeri, amelyek csak az alakzat
     nevéből állnak. Ezek szimbólumai az utolsó oszlopban láthatók.
   foreground_heading: Előtér
+  intro_header: Áttekintés
   preview: Az alábbi beviteli mezőben adjon megy egy osmc:symbol értéket, hogy lássa,
     hogyan fog megjelenni a térképen.
   preview_heading: Előnézet
+  symbol_reference_heading: A támogatott szimbólumok teljes listája
 routelist:
   loading: Betöltés…
   close: Bezárás

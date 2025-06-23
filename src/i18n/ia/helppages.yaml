@@ -189,6 +189,10 @@ osmc:
     eligite: le limite dur es 4 characteres, fundos in forma de diamante
     accepta solmente un singule character, fundos in forma de banda o
     barra non accepta alcun texto de referentia.
+  reference_footer: Le lista complete de colores e formas que WaymarkedTrails pote
+    render se trova in le referentia infra.
+  footer: Vide le pagina supplementari de etiquettas [osmc:symbol](osmc_symbols.html)
+    pro un lista de symbolos supportate per WaymarkedTrails.
 hikinglocal:
   title: Rendition localisate
   text: |-

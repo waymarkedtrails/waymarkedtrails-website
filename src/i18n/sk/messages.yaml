@@ -40,7 +40,7 @@ details:
     way: Cesta
     wayset: Nastavenie cesty
   website: Webová stránka
-  wikipedia: Wikipedia
+  wikipedia: Wikipédia
   zoom_to: Zobraziť na mape
 elevation:
   ascent: Akumulovaný výstup
@@ -58,6 +58,8 @@ error:
   missing_id: Chýbajúci parameter "id".
   missing_query: Chýbajúci parameter "query".
   panel_title: Chyba
+  object_not_found: Objekt sa nenašiel.
+  api_unavailable: API nie je k dispozícii.
 headline:
   last_update: Posledná aktualizácia
 help: O mape
@@ -83,9 +85,11 @@ osmc_symbol:
   foreground: Popredie sa skladá z farby a tvaru . Tabuľka nižšie ukazuje všetky dostupné
     kombinácie.
   foreground_heading: Popredie
+  intro_header: Prehľad
   preview: Zadajte hodnotu osmc:symbol do políčka nižšie pre náhľad, ako to bude vyzerať
     na mape.
   preview_heading: Náhľad
+  symbol_reference_heading: Úplný zoznam podporovaných symbolov
 routelist:
   loading: Načítava sa...
   close: Zavrieť

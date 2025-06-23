@@ -27,6 +27,7 @@ details:
     "yes": Le relation de iste itinerario es ordinate e in un sol pecia.
     sorted: Le relation de iste itinerario es in un sol pecia ma su membros non es
       ordinate.
+    "no": Le relation ha lacunas o altere problemas.
   tags:
     key: clave
     title: Etiquettas de OpenStreetMap
@@ -96,10 +97,12 @@ osmc_symbol:
     que iste sito recognosce. Le sito recognosce etiam prime planos que consiste solmente
     del nomine del forma. Le symbolos pro illos appare in le ultime columna.
   foreground_heading: Prime plano
+  intro_header: Vista general
   preview: |-
     Insere un valor osmc:symbol in le campo de entrata infra
          pro vider como illo apparera sur le carta.
   preview_heading: Previsualisar
+  symbol_reference_heading: Lista complete de symbolos supportate
 routelist:
   loading: Cargamento…
   close: Clauder
