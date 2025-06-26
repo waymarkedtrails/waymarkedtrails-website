@@ -27,6 +27,11 @@ details:
   subroutes_title: Ενότητες
   superroutes_title: Μέρος του
   symbol: Σύμβολο
+  linear:
+    "yes": Η σχέση αυτής της διαδρομής είναι ταξινομημένη και ακέραια.
+    sorted: Η σχέση αυτής της διαδρομής είναι ακέραια, αλλά τα μέλη της δεν είναι
+      ταξινομημένα.
+    "no": Η σχέση έχει τρύπες ή άλλα ζητήματα.
   tags:
     key: κλειδί
     title: ετικέτες OpenStreetMap
@@ -41,6 +46,9 @@ details:
   analyze:
     title: Ανάλυση σχέσης
     summary: Αυτή η σχέση έχει {num} τμήματα.
+    open_end: Ανοιχτό τέρμα στην διαδρομή.
+    multi_end: Περισσότερα από δύο τμήματα αυτής της διαδρομής συναντιούνται σε αυτό
+      το σημείο.
 elevation:
   ascent: Συσσωρευμένη άνοδος
   descent: Συσσωρευμένη κάθοδος
@@ -75,10 +83,12 @@ osmc_symbol:
   background_heading: Φόντο
   examples: Παραδείγματα
   foreground_heading: Προσκήνιο
+  intro_header: Επισκόπηση
   preview: |-
     Γράψτε μια τιμή για το osmc:symbol στο πεδίο από κάτω
          για να δείτε πως θα απεικονιστεί στον χάρτη.
   preview_heading: Προεπισκόπηση
+  symbol_reference_heading: Πλήρης λίστα υποστηριζόμενων συμβόλων
 routelist:
   loading: Φόρτωση...
   close: Κλείσιμο

@@ -6,6 +6,7 @@
 # Author: Imperadeiro98
 # Author: Luckas
 # Author: Malafaya
+# Author: O andras
 # Author: Rsbarbosa
 # Author: Ruila
 # Author: Vitorvicentevalente
@@ -50,8 +51,8 @@ headline:
 help: Sobre o mapa
 locate_me: Localizar-me
 network:
-  downhill: downhill
-  node: ligações de rede do nó
+  downhill: Downhill
+  node: Ligações da rede de nós
 osmc_symbol:
   back: Retroceder
   background: O fundo funciona de maneira parecida. Também contém uma cor e uma forma.

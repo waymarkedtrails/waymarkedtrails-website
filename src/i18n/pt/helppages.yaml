@@ -5,6 +5,7 @@
 # Author: Hamilton Abreu
 # Author: Imperadeiro98
 # Author: Luckas
+# Author: O andras
 ---
 about:
   title: Sobre o mapa
@@ -113,7 +114,7 @@ rendering:
     2. Se existir uma etiqueta `name`, será derivada uma referência dela, utilizando primeiro
        apenas as letras maiúsculas, e no seu defeito, mediante as primeiras letras do nome.
     3. Desistir.
-  hierarchy: O mapa também suporta as [relações hierárquicas](composição/hierarquias).
+  hierarchy: O mapa também suporta as [relações hierárquicas](#help-hierarchies).
   guideposts: |-
     Os [postes de sinalização](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
     estão reconhecidos pelas seguintes etiquetas:
