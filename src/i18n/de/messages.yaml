@@ -34,6 +34,11 @@ details:
   subroutes_title: Abschnitte
   superroutes_title: Teil von
   symbol: Symbol
+  linear:
+    "yes": Die Relation für diese Route ist sortiert und in einem Stück.
+    sorted: Die Relation für diese Route besteht aus einem Stück, aber die Mitglieder
+      sind nicht sortiert.
+    "no": Die Relation weist Lücken auf oder hat andere Probleme.
   tags:
     key: Schlüssel
     title: OpenStreetMap-Tags
@@ -52,8 +57,12 @@ details:
     summary: Diese Relation hat {num} Segmente.
     disclaimer: |-
       Hier werden die Routensegmente angezeigt, wie sie von waymarkedtrails
-      aus der Relation berechnet wurden. Beachte, dass Relationsrollen und Kreisverkehre
-      zurzeit nicht richtig behandelt werden. Verwende die angezeigten Informationen mit Vorsicht.
+      aus der Relation berechnet wurden. Dabei kann es zu Fehlern kommen. Mehr Informationen darüber, wie waymarkedtrails Routen sortiert, befinden sich auf den Hilfeseiten.
+    open_end: Offenes Ende der Route.
+    multi_end: An diesem Punkt treffen mehr als zwei Streckenabschnitte zusammen.
+    two_end: |-
+      Punkt, an dem die Route unterbrochen wird, weil die Relation nicht sortiert ist.
+      Die rot gestrichelten Linien zeigen, wo die Route weitergeht.
 elevation:
   ascent: Kumulierter Anstieg
   descent: Kumulierter Abstieg
@@ -101,10 +110,12 @@ osmc_symbol:
     Website erkannt werden. Sie erkennt auch Vordergründe, die nur aus dem Namen der
     Form bestehen. Die Symbole für diese werden in der letzten Spalte angezeigt.
   foreground_heading: Vordergrund
+  intro_header: Übersicht
   preview: |-
     Gib einen osmc:symbol-Wert in das unten stehende Eingabefeld ein,
     um zu sehen, wie er auf der Karte dargestellt wird.
   preview_heading: Vorschau
+  symbol_reference_heading: Vollständige Liste der unterstützten Symbole
 routelist:
   loading: Laden...
   close: Schließen
