@@ -1,6 +1,7 @@
 # Messages for German (Deutsch)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Brettchenweber
 # Author: Geitost
 # Author: Hufkratzer
 # Author: Justman10000
@@ -138,6 +139,35 @@ rendering:
 
     `tourism` und `information`
     sind Pflichtfelder. `name` und `ele` können weggelassen werden.
+route_order:
+  title: Sortierung von Routen
+  text: "waymarkedtrails benötigt richtig sortierte Routen zur Anzeige des Höhenprofils
+    und beim Download der Routen als GPX und KML. Bei der Analyse einer Route versucht
+    es, die Reihenfolge der Mitglieder innerhalb der Routenrelation so weit wie möglich
+    zu erhalten. Das garantiert den Mappern eine Einflussnahme auf die Sortierung,
+    ohne Raten zu müssen. Wenn eine Relation unsortiert ist, wird waymarkedtrails
+    die Relation nur dann in eine sortierte Reihenfolge bringen, wenn das Ergebnis
+    eine vollständige lineare Route ohne Lücken ist.\n\nRollen (_roles_) von Relationsmitgliedern
+    werden bei der Sortierung berücksichtigt. Die Rollen `forward` und `backward`
+    können verwendet werden, um Abschnitte zu markieren, auf denen die Strecke je
+    nach Richtung auf verschiedenen Wegen ausgeschildert ist. Dabei ist zu beachten,
+    dass sich die Rollen auf die Ausrichtung des Weges beziehen, nicht auf die Richtung
+    der Route! Wenn Sie eine solche geteilte Sektion in eine Relation einfügen, stellen
+    Sie sicher, dass die Wege für jede Richtung jeweils direkt aufeinanderfolgen und
+    Reihenfolge der Wegen der Reihenfolge der Route folgt.\n\nAlle anderen Rollen
+    werden als Seitenwege der einen der anderen Formbetrachtet und für die allgemeine
+    Sortierung der Route ignoriert. Sie erscheinen immer noch auf der Karte.\n\nwaymarkedtrails
+    unterstützt Kreisverkehre in einer Route auch dann, wenn sie nicht aufgetrennt
+    wurden. Einfach den geschlossene Wege ohne Rollenangabe in die Relation an der
+    richtigen Stelle dazufügen und der Kreisverkehr wird intern in geeignete Abschnitte
+    aufgeteilt. Dies funktioniert auch, wenn die Route sich vor dem Kreisverkehr aufspaltet.
+    Es gibt zwei Fälle, in denen diese Handhabung fehlschlägt: \n\n * wenn der Kreisverkehr
+    aus irgendeinem Grund bereits aufgeteilt wurde, müssen die Teile mit den entsprechenden
+    `forward`- und `backward`-Rollen hinzufügt werden.\n * wenn der Kreisverkehr Teil
+    eines gerichteten Segments ist, muss der Kreisverkehr aufteilt werden und nur
+    der verwendete Teil mit der entsprechenden Rolle hinzufügen werden. \n\nAllgemein
+    gilt für die Sortierung: Wenn der JOSM-Verhältnis-Editor die Route als kontinuierlich
+    anzeigt, sollten waymakedtrails auch eine lineare Route anzeigen können."
 hierarchies:
   title: Verschachtelte Relationen
   text: |-
@@ -169,18 +199,21 @@ hierarchies:
 osmc:
   title: Das Tag „osmc:symbol“
   text: |-
-    Das `osmc:symbol`-Tag erlaubt, Wanderwegmarkierungen, die aus einfachen
-    geometrischen Formen bestehen, in maschinenlesbarer Art und Weise zu beschreiben. Die
-    Karte unterstützt einen Teil des auf der Wikiseite beschriebenen Formats. Um
-    auf der Karte angezeigt zu werden, muss das Tag folgendes Format haben:
+    Das `osmc:symbol`-Tag erlaubt, Wanderwegmarkierungen in maschinenlesbarer Art und Weise zu beschreiben. Es ist hauptsächlich für Markierungen gedacht, die aus einfachen geometrischen Formen bestehen. Eine vollständige Beschreibung des Tags inklusive der Entstehungsgeschichte findet sich auf der [osmc:symbol Seite](https://wiki.openstreetmap.org/wiki/DE:Key:osmc:symbol) im OSM-Wiki. waymarkedtrails folgt im Großen und Ganzen der Beschreibung im Wiki mit Ausnahme einiger kleiner Einschränkungen, die hier beschrieben sind.
 
-        osmc:symbol=waycolor:background:foreground:text:textcolor
+    Um auf der Karte angezeigt zu werden, muss das Tag eines der folgenden Formate haben:
 
-    `waycolor` muss vorhanden sein, wird aber von der Karte ignoriert.
-    Ein zweiter Vordergrund wird nicht unterstützt. `text` und `textcolor` können
-    komplett weggelassen werden.
+        waycolor:background
+        waycolor:background:foreground
+        waycolor:background:foreground:foreground2
+        waycolor:background:foreground:foreground2:text:textcolor
+        waycolor:background:foreground:text:textcolor
 
-    Eine Liste der von Waymarkedtrails unterstützten Symbole findet sich auf der Extraseite [osmc:symbol](osmc_symbols.html).
+    `waycolor` muss vorhanden sein, wird aber auf der Karte ignoriert. Außerdem muss ein Hintergrund (_background_) angegeben werden. Das Feld kann aber leer bleiben, solange es vorhanden ist. Als nächstes folgen maximal zwei Vordergrundsymbold (_foreground_). Als letztes kann optional ein kurzer Beschriftungstext (_text_) folgen. Wenn der Text vorhanden ist, muss auch dessen Farbe (_textcolor_) spezifiziert werden. waymarkedtrails ignoriert Beschriftungstexte, wenn sie zu lang für das gewählte Symbol sind: maximale Länge ist 4 Zeichen, diamandförmige Hintergründe funktionieren mit maximal einem Zeichen und rechteckige Hintergründe (_stripe_ und _bar_) nehmen gar keinen Text.
+  reference_footer: Eine vollständige Liste von Farben und Formen, die waymarkedtrails
+    darstellen kann, findet sich in der Referenzsektion weiter unten auf der Seite.
+  footer: Auf der Seite [osmc:symbol](osmc_symbols.html) finden Sie eine Liste der
+    von waymarkedtrails unterstützten Symbole.
 hikinglocal:
   title: Darstellung regionaler Besonderheiten
   text: |-
