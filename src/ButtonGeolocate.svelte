@@ -2,7 +2,7 @@
     import { _ } from 'svelte-i18n';
 
     import Feature from 'ol/Feature';
-    import {Icon, Style} from 'ol/style';
+    import {Icon, Style, Circle, Fill, Stroke} from 'ol/style';
     import {Vector as VectorLayer} from 'ol/layer';
     import Point from 'ol/geom/Point';
     import {Vector as VectorSource} from 'ol/source';
@@ -15,20 +15,38 @@
 
     import SvgGeoPin from './svg/GeoPin.svelte';
 
-    let is_enabled = $state(false);
+    let pinColor = $state('white');
+    let is_enabled = false;
+
+    const trackingColor = '#fd0e0e';
+    const positioningColor = '#886868';
 
     const marker = new Feature({});
 
-    marker.setStyle(new Style({
-            image: new Icon({
-                anchor: [0.5, 1],
-                anchorXUnits: 'fraction',
-                anchorYUnits: 'fraction',
-                opacity: 0.75,
-                src: MEDIA_URL + 'img/marker.png'
-            })
-        })
-    );
+    const trackingStyle = new Style({
+            image: new Circle({
+                        radius: 9,
+                        fill: new Fill({
+                          color: trackingColor,
+                        }),
+                        stroke: new Stroke({
+                          color: '#fff',
+                          width: 3
+                        })
+                   })
+            });
+    const positioningStyle = new Style({
+            image: new Circle({
+                        radius: 9,
+                        fill: new Fill({
+                          color: positioningColor,
+                        }),
+                        stroke: new Stroke({
+                          color: '#fff',
+                          width: 3
+                        })
+                   })
+            });
 
     map_state.map.addLayer(new VectorLayer({
         source: new VectorSource({
@@ -50,6 +68,7 @@
         let coords = geolocate.getPosition();
         if (coords) {
             marker.setGeometry(new Point(coords));
+            marker.setStyle(trackingStyle);
             view.setCenter(coords);
             if (view.getZoom() < 9)
                 view.setZoom(9);
@@ -58,14 +77,27 @@
         }
     });
 
-    $effect(() => {
-        geolocate.setTracking(is_enabled);
-        if (!is_enabled) {
-            marker.setGeometry(null);
+    map_state.map.on('pointerdrag', function() {
+        if (is_enabled) {
+            geolocate.setTracking(false);
+            pinColor = positioningColor;
+            marker.setStyle(positioningStyle);
+            is_enabled = false;
         }
     });
+
+    function toggleEnable() {
+        is_enabled = !is_enabled;
+        geolocate.setTracking(is_enabled);
+        if (is_enabled) {
+            pinColor = trackingColor;
+        } else {
+            marker.setGeometry(null);
+            pinColor = 'white';
+        }
+    }
 
     geolocate.on('error', function() { is_enabled = false; });
 </script>
 
-<ButtonFooter title={$_('locate_me')} onclick={() => {is_enabled = !is_enabled;}}><SvgGeoPin color={is_enabled ? "lightgreen" : "white"} /></ButtonFooter>
+<ButtonFooter title={$_('locate_me')} onclick={() => {toggleEnable();}}><SvgGeoPin color={pinColor} /></ButtonFooter>
