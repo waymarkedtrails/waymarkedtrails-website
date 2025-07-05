@@ -17,8 +17,9 @@
 
     let is_enabled = $state(false);
 
-    const marker = new Feature({
-        style: new Style({
+    const marker = new Feature({});
+
+    marker.setStyle(new Style({
             image: new Icon({
                 anchor: [0.5, 1],
                 anchorXUnits: 'fraction',
@@ -27,7 +28,7 @@
                 src: MEDIA_URL + 'img/marker.png'
             })
         })
-    });
+    );
 
     map_state.map.addLayer(new VectorLayer({
         source: new VectorSource({
@@ -39,15 +40,15 @@
       trackingOptions: {
         enableHighAccuracy: true,
         maximumAge: 0,
-        timeout: 7000
-      }
+        timeout: 7000,
+      },
+      projection: map_state.map.getView().getProjection()
     });
 
-    geolocate.on('change', function() {
+    geolocate.on('change:position', function() {
         let view = map_state.map.getView();
         let coords = geolocate.getPosition();
         if (coords) {
-            geolocate.setProjection(view.getProjection());
             marker.setGeometry(new Point(coords));
             view.setCenter(coords);
             if (view.getZoom() < 9)
