@@ -99,6 +99,8 @@ rendering:
         ele=<海拔高度>
 
     其中「tourism」和「information」項目為必需，「name」與「ele」則可省略。
+route_order:
+  title: 路線排序
 hierarchies:
   title: 關係層級
   text: |-
@@ -120,6 +122,8 @@ osmc:
     其中「waycolor」雖然會被地圖所忽略，但必須出現在標籤裡。另外「foreground」不被支援，「text」與「textcolor」則可省略。
 
     被 Waymarked Trails 支援的符號清單，請查看額外的 [osmc:symbol](osmc_symbols.html)標籤頁面。
+  reference_footer: 您可以在下面的參考中，找到 waymarkedtrails 可以呈現的顏色與形狀的完整清單。
+  footer: 請參閱額外的 [osmc:symbol](osmc_symbols.html) 標籤頁，來了解 Waymarked Trails 支援的符號清單。
 hikinglocal:
   title: 本地化呈現
   text: |-
@@ -215,7 +219,7 @@ technical:
   translation: |-
     ## 翻譯
 
-    此網站的翻譯由 [translatewiki.net](https://translatewiki.net)上樂於助人的貢獻者所提供。如果您想要為您所使用的語言貢獻翻譯內容，或向現有的翻譯內容提供意見回饋，請前往我們在 [translatewiki.net 上的專案頁面](https://translatewiki.net/wiki/Translating:Waymarked_Trails)。
+    此網站的翻譯由 [translatewiki.net](https://translatewiki.net) 上樂於助人的貢獻者所提供。如果您想要為您所使用的語言貢獻翻譯內容，或向現有的翻譯內容提供意見回饋，請前往我們在 [translatewiki.net 上的專案頁面](https://translatewiki.net/wiki/Translating:Waymarked_Trails)。
 legal:
   title: 法律與使用條款
   copyright: |-
@@ -235,13 +239,13 @@ acknowledgements:
     所有地圖資料由[開放街圖與其貢獻者](https://www.openstreetmap.org)提供，並以開放資料庫協議（ODbL）
     釋出。基本地圖由開放街圖所提供。想瞭解更多訊息請查看[開放街圖版權頁面](https://www.openstreetmap.org/copyright)
 
-    地形陰影和海拔資料方面是來自於 SRTM 與 ASTER GDEM 的資料所混合呈現。其中 ASTER GDEM 是日本經濟產業省（METI）與美國國家航空暨太空總署（NASA）的產品。後續處理則是由來自 [opensnowmap.org](https://opensnowmap.org)網站的 Yves Cainaud 提供。
+    地形陰影和海拔資料方面是來自於 SRTM 與 ASTER GDEM 的資料所混合呈現。其中 ASTER GDEM 是日本經濟產業省（METI）與美國國家航空暨太空總署（NASA）的產品。後續處理則是由來自 [opensnowmap.org](https://opensnowmap.org) 網站的 Yves Cainaud 提供。
 
-    海拔檔案代碼是在 [Kresendo](https://www.kresendo.no)與[西挪威研究所](https://www.vestforsk.no)的 [TG4NP] 專案合作之下，由 Espen Oldeman Lund 所開發。
+    海拔檔案代碼是在 [Kresendo](https://www.kresendo.no) 與[西挪威研究所](https://www.vestforsk.no)的 [TG4NP] 專案合作之下，由 Espen Oldeman Lund 所開發。
 
     冬季運動斜坡變體是由 Michael Spreng 所開發。騎馬標記則是 Robert Whittaker 所呈現。
 
-    路標目的由 [Mueschelsoft](https://osm.mueschelsoft.de/destinationsign/example/index.htm)處理。在此特別感謝 Jan Michel 所提供的服務。
+    路標目的由 [Mueschelsoft](https://osm.mueschelsoft.de/destinationsign/example/index.htm) 處理。在此特別感謝 Jan Michel 所提供的服務。
 
     本站台的翻譯是由[ translatewiki.net 與其貢獻者](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators)提供。其中在此特別致謝於 translatewiki.net 網站出現之前的翻譯先鋒人士：Yves Cainaud（法文）、Oscar Formaggi（義大利文）、Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751)Ramis（西班牙文）、[Guttorm Flatabø](https://guttormflatabo.com)/ TG4NP（挪威文和尼諾斯克文）、Mads Lumholt/TG4NP（丹麥文）、Magnús Smári Snorrason/TG4NP（冰島文）、Lars Mikaelsson/TG4NP（瑞典文），以及 Elina Pesonen（芬蘭文）。
 contact:
