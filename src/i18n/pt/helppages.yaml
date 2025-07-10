@@ -5,6 +5,7 @@
 # Author: Hamilton Abreu
 # Author: Imperadeiro98
 # Author: Luckas
+# Author: Mansil alfalb
 # Author: O andras
 ---
 about:
@@ -148,16 +149,23 @@ hierarchies:
     *Nota:* pode sempre examinar as subrelações através do navegador de rotas. Selecione simplesmente a relação mãe, e será mostrada a lista selecionável das suas subrelações.
 osmc:
   title: A etiqueta osmc:symbol
-  text: |-
-    A etiqueta `osmc:symbol` proporciona um modo de descrever de um jeito compreensível para a máquina,
-    os símbolos das rotas nas formas geométricas simples como se encontram em alguns
-    países europeus (e especialmente na Alemanha). O mapa suporta apenas um subconjunto de tudo o que está descrito na página da Wiki. A fim de
-    se compor na página da wiki, a etiqueta deve seguir o seguinte formato:
-
-        osmc:symbol=waycolor:background:foreground:text:textcolor
-
-    `waycolor` deve estar lá, mas é ignorado por este mapa.
-    Um segundo primeiro plano não é suportado. `text` e `textcolor` podem ser omitidos.
+  text: "A etiqueta `osmc:symbol` proporciona uma maneira de descrever escudos de
+    rota\nnuma maneira legível por máquina. Esta destina-se principalmente a símbolos
+    \nque são constituídos por formas geométricas simples. Para obter uma descrição
+    \ncompleta e histórico da etiqueta, visite o\n[osmc:symbol page](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)\nna
+    wiki OSM. waymarkedtrails segue amplamente a sintaxe descrita\nna página da wiki
+    com algumas restrições e extensões descritas aqui.\n\nPara poder\nser renderizado
+    no mapa, a etiqueta deve ter um dos formatos seguintes:\n\n    waycolor:background\n
+    \   waycolor:background:foreground\n    waycolor:background:foreground:foreground2\n
+    \   waycolor:background:foreground:foreground2:text:textcolor\n    waycolor:background:foreground:text:textcolor\n\n`waycolor`
+    deve estar sempre presente mas é ignorada para este mapa.\nAlém disso, deve especificar
+    um fundo, embora possa deixar o campo\nvazio. Depois, siga um máximo de dois primeiro
+    planos diferentes.\nNo final, pode opcionalmente adicionar um pequeno texto de
+    referência\npara ser adicionado no topo. A cor do texto deve ser sempre especificada.\nNote
+    que Waymarkedtrails ignorará os textos de referência quando se\ntornarem muito
+    longos. Quanto tempo o texto pode ter depende dos fundos\nescolhidos: o limite
+    rígido é de 4 carateres, fundo em forma de diamante\napenas toma um único caráter,
+    fundos em forma de barra e risca nunca\naceitam texto de referência."
 hikinglocal:
   title: Renderização localizada
   text: |-

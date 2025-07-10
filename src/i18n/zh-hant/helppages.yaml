@@ -101,6 +101,11 @@ rendering:
     其中「tourism」和「information」項目為必需，「name」與「ele」則可省略。
 route_order:
   title: 路線排序
+  text: "waymarkedtrails 需要正確排序的路線以顯示海拔剖面圖以及 GPX 和 KML 檔案的下載。在分析路線時，會盡可能地依照關聯成員路線的順序，因為這樣可以讓地圖繪製者不必反覆嘗試更輕鬆地調整順序。如果關聯看起來似乎未排序，且在這些路線能夠形成一條連續線性路線的情況時，waymarkedtrails
+    仍會依序排列這些路線。\n\n在對路線進行排序時，會考量關聯作用。「前進」和「後退」這類作用可用在標記應根據方向在不同地方應遵循的路段。請記住，這些作用是相對於道路方向所定義；而非路線！如果您有這樣的分割路段，\n請確保每個方向的道路在關聯中緊鄰出現，並且這些道路仍遵循路線的順序。\n\n任何其它作用都被視為某種形式的側道，雖然在路線的整體排序中會被忽略，它們仍會顯示在地圖上。\n\nwaymarkedtrails
+    能夠處理路線內未切分的圓環，只需添加不帶任何作用的封閉道路，圓環就會在內部切分成適當的路段。即使圓環有 V 型入口也能正常運作，仍可切分出前進和後退。但以下有兩種情況會導致此處理失敗：\n\n*如果出於某種原因圓環被切分成多個部分，那麼您必須添加具有相對應的「前進」和「後退」作用部分。
+    \n\n*如果圓環是方向路段的一部分，您必須切分圓環並添加相應作用的已使用部分。\n\n排序的一般經驗準則：如果 JOSM 關聯編輯器顯示路線為連續的，那麼
+    waymakedtrails 應也能夠顯示出線性路線。"
 hierarchies:
   title: 關係層級
   text: |-
@@ -115,13 +120,13 @@ hierarchies:
     *註釋：*您可以永遠經由路線瀏覽器來檢查子關係。只要選擇了父關係後一個有關子關係的可選清單便會顯示出。
 osmc:
   title: osmc:symbol 標籤
-  text: |-
-    「osmc:symbol」標籤提供於一些歐洲國家（尤其在德國）所採用的以簡單幾何外形之機器可讀路線符號來描述。地圖僅支援在 Wiki 頁面上描述的子集。而為了要讓地圖能呈現出，標籤必須包含以下格式：
-        osmc:symbol=waycolor:background:foreground:text:textcolor
-
-    其中「waycolor」雖然會被地圖所忽略，但必須出現在標籤裡。另外「foreground」不被支援，「text」與「textcolor」則可省略。
-
-    被 Waymarked Trails 支援的符號清單，請查看額外的 [osmc:symbol](osmc_symbols.html)標籤頁面。
+  text: "「osmc:symbol」標籤提供一種機器可讀的方式來描述路線盾形標誌的方法。它主要用在由簡單幾何形狀組成的符號。關於標籤的完整描述與歷史，請查看在
+    OSM wiki 上的[osmc:symbol 頁面](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)。waymarkedtrails
+    基本上依照該 wiki 頁面上描述的語法，但有一些限制與此處描述的擴充功能。\n\n要在地圖上呈現，標籤必須採用以下格式之一：\n\n    waycolor:background\n
+    \   waycolor:background:foreground\n    waycolor:background:foreground:foreground2
+    \   waycolor:background:foreground:foreground2:text:textcolor\n    waycolor:background:foreground:text:textcolor\n\n「waycolor」一定要有（在地圖上不會將此顯示出）。\n另外，您必須指定背景（但您可以將此欄位留空）。前景方面，您最多可新增兩種不同的前景。
+    \n最後，您可以選擇在頂端添加一小段參考文字（需指定文字的顏色）。請注意，waymarkedtrails 會忽略掉過長的參考文字， 文字的長度取決於所選的背景：硬性限制為
+    4 個字元，菱形背景僅需一個字元，條紋和條狀背景則完全不需要參考文字。"
   reference_footer: 您可以在下面的參考中，找到 waymarkedtrails 可以呈現的顏色與形狀的完整清單。
   footer: 請參閱額外的 [osmc:symbol](osmc_symbols.html) 標籤頁，來了解 Waymarked Trails 支援的符號清單。
 hikinglocal:
@@ -247,7 +252,7 @@ acknowledgements:
 
     路標目的由 [Mueschelsoft](https://osm.mueschelsoft.de/destinationsign/example/index.htm) 處理。在此特別感謝 Jan Michel 所提供的服務。
 
-    本站台的翻譯是由[ translatewiki.net 與其貢獻者](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators)提供。其中在此特別致謝於 translatewiki.net 網站出現之前的翻譯先鋒人士：Yves Cainaud（法文）、Oscar Formaggi（義大利文）、Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751)Ramis（西班牙文）、[Guttorm Flatabø](https://guttormflatabo.com)/ TG4NP（挪威文和尼諾斯克文）、Mads Lumholt/TG4NP（丹麥文）、Magnús Smári Snorrason/TG4NP（冰島文）、Lars Mikaelsson/TG4NP（瑞典文），以及 Elina Pesonen（芬蘭文）。
+    本站台的翻譯是由[ translatewiki.net 與其貢獻者](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators)提供。其中在此特別致謝於 translatewiki.net 網站出現之前的翻譯先鋒人士：Yves Cainaud（法文）、Oscar Formaggi（義大利文）、Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis（西班牙文）、[Guttorm Flatabø](https://guttormflatabo.com)/TG4NP（挪威文和尼諾斯克文）、Mads Lumholt/TG4NP（丹麥文）、Magnús Smári Snorrason/TG4NP（冰島文）、Lars Mikaelsson/TG4NP（瑞典文），以及 Elina Pesonen（芬蘭文）。
 contact:
   title: 聯繫我們
   text: |-
