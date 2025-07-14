@@ -6,6 +6,7 @@
 # Author: Emilkris33
 # Author: Fugithora
 # Author: Joedalton
+# Author: Naitsa
 # Author: Peter Alberti
 # Author: Saederup92
 ---
@@ -36,7 +37,7 @@ details:
   tags:
     key: nøgle
     title: OpenStreetMap-tags
-    value: Værdi
+    value: værdi
   type:
     guidepost: Vejviser
     node: Punkt
@@ -44,6 +45,7 @@ details:
     way: Linjestreng
     wayset: Linjestrengssæt
   website: Hjemmeside
+  wikipedia: Wikipedia
   zoom_to: Vis på kort
   analyze:
     title: Analyser relation

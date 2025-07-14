@@ -6,6 +6,7 @@
 # Author: Fugithora
 # Author: Joedalton
 # Author: Kaare
+# Author: Naitsa
 # Author: Peter Alberti
 ---
 about:
@@ -157,11 +158,10 @@ osmc:
   title: osmc:symbol-tagget
   text: |-
     Tagget `osmc:symbol` gør det muligt at beskrive rutemarkører på en maskinlæsbar måde. Det er primært beregnet til symboler, der, der består af simple geometriske former. For en fuld beskrivelse og
-    historie om tagget, besøg wiki-siden [osmc:symbol page](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol).  waymarkedtrails følger stort set det syntag, der er beskrevet
+    historie om tagget, besøg wiki-siden [osmc:symbol page](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol) på OSM wiki. waymarkedtrails følger stort set det syntaks, der er beskrevet
     på wiki-siden med nogle begrænsninger og udvidelser, der er beskrevet her.
 
-    For at
-    kan gengives på kortet, skal tagget have et af følgende formater:
+    For at blive gengivet på kortet, skal tagget have et af følgende formater:
 
         waycolor:background
         waycolor:background:foreground
