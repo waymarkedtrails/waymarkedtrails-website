@@ -121,7 +121,7 @@ hierarchies:
 osmc:
   title: osmc:symbol 標籤
   text: "「osmc:symbol」標籤提供一種機器可讀的方式來描述路線盾形標誌的方法。它主要用在由簡單幾何形狀組成的符號。關於標籤的完整描述與歷史，請查看在
-    OSM wiki 上的[osmc:symbol 頁面](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)。waymarkedtrails
+    OSM wiki 上的 [osmc:symbol 頁面](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)。waymarkedtrails
     基本上依照該 wiki 頁面上描述的語法，但有一些限制與此處描述的擴充功能。\n\n要在地圖上呈現，標籤必須採用以下格式之一：\n\n    waycolor:background\n
     \   waycolor:background:foreground\n    waycolor:background:foreground:foreground2
     \   waycolor:background:foreground:foreground2:text:textcolor\n    waycolor:background:foreground:text:textcolor\n\n「waycolor」一定要有（在地圖上不會將此顯示出）。\n另外，您必須指定背景（但您可以將此欄位留空）。前景方面，您最多可新增兩種不同的前景。
@@ -187,7 +187,7 @@ hikinglocal:
   hungary: |-
     ## 匈牙利
 
-    匈牙利也使用帶有不同色彩的固定符號系統。是以他們自有的標籤 [jel](https://wiki.openstreetmap.org/wiki/Key:jel)來標註。這些標籤比任何「osmc:symbol」類型標籤優先使用。
+    匈牙利也使用帶有不同色彩的固定符號系統。是以他們自有的標籤 [jel](https://wiki.openstreetmap.org/wiki/Key:jel) 來標註。這些標籤比任何「osmc:symbol」類型標籤優先使用。
   germany: |-
     ## 德國
 
