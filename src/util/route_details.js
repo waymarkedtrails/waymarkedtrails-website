@@ -119,22 +119,32 @@ function append_elevation_segments(segments, route, ele) {
                 let usept = needfirst;
                 let posfunc;
                 if (has_same_direction(way.geometry.coordinates, wayele.elevation)) {
-                    posfunc = pos => way.start + pos;
+                    for (const pt of wayele.elevation) {
+                        if (usept) {
+                            current.push({
+                                x: pt.x,
+                                y: pt.y,
+                                ele: pt.ele,
+                                pos: way.start + pt.pos
+                            });
+                        } else {
+                            usept = true;
+                        }
+                    }
                 } else {
-                    wayele.elevation.reverse();
-                    const elelen = wayele.elevation[0].pos;
-                    posfunc = pos => way.start + elelen - pos;
-                }
-                for (const pt of wayele.elevation) {
-                    if (usept) {
-                        current.push({
-                            x: pt.x,
-                            y: pt.y,
-                            ele: pt.ele,
-                            pos: posfunc(pt.pos)
-                        });
-                    } else {
-                        usept = true;
+                    const elelen = wayele.elevation[wayele.elevation.length - 1].pos;
+                    for (let i = wayele.elevation.length - 1; i >= 0; i--) {
+                        if (usept) {
+                            const pt = wayele.elevation[i];
+                            current.push({
+                                x: pt.x,
+                                y: pt.y,
+                                ele: pt.ele,
+                                pos: way.start + elelen - pt.pos
+                            });
+                        } else {
+                            usept = true;
+                        }
                     }
                 }
                 needfirst = false;
