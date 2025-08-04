@@ -171,6 +171,10 @@ osmc:
         wegkleur:achtergrond:voorgrond:tekst:tekstkleur
 
     De `wegkleur` moet altijd aanwezig zijn, maar wordt voor deze kaart genegeerd. Verder moet u een achtergrond opgeven, maar u kunt het veld leeg laten. Vervolgens kunt u maximaal twee verschillende voorgronden opgeven. Tot slot kunt u eventueel een korte referentietekst toevoegen die erbovenop wordt geplaatst. De kleur van de tekst moet altijd worden opgegeven. Let op: WaymarkedTrails negeert referentieteksten als deze te lang worden. Hoe lang de tekst mag zijn, hangt af van de gekozen achtergrond: de harde grens is 4 tekens, ruitvormige achtergronden accepteren slechts één teken, streep- en staafvormige achtergronden accepteren helemaal geen referentietekst.
+  reference_footer: De volledige lijst met kleuren en vormen die waymarkedtrails kan
+    weergeven vindt u in de referentie hieronder.
+  footer: Zie de extra tagpagina [osmc:symbol](osmc_symbols.html) voor een lijst met
+    symbolen die door Waymarked Trails worden ondersteund.
 hikinglocal:
   title: Landspecifieke rendering
   text: |-

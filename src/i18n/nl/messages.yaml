@@ -114,6 +114,7 @@ osmc_symbol:
   preview: Tik een waarde voor osmc:symbol in het veld hieronder om te zien hoe het
     op de kaart getoond zal worden.
   preview_heading: Voorvertoning
+  symbol_reference_heading: Volledige lijst met ondersteunde symbolen
 routelist:
   loading: Bezig met laden…
   close: Sluiten
