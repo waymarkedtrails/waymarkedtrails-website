@@ -118,6 +118,7 @@
             <div class="subtitle">{route.subtitle}</div>
             {/if}
         </div>
+        </button>
     </li>
 {/each}
 {/if}
