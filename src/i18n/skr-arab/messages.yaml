@@ -3,42 +3,106 @@
 # Export driver: phpyaml
 # Author: Saraiki
 ---
+attribution:
+  data: |-
+    [ODbL](https://www.openstreetmap.org/copyright
+    ) دے تحت نقشہ ڈیٹا © [اوپن سٹریٹ میپ](https://www.openstreetmap.org
+    )
+destination_sign:
+  more: ٻیاں تفصیلاں
+  title: منزل
 details:
   GPX: جی پی ایکس
+  KML: KML
+  altitude: بلندی
+  image: تصویر
   mapped_len: نقشے دی لمبائی
   note: نوٹ
   official_len: سرکاری لمبائی
   operator: عامل
+  route_symbol: رستے علامت
   subroutes_title: حصے
   superroutes_title: دا حصہ
+  symbol: علامت
+  tags:
+    key: کنجی
+    title: اوپن سٹریٹ میپ ٹیگ
+    value: قدر
+  type:
+    guidepost: رہنمائی آلا کھمبھا
+    node: نوڈ
+    relation: رشتہ
+    way: راہ
+    wayset: وے سیٹ
   website: ویب سائٹ
+  wikipedia: وکیپیڈیا
+  zoom_to: نقشے تے ݙکھاؤ
+  analyze:
+    title: تعلق دا تجزیہ کرو
+    open_end: رستے دا کھلا سرا۔
 elevation:
+  ascent: مجموعی چڑھائی
+  descent: مجموعی لہاڑ
   diagram:
     altitude: اُچائی (میٹر)
     distance: فاصلہ (کلومیٹر)
+  title: بلندی دا پروفائل
+  unavailable: کوئی بلندی ڈیٹا کائنی لبھیا۔
 error:
+  load_error: سرور کنکٹ کرݨ وچ خرابی۔
+  missing_id: پیرامیٹر 'id' غائب ہے۔
+  missing_query: پیرامیٹر 'پچھݨ' غائب ہے۔
   panel_title: نقص
+  object_not_found: شئے کائنی لبھی۔
   api_unavailable: اے پی آئی دستیاب کائنی۔
 headline:
   last_update: چھیکڑی تبدیلی
 help: نقشے بارے
+locate_me: میکوں لبھو
+network:
+  continental: براعظمی رستے
+  downhill: ہیٹھاں دوں
+  national: قومی رستے
+  node: نوڈ نیٹ ورک کنکشن
+  nordic: نورڈک سکینگ
+  other: ٻئے رستے
+  regional: علاقائی رستے
+  skitour: سکی ٹورز
+  sled: سلیڈ دا راہ
+  sleigh: سلیہ رستہ
+  winter_hike: سیالی پیدل سفر
 osmc_symbol:
   back: پچھوں
+  background_heading: پس منظر
   examples: مثالاں
+  foreground_heading: پیش منظر
   intro_header: اُتلی نظر
+  preview_heading: پیشگی ݙکھالا
+  symbol_reference_heading: معاون علامتاں دی مکمل تندیر
 routelist:
+  loading: لوڈ تھیندا پئے۔۔۔
   close: بند کرو
+  more: ٻئے رستے ݙیکھݨ کیتے وݙا کرو۔
+  rollup: رول اپ کرو
   title: رستے
 search:
+  places: جاہیں
   routes: رستے
   title: ڳولو
 settings:
+  base_map: بیس نقشہ
+  browser_language: براوزر ترتیباں ورتو
+  hillshading_layer: پہاڑی شیڈنگ
   language: زبان
+  route_layer: رستے دی پرت
   title: نقشے دیاں ترتیباں
+  transparency: نقشہ شفافیت
 site_title:
   cycling: سائکلنگ
   hiking: پیدل سفر
   mtb: ایم ٹی بی
+  osmc_symbol: ' osmc:علامت ٹیگ'
   riding: گھڑ سواری
   skating: ان لائن سکیٹنگ
+  slopes: سیالے دی کھیݙاں دے ڈھلوان
 ...
