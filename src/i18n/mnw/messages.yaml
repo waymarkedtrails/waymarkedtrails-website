@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Aue Nai
+# Author: Htawmonzel
 # Author: 咽頭べさ
 ---
 details:
@@ -21,7 +22,7 @@ osmc_symbol:
   back: ကလေင်
   background_heading: စးဒုၚ်ကြဴ
   examples: ဥပမာဂမၠိုင်
-  preview_heading: ဗဵုရံၚ်ဗီုပြၚ်
+  preview_heading: နမူနာ
 routelist:
   close: ကၟာတ်
   rollup: ခၟောပတိုန်
