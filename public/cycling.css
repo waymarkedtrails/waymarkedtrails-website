@@ -1,11 +1,11 @@
 :root {
-      --theme-background-color: #778bf2;
+      --theme-background-color: #a9b7ff;
       --theme-font-color: #000;
       --theme-sub-color: #414c87;
       --theme-sub-font-color: #b6d293;
       --theme-sub-link-color: #dde530;
       --theme-banner-image: url('../img/banner_cycling.jpg');
       --theme-link-color: #233fd3;
-      --theme-button-background: #646c72;
-      --theme-button-color: #e4e5d7;
+      --theme-button-background: #898f93;
+      --theme-button-color: #f5f5f3;
 }
