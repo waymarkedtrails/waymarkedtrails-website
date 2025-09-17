@@ -1,4 +1,4 @@
-import {Stroke, Style, Circle, Fill} from 'ol/style';
+import {Stroke, Style, Circle, Fill, Text} from 'ol/style';
 
 export const highlight_stroke = new Style({
                                   stroke: new Stroke({
@@ -81,5 +81,27 @@ export const elevation_point = new Style({
                 fill: new Fill({color: '#0000ff'}),
                 stroke: new Stroke({color: '#000', width: 1})
             }),
-            zindex: 1
+            zindex: 50
        });
+
+export const download_line_oneway = new Style({
+    text: new Text({
+        text: '❯',
+        placement: 'line',
+        repeat: 40,
+        keepUpright: false,
+        stroke: new Stroke({color: [222, 39, 41], width: 3}),
+        fill: new Fill({color: [222, 39, 41]})
+    })
+});
+
+export const download_line_any = new Style({
+    text: new Text({
+        text: '●',
+        placement: 'line',
+        repeat: 40,
+        keepUpright: false,
+        stroke: new Stroke({color: [222, 39, 41], width: 3}),
+        fill: new Fill({color: [222, 39, 41]})
+    })
+});

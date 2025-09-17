@@ -180,6 +180,7 @@ class RouteOverview {
 }
 
 class RouteDetails {
+    #_features = null;
 
     constructor(json) {
         Object.assign(this, json);
@@ -224,10 +225,12 @@ class RouteDetails {
     }
 
     get_features() {
-        const flist = [];
-        add_features(flist, this.route, '', []);
+        if (this.#_features === null) {
+          this.#_features = [];
+          add_features(this.#_features, this.route, '', []);
+        }
 
-        return flist;
+        return this.#_features;
     }
 
     appendix_lengths() {
@@ -265,6 +268,17 @@ class RouteDetails {
                  max_elevation: ele.max_elevation,
                  end_position: endsegment[endsegment.length - 1].pos,
                  segments: segments};
+    }
+
+    get_gpx(dir, appendices) {
+        const doc = document.implementation.createDocument(
+          "http://www.topografix.com/GPX/1/1", "gpx", null);
+        doc.setAttribute('creator', 'waymarkedtrails.org')
+
+
+
+        return ['<?xml version="1.0" encoding="UTF-8" standalone="no" ?>\n\n',
+                new XMLSerializer().serializeToString(doc)];
     }
 }
 

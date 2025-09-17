@@ -47,6 +47,21 @@ details:
     two_end: |
       Point where route is interrupted because relation is not sorted.
       The red dashed lines shows where the route continues.
+  download:
+    title: Download route
+    need_format: Choose a format
+    need_direction: Choose ways to include
+    start: Get file
+    format:
+      title: Format
+      GPX: GPX
+      KML: KML
+    direction:
+      title: Include ways in direction
+      forward: forwards
+      backward: backwards
+      both: both
+    other_ways: Additional route parts
 elevation:
   ascent: Accumulated ascent
   descent: Accumulated descent

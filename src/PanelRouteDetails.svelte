@@ -18,6 +18,7 @@
     import DetailsWeblink from './ui/DetailsWeblink.svelte';
     import ElevationView from './ElevationView.svelte';
     import RouteAnalyzeView from './RouteAnalyzeView.svelte';
+    import RouteDownloadView from './RouteDownloadView.svelte';
     import ItineraryLine from './ui/ItineraryLine.svelte';
     import DetailsFooter from './ui/DetailsFooter.svelte';
     import VectorLayer from 'ol/layer/Vector';
@@ -186,6 +187,10 @@
     {/if}
 
     <CollapsibleTagList tags={route.tags} />
+
+    <Collapsible title={$_('details.download.title')} init_collapsed={true}>
+        <RouteDownloadView {route} />
+    </Collapsible>
 
     <Collapsible title={$_('details.analyze.title')} init_collapsed={true}>
         <RouteAnalyzeView {route} />
