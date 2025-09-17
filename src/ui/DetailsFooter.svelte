@@ -41,15 +41,5 @@
         {$_('details.zoom_to')}
     </button>
 
-    <a href="{API_URL}/details/{osm_type}/{osm_id}/geometry/gpx">
-        <span class="btn-img"><SVGDownload /></span>
-        {$_('details.GPX')}
-    </a>
-
-    <a href="{API_URL}/details/{osm_type}/{osm_id}/geometry/kml">
-        <span class="btn-img"><SVGDownload /></span>
-        {$_('details.KML')}
-    </a>
-
 </div>
 {/if}
