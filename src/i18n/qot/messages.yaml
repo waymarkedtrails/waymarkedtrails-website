@@ -6,8 +6,6 @@ destination_sign:
   no_data: No destination information available for this guidepost.
   title: Destinations
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitude
   image: Image
   mapped_len: Mapped length
