@@ -1,9 +1,9 @@
 :root {
-      --theme-background-color: #c25366;
+      --theme-background-color: #c6929b;
       --theme-font-color: #000;
-      --theme-sub-color: #5f2932;
-      --theme-sub-font-color: #b9b6c3;
-      --theme-sub-link-color: #8AA145;
+      --theme-sub-color: #ae5261;
+      --theme-sub-font-color: #e0e3e3;
+      --theme-sub-link-color: #6bbbbb;
       --theme-banner-image: url('../img/banner_skating.jpg');
       --theme-link-color: #731222;
       --theme-button-background: #5a6268;
