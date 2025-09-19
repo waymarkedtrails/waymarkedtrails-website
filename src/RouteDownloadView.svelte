@@ -166,7 +166,7 @@
           filesuffix = 'kml';
         }
         if (url) {
-            let filename = slugify(route.name) || slugify(route.ref) || `relation_${route.id}`;
+            let filename = slugify(route.title);
             let a = document.createElement("a");
             a.href = url;
             a.download = `${filename}.${filesuffix}`;
