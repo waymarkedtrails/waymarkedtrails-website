@@ -19,8 +19,6 @@ destination_sign:
   more: Више детаља
   title: Дестинације
 details:
-  GPX: GPX
-  KML: KML
   altitude: Надморска висина
   mapped_len: Приказано на мапи
   note: Белешка
@@ -32,6 +30,10 @@ details:
     title: Ознаке OpenStreetMap-а
   website: Веб-сајт
   zoom_to: Прикажи на мапи
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Акумулирани успон
   descent: Акумулирани спуст

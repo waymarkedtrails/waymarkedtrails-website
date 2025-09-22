@@ -6,10 +6,12 @@
 # Author: 咽頭べさ
 ---
 details:
-  GPX: GPX
   note: 'တၚ်စၟတ်:'
   subroutes_title: အခန်
   superroutes_title: မွဲလစှ်ေ ကု
+  download:
+    format:
+      GPX: GPX
 elevation:
   diagram:
     distance: ဇမ္ၚောဲ(km)

@@ -14,8 +14,6 @@ destination_sign:
   no_data: אין פירוט יעד זמין לתמרור ההכוונה הזה.
   title: יעדים
 details:
-  GPX: GPX
-  KML: KML
   altitude: גובה
   image: תמונה
   mapped_len: אורך ממופה
@@ -38,6 +36,10 @@ details:
   website: אתר אינטרנט
   wikipedia: ויקיפדיה
   zoom_to: הצגה במפה
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: עלייה מצטברת
   descent: ירידה מצטברת

@@ -15,8 +15,6 @@ attribution:
 destination_sign:
   more: 자세한 내용
 details:
-  GPX: GPX
-  KML: KML
   altitude: 고도
   image: 이미지
   mapped_len: 매핑된 거리
@@ -30,6 +28,10 @@ details:
   website: 웹사이트
   wikipedia: 위키백과
   zoom_to: 지도에 보이기
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: 누적된 오르막
   descent: 누적된 내리막

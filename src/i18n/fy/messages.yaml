@@ -12,8 +12,6 @@ destination_sign:
   no_data: Gjin bestimmingsynformaasje beskikber foar dizze hânwizer.
   title: Bestimmingen
 details:
-  GPX: GPX
-  KML: KML
   altitude: Hichte
   image: Ofbyld
   mapped_len: Ofstân op 'e kaart
@@ -37,6 +35,10 @@ details:
   website: Webstee
   wikipedia: Wikipedy
   zoom_to: Op 'e kaart oanjaan
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Klimmen byinoar
   descent: Dalen byinoar

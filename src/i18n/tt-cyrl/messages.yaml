@@ -10,8 +10,6 @@ attribution:
 destination_sign:
   more: Тулырак
 details:
-  GPX: GPX
-  KML: KML
   altitude: Югарылык
   image: Сурәт
   mapped_len: Харитада күрсәтү
@@ -33,6 +31,10 @@ details:
   website: Веб-сәхифә
   wikipedia: Википедия
   zoom_to: Харитада күрсәтү
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Тупланган менеш
   descent: Тупланган төшеш

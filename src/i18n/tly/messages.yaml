@@ -12,8 +12,6 @@ destination_sign:
   more: Чәмин
   title: Шә вырон
 details:
-  GPX: GPX
-  KML: KML
   altitude: Barzəti
   image: Šikil
   mapped_len: Хәритәдә нишо дој
@@ -32,6 +30,10 @@ details:
     way: Ro
   website: Vebsoyt
   zoom_to: Xəritədə nišon doj
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Умуми пеше
   descent: Умуми етат

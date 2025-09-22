@@ -11,8 +11,6 @@ destination_sign:
   more: 更多詳情
   title: 目的地
 details:
-  GPX: GPX
-  KML: KML
   altitude: 海拔
   image: 圖片
   official_len: 官方長度
@@ -22,6 +20,10 @@ details:
     title: OpenStreetMap標籤
   website: 網站
   zoom_to: 顯示到地圖上
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: 累積上斜
   descent: 累積落斜

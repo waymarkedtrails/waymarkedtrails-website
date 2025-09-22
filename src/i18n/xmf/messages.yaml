@@ -7,8 +7,6 @@ destination_sign:
   more: უმოსი დეტალეფი
   title: მალობეფი
 details:
-  GPX: GPX
-  KML: KML
   altitude: სიმაღალა
   image: სურათი
   note: ხვილაფა
@@ -18,6 +16,10 @@ details:
     title: OpenStreetMap ხინტკეფი
   website: ვებ-ხასჷლა
   zoom_to: რუკას ძირაფა
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: ართამი ეშულა
   descent: ართამი დილულა

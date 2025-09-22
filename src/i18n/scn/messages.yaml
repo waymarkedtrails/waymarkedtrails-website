@@ -11,8 +11,6 @@ attribution:
 destination_sign:
   more: Cchiossai dittagghî
 details:
-  GPX: GPX
-  KML: KML
   altitude: Autitùtini
   image: Mmàggini
   mapped_len: Taliatu ntâ mappa
@@ -32,6 +30,10 @@ details:
     way: Passu
   website: Situ web
   zoom_to: Ammustra ntâ mappa
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Acchianata accumulata
   descent: Scisa accumulata

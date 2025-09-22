@@ -12,8 +12,6 @@ destination_sign:
   more: ٻیاں تفصیلاں
   title: منزل
 details:
-  GPX: جی پی ایکس
-  KML: KML
   altitude: بلندی
   image: تصویر
   mapped_len: نقشے دی لمبائی
@@ -40,6 +38,10 @@ details:
   analyze:
     title: تعلق دا تجزیہ کرو
     open_end: رستے دا کھلا سرا۔
+  download:
+    format:
+      GPX: جی پی ایکس
+      KML: KML
 elevation:
   ascent: مجموعی چڑھائی
   descent: مجموعی لہاڑ

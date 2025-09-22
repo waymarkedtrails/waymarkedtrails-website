@@ -16,8 +16,6 @@ destination_sign:
   no_data: Для гэтага паказальніка недаступная інфармацыя пра пункт прызначэньня.
   title: Месцы прызначэньня
 details:
-  GPX: GPX
-  KML: KML
   altitude: Вышыня
   image: Выява
   mapped_len: Даўжыня на мапе
@@ -53,6 +51,10 @@ details:
       сьцежак пазначаных шляхоў чытайце на старонках дапамогі.
     open_end: Адкрыты канец маршруту.
     multi_end: У гэтым пункце сустракаюцца больш за два адцінкі маршруту.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Сумарны пад’ём
   descent: Сумарны спуск

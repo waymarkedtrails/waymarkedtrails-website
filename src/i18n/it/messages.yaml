@@ -19,8 +19,6 @@ destination_sign:
     posa.
   title: Destinazioni
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitudine
   image: Immagine
   mapped_len: Visualizzato sulla mappa
@@ -55,6 +53,14 @@ details:
       da waymarkedtrails a partire dalla relazione che potrebbe non essere sempre
       corretta. Per ulteriori informazioni su come waymarkedtrails ordina gli itinerari,
       visita le pagine di assistenza.
+  download:
+    need_format: Scegli un formato
+    start: Ottieni file
+    format:
+      GPX: GPX
+      KML: KML
+    direction:
+      both: entrambi
 elevation:
   ascent: Ascesa accumulata
   descent: Discesa accumulata

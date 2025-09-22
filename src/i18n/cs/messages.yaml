@@ -21,8 +21,6 @@ destination_sign:
   more: Více informací
   title: Cíle
 details:
-  GPX: GPX
-  KML: KML
   altitude: Výška
   image: Obrázek
   mapped_len: Zobrazeno na mapě
@@ -37,6 +35,10 @@ details:
     relation: Relace
   website: Webová stránka
   zoom_to: Ukázat na mapě
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Kumulované stoupání
   descent: Kumulovaný sestup

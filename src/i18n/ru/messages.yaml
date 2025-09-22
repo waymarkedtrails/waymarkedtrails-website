@@ -24,8 +24,6 @@ destination_sign:
   no_data: Информация о пункте назначения для этого указателя недоступна.
   title: Места назначения
 details:
-  GPX: GPX
-  KML: KML
   altitude: Высота
   image: Изображение
   mapped_len: Показать на карте
@@ -46,6 +44,10 @@ details:
   website: Веб-сайт
   wikipedia: Википедия
   zoom_to: Показать на карте
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Суммарное восхождение
   descent: Суммарный спуск

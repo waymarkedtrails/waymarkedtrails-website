@@ -17,8 +17,6 @@ destination_sign:
   no_data: Pre tento smerovník nie sú dostupné informácie o destinácii.
   title: Ciele
 details:
-  GPX: GPX
-  KML: KML
   altitude: Nadmorská výška
   image: Obrázok
   mapped_len: Mapovaná dĺžka
@@ -42,6 +40,10 @@ details:
   website: Webová stránka
   wikipedia: Wikipédia
   zoom_to: Zobraziť na mape
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Akumulovaný výstup
   descent: Akumulovaný zostup

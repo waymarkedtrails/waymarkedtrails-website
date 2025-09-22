@@ -4,11 +4,13 @@
 # Author: Jagwar
 ---
 details:
-  GPX: GPX
   note: Naoty
   subroutes_title: Fizarana
   superroutes_title: Singan'i
   website: Tranonkala
+  download:
+    format:
+      GPX: GPX
 elevation:
   diagram:
     altitude: Haavo (m)

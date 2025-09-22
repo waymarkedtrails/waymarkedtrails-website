@@ -14,7 +14,6 @@ destination_sign:
   more: Flere detaljer
   title: Mål
 details:
-  GPX: GPX
   mapped_len: Vist på kartet
   note: Melding
   official_len: Offisiell lengde
@@ -25,6 +24,9 @@ details:
     title: OpenStreetMap-tagger
   website: Vevside
   zoom_to: Vis på kart
+  download:
+    format:
+      GPX: GPX
 elevation:
   ascent: Akkumulert stigning
   descent: Akkumulert nedstigning

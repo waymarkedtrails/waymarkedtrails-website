@@ -12,8 +12,6 @@ destination_sign:
   more: Thêm chi tiết
   title: Điểm đến
 details:
-  GPX: GPX
-  KML: KML
   altitude: Cao độ
   image: Hình ảnh
   mapped_len: Chiều dài trên bản đồ
@@ -27,6 +25,10 @@ details:
   website: Trang Web
   wikipedia: Wikipedia
   zoom_to: Xem trên bản đồ
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Chiều cao leo lên tổng cộng
   descent: Chiều cao đi xuống tổng cộng

@@ -15,8 +15,6 @@ destination_sign:
   more: Περισσότερες λεπτομέρειες
   title: Προορισμοί
 details:
-  GPX: GPX
-  KML: KML
   altitude: Υψόμετρο
   image: Εικόνα
   mapped_len: Χαρτογραφημένο μήκος
@@ -49,6 +47,10 @@ details:
     open_end: Ανοιχτό τέρμα στην διαδρομή.
     multi_end: Περισσότερα από δύο τμήματα αυτής της διαδρομής συναντιούνται σε αυτό
       το σημείο.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Συσσωρευμένη άνοδος
   descent: Συσσωρευμένη κάθοδος

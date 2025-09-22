@@ -21,8 +21,6 @@ destination_sign:
   no_data: Ehhez az útirányjelző táblához nincs megadva útirány.
   title: Úti célok
 details:
-  GPX: GPX
-  KML: KML
   altitude: Magasság
   image: Kép
   mapped_len: Térképen látható hossz
@@ -61,6 +59,10 @@ details:
     multi_end: Legalább három útvonalszakasz találkozási pontja.
     two_end: Az útvonal megszakad ennél a pontnál, mert a kapcsolat nincs sorba rendezve.
       A szaggatott vörös vonal mutatja az útvonal folytatódását.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Összesített emelkedés
   descent: Összesített ereszkedés

@@ -15,8 +15,6 @@ destination_sign:
   more: Muioc'h a vunudoù
   title: 'Lec''hioù-kas :'
 details:
-  GPX: GPX
-  KML: KML
   altitude: Uhelder
   image: Skeudenn
   mapped_len: War ziskouez war ar gartenn
@@ -37,6 +35,10 @@ details:
   website: Lec'hienn Genrouedad
   wikipedia: Wikipedia
   zoom_to: Diskouez war ar gartenn
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Sav berniet
   descent: Diskenn berniet

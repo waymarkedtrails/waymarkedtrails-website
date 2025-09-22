@@ -17,8 +17,6 @@ destination_sign:
   no_data: 此路標的目的地資訊不可用。
   title: 目的地
 details:
-  GPX: GPX
-  KML: KML
   altitude: 海拔
   image: 圖片
   mapped_len: 顯示在地圖上
@@ -56,6 +54,10 @@ details:
     two_end: |-
       由於關聯未排序，指出路線中斷之處。
       紅色虛線顯示路線繼續的位置。
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: 累積上升
   descent: 累積下降

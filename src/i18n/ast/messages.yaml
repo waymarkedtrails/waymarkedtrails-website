@@ -12,8 +12,6 @@ destination_sign:
   more: Más detalles
   title: Destinos
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitú
   image: Imaxe
   mapped_len: Amosada nel mapa
@@ -27,6 +25,10 @@ details:
   website: Sitiu web
   wikipedia: Wikipedia
   zoom_to: Ver nel mapa
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Ascensu acumuláu
   descent: Descensu acumuláu

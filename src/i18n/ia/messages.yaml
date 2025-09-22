@@ -11,8 +11,6 @@ destination_sign:
   no_data: Nulle information de destination es disponibile pro iste poste indicator.
   title: Destinationes
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitude
   image: Imagine
   mapped_len: Distantia sur carta
@@ -51,6 +49,10 @@ details:
     multi_end: Plus de duo segmentos del itinerario se incontra in iste puncto.
     two_end: Le puncto ubi le itinerario es interrumpite perque le relation non es
       ordinate. Le lineas discontinue rubie monstra ubi le itinerario continua.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Ascension accumulate
   descent: Descension accumulate

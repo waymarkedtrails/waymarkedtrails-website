@@ -27,8 +27,6 @@ destination_sign:
   no_data: 此路标的目的地信息不可用。
   title: 目的地
 details:
-  GPX: GPX
-  KML: KML
   altitude: 海拔
   image: 图像
   mapped_len: 显示在地图上
@@ -60,6 +58,10 @@ details:
     title: 分析关系
     summary: 此关系有{num}个段。
     disclaimer: 这表明了由waymarkedtrails根据关系计算出的路线段，这些可能并不总是准确。要了解更多关于waymarkedtrails如何排序路线的信息，请访问帮助页面。
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: 累计上坡
   descent: 累计下坡

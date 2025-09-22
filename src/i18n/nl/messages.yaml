@@ -24,8 +24,6 @@ destination_sign:
   no_data: Er is geen bestemmingsinformatie voor deze wegwijzer.
   title: Bestemmingen
 details:
-  GPX: GPX
-  KML: KML
   altitude: Hoogte
   image: Afbeelding
   mapped_len: Lengte op kaart
@@ -64,6 +62,10 @@ details:
     two_end: |-
       Punt waar de route onderbroken is, omdat de relatie niet gesorteerd is.
       De rode stippellijnen geven aan waar de route verdergaat.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Totaal gestegen
   descent: Totaal gedaald

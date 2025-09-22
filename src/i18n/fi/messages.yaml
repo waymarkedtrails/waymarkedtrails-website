@@ -19,7 +19,6 @@ destination_sign:
   no_data: Tämän tienviitan kohdetietoja ei ole saatavilla.
   title: Määränpäät
 details:
-  GPX: GPX
   altitude: Korkeus
   image: Kuva
   mapped_len: Kartoitettu pituus
@@ -40,6 +39,9 @@ details:
     way: Tie
   website: Verkkosivusto
   zoom_to: Näytä kartalla
+  download:
+    format:
+      GPX: GPX
 elevation:
   ascent: Kertynyt nousu
   descent: Kertynyt laskeutuminen

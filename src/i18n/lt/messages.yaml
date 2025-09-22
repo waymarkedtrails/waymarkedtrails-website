@@ -12,7 +12,6 @@ attribution:
   data: Žemėlapio duomenys © [OpenStreetMap](https://www.openstreetmap.org) pagal
     [ODbL](https://www.openstreetmap.org/copyright)
 details:
-  GPX: GPX
   note: Pastaba
   official_len: Oficialus ilgis
   operator: Operatorius
@@ -21,6 +20,9 @@ details:
   tags:
     title: OpenStreetMap žymės
   website: Tinklalapis
+  download:
+    format:
+      GPX: GPX
 elevation:
   diagram:
     altitude: Aukštis (m)

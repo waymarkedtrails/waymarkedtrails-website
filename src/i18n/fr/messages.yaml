@@ -33,8 +33,6 @@ destination_sign:
   no_data: Aucune information sur la destination n’est disponible pour ce poteau indicateur
   title: Destinations
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitude
   image: Image
   mapped_len: Longueur cartographiée
@@ -75,6 +73,10 @@ details:
     two_end: |-
       Point où l’itinéraire est interrompu car la relation n’est pas triée.
       Les lignes pointillées rouges indiquent où l’itinéraire continue.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Montée cumulée
   descent: Descente cumulée

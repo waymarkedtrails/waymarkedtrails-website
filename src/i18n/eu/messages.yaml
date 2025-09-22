@@ -16,8 +16,6 @@ destination_sign:
   more: Xehetasun gehiago
   title: Helburua
 details:
-  GPX: GPSa
-  KML: KML
   altitude: Garaiera
   image: Irudia
   mapped_len: Egokitutako neurriak
@@ -30,6 +28,10 @@ details:
     title: OpenStreetMap oharrak
   website: Webgunea
   zoom_to: Erakutsi mapan
+  download:
+    format:
+      GPX: GPSa
+      KML: KML
 elevation:
   ascent: Pilatutako igoera
   descent: Pilatutako jaitsiera

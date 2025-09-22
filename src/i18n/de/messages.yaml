@@ -22,8 +22,6 @@ destination_sign:
   no_data: Für diesen Wegweiser sind keine Zielinformationen verfügbar.
   title: Ziele
 details:
-  GPX: GPX
-  KML: KML
   altitude: Höhe
   image: Bild
   mapped_len: Erfasste Länge
@@ -63,6 +61,10 @@ details:
     two_end: |-
       Punkt, an dem die Route unterbrochen wird, weil die Relation nicht sortiert ist.
       Die rot gestrichelten Linien zeigen, wo die Route weitergeht.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Kumulierter Anstieg
   descent: Kumulierter Abstieg

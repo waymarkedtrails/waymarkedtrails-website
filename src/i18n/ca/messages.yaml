@@ -17,8 +17,6 @@ destination_sign:
   more: Més detalls
   title: Destinacions
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitud
   image: Imatge
   mapped_len: Longitud cartografiada
@@ -31,6 +29,10 @@ details:
     title: Etiquetes d'OpenStreetMap
   website: Lloc web
   zoom_to: Mostrar en el mapa
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Ascensió acumulada
   descent: Descens acumulat

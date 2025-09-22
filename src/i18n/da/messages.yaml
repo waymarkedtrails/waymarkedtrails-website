@@ -18,8 +18,6 @@ destination_sign:
   no_data: Ingen destinationsoplysninger tilgængelige for denne vejviser.
   title: Destinationer
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitude
   image: Billede
   mapped_len: Vist på kortet
@@ -58,6 +56,10 @@ details:
     two_end: |-
       Punkt, hvor ruten afbrydes, fordi relationen ikke er sorteret.
       De røde stiplede linjer viser, hvor ruten fortsætter.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Samlet stigning
   descent: Samlet fald

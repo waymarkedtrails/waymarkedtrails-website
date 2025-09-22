@@ -10,7 +10,6 @@ attribution:
 destination_sign:
   title: Ուղղություններ
 details:
-  GPX: GPX
   altitude: Բարձրություն
   image: Պատկեր
   note: Նշում
@@ -20,6 +19,9 @@ details:
   superroutes_title: Մասն է
   symbol: Նշան
   website: Կայք
+  download:
+    format:
+      GPX: GPX
 elevation:
   diagram:
     altitude: Բարձրությունը (մ)

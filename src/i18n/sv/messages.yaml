@@ -21,8 +21,6 @@ destination_sign:
   more: Fler detaljer
   title: Destinationer
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitud
   image: Bild
   mapped_len: Visas på karta
@@ -38,6 +36,10 @@ details:
   zoom_to: Visa på karta
   analyze:
     summary: Denna relation har {num} segment.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Ackumulerad stigning
   descent: Ackumulerad nedstigning

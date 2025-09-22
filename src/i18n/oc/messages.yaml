@@ -10,7 +10,6 @@ attribution:
     [ODbL](https://www.openstreetmap.org/copyright)
   elevation_title: donnadas altimetricas per [SRTM/ASTER](help/acknowledgements)
 details:
-  GPX: GPX
   mapped_len: Longor cartografiada
   note: Nòta
   official_len: Longor oficiala
@@ -20,6 +19,9 @@ details:
   tags:
     title: Balisas OpenStreetMap
   website: Site web
+  download:
+    format:
+      GPX: GPX
 elevation:
   ascent: Montada cumulada
   descent: Davalada cumulada

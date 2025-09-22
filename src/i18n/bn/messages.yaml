@@ -13,7 +13,6 @@
 destination_sign:
   more: আরও বিস্তারিত
 details:
-  KML: KML
   image: চিত্র
   mapped_len: ম্যাপ করা অংশের ধৈর্ঘ্য
   note: টীকা
@@ -21,6 +20,9 @@ details:
   operator: পরিচালনকারী
   website: ওয়েবসাইট
   zoom_to: মানচিত্রে দেখান
+  download:
+    format:
+      KML: KML
 elevation:
   diagram:
     altitude: উচ্চতা (মি)

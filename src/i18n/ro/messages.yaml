@@ -13,8 +13,6 @@ destination_sign:
   no_data: Nu există informații despre destinație pentru acest marcaj.
   title: Destinații
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitudine
   image: Imagine
   mapped_len: Afișată pe hartă
@@ -36,6 +34,10 @@ details:
     way: Cale
   website: Site web
   zoom_to: Arată pe hartă
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Urcare cumulată
   descent: Coborâre cumulată

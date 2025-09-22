@@ -15,8 +15,6 @@ destination_sign:
   no_data: Non hai información de destino dispoñible para este marco.
   title: Destinos
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitude
   image: Imaxe
   mapped_len: Lonxitude cartografada
@@ -57,6 +55,10 @@ details:
     two_end: |-
       Punto onde se interrompe a ruta porque a relación non está ordenada.
       As liñas descontinuas vermellas indican onde continúa a ruta.
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Ascenso acumulado
   descent: Descenso acumulado

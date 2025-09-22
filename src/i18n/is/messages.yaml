@@ -13,8 +13,6 @@ destination_sign:
   no_data: Það eru engar upplýsingar um áfangastaði fáanlegar fyrir þennan leiðsögustaur.
   title: Áfangastaðir
 details:
-  GPX: GPX
-  KML: KML
   altitude: Hæð
   image: Mynd
   mapped_len: Vegalengd á korti
@@ -38,6 +36,10 @@ details:
   website: Vefsvæði
   wikipedia: Wikipedia
   zoom_to: Sýna á korti
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Uppsöfnuð hækkun
   descent: Uppsöfnuð lækkun

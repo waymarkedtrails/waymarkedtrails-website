@@ -8,8 +8,6 @@ destination_sign:
   more: ߝߊߙߊ߲ߝߊ߯ߛߌ߫ ߜߘߍ ߟߎ߬
   title: ߕߊ߯ߦߙߐ
 details:
-  GPX: GPX
-  KML: KML
   altitude: ߞߐߓߋ
   image: ߖߌ߬ߦߊ߬ߓߍ
   mapped_len: ߖߊ߲߰ߧߊ ߡߊߔߎߣߍ߲
@@ -30,6 +28,10 @@ details:
   website: ߓߟߐߟߐ߫ ߞߍߦߙߐ
   wikipedia: ߥߞߌߔߋߘߌߦߊ
   zoom_to: ߊ߬ ߦߌ߬ߘߊ߬ ߡߊߔ ߞߊ߲߬
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   diagram:
     altitude: ߞߐߓߋ (ߜ)

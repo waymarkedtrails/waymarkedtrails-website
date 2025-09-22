@@ -17,8 +17,6 @@ attribution:
 destination_sign:
   more: Więcej szczegółów
 details:
-  GPX: GPX
-  KML: KML
   altitude: Wysokość
   image: Obraz
   mapped_len: Długość na mapie
@@ -32,6 +30,10 @@ details:
   tags:
     title: Znaczniki OpenStreetMap
   website: Strona internetowa
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Skumulowane wznoszenia
   descent: Zgromadzone schodzenia

@@ -14,8 +14,6 @@ destination_sign:
   more: Pliaj detaloj
   title: Celoj
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitudo
   image: Bildo
   mapped_len: Distanco sur mapo
@@ -35,6 +33,10 @@ details:
   website: Retejo
   wikipedia: Vikipedio
   zoom_to: Montri sur mapo
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Sumo de alsuproj
   descent: Sumo de desuproj

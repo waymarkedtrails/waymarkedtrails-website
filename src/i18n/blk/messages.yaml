@@ -5,14 +5,16 @@
 # Author: 咽頭べさ
 ---
 details:
-  GPX: GPX
-  KML: KML
   altitude: ထိုထဲင်းပင်ႏလယ်ႏထီခိုႏဆꩻကီ
   image: ရုက်ပုင်ႏ
   note: ရောမ်မုဲင်
   subroutes_title: အကွို့ꩻဖိုင်ႏ
   website: ဝဲက်သုဲက်
   zoom_to: အွောန်ႏနယ် ဟံႏပုင်ႏကို
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   diagram:
     altitude: ထိုထဲင်းပင်ႏလယ်ႏထီခိုႏဆꩻကီ (မီတာ)

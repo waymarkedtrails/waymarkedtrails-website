@@ -4,9 +4,11 @@
 # Author: ArslanX
 ---
 details:
-  GPX: GPX
   subroutes_title: Бёлюклер
   website: Веб-сайфа
+  download:
+    format:
+      GPX: GPX
 error:
   panel_title: Хата
 headline:

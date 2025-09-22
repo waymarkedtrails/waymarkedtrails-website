@@ -22,8 +22,6 @@ destination_sign:
   more: Daha fazla ayrıntı
   title: Hedefler
 details:
-  GPX: GPX
-  KML: KML
   altitude: Yükseklik
   image: Resim
   mapped_len: Eşlenmiş uzunluk
@@ -44,6 +42,10 @@ details:
   website: Web site
   wikipedia: Vikipedi
   zoom_to: Haritada göster
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Birikmiş yükseliş
   descent: Birikmiş iniş

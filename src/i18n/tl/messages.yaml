@@ -13,8 +13,6 @@ destination_sign:
   no_data: Walang binigay na impormasyon sa destinasyon para sa guidepost na ito.
   title: Mga destinasyon
 details:
-  GPX: GPX
-  KML: KML
   altitude: Taas
   image: Larawan
   mapped_len: Ipinapakita sa mapa
@@ -38,6 +36,10 @@ details:
   website: Pook sa sapot
   wikipedia: Wikipedia
   zoom_to: Ipakita sa mapa
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Naakyat
   descent: Nababa

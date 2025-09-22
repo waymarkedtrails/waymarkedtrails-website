@@ -18,8 +18,6 @@ destination_sign:
   no_data: Melumatê nê destinasyon nê rehberi de gureyena
   title: Hedefi
 details:
-  GPX: GPX
-  KML: KML
   altitude: Berziye
   image: Resım
   mapped_len: Dergeya xerita
@@ -46,6 +44,10 @@ details:
   analyze:
     title: Eleqeyın analizi
     summary: No eleqe de segmenta {num} esta
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Verecoro komkerde
   descent: Verecoro komkerde

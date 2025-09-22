@@ -16,8 +16,6 @@ destination_sign:
   no_data: Za ta kažipot niso na voljo nobene informacije o cilju.
   title: Cilji
 details:
-  GPX: GPX
-  KML: KML
   altitude: Nadmorska višina
   image: Slika
   mapped_len: Kartografska dolžina
@@ -41,6 +39,10 @@ details:
   website: Spletno mesto
   wikipedia: Wikipedija
   zoom_to: Prikaži na zemljevidu
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Skupni vzpon
   descent: Skupni spust

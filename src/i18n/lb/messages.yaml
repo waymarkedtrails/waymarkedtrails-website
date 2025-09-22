@@ -8,8 +8,6 @@ destination_sign:
   more: Méi Detailer
   title: Destinatiounen
 details:
-  GPX: GPX
-  KML: KML
   altitude: Héicht
   image: Bild
   note: Notiz
@@ -26,6 +24,10 @@ details:
   website: Internetsite
   wikipedia: Wikipedia
   zoom_to: Op der Kaart weisen
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   diagram:
     altitude: Héicht(m)

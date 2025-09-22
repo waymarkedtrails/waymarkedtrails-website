@@ -26,8 +26,6 @@ destination_sign:
   no_data: Nenhuma informação de destino disponível para este guia.
   title: Destinos
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitude
   image: Imagem
   mapped_len: Exibido no mapa
@@ -51,6 +49,10 @@ details:
   website: Site
   wikipedia: Wikipédia
   zoom_to: Mostrar no mapa
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Ascensão acumulada
   descent: Descensão acumulada

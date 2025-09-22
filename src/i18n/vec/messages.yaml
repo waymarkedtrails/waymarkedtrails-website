@@ -11,8 +11,6 @@ destination_sign:
   more: Pì detaji
   title: Destinasion
 details:
-  GPX: GPX
-  KML: KML
   altitude: Altitùdene
   image: Imàzene
   mapped_len: Vixuałixà so ła mapa
@@ -25,6 +23,10 @@ details:
     title: Note de OpenStreetMap
   website: sito web
   zoom_to: Mostra inte ła mapa
+  download:
+    format:
+      GPX: GPX
+      KML: KML
 elevation:
   ascent: Aseza cumułada
   descent: Deseza cumułada
