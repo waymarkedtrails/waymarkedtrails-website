@@ -56,9 +56,20 @@ details:
       Punto onde se interrompe a ruta porque a relación non está ordenada.
       As liñas descontinuas vermellas indican onde continúa a ruta.
   download:
+    title: Descargar a ruta
+    need_format: Escolle un formato
+    need_direction: Escolle as vías a incluír
+    start: Obter o ficheiro
     format:
+      title: Formato
       GPX: GPX
       KML: KML
+    direction:
+      title: Incluír as vías nas indicacións
+      forward: adiante
+      backward: atrás
+      both: ambas
+    other_ways: Partes adicionais da ruta
 elevation:
   ascent: Ascenso acumulado
   descent: Descenso acumulado

@@ -57,9 +57,20 @@ details:
       النقطة التي انقطع عندها المسار بسبب عدم فرز العلاقة.
       توضح الخطوط الحمراء المتقطعة المكان الذي يستمر فيه المسار.
   download:
+    title: مسار التنزيل
+    need_format: اختر التنسيق
+    need_direction: اختر طرقًا للتضمين
+    start: الحصول على الملف
     format:
+      title: شكل
       GPX: جي بي إكس
       KML: كيه إم إل
+    direction:
+      title: تضمين طرق في الاتجاه
+      forward: إلى الأمام
+      backward: إلى الخلف
+      both: كلاهما
+    other_ways: أجزاء إضافية من الطريق
 elevation:
   ascent: الصعود المتراكم
   descent: النزول المتراكم

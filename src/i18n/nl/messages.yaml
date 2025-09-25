@@ -63,9 +63,20 @@ details:
       Punt waar de route onderbroken is, omdat de relatie niet gesorteerd is.
       De rode stippellijnen geven aan waar de route verdergaat.
   download:
+    title: Route downloaden
+    need_format: Kies een indeling
+    need_direction: Kies de op te nemen wegen
+    start: Bestand ophalen
     format:
+      title: Indeling
       GPX: GPX
       KML: KML
+    direction:
+      title: 'Wegen opnemen in richting:'
+      forward: vooruit
+      backward: achteruit
+      both: beide
+    other_ways: Extra routeonderdelen
 elevation:
   ascent: Totaal gestegen
   descent: Totaal gedaald

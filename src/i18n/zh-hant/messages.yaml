@@ -55,9 +55,20 @@ details:
       由於關聯未排序，指出路線中斷之處。
       紅色虛線顯示路線繼續的位置。
   download:
+    title: 下載路線
+    need_format: 選擇格式
+    need_direction: 選擇包含的路徑
+    start: 取得檔案
     format:
+      title: 格式
       GPX: GPX
       KML: KML
+    direction:
+      title: 包含路徑的方向
+      forward: 往前
+      backward: 往後
+      both: 兩者
+    other_ways: 額外路線部分
 elevation:
   ascent: 累積上升
   descent: 累積下降

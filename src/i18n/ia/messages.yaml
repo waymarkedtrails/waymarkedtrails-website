@@ -50,9 +50,20 @@ details:
     two_end: Le puncto ubi le itinerario es interrumpite perque le relation non es
       ordinate. Le lineas discontinue rubie monstra ubi le itinerario continua.
   download:
+    title: Discargar itinerario
+    need_format: Elige un formato
+    need_direction: Elige le vias a includer
+    start: Obtener le file
     format:
+      title: Formato
       GPX: GPX
       KML: KML
+    direction:
+      title: Includer vias que mena
+      forward: in avante
+      backward: a retro
+      both: ambes
+    other_ways: Partes additional del itinerario
 elevation:
   ascent: Ascension accumulate
   descent: Descension accumulate

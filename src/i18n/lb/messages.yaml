@@ -25,7 +25,9 @@ details:
   wikipedia: Wikipedia
   zoom_to: Op der Kaart weisen
   download:
+    need_format: Wielt e Format
     format:
+      title: Format
       GPX: GPX
       KML: KML
 elevation:

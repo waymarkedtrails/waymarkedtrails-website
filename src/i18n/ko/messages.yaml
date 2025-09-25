@@ -5,6 +5,7 @@
 # Author: Idh0854
 # Author: Jerrykim306
 # Author: Kurousagi
+# Author: Suleiman the Magnificent Television
 # Author: Ykhwong
 # Author: 아라
 ---
@@ -14,17 +15,23 @@ attribution:
   elevation_title: 고도 데이터는 [SRTM/ASTER](help/acknowledgements) 제공
 destination_sign:
   more: 자세한 내용
+  title: 목적지
 details:
   altitude: 고도
-  image: 이미지
+  image: 그림
   mapped_len: 매핑된 거리
   note: 참고
   official_len: 공식 거리
-  operator: 운영자
-  subroutes_title: 부분
+  operator: 연산자
+  subroutes_title: 문단
   superroutes_title: '다음의 부분:'
   tags:
     title: OpenStreetMap 태그
+    value: 값
+  type:
+    node: 노드
+    relation: 관계
+    way: 길
   website: 웹사이트
   wikipedia: 위키백과
   zoom_to: 지도에 보이기
@@ -43,7 +50,7 @@ error:
   load_error: 서버 연결 오류.
   panel_title: 오류
 headline:
-  last_update: 최근 업데이트
+  last_update: 마지막 업데이트
 help: 지도 정보
 network:
   downhill: 내리막길

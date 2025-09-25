@@ -1,6 +1,7 @@
 # Messages for Vietnamese (Tiếng Việt)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Bapham123
 # Author: Minh Nguyen
 # Author: Nguyenphutrong2
 ---
@@ -33,12 +34,12 @@ technical:
   translation: |-
     ## Bản dịch
 
-    Các bản dịch được những người tốt bụng tại [translatewiki.net](http://translatewiki.net) bảo quản. Để đóng góp một bản dịch trong ngôn ngữ của bạn hoặc phản hồi về một bản dịch đã được đóng góp, hãy ghé vào [trang dự án tại translatewiki.net](http://translatewiki.net/wiki/Translating:Waymarked_Trails?uselang=vi).
+    Các bản dịch được những người tốt bụng tại [translatewiki.net](https://translatewiki.net) bảo quản. Để đóng góp một bản dịch trong ngôn ngữ của bạn hoặc phản hồi về một bản dịch đã được đóng góp, hãy ghé vào [trang dự án tại translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails?uselang=vi).
 legal:
   title: Điều khoản pháp luật và sử dụng
   copyright: Lớp tuyến đường được phát hành theo [Giấy phép Creative Commons Ghi công–Chia
-    sẻ tương tự 3.0 Đức](http://creativecommons.org/licenses/by-sa/3.0/de/deed.vi),
-    trong khi các tuyên đường GPX được phát hành theo [ODbL](http://opendatacommons.org/licenses/odbl/).
+    sẻ tương tự 3.0 Đức](https://creativecommons.org/licenses/by-sa/3.0/de/deed.vi),
+    và các tuyên đường GPX được phát hành theo [ODbL](https://opendatacommons.org/licenses/odbl/).
     Bạn được phép tái sử dụng và thay đổi chúng, miễn là tác phẩm dẫn xuất được phát
     hành theo một giấy phép thích hợp và dự án OpenStreetMap cùng trang này được ghi
     công.

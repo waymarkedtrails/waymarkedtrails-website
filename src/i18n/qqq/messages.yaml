@@ -4,6 +4,7 @@
 # Author: Dittaeva
 # Author: Liuxinyu970226
 # Author: Lonvia
+# Author: McDutchie
 # Author: Metalhead64
 # Author: Nike
 # Author: Robby
@@ -25,6 +26,10 @@ details:
   wikipedia: |-
     {{Optional}}
     {{Identical|Wikipedia}}
+  download:
+    direction:
+      title: Followed by options {{msg-osm|Wmt-details.download.direction.forward}},
+        {{msg-osm|Wmt-details.download.direction.backward}} and {{msg-osm|Wmt-details.download.direction.both}}.
 error:
   panel_title: '{{Identical|Error}}'
 headline:

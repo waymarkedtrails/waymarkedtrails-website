@@ -1,6 +1,7 @@
 # Messages for Vietnamese (Tiếng Việt)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Bapham123
 # Author: Caden99
 # Author: Max20091
 # Author: Minh Nguyen
@@ -46,8 +47,8 @@ headline:
 help: Giới thiệu về bản đồ
 locate_me: Định vị
 network:
-  downhill: xuống dốc
-  node: lối kết nối mạng nút
+  downhill: Xuống dốc
+  node: Lối kết nối mạng nút
 osmc_symbol:
   back: Quay lại
   background_heading: Nền
