@@ -60,9 +60,20 @@ details:
     two_end: Az útvonal megszakad ennél a pontnál, mert a kapcsolat nincs sorba rendezve.
       A szaggatott vörös vonal mutatja az útvonal folytatódását.
   download:
+    title: Útvonal letöltése
+    need_format: Formátum kiválasztása
+    need_direction: 'A kiválasztott vonalak tartalmazzák:'
+    start: Fájl letöltése
     format:
+      title: Formátum
       GPX: GPX
       KML: KML
+    direction:
+      title: Tartalmazza a következő irányokat
+      forward: előre
+      backward: hátra
+      both: mindkettő
+    other_ways: További útvonalrészek
 elevation:
   ascent: Összesített emelkedés
   descent: Összesített ereszkedés

@@ -139,14 +139,29 @@ hierarchies:
 osmc:
   title: Az osmc:symbol címke
   text: |-
-    Az `osmc:symbol` címkével gépileg olvasható módon írhatunk le egyszerű mértani formájú turistaútjelzéseket, amelyek néhány európai országban (köztük Magyarországon vagy Németországban) előfordulnak. A térkép a wikioldalon leírtaknak csak egy részét támogatja. A térképen való megjelenítéshez a címkének a következő formátumúnak kell lennie:
+    Az `osmc:symbol` címke lehetővé teszi az útvonaljelzések géppel olvasható leírását. Főként egyszerű geometriai alakzatokból álló szimbólumokhoz használható. A címke teljes leírását és történetét az OSM wiki [osmc:symbol oldala](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol) tartalmazza.
 
-        osmc:symbol=waycolor:background:foreground:text:textcolor
+    A waymarkedtrails oldal nagyrészt követi a wikin leírt szintaxist az alábbi korlátozásokkal és kiterjesztésekkel.
 
-    Az `waycolor`-nak meg kell lennie, de ezen a térképen figyelmen kívül hagyjuk.
-    A második előtér nem támogatott. A `text` és a `textcolor` elhagyható.
+    Ahhoz, hogy a címke megjelenjen a térképen, az alábbi formátumok egyikének kell megfelelnie:
 
-    A Waymarked Trails által támogatott további szimbólumok megtekinthetők az [osmc:symbol](osmc_symbols.html) címkeoldalon.
+        waycolor:background
+        waycolor:background:foreground
+        waycolor:background:foreground:foreground2
+        waycolor:background:foreground:foreground2:text:textcolor
+        waycolor:background:foreground:text:textcolor
+
+    A `waycolor`-nak mindig meg kell lennie, ez a térkép azonban figyelmen kívül hagyja.
+
+    Ezenkívül meg kell adni egy háttérszínt, bár a mezőt üresen is maradhat. Ezután legfeljebb két különböző előtérszín következik.
+
+    Végül opcionálisan hozzáadható egy kis hivatkozási szöveg, amely a jelen fog megjelenni. A szöveg színét mindig meg kell adni. Ha a szöveg túl hosszú, a waymarkedtrails oldal figyelmen kívül hagyja.
+
+    A szöveg hossza a választott háttértől függ: a szigorú korlát 4 karakter, a rombusz alakú háttér csak egyetlen karaktert fogad el, a csíkos és sávos háttér pedig egyáltalán nem fogad el hivatkozási szöveget.
+  reference_footer: A waymarkedtrails oldal által megjeleníthető színek és formák
+    teljes listája az alábbi hivatkozáson olvasható.
+  footer: A Waymarked Trails által támogatott szimbólumok listáját lásd a külön [osmc:symbol](osmc_symbols.html)
+    címkeoldalon.
 hikinglocal:
   title: Helyi megjelenítés
   text: |-
