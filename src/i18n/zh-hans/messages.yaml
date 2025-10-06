@@ -58,10 +58,26 @@ details:
     title: 分析关系
     summary: 此关系有{num}个段。
     disclaimer: 这表明了由waymarkedtrails根据关系计算出的路线段，这些可能并不总是准确。要了解更多关于waymarkedtrails如何排序路线的信息，请访问帮助页面。
+    open_end: 在路线中开放末端。
+    multi_end: 超过两条路线段在此点交汇。
+    two_end: |-
+      路线中断点因关联关系未排序。
+      红色虚线显示路线继续延伸的位置。
   download:
+    title: 下载路线
+    need_format: 选择格式
+    need_direction: 选择包含方式
+    start: 获取文件
     format:
+      title: 格式
       GPX: GPX
       KML: KML
+    direction:
+      title: 在方向中包含方法
+      forward: 往前
+      backward: 往后
+      both: 两者
+    other_ways: 附加线路部分
 elevation:
   ascent: 累计上坡
   descent: 累计下坡
@@ -102,10 +118,12 @@ osmc_symbol:
   examples: 示例
   foreground: 前景符号由一个颜色和一个由下划线连接的形状组成。下表显示了本网站所认可的所有组合。它还可以识别仅包含形状名称的前景。这些符号显示在最后一列。
   foreground_heading: 前景
+  intro_header: 概述
   preview: |-
     在下面的输入框中键osmc:symbol值
          看看它将如何在地图上呈现。
   preview_heading: 预览
+  symbol_reference_heading: 受支持符号的完整列表
 routelist:
   loading: 加载中…
   close: 关闭

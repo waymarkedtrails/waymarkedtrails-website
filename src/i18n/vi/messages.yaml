@@ -21,6 +21,7 @@ details:
   operator: Cơ quan giữ gìn
   subroutes_title: Giai đoạn
   superroutes_title: Trực thuộc
+  symbol: Biểu trưng
   tags:
     title: Các thẻ OpenStreetMap
   website: Trang Web

@@ -9,6 +9,7 @@
 # Author: Hydra
 # Author: Hzy980512
 # Author: Liuxinyu970226
+# Author: TFX202X
 # Author: Yfdyh000
 # Author: 乌拉跨氪
 ---
@@ -114,6 +115,21 @@ rendering:
         ele=<altitude>
 
     `tourism`和`information`是强制的。`name`和`ele`可被省略。
+route_order:
+  title: 路线排序
+  text: |-
+    waymarkedtrails需要正确排序的路线以显示海拔剖面图及提供GPX和KML下载。分析路线时，它会尽可能遵循关联中成员路径的原始顺序，这样制图者无需反复试验就能轻松调整顺序。若关联看似无序，waymarkedtrails仍会在路径能形成连续线性路线时进行排序。
+
+    排序时会考虑关联角色。“往前”和“往后”角色可用于标记路线中需根据方向选择不同路径的路段。请注意这些角色是相对于路径方向而非路线方向定义的！若存在此类分叉路段，请确保各方向的路径在关联中直接相邻，且仍遵循路线顺序。
+
+    其他角色均被视为各类支线路径，在主要排序时会被忽略（但仍会显示在地图上）。
+
+    waymarkedtrails能处理路线中未分割的环岛。只需添加无角色的闭合路径，环岛会自动分割成合适路段。即使存在分属往前/往后的V型接入道也能正常处理。但以下两种情况例外：
+
+    * 若环岛被分割成多段路径，必须为各段添加正确的“往前”或“往后”角色
+    * 若环岛位于定向路段中，必须分割环岛并为使用部分添加对应角色
+
+    排序经验法则：若JOSM关联编辑器显示路线连续，waymarkedtrails通常也能呈现线性路线。
 hierarchies:
   title: 关系层级
   text: |-
@@ -139,11 +155,35 @@ hierarchies:
 osmc:
   title: osmc:symbol标签
   text: |-
-    “osmc:symbol”标签提供使用机器可读的方式订阅由简单几何形状组成的道路符号，就像在很多欧洲国家（尤其在德国）看到的那样。地图只支持Wiki页面介绍的子集之一。为了在地图上显示，标签必须为以下格式：
+    `osmc:symbol` 标签提供了一种以
+    机器可读方式描述路线标识的方法。它主要用于由
+    简单几何形状组成的符号。有关该标签的完整描述和
+    历史，请访问
+    [osmc:symbol 页面](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)
+    在OSM维基上。waymarkedtrails基本遵循了维基页面中描述的语法
+    并带有此处描述的一些限制和扩展。
 
-       osmc:symbol=waycolor:background:foreground:text:textcolor
+    为了
+    要在地图上渲染，标签必须具有以下格式之一：
 
-    “waycolor”在此必须存在，但在地图中会忽略。不支持一秒钟前景。“text”和“textcolor”可以忽略。
+      waycolor:background
+      waycolor:background:foreground
+      waycolor:background:foreground:foreground2
+    waycolor:background:foreground:foreground2:text:textcolor
+      waycolor:background:foreground:text:textcolor
+
+    对于此地图，`waycolor` 必须始终存在，但会被忽略。
+    此外，您必须指定背景，尽管您可以保留
+    留空该字段。接下来最多跟随两个不同的前景。
+    最后，你可以选择性地添加一个小的参考文本。
+    放在顶部。文本颜色必须始终指定。请注意，
+    当参考文本过长时，waymarkedtrails将会忽略它们。
+    文本可以有多长取决于所选的背景：
+    硬限制为4个字符，仅采用菱形背景
+    单个字符、条纹和条形背景不占用
+    根本没有参考文本。
+  reference_footer: 你可以在下方参考中找到waymarkedtrails能够渲染的完整颜色和形状列表。
+  footer: 请参阅额外的 [osmc:symbol](osmc_symbols.html) 标签页，了解 Waymarked Trails 支持的符号列表。
 hikinglocal:
   title: 本地化渲染
   text: |-
