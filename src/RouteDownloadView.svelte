@@ -94,6 +94,13 @@
     function addElement(parentEle, name, content) {
         const ele = document.createElementNS(parentEle.namespaceURI, name);
         ele.textContent = content;
+        parentEle.append(ele);
+        return ele;
+    }
+
+    function prependElement(parentEle, name, content) {
+        const ele = document.createElementNS(parentEle.namespaceURI, name);
+        ele.textContent = content;
         parentEle.prepend(ele);
         return ele;
     }
@@ -127,7 +134,7 @@
           gpx.setAttribute('creator', 'waymarkedtrails.org');
 
           const meta = document.createElementNS(gpx.namespaceURI, 'metadata');
-          addElement(meta, 'name', route.name);
+          addElement(meta, 'name', route.title);
           addSubElement(meta, 'copyright', 'license', 'https://www.openstreetmap.org/copyright')
               .setAttribute('author', 'OpenStreetMap and Contributors');
           addSubElement(meta, 'link', 'text', 'WaymarkedTrails')
@@ -149,9 +156,9 @@
               dataProjection: 'EPSG:4326'
           });
           const doc = kml.children[0];
-          addElement(doc, 'name', route.name);
+          prependElement(doc, 'name', route.name);
           const author = document.createElementNS('http://www.w3.org/2005/Atom', 'author');
-          addElement(author, 'name',
+          prependElement(author, 'name',
                      'waymarkedtrails.org; OpenStreetMap and Contributors http://www.openstreetmap.org/copyright');
           kml.prepend(author);
           const link = document.createElementNS('http://www.w3.org/2005/Atom', 'link');
