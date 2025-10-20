@@ -38,6 +38,8 @@ elevation:
 error:
   load_error: Feeler beim Verbanne mam Server.
   panel_title: Feeler
+  object_not_found: Objet net fonnt.
+  api_unavailable: API net disponibel.
 headline:
   last_update: Lescht Aktualiséierung
 help: Iwwer dës Kaart
