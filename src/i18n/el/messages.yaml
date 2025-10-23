@@ -48,9 +48,20 @@ details:
     multi_end: Περισσότερα από δύο τμήματα αυτής της διαδρομής συναντιούνται σε αυτό
       το σημείο.
   download:
+    title: Λήψη διαδρομής
+    need_format: Επιλέξτε μια μορφή
+    need_direction: Επιλέξτε γραμμές για συμπερίληψη
+    start: Λήψη αρχείου
     format:
+      title: Μορφή
       GPX: GPX
       KML: KML
+    direction:
+      title: Συμπερίληψη γραμμών στην κατεύθυνση
+      forward: προς τα εμπρός
+      backward: προς τα πίσω
+      both: και τα δύο
+    other_ways: Πρόσθετα τμήματα διαδρομής
 elevation:
   ascent: Συσσωρευμένη άνοδος
   descent: Συσσωρευμένη κάθοδος
@@ -75,6 +86,7 @@ help: Σχετικά με τον χάρτη
 locate_me: Εντόπισε με
 network:
   continental: Ηπειρωτικές διαδρομές
+  downhill: Κατηφορικό
   national: Εθνικές διαδρομές
   node: Συνδέσεις δικτύου κόμβων
   nordic: Σκανδιναβικό σκι
