@@ -48,7 +48,7 @@
             url: getSegmentsUrl,
             strategy: (extent) => { return segment_fragment ? [extent] : []; }
         }),
-        maxZoom: 11,
+        maxZoom: 12,
         style: null
     });
     map.addLayer(vector_layer);
