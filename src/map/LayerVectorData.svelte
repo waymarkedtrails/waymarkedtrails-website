@@ -1,4 +1,5 @@
 <script>
+    import { untrack } from 'svelte';
     import VectorSource from 'ol/source/Vector';
     import GeoJSON from 'ol/format/GeoJSON';
     import { API_URL } from '../config.js';
@@ -23,7 +24,8 @@
             else
                 ids[r.type] = '' + r.id;
         }
-        let segment_url = '';
+        const extent = untrack(() => map_state.extent);
+        let segment_url = `bbox=${extent}`;
         for (let [key, vals] of Object.entries(ids)) {
                 segment_url += `&${key}s=${vals}`;
         }
@@ -35,19 +37,20 @@
 
     let vtile_layer, vector_layer;
 
-    function getSegmentsUrl(extent) {
-        vector_layer.getSource().clear();
-        let url = `${API_URL}/list/segments?bbox=${extent}${segment_fragment}`;
-        return url;
-    }
+    $effect(() => {
+        if (segment_fragment) {
+            const extent = untrack(() => map_state.extent);
+            vector_layer.setSource(new VectorSource({
+                format: new GeoJSON(),
+                url: `${API_URL}/list/segments?${segment_fragment}`,
+            }));
+        } else {
+            vector_layer.setSource(null);
+        }
+    });
 
     // Simple vector layer to use when vtiles are inactive.
     vector_layer = new VectorLayer({
-        source: new VectorSource({
-            format: new GeoJSON(),
-            url: getSegmentsUrl,
-            strategy: (extent) => { return segment_fragment ? [extent] : []; }
-        }),
         maxZoom: 12,
         style: null
     });
