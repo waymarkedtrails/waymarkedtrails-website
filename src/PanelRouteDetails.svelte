@@ -47,8 +47,7 @@
     function process_route(json) {
         const route = make_route_details(json);
 
-        const hash = new WindowHash();
-        if (route.bbox && !hash.params.has('map')) {
+        if (route.bbox && !map_state.extent) {
             map_state.set_map_view(route.bbox);
         }
         bbox = route.bbox;
