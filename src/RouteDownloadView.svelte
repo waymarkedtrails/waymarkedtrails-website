@@ -228,6 +228,7 @@
     {$_('details.download.direction.forward')}
     {/if}
   </label>
+  {#if route.tags.oneway != 'yes'}
   <label>
     <input type="radio" name="direction" value={-1} bind:group={direction} />
     {#if route.tags.from && route.tags.to }
@@ -240,6 +241,7 @@
     <input type="radio" name="direction" value={0} bind:group={direction} />
     {$_('details.download.direction.both')}
   </label>
+  {/if}
 </fieldset>
 
 {#if route_appendices.length }

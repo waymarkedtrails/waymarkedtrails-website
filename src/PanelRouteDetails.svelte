@@ -231,11 +231,11 @@
     </Collapsible>
     {/if}
 
-    <CollapsibleTagList tags={route.tags} />
-
     <Collapsible title={$_('details.download.title')} init_collapsed={true}>
         <RouteDownloadView {route} />
     </Collapsible>
+
+    <CollapsibleTagList tags={route.tags} />
 
     <Collapsible title={$_('details.analyze.title')} init_collapsed={true}>
         <RouteAnalyzeView {route} />
