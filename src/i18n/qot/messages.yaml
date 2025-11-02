@@ -7,12 +7,20 @@ destination_sign:
   title: Destinations
 details:
   altitude: Altitude
+  educational:
+    other: This is an educational trail.
   image: Image
   mapped_len: Mapped length
   note: Note
+  oneway: This route can only be followed in forward direction.
   official_len: Official length
   operator: Operator
+  pilgrimage:
+    christian: This is a Christian pilgrim's route.
+    other: This is a pilgrim's route.
+  roundtrip: This route is a roundtrip.
   route_symbol: Route symbol
+  signed_direction: This route is only signed in forward direction.
   subroutes_title: Sections
   superroutes_title: Part of
   symbol: Symbol

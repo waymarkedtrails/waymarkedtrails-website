@@ -13,11 +13,14 @@
     img {
         height: 45px;
         padding-right: 4px;
+        padding-left: 4px;
         flex: none;
     }
 
     .title {
         flex-grow: 1;
+        display: flex;
+        flex-direction: column
     }
 
     .img-ref {

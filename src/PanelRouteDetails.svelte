@@ -127,6 +127,40 @@
         padding: 10px;
         display: flex;
     }
+
+    .route-properties {
+        border-top: solid lightgray 0px;
+        border-bottom: solid lightgray 0px;
+        margin-top: 1ex;
+        margin-right: 0.8em;
+        cursor: default;
+        line-height: 85%;
+        background-image: linear-gradient(to right, #f9f9f9 60%, white)
+    }
+
+    .spacer {
+        flex-grow: 1
+    }
+
+    .btn-roundtrip {
+        color: var(--theme-sub-color);
+    }
+
+    .btn-oneway .btn-education {
+        font-size: 0.65em;
+        vertical-align: top
+    }
+
+    .btn-sngdir {
+        font-size: 110%
+    }
+
+    .btn-pilgrim {
+        filter: grayscale(100%);
+        font-size: 80%
+    }
+
+
 </style>
 
 <SidePanel>
@@ -142,6 +176,18 @@
     <DetailsHeader img_alt={$_('details.route_symbol')} img_src="{API_URL}/symbols/id/{route.symbol_id}" ref={route.ref}>
         {route.title}
         {#if route.local_name}<div class="subtitle">{route.local_name}</div>{/if}
+        <div class="spacer" />
+        <div class="route-properties">
+          {#if route.tags.pilgrimage == 'yes'}
+            {#if route.tags.religion == 'christian'}<span title={$_('details.pilgrimage.christian')} class="btn-pilgrim">✝</span>
+            {:else}<span title={$_('details.pilgrimage.other')} class="btn-pilgrim">🛐</span>
+            {/if}
+          {/if}
+          {#if route.tags.educational == 'yes'}<span title={$_('details.educational.other')} class="btn-education">🎓</span>{/if}
+          {#if route.tags.roundtrip == 'yes'}<span title={$_('details.roundtrip')} class="btn-roundtrip">⟳</span>{/if}
+          {#if route.tags.oneway == 'yes'}<span title={$_('details.oneway')} class="btn-oneway">⛔</span>{/if}
+          {#if route.tags.signed_direction == 'yes'}<span title={$_('details.signed_direction')} class="btn-sngdir">☞</span>{/if}
+        </div>
     </DetailsHeader>
 
 
