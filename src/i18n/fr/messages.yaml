@@ -21,6 +21,7 @@
 # Author: Tititou36
 # Author: Urhixidur
 # Author: Verdy p
+# Author: WillyM
 # Author: Wladek92
 # Author: Wyz
 ---
@@ -34,12 +35,20 @@ destination_sign:
   title: Destinations
 details:
   altitude: Altitude
+  educational:
+    other: C'est une piste éducative.
   image: Image
   mapped_len: Longueur cartographiée
   note: Note
+  oneway: Cet itinéraire ne peut être suivi que dans le sens direct.
   official_len: Longueur officielle
   operator: Opérateur
+  pilgrimage:
+    christian: C'est le parcours d'un pèlerin chrétien.
+    other: C'est un chemin de pèlerinage.
+  roundtrip: Cet itinéraire est un aller-retour.
   route_symbol: Symbole de l’itinéraire
+  signed_direction: Cet itinéraire n'est balisé que dans le sens direct.
   subroutes_title: Sections
   superroutes_title: Partie de
   symbol: Symbole

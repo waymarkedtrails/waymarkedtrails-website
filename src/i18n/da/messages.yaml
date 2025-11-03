@@ -19,12 +19,20 @@ destination_sign:
   title: Destinationer
 details:
   altitude: Altitude
+  educational:
+    other: Dette er en uddannelsessti.
   image: Billede
   mapped_len: Vist på kortet
   note: Melding
+  oneway: Denne rute kan kun følges i fremadgående retning.
   official_len: Officiel længde
   operator: Ansvarlig
+  pilgrimage:
+    christian: Dette er en kristen pilgrimsrute.
+    other: Dette er en pilgrimsrute.
+  roundtrip: Denne rute er en rundtur.
   route_symbol: Rutesymbol
+  signed_direction: Denne rute er kun skiltet i fremadgående retning.
   subroutes_title: Sektioner
   superroutes_title: Del af
   symbol: Symbol
@@ -57,9 +65,18 @@ details:
       Punkt, hvor ruten afbrydes, fordi relationen ikke er sorteret.
       De røde stiplede linjer viser, hvor ruten fortsætter.
   download:
+    title: Download rute
+    need_format: Vælg et format
+    start: Hent fil
     format:
+      title: Format
       GPX: GPX
       KML: KML
+    direction:
+      forward: fremadrettede
+      backward: bagudrettede
+      both: begge
+    other_ways: Yderligere rutedele
 elevation:
   ascent: Samlet stigning
   descent: Samlet fald

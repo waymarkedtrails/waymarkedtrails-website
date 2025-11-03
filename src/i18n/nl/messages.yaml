@@ -25,12 +25,20 @@ destination_sign:
   title: Bestemmingen
 details:
   altitude: Hoogte
+  educational:
+    other: Dit is een educatief parcours.
   image: Afbeelding
   mapped_len: Lengte op kaart
   note: Opmerking
+  oneway: Deze route kan alleen in voorwaartse richting worden gevolgd.
   official_len: Officiële lengte
   operator: Beheerder
+  pilgrimage:
+    christian: Dit is een christelijke pelgrimsroute.
+    other: Dit is een pelgrimsroute.
+  roundtrip: Deze route is een rondtocht.
   route_symbol: Route-symbool
+  signed_direction: Deze route is alleen in voorwaartse richting bewegwijzerd.
   subroutes_title: Secties
   superroutes_title: Onderdeel van
   symbol: Symbool

@@ -20,12 +20,20 @@ destination_sign:
   title: Destinazioni
 details:
   altitude: Altitudine
+  educational:
+    other: Questo è un percorso didattico.
   image: Immagine
   mapped_len: Visualizzato sulla mappa
   note: Nota
+  oneway: Questo percorso può essere seguito solo in direzione avanti.
   official_len: Lunghezza ufficiale
   operator: Operatore
+  pilgrimage:
+    christian: Questo è un percorso di pellegrinaggio cristiano.
+    other: Questo è un percorso di pellegrinaggio.
+  roundtrip: Questo percorso è di andata e ritorno.
   route_symbol: Simbolo itinerario
+  signed_direction: Questo percorso è segnalato solo in direzione di marcia.
   subroutes_title: Sezioni
   superroutes_title: Parte di
   symbol: Simbolo
