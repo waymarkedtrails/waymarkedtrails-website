@@ -18,12 +18,20 @@ destination_sign:
   title: 目的地
 details:
   altitude: 海拔
+  educational:
+    other: 這是一條教育步道。
   image: 圖片
   mapped_len: 顯示在地圖上
   note: 說明
+  oneway: 這條路線只能向前走。
   official_len: 官方長度
   operator: 維護機關
+  pilgrimage:
+    christian: 這是一條基督教朝聖路線。
+    other: 這是一條朝聖路線。
+  roundtrip: 這是一條往返路線。
   route_symbol: 路線符號
+  signed_direction: 這條路線只有向前的指示牌。
   subroutes_title: 部分
   superroutes_title: 部分
   symbol: 符號

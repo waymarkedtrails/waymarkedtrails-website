@@ -12,12 +12,20 @@ destination_sign:
   title: Destinationes
 details:
   altitude: Altitude
+  educational:
+    other: Isto es un pista educative.
   image: Imagine
   mapped_len: Distantia sur carta
   note: Nota
+  oneway: Iste itinerario pote solmente esser sequite in direction avante.
   official_len: Distantia official
   operator: Operator
+  pilgrimage:
+    christian: Isto es un percurso de peregrinage christian.
+    other: Isto es un percurso de peregrinage.
+  roundtrip: Iste itinerario es de ir e retornar.
   route_symbol: Symbolo de itinerario
+  signed_direction: Iste itinerario es signalisate solo in direction avante.
   subroutes_title: Sectiones
   superroutes_title: Parte de
   symbol: Symbolo

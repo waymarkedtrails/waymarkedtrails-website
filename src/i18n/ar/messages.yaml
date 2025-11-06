@@ -19,12 +19,20 @@ destination_sign:
   title: الوجهات
 details:
   altitude: الارتفاع
+  educational:
+    other: هذا مسار تعليمي.
   image: صورة
   mapped_len: ظاهرة على الخريطة
   note: ملاحظة
+  oneway: لا يمكن اتباع هذا الطريق إلا في الاتجاه الأمامي.
   official_len: الطول الرسمي
   operator: العامل
+  pilgrimage:
+    christian: هذا هو طريق الحاج المسيحي.
+    other: هذا هو طريق الحاج.
+  roundtrip: هذا الطريق عبارة عن رحلة ذهاب وعودة.
   route_symbol: رمز الطريق
+  signed_direction: تم تسجيل هذا الطريق في الاتجاه الأمامي فقط.
   subroutes_title: الأقسام
   superroutes_title: جزء من
   symbol: رمز

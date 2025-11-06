@@ -151,20 +151,31 @@ hierarchies:
 osmc:
   title: osmc:symbol etiketi
   text: |-
-    `osmc:symbol` etiketi, rota sembollerini bazı Avrupa ülkelerinde
-    (ve özellikle Almanya'da) bulundukları gibi basit geometrik
-    şekillerde makine tarafından okunabilir bir şekilde tanımlamanın
-    bir yolunu sağlar. Harita, viki sayfasında açıklananların yalnızca
-    bir alt kümesini destekler. Haritada oluşturulabilmesi için
-    etiketin aşağıdaki biçime sahip olması gerekir:
+    `osmc:symbol` etiketi, rota kalkanlarını makine tarafından okunabilir
+    bir şekilde tanımlamanın bir yolunu sağlar. Esas olarak basit
+    geometrik şekillerden oluşan semboller için tasarlanmıştır. Etiketin
+    tam açıklaması ve geçmişi için OSM vikisindeki [osmc:symbol sayfasını](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol) ziyaret edin.
+    waymarkedtrails, burada açıklanan bazı kısıtlamalar ve uzantılarla
+    birlikte, viki sayfasında açıklanan sözdizimini büyük ölçüde takip
+    eder.
 
-          osmc:symbol=waycolor:background:foreground:text:textcolor
+    Haritada görüntülenebilmesi için etiketin aşağıdaki biçimlerden birine
+    sahip olması gerekir:
 
-    `waycolor` orada olmalıdır ancak bu harita için yok sayılır.
-    İkinci bir ön plan desteklenmez. `text` ve`textcolor` atlanabilir.
+        waycolor:background
+        waycolor:background:foreground
+        waycolor:background:foreground:foreground2
+        waycolor:background:foreground:foreground2:text:textcolor
+        waycolor:background:foreground:text:textcolor
 
-    Waymarked Trails tarafından desteklenen sembollerin listesi için
-    ekstra [osmc:symbol](osmc_symbols.html) etiket sayfasına bakın.
+    `waycolor` her zaman mevcut olmalıdır, ancak bu harita için yok sayılır.
+    Ayrıca, alanı boş bırakabilmenize rağmen bir arka plan belirtmeniz gerekir. Ardından en fazla iki farklı ön plan gelir.
+    Son olarak, isteğe bağlı olarak üstüne eklenecek küçük bir referans metni ekleyebilirsiniz. Metnin rengi her zaman belirtilmelidir.
+    waymarkedtrails'ın referans metinleri çok uzun olduğunda yok sayacağını unutmayın.
+    Metnin ne kadar uzun olabileceği seçilen arka planlara bağlıdır:
+    Sert sınır 4 karakterdir, elmas şeklindeki arka planlar yalnızca
+    bir karakter alır, çizgili ve çubuk şeklindeki arka planlar hiç
+    referans metni almaz.
 hikinglocal:
   title: Yerelleştirilmiş oluşturma
   text: |-
@@ -185,9 +196,9 @@ hikinglocal:
     tutarlı bir şekilde işaretlenmiştir. Harita, bu yolları, zorluğu
     işaretleyen çizgi deseni ile kırmızı olarak gösterir.
 
-    * ![kırmızı çizgi](route_std.png) *yürüyüş yolu*, ![elmas](yellow_diamond.svg) ile işaretlenmiştir. `network=lwn` ve `osmc:symbol=yellow:[...]` ile etiketlendi.
-    * ![kesik çizgi](route_mnt.png) *dağ yolu*, ![beyaz-kırmızı-beyaz](white_red_bar.svg) ile işaretlenmiştir. `network=lwn` ve`osmc:symbol=red:[...]` ile etiketlendi.
-    * ![noktalı çizgi](route_alp.png) *alp yolu*, ![beyaz-mavi-beyaz](white_blue_bar.svg) ile işaretlenmiştir. `network=lwn` ve `osmc:symbol=blue:[...]` ile etiketlenmiştir.
+    * ![kırmızı çizgi](route_std.png) *yürüyüş yolu*, ![elmas](yellow_diamond.svg) ile işaretlenmiştir. `network=lwn` ve `osmc:symbol=yellow:[...]:yellow_diamond`` ile etiketlendi.
+    * ![kesik çizgi](route_mnt.png) *dağ yolu*, ![beyaz-kırmızı-beyaz](white_red_bar.svg) ile işaretlenmiştir. `network=lwn` ve`osmc:symbol=red:white:red_bar` ile etiketlendi.
+    * ![noktalı çizgi](route_alp.png) *alp yolu*, ![beyaz-mavi-beyaz](white_blue_bar.svg) ile işaretlenmiştir. `network=lwn` ve `osmc:symbol=blue:white:blue_bar` ile etiketlenmiştir.
 
     Bu ağın üzerinde, normal şekilde gösterilen bir dizi ulusal ve
     bölgesel rota olduğunu unutmayın.
@@ -285,14 +296,14 @@ technical:
     ## Çeviriler
 
     Tercümeler, yardımsever insanlar tarafından yönetilmektedir.
-    [translatewiki.net] (https://translatewiki.net). Bir çeviriye katkıda bulunmak istiyorsanız
+    [translatewiki.net](https://translatewiki.net). Bir çeviriye katkıda bulunmak istiyorsanız
     kendi dilinizde veya mevcut çeviriler hakkında geri bildirimde bulunmak için,
     [translatewiki.net proje sayfasına ziyaret edin](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Yasal ve Kullanım Koşulları
   copyright: |-
-    Rota katmanı [Creative Commons Atıf-Benzer Paylaşım 3.0 Almanya Lisansı](http://creativecommons.org/licenses/by-sa/3.0/de/deed.tr)
-    altında ve GPX [ODbL](http://opendatacommons.org/licenses/odbl/) altında izlenir.
+    Rota katmanı [Creative Commons Atıf-Benzer Paylaşım 3.0 Almanya Lisansı](https://creativecommons.org/licenses/by-sa/3.0/de/deed.tr)
+    altında ve GPX [ODbL](https://opendatacommons.org/licenses/odbl/) altında izlenir.
     Ortaya çıkan iş uyumlu bir lisans kullandığı sürece tekrar kullanılabilir ve değiştirilebilir
     ve OpenStreetMap projesi ve bu siteden bahsedilmiştir.
   usage: |-

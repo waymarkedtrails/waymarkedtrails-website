@@ -16,12 +16,20 @@ destination_sign:
   title: Destinos
 details:
   altitude: Altitude
+  educational:
+    other: Esta é unha ruta educativa.
   image: Imaxe
   mapped_len: Lonxitude cartografada
   note: Nota
+  oneway: Esta ruta só se pode seguir cara adiante.
   official_len: Lonxitude oficial
   operator: Operador
+  pilgrimage:
+    christian: Esta é unha ruta de peregrinos cristiáns.
+    other: Esta é unha ruta de peregrinos.
+  roundtrip: Esta ruta é de ida e volta.
   route_symbol: Símbolo de ruta
+  signed_direction: Esta ruta só está sinalizada cara adiante.
   subroutes_title: Seccións
   superroutes_title: Parte de
   symbol: Símbolo
