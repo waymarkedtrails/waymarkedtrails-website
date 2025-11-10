@@ -9,6 +9,7 @@
 # Author: Incelemeelemani
 # Author: JackUKElliott
 # Author: MuratTheTurkish
+# Author: Sakblue
 # Author: SaldırganSincap
 # Author: Sayginer
 # Author: Sezgin İbiş
@@ -26,8 +27,12 @@ details:
   image: Resim
   mapped_len: Eşlenmiş uzunluk
   note: Not
+  oneway: Bu rota sadece ileriye doğru takip edilebilir.
   official_len: Resmi uzunluğu
   operator: Operatör
+  pilgrimage:
+    christian: Bu bir Hıristiyan hacı yoludur.
+    other: Bu bir hacı yoludur.
   route_symbol: Rota sembolu
   subroutes_title: Bölümler
   superroutes_title: Parçası
