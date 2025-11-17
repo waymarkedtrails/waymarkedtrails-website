@@ -278,20 +278,21 @@ elevationprofiles:
 technical:
   title: Teknik ayrıntılar
   general: |-
-    Güzergâh yerleşimi derhal güncellenir ve normalde 2-5 dakika geride kalır.
-    OSM sunucusu. Sol üst köşedeki tarih gösterir
-    Son güncelleme. Temel Mapnik haritasının güncellemeleri bu kapsamda değil
-    sitenin kontrolü. OSM sunucusunun geçerli yüküne bağlı olarak
-    bir dakika ile birkaç gün arasında.
+    Rota katmanı her dakika güncellenir ve normalde OSM sunucusunun 2-5
+    dakika gerisindedir. Sol üst köşedeki tarih, son güncellemeyi
+    gösterir. Alttaki Mapnik haritasının güncellemeleri bu sitenin
+    kontrolü dışındadır. OSM sunucusunun mevcut yüküne bağlı olarak bir
+    dakika ile birkaç saat arasında sürebilir.
 
-    Makine standart [Debian Linux](https://www.debian.org/) ile çalışır
-    [pyosmium](https://osmcode.org/pyosmium/) 'dan oluşan bir alet zinciri,
-    [Postgresql](https://www.postgresql.org) ve [Mapnik 2.0](https://www.mapnik.org).
-    [osgende](https://github.com/waymarkedtrails/osgende) bazı postprocessing işlemlerini üstlenir
-    oluşturmadan önce veritabanında. Web sitesi kullanılarak servis edilir
-    [CherryPy](https://cherrypy.org/). Kaynak kodu
-    GPL lisansı altında bulunmaktadır. Daha fazla bilgi için
-    [GitHub'da proje sayfası](https://github.com/waymarkedtrails/waymarked-trails-site).
+    Bu web sitesinin kaynak kodu GPL lisansı altında mevcuttur ve çeşitli
+    depolara dağıtılmıştır:
+    * [arka uç kodu ve harita oluşturma](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+    * [API hizmeti](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+    * [web sitesi ön ucu](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+    Yalnızca bir hatayı bildirmek veya web sitesinin özelliklerini
+    tartışmak istiyorsanız, Github'daki proje deposunun [sorun izleyicisini](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
+    veya [tartışma özelliğini](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) kullanabilirsiniz.
   translation: |-
     ## Çeviriler
 
@@ -326,16 +327,16 @@ legal:
 acknowledgements:
   title: Onaylama
   text: |-
-    Tüm harita verileri [OpenStreetMap ve katkıda bulunanlar](https://www.openstreetmap.org) tarafından sağlanmıştır
-    ve ODbL lisansı altında dağıtılmaktadır. Temel harita ayrıca OSM’nin izniyle
-    CC BY-SA 2.0 kapsamında. Daha fazla bilgi için,
-    [OSM telif hakkı sayfasına](https://www.openstreetmap.org/copyright) bakın.
+    Tüm harita verileri [OpenStreetMap ve katkıda bulunanlar](https://www.openstreetmap.org)
+    tarafından sağlanmış ve ODbL lisansı altında dağıtılmıştır. Temel
+    harita da OSM'nin izniyle kullanılmıştır.
+    Daha fazla bilgi için [OSM telif hakkı sayfasına](https://www.openstreetmap.org/copyright) bakın.
 
     Tepe gölgeleme ve yükseklik verileri, SRTM ve ASTER GDEM verilerinin birleştirilmesinden elde edilmiştir.
     ASTER GDEM, METI ve NASA'nın bir ürünüdür.
     Son işlemler Yves Cainaud tarafından [opensnowmap.org](https://opensnowmap.org) tarafından sağlanmıştır.
 
-    Yükseklik profili kodu, Espen Oldeman Lund tarafından [Kresendo](https://www.kresendo.no) ile [TG4NP projesi](https://tg4np.eu) arasında [Batı Norveç Araştırmaları](https://wwww.vestforsk.no) ile işbirliği içinde geliştirilmiştir.
+    Yükseklik profili kodu, Espen Oldeman Lund tarafından [Kresendo](https://www.kresendo.no) ile [TG4NP projesi](https://tg4np.eu) arasında [Batı Norveç Araştırmaları](https://www.vestforsk.no) ile işbirliği içinde geliştirilmiştir.
 
     Kış sporları yamaçları çeşidi Michael Spreng tarafından geliştirilmiştir. Sürme sembolü
     Robert Whittaker tarafından hazırlanmıştır.
@@ -349,8 +350,6 @@ acknowledgements:
     [Guttorm Flatabø](https://guttormflatabo.com)/[TG4NP](https://tg4np.eu) (Norveççe ve nynorsk),
     Mads Lumholt/TG4NP (Danca), Magnús Smári Snorrason/TG4NP (Islandic),
     Lars Mikaelsson/TG4NP (İsveççe) ve Elina Pesonen (Fince).
-
-    Son olarak, [Martin Hoffmann](https://www.partim.de) sunucu cömert desteği olmadan varolmazdı.
 contact:
   title: İletişim
   text: |-
