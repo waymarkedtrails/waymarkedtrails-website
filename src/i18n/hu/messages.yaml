@@ -22,12 +22,20 @@ destination_sign:
   title: Úti célok
 details:
   altitude: Magasság
+  educational:
+    other: Tanösvény
   image: Kép
   mapped_len: Térképen látható hossz
   note: Megjegyzés
+  oneway: Az útvonal csak egy irányba járható.
   official_len: Hivatalos hossz
   operator: Üzemeltető
+  pilgrimage:
+    christian: Keresztény zarándokút
+    other: Zarándokút
+  roundtrip: Körútvonal
   route_symbol: Útjelzés
+  signed_direction: Az útvonal csak egy irányba van kijelölve a terepen.
   subroutes_title: Szakaszok
   superroutes_title: 'Része ennek:'
   symbol: Szimbólum
