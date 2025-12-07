@@ -5,6 +5,7 @@
     import { download_line_any, download_line_oneway } from './map/styles.js';
     import GPX from 'ol/format/GPX.js';
     import KML from 'ol/format/KML.js';
+    import GeoJSON from 'ol/format/GeoJSON.js';
     import MultiLineString from 'ol/geom/MultiLineString.js';
     import LineString from 'ol/geom/LineString.js';
     import Feature from 'ol/Feature.js';
@@ -172,6 +173,26 @@
             {type: 'application/vnd.google-earth.kml+xml' }));
           filesuffix = 'kml';
         }
+        if (format == 'GeoJson') {
+          let geojson = new GeoJSON().writeFeaturesObject(features, {
+              decimals: 7,
+              featureProjection: 'EPSG:3857',
+              dataProjection: 'EPSG:4326'
+          });
+
+          geojson['features'][0]['properties'] = {
+            name: route.title,
+            source: window.location.href.replace(/&map.*/, ''),
+            timestamp: new Date().toISOString(),
+            license: 'https://www.openstreetmap.org/copyright'
+          }
+
+          url = URL.createObjectURL(new Blob(
+            [JSON.stringify(geojson)],
+            {type: 'application/geo+json' }));
+          filesuffix = 'json';
+
+        }
         if (url) {
             let filename = slugify(route.title);
             let a = document.createElement("a");
@@ -210,7 +231,7 @@
 
 <fieldset>
   <legend>{$_('details.download.format.title')}</legend>
-  {#each ['GPX', 'KML'] as fmt}
+  {#each ['GPX', 'KML', 'GeoJson'] as fmt}
   <label>
       <input type="radio" name="format" value={fmt} bind:group={format} />
       {$_('details.download.format.' + fmt)}

@@ -62,6 +62,7 @@ details:
       title: Format
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
     direction:
       title: Include ways in direction
       forward: forwards
