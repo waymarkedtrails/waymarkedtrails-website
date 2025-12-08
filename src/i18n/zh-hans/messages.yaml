@@ -80,6 +80,7 @@ details:
       title: 格式
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
     direction:
       title: 在方向中包含方法
       forward: 往前

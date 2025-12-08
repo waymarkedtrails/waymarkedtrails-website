@@ -71,6 +71,7 @@ details:
       title: 格式
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
     direction:
       title: 包含路徑的方向
       forward: 往前
