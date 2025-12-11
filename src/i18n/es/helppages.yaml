@@ -7,6 +7,7 @@
 # Author: Jakeukalane
 # Author: Laura Ospina
 # Author: Macofe
+# Author: Robot8A
 # Author: Shirayuki
 # Author: VegaDark
 # Author: Vivaelcelta
@@ -36,38 +37,38 @@ rendering:
     funciona esto se describe en detalle en la página de etiquetas\n(tags) de la wiki
     del OSM sobre \n[Rutas a pie](http://wiki.openstreetmap.org/wiki/Walking_Routes).\nEste
     mapa muestra todas las relaciones que tienen por lo menos las \nsiguientes etiquetas:\n\n
-    \   tipo = ruta|superruta\n    ruta = a pie|paseo|senderismo"
+    \   type = route|superroute\n    route = foot|walking|hiking"
   cyclingroutes: |-
     Las rutas ciclistas en OSM deben introducirse como relaciones. Cómo funciona
     describe en detalle en la página de etiquetado sobre
     [rutas ciclistas](https://wiki.openstreetmap.org/wiki/Cycle_routes) en la wiki de
     OSM wiki. Este mapa muestra todas las relaciones que tienen al menos las siguientes etiquetas:
 
-        tipo = ruta|superruta
-        ruta = bicicleta
+        type = route|superroute
+        route = bicycle
 
-    Las rutas de bicicleta de montaña se muestran en un [MTB-map](https://mtb.waymarkedtrails.org) separado.
+    Las rutas de bicicleta de montaña se muestran en un [mapa MTB](https://mtb.waymarkedtrails.org) separado.
   mtbroutes: "Las rutas para bicicletas de montaña (MTB) deben ingresarse como relaciones.
     Cómo funciona\nesto se describe en detalle en la página de etiquetas (tags) de
     la wiki\ndel OSM sobre [Rutas Ciclistas](http://wiki.openstreetmap.org/wiki/Cycle_routes)\n(en
     inglés). Este mapa muestra todas las relaciones que tienen por lo menos\nlas siguientes
-    etiquetas: \n\n    tipo = ruta|superruta\n    ruta = mtb\n\nLas rutas para ciclismo
-    no específico tienen [este mapa dedicado](http://cycling.waymarkedtrails.org/en/)."
+    etiquetas: \n\n    type = route|superroute\n    route = mtb\n\nLas rutas para
+    ciclismo no específico tienen [este mapa dedicado](http://cycling.waymarkedtrails.org/en/)."
   skatingroutes: |-
     Las rutas de patinaje señalizadas deben etiquetarse como cualquier otra relación de rutas.
     Para el etiquetado entendido por este mapa, eche un vistazo a la página wiki sobre
     [rutas suizas de patinaje en línea](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
     Para ser reconocida como una ruta de patinaje, las siguientes etiquetas deben estar presentes:
 
-        tipo = ruta|superruta
-        ruta = patines_en_línea
+        type = route|superroute
+        route = inline_skates
   ridingroutes: |-
     Las rutas a caballo señalizadas deben etiquetarse como cualquier otra relación de ruta.
     Para más detalles, véase [la página de rutas en la wiki de OSM](https://wiki.openstreetmap.org/wiki/Relation:route).
     Para ser reconocida como una ruta a caballo, las siguientes etiquetas deben estar presentes:
 
-        tipo = ruta|superruta
-        ruta = caballo
+        type = route|superroute
+        route = horse
   sloperoutes: |-
     Las pendientes señalizadas son caminos con la etiqueta `piste:type`.
     Para ser reconocida como una pendiente, las siguientes etiquetas deben estar presentes:
