@@ -1,6 +1,7 @@
 # Messages for French (français)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Asteralee
 # Author: Cquoi
 # Author: Crochet.david
 # Author: Derugon
@@ -86,6 +87,7 @@ details:
     format:
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
 elevation:
   ascent: Montée cumulée
   descent: Descente cumulée

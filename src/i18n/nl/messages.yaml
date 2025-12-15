@@ -79,6 +79,7 @@ details:
       title: Indeling
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
     direction:
       title: 'Wegen opnemen in richting:'
       forward: vooruit
