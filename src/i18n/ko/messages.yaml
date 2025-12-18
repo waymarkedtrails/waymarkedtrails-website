@@ -6,6 +6,7 @@
 # Author: Jerrykim306
 # Author: Kurousagi
 # Author: Suleiman the Magnificent Television
+# Author: YeBoy371
 # Author: Ykhwong
 # Author: 아라
 ---
@@ -26,7 +27,7 @@ details:
   subroutes_title: 문단
   superroutes_title: '다음의 부분:'
   tags:
-    title: OpenStreetMap 태그
+    title: 오픈스트리트맵 태그
     value: 값
   type:
     node: 노드
