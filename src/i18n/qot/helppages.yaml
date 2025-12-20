@@ -408,6 +408,12 @@ acknowledgements:
         For more information, see the
         [OSM copyright page](https://www.openstreetmap.org/copyright).
 
+        The OpenTopoMap-R base map is kindly provided by
+        [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html). If you like it,
+        please consider donating towards the upkeep of their servers. Visit the
+        [openmaps donation page](https://openmaps.fr/donate)
+        for more information.
+
         Hillshading and elevation data created from a mash-up of SRTM and ASTER GDEM data.
         ASTER GDEM is a product of METI and NASA.
         Postprocessing was kindly provided by Yves Cainaud from [opensnowmap.org](https://opensnowmap.org).

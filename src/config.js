@@ -26,8 +26,8 @@ export const BASEMAPS = [
       attribution: "<a href=\"https://openstreetmap.org\">OpenStreetMap</a>"
     },
     { id: "opentopo",
-      name: "OpenTopoMap",
-      url: "https://{a-c}.tile.opentopomap.org/{z}/{x}/{y}.png",
-      attribution: "<a href=\"https://opentopomap.org/\">OpenTopoMap</a>(<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-by-SA</a>)"
+      name: "OpenTopoMap-R",
+      url: "https://tile.openmaps.fr/opentopomap/{z}/{x}/{y}.png",
+      attribution: "<a href=\"https://github.com/sletuffe/OpenTopoMap\">OpenTopoMap-R</a>(<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-by-SA</a>)"
     }];
 export const HILLSHADING_URL = "https://hillshading.waymarkedtrails.org/srtm/{z}/{x}/{-y}.png";
