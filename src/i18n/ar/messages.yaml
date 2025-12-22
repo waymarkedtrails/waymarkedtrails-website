@@ -73,6 +73,7 @@ details:
       title: شكل
       GPX: جي بي إكس
       KML: كيه إم إل
+      GeoJson: جوجسون
     direction:
       title: تضمين طرق في الاتجاه
       forward: إلى الأمام
