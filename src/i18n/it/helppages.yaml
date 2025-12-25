@@ -118,27 +118,29 @@ legal:
 acknowledgements:
   title: Riconoscimenti
   text: |-
-    Tutti i dati cartografici sono forniti da [OpenStreetMap e collaboratori](https://www.openstreetmap.org)
+    Tutti i dati cartografici sono forniti da [OpenStreetMap e dai suoi collaboratori](https://www.openstreetmap.org)
     e distribuiti con licenza ODbL. Anche la mappa di base è per gentile concessione di OSM.
-    Per ulteriori informazioni, vedi la
-    [pagina del copyright di OSM](https://www.openstreetmap.org/copyright).
+    Per ulteriori informazioni, consulta la
+    [pagina sul copyright di OSM](https://www.openstreetmap.org/copyright).
 
-    Hillshading e dati sull'altitudine sono stati creati da una combinazione dei dati SRTM e ASTER GDEM.
+    La mappa di base di OpenTopoMap-R è gentilmente fornita da
+    [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html). Se ti piace,
+    ti preghiamo di considerare una donazione per il mantenimento dei loro server. Visita la
+    [pagina delle donazioni di openmaps](https://openmaps.fr/donate)
+    per maggiori informazioni.
+
+    Dati sull'ombreggiatura e altitudine sono stati creati da una combinazione dei dati SRTM e ASTER GDEM.
     ASTER GDEM è un prodotto di METI e NASA.
-    Il lavoro di post-produzione è stato gentilmente fornito da Yves Cainaud di [opensnowmap.org](https://opensnowmap.org).
+    La post-elaborazione è stata gentilmente fornita da Yves Cainaud di [opensnowmap.org](https://opensnowmap.org).
 
-    Il codice del profilo altimetrico è stato sviluppato da Espen Oldeman Lund in una collaborazione tra [Kresendo](https://www.kresendo.no) e il progetto TG4NP presso il [Western Norway Research Institute]( https://www.vestforsk.no).
+    Il codice del profilo altimetrico è stato sviluppato da Espen Oldeman Lund in una collaborazione tra [Kresendo](https://www.kresendo.no) e il progetto TG4NP presso il [Western Norway Research Institute](https://www.vestforsk.no).
 
-    La variante delle piste per gli sport invernali è stata sviluppata da Michael Spreng. Il simbolo dell'equitazione è stato
-    preparato da Robert Whittaker.
+    La variante delle piste per gli sport invernali è stata sviluppata da Michael Spreng. Il simbolo dell'equitazione è stato preparato da Robert Whittaker.
 
-    Le paline indicatrici sono elaborate da [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Mille grazie a Jan Michel per aver fornito il servizio.
+    Le paline indicatrici sono elaborate da [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Un ringraziamento speciale a Jan Michel per il servizio fornito.
 
-    Le traduzioni di questo sito sono fornite da
-    [translatewiki.net e i suoi contributori](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Un ringraziamento speciale va ai traduttori pionieri che
-    hanno fornito le traduzioni prima di Translatewiki.net: Yves Cainaud (francese),
-    Oscar Formaggi (italiano),
-    Gustavo [Tuentibiker](https://www.blogger.com /profile/12473561703699888751) Ramis (spagnolo),
+    Le traduzioni di questo sito sono fornite da [translatewiki.net e i suoi contributori](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Un ringraziamento speciale va ai traduttori pionieri che
+    hanno fornito le traduzioni prima di Translatewiki.net: Yves Cainaud (francese), Oscar Formaggi (italiano), Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (spagnolo),
     [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (norvegese bokmål e nynorsk),
     Mads Lumholt/TG4NP (danese), Magnús Smári Snorrason/ TG4NP (islandese),
     Lars Mikaelsson/TG4NP (svedese) ed Elina Pesonen (finlandese).
