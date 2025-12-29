@@ -6,6 +6,7 @@
 # Author: Jopparn
 # Author: Lokal Profil
 # Author: Sendelbach
+# Author: Stefan2255
 # Author: Teaparty
 # Author: WikiPhoenix
 ---
@@ -44,13 +45,13 @@ rendering:
 
     Vanliga cykelleder visas på [cykelkartan](https://cycling.waymarkedtrails.org).
   skatingroutes: |-
-    Skyltade skridskoleder kan taggas som andra leders relationer. För taggningen som används på denna karta kan du ta en titt på wikisidan om [Schweiziska inlineleder](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork). För att vara en skridskoled måste följande taggar finnas:
+    Skyltade skridskoleder kan taggas som andra leders relationer. För taggningen som används på denna karta kan du ta en titt på wikisidan om [Schweiziska inlineleder](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork). För att vara en skridskoled måste följande taggar finnas:
 
     type = route|superroute
     route = inline_skates
   ridingroutes: |-
     Skyltade hästridningsrutter kan taggas som andra leders relationer.
-    För detaljer se [ruttsidan på OSM wiki](http://wiki.openstreetmap.org/wiki/Relation:route).
+    För detaljer se [ruttsidan på OSM wiki](https://wiki.openstreetmap.org/wiki/Relation:route).
     För att vara en hästridningsrutt måste följande taggar finnas:
 
         type = route|superroute
@@ -86,8 +87,8 @@ rendering:
   hikinglabels: |-
     Etiketten för varje led "gissas fram" utifrån taggarna i följande ordning:
 
-    1. Kolla efter [lokala renderingsregler](rendering/hikinglocal).
-    2. Försök översätta taggen `osmc:symbol`. För detaljer om vilka delar som förstås, se [Renderingsregler för osmc:symbol](rendering/osmc). 3. Om taggen `ref` existerar, gör en textruta med taggen `ref`.
+    1. Kolla efter [lokala renderingsregler](#help-hikinglocal).
+    2. Försök översätta taggen `osmc:symbol`. För detaljer om vilka delar som förstås, se [Renderingsregler för osmc:symbol](osmc_symbols.html). 3. Om taggen `ref` existerar, gör en textruta med taggen `ref`.
     4. Om taggen `name` existerar, skapa en referens utifrån denna i första hand genom att använda versala bokstäver och om detta misslyckas genom att använda de första tecknen i namnet.
     5. Ge upp.
   labels: |-
@@ -96,8 +97,8 @@ rendering:
     1. Om taggen `ref` existerar, gör en textetikett med `ref` i.
     2. Om taggen `name` existerar, skapa en referens utifrån denna, i första hand genom att använda versala bokstäver och om detta misslyckas genom att använda de första tecknen i namnet.
     3. Ge upp.
-  hierarchy: Kartan stödjer även [relationhierarkier](rendering/hierarchies).
-  guideposts: "[Guideposts](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+  hierarchy: Kartan stödjer även [relationhierarkier](#help-hierarchies).
+  guideposts: "[Guideposts](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
     känns igen genom följande taggar: \n\ntourism=information\ninformation=guidepost\nname=<name>\nele=<altitude>
     \n\n`tourism` och `information` måste finnas. `name` och `ele` kan utelämnas."
 hierarchies:
@@ -169,6 +170,12 @@ acknowledgements:
   text: |-
     All kartdata tillhandahålls av [OpenStreetMap och dess bidragsgivare](https://www.openstreetmap.org)
     och distribueras under licensen ODbL. Grundkartan används med tillstånd av OSM. För mer information, se [upphovsrättssidan för OSM](https://www.openstreetmap.org/copyright).
+
+    OpenTopoMap-R-baskartan tillhandahålls vänligen av
+    [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html). Om du gillar den,
+    överväg gärna att donera till underhållet av deras servrar. Besök
+    [openmaps donationssida](https://openmaps.fr/donate)
+    för mer information.
 
     Skuggningen för kullarna och höjddatan skapades från en kombination av data från SRTM och ASTER GDEM.
     ASTER GDEM är en produkt av METI och NASA.

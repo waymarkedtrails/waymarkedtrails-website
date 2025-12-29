@@ -307,6 +307,9 @@ acknowledgements:
   text: |-
     所有地图数据都由[OpenStreetMap及其编者](https://www.openstreetmap.org) 提供，并在ODbL协议下释出。OpenStreetMap的基本地图也是免费的。欲了解更多信息，请参阅[OSM的版权页](https://www.openstreetmap.org/copyright) 。
 
+    OpenTopoMap-R基本地图由[openmaps.fr](https://openmaps.fr/about-openmaps.fr.html)友情提供。如果您喜欢，请考虑捐赠以支持其服务器维护。请访问
+    [openmaps捐赠页面](https://openmaps.fr/donate)了解更多信息。
+
     地貌晕渲和海拔数据由混合了SRTM和ASTER GDEM的数据创建。ASTER GDEM是日本经济产业省（METI）和美国国家航天局（NASA）的产品，并由来自[opensnowmap.org](https://opensnowmap.org) 的Yves Cainaud进行后加工处理。
 
     海拔配制文件代码已在位于[西挪威研究研究所](https://www.vestforsk.no) 的[Kresendo](https://www.kresendo.no) 和TG4NP项目之间的合作下，由Espen Oldeman Lund开发。

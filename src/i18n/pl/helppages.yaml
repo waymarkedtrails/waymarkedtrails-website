@@ -6,6 +6,7 @@
 # Author: Mateon1
 # Author: Rezonansowy
 # Author: Teiron
+# Author: Woytecr
 ---
 about:
   title: O mapie
@@ -15,42 +16,42 @@ about:
   skating: Ta mapa pokazuje oznakowane trasy łyżworolkowe na całym świecie.
   riding: Ta mapa pokazuje oznakowane szlaki jeździeckie na całym świecie.
   slopemap: Ta mapa pokazuje stoki dla sportów zimowych istniejące na całym świecie.
-  osm: "Opiera się ona\n na danych projektu [OpenStreetMap](http://www.openstreetmap.org)
+  osm: "Opiera się ona\n na danych projektu [OpenStreetMap](https://www.openstreetmap.org)
     (OSM). \nOSM jest dowolnie edytowalną mapą świata, w czym każdy może\n uczestniczyć.
     Oznacza to, że nie jest ona w żaden sposób kompletna,\nale oznacza również, że
     możesz pomóc dodając nowe trasy i\n poprawiając błędy w już istniejących. Aby
-    dowiedzieć się więcej o\nOpenStreetMap, przejrzyj\n[Poradnik dla początkujących](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide)."
+    dowiedzieć się więcej o\nOpenStreetMap, przejrzyj\n[Poradnik dla początkujących](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide)."
 rendering:
   title: Wyświetlanie danych OSM
   hikingroutes: |-
     Piesze trasy w OSM muszą być wpisane jako relacje. Sposób działania został
      opisany szczegółowo na stronie tagowania o
-    [szlakach turystycznych](http://wiki.openstreetmap.org/wiki/Walking_Routes)
+    [szlakach turystycznych](https://wiki.openstreetmap.org/wiki/Walking_Routes)
     na wiki OSM. Ta mapa pokazuje relacje, które mają przynajmniej
      następujące znaczniki:
 
        type = route|superroute
        route = foot|walking|hiking
   cyclingroutes: "Trasy rowerowe w OSM muszą być wpisane jako relacje. Sposób działania
-    \nopisano szczegółowo na stronie tagowania \n[tras rowerowych](http://wiki.openstreetmap.org/wiki/Cycle_routes)
+    \nopisano szczegółowo na stronie tagowania \n[tras rowerowych](https://wiki.openstreetmap.org/wiki/Cycle_routes)
     na wiki\nOSM. Ta mapa pokazuje wszystkie relacje, które posiadają przynajmniej
     następujące znaczniki:\n\n\n   type = route|superroute\n   route = bicycle\n\nTrasy
-    dla kolarstwa górskiego są wyświetlane na osobnej [mapie MTB](http://mtb.waymarkedtrails.org/pl/)."
+    dla kolarstwa górskiego są wyświetlane na osobnej [mapie MTB](https://mtb.waymarkedtrails.org/pl/)."
   mtbroutes: "Trasy dla kolarstwa górskiego w OSM działają na tej samej zasadzie co
-    trasy rowerowe, \nktóre opisano szczegółowo na stronie wiki OSM dla \n[tras rowerowych](http://wiki.openstreetmap.org/wiki/Cycle_routes).\nRelacje
+    trasy rowerowe, \nktóre opisano szczegółowo na stronie wiki OSM dla \n[tras rowerowych](https://wiki.openstreetmap.org/wiki/Cycle_routes).\nRelacje
     posiadające poniższe znaczniki są rozpoznawane na trasach MTB:\n\n\n   type =
     route|superroute\n   route = bicycle\n\nTrasy rowerowe są wyświetlane na osobnej
-    [mapie](http://cycling.waymarkedtrails.org/pl/)."
+    [mapie](https://cycling.waymarkedtrails.org/pl/)."
   skatingroutes: |-
     Oznakowane trasy łyżworolkowe powinny być oznakowane podobnie jak inne relacje tras.
     Na temat tagowania zrozumiałego przez taką mapę opowiada strona wiki o
-    [Szwajcarskich trasach rolkowych](http://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
+    [Szwajcarskich trasach rolkowych](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
     Aby zostały rozpoznane jako trasa rolkowa, musi zawierać następujące znaczniki:
 
        type = route|superroute
        route = inline_skates
   ridingroutes: |-
-    Oznakowane szlaki konne powinny być oznakowane tak jak każdy inna relacja typu route. Więcej szczegółów na [stronie OSM wiki](http://wiki.openstreetmap.org/wiki/Relation:route).
+    Oznakowane szlaki konne powinny być oznakowane tak jak każdy inna relacja typu route. Więcej szczegółów na [stronie OSM wiki](https://wiki.openstreetmap.org/wiki/Relation:route).
     By zostać wyświetlony szlak, musi posiadać tagi:
 
         type = route|superroute
@@ -83,9 +84,9 @@ rendering:
   hikinglabels: |-
     Etykieta dla każdej trasy jest "zgadywana" na podstawie tagów w następującej kolejności:
 
-     1. Sprawdzenie [zlokalizowane reguły renderowania](rendering/hikinglocal).
+     1. Sprawdzenie [zlokalizowane reguły renderowania](#help-hikinglocal).
      2. Próba interpretacji tagów 'osmc:symbol'. Szczegółowe informacje na temat zrozumiałej
-         ich części, patrz [reguły renderowania osmc:symbol](rendering/osmc).
+         ich części, patrz [reguły renderowania osmc:symbol](osmc_symbols.html).
      3. Jeśli istnieje znacznik "ref", tekst etykiety brany jest z tagu "ref".
      4. Jeśli istnieje tag 'nazwa', wyliczane jest z niego odwołanie, na początku przy użyciu
          tylko wielkich liter a w przypadku niepowodzenia za pomocą pierwszych liter
@@ -99,9 +100,9 @@ rendering:
          tylko wielkich liter a w przypadku niepowodzenia za pomocą pierwszych liter
          nazwy.
      3. Poddanie się.
-  hierarchy: Mapa obsługuje również [hierarchie relacji](rendering/hierarchies).
+  hierarchy: Mapa obsługuje również [hierarchie relacji](#help-hierarchies).
   guideposts: |-
-    [Drogowskazy](http://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    [Drogowskazy](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
     są rozpoznawane po następujących znacznikach:
 
        tourism=information
@@ -172,17 +173,17 @@ hikinglocal:
   uk: |-
     ## Wielka Brytania
 
-    Klasyfikacja [długodystansowych tras UK](http://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
+    Klasyfikacja [długodystansowych tras UK](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
     (oznakowanych przez `network=uk_ldp`) zależy od znacznika `operator`. Relacje
     opatrzone `operator=National Trails` są pokazywane jako szlaki krajowe, wszystkie inne relacje
     wyświetlane są jako szlaki regionalne.
 
     Relacje ze znacznikiem `network=lwn/rwn/nwn/iwn` obsługiwane są w zwykły sposób.
   czech: |-
-    ## Republika Czeskia
+    ## Republika Czeska
 
     Kraj wykorzystuje standardowe oznakowanie szlaków oparcie o zestaw 7 symboli w 4 różnych
-    kolorach. Zobacz opis na [stronie czeskiego tagowania](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (tylko po czesku).
+    kolorach. Zobacz opis na [stronie czeskiego tagowania](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (tylko po czesku).
 
     Gdy znacznik `kct_*` jest dostępny, jest brany pod uwagę przed innymi znacznikami 'osmc:symbol'.
     Ponadto trasa jest przeklasyfikowana jeśli nie znaleziono tagu sieci. Trasy
@@ -193,13 +194,13 @@ hikinglocal:
 
     Słowacja wykorzystuje te same standardowe oznaczenia tras, jak w Republice Czeskiej. Jednak
     schemat tagowania jest nieco inny, zobacz
-    [słowacką stronę tras turystycznych](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+    [słowacką stronę tras turystycznych](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
 
     Wszystkie trasy z tagiem `operator=KST` są oznaczone według tego schematu. Jako
      trasy na Słowacji powinny pochodzić z poprawnego znacznika sieci, nie wykonuje się
      żadnych przeklasyfikowań.
   hungary: "## Węgry\n\nWęgry również używają systemu z ustalonym zbiorem symboli
-    w różnych kolorach. \nSą one oznaczone z przez własny tag [jel](http://wiki.openstreetmap.org/wiki/Key:jel).\nTag
+    w różnych kolorach. \nSą one oznaczone z przez własny tag [jel](https://wiki.openstreetmap.org/wiki/Key:jel).\nTag
     ten jest brany pod uwagę przez przed innymi znacznikami 'osmc:symbol'."
   germany: |-
     ## Niemcy
@@ -243,15 +244,15 @@ technical:
     ## Tłumaczenia
 
     Tłumaczenia są zarządzane przez zawsze pomocnych ludzi na
-    [translatewiki.net](http://translatewiki.net). Jeśli chcesz dodać tłumaczenie
+    [translatewiki.net](https://translatewiki.net). Jeśli chcesz dodać tłumaczenie
     na swój własny język lub przekazać opinię na temat istniejących tłumaczeń, odwiedź
-    [stronę projektu translatewiki.net](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
+    [stronę projektu translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Prawa i warunki użytkowania
   copyright: |-
     Nakładki tras są dostępne w ramach
-    [Niemieckiej Licencji Creative Commons Attribution-Share Alike 3.0](http://creativecommons.org/licenses/by-sa/3.0/de/deed.en), a ścieżki GPX w ramach
-    [ODbL](http://opendatacommons.org/licenses/odbl/).
+    [Niemieckiej Licencji Creative Commons Attribution-Share Alike 3.0](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en), a ścieżki GPX w ramach
+    [ODbL](https://opendatacommons.org/licenses/odbl/).
     Mogą być ponownie wykorzystane i zmieniane tak długo, jak wynik pracy nad nimi używa licencji zgodnej
     z zapisanymi w projekcie OpenStreetMap i na tej stronie.
   usage: |-

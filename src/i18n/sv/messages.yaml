@@ -8,6 +8,7 @@
 # Author: LeiLar
 # Author: Sabelöga
 # Author: Sendelbach
+# Author: Stefan2255
 # Author: Sturban
 # Author: Teaparty
 # Author: Tobulos1
@@ -19,24 +20,59 @@ attribution:
   elevation_title: höjddata från [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Fler detaljer
+  no_data: Ingen destinationsinformation tillgänglig för denna vägvisare.
   title: Destinationer
 details:
   altitude: Altitud
+  educational:
+    other: Detta är en pedagogisk stig.
   image: Bild
   mapped_len: Visas på karta
   note: Not
+  oneway: Denna väg kan endast följas i framåtgående riktning.
   official_len: Officiell längd
   operator: Ansvariga
+  pilgrimage:
+    christian: Det här är en kristen pilgrims väg.
+    other: Detta är en pilgrimsled.
+  roundtrip: Denna rutt är en rundtur.
+  route_symbol: Rutsymbol
+  signed_direction: Denna rutt är endast skyltad i framåtriktning.
   subroutes_title: Delar
   superroutes_title: Del av
+  symbol: Symbol
+  linear:
+    "yes": Relationen för den här rutten är sorterad och i ett stycke.
+    sorted: Relationen för den här rutten är i ett stycke men medlemmarna är inte
+      sorterade.
+    "no": Relationen har luckor eller andra problem.
   tags:
+    key: nyckel
     title: OpenStreetMap-taggar
+    value: värde
+  type:
+    guidepost: Vägvisare
+    node: Nod
+    relation: Relation
+    wayset: Vägsätt
   website: Webbsida
   wikipedia: Wikipedia
   zoom_to: Visa på karta
   analyze:
+    title: Analysera relationen
     summary: Denna relation har {num} segment.
+    disclaimer: |-
+      Detta visar ruttsegmenten så som de beräknades av waymarkedtrails
+      från relationen, vilket inte alltid är korrekt. För mer information
+      om hur waymarkedtrails sorterar rutter, besök hjälpsidorna.
+    open_end: Öppen ände i rutten.
+    multi_end: Mer än två delar av rutten möts på denna punkt.
+    two_end: |-
+      Punkt där rutten avbryts eftersom relationen inte är sorterad.
+      De röda streckade linjerna visar var rutten fortsätter.
   download:
+    title: Ladda ner rutt
+    need_format: Välj ett format
     format:
       GPX: GPX
       KML: KML

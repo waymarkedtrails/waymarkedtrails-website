@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Dimitar
 # Author: Farras
+# Author: Penyuwangi
 # Author: Veracious
 ---
 attribution:
@@ -17,7 +18,7 @@ details:
   subroutes_title: Bagian
   superroutes_title: Bagian dari
   tags:
-    title: Tag OpenStreetMap
+    title: Tanda OpenStreetMap
   type:
     relation: Relasi
   website: Situs web
