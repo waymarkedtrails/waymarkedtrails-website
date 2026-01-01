@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Armando-Martin
+# Author: Avengium
 # Author: Ciencia Al Poder
 # Author: Fitoschido
 # Author: Jakeukalane
@@ -315,31 +316,30 @@ legal:
     Este sitio contiene enlaces a sitios web externos. El autor de este sitio no tiene ninguna influencia sobre el contenido de esas páginas y no asume ninguna responsabilidad por eso.
 acknowledgements:
   title: Reconocimientos
-  text: |-
-    Todos los datos cartográficos proceden de [OpenStreetMap y colaboradores](https://www.openstreetmap.org)
-    y distribuidos bajo la licencia ODbL. El mapa base también es cortesía de OSM.
-    Para más información, consulte la
-    [página de copyright de OSM](https://www.openstreetmap.org/copyright).
-
-    Datos de relieve y elevación creados a partir de una combinación de datos SRTM y ASTER GDEM.
-    ASTER GDEM es un producto de METI y la NASA.
-    El postprocesado fue amablemente proporcionado por Yves Cainaud de [opensnowmap.org](https://opensnowmap.org).
-
-    El código del perfil de elevación ha sido desarrollado por Espen Oldeman Lund en una cooperación entre [Kresendo](https://www.kresendo.no) y el proyecto TG4NP del [Western Norway Research Institute](https://www.vestforsk.no).
-
-    La variante de pistas para deportes de invierno ha sido desarrollada por Michael Spreng. El símbolo de equitación ha sido
-    preparado por Robert Whittaker.
-
-    Los destinos Guidepost han sido procesados por [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Muchas gracias a Jan Michel por proporcionar el servicio.
-
-    Las traducciones de este sitio corren a cargo de
-    [translatewiki.net y sus colaboradores](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Un agradecimiento especial a los traductores pioneros que
-    proporcionaron traducciones antes de translatewiki.net: Yves Cainaud (francés),
-    Oscar Formaggi (italiano),
-    Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (español),
-    [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (bokmål y nynorsk noruego),
-    Mads Lumholt/TG4NP (danés), Magnús Smári Snorrason/TG4NP (islandés),
-    Lars Mikaelsson/TG4NP (sueco) y Elina Pesonen (finlandés).
+  text: "Todos los datos de mapas proporcionados por [OpenStreetMap y sus colaboradores]
+    (https://www.openstreetmap.org) y distribuidos bajo la licencia ODbL. El mapa
+    base también es cortesía de OSM. Para más información, consulte la página de derechos
+    de autor de [OSM] (https://www.openstreetmap.org/copyright). \n\nEl mapa base
+    OpenTopoMap-R es proporcionado por [openmaps.fr] (https://openmaps .fr/about-openmaps
+    Si te gusta, por favor, considere donar para el mantenimiento de sus servidores.
+    Visite la página de donación de mapas abiertos (https://openmaps.fr/donate) para
+    obtener más información. \n\nDatos de sombra de colinas y de elevación creados
+    a partir de una mezcla de datos SRTM y ASTER GDEM. ASTER GDEM es un producto de
+    METI y la NASA. El postprocesamiento fue gentilmente proporcionado por Yves Cainaud
+    de [opensnowmap.org] (https://opensnow map.org). \n\nEl código de perfil de elevación
+    ha sido desarrollado por Espen Oldeman Lund en cooperación entre [Kresendo] (https://www.kresendo.no)
+    y el proyecto TG4NP en el [West Norway Research Institute] (httPS://www.vestforsk.no).
+    \n\nLa variante de pistas deportivas de invierno ha sido desarrollada por Michael
+    Spreng. El símbolo de la cabalgaría fue preparado por Robert Whittaker. \n\nLos
+    puntos de destino de la guía de correo procesados por [Mueschelsoft] (http://osm.mueschelsoft.de/destinationsign/example/index.htm).
+    Muchas gracias a Jan Michel por proporcionar el servicio. \n\nLas traducciones
+    de este sitio son proporcionadas por [translatewiki.net y sus colaboradores] (https://translatewiki
+    .net/wiki/Category:Waymarked_Trails_translators). Gracias especiales a los traductores
+    pioneros que proporcionaron traducciones antes de translatewiki.net: Yves Cainaud
+    (francés), Oscar Formaggi (italiano), Gustavo [Tuentibiker] (https://www.blogger.com/profile/12473561703699888751)
+    Ramis (español), [Guttorm Flatabø] (httPS://guttormflatabo.com) /TG4NP (noruego
+    bokmål y nynorsk), Mads Lumholt/TG4PN (danés), Magnús Smári Snorrason/TG 4NP (islandés),
+    Lars Mikaelsson/TG 5NP (sueco), y Elina Pesonen (finés)."
 contact:
   title: Contacto
   text: |-

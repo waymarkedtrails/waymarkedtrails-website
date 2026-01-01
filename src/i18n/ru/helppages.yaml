@@ -13,6 +13,7 @@
 # Author: Okras
 # Author: Pacha Tchernof
 # Author: Volkov
+# Author: Vonavy
 ---
 about:
   title: О карте
@@ -266,6 +267,8 @@ acknowledgements:
   title: Благодарности
   text: |-
     Все картографические данные предоставлены [OpenStreetMap и участниками](https://www.openstreetmap.org) и распространяются по лицензии ODbL. Базовая карта также любезно предоставлена OSM по лицензии CC BY-SA 2.0. Дополнительную информацию можно узнать на странице [авторских прав OSM](https://www.openstreetmap.org/copyright).
+
+    Базовая карта OpenTopoMap-R любезно предоставлена [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html). Если она вам нравится, пожалуйста, рассмотрите возможность пожертвования на поддержку их серверов. Дополнительную информацию можно найти на  [странице пожертвований openmaps](https://openmaps.fr/donate).
 
     Данные по отмывке рельефа и высотам созданы из смеси данных SRTM и ASTER GDEM.
     ASTER GDEM является продуктом METI и НАСА.
