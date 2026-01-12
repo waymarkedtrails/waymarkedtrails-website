@@ -101,10 +101,92 @@ rendering:
   guideposts: "[Guideposts](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
     känns igen genom följande taggar: \n\ntourism=information\ninformation=guidepost\nname=<name>\nele=<altitude>
     \n\n`tourism` och `information` måste finnas. `name` och `ele` kan utelämnas."
+route_order:
+  title: Ordning av rutter
+  text: |-
+    waymarkedtrails behöver korrekt sorterade rutter för att visa
+    höjdprofilen och för GPX- och KML-nedladdningar. När en rutt analyseras försöker
+    den respektera ordningen på medlemsvägarna inom
+    relationen så mycket som möjligt eftersom det gör det enklast för kartläggare att påverka
+    ordningen utan att behöva tillgripa trial and error. Om en relation
+    verkar vara osorterad, kommer waymarkedtrails fortfarande att placera
+    vägarna i en ordning om och bara om vägarna kan bilda en obruten
+    linjär rutt.
+
+    Relationsroller beaktas vid sortering av rutten.
+    `framåt`- och `bakåt`-rollerna kan användas för att markera avsnitt där
+    rutten ska följas på olika delar beroende på
+    riktningen. Kom ihåg att dessa roller definieras i förhållande till vägens
+    riktning, inte rutten! Om du har en sådan delad sektion,
+    se till att vägarna för varje riktning visas direkt efter
+    varannan i relationen och att vägarna fortfarande följer
+    ruttens!ordning.
+
+    Alla andra roller betraktas som sidovägar av en eller annan form och
+    ignoreras för den allmänna sorteringen av rutten. De visas fortfarande på
+    kartan.
+
+    Waymarkedtrails kan hantera odelade rondeller inom en
+    rutt. Lägg bara till den avstängda vägen utan någon roll så delas rondellen
+    internt upp i lämpliga sektioner. Detta fungerar även
+    när det finns en V-formad infart till rondellen som är uppdelad i
+    framåt och
+    bakåt. Det finns två fall där denna hantering misslyckas:
+
+    * om rondellen av någon anledning delades upp på flera sätt,
+     då _måste_ du lägga till delarna med lämpliga `framåt`- och
+     `bakåt`-roller.
+    * om rondellen är en del av en riktningssektion måste du
+     dela upp rondellen och lägg till den använda delen med lämplig
+    -roll.
+
+    Allmän tumregel för ordning: om JOSM-relationsredigeraren
+    visar rutten som kontinuerlig, då borde waymakedtrails också kunna
+    visa en linjär rutt.
 hierarchies:
   title: Relationhierarkier
+  text: |-
+    Kartan stöder även kapslade relationer, dvs. relationer som själva innehåller
+    relationer. Dessa hierarkier används på två olika sätt
+    i OSM-databasen: de används antingen för att dela upp mycket långa rutter
+    (t.ex. [E1](https://hiking.waymarkedtrails.org/#route?id=36367)) eller så används de
+    för att undvika dubbelarbete där två rutter går längs samma väg (se
+    till exempel den schweiziska [ViaFrancigena](https://hiking.waymarkedtrails.org/#route?id=124582)
+    som är en del av den europeiska [Via Francigena](https://hiking.waymarkedtrails.org/#route?id=11860709)).
+    I det första fallet är delrelationerna inte kompletta rutter
+    i sig själva och bör därför inte visas oberoende av varandra på kartan.
+
+    Hur exakt en delrelation behandlas av renderaren beror på
+    `network`-taggen:
+
+    * Om förälder- och barnrelationen delar samma nätverkstagg, tas barn
+    -relationen som bara ett steg i förälderrelationen. Således, läggs
+     dess rutt till förälderrelationen, och barnrelationen visas
+     inte i kartan.
+    * Om nätverkstaggarna för förälder- och barnrelationen är olika, antas
+    -relationen vara oberoende. Rutten för barnrelationen
+     läggs till föräldern och båda relationerna visas i kartan.
+
+    *Obs:* Du kan alltid inspektera delrelationer via ruttläsaren. Välj helt enkelt förälderrelationen så visas en valbar lista över dess delrelationer.
 osmc:
   title: osmc:symbol-taggen
+  text: "Taggen `osmc:symbol` ger ett sätt att beskriva ruttmarkörer på\nett maskinläsbart
+    sätt. Den är huvudsakligen avsedd för symboler som\nbestår av enkla geometriska
+    former. För en fullständig beskrivning och historik för taggen, besök \n[osmc:symbol-sidan](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)\npå
+    OSM-wikin. Waymarkedtrails följer i stort sett syntaxen som beskrivs\npå wikisidan
+    med vissa begränsningar och utökningar som beskrivs här.\n\nFör att renderas på
+    kartan måste taggen ha ett av följande format:\n\nwaycolor:background\nwaycolor:background:foreground\nwaycolor:background:foreground:foreground2\nwaycolor:background:foreground:foreground2:text:textcolor\nwaycolor:background:foreground:text:textcolor\n\n`Waycolor`
+    måste alltid finnas men ignoreras för denna karta.\nDessutom måste du ange en
+    bakgrund, även om du kan lämna\nfältet tomt. Följ sedan maximalt två olika förgrunder.\nTill
+    sist kan du valfritt lägga till en liten referenstext som ska läggas till\növerst.
+    Textens färg måste alltid anges. Observera att\nwaymarkedtrails ignorerar referenstexter
+    när de blir för långa.\nHur lång texten kan vara beror på de valda bakgrunderna:\nden
+    hårda gränsen är 4 tecken, diamantformade bakgrunder tar bara\nett enda tecken,
+    randiga och stapelformade bakgrunder tar ingen\nreferenstext alls."
+  reference_footer: Den fullständiga listan över färger och former som waymarkedtrails
+    spår kan visa upp finns i referenserna nedan.
+  footer: Se den extra [osmc:symbol](osmc_symbols.html) taggsidan för en lista över
+    symboler som stöds av Waymarked Trails.
 hikinglocal:
   title: Lokaliserade rendering
   text: "Det finns en mängd olika system att markera vandringsleder runt om i världen.
@@ -145,6 +227,33 @@ hikinglocal:
     * ![streckad linje](route_mnt1.png) cai_scale=E
     * ![streckad linje](route_mnt2.png) cai_scale=EE
     * ![prickad linje](route_alp.png) cai_scale=EEA*
+  uk: |-
+    ## Storbritannien
+
+    Klassificeringen av [långdistansleder i Storbritannien](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths) (de som är taggade med `network=uk_ldp`) beror på `operator`-taggen. Relationer
+    med `operator=National Trails` visas som nationella leder, alla andra relationer visas som regionala rutter.
+
+    Relationer med en `network=lwn/rwn/nwn/iwn`-tagg hanteras som vanligt.
+  czech: |-
+    ## Tjeckien
+
+    Landet använder en standard för ledmarkeringar baserad på en uppsättning av 7 symboler i 4 olika färger. För en beskrivning, se den [tjeckiska taggningssidan](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (endast tjeckiska).
+
+    När en `kct_*`-tagg är tillgänglig föredras den framför alla `osmc:symbol`-taggar.
+
+    Dessutom omklassificeras rutten om ingen giltig nätverkstagg kan hittas. Rutter med `kct_red=major` blir nationella rutter, andra `kct_*=major` klassificeras som regionala.
+  slovakia: |-
+    ## Slovakien
+
+    Slovakien använder samma standard för ledmarkering som Tjeckien. Taggningsschemat är dock något annorlunda, se
+    [Slovakisk vandringssida](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+
+    Alla rutter med taggen `operator=KST` är taggade enligt det schemat. Eftersom rutter i Slovakien ska ha en giltig nätverkstagg utförs ingen omklassificering.
+  hungary: |-
+    ## Ungern
+
+    Ungern använder också ett system med en fast uppsättning symboler i olika färger. Dessa är markerade med sin egen tagg [jel](https://wiki.openstreetmap.org/wiki/Key:jel).
+    Taggen är att föredra framför alla `osmc:symbol`-taggar.
   germany: |-
     ## Tyskland
 
@@ -152,10 +261,39 @@ hikinglocal:
 
     Nätverket runt Nürnberg är ganska tätt, vilket innebär att regionala rutter taggade
     med `operator=Fränkischer Albverein` visas med lägre zoomnivåer än normalt.
+  ukcycle: |-
+    ## Storbritannien
+
+    ### Norwich
+
+    Norwich använder ett system med färgkodade rutter. Rutter taggade med
+    `operator=Norwich City Council` är markerade med en färgad ruta enligt `färg`-taggen.
 elevationprofiles:
   title: Höjdprofiler
+  general: |-
+    Höjdprofilerna är gjorda med höjddata från [ASTER global digital elevation model (GDEM) version 2](https://asterweb.jpl.nasa.gov/gdem.asp), taggen "ele" i OpenStreetMap tas inte med i beräkningen, inte heller tunnlar och broar. ASTER GDEM är en produkt från METI och NASA.
+
+    Om rutten har fler än två slutpunkter eller består av mer än ett segment kommer ingen profil att renderas. Profilens riktning följer rutten väst-öst eller nord-syd. Om rutter hade element med roller som "start" och "mål", och/eller listades kontinuerligt från start till mål, skulle vi kanske kunna bestämma riktningen från själva ruttens relation. Du kanske vill ha dessa saker i åtanke om du kartlägger rutter på OpenStreetMap.
+
+    Det finns hål, så kallade "tomrum" för vilka vi inte har några höjddata. Dessa visualiseras med hål i höjdprofillinjen.
+
+    Var medveten om att även om ASTER version 2 förmodligen är den bästa gratis globala DEM:n, har den sina begränsningar både när det gäller noggrannhet och täckning. Se deras [valideringssammanfattningsrapport](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) för mer information. Felaktigheterna förvärras ytterligare av felaktigheten i OSM-data, [en utjämningsteknik](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) som vi använder, och profilens upplösning som blir lägre ju längre rutten är.
 technical:
   title: Tekniska detaljer
+  general: |-
+    Ruttöverlagringen uppdateras minutvis och ligger normalt 2–5 minuter efter OSM-servern. Datumet i det övre vänstra hörnet visar den senaste uppdateringen. Uppdateringar av den underliggande Mapnik-kartan ligger inte inom denna
+    webbplats kontroll. Beroende på OSM-serverns aktuella belastning tar det
+    mellan en minut och några timmar.
+
+    Källkoden för denna webbplats är tillgänglig under en GPL-licens och
+    uppdelad över flera arkiv:
+    * [backend-kod och kartgenerering](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+    * [API-tjänst](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+    * [webbplatsens frontend](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+    Om du bara vill rapportera ett fel eller diskutera webbplatsens funktioner,
+    kan du använda [issue tracker](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
+    eller [diskussionen funktion](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) i projektrepo på Github.
   translation: |-
     ## Översättningar
 
@@ -165,6 +303,27 @@ technical:
     [translatewiki.net projektsidan](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Juridiska och användningsvilkor
+  copyright: "Ruttöverlägget är tillgängligt under \n[Creative Commons Erkännande-Dela
+    Lika 3.0 Tyskland-licensen](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en),
+    och GPX-spåren under \n[ODbL](https://opendatacommons.org/licenses/odbl/).\nDe
+    får återanvändas och ändras så länge det resulterande verket använder en kompatibel
+    licens\noch OpenStreetMap-projektet och denna webbplats nämns."
+  usage: |-
+    ## Användarpolicy
+
+    Du får använda overlay på andra webbplatser så länge åtkomst trafikmängden är måttlig. Vänligen
+    cacha rutor så ofta som möjligt och använd en korrekt hänvisning. Massnedladdning av rutor avråds starkt.
+
+    GPX-spår tillhandahålls för att underlätta för besökare på denna webbplats. Massnedladdning är inte tillåten.
+  disclaimer: |-
+    ## Friskrivning
+
+    Varken kartans korrekthet eller fullständighet kan garanteras. Om du ger dig ut på en
+    vandring, skaffa en ordentlig papperskarta, lämplig utrustning och lämna inte ditt sunda förnuft hemma.
+    Naturen kan vara lika hänsynslös som den är vacker.
+
+    Denna webbplats innehåller länkar till externa webbplatser. Författaren till denna webbplats har inget inflytande på
+    innehållet på dessa webbplatser och tar inget ansvar för det.
 acknowledgements:
   title: Tack till
   text: |-

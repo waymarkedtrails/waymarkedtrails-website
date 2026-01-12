@@ -74,9 +74,19 @@ details:
   download:
     title: Ladda ner rutt
     need_format: Välj ett format
+    need_direction: Välj sätt att inkludera
+    start: Hämta fil
     format:
+      title: Format
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
+    direction:
+      title: Inkludera vägar i riktningen
+      forward: framåt
+      backward: bakåt
+      both: både
+    other_ways: Ytterligare ruttdelar
 elevation:
   ascent: Ackumulerad stigning
   descent: Ackumulerad nedstigning
@@ -84,18 +94,33 @@ elevation:
     altitude: Höjd (m)
     distance: Avstånd (km)
   title: Höjdprofil
+  total: Total upp-/nedstigning
   unavailable: Inga höjddata hittades.
   warn_unsorted: Rutten är förmodligen oordnad eller ofullständig. Elevationsinformationen
     kan vara felaktig.
 error:
   load_error: Fel vid anslutning till server.
+  missing_id: Parametern 'id' saknas.
+  missing_query: Parametern 'query' saknas.
   panel_title: Fel
+  object_not_found: Objektet hittades inte.
+  api_unavailable: API:et är inte tillgängligt.
 headline:
   last_update: Senast uppdaterat
 help: Om kartan
 locate_me: Hitta mig
 network:
+  continental: Kontinentala rutter
   downhill: Utför
+  national: Nationella rutter
+  node: Ingen nätverksanslutning
+  nordic: Längdskidåkning
+  other: Andra rutter
+  regional: Regionala rutter
+  skitour: Skidturer
+  sled: Pulkaåkning
+  sleigh: Kälkbacke
+  winter_hike: Vintervandring
 osmc_symbol:
   back: Tillbaka
   background: Bakgrunden fungerar på ett liknande sätt. Den består också av en färg
@@ -108,17 +133,23 @@ osmc_symbol:
     även igen förgrunder som endast består av namnet på formen. Symbolerna för dessa
     visas i den sista kolumnen.
   foreground_heading: Förgrund
+  intro_header: Översikt
   preview: Skriv in ett osmc:symbolvärde i inmatningsfältet nedan för att se hur det
     kommer se ut på kartan.
   preview_heading: Förhandsgranska
+  symbol_reference_heading: Fullständig lista över symboler som stöds
 routelist:
   loading: Laddar...
   close: Stäng
+  more: Zooma in för att se fler rutter.
   rollup: Rulla upp
   title: Rutter
 search:
+  places: Platser
   routes: Rutter
   title: Sök
+  help: Använd nyckelord för att söka. Du kan söka på namn på leder (t.ex. Appalachian
+    Trail, E2) eller platser (t.ex. Berlin).
 settings:
   base_map: Bakgrundskarta
   browser_language: Använd webbläsarens inställningar
@@ -127,10 +158,20 @@ settings:
   route_layer: Rutter
   title: Kartinställningar
   transparency: Kartgenomskinlighet
+site_description:
+  cycling: Lokala och långdistanscykelvägar, med kartor och information från OpenStreetMap.
+  hiking: Lokala och långväga vandrings- och promenadrutter, med kartor och information
+    från OpenStreetMap.
+  mtb: Mountainbike-rutter (MTB), med kartor och information från OpenStreetMap.
+  riding: Ridleder, med kartor och information från OpenStreetMap.
+  skating: Inlines-rutter, med kartor och information från OpenStreetMap.
+  slopes: Vintersportbackar, utförsåkning, längdskidåkning, vintervandring, med kartor
+    och information från OpenStreetMap.
 site_title:
   cycling: Cykelrutt
   hiking: Vandringsled
   mtb: Mountainbikerutt
+  osmc_symbol: osmc:symbol-taggen
   riding: Ridning
   skating: Inline skating-rutt
   slopes: Vintersportbackarna
