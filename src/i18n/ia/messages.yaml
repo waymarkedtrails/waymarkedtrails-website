@@ -66,6 +66,7 @@ details:
       title: Formato
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
     direction:
       title: Includer vias que mena
       forward: in avante

@@ -312,6 +312,8 @@ acknowledgements:
   text: |-
     Tote le datos cartographic es fornite per [OpenStreetMap e contribuentes](https://www.openstreetmap.org) e distribuite sub le licentia ODbL. Le carta de base es tamben fornite per OSM. Pro plus information, vide le [pagina de copyright de OSM](https://www.openstreetmap.org/copyright).
 
+    Le carta basic de OpenTopoMap-R es gentilmente fornite per [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html). Si illo te place, per favor considera donar pro le mantenentia de lor servitores. Visita le [pagina de donation de openmaps](https://openmaps.fr/donate) pro plus informationes.
+
     Le umbras de collinas e le datos de elevation es create ex un mixtura de datos SRTM e ASTER GDEM. ASTER GDEM es un producto de METI e NASA. Le post-processamento ha essite amabilemente fornite per Yves Cainaud de [opensnowmap.org](https://opensnowmap.org).
 
     Le codice del profilo de elevation ha essite disveloppate per Espen Oldeman Lund in un cooperation inter [Kresendo](https://www.kresendo.no) e le projecto TG4NP al [Instituto de Recerca de Norvegia Occidental](https://www.vestforsk.no).
