@@ -1,6 +1,7 @@
 # Messages for Finnish (suomi)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Houtari
 # Author: Lliehu
 # Author: MITO
 # Author: Markus Mikkonen
@@ -25,9 +26,13 @@ details:
   note: Lisätietoja
   official_len: Virallinen pituus
   operator: Ylläpitäjä
+  roundtrip: Tämä reitti on ympyrälenkki.
+  route_symbol: Reitin symboli
   subroutes_title: Osuudet
   superroutes_title: Osa reittiä
   symbol: Symboli
+  linear:
+    "no": Relaatiossa on reikiä tai muita ongelmia.
   tags:
     key: avain
     title: OpenStreetMap-tagi
@@ -38,10 +43,19 @@ details:
     relation: Relaatio
     way: Tie
   website: Verkkosivusto
+  wikipedia: Wikipedia
   zoom_to: Näytä kartalla
+  analyze:
+    title: Analysoi relaatiota
   download:
+    title: Lataa reitti
+    need_format: Valitse formaatti
+    start: Hae tiedosto
     format:
+      title: Formaatti
       GPX: GPX
+      KML: KML
+      GeoJson: GeoJson
 elevation:
   ascent: Kertynyt nousu
   descent: Kertynyt laskeutuminen
@@ -50,6 +64,7 @@ elevation:
     distance: Etäisyys (km)
   title: Korkeusprofiili
   total: Kokonaisnousu/lasku
+  unavailable: Korkeusdataa ei löydy.
   warn_unsorted: Reitti on mahdollisesti epäjärjestyksessä tai epätäydellinen. Korkeustiedot
     voivat olla epätarkkoja.
 error:
@@ -65,10 +80,10 @@ help: Tietoa kartasta
 locate_me: Etsi minulle
 network:
   continental: Mannerreitit
-  downhill: Alamäki
+  downhill: Laskettelu
   national: Valtakunnalliset reitit
   node: Solmuverkkoyhteydet
-  nordic: Pohjoismainen hiihto
+  nordic: Maastohiihto
   other: Muut reitit
   regional: Alueelliset reitit
   skitour: Hiihtomatkat
@@ -81,6 +96,7 @@ osmc_symbol:
   examples: Esimerkit
   foreground_heading: Symboli
   preview_heading: Esikatselu
+  symbol_reference_heading: Täydellinen luettelo tuetuista symboleista
 routelist:
   loading: Ladataan...
   close: Sulje
@@ -109,6 +125,7 @@ site_title:
   cycling: Pyöräily
   hiking: Vaellus
   mtb: Maastopyöräily
+  osmc_symbol: osmc:symbol-tagi
   riding: Ratsastus
   skating: Rullaluistelu
   slopes: Talviurheilurinteet
