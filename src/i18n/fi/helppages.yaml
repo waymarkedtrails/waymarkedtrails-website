@@ -1,6 +1,7 @@
 # Messages for Finnish (suomi)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Houtari
 # Author: Markus Mikkonen
 # Author: Nike
 # Author: Pyscowicz
@@ -13,19 +14,26 @@ about:
   cycling: Tämä kartta näyttää viitoitettuja pyöräilyreittejä ympäri maailman.
   mtb: Tämä kartta näyttää viitoitettuja maastopyöräilyreittejä ympäri maailman.
   skating: Tämä kartta näyttää viitoitettuja rullaluistelureittejä ympäri maailman.
-  riding: Tämä kartta näyttää viitoitettuja vaellusreittejä ympäri maailman.
-  slopemap: Tämä kartta osoittaa selvästi talviurheilurinteitä ympäri maailmaa.
-  osm: Reitit piirretään tavalliselle OpenStreetMap-karttatasolle tai tasolle jossa
-    pinnanmuodot on varjostettu.
+  riding: Tämä kartta näyttää viitoitettuja ratsastusreittejä ympäri maailman.
+  slopemap: Tämä kartta osoittaa viitoitettuja talviurheilurinteitä ympäri maailmaa.
+  osm: Reitit sijoitetaan OpenStreetMapin peruskarttatason tai vaihtoehtoisesti rinnevarjostuskarttatason
+    päälle. Reittikartta luodaan [OpenStreetMap](https://www.openstreetmap.org) (OSM)-projektin
+    tiedoista. OSM on vapaasti muokattava maailmankartta, jonka muokkaamiseen kuka
+    tahansa voi osallistua. Tämä tarkoittaa, ettei se missään nimessä ole täydellinen,
+    mutta myös sitä, että sinäkin voit osallistua lisäämällä uusia reittejä ja korjaamalla
+    virheitä olemassa olevissa reiteissä. Lisätietoja OpenStreetMapista löydät [Aloittelijan
+    oppaasta](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
 rendering:
-  title: Renderöidään OSM-aineistoa.
+  title: OSM-datan renderöinti
   hikingroutes: |-
     Vaellusreitit pitää OSM-järjestelmään syöttää relaatioina. Tämä on selitetty yksityiskohtaisemmin [vaellusreitit](https://wiki.openstreetmap.org/wiki/Walking_Routes)-sivulla OSM-wikissä. Tämä kartta näyttää relaatiot joihin on liitetty vähintään seuraavat tagit:
 
         type = route|superroute
         route = foot|walking|hiking
+route_order:
+  title: Reittien järjestäminen
 hierarchies:
-  title: Liittyvät hierarkiat
+  title: Relaatioiden hierarkiat
 osmc:
   title: osmc:symbol-tagi
 hikinglocal:

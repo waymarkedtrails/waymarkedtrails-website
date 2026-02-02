@@ -26,22 +26,28 @@ details:
   note: Lisätietoja
   official_len: Virallinen pituus
   operator: Ylläpitäjä
+  pilgrimage:
+    christian: Tämä on kristittyjen pyhiinvaellusreitti.
+    other: Tämä on pyhiinvaellusreitti.
   roundtrip: Tämä reitti on ympyrälenkki.
   route_symbol: Reitin symboli
   subroutes_title: Osuudet
   superroutes_title: Osa reittiä
   symbol: Symboli
   linear:
+    "yes": Tämän reitin relaatio on järjestyksessä ja yhtenä kappaleena.
+    sorted: Tämän reitin relaatio on yhtenä kappaleena, mutta jäseniä ei ole järjestetty
+      oikein.
     "no": Relaatiossa on reikiä tai muita ongelmia.
   tags:
     key: avain
-    title: OpenStreetMap-tagi
+    title: OpenStreetMap-tageja
     value: arvo
   type:
     guidepost: Tienviitta
     node: Piste
     relation: Relaatio
-    way: Tie
+    way: Viiva
   website: Verkkosivusto
   wikipedia: Wikipedia
   zoom_to: Näytä kartalla
@@ -77,7 +83,7 @@ error:
 headline:
   last_update: Viimeisin päivitys
 help: Tietoa kartasta
-locate_me: Etsi minulle
+locate_me: Paikanna minut
 network:
   continental: Mannerreitit
   downhill: Laskettelu
@@ -86,9 +92,9 @@ network:
   nordic: Maastohiihto
   other: Muut reitit
   regional: Alueelliset reitit
-  skitour: Hiihtomatkat
+  skitour: Retkihiihto
   sled: Pulkkamäki
-  sleigh: Rekirinne
+  sleigh: Kelkkailurinne
   winter_hike: Talvivaellus
 osmc_symbol:
   back: Takaisin
@@ -108,19 +114,19 @@ search:
   routes: Reitit
   title: Haku
 settings:
-  base_map: Karttapohja
+  base_map: Pohjakartta
   browser_language: Käytä selaimen asetuksia
   hillshading_layer: Rinnevarjostus
   language: Kieli
-  route_layer: Reittikartta
+  route_layer: Reittitaso
   title: Kartta-asetukset
   transparency: Kartan läpinäkyvyys
 site_description:
   cycling: Paikallisia ja pitkän matkan pyöräilyreittejä, karttoja ja tietoja OpenStreetMapista.
   riding: Ratsastusreitit, karttojen ja tietojen kanssa OpenStreetMapista.
   skating: Rullaluistelureitit, karttoja ja tietoja OpenStreetMapista.
-  slopes: Talviurheilurinteet, laskettelu, murtomaaluistelu, talvikävely, karttoja
-    ja tietoja OpenStreetMapista.
+  slopes: Talviurheilurinteet, laskettelu-, maaastohiihto-, talvikävely-karttoja ja
+    tietoja OpenStreetMapista.
 site_title:
   cycling: Pyöräily
   hiking: Vaellus
