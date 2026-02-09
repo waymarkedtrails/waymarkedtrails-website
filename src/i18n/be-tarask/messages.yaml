@@ -36,7 +36,7 @@ details:
     title: Цэтлікі OpenStreetMap
     value: значэньне
   type:
-    guidepost: Даведнік
+    guidepost: Паказальнік
     node: Вузел
     relation: Зьвязак
     way: Шлях
@@ -93,6 +93,7 @@ osmc_symbol:
     адлюстроўвацца на мапе.
   preview_heading: Папярэдні прагляд
 routelist:
+  loading: Ладаваньне…
   close: Закрыць
   rollup: Згарнуць
   title: Маршруты
