@@ -103,7 +103,7 @@ search:
 settings:
   base_map: Базавая мапа
   browser_language: Выкарыстоўваць налады браўзэра
-  hillshading_layer: Адлюстраваньне рэльефу
+  hillshading_layer: Зацяненьне рэльефу
   language: Мова
   route_layer: Слой маршрутаў
   title: Налады мапы
