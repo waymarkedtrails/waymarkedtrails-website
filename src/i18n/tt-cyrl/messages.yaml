@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Ерней
+# Author: Ильгиз
 ---
 attribution:
   data: © [OpenStreetMap](https://www.openstreetmap.org) харитасы мәгълүматлары [ODbL](https://www.openstreetmap.org/copyright)
@@ -61,7 +62,7 @@ osmc_symbol:
   background_heading: Җирлек
   examples: Мисаллар
   foreground_heading: Төп төс
-  preview_heading: Алдан карау
+  preview_heading: Карап алу
 routelist:
   loading: Төяү бара…
   close: Ябу
