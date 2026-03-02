@@ -1,0 +1,166 @@
+# Messages for Irish (Gaeilge)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Aindriu80
+---
+attribution:
+  data: Sonraí léarscáile © [OpenStreetMap](https://www.openstreetmap.org) faoi [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: sonraí airde le [SRTM/ASTER](cabhair/aitheantas)
+destination_sign:
+  more: Tuilleadh sonraí
+  no_data: Níl aon fhaisnéis cheann scríbe ar fáil don treoirphost seo.
+  title: Ceann Scríbe
+details:
+  altitude: Airde
+  educational:
+    other: Is cosán oideachasúil é seo.
+  image: Íomhá
+  mapped_len: Fad mapáilte
+  note: Nóta
+  oneway: Ní féidir an bealach seo a leanúint ach i dtreo ar aghaidh.
+  official_len: Fad oifigiúil
+  operator: Oibreoir
+  pilgrimage:
+    christian: Is bealach oilithrigh Críostaí é seo.
+    other: Is bealach oilithrigh é seo.
+  roundtrip: Is turas cruinn é an bealach seo.
+  route_symbol: Siombail an bhealaigh
+  signed_direction: Níl an bealach seo comharthaíochta ach amháin i dtreo ar aghaidh.
+  subroutes_title: Rannóga
+  superroutes_title: Cuid de
+  symbol: Siombail
+  linear:
+    "yes": Tá an gaol don bhealach seo sórtáilte agus i bpíosa amháin.
+    sorted: Tá an gaol don bhealach seo i bpíosa amháin ach níl na baill sórtáilte.
+    "no": Tá poill nó fadhbanna eile sa chaidreamh.
+  tags:
+    key: eochair
+    title: Clibeanna OpenStreetMap
+    value: luach
+  type:
+    guidepost: Treoirphost
+    node: Nód
+    relation: Gaol
+    way: Bealach
+    wayset: Socrú bealach
+  website: Suíomh Gréasáin
+  wikipedia: Vicipéid
+  zoom_to: Taispeáin ar léarscáil
+  analyze:
+    title: Anailís a dhéanamh ar an ngaol
+    summary: Tá {num} deighleog sa ghaol seo.
+    disclaimer: Taispeánann sé seo na codanna bealaigh mar a ríomhadh iad ag waymarkedtrails
+      ón ngaol, rud nach mbíonn ceart i gcónaí. Chun tuilleadh eolais a fháil faoi
+      conas a shórtálann waymarkedtrails bealaí, tabhair cuairt ar na leathanaigh
+      chabhrach.
+    open_end: Deireadh oscailte sa bhealach.
+    multi_end: Tagann níos mó ná dhá chuid den bhealach le chéile ag an bpointe seo.
+    two_end: Pointe ina gcuirtear isteach ar an mbealach mar nach bhfuil an gaol sórtáilte.
+      Taispeánann na línte dearga poncaithe cá leanann an bealach ar aghaidh.
+  download:
+    title: Íoslódáil an bealach
+    need_format: Roghnaigh formáid
+    need_direction: Roghnaigh bealaí le cur san áireamh
+    start: Faigh comhad
+    format:
+      title: Formáid
+      GPX: GPX
+      KML: KML
+      GeoJson: GeoJson
+    direction:
+      title: Cuir bealaí san áireamh sa treo
+      forward: ar aghaidh
+      backward: ar gcúl
+      both: an dá cheann
+    other_ways: Codanna breise den bhealach
+elevation:
+  ascent: Dreapadh carntha
+  descent: Sliocht carntha
+  diagram:
+    altitude: Airde (m)
+    distance: Fad (km)
+  title: Próifíl airde
+  total: Ardú/sliocht iomlán
+  unavailable: Níor aimsíodh aon sonraí airde.
+  warn_unsorted: B’fhéidir nach bhfuil an bealach ordaithe nó neamhiomlán. B’fhéidir
+    nach bhfuil an fhaisnéis airde cruinn.
+error:
+  load_error: Earráid ag ceangal leis an bhfreastalaí.
+  missing_id: Paraiméadar 'id' ar iarraidh.
+  missing_query: Paraiméadar 'query' ar iarraidh.
+  panel_title: Earráid
+  object_not_found: Níor aimsíodh an réad.
+  api_unavailable: Níl an API ar fáil.
+headline:
+  last_update: Nuashonrú deireanach
+help: Maidir leis an léarscáil
+locate_me: Aimsigh mé
+network:
+  continental: Bealaí ilchríochacha
+  downhill: Síos an cnoc
+  national: Bealaí náisiúnta
+  node: Naisc líonra nóid
+  nordic: Sciáil Nordach
+  other: Bealaí eile
+  regional: Bealaí réigiúnacha
+  skitour: Turais sciála
+  sled: Piste sleamhnáin
+  sleigh: Piste sleamhnáin
+  winter_hike: Siúlóid geimhridh
+osmc_symbol:
+  back: Ar ais
+  background: Oibríonn an cúlra ar bhealach cosúil. Tá dath agus cruth ann freisin.
+    D’fhéadfadh ainm datha amháin a bheith sa chúlra freisin, rud a fhágann go mbíonn
+    canbhás den dath roghnaithe ann. Taispeántar é seo sa chéad ró.
+  background_heading: Cúlra
+  examples: Samplaí
+  foreground: Is éard atá sa tsiombail sa tulra dath agus cruth atá nasctha le líne
+    faoi. Taispeánann an tábla thíos na teaglamaí uile a aithníonn an suíomh seo.
+    Aithníonn sé freisin tulraí nach bhfuil iontu ach ainm an chrutha. Taispeántar
+    na siombailí dóibh sin sa cholún deireanach.
+  foreground_heading: Túlra
+  intro_header: Forbhreathnú
+  preview: "Clóscríobh luach osmc:symbol isteach sa réimse ionchuir thíos \n     chun
+    a fheiceáil conas a léireofar é ar an léarscáil."
+  preview_heading: Réamhamharc
+  symbol_reference_heading: Liosta iomlán de na siombailí a dtacaítear leo
+routelist:
+  loading: Ag lódáil...
+  close: Dún
+  more: Zúmáil isteach chun níos mó bealaí a fheiceáil.
+  rollup: Rolladh suas
+  title: Bealaí
+search:
+  places: Áiteanna
+  routes: Bealaí
+  title: Cuardaigh
+  help: Bain úsáid as eochairfhocail le do thoil chun cuardach a dhéanamh. Is féidir
+    leat cuardach a dhéanamh ar ainmneacha conairí (m.sh. Appalachian Trail, E2) nó
+    áiteanna (m.sh. Beirlín).
+settings:
+  base_map: Léarscáil bhunúsach
+  browser_language: Úsáid socruithe brabhsálaí
+  hillshading_layer: Scáthú cnoic
+  language: Teanga
+  route_layer: Sraith bealaigh
+  title: Socruithe léarscáile
+  transparency: Trédhearcacht léarscáile
+site_description:
+  cycling: Bealaí rothaíochta áitiúla agus fad-achair, le léarscáileanna agus faisnéis
+    ó OpenStreetMap.
+  hiking: Bealaí fánaíochta agus siúlóide áitiúla agus fad-achair, le léarscáileanna
+    agus faisnéis ó OpenStreetMap.
+  mtb: Bealaí rothaíochta sléibhe (MTB), le léarscáileanna agus faisnéis ó OpenStreetMap.
+  riding: Bealaí marcaíochta capall, le léarscáileanna agus faisnéis ó OpenStreetMap.
+  skating: Bealaí scátála inlíne, le léarscáileanna agus faisnéis ó OpenStreetMap.
+  slopes: Fánaí spóirt geimhridh, sciáil anuas cnoc, scátáil tras-tíre, siúlóid geimhridh,
+    le léarscáileanna agus faisnéis ó OpenStreetMap.
+site_title:
+  cycling: Rothaíocht
+  hiking: Siúlóireacht
+  mtb: MTB
+  osmc_symbol: An chlib osmc:symbol
+  riding: Marcaíocht Capall
+  skating: Scátáil Inlíne
+  slopes: Fánaí Spóirt Geimhridh
+...

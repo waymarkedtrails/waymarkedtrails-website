@@ -1,0 +1,380 @@
+# Messages for Irish (Gaeilge)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Aindriu80
+---
+about:
+  title: Maidir leis an léarscáil
+  hiking: Taispeánann an léarscáil seo bealaí siúil le comharthaí siúil ar fud an
+    domhain.
+  cycling: Taispeánann an léarscáil seo bealaí rothaíochta le comharthaí bóthair ar
+    fud an domhain.
+  mtb: Taispeánann an léarscáil seo bealaí rothaíochta sléibhe atá comharthaithe ar
+    fud an domhain.
+  skating: Taispeánann an léarscáil seo bealaí scátála le comharthaí bóthair ar fud
+    an domhain.
+  riding: Taispeánann an léarscáil seo bealaí marcaíochta capall atá comharthaithe
+    ar fud an domhain.
+  slopemap: Taispeánann an léarscáil seo fánaí spóirt geimhridh marcáilte ar fud an
+    domhain.
+  osm: |-
+    Tá na bealaí leagtha ar an OpenStreetMap caighdeánach agus ar shraith scáthaithe cnoic más mian leat. Gintear an léarscáil bealaigh ó
+    shonraí ón tionscadal [OpenStreetMap](https://www.openstreetmap.org) (OSM). Is léarscáil dhomhanda in-eagarthóireachta saor in aisce é OSM inar féidir le duine ar bith
+    páirt a ghlacadh. Ciallaíonn sé sin nach bhfuil sé críochnaithe ar chor ar bith,
+    ach ciallaíonn sé freisin gur féidir leat cur leis trí bhealaí nua a chur leis agus
+    botúin a cheartú i mbealaí atá ann cheana féin. Chun tuilleadh eolais a fháil faoi
+    OpenStreetMap, féach ar an
+    [Treoir do Thosaitheoirí](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
+rendering:
+  title: Ag rindreáil sonraí OSM
+  hikingroutes: |-
+    Ní mór bealaí siúlóide in OSM a iontráil mar ghaolta. Déantar cur síos mionsonraithe ar an gcaoi a n-oibríonn sé seo ar an leathanach clibeála faoi
+    [bealaí siúlóide](https://wiki.openstreetmap.org/wiki/Walking_Routes)
+    sa vicí OSM. Taispeánann an léarscáil seo gaolta a bhfuil na clibeanna seo a leanas ar a laghad acu:
+
+    cineál = bealach|superbhealach
+    bealach = cos|siúl|siúlóid
+  cyclingroutes: |-
+    Ní mór bealaí rothaíochta in OSM a iontráil mar ghaolta. Déantar cur síos mionsonraithe ar an gcaoi a n-oibríonn sé seo ar an leathanach clibeála faoi
+    [bealaí rothaíochta](https://wiki.openstreetmap.org/wiki/Cycle_routes) sa
+    vicí OSM. Taispeánann an léarscáil seo na gaolta uile a bhfuil na clibeanna seo a leanas orthu ar a laghad:
+
+    cineál = bealach|superbealach
+    bealach = rothar
+
+    Taispeántar bealaí rothaíochta sléibhe ar [léarscáil MTB](https://mtb.waymarkedtrails.org) ar leith.
+  mtbroutes: |-
+    Leanann bealaí rothaíochta sléibhe an scéim chlibeála chéanna le bealaí rothaíochta
+    atá curtha síos go mion ar leathanach vicí OSM faoi
+    [bealaí rothaíochta](https://wiki.openstreetmap.org/wiki/Cycle_routes).
+    Aithnítear gaolta a bhfuil na clibeanna seo a leanas orthu mar bhealaí MTB:
+
+    cineál = bealach|superbealach
+    bealach = mtb
+
+    Taispeántar bealaí rothaíochta rialta ar an [léarscáil rothaíochta](https://cycling.waymarkedtrails.org).
+  skatingroutes: |-
+    Ba chóir clibeanna a chur ar bhealaí scátála atá comharthaithe cosúil le haon ghaol bealaigh eile.
+    Chun an clibeáil a thuigtear leis an léarscáil seo a fheiceáil, féach ar an leathanach vicí faoi
+    [Bealaí scátála inlíne na hEilvéise](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
+    Chun go n-aithneofar é mar bhealach scátála, ní mór na clibeanna seo a leanas a bheith i láthair:
+
+    cineál = bealach|sárbhealach
+    bealach = scátálacha_inlíne
+  ridingroutes: |-
+    Ba chóir clibeanna a chur ar bhealaí marcaíochta capall atá comharthaithe cosúil le haon ghaol bealaigh eile.
+    Le haghaidh sonraí féach [leathanach an bhealaigh i vicí OSM](https://wiki.openstreetmap.org/wiki/Relation:route).
+    Chun go n-aithneofar é mar bhealach marcaíochta capall, ní mór na clibeanna seo a leanas a bheith i láthair:
+
+    cineál = bealach|sárbhealach
+    bealach = capall
+  sloperoutes: |-
+    Is bealaí iad fánaí atá comharthaithe leis na clibeanna piste:cineál.
+    Chun go n-aithneofar iad mar fhána, ní mór na clibeanna seo a leanas a bheith i láthair do bhealaí:
+
+    piste:cineál = síos an cnoc|nordach|sleamhnán|siúlóid|sleamhnán
+
+    Maidir le caidrimh, ní mór na clibeanna seo a leanas a bheith i láthair:
+
+    cineál = bhealach|sárbhealach
+    bhealach = sciáil|piste
+    piste:cineál = síos an cnoc|nordach|sleamhnán|siúlóid|sleamhnán
+  slopeclassification: Cinntear aicmiú fánaí sciála (síos an cnoc) ón gclib `piste:difficulty`,
+    agus úsáidtear é don dath sa rindreáil.
+  classification: |-
+    Tacaítear le clib `route` le luachanna iolracha nuair a bhíonn siad scartha le leathstad gan aon spásanna timpeall orthu.
+    Cinntear an t-aicmiú (agus dá bhrí sin dath an bhealaigh sa léarscáil) ón gclib `network`.
+  slopemaplabels: |-
+    Déantar an lipéad do bhealaí sciála (síos an cnoc) a "bhuille faoi thuairim" ó na clibeanna san ord seo a leanas:
+
+    1. Má tá clib `piste:ref` ann, déan lipéad téacs leis an gclib `piste:ref`.
+
+    2. Má tá clib `piste:name` ann, díorthaigh tagairt uaidh sin, ar dtús trí úsáid a bhaint as litreacha móra amháin agus mura féidir sin a dhéanamh trí úsáid a bhaint as na chéad litreacha den ainm.
+
+    3. Má tá clib `ref` ann, déan lipéad téacs leis an gclib `ref`.
+
+    4. Más gaol é agus má tá clib `name` ann, díorthaigh tagairt uaidh sin, ar dtús trí úsáid a bhaint as litreacha móra amháin agus mura féidir sin a dhéanamh trí úsáid a bhaint as na chéad litreacha den ainm.
+
+    5. Tréig.
+
+    Tá fánaí Nordacha marcáilte le comhartha a thaispeánann a ndath amháin, má tá clib datha i láthair.
+  hikinglabels: |-
+    Déantar lipéad gach bealaigh a "bhuille faoi thuairim" ó na clibeanna san ord seo a leanas:
+
+    1. Seiceáil le haghaidh [rialacha rindreála áitiúla](#help-hikinglocal).
+    2. Déan iarracht an chlib `osmc:symbol` a léirmhíniú. Le haghaidh sonraí faoi na codanna a thuigtear, féach [osmc:symbol rendering rules](osmc_symbols.html).
+    3. Má tá clib `ref` ann, déan lipéad téacs leis an gclib `ref`.
+    4. Má tá clib `name` ann, díorthaigh tagairt uaidh sin, ar dtús trí úsáid a bhaint as litreacha móra amháin agus mura n-éiríonn leat sin trí úsáid a bhaint as na chéad litreacha den ainm.
+    5. Tréig.
+  labels: |-
+    Déantar lipéad gach bealaigh a "bhuille faoi thuairim" ó na clibeanna san ord seo a leanas:
+
+    1. Má tá clib `ref` ann, cruthaigh lipéad téacs leis an gclib `ref`.
+
+    2. Má tá clib `name` ann, díorthaigh tagairt uaidh sin, ar dtús trí úsáid a bhaint as litreacha móra amháin agus mura n-éiríonn leat sin trí úsáid a bhaint as na chéad litreacha den ainm.
+
+    3. Tréig.
+  hierarchy: Tacaíonn an léarscáil le [hiararchies caidrimh](#help-hierarchies) chomh
+    maith.
+  guideposts: |-
+    Aithnítear [Treoirphoist](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)
+    leis na clibeanna seo a leanas:
+
+    turasóireacht=eolas
+    eolas=treorphoist
+    ainm=<ainm>
+    ele=<airde>
+
+    Tá `turasóireacht` agus `eolas` éigeantach. Is féidir `ainm` agus `ele` a fhágáil ar lár.
+route_order:
+  title: Ordú bealaí
+  text: |-
+    Teastaíonn bealaí atá sórtáilte i gceart ó waymarkedtrails chun an
+    phróifíl airde a thaispeáint agus le haghaidh íoslódáil GPX agus KML. Agus bealach á anailísiú,
+    déanann sé iarracht ord na mbealaí ball laistigh den
+    ghaol a urramú a oiread agus is féidir mar go ndéanann sé seo an bealach is fusa do mhapálaithe tionchar a imirt ar an
+    ord gan dul i muinín trialach agus earráide. Mura bhfuil cuma ar ghaol, cuirfidh waymarkedtrails na
+    bealaí in ord fós má tá na bealaí in ann bealach líneach gan bhriseadh a chruthú.
+
+    Cuirtear róil chaidrimh san áireamh agus an bealach á shórtáil.
+
+    Is féidir róil `ar aghaidh` agus `ar gcúl` a úsáid chun codanna a mharcáil inar cheart
+    an bealach a leanúint ar chodanna éagsúla ag brath ar an
+    treo. Cuimhnigh go sainmhínítear na róil seo i gcoibhneas le
+    treo na slí, ní leis an mbealach! Má tá cuid scoilte den sórt sin agat,
+    déan cinnte go bhfuil na bealaí do gach treo le feiceáil go díreach i ndiaidh
+    a chéile sa ghaol agus go leanann na bealaí
+    ord an bhealaigh fós.
+
+    Meastar gur cosáin taobh de chineál amháin nó eile aon ról eile agus déantar neamhaird orthu le haghaidh sórtáil ghinearálta an bhealaigh. Feictear iad fós ar an léarscáil.
+
+    Tá waymarkedtrails in ann déileáil le timpealláin neamhroinnte laistigh de bhealach. Cuir an bealach dúnta leis gan aon ról agus roinnfear an timpeallán go hinmheánach ina rannóga cuí. Oibríonn sé seo fiú nuair a bhíonn cur chuige V ann chuig an timpeallán atá roinnte ina
+    gcúl agus ina gcúl. Tá dhá chás ann ina dteipeann ar an láimhseáil seo:
+
+    * má roinneadh an timpeallán ar bhealaí éagsúla ar chúis éigin,
+    ansin _ní mór_ duit na codanna a chur leis na róil chuí `ar aghaidh` agus
+    `ar gcúl`.
+    * más cuid de chuid threorach an timpeallán, ní mór duit
+    an timpeallán a roinnt agus an chuid a úsáidtear a chur leis leis an ról cuí.
+
+    Riail ghinearálta ordóige maidir le hordú: má thaispeánann eagarthóir caidrimh JOSM an bealach mar bhealach leanúnach, ba chóir go mbeadh waymakedtrails in ann
+    bealach líneach a thaispeáint chomh maith.
+hierarchies:
+  title: Ordlathais chaidrimh
+  text: |-
+    Tacaíonn an léarscáil le caidrimh neadaithe freisin, i.e. caidrimh ina bhfuil
+    na caidrimh féin. Úsáidtear na hierarcachtaí seo ar dhá bhealach éagsúla
+    i mbunachar sonraí OSM: úsáidtear iad chun bealaí an-fhada a roinnt
+    (e.g. [E1](https://hiking.waymarkedtrails.org/#route?id=36367)) nó úsáidtear iad
+    chun obair dhúblach a sheachaint nuair a théann dhá bhealach ar an mbealach céanna (féach
+    mar shampla, an [ViaFrancigena] Eilvéiseach(https://hiking.waymarkedtrails.org/#route?id=124582)
+    atá mar chuid den [Via Francigena] Eorpach(https://hiking.waymarkedtrails.org/#route?id=11860709)).
+    Sa chéad chás ní bealaí iomlána iad na fo-chaidrimh
+    iad féin agus dá bhrí sin níor cheart iad a thaispeáint ar an léarscáil go neamhspleách.
+
+    Braitheann an chaoi a gcaitear le fo-ghaol go díreach ag an rindreálaí ar an gclib `network`:
+
+    * Má roinneann an gaol tuismitheora agus linbh an chlib líonra chéanna, glactar leis nach bhfuil sa ghaol linbh ach céim den chaidreamh tuismitheora. Dá bhrí sin, cuirtear a bhealach leis an gcaidreamh tuismitheora agus ní thaispeántar an gaol linbh sa léarscáil.
+    * Má tá clib líonra an chaidrimh tuismitheora agus linbh difriúil, glactar leis go bhfuil an gaol neamhspleách. Cuirtear bealach an chaidrimh linbh leis an tuismitheoir agus taispeántar an dá chaidreamh sa léarscáil.
+
+    *Nóta:* is féidir leat fo-ghaolta a iniúchadh i gcónaí tríd an mbrabhsálaí bealaí. Níl le déanamh ach an gaol tuismitheora a roghnú agus taispeántar liosta inroghnaithe dá fho-ghaolta.
+osmc:
+  title: An chlib osmc:symbol
+  text: |-
+    Soláthraíonn an clib `osmc:symbol` bealach chun sciatha bealaigh a chur síos ar bhealach atá inléite ag meaisín. Tá sé beartaithe go príomha le haghaidh siombailí atá
+    déanta suas de chruthanna geoiméadracha simplí. Chun cur síos iomlán agus
+    stair an chlib a fháil, tabhair cuairt ar an
+    [leathanach osmc:symbol](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)
+    ar an vicí OSM. Leanann waymarkedtrails an comhréir a thuairiscítear
+    ar an leathanach vicí den chuid is mó le roinnt srianta agus síntí a thuairiscítear anseo.
+
+    Chun
+    go ndéanfar é a rindreáil ar an léarscáil, ní mór don chlib ceann de na formáidí seo a leanas a bheith aici:
+
+    waycolor:background
+    waycolor:background:foreground
+    waycolor:background:foreground:foreground2
+    waycolor:background:foreground:foreground2:text:textcolor
+    waycolor:background:foreground:text:textcolor
+
+    Ní mór don `waycolor` a bheith i láthair i gcónaí ach déantar neamhaird de don léarscáil seo.
+    Ina theannta sin, ní mór duit cúlra a shonrú, cé gur féidir leat an réimse a fhágáil folamh. Ansin lean uasmhéid de dhá réamhsholáthar éagsúla. Sa deireadh, is féidir leat téacs tagartha beag a chur leis más mian leat, le cur leis ar a bharr. Ní mór dath an téacs a shonrú i gcónaí. Tabhair faoi deara go ndéanfaidh waymarkedtrails neamhaird de théacsanna tagartha nuair a bhíonn siad rófhada.
+    Braitheann fad an téacs ar na cúlraí a roghnaítear: is é 4 charachtar an teorainn dhian, ní ghlacann cúlra diamantchruthach ach carachtar aonair, ní ghlacann cúlraí stríocach agus barrachruthach aon téacs tagartha ar chor ar bith.
+  reference_footer: Gheobhaidh tú an liosta iomlán de na dathanna agus na cruthanna
+    is féidir a léiriú le cosáin mharcáilte sa tagairt thíos.
+  footer: Féach ar an leathanach breise clibeanna [osmc:symbol](osmc_symbols.html)
+    le haghaidh liosta siombailí a dtacaítear leo ag Conairí Marcáilte.
+hikinglocal:
+  title: Rindreáil áitiúil
+  text: |-
+    Tá a lán córas éagsúil ann chun cosáin siúil a mharcáil ar fud an domhain. Cé go ndéanann an léarscáil iarracht na clibeanna is ginearálta a úsáid chun rindreáil mhaith a thabhairt dóibh, is cinnte go dteipfidh air i gcás córas áirithe, go háirithe i gcás líonraí cosán siúil. Chun freastal ar na córais seo, is féidir an léarscáil a logánú do réigiúin nach bhfuil an rindreáil chaighdeánach leordhóthanach iontu.
+
+    Seo thíos liosta de na réigiúin a úsáideann siombailí léarscáile speisialta. Chun do réigiún féin a rindreáil ar bhealach speisialta, léigh na leideanna ag deireadh an leathanaigh.
+  swiss: |-
+    ## An Eilvéis
+
+    Tá líonra fairsing cosán siúlóide marcáilte ag an Eilvéis a chlúdaíonn an tír ar fad. Is líonra nód é an líonra ina bhfeidhmíonn treoracha ainmnithe mar na nóid. Tá gach cosán marcáilte go comhsheasmhach de réir a ndeacrachta.
+    Taispeánann an léarscáil na cosáin seo i ndath dearg leis an patrún líne ag marcáil an deacrachta
+
+    * ![red line](route_std.png) *cosán siúlóide*, marcáilte le ![diamond](yellow_diamond.svg). Clibeáilte le `network=lwn` agus `osmc:symbol=yellow:[...]:yellow_diamond`.
+    * ![dashed line](route_mnt.png) *cosán sléibhe*, marcáilte le ![white-red-white](white_red_bar.svg). Clibeáilte le `network=lwn` agus `osmc:symbol=red:white:red_bar`.
+    * ![líne poncaithe](route_alp.png) *cosán alpach*, marcáilte le ![bán-gorm-bán](bán_gorm_barra.svg). Clibeáilte le `network=lwn` agus `osmc:siombail=gorm:bán:gorm_barra`.
+
+    Tabhair faoi deara go bhfuil roinnt bealaí náisiúnta agus réigiúnacha ar bharr an líonra seo a thaispeántar ar an ngnáthbhealach.
+
+    Le haghaidh tuilleadh eolais faoi chlibeáil cosáin siúil san Eilvéis in OSM féach:
+    [Líonra siúil na hEilvéise](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## An Ostair
+
+    Úsáideann réigiún Vorarlberg córas aicmithe cosúil leis an Eilvéis. Déanfar bealaí leis na clibeanna `oibreoir=Tír Vorarlberg`, `líonra=rwn` agus `líonra:cineál=líonra_bunúsach` a mharcáil le scéim atá bunaithe ar dheacracht:
+
+    * ![líne dhearg](route_std.png) osmc:siombail=buí:bán:buí_uachtar
+    * ![líne poncaithe](route_mnt.png) osmc:siombail=dearg:bán:barra_dearg
+    * ![líne poncaithe](route_alp.png) osmc:siombail=gorm:bán:barra_gorm
+  italy: |-
+    ## An Iodáil
+
+    Coinníonn Club Alpach na hIodáile (CAI) líonra na gcosán sléibhe
+    atá aicmithe de réir deacrachta cosúil leis an gceann atá san Eilvéis.
+    Aithneofar bealaí atá marcáilte le `network=lwn`, `osmc:symbol=red:..` agus clib `cai_scale` mar chosáin atá faoi chothabháil CAI agus taispeánfar iad mar línte dearga
+    de réir a ndeacrachta.
+
+    * ![red line](route_std.png) cai_scale=T
+    * ![dashed line](route_mnt1.png) cai_scale=E
+    * ![dashed line](route_mnt2.png) cai_scale=EE
+    * ![dotted line](route_alp.png) cai_scale=EEA*
+  uk: |-
+    ## Ríocht Aontaithe
+
+    Braitheann aicmiú [cosáin fad-achair RA](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
+    (iad siúd atá clibáilte le `network=uk_ldp`) ar an gclib `oibreoir`. Taispeántar caidrimh
+    le `oibreoir=Conairí Náisiúnta` mar chosáin náisiúnta, agus feictear gach gaol eile mar bhealaí réigiúnacha.
+
+    Déantar déileáil le caidrimh le clib `network=lwn/rwn/nwn/iwn` mar is gnách.
+  czech: |-
+    ## Poblacht na Seice
+
+    Úsáideann an tír caighdeán marcála conaire bunaithe ar shraith de 7 siombail i 4 dhath éagsúla. Le haghaidh cur síos, féach ar an [leathanach clibeála Seiceach](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (Seiceach amháin).
+
+    Nuair a bhíonn clib `kct_*` ar fáil, is fearr í thar aon chlib `osmc:symbol`.
+    Ina theannta sin, déantar an bealach a athaicmiú mura féidir clib líonra bailí a fháil. Bíonn bealaí
+    le `kct_red=major` ina mbealaí náisiúnta, déantar `kct_*=major` eile a aicmiú mar
+    réigiúnach.
+  slovakia: |-
+    ## An tSlóvaic
+
+    Úsáideann an tSlóvaic an caighdeán marcála conaire céanna leis an bPoblacht Sheiceach. Mar sin féin, tá an scéim chlibeála beagán difriúil, féach an
+    [leathanach siúlóireachta Slóvaiceach](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
+
+    Tá gach bealach a bhfuil clib `operator=KST` air clibeáilte de réir na scéime sin. Ós rud é
+    gur cheart go mbeadh clib líonra bailí ag baint le bealaí sa tSlóvaic, ní dhéantar aon
+    ath-aicmiú.
+  hungary: |-
+    ## An Ungáir
+
+    Úsáideann an Ungáir córas freisin le sraith sheasta siombailí i ndathanna difriúla. Tá siad seo marcáilte lena gclib féin [jel](https://wiki.openstreetmap.org/wiki/Key:jel).
+    Is fearr an chlib thar aon chlib `osmc:symbol`.
+  germany: |-
+    ## An Ghearmáin
+
+    ### Fränkischer Albverein
+
+    Tá an líonra timpeall Nürnberg sách dlúth, dá bhrí sin beidh bealaí réigiúnacha atá clibáilte le `oibreoir=Fränkischer Albverein` le feiceáil ar leibhéil súmála níos ísle ná mar is gnách.
+  ukcycle: |-
+    ## Ríocht Aontaithe
+
+    ### Norwich
+
+    Úsáideann Norwich córas bealaí atá códaithe le dathanna. Tá bealaí atá clibáilte le
+    `oibreoir=Comhairle Cathrach Norwich` marcáilte le cearnóg daite de réir
+    an chlib `dath`.
+elevationprofiles:
+  title: Próifílí airde
+  general: |-
+    Déantar na próifílí airde le sonraí airde ó [ASTER global digital elevation model (GDEM) version 2](https://asterweb.jpl.nasa.gov/gdem.asp), ní chuirtear an chlib "ele" in OpenStreetMap san áireamh, ná tolláin ná droichid. Is táirge de chuid METI agus NASA é ASTER GDEM.
+
+    Mura bhfuil níos mó ná dhá phointe deiridh ag an mbealach nó má tá níos mó ná deighleog amháin ann, ní dhéanfar aon phróifíl a rindreáil. Leanann treo na próifíle an bealach siar-soir nó ó thuaidh-theas. Má bhí eilimintí le róil ar nós "tús" agus "sprioc" ag bealaí, agus/nó má bhí siad liostaithe go leanúnach ó thús go sprioc, b'fhéidir go bhféadfaimis treo a chinneadh ón ngaol bealaigh féin. B'fhéidir gur mhaith leat na rudaí sin a choinneáil i gcuimhne agus tú ag mapáil bealaí ar OpenStreetMap.
+
+    Tá poill ann, ar a dtugtar "folúntais" nach bhfuil aon sonraí airde againn dóibh, léirítear iad seo le poill i líne phróifíl an airde.
+
+    Tabhair faoi deara, cé gurb é leagan 2 de ASTER an DEM domhanda saor in aisce is fearr is dócha, go bhfuil a theorainneacha féin aige maidir le cruinneas agus clúdach araon, féach ar a [tuarascáil achomair bailíochtaithe](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf) le haghaidh tuilleadh eolais. Cuirtear leis na míchruinneas mar gheall ar mhíchruinneas na sonraí OSM, [teicníc réidhithe](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2) a chuireann muid i bhfeidhm, agus taifeach an phróifíl a éiríonn níos ísle dá fhaide an bealach.
+technical:
+  title: Sonraí teicniúla
+  general: |-
+    Nuashonraítear an forleagan bealaigh go mion agus de ghnáth bíonn sé 2-5 nóiméad taobh thiar de fhreastalaí OSM. Taispeánann an dáta sa chúinne uachtarach ar chlé an nuashonrú deireanach. Níl smacht ag an suíomh seo ar nuashonruithe ar an léarscáil Mapnik bhunúsach. Ag brath ar ualach reatha fhreastalaí OSM, tógann siad idir nóiméad agus cúpla uair an chloig. Tá an cód foinse don suíomh Gréasáin seo ar fáil faoi cheadúnas GPL agus tá sé roinnte idir roinnt stórtha:
+    * [cód cúil agus giniúint léarscáile](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+    * [seirbhís API](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+    * [tosach an tsuímh Ghréasáin](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+    Más mian leat fabht a thuairisciú nó gnéithe den suíomh Gréasáin a phlé,
+    is féidir leat an [rianaitheoir saincheisteanna](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
+    nó an [gné phlé](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) den stór tionscadail ar Github a úsáid.
+  translation: |-
+    ## Aistriúcháin
+
+    Déanann na daoine cabhracha ar
+    [translatewiki.net](https://translatewiki.net) bainistíocht ar na haistriúcháin. Más mian leat aistriúchán a chur leis
+    i do theanga féin nó aiseolas a thabhairt ar aistriúcháin atá ann cheana féin, tabhair cuairt ar
+    [leathanach tionscadail translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
+legal:
+  title: Téarmaí Dlíthiúla agus Úsáide
+  copyright: |-
+    Tá forleagan na mbealaí ar fáil faoin
+    [Ceadúnas Attribution-Share Alike 3.0 Creative Commons Germany](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en), agus na rianta GPX faoin
+    [ODbL](https://opendatacommons.org/licenses/odbl/).
+    Féadfar iad a athúsáid agus a athrú fad is a úsáideann an obair a eascraíonn as ceadúnas comhoiriúnach
+    agus go luaitear tionscadal OpenStreetMap agus an suíomh seo.
+  usage: |-
+    ## Polasaí Úsáide
+
+    Féadfaidh tú an forleagan a úsáid ar shuíomhanna eile chomh fada agus atá na rátaí rochtana measartha. Cuir tíleanna i dtaisce chomh minic agus is féidir agus bain úsáid as atreoraí ceart. Ní mholtar go láidir íoslódáil ollmhór tíleanna.
+
+    Cuirtear rianta GPX ar fáil chun áise cuairteoirí an tsuímh seo. Ní cheadaítear íoslódáil ollmhór.
+  disclaimer: |-
+    ## Séanadh
+
+    Ní féidir cruinneas ná iomláine an léarscáil a ráthú. Má théann tú amach ag siúlóid, faigh léarscáil pháipéir mhaith, trealamh cuí agus ná fág do chiall choiteann sa bhaile.
+    Is féidir leis an dúlra a bheith chomh cruálach agus atá sé álainn.
+
+    Tá naisc chuig suíomhanna gréasáin seachtracha ar an suíomh seo. Níl aon tionchar ag údar an tsuímh seo ar ábhar na suíomhanna gréasáin seo agus ní ghlacann sé aon fhreagracht as.
+acknowledgements:
+  title: Buíochas
+  text: |-
+    Gach sonraí léarscáile arna soláthar ag [OpenStreetMap agus rannpháirtithe](https://www.openstreetmap.org)
+    agus arna ndáileadh faoin gceadúnas ODbL. Is le caoinchead OSM an léarscáil bhunúsach freisin.
+    Le haghaidh tuilleadh eolais, féach ar an
+    [leathanach cóipchirt OSM](https://www.openstreetmap.org/copyright).
+
+    Tá an léarscáil bhunúsach OpenTopoMap-R curtha ar fáil go cineálta ag
+    [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html). Más maith leat é,
+    smaoinigh ar dheontas a thabhairt i dtreo chothabháil a bhfreastalaithe. Tabhair cuairt ar an
+    [leathanach síntiús openmaps](https://openmaps.fr/donate)
+    le haghaidh tuilleadh eolais.
+
+    Sonraí scáthú cnoic agus airde cruthaithe ó mheascadh sonraí SRTM agus ASTER GDEM.
+
+    Is táirge de chuid METI agus NASA é ASTER GDEM.
+
+    Soláthraíodh iarphróiseáil go cineálta ag Yves Cainaud ó [opensnowmap.org](https://opensnowmap.org).
+
+    D'fhorbair Espen Oldeman Lund an cód próifíle airde i gcomhar idir [Kresendo](https://www.kresendo.no) agus tionscadal TG4NP ag [Institiúid Taighde Iarthar na hIorua](https://www.vestforsk.no).
+
+    D'fhorbair Michael Spreng an leagan fánaí spóirt geimhridh. D'ullmhaigh Robert Whittaker an tsiombail marcaíochta.
+
+    Próiseáladh ceann scríbe treorach ag [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Míle buíochas le Jan Michel as an tseirbhís a sholáthar.
+
+    Soláthraítear aistriúcháin an tsuímh seo ag
+    [translatewiki.net agus a rannpháirtithe](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Buíochas ar leith leis na haistritheoirí ceannródaíocha a chuir aistriúcháin ar fáil roimh translatewiki.net: Yves Cainaud (Fraincis),
+    Oscar Formaggi (Iodáilis),
+    Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (Spáinnis),
+    [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (Bokmål na hIorua agus Nynorsk),
+    Mads Lumholt/TG4NP (Danmhairgis), Magnús Smári Snorrason/TG4NP (Oileáinis),
+    Lars Mikaelsson/TG4NP (Sualainnis), agus Elina Pesonen (Fionlainnis).
+contact:
+  title: Teagmháil
+  text: |-
+    Is féidir ceisteanna agus tuairimí faoin suíomh seo a sheoladh chuig: [lonvia@denofr.de](mailto:lonvia@denofr.de).
+
+    Is féidir fabhtanna a thuairisciú ar [rianaitheoir saincheisteanna an tionscadail ar github](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Sula ndéanann tú fabht a thuairisciú, déan cinnte nach bhfuil do fhadhb le sonraí OSM.
+...
