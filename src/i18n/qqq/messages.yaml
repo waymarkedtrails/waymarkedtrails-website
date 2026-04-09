@@ -4,6 +4,7 @@
 # Author: Dittaeva
 # Author: Liuxinyu970226
 # Author: Lonvia
+# Author: Maro21
 # Author: McDutchie
 # Author: Metalhead64
 # Author: Nike
@@ -14,14 +15,34 @@
 # Author: 아라
 ---
 attribution:
-  data: '{{doc-markdown}}'
-  elevation_title: '{{doc-markdown}}'
+  data: |-
+    Displayed in the upper-right corner of the home screen.<br>
+    https://cycling.waymarkedtrails.org
+    {{doc-markdown}}
+  elevation_title: |-
+    Displayed in the upper-right corner of the home screen when {{msg-osm|Wmt-settings.hillshading layer}} is turned on.<br>
+    https://cycling.waymarkedtrails.org
+    {{doc-markdown}}
 details:
   note: '{{Identical|Note}}'
   operator: '{{Identical|Operator}}'
   subroutes_title: '{{Identical|Section}}'
+  linear:
+    "yes": |-
+      Used in the Routes section as a tooltip for the green check mark icon.<br>
+      https://cycling.waymarkedtrails.org/#routelist
+    sorted: |-
+      Used in the Routes section as a tooltip for the yellow icon.<br>
+      https://cycling.waymarkedtrails.org/#routelist
+    "no": |-
+      Used in the Routes section as tooltip for the red "X" icon.<br>
+      https://cycling.waymarkedtrails.org/#routelist
   tags:
     value: '{{identical|Value}}'
+  type:
+    node: '{{Identical|Node}}'
+    relation: '{{Identical|Relation}}'
+    way: '{{Identical|Way}}'
   website: '{{Identical|Website}}'
   wikipedia: |-
     {{Optional}}
@@ -33,12 +54,62 @@ details:
 error:
   panel_title: '{{Identical|Error}}'
 headline:
-  last_update: '{{Identical|Last update}}'
+  last_update: |-
+    Displayed in the upper-left corner of the home screen.<br>
+    https://cycling.waymarkedtrails.org
+    {{Identical|Last update}}
+help: Used as a tooltip for the third icon on the left at the bottom of the home screen.
+locate_me: Used as a tooltip for the second icon on the left at the bottom of the
+  home screen.
 network:
+  continental: |-
+    Used in the Routes section.<br>
+    https://cycling.waymarkedtrails.org/#routelist
   downhill: |-
-    {{Identical|Downhill}}
-
     The string is meant as a short form of 'Downhill skiing'.
+    Used in the Routes section.<br>
+    https://slopes.waymarkedtrails.org/#routelist
+
+    See also https://wiki.openstreetmap.org/wiki/Tag:piste:type%3Ddownhill
+  national: |-
+    Used in the Routes section.<br>
+    https://cycling.waymarkedtrails.org/#routelist
+  node: |-
+    Used in the Routes section.<br>
+    https://cycling.waymarkedtrails.org/#routelist
+
+    What is a node network:
+    * https://wiki.openstreetmap.org/wiki/Tag:network:type%3Dnode_network
+    * https://en.wikipedia.org/wiki/Numbered-node_cycle_network
+  nordic: |-
+    Used in the Routes section.<br>
+    https://slopes.waymarkedtrails.org/#routelist
+  other: |-
+    Used in the Routes section.<br>
+    https://cycling.waymarkedtrails.org/#routelist
+  regional: |-
+    Used in the Routes section.<br>
+    https://cycling.waymarkedtrails.org/#routelist
+  skitour: |-
+    Used in the Routes section.<br>
+    https://slopes.waymarkedtrails.org/#routelist
+
+    See also https://wiki.openstreetmap.org/wiki/Tag:piste:type%3Dskitour
+  sled: |-
+    Used in the Routes section.<br>
+    https://slopes.waymarkedtrails.org/#routelist
+
+    See also https://wiki.openstreetmap.org/wiki/Tag:piste:type%3Dsled
+  sleigh: |-
+    Used in the Routes section.<br>
+    https://slopes.waymarkedtrails.org/#routelist
+
+    See also https://wiki.openstreetmap.org/wiki/Tag:piste:type%3Dsleigh
+  winter_hike: |-
+    Used in the Routes section.<br>
+    https://slopes.waymarkedtrails.org/#routelist
+
+    See also https://wiki.openstreetmap.org/wiki/Tag:piste:type%3Dhike
 osmc_symbol:
   back: '{{Identical|Back}}'
   background: |-
@@ -58,9 +129,27 @@ osmc_symbol:
     https://github.com/waymarkedtrails/waymarked-trails-site/blob/master/frontend/templates/osmc_symbol.html
 routelist:
   close: '{{Identical|Close}}'
+  more: |-
+    Used in the Routes section at the bottom.<br>
+    https://cycling.waymarkedtrails.org/#routelist
 search:
-  title: '{{Identical|Search}}'
+  title: |-
+    Displayed in the lower-left corner of the home screen.<br>
+    https://cycling.waymarkedtrails.org
+    {{Identical|Search}}
 settings:
-  language: '{{Identical|Language}}'
-  route_layer: One of the layers that can be adjusted in the layer chooser.
+  base_map: 'Displayed in Settings: https://cycling.waymarkedtrails.org/#settings'
+  hillshading_layer: |-
+    Displayed in Settings: https://cycling.waymarkedtrails.org/#settings<br>
+    One of the layers that can be adjusted in the layer chooser.
+  language: |-
+    Displayed in Settings: https://cycling.waymarkedtrails.org/#settings
+    {{Identical|Language}}
+  route_layer: |-
+    Displayed in Settings: https://cycling.waymarkedtrails.org/#settings<br>
+    One of the layers that can be adjusted in the layer chooser.
+  title: |-
+    Used as a tooltip for the first icon on the left at the bottom of the home screen, and the heading after clicking it.<br>
+    https://cycling.waymarkedtrails.org/#settings
+  transparency: 'Displayed in Settings: https://cycling.waymarkedtrails.org/#settings'
 ...

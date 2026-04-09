@@ -5,6 +5,7 @@
 # Author: Chrumps
 # Author: Frozengeist
 # Author: Kastanoto
+# Author: Maro21
 # Author: Rezonansowy
 # Author: Royas
 # Author: Teiron
@@ -27,13 +28,34 @@ details:
   subroutes_title: Sekcje
   superroutes_title: Jest częścią
   symbol: Symbol
+  linear:
+    "yes": Relacja tej trasy jest posortowana i w jednym kawałku.
+    sorted: Relacja tej trasy jest w jednym kawałku, ale człony nie są posortowane.
+    "no": Ta relacja ma luki lub inne błędy.
   tags:
+    key: klucz
     title: Znaczniki OpenStreetMap
+    value: wartość
+  type:
+    node: Węzeł
+    relation: Relacja
+    way: Linia
   website: Strona internetowa
+  wikipedia: Wikipedia
+  zoom_to: Pokaż na mapie
+  analyze:
+    title: Analiza relacji
+    summary: Ta relacja ma {{PLURAL|one=%{num} segment|few=%{num} segmenty|many=%{num}
+      segmentów|other=%{num} segmentu}}.
+    multi_end: W tym punkcie krzyżują się co najmniej dwa odcinki trasy.
   download:
+    title: Pobierz trasę
+    start: Pobierz plik
     format:
+      title: Format
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
 elevation:
   ascent: Skumulowane wznoszenia
   descent: Zgromadzone schodzenia
@@ -41,6 +63,7 @@ elevation:
     altitude: Wysokość (m)
     distance: Odległość (km)
   title: Profil terenu
+  total: Razem w górę / w dół
   warn_unsorted: Szlak może być nieuporządkowany lub niekompletny. Dane wysokościowe
     mogą być nieprecyzyjne.
 error:
@@ -51,7 +74,16 @@ headline:
 help: O mapie
 locate_me: Moja lokalizacja
 network:
-  downhill: downhill
+  continental: Trasy międzynarodowe
+  downhill: Narciarstwo alpejskie
+  national: Trasy krajowe
+  node: Trasy punktowe (Holandia, Belgia, Francja)
+  nordic: Narciarstwo klasyczne
+  other: Inne trasy
+  regional: Trasy regionalne
+  sled: Trasy saneczkowe
+  sleigh: Trasy do jazdy na saniach
+  winter_hike: Zimowe wędrówki
 osmc_symbol:
   back: Wstecz
   background: Tło działa na podobnej zasadzie - także składa się z koloru i kształtu.
@@ -67,6 +99,7 @@ osmc_symbol:
 routelist:
   loading: Ładowanie...
   close: Zamknij
+  more: Przybliż mapę, żeby zobaczyć więcej tras
   rollup: Zwiń
   title: Trasy
 search:

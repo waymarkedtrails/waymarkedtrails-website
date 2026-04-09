@@ -9,6 +9,7 @@
 # Author: Kghbln
 # Author: Lonvia
 # Author: Magiczocker
+# Author: Mcliquid
 # Author: Metalhead64
 # Author: Purodha
 # Author: Tobi 406
@@ -23,12 +24,20 @@ destination_sign:
   title: Ziele
 details:
   altitude: Höhe
+  educational:
+    other: Das ist ein Lehrpfad.
   image: Bild
   mapped_len: Erfasste Länge
   note: Hinweis
+  oneway: Diese Route kann nur in Vorwärtsrichtung befahren werden.
   official_len: Offizielle Länge
   operator: Betreiber
+  pilgrimage:
+    christian: Das ist ein christlicher Pilgerweg.
+    other: Das ist ein Pilgerweg.
+  roundtrip: Diese Route ist eine Rundtour.
   route_symbol: Wegzeichen
+  signed_direction: Diese Strecke ist nur in Fahrtrichtung ausgeschildert.
   subroutes_title: Abschnitte
   superroutes_title: Teil von
   symbol: Symbol
@@ -62,9 +71,21 @@ details:
       Punkt, an dem die Route unterbrochen wird, weil die Relation nicht sortiert ist.
       Die rot gestrichelten Linien zeigen, wo die Route weitergeht.
   download:
+    title: Route herunterladen
+    need_format: Wähle ein Format
+    need_direction: Auswahl der einzubeziehenden Wege
+    start: Datei abrufen
     format:
+      title: Format
       GPX: GPX
       KML: KML
+      GeoJson: GeoJSON
+    direction:
+      title: Richtung der einzubeziehenden Wege
+      forward: Vorwärts
+      backward: Rückwärts
+      both: Beides
+    other_ways: Weitere Streckenabschnitte
 elevation:
   ascent: Kumulierter Anstieg
   descent: Kumulierter Abstieg

@@ -2,14 +2,17 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Liuxinyu970226
+# Author: Maro21
 # Author: McDutchie
 # Author: Shirayuki
 # Author: Siebrand
 # Author: Verdy p
 ---
 about:
+  title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   osm: '{{doc-markdown}}'
 rendering:
+  title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   hikingroutes: |-
     {{doc-markdown}}
     {{doc-important|Don't translate the tags.}}
@@ -22,6 +25,12 @@ rendering:
   skatingroutes: |-
     {{doc-markdown}}
     {{doc-important|Don't translate the tags.}}
+  ridingroutes: |-
+    Used in the Help section.<br>
+    https://riding.waymarkedtrails.org/#help-about
+  sloperoutes: |-
+    Used in the Help section.<br>
+    https://slopes.waymarkedtrails.org/#help-about
   classification: '{{doc-important|Don''t translate the tag "network".}}'
   hikinglabels: '{{doc-markdown}}'
   labels: '{{doc-important|Do not translate the tags "ref" and "name".}}'
@@ -29,47 +38,89 @@ rendering:
   guideposts: |-
     {{doc-markdown}}
     {{doc-important|Don't translate the tags.}}
+route_order:
+  title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
 hierarchies:
+  title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   text: |-
     {{doc-markdown}}
     This uses the "Markdown" syntax, not MediaWiki.
     {{doc-important|Do not translate the name of tags like "network".}}
 osmc:
-  title: '{{doc-important|Do not translate the name of tags like "osmc:symbol".}}'
+  title: |-
+    Used in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
+    {{doc-important|Do not translate the name of tags like "osmc:symbol".}}
   text: |-
     {{doc-markdown}}
     {{doc-important|Do not translate the name of tags like "osmc:symbol".}}
 hikinglocal:
+  title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   swiss: |-
-    {{doc-markdown}}
+    Used in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
     {{doc-important|Do not translate the name of tags like "network".}}
+    {{doc-markdown}}
+  austria: |-
+    Used in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
+    {{doc-important|Do not translate the name of tags like "operator".}}
+    {{doc-markdown}}
+  italy: |-
+    Used in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
+    {{doc-important|Do not translate the name of tags like "network".}}
+    {{doc-markdown}}
   uk: |-
-    {{doc-markdown}}
+    Used in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
     {{doc-important|Do not translate the name of tags like "network".}}
+    {{doc-markdown}}
   czech: |-
-    {{doc-markdown}}
+    Used in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
     {{doc-important|Do not translate the name of tags like "network".}}
+    {{doc-markdown}}
   slovakia: |-
-    {{doc-markdown}}
+    Used in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
     {{doc-important|Do not translate the name of tags like "network".}}
+    {{doc-markdown}}
   hungary: |-
-    {{doc-markdown}}
+    Used in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
     {{doc-important|Do not translate the name of tags like "network".}}
+    {{doc-markdown}}
   germany: |-
+    Used in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
     {{doc-important|Do not translate the name of tags like "network".}}
     Written in markdown syntax.
-  ukcycle: '{{doc-important|Do not translate the name of tags like "operator=...".}}'
+  ukcycle: |-
+    {{doc-important|1=Do not translate the name of tags like "operator=...".}}
+    Used in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about
 elevationprofiles:
+  title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   general: '{{doc-markdown}}'
 technical:
-  title: '{{Identical|Technical details}}'
+  title: |-
+    Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about
+    {{Identical|Technical details}}
   general: '{{doc-markdown}}'
-  translation: '{{doc-markdown}}'
+  translation: |-
+    {{doc-markdown}}
+    Used in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about
 legal:
+  title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   copyright: '{{doc-markdown}}'
+  usage: 'Used in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
+  disclaimer: 'Used in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
 acknowledgements:
+  title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   text: '{{doc-markdown}}'
 contact:
-  title: '{{Identical|Contact}}'
+  title: |-
+    Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about
+    {{Identical|Contact}}
   text: '{{doc-markdown}}'
 ...

@@ -53,7 +53,11 @@ details:
     open_end: Адкрыты канец маршруту.
     multi_end: У гэтым пункце сустракаюцца больш за два адцінкі маршруту.
   download:
+    title: Сьцягнуць шлях
+    need_format: Абраць фармат
+    start: Атрымаць файл
     format:
+      title: Фармат
       GPX: GPX
       KML: KML
 elevation:
@@ -98,6 +102,7 @@ routelist:
   rollup: Згарнуць
   title: Маршруты
 search:
+  places: Месцы
   routes: Маршруты
   title: Пошук
 settings:

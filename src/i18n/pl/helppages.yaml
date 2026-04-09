@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: BeginaFelicysym
 # Author: Kastanoto
+# Author: Maro21
 # Author: Mateon1
 # Author: Rezonansowy
 # Author: Teiron
@@ -212,9 +213,9 @@ hikinglocal:
   ukcycle: |-
     ## Wielka Brytania
 
-    ### Norwegia
+    ### Norwich
 
-    Norwegia wykorzystuje system tras kodowanych kolorami. Szlaki oznaczone tagiem
+    Norwich wykorzystuje system tras kodowanych kolorami. Trasy oznaczone tagiem
     `operator=Norwich City Council` są zaznaczone kolorowym kwadratem według
     znacznika `colour`.
 elevationprofiles:
