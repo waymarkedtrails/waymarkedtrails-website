@@ -10,6 +10,24 @@
 ---
 about:
   title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
+  hiking: |-
+    Used in the beginning in the Help section.<br>
+    https://hiking.waymarkedtrails.org/#help-about
+  cycling: |-
+    Used in the beginning in the Help section.<br>
+    https://cycling.waymarkedtrails.org/#help-about
+  mtb: |-
+    Used in the beginning in the Help section.<br>
+    https://mtb.waymarkedtrails.org/#help-about
+  skating: |-
+    Used in the beginning in the Help section.<br>
+    https://skating.waymarkedtrails.org/#help-about
+  riding: |-
+    Used in the beginning in the Help section.<br>
+    https://riding.waymarkedtrails.org/#help-about
+  slopemap: |-
+    Used in the beginning in the Help section.<br>
+    https://slopes.waymarkedtrails.org/#help-about
   osm: '{{doc-markdown}}'
 rendering:
   title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'

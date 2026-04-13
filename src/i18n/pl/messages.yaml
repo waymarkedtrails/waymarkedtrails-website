@@ -19,11 +19,18 @@ destination_sign:
   more: Więcej szczegółów
 details:
   altitude: Wysokość
+  educational:
+    other: To jest ścieżka edukacyjna.
   image: Obraz
   mapped_len: Długość na mapie
   note: Uwaga
+  oneway: Trasą tą można poruszać się wyłącznie w kierunku do przodu.
   official_len: Długość oficjalna
   operator: Operator
+  pilgrimage:
+    christian: To szlak pielgrzymkowy dla chrześcijan.
+    other: To szlak pielgrzymkowy.
+  roundtrip: Ta trasa jest trasą w kółko.
   route_symbol: Symbol trasy
   subroutes_title: Sekcje
   superroutes_title: Jest częścią
@@ -37,6 +44,7 @@ details:
     title: Znaczniki OpenStreetMap
     value: wartość
   type:
+    guidepost: Drogowskaz
     node: Węzeł
     relation: Relacja
     way: Linia
@@ -47,9 +55,13 @@ details:
     title: Analiza relacji
     summary: Ta relacja ma {{PLURAL|one=%{num} segment|few=%{num} segmenty|many=%{num}
       segmentów|other=%{num} segmentu}}.
+    disclaimer: Tutaj wyświetlane są odcinki trasy obliczone przez Waymarkedtrails
+      na podstawie relacji, co nie zawsze musi być poprawne. Więcej informacji na
+      temat sposobu sortowania tras przez Waymarkedtrails znajdziesz na stronach pomocy.
     multi_end: W tym punkcie krzyżują się co najmniej dwa odcinki trasy.
   download:
     title: Pobierz trasę
+    need_format: Wybierz format
     start: Pobierz plik
     format:
       title: Format
@@ -58,19 +70,24 @@ details:
       GeoJson: GeoJson
 elevation:
   ascent: Skumulowane wznoszenia
-  descent: Zgromadzone schodzenia
+  descent: Skumulowane schodzenia
   diagram:
     altitude: Wysokość (m)
     distance: Odległość (km)
   title: Profil terenu
   total: Razem w górę / w dół
-  warn_unsorted: Szlak może być nieuporządkowany lub niekompletny. Dane wysokościowe
+  unavailable: Nie znaleziono danych dotyczących wysokości.
+  warn_unsorted: Trasa może być nieuporządkowana lub niekompletna. Dane wysokościowe
     mogą być nieprecyzyjne.
 error:
   load_error: Błąd połączenia z serwerem.
+  missing_id: Brakuje parametru 'id'.
+  missing_query: Brakuje parametru 'query'.
   panel_title: Błąd
+  object_not_found: Nie znaleziono obiektu.
+  api_unavailable: API jest niedostępne.
 headline:
-  last_update: Ostatnia aktualizacja
+  last_update: Ostatnia aktualizacja danych OSM
 help: O mapie
 locate_me: Moja lokalizacja
 network:
@@ -86,16 +103,19 @@ network:
   winter_hike: Zimowe wędrówki
 osmc_symbol:
   back: Wstecz
-  background: Tło działa na podobnej zasadzie - także składa się z koloru i kształtu.
+  background: Tło działa na podobnej zasadzie – także składa się z koloru i kształtu.
     Tłem także może być tylko nazwa koloru, co da tło z wybranym kolorem. Jest to
     pokazane w pierwszym rzędzie.
   background_heading: Tło
   examples: Przykłady
   foreground: Symbol pierwszego planu składa się z koloru i kształtu oddzielonego
-    znakiem podkreślenia. Następująca tablica wyświetla wszystkie kombinacje rozpoznawane
-    przez tą stronę. Obsługiwane są także symbole składające się tylko z nazwy kształtu
-    - ich symbole są wyświetlone w ostatniej kolumnie.
+    znakiem podkreślenia. Tabela poniżej wyświetla wszystkie kombinacje rozpoznawane
+    przez tę stronę. Obsługiwane są także symbole składające się tylko z nazwy kształtu
+    – ich symbole są wyświetlone w ostatniej kolumnie.
   foreground_heading: Pierwszy plan
+  intro_header: Przegląd
+  preview_heading: Podgląd
+  symbol_reference_heading: Pełna lista obsługiwanych symboli
 routelist:
   loading: Ładowanie...
   close: Zamknij
@@ -114,10 +134,18 @@ settings:
   route_layer: Warstwa trasy
   title: Ustawienia mapy
   transparency: Przezroczystość warstw
+site_description:
+  cycling: Lokalne i dalekobieżne trasy rowerowe wraz z mapami i informacjami z OpenStreetMap.
+  hiking: Lokalne i dalekobieżne trasy turystyczne i spacerowe wraz z mapami i informacjami
+    z OpenStreetMap.
+  mtb: Trasy rowerowe górskie (MTB) wraz z mapami i informacjami z OpenStreetMap.
+  riding: Trasy jeździeckie wraz z mapami i informacjami z OpenStreetMap.
+  skating: Trasy łyżworolkowe wraz z mapami i informacjami z OpenStreetMap.
 site_title:
   cycling: Kolarstwo
   hiking: Turystyka piesza
   mtb: Kolarstwo górskie
+  osmc_symbol: Tag osmc:symbol
   riding: Jazda konna
   skating: Jazda na rolkach
   slopes: Stoki do uprawiania sportów zimowych

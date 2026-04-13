@@ -112,6 +112,8 @@ rendering:
        ele=<wysokość>
 
     `tourism` i `information` są obowiązkowe. Można pominąć 'name' i 'ele'.
+route_order:
+  title: Porządkowanie tras
 hierarchies:
   title: Hierarchie relacji
   text: "Mapa obsługuje również relacje zagnieżdżone, czyli relacje zawierające\ninne

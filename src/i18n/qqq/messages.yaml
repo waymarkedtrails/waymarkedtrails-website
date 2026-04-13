@@ -23,9 +23,17 @@ attribution:
     Displayed in the upper-right corner of the home screen when {{msg-osm|Wmt-settings.hillshading layer}} is turned on.<br>
     https://cycling.waymarkedtrails.org
     {{doc-markdown}}
+destination_sign:
+  title: '{{Identical|Destination}}'
 details:
+  altitude: '{{Identical|Altitude}}'
+  image: '{{Identical|Image}}'
   note: '{{Identical|Note}}'
   operator: '{{Identical|Operator}}'
+  pilgrimage:
+    christian: 'This text appears when you hover over the cross icon. For example:
+      https://hiking.waymarkedtrails.org/#route?id=1844694&type=relation&map=3.0/34.6/-7.9'
+  roundtrip: 'This text appears when you hover over the loop icon. For example: https://hiking.waymarkedtrails.org/#route?id=5489221&type=relation'
   subroutes_title: '{{Identical|Section}}'
   linear:
     "yes": |-
@@ -38,6 +46,7 @@ details:
       Used in the Routes section as tooltip for the red "X" icon.<br>
       https://cycling.waymarkedtrails.org/#routelist
   tags:
+    key: '{{Identical|Key}}'
     value: '{{identical|Value}}'
   type:
     node: '{{Identical|Node}}'
@@ -48,9 +57,14 @@ details:
     {{Optional}}
     {{Identical|Wikipedia}}
   download:
+    format:
+      title: '{{Identical|Format}}'
     direction:
-      title: Followed by options {{msg-osm|Wmt-details.download.direction.forward}},
-        {{msg-osm|Wmt-details.download.direction.backward}} and {{msg-osm|Wmt-details.download.direction.both}}.
+      title: |-
+        Followed by options:
+        * {{msg-osm|Wmt-details.download.direction.forward}}
+        * {{msg-osm|Wmt-details.download.direction.backward}}
+        * {{msg-osm|Wmt-details.download.direction.both}}.
 error:
   panel_title: '{{Identical|Error}}'
 headline:
@@ -63,8 +77,8 @@ locate_me: Used as a tooltip for the second icon on the left at the bottom of th
   home screen.
 network:
   continental: |-
-    Used in the Routes section.<br>
-    https://cycling.waymarkedtrails.org/#routelist
+    Used in the Routes section.<br>For example
+    https://cycling.waymarkedtrails.org/#routelist?map=16.0/50.8558/4.3539
   downhill: |-
     The string is meant as a short form of 'Downhill skiing'.
     Used in the Routes section.<br>
@@ -72,11 +86,11 @@ network:
 
     See also https://wiki.openstreetmap.org/wiki/Tag:piste:type%3Ddownhill
   national: |-
-    Used in the Routes section.<br>
-    https://cycling.waymarkedtrails.org/#routelist
+    Used in the Routes section.<br>For example
+    https://cycling.waymarkedtrails.org/#routelist?map=16.0/50.8558/4.3539
   node: |-
-    Used in the Routes section.<br>
-    https://cycling.waymarkedtrails.org/#routelist
+    Used in the Routes section.<br>For example
+    https://cycling.waymarkedtrails.org/#routelist?map=16.0/50.8558/4.3539
 
     What is a node network:
     * https://wiki.openstreetmap.org/wiki/Tag:network:type%3Dnode_network
@@ -88,8 +102,8 @@ network:
     Used in the Routes section.<br>
     https://cycling.waymarkedtrails.org/#routelist
   regional: |-
-    Used in the Routes section.<br>
-    https://cycling.waymarkedtrails.org/#routelist
+    Used in the Routes section.<br>For example
+    https://cycling.waymarkedtrails.org/#routelist?map=16.0/50.8558/4.3539
   skitour: |-
     Used in the Routes section.<br>
     https://slopes.waymarkedtrails.org/#routelist
@@ -127,12 +141,16 @@ osmc_symbol:
     The HTML template where it is used is actually located at:
 
     https://github.com/waymarkedtrails/waymarked-trails-site/blob/master/frontend/templates/osmc_symbol.html
+  intro_header: '{{Identical|Overview}}'
+  preview_heading: '{{Identical|Preview}}'
 routelist:
+  loading: '{{Identical|Loading}}'
   close: '{{Identical|Close}}'
   more: |-
     Used in the Routes section at the bottom.<br>
     https://cycling.waymarkedtrails.org/#routelist
 search:
+  places: '{{Identical|Place}}'
   title: |-
     Displayed in the lower-left corner of the home screen.<br>
     https://cycling.waymarkedtrails.org
