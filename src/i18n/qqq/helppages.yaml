@@ -32,17 +32,17 @@ about:
 rendering:
   title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   hikingroutes: |-
-    {{doc-markdown}}
     {{doc-important|Don't translate the tags.}}
+    {{doc-markdown}}
   cyclingroutes: |-
-    {{doc-markdown}}
     {{doc-important|Don't translate the tags.}}
+    {{doc-markdown}}
   mtbroutes: |-
-    {{doc-markdown}}
     {{doc-important|Don't translate the tags.}}
+    {{doc-markdown}}
   skatingroutes: |-
-    {{doc-markdown}}
     {{doc-important|Don't translate the tags.}}
+    {{doc-markdown}}
   ridingroutes: |-
     Used in the Help section.<br>
     https://riding.waymarkedtrails.org/#help-about
@@ -54,24 +54,24 @@ rendering:
   labels: '{{doc-important|Do not translate the tags "ref" and "name".}}'
   hierarchy: '{{doc-markdown}}'
   guideposts: |-
-    {{doc-markdown}}
     {{doc-important|Don't translate the tags.}}
+    {{doc-markdown}}
 route_order:
   title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
 hierarchies:
   title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   text: |-
-    {{doc-markdown}}
-    This uses the "Markdown" syntax, not MediaWiki.
     {{doc-important|Do not translate the name of tags like "network".}}
+    This uses the "Markdown" syntax, not MediaWiki.
+    {{doc-markdown}}
 osmc:
   title: |-
     Used in the Help section.<br>
     https://hiking.waymarkedtrails.org/#help-about
     {{doc-important|Do not translate the name of tags like "osmc:symbol".}}
   text: |-
-    {{doc-markdown}}
     {{doc-important|Do not translate the name of tags like "osmc:symbol".}}
+    {{doc-markdown}}
 hikinglocal:
   title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   swiss: |-
@@ -126,8 +126,8 @@ technical:
     {{Identical|Technical details}}
   general: '{{doc-markdown}}'
   translation: |-
-    {{doc-markdown}}
     Used in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about
+    {{doc-markdown}}
 legal:
   title: 'Used as heading in the Help section. For example: https://cycling.waymarkedtrails.org/#help-about'
   copyright: '{{doc-markdown}}'

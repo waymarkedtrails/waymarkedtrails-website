@@ -17,6 +17,8 @@ attribution:
   elevation_title: dane wysokościowe [SRTM/ASTER](help/acknowledgements)
 destination_sign:
   more: Więcej szczegółów
+  no_data: Brak informacji o miejscu docelowym na tym drogowskazie.
+  title: Miejsca docelowe
 details:
   altitude: Wysokość
   educational:
@@ -32,6 +34,7 @@ details:
     other: To szlak pielgrzymkowy.
   roundtrip: Ta trasa jest trasą w kółko.
   route_symbol: Symbol trasy
+  signed_direction: Ta trasa jest oznakowana tylko w kierunku do przodu.
   subroutes_title: Sekcje
   superroutes_title: Jest częścią
   symbol: Symbol
@@ -53,21 +56,31 @@ details:
   zoom_to: Pokaż na mapie
   analyze:
     title: Analiza relacji
-    summary: Ta relacja ma {{PLURAL|one=%{num} segment|few=%{num} segmenty|many=%{num}
-      segmentów|other=%{num} segmentu}}.
+    summary: 'Liczba segmentów relacji: {num}'
     disclaimer: Tutaj wyświetlane są odcinki trasy obliczone przez Waymarkedtrails
       na podstawie relacji, co nie zawsze musi być poprawne. Więcej informacji na
       temat sposobu sortowania tras przez Waymarkedtrails znajdziesz na stronach pomocy.
+    open_end: Brak punktu końcowego na trasie.
     multi_end: W tym punkcie krzyżują się co najmniej dwa odcinki trasy.
+    two_end: |-
+      Punkt, w którym trasa zostaje przerwana, ponieważ relacja nie jest posortowana.
+      Czerwone linie przerywane wskazują, gdzie trasa biegnie dalej.
   download:
     title: Pobierz trasę
     need_format: Wybierz format
+    need_direction: Wybierz linie do uwzględnienia
     start: Pobierz plik
     format:
       title: Format
       GPX: GPX
       KML: KML
       GeoJson: GeoJson
+    direction:
+      title: Dodaj linie w kierunku
+      forward: do przodu
+      backward: do tyłu
+      both: oba kierunki
+    other_ways: Dodatkowe odcinki trasy
 elevation:
   ascent: Skumulowane wznoszenia
   descent: Skumulowane schodzenia
@@ -98,6 +111,7 @@ network:
   nordic: Narciarstwo klasyczne
   other: Inne trasy
   regional: Trasy regionalne
+  skitour: Wycieczki narciarskie
   sled: Trasy saneczkowe
   sleigh: Trasy do jazdy na saniach
   winter_hike: Zimowe wędrówki
@@ -114,6 +128,8 @@ osmc_symbol:
     – ich symbole są wyświetlone w ostatniej kolumnie.
   foreground_heading: Pierwszy plan
   intro_header: Przegląd
+  preview: Wpisz wartość osmc:symbol w polu poniżej, aby zobaczyć, jak zostanie ona
+    wyświetlona na mapie.
   preview_heading: Podgląd
   symbol_reference_heading: Pełna lista obsługiwanych symboli
 routelist:
@@ -141,6 +157,8 @@ site_description:
   mtb: Trasy rowerowe górskie (MTB) wraz z mapami i informacjami z OpenStreetMap.
   riding: Trasy jeździeckie wraz z mapami i informacjami z OpenStreetMap.
   skating: Trasy łyżworolkowe wraz z mapami i informacjami z OpenStreetMap.
+  slopes: Trasy sportów zimowych, narciarstwo zjazdowe, narciarstwo biegowe, zimowe
+    wędrówki wraz z mapami i informacjami z OpenStreetMap.
 site_title:
   cycling: Kolarstwo
   hiking: Turystyka piesza

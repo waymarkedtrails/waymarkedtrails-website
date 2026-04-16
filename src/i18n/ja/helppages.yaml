@@ -1,6 +1,7 @@
 # Messages for Japanese (日本語)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: RhAnish
 # Author: Shirayuki
 ---
 about:
@@ -18,7 +19,7 @@ technical:
   translation: |-
     ## 翻訳
 
-    [translatewiki.net](http://translatewiki.net) の協力的な人々が翻訳作業をしています。あなたの言語への翻訳に貢献したい場合、または既存の翻訳にフィードバックしたい場合は、[translatewiki.net 上のプロジェクト ページ](http://translatewiki.net/wiki/Translating:Waymarked_Trails) をご覧ください。
+    [translatewiki.net](https://translatewiki.net) の協力的な人々が翻訳作業をしています。あなたの言語への翻訳に貢献したい場合、または既存の翻訳にフィードバックしたい場合は、[translatewiki.net 上のプロジェクト ページ](https://translatewiki.net/wiki/Translating:Waymarked_Trails) をご覧ください。
 legal:
   title: 法的事項および利用規約
 acknowledgements:

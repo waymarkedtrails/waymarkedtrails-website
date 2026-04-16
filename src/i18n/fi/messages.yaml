@@ -21,9 +21,12 @@ destination_sign:
   title: Määränpäät
 details:
   altitude: Korkeus
+  educational:
+    other: Tämä on opetuspolku.
   image: Kuva
   mapped_len: Kartoitettu pituus
   note: Lisätietoja
+  oneway: Tätä reittiä voi seurata vain eteenpäin.
   official_len: Virallinen pituus
   operator: Ylläpitäjä
   pilgrimage:
@@ -31,6 +34,7 @@ details:
     other: Tämä on pyhiinvaellusreitti.
   roundtrip: Tämä reitti on ympyrälenkki.
   route_symbol: Reitin symboli
+  signed_direction: Tämä reitti on merkitty vain eteenpäin.
   subroutes_title: Osuudet
   superroutes_title: Osa reittiä
   symbol: Symboli
@@ -101,6 +105,7 @@ osmc_symbol:
   background_heading: Tausta
   examples: Esimerkit
   foreground_heading: Symboli
+  intro_header: Yleiskatsaus
   preview_heading: Esikatselu
   symbol_reference_heading: Täydellinen luettelo tuetuista symboleista
 routelist:
