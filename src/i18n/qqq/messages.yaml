@@ -52,6 +52,10 @@ details:
     node: '{{Identical|Node}}'
     relation: '{{Identical|Relation}}'
     way: '{{Identical|Way}}'
+    wayset: |-
+      Used as a heading, for example here: https://slopes.waymarkedtrails.org/#route?id=478298846&type=wayset&map=15.0/47.6028/10.5023
+
+      Wayset is a group of lines. Waysets are only created to collect all ways of a slope, because slopes can be tagged without a relation. [[https://github.com/waymarkedtrails/waymarked-trails-site/issues/310 source]]
   website: '{{Identical|Website}}'
   wikipedia: |-
     {{Optional}}
@@ -130,24 +134,37 @@ network:
 
     See also https://wiki.openstreetmap.org/wiki/Tag:piste:type%3Dhike
 osmc_symbol:
-  back: '{{Identical|Back}}'
+  back: "Used on https://hiking.waymarkedtrails.org/osmc_symbols.html \n{{Identical|Back}}"
   background: |-
+    Used on https://hiking.waymarkedtrails.org/osmc_symbols.html
+
     The leading whitespaces the segmentation in lines can be safely ignored as this is plain HTML and not wiki text. Feel free to reorder elements as this will generate a single paragraph of text embedded in <code>&lt;p&gt;...&lt;/p&gt;</code>.
 
     The HTML template on which this is used is at:
 
     https://github.com/waymarkedtrails/waymarked-trails-site/blob/master/frontend/templates/osmc_symbol.html#L32
-  background_heading: '{{Identical|Background}}'
+  background_heading: |-
+    Used on https://hiking.waymarkedtrails.org/osmc_symbols.html
+    {{Identical|Background}}
   examples: '{{Identical|Example}}'
   foreground: |-
+    Used on https://hiking.waymarkedtrails.org/osmc_symbols.html
+
     Ignore the leading whitespace and the division into arbitrary lines: this is not wikicode to be presented indented as is, but only plain HTML, that will be part of the same paragraph (between <code>&lt;p&gt;...&lt;/p&gt;</code> HTML tags).
     Feel free to sub-segment and reorder the sentence correctly for the target language.
 
     The HTML template where it is used is actually located at:
 
     https://github.com/waymarkedtrails/waymarked-trails-site/blob/master/frontend/templates/osmc_symbol.html
-  intro_header: '{{Identical|Overview}}'
-  preview_heading: '{{Identical|Preview}}'
+  foreground_heading: Used on https://hiking.waymarkedtrails.org/osmc_symbols.html
+  intro_header: |-
+    Used on https://hiking.waymarkedtrails.org/osmc_symbols.html
+    {{Identical|Overview}}
+  preview: Used on https://hiking.waymarkedtrails.org/osmc_symbols.html
+  preview_heading: |-
+    Used on https://hiking.waymarkedtrails.org/osmc_symbols.html
+    {{Identical|Preview}}
+  symbol_reference_heading: Used on https://hiking.waymarkedtrails.org/osmc_symbols.html
 routelist:
   loading: '{{Identical|Loading}}'
   close: '{{Identical|Close}}'
@@ -160,13 +177,15 @@ search:
     Displayed in the lower-left corner of the home screen.<br>
     https://cycling.waymarkedtrails.org
     {{Identical|Search}}
+  help: Used on https://hiking.waymarkedtrails.org/#search?query=
 settings:
-  base_map: 'Displayed in Settings: https://cycling.waymarkedtrails.org/#settings'
+  base_map: Used on https://hiking.waymarkedtrails.org/#settings
+  browser_language: Used on https://hiking.waymarkedtrails.org/#settings
   hillshading_layer: |-
     Displayed in Settings: https://cycling.waymarkedtrails.org/#settings<br>
     One of the layers that can be adjusted in the layer chooser.
   language: |-
-    Displayed in Settings: https://cycling.waymarkedtrails.org/#settings
+    Used on https://hiking.waymarkedtrails.org/#settings
     {{Identical|Language}}
   route_layer: |-
     Displayed in Settings: https://cycling.waymarkedtrails.org/#settings<br>
@@ -174,5 +193,5 @@ settings:
   title: |-
     Used as a tooltip for the first icon on the left at the bottom of the home screen, and the heading after clicking it.<br>
     https://cycling.waymarkedtrails.org/#settings
-  transparency: 'Displayed in Settings: https://cycling.waymarkedtrails.org/#settings'
+  transparency: Used on https://hiking.waymarkedtrails.org/#settings
 ...

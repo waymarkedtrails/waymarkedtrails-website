@@ -51,15 +51,17 @@ details:
     node: Węzeł
     relation: Relacja
     way: Linia
+    wayset: Grupa linii
   website: Strona internetowa
   wikipedia: Wikipedia
   zoom_to: Pokaż na mapie
   analyze:
     title: Analiza relacji
     summary: 'Liczba segmentów relacji: {num}'
-    disclaimer: Tutaj wyświetlane są odcinki trasy obliczone przez Waymarkedtrails
+    disclaimer: Tutaj wyświetlane są odcinki trasy obliczone przez Waymarked Trails
       na podstawie relacji, co nie zawsze musi być poprawne. Więcej informacji na
-      temat sposobu sortowania tras przez Waymarkedtrails znajdziesz na stronach pomocy.
+      temat sposobu sortowania tras przez Waymarked Trails znajdziesz na stronach
+      pomocy.
     open_end: Brak punktu końcowego na trasie.
     multi_end: W tym punkcie krzyżują się co najmniej dwa odcinki trasy.
     two_end: |-
@@ -88,7 +90,7 @@ elevation:
     altitude: Wysokość (m)
     distance: Odległość (km)
   title: Profil terenu
-  total: Razem w górę / w dół
+  total: Razem w górę↗ / w dół↘
   unavailable: Nie znaleziono danych dotyczących wysokości.
   warn_unsorted: Trasa może być nieuporządkowana lub niekompletna. Dane wysokościowe
     mogą być nieprecyzyjne.
@@ -142,6 +144,8 @@ search:
   places: Miejsca
   routes: Trasy
   title: Szukaj
+  help: Użyj słów kluczowych do wyszukiwania. Można wyszukiwać nazwy szlaków (np.
+    Appalachian Trail, E2) lub miejsc (np. Warszawa).
 settings:
   base_map: Mapa podstawowa
   browser_language: Użyj ustawień przeglądarki

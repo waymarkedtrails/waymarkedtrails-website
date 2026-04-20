@@ -70,6 +70,7 @@ osmc:
     https://hiking.waymarkedtrails.org/#help-about
     {{doc-important|Do not translate the name of tags like "osmc:symbol".}}
   text: |-
+    Used on https://hiking.waymarkedtrails.org/osmc_symbols.html
     {{doc-important|Do not translate the name of tags like "osmc:symbol".}}
     {{doc-markdown}}
 hikinglocal:

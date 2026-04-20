@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Anakmalaysia
 # Author: Dittaeva
+# Author: Hakimi97
 # Author: Jeluang Terluang
 # Author: Tofeiku
 ---
@@ -219,7 +220,7 @@ technical:
     Usaha penterjemahan diuruskan oleh mereka yang sentiasa membantu di [translatewiki.net](http://translatewiki.net). Jika anda hendak menyumbangkan terjemahan dalam bahasa anda atau memberikan maklum balas bagi terjemahan yang sedia ada, kunjungi
     [halaman projek translatewiki.net](http://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
-  title: Terma Undang-Undang dan Perundangan
+  title: Terma Perundangan dan Penggunaan
   copyright: |-
     Tindanan laluan terdapat di bawah [Lesen Creative Commons Pengiktirafan-PerkongsianSerupa 3.0 Jerman](http://creativecommons.org/licenses/by-sa/3.0/de/deed.ms) sementara laluan GPX pula di bawah [ODbL](http://opendatacommons.org/licenses/odbl/).
     Ia boleh digunakan semula dan diubah suai asalkan hasilnya menggunakan lesen yang serasi serta

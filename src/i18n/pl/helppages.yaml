@@ -141,6 +141,10 @@ osmc:
     osmc:symbol=waycolor:background:foreground:text:textcolor
 
     ‘waycolor’ jest konieczny, chociaż nie jest on wykorzystywany na tej mapie. Dalszy pierwszy plan nie jest obsługiwany, może brakować ‘text’ i ‘textcolor’.
+  reference_footer: Pełną listę kolorów i kształtów, które Waymarked Trails może wyświetlać,
+    znajdziesz w poniższym zestawieniu.
+  footer: Lista symboli obsługiwanych przez Waymarked Trails znajduje się na dodatkowej
+    stronie poświęconej tagom [osmc:symbol](osmc_symbols.html).
 hikinglocal:
   title: Wyświetlanie lokalizowane
   text: "Istnieje wiele różnych systemów oznaczenia szlaków turystycznych na całym
@@ -164,6 +168,14 @@ hikinglocal:
     sieci jest wiele tras krajowych i regionalnych, \nktóre są pokazywane w sposób
     normalny.\n\nBy uzyskać więcej informacji o tagowaniu tras turystycznych w Szwajcarii
     przy użyciu OSM patrz:\n[Szwajcarska sieć tras turystycznych](http://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork)."
+  austria: |-
+    ## Austria
+
+    Region Vorarlberg stosuje system klasyfikacji podobny do tego, który obowiązuje w Szwajcarii. Trasy oznaczone tagami `operator=Land Vorarlberg`, `network=rwn` oraz `network:type=basic_network` zostaną oznaczone schematem opartym na stopniu trudności:
+
+    * ![red line](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![dashed line](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![dotted line](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     ## Włochy
 
