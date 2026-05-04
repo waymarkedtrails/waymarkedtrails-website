@@ -6,6 +6,7 @@
 # Author: Jerrykim306
 # Author: Kurousagi
 # Author: Suleiman the Magnificent Television
+# Author: Tensama0415
 # Author: YeBoy371
 # Author: Ykhwong
 # Author: 아라
@@ -24,22 +25,30 @@ details:
   note: 참고
   official_len: 공식 거리
   operator: 연산자
+  route_symbol: 경로 기호
   subroutes_title: 문단
   superroutes_title: '다음의 부분:'
+  symbol: 기호
   tags:
+    key: 키
     title: 오픈스트리트맵 태그
     value: 값
   type:
+    guidepost: 도표
     node: 노드
     relation: 관계
     way: 길
+    wayset: 길 묶음
   website: 웹사이트
   wikipedia: 위키백과
   zoom_to: 지도에 보이기
   download:
+    title: 경로 다운로드
     format:
+      title: 형식
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
 elevation:
   ascent: 누적된 오르막
   descent: 누적된 내리막
@@ -47,6 +56,7 @@ elevation:
     altitude: 고도 (m)
     distance: 거리 (km)
   title: 고도 프로필
+  total: 총 오르막/내리막
 error:
   load_error: 서버 연결 오류.
   panel_title: 오류
@@ -57,6 +67,10 @@ network:
   downhill: 내리막길
   node: 노드 네트워크 연결
   other: 다른 경로
+  skitour: 스키 투어
+  sled: 썰매장
+  sleigh: 썰매 슬로프
+  winter_hike: 겨울 하이킹
 osmc_symbol:
   back: 뒤로
   background_heading: 배경
@@ -68,6 +82,7 @@ routelist:
   close: 닫기
   title: 노선
 search:
+  places: 장소
   routes: 노선
   title: 검색
 settings:
