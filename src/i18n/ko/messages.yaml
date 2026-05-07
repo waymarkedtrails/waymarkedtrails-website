@@ -17,14 +17,20 @@ attribution:
   elevation_title: 고도 데이터는 [SRTM/ASTER](help/acknowledgements) 제공
 destination_sign:
   more: 자세한 내용
+  no_data: 이 안내 표지판에 대한 목적지 정보가 없습니다.
   title: 목적지
 details:
   altitude: 고도
   image: 그림
   mapped_len: 매핑된 거리
   note: 참고
+  oneway: 이 경로는 앞쪽 방향으로만 나아갈 수 있습니다.
   official_len: 공식 거리
   operator: 연산자
+  pilgrimage:
+    christian: 이것은 기독교인의 순례길입니다.
+    other: 이것은 순례길입니다.
+  roundtrip: 이 경로는 왕복 경로입니다.
   route_symbol: 경로 기호
   subroutes_title: 문단
   superroutes_title: '다음의 부분:'
@@ -42,13 +48,21 @@ details:
   website: 웹사이트
   wikipedia: 위키백과
   zoom_to: 지도에 보이기
+  analyze:
+    title: 관계 분석
   download:
     title: 경로 다운로드
+    start: 파일 받기
     format:
       title: 형식
       GPX: GPX
       KML: KML
       GeoJson: GeoJson
+    direction:
+      forward: 앞쪽
+      backward: 뒤쪽
+      both: 양쪽
+    other_ways: 추가 경로 부분
 elevation:
   ascent: 누적된 오르막
   descent: 누적된 내리막
@@ -57,16 +71,26 @@ elevation:
     distance: 거리 (km)
   title: 고도 프로필
   total: 총 오르막/내리막
+  unavailable: 고도 데이터가 없습니다.
 error:
   load_error: 서버 연결 오류.
+  missing_id: 누락된 매개변수 'id.'
+  missing_query: 누락된 매개변수 'query.'
   panel_title: 오류
+  object_not_found: 개체를 찾을 수 없음.
+  api_unavailable: API를 사용할 수 없음.
 headline:
   last_update: 마지막 업데이트
 help: 지도 정보
+locate_me: 현재 위치
 network:
+  continental: 대륙횡단 노선
   downhill: 내리막길
+  national: 국도
   node: 노드 네트워크 연결
+  nordic: 노르딕 스키
   other: 다른 경로
+  regional: 지역 노선
   skitour: 스키 투어
   sled: 썰매장
   sleigh: 썰매 슬로프
@@ -76,6 +100,7 @@ osmc_symbol:
   background_heading: 배경
   examples: 예시
   foreground_heading: 전경
+  intro_header: 개요
   preview_heading: 미리 보기
 routelist:
   loading: 불러오는 중...

@@ -4,14 +4,22 @@
 # Author: Hym411
 # Author: Jerrykim306
 # Author: Revi
+# Author: Tensama0415
 # Author: Ykhwong
 # Author: 아라
 ---
 about:
   title: 지도에 대해
   hiking: 이 지도는 전 세계의 표지가 있는 등산 경로를 보여줍니다.
+  cycling: 이 지도는 전 세계의 표지가 있는 자전거 경로를 보여줍니다.
+  mtb: 이 지도는 전 세계의 표지가 있는 산악자전거 경로를 보여줍니다.
+  skating: 이 지도는 전 세계의 표지가 있는 스케이팅 경로를 보여줍니다.
+  riding: 이 지도는 전 세계의 표지가 있는 승마 경로를 보여줍니다.
+  slopemap: 이 지도는 전 세계의 표지가 있는 동계 종목 슬로프를 보여줍니다.
 rendering:
   title: OSM 데이터 렌더링
+route_order:
+  title: 경로의 순서
 osmc:
   title: osmc:symbol 태그
 hikinglocal:
@@ -22,6 +30,8 @@ technical:
   title: 기술 세부 사항
 legal:
   title: 법률 및 이용 약관
+acknowledgements:
+  title: 감사의 말씀
 contact:
   title: 연락하기
   text: |-
