@@ -27,12 +27,20 @@ destination_sign:
   title: Місця призначення
 details:
   altitude: Висота
+  educational:
+    other: Це навчальна стежка.
   image: Зображення
   mapped_len: Відстань за мапою
   note: Примітка
+  oneway: Цим маршрутом можна рухатися лише в прямому напрямку.
   official_len: Офіційна відстань
   operator: Оператор
+  pilgrimage:
+    christian: Це маршрут християнських паломників.
+    other: Це маршрут пілігримів.
+  roundtrip: Цей маршрут туди й назад.
   route_symbol: Символ маршруту
+  signed_direction: Цей маршрут позначено лише в прямому напрямку.
   subroutes_title: Розділи
   superroutes_title: Частина
   symbol: Символ
@@ -65,9 +73,21 @@ details:
       Точка, де маршрут переривається, оскільки зв'язок не відсортований.
       Червоні пунктирні лінії показують, де маршрут продовжується.
   download:
+    title: Завантажити маршрут
+    need_format: Виберіть формат
+    need_direction: Виберіть шляхи до включення
+    start: Отримати файл
     format:
+      title: Формат
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
+    direction:
+      title: Включити шляхи до напрямку
+      forward: вперед
+      backward: назад
+      both: обидві сторони
+    other_ways: Додаткові частини маршруту
 elevation:
   ascent: Сукупний підйом
   descent: Сукупний спуск
