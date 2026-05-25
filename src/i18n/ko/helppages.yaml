@@ -16,22 +16,260 @@ about:
   skating: 이 지도는 전 세계의 표지가 있는 스케이팅 경로를 보여줍니다.
   riding: 이 지도는 전 세계의 표지가 있는 승마 경로를 보여줍니다.
   slopemap: 이 지도는 전 세계의 표지가 있는 동계 종목 슬로프를 보여줍니다.
+  osm: 경로는 표준 오픈스트리트맵 위에 겹쳐 표시되며, 선택적으로 지형 음영 레이어도 추가됩니다. 경로 지도는 [오픈스트리트맵](https://www.openstreetmap.org)
+    (OSM) 프로젝트의 데이터를 기반으로 생성됩니다. OSM은 누구나 참여할 수 있는 자유롭게 편집 가능한 세계 지도입니다. 따라서 OSM은
+    완벽한 지도는 아니지만, 새로운 경로를 추가하거나 기존 경로의 오류를 수정하여 기여할 수 있습니다. 오픈스트리트맵에 대한 자세한 내용은 [초보자
+    가이드](https://wiki.openstreetmap.org/wiki/Beginners_Guide)를 참조하세요.
 rendering:
   title: OSM 데이터 렌더링
+  hikingroutes: |-
+    OSM의 하이킹 경로는 관계로 입력해야 합니다. 이 방법은 OSM 위키의 [도보 경로](https://wiki.openstreetmap.org/wiki/Walking_Routes) 태그 지정 페이지에 자세히 설명되어 있습니다. 이 지도는 최소한 다음 태그가 있는 관계를 표시합니다:
+
+        type = route|superroute
+        route = foot|walking|hiking
+  cyclingroutes: |-
+    OSM의 자전거 경로는 관계로 입력해야 합니다. 이 방법은 OSM 위키의 [자전거 경로](https://wiki.openstreetmap.org/wiki/Cycle_routes) 태그 지정 페이지에 자세히 설명되어 있습니다. 이 지도는 최소한 다음 태그가 있는 모든 관계를 표시합니다:
+
+        type = route|superroute
+        route = bicycle
+
+    산악자전거 경로는 별도의 [MTB-지도](https://mtb.waymarkedtrails.org)에 표시됩니다.
+  mtbroutes: |-
+    산악자전거 경로는 OSM 위키의 [자전거 코스](https://wiki.openstreetmap.org/wiki/Cycle_routes) 페이지에 자세히 설명된 자전거 경로와 같은 태그 지정 스키마를 따릅니다. 다음 태그가 있는 관계는 MTB 경로로 인식됩니다:
+
+        type = route|superroute
+        route = mtb
+
+    일반 자전거 경로는 [자전거 지도](https://cycling.waymarkedtrails.org)에 표시됩니다.
+  skatingroutes: |-
+    표지판이 있는 스케이팅 경로는 다른 경로 관계와 마찬가지로 태그를 지정해야 합니다. 이 지도에서 이해하는 태그 지정 방식은 [Swiss inline skating routes](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork)에 관한 위키 페이지를 참조하세요. 스케이팅 경로로 인식되려면 다음 태그가 있어야 합니다:
+
+        type = route|superroute
+        route = inline_skates
+  ridingroutes: |-
+    표지판이 있는 승마 경로는 다른 경로 관계와 마찬가지로 태그를 지정해야 합니다. 자세한 내용은 [OSM 위키의 경로 페이지](https://wiki.openstreetmap.org/wiki/Relation:route)를 참조하세요. 승마 경로로 인식되려면 다음 태그가 있어야 합니다:
+
+        type = route|superroute
+        route = horse
+  sloperoutes: |-
+    표지판이 있는 슬로프는 piste:type 태그가 있는 길입니다. 슬로프로 인식되려면 길에 다음 태그가 있어야 합니다:
+
+        piste:type = downhill|nordic|sled|hike|sleigh
+
+    관계의 경우 다음 태그가 있어야 합니다:
+
+        type = route|superroute
+        route = ski|piste
+        piste:type = downhill|nordic|sled|hike|sleigh
+  slopeclassification: 스키(활강) 슬로프의 분류는 `piste:difficulty` 태그에서 결정되며, 렌더링의 색상에 사용됩니다.
+  classification: |-
+    여러 값을 가진 `route` 태그는 값들이 주변 공백 없이 세미콜론으로 구분되어 있을 때 지원됩니다.
+    분류(따라서 지도에서 경로의 색상)는 `network` 태그에서 결정됩니다.
+  slopemaplabels: |-
+    스키(활강) 경로의 레이블은 다음 순서로 태그에서 "추측"됩니다:
+
+    1. `piste:ref` 태그가 있으면 `piste:ref` 태그로 텍스트 레이블을 만듭니다.
+    2. `piste:name` 태그가 있으면 먼저 대문자만 사용하고, 실패하면 이름의 첫 글자들을 사용하여 참조를 파생합니다.
+    3. `ref` 태그가 있으면 `ref` 태그로 텍스트 레이블을 만듭니다.
+    4. 관계이고 `name` 태그가 있으면 먼저 대문자만 사용하고, 실패하면 이름의 첫 글자들을 사용하여 참조를 파생합니다.
+    5. 포기합니다.
+
+    노르딕 슬로프는 색상 태그가 있는 경우 색상만 표시하는 표지로 표시됩니다.
+  hikinglabels: |-
+    각 경로의 레이블은 다음 순서로 태그에서 "추측"됩니다:
+
+    1. [현지화된 렌더링 규칙](#help-hikinglocal)을 확인합니다.
+    2. `osmc:symbol` 태그를 해석해 봅니다. 어떤 부분이 이해되는지에 대한 자세한 내용은 [osmc:symbol 렌더링 규칙](osmc_symbols.html)을 참조하세요.
+    3. `ref` 태그가 있으면 `ref` 태그로 텍스트 레이블을 만듭니다.
+    4. `name` 태그가 있으면 먼저 대문자만 사용하고, 실패하면 이름의 첫 글자들을 사용하여 참조를 파생합니다.
+    5. 포기합니다.
+  labels: |-
+    각 경로의 레이블은 다음 순서로 태그에서 "추측"됩니다:
+
+    1. `ref` 태그가 있으면 `ref` 태그로 텍스트 레이블을 만듭니다.
+    2. `name` 태그가 있으면 먼저 대문자만 사용하고, 실패하면 이름의 첫 글자들을 사용하여 참조를 파생합니다.
+    3. 포기합니다.
+  hierarchy: 이 지도는 [관계 계층](#help-hierarchies)도 지원합니다.
+  guideposts: |-
+    [이정표](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)는 다음 태그로 인식됩니다:
+
+        tourism=information
+        information=guidepost
+        name=<name>
+        ele=<altitude>
+
+    `tourism` 및 `information`은 필수입니다. `name` 및 `ele`는 생략할 수 있습니다.
 route_order:
   title: 경로의 순서
+  text: |-
+    waymarkedtrails는 고도 프로필과 GPX 및 KML 다운로드를 표시하기 위해 올바르게 정렬된 경로가 필요합니다. 경로를 분석할 때 관계 안의 구성원 way 순서를 가능한 한 존중하려고 합니다. 이렇게 하면 매퍼가 시행착오에 의존하지 않고도 순서에 영향을 주기 가장 쉽기 때문입니다. 관계가 정렬되지 않은 것처럼 보이는 경우에도, 길들이 끊기지 않은 선형 경로를 형성할 수 있는 경우에만 waymarkedtrails가 길들을 순서대로 배치합니다.
+
+    경로를 정렬할 때 관계 역할도 고려됩니다. `forward` 및 `backward` 역할은 방향에 따라 경로가 다른 구간을 따라야 하는 부분을 표시하는 데 사용할 수 있습니다. 이러한 역할은 경로가 아니라 길의 방향을 기준으로 정의된다는 점을 기억하세요! 이런 분기 구간이 있다면, 각 방향의 길들이 관계 안에서 서로 바로 이어서 나타나고, 해당 길들이 여전히 경로의 순서를 따르도록 해야 합니다.
+
+    그 밖의 역할은 어떤 형태의 측면 경로로 간주되어 경로의 일반 정렬에서는 무시됩니다. 그래도 지도에는 표시됩니다.
+
+    waymarkedtrails는 경로 안의 분리되지 않은 원형교차로를 처리할 수 있습니다. 닫힌 길을 아무 역할 없이 추가하기만 하면 원형교차로가 내부적으로 적절한 구간으로 나뉩니다. 원형교차로로 들어가는 V자 접근로가 `forward`와 `backward`로 나뉘어 있는 경우에도 작동합니다. 이 처리가 실패하는 경우는 두 가지입니다:
+
+    * 어떤 이유로 원형교차로가 여러 길로 나뉘어 있다면, 각 부분을 적절한 `forward` 및 `backward` 역할로 추가해야 합니다.
+    * 원형교차로가 방향성이 있는 구간의 일부라면, 원형교차로를 나누고 사용되는 부분에 적절한 역할을 추가해야 합니다.
+
+    정렬에 대한 일반적인 경험 원칙: JOSM 관계 편집기가 경로를 연속적으로 보여 준다면 waymarkedtrails도 선형 경로로 표시할 수 있어야 합니다.
+hierarchies:
+  title: 관계 계층 구조
+  text: |-
+    이 지도는 중첩 관계, 즉 관계 자체를 포함하는 관계도 지원합니다. 이러한 계층은 OSM 데이터베이스에서 두 가지 방식으로 사용됩니다. 매우 긴 경로를 나누는 데 사용되거나(예: [E1](https://hiking.waymarkedtrails.org/#route?id=36367)), 두 경로가 같은 길을 따라가는 경우 중복 작업을 피하기 위해 사용됩니다(예: 유럽 [Via Francigena](https://hiking.waymarkedtrails.org/#route?id=11860709)의 일부인 스위스 [ViaFrancigena](https://hiking.waymarkedtrails.org/#route?id=124582)). 첫 번째 경우 하위 관계는 그 자체로 완전한 경로가 아니므로 지도에 독립적으로 표시해서는 안 됩니다.
+
+    렌더러가 하위 관계를 정확히 어떻게 처리하는지는 `network` 태그에 따라 달라집니다:
+
+    * 상위 관계와 하위 관계가 같은 network 태그를 공유하면, 하위 관계는 상위 관계의 한 구간으로 간주됩니다. 따라서 그 경로는 상위 관계에 추가되고 하위 관계는 지도에 표시되지 않습니다.
+    * 상위 관계와 하위 관계의 network 태그가 다르면, 해당 관계들은 독립적인 것으로 간주됩니다. 하위 관계의 경로는 상위에 추가되고 두 관계 모두 지도에 표시됩니다.
+
+    *참고:* 경로 브라우저를 통해 언제든지 하위 관계를 검사할 수 있습니다. 상위 관계를 선택하기만 하면 그 하위 관계의 선택 가능한 목록이 표시됩니다.
 osmc:
   title: osmc:symbol 태그
+  text: |-
+    `osmc:symbol` 태그는 경로 표지를 기계가 읽을 수 있는 방식으로 설명하는 방법을 제공합니다. 주로 단순한 기하학적 도형으로 구성된 기호를 위한 것입니다. 태그에 대한 전체 설명과 역사에는 OSM 위키의 [osmc:symbol page](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)를 방문하세요. waymarkedtrails는 대체로 여기서 설명하는 몇 가지 제한과 확장을 포함하여 위키 페이지에 설명된 구문을 따릅니다.
+
+    지도에 렌더링되려면 태그가 다음 형식 중 하나여야 합니다:
+
+        waycolor:background
+        waycolor:background:foreground
+        waycolor:background:foreground:foreground2
+        waycolor:background:foreground:foreground2:text:textcolor
+        waycolor:background:foreground:text:textcolor
+
+    `waycolor`는 항상 있어야 하지만 이 지도에서는 무시됩니다. 또한 배경을 지정해야 하지만 해당 필드는 비워 둘 수 있습니다. 다음에는 최대 두 개의 서로 다른 전경이 올 수 있습니다. 끝에는 선택적으로 위에 추가할 작은 참조 텍스트를 넣을 수 있습니다. 텍스트의 색상은 항상 지정해야 합니다. 참조 텍스트가 너무 길어지면 waymarkedtrails가 이를 무시한다는 점에 유의하세요. 텍스트가 얼마나 길 수 있는지는 선택한 배경에 따라 달라집니다. 절대 한도는 4자이며, 다이아몬드 모양 배경은 한 문자만 사용할 수 있고, 줄무늬 및 막대 모양 배경은 참조 텍스트를 전혀 사용할 수 없습니다.
+  reference_footer: waymarkedtrails에서 렌더링할 수 있는 모든 색상과 모양의 전체 목록은 아래 참조에서 확인할 수 있습니다.
+  footer: Waymarked Trails에서 지원하는 기호 목록은 추가 [osmc:symbol](osmc_symbols.html) 태그 페이지를
+    참조하세요.
 hikinglocal:
   title: 지역화된 렌더링
+  text: |-
+    전 세계에는 다양한 등산로 표시 시스템이 있습니다. 이 지도는 최대한 일반적인 태그를 사용하여 등산로를 적절하게 표시하려고 하지만, 특히 등산로 네트워크와 같은 특정 시스템에서는 제대로 표시되지 않을 수 있습니다. 이러한 시스템을 지원하기 위해 표준 표시 방식이 적합하지 않은 지역에 맞게 지도를 현지화할 수 있습니다.
+
+    아래는 특수 지도 기호를 사용하는 지역 목록입니다. 여러분의 지역을 특수 방식으로 표시하려면 페이지 하단의 힌트를 참조하세요.
+  swiss: |-
+    ## 스위스
+
+    스위스에는 전국을 포괄하는 광범위한 표지 하이킹로 네트워크가 있습니다. 이 네트워크는 이름이 있는 안내표지가 노드 역할을 하는 노드 네트워크입니다. 모든 길은 난이도에 따라 일관되게 표시됩니다. 지도는 이러한 길을 빨간색으로 표시하며, 선 패턴으로 난이도를 나타냅니다.
+
+    * ![빨간색 길](route_std.png) *하이킹 길*, ![diamond](yellow_diamond.svg)로 표시됩니다. `network=lwn` 및 `osmc:symbol=yellow:[...]:yellow_diamond`로 태그됩니다.
+    * ![파선](route_mnt.png) *산길*, ![white-red-white](white_red_bar.svg)로 표시됩니다. `network=lwn` 및 `osmc:symbol=red:white:red_bar`로 태그됩니다.
+    * ![점선](route_alp.png) *알파인 길*, ![white-blue-white](white_blue_bar.svg)로 표시됩니다. `network=lwn` 및 `osmc:symbol=blue:white:blue_bar`로 태그됩니다.
+
+    이 네트워크 위에는 일반적인 방식으로 표시되는 여러 국가 및 지역 경로가 있다는 점에 유의하세요.
+
+    OSM에서 스위스 하이킹 길에 태그를 지정하는 방법에 대한 자세한 내용은 다음을 참조하세요:
+    [Swiss hiking network](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## 오스트리아
+
+    포어아를베르크 지역은 스위스와 비슷한 분류 체계를 사용합니다. `operator=Land Vorarlberg`, `network=rwn` 및 `network:type=basic_network` 태그가 있는 경로는 난이도 기반 체계로 표시됩니다:
+
+    * ![빨간색 선](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![파선](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![점선](route_alp.png) osmc:symbol=blue:white:blue_bar
+  italy: |-
+    ## 이탈리아
+
+    이탈리아 알파인 클럽(CAI)은 스위스에 있는 것과 유사한 난이도 분류의 산길 네트워크를 유지합니다. `network=lwn`, `osmc:symbol=red:..` 및 `cai_scale` 태그가 있는 경로는 CAI가 관리하는 길로 인식되며 난이도에 따라 빨간색 선으로 표시됩니다.
+
+    * ![빨간색 선](route_std.png) cai_scale=T
+    * ![파선](route_mnt1.png) cai_scale=E
+    * ![파선](route_mnt2.png) cai_scale=EE
+    * ![점선](route_alp.png) cai_scale=EEA*
+  uk: |-
+    ## 영국
+
+    [UK 장거리 경로](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)의 분류(`network=uk_ldp`로 태그된 것들)는 `operator` 태그에 따라 달라집니다. `operator=National Trails`가 있는 관계는 국가 트레일로 표시되고, 다른 모든 관계는 지역 경로로 나타납니다.
+
+    `network=lwn/rwn/nwn/iwn` 태그가 있는 관계는 일반적인 방식으로 처리됩니다.
+  czech: |-
+    ## 체코 공화국
+
+    이 국가는 4가지 색상의 7개 기호 집합을 기반으로 한 트레일 표시 표준을 사용합니다. 설명은 [체코 태그 지정 페이지](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest)를 참조하세요(체코어 전용).
+
+    `kct_*` 태그가 있으면 모든 `osmc:symbol` 태그보다 우선됩니다. 또한 유효한 network 태그를 찾을 수 없는 경우 경로가 재분류됩니다. `kct_red=major`가 있는 경로는 국가 경로가 되고, 다른 `kct_*=major`는 지역 경로로 분류됩니다.
+  slovakia: |-
+    ## 슬로바키아
+
+    슬로바키아는 체코와 같은 트레일 표시 표준을 사용합니다. 그러나 태그 지정 체계는 약간 다릅니다. [슬로바키아 하이킹 페이지](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes)를 참조하세요.
+
+    `operator=KST` 태그가 있는 모든 경로는 해당 체계에 따라 태그됩니다. 슬로바키아의 경로에는 유효한 network 태그가 있어야 하므로 재분류는 수행되지 않습니다.
+  hungary: |-
+    ## 헝가리
+
+    헝가리도 여러 색상의 고정 기호 집합을 사용하는 체계를 사용합니다. 이러한 기호는 자체 태그 [jel](https://wiki.openstreetmap.org/wiki/Key:jel)로 표시됩니다. 이 태그는 모든 `osmc:symbol` 태그보다 우선됩니다.
+  germany: |-
+    ## 독일
+
+    ### Fränkischer Albverein
+
+    뉘른베르크 주변 네트워크는 매우 밀집되어 있으므로 `operator=Fränkischer Albverein`으로 태그된 지역 경로는 일반적인 경우보다 낮은 확대 수준에서 나타납니다.
+  ukcycle: |-
+    ## 영국
+
+    ### 노리치
+
+    노리치는 색상으로 구분된 경로 체계를 사용합니다. `operator=Norwich City Council`로 태그된 경로는 `colour` 태그에 따라 색이 있는 정사각형으로 표시됩니다.
 elevationprofiles:
   title: 고도 프로필
+  general: |-
+    고도 프로필은 [ASTER 전국 수치표고모델 (GDEM) 버전 2](https://asterweb.jpl.nasa.gov/gdem.asp)의 고도 데이터로 만들어지며, 오픈스트리트맵의 "ele" 태그는 고려되지 않고 터널과 교량도 고려되지 않습니다. ASTER GDEM은 METI와 NASA의 제품입니다.
+
+    경로에 끝점이 두 개보다 많거나 두 개 이상의 구간으로 구성되어 있으면 프로필이 렌더링되지 않습니다. 프로필의 방향은 경로의 서-동 또는 북-남 방향을 따릅니다. 경로에 "start" 및 "goal" 같은 역할이 있는 요소가 있거나, 시작 지점부터 목표 지점까지 연속적으로 나열되어 있었다면 경로 관계 자체에서 방향을 결정할 수 있었을지도 모릅니다. 오픈스트리트맵에서 경로를 매핑할 때 이러한 점을 염두에 두는 것이 좋습니다.
+
+    고도 데이터가 없는 이른바 "voids"라는 빈 구멍이 있으며, 이는 고도 프로필 선의 구멍으로 시각화됩니다.
+
+    ASTER 버전 2는 아마도 가장 좋은 무료 전 세계 DEM이지만 정확도와 적용 범위 측면에서 한계가 있다는 점에 주의하세요. 자세한 내용은 [검증 요약 보고서](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf)를 참조하세요. 부정확성은 OSM 데이터의 부정확성, 우리가 적용하는 [평활화 기법](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), 그리고 경로가 길어질수록 낮아지는 프로필 해상도로 인해 더욱 커집니다.
 technical:
   title: 기술 세부 사항
+  general: |-
+    경로 오버레이는 매분 업데이트되며 일반적으로 OSM 서버보다 2~5분 늦습니다. 왼쪽 위 모서리의 날짜는 마지막 업데이트를 보여 줍니다. 기반 Mapnik 지도의 업데이트는 이 사이트에서 제어할 수 없습니다. OSM 서버의 현재 부하에 따라 1분에서 몇 시간까지 걸립니다.
+
+    이 웹사이트의 소스 코드는 GPL 라이선스에 따라 제공되며 여러 저장소로 나뉘어 있습니다:
+    * [백엔드 코드 및 지도 생성](https://github.com/waymarkedtrails/waymarkedtrails-backend/)
+    * [API 서비스](https://github.com/waymarkedtrails/waymarkedtrails-api/)
+    * [웹사이트 프런트엔드](https://github.com/waymarkedtrails/waymarkedtrails-website/)
+
+    단순히 버그를 보고하거나 웹사이트 기능을 논의하려는 경우 Github의 프로젝트 저장소에서 [이슈 트래커](https://github.com/waymarkedtrails/waymarked-trails-site/issues) 또는 [토론 기능](https://github.com/waymarkedtrails/waymarked-trails-site/discussions)을 사용할 수 있습니다.
+  translation: |-
+    ## 번역
+
+    번역은 늘 도움을 주는 [translatewiki.net](https://translatewiki.net)의 사람들이 관리합니다. 자신의 언어로 번역에 기여하거나 기존 번역에 대한 의견을 제공하려면 [translatewiki.net 프로젝트 페이지](https://translatewiki.net/wiki/Translating:Waymarked_Trails)를 방문하세요.
 legal:
   title: 법률 및 이용 약관
+  copyright: |-
+    경로 오버레이는 [크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.0 독일](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en)에 따라 제공되며, GPX 트랙은 [ODbL](https://opendatacommons.org/licenses/odbl/)에 따라 제공됩니다.
+    결과물이 호환되는 라이선스를 사용하고 오픈스트리트맵 프로젝트와 이 사이트를 언급하는 한 재사용 및 변경할 수 있습니다.
+  usage: |-
+    ## 사용 정책
+
+    접속률이 적당한 한 다른 사이트에서 오버레이를 사용할 수 있습니다. 타일은 가능한 한 자주 캐시하고 올바른 리퍼러를 사용하세요. 타일의 대량 다운로드는 강력히 권장되지 않습니다.
+
+    GPX 트랙은 이 사이트 방문자의 편의를 위해 제공됩니다. 대량 다운로드는 허용되지 않습니다.
+  disclaimer: |-
+    ## 면책사유
+
+    지도의 정확성이나 완전성은 보장할 수 없습니다. 하이킹을 나갈 때는 괜찮은 종이 지도, 적절한 장비를 챙기고 상식을 집에 두고 나오지 마세요. 자연은 아름다운 만큼 냉혹할 수 있습니다.
+
+    이 사이트에는 외부 웹사이트로 연결되는 링크가 포함되어 있습니다. 이 사이트의 작성자는 이러한 웹사이트의 콘텐츠에 영향을 미치지 않으며 그에 대해 어떠한 책임도 지지 않습니다.
 acknowledgements:
   title: 감사의 말씀
+  text: |-
+    모든 지도 데이터는 [오픈스트리트맵과 그 기여자들](https://www.openstreetmap.org)이 제공하며 ODbL 라이선스에 따라 배포됩니다. 기본 지도 역시 OSM의 제공입니다. 자세한 내용은 [OSM 저작권 페이지](https://www.openstreetmap.org/copyright)를 참조하세요.
+
+    OpenTopoMap-R 기본 지도는 [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html)에서 친절히 제공합니다. 마음에 든다면 서버 유지 비용을 위한 기부를 고려해 주세요. 자세한 내용은 [openmaps 기부 페이지](https://openmaps.fr/donate)를 방문하세요.
+
+    음영기복과 고도 데이터는 SRTM 및 ASTER GDEM 데이터를 혼합하여 생성되었습니다. ASTER GDEM은 METI와 NASA의 제품입니다. 후처리는 [opensnowmap.org](https://opensnowmap.org)의 Yves Cainaud가 친절히 제공했습니다.
+
+    고도 프로필 코드는 [Kresendo](https://www.kresendo.no)와 [서노르웨이연구소](https://www.vestforsk.no)의 TG4NP 프로젝트 간 협력으로 Espen Oldeman Lund가 개발했습니다.
+
+    겨울 스포츠 슬로프 변형은 Michael Spreng가 개발했습니다. 승마 기호는 Robert Whittaker가 준비했습니다.
+
+    안내표지 목적지는 [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm)에서 처리합니다. 서비스를 제공한 Jan Michel에게 감사드립니다.
+
+    이 사이트의 번역은 [translatewiki.net과 그 기여자들](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators)이 제공합니다. translatewiki.net 이전에 번역을 제공한 선구적인 번역자들에게 특별히 감사드립니다: Yves Cainaud(프랑스어), Oscar Formaggi(이탈리아어), Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis(스페인어), [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP(노르웨이어 보크몰 및 뉘노르스크), Mads Lumholt/TG4NP(덴마크어), Magnús Smári Snorrason/TG4NP(아이슬란드어), Lars Mikaelsson/TG4NP(스웨덴어), Elina Pesonen(핀란드어).
 contact:
   title: 연락하기
   text: |-

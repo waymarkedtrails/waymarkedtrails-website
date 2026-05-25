@@ -281,6 +281,8 @@ acknowledgements:
   text: |-
     Az összes térképadatot az [OpenStreetMap és közreműködői](https://www.openstreetmap.org) bocsátotják rendelkezésre, és az ODbL licenc alapján terjesztik. Az alaptérkép szintén az OSM jóvoltából készült. További információért lásd az [OSM szerzői jogi oldalát](https://www.openstreetmap.org/copyright).
 
+    Az OpenTopoMap-R alapot az [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html) szolgáltatja nagylekűen. Ha tetszik, fontoljon meg egy adományt a szervereik fenntartására. Ehhez további tudnivalkat az [openmaps.fr/donate](https://openmaps.fr/donate) oldalon talál.
+
     Az SRTM és az ASTER GDEM adatok összevonásából létrehozott domborzati és magassági adatok.
     Az ASTER GDEM a METI és a NASA terméke.
     Az utófeldolgozást Yves Cainaud, az [opensnowmap.org](https://opensnowmap.org) oldal alkotója szíveskedett elvégezni.

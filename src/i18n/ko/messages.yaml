@@ -21,6 +21,8 @@ destination_sign:
   title: 목적지
 details:
   altitude: 고도
+  educational:
+    other: 이곳은 교육용 경로입니다.
   image: 그림
   mapped_len: 매핑된 거리
   note: 참고
@@ -32,9 +34,14 @@ details:
     other: 이것은 순례길입니다.
   roundtrip: 이 경로는 왕복 경로입니다.
   route_symbol: 경로 기호
+  signed_direction: 이 경로는 안내 표지판이 진행 방향으로만 설치되어 있습니다.
   subroutes_title: 문단
   superroutes_title: '다음의 부분:'
   symbol: 기호
+  linear:
+    "yes": 이 경로에 대한 관계는 정렬되어 있으며 하나로 연결되어 있습니다.
+    sorted: 이 경로에 대한 관계는 하나로 연결되어 있지만 구성원은 정렬되어 있지 않습니다.
+    "no": 관계에 구멍이나 다른 문제가 있습니다.
   tags:
     key: 키
     title: 오픈스트리트맵 태그
@@ -50,8 +57,20 @@ details:
   zoom_to: 지도에 보이기
   analyze:
     title: 관계 분석
+    summary: 이 관계에는 {num}개의 구간이 있습니다.
+    disclaimer: |-
+      이 표는 waymarkedtrails가 관계를 기반으로 계산한 경로 구간을 보여줍니다.
+      하지만 이 결과가 항상 정확한 것은 아닙니다. waymarkedtrails의
+      경로 정렬 방식에 대한 자세한 내용은 도움말 페이지를 참조하세요.
+    open_end: 경로의 끝이 열려 있습니다.
+    multi_end: 이 지점에서 경로의 두 개 이상의 구간이 만납니다.
+    two_end: |-
+      관계가 정렬되지 않아 경로가 중단되는 지점입니다.
+      빨간색 점선은 경로가 계속되는 부분을 나타냅니다.
   download:
     title: 경로 다운로드
+    need_format: 형식을 선택하세요
+    need_direction: 포함할 길을 선택하세요
     start: 파일 받기
     format:
       title: 형식
@@ -59,6 +78,7 @@ details:
       KML: KML
       GeoJson: GeoJson
     direction:
+      title: 다음 방향의 길을 포함합니다
       forward: 앞쪽
       backward: 뒤쪽
       both: 양쪽
@@ -72,6 +92,7 @@ elevation:
   title: 고도 프로필
   total: 총 오르막/내리막
   unavailable: 고도 데이터가 없습니다.
+  warn_unsorted: 경로가 정렬되어 있지 않거나 불완전합니다. 고도 정보가 정확하지 않을 수 있습니다.
 error:
   load_error: 서버 연결 오류.
   missing_id: 누락된 매개변수 'id.'
@@ -85,7 +106,7 @@ help: 지도 정보
 locate_me: 현재 위치
 network:
   continental: 대륙횡단 노선
-  downhill: 내리막길
+  downhill: 활강
   national: 국도
   node: 노드 네트워크 연결
   nordic: 노르딕 스키
@@ -97,19 +118,28 @@ network:
   winter_hike: 겨울 하이킹
 osmc_symbol:
   back: 뒤로
+  background: 배경도 비슷한 방식으로 작동합니다. 배경 역시 색상과 모양으로 구성됩니다. 배경은 색상 이름만으로 지정할 수도 있으며, 이
+    경우 선택한 색상의 캔버스가 생성됩니다. 이는 첫 번째 행에 나와 있습니다.
   background_heading: 배경
   examples: 예시
+  foreground: 전경 기호는 밑줄로 연결된 색상과 모양으로 구성됩니다. 아래 표는 이 사이트에서 인식하는 모든 조합을 보여줍니다. 또한 도형의
+    이름만으로 구성된 전경도 인식합니다. 해당 기호는 마지막 열에 표시됩니다.
   foreground_heading: 전경
   intro_header: 개요
+  preview: 아래 입력란에 osmc:symbol 값을 입력하여 지도에 어떻게 표시되는지 확인하세요!
   preview_heading: 미리 보기
+  symbol_reference_heading: 지원되는 기호의 전체 목록
 routelist:
   loading: 불러오는 중...
   close: 닫기
+  more: 더 많은 경로를 보려면 확대하세요.
+  rollup: 말아 올리기
   title: 노선
 search:
   places: 장소
   routes: 노선
   title: 검색
+  help: '검색하실 때는 키워드를 사용해 주세요. 트레일 이름(예: 애팔래치아 트레일, E2)이나 장소 이름(예: 베를린)으로 검색할 수 있습니다.'
 settings:
   base_map: 기본 지도
   browser_language: 브라우저 설정 사용
@@ -118,10 +148,18 @@ settings:
   route_layer: 경로 레이어
   title: 지도 설정
   transparency: 지도 투명도
+site_description:
+  cycling: 오픈스트리트맵에서 제공하는 지도와 정보를 활용한 로컬 및 장거리 자전거 경로 안내입니다.
+  hiking: 오픈스트리트맵에서 제공하는 지도와 정보를 활용한 근거리 및 장거리 하이킹 및 도보 코스입니다.
+  mtb: 오픈스트리트맵에서 제공하는 지도와 정보를 활용한 산악자전거(MTB) 코스입니다.
+  riding: 오픈스트리트맵에서 제공하는 지도와 정보를 활용한 승마 코스 안내입니다.
+  skating: 오픈스트리트맵에서 제공하는 지도와 정보를 활용한 인라인 스케이트 코스 안내입니다.
+  slopes: 오픈스트리트맵에서 제공하는 지도와 정보를 활용한 겨울 스포츠 슬로프, 알파인 스키, 크로스컨트리 스케이팅, 겨울 산책로입니다.
 site_title:
   cycling: 자전거 타기
   hiking: 하이킹
   mtb: 산악 자전거
+  osmc_symbol: osmc:symbol 태그
   riding: 승마
   skating: 인라인 스케이팅
   slopes: 동계 종목 슬로프

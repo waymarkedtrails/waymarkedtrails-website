@@ -76,6 +76,7 @@ details:
       title: Formátum
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
     direction:
       title: Tartalmazza a következő irányokat
       forward: előre
