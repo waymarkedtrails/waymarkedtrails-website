@@ -4,6 +4,7 @@
 # Author: Armando-Martin
 # Author: Dittaeva
 # Author: Fitoschido
+# Author: Hugoren Martinako
 # Author: Ihojose
 # Author: Macofe
 # Author: Malafaya
@@ -23,15 +24,28 @@ destination_sign:
   title: Destinos
 details:
   altitude: Altitud
+  educational:
+    other: Este es un sendero educativo.
   image: Imagen
   mapped_len: Distancia mapeada
   note: Nota
+  oneway: Esta ruta sólo puede seguirse hacia adelante.
   official_len: Distancia oficial
   operator: Operador
+  pilgrimage:
+    christian: Esta es una ruta de peregrinación cristiana.
+    other: Esta es una ruta de peregrinación.
+  roundtrip: Esta ruta es circular.
   route_symbol: Símbolo de ruta
+  signed_direction: Esta ruta solo está señalizada en sentido de avance.
   subroutes_title: Secciones
   superroutes_title: Parte de
   symbol: Símbolo
+  linear:
+    "yes": La relación para esta ruta está ordenada y en una sola pieza.
+    sorted: La relación para esta ruta está en una sola pieza pero los miembros no
+      están ordenados.
+    "no": La relación tiene agujeros u otros problemas.
   tags:
     key: llave
     title: Etiquetas de OpenStreetMap
@@ -45,10 +59,33 @@ details:
   website: Sitio web
   wikipedia: Wikipedia
   zoom_to: Mostrar en el mapa
+  analyze:
+    title: Analizar la relación
+    summary: Esta relación tiene {num} segmentos.
+    disclaimer: Esto muestra los segmentos de ruta tal como los calculó waymarkedtrails
+      a partir de la relación, que puede no ser siempre correcta. Para obtener más
+      información sobre cómo waymarkedtrails ordena las rutas, visite las páginas
+      de ayuda.
+    open_end: Extremo abierto en la ruta.
+    multi_end: Más de dos segmentos de la ruta se encuentran en este punto.
+    two_end: Punto donde la ruta se interrumpe porque la relación no está ordenada.
+      Las líneas discontinuas rojas muestran dónde continúa la ruta.
   download:
+    title: Descargar ruta
+    need_format: Elige un formato
+    need_direction: Elige vías para incluir
+    start: Obtener archivo
     format:
+      title: Formato
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
+    direction:
+      title: Incluye vías en dirección
+      forward: hacia adelante
+      backward: hacia atrás
+      both: ambos
+    other_ways: Partes adicionales de la ruta
 elevation:
   ascent: Ascenso acumulado
   descent: Descenso acumulado
@@ -65,6 +102,8 @@ error:
   missing_id: Falta el parámetro 'id'.
   missing_query: Falta el parámetro 'consulta'.
   panel_title: Error
+  object_not_found: Objeto no encontrado.
+  api_unavailable: La API no está disponible.
 headline:
   last_update: Última actualización
 help: Acerca del mapa
@@ -93,9 +132,11 @@ osmc_symbol:
     este sitio. También reconoce frentes que consisten solo en el nombre de la forma.
     Los símbolos para eso se muestran en la última columna.
   foreground_heading: Frente
+  intro_header: Vista general
   preview: Tipea un valor osmc:symbol en el campo debajo para ver cómo será renderizado
     en el mapa.
   preview_heading: Previsualizar
+  symbol_reference_heading: Lista completa de símbolos compatibles
 routelist:
   loading: Cargando...
   close: Cerrar

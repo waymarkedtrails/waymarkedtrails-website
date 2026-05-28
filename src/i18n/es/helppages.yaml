@@ -5,6 +5,7 @@
 # Author: Avengium
 # Author: Ciencia Al Poder
 # Author: Fitoschido
+# Author: Hugoren Martinako
 # Author: Jakeukalane
 # Author: Laura Ospina
 # Author: Lonvia
@@ -131,6 +132,16 @@ rendering:
         ele=<altitude>
 
     `tourism` y `information` son obligatorios. `name` y `ele` pueden ser omitidos (opcionales).
+route_order:
+  title: Ordenamiento de rutas
+  text: |-
+    waymarkedtrails necesita rutas correctamente ordenadas para mostrar el perfil de elevación y para la descarga de archivos GPX y KML. Al analizar una ruta, intenta respetar en la medida de lo posible el orden de los caminos miembros dentro de la relación, ya que esto facilita a los cartógrafos influir en el orden sin tener que recurrir al método de prueba y error. Si una relación parece no estar ordenada, waymarkedtrails ordenará los caminos solo si pueden formar una ruta lineal continua. Los roles de las relaciones se tienen en cuenta al ordenar la ruta. Los roles de "adelante" y "atrás" se pueden usar para marcar secciones donde la ruta debe seguirse en diferentes partes según la dirección. Recuerde que estos roles se definen en relación con la dirección del camino, no con la ruta. Si tiene una sección dividida de este tipo, ¡N! asegúrese de que las vías para cada dirección aparezcan directamente una tras otra en la relación y que las vías sigan el orden de la ruta. Cualquier otro rol se considera un camino lateral de una forma u otra y se ignora para la clasificación general de la ruta. Aun así, aparecen en el mapa. waymarkedtrails puede manejar rotondas sin dividir dentro de una ruta. Simplemente agregue la vía cerrada sin ningún rol y la rotonda se dividirá internamente en secciones apropiadas. Esto incluso funciona cuando hay un acceso en V a la rotonda que se divide en adelante y atrás. Hay dos casos en los que este manejo falla: * si por alguna razón la rotonda se dividió en varias vías, entonces debe agregar las partes con el `adelante` apropiado y roles `retrocedidos`.
+    * si la rotonda es parte de una sección direccional, ¡debe dividir la rotonda y agregar la parte utilizada con el rol apropiado
+    .
+
+    Regla general para ordenar: si el editor de relaciones JOSM
+    muestra la ruta como continua, entonces waymakedtrails debería poder
+    mostrar también una ruta lineal.
 hierarchies:
   title: Jerarquías de relaciones
   text: "El mapa también admite relaciones anidadas, es decir, relaciones que contienen\nrelaciones.
@@ -163,20 +174,21 @@ hierarchies:
 osmc:
   title: La etiqueta osmc:symbol
   text: |-
-    La etiqueta `osmc:symbol` proporciona una manera de describir de forma legible por máquina
-    símbolos de ruta con formas geométricas sencillas como las que se encuentran en algunos
-    países europeos (y especialmente en Alemania). El mapa sólo
-    soporta un subconjunto de lo que se describe en la página Wiki. Para
-    en el mapa, la etiqueta debe tener el siguiente formato:
+    La etiqueta `osmc:symbol` proporciona una forma de describir los iconos de ruta de una manera legible por máquina. Está principalmente destinada a símbolos que están compuestos de formas geométricas simples. Para una descripción completa y el historial de la etiqueta, visite la página [osmc:symbol](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol) en la wiki de OSM. waymarkedtrails sigue en gran medida la sintaxis descrita en la página wiki con algunas restricciones y extensiones descritas aquí. Para que se muestre en el mapa, la etiqueta debe tener uno de los siguientes formatos: waycolor:background waycolor:background:foreground waycolor:background:foreground2 waycolor:background:foreground:foreground2:text:textcolor waycolor:background:foreground:text:textcolor
 
-        osmc:symbol=waycolor:background:foreground:text:textcolor
-
-    `waycolor` debe estar ahí pero se ignora para este mapa.
-    No se admite un segundo primer plano. `text` y `textcolor` pueden
-    omitirse.
-
-    Consulte la página de etiquetas extra [osmc:symbol](osmc_symbols.html) para obtener una lista de símbolos compatibles con Waymarked Trails.
-    soportados por Waymarked Trails.
+    El `waycolor` siempre debe estar presente, pero se ignora para este mapa.
+    Además, debe especificar un fondo, aunque puede dejar
+    el campo vacío. A continuación, añada un máximo de dos colores de primer plano diferentes.
+    Al final, opcionalmente puede agregar un pequeño texto de referencia que se agregará
+    encima. El color del texto siempre debe especificarse. Tenga en cuenta que
+    waymarkedtrails ignorará los textos de referencia cuando sean demasiado largos.
+    La longitud que puede tener el texto depende de los fondos elegidos: el
+    límite estricto es de 4 caracteres, los fondos en forma de diamante únicamente aceptan
+    un solo carácter, los fondos con rayas y barras no aceptan texto de referencia en absoluto.
+  reference_footer: Encontrarás la lista completa de colores y formas que waymarkedtrails
+    puede representar en la referencia que aparece a continuación.
+  footer: Consulte la página de etiquetas adicionales [osmc:symbol](osmc_symbols.html)
+    para obtener una lista de los símbolos que Waymarked Trails admite.
 hikinglocal:
   title: Representación localizada
   text: |-
@@ -184,22 +196,28 @@ hikinglocal:
 
     A continuación se muestra una lista de regiones que utilizan símbolos de mapas especiales. Con el fin de tener tu propia región representada de una manera especial, lee los consejos al final de la página.
   swiss: |-
-    ## Suiza
+    ## ¡Suiza
 
-    Suiza cuenta con una extensa red de senderos señalizados que cubren todo el país.
-    todo el país. Se trata de una red de nodos en la que los postes guía funcionan como nodos.
-    funcionan como nodos. Todos los senderos están marcados según su dificultad.
-    El mapa muestra estos senderos en rojo con el patrón de líneas marcando la dificultad
+    Suiza tiene una extensa red de senderos señalizados que cubren todo el país. La red es una conjunto de nodos donde los postes guía con nombre funcionan como nodos. Todos los senderos están marcados de manera consistente según su dificultad. El mapa muestra estos senderos en rojo con el patrón de línea que marca la dificultad.
+    * ![línea roja](route_std.png) *sendero*, marcado con ![diamante](yellow_diamond.svg). Etiquetado con `network=lwn` y `osmc:symbol=yellow:[...]:yellow_diamond`.
+    * ![línea discontinua](route_mnt.png) *sendero de montaña*, marcado con ![blanco-rojo-blanco](white_red_bar.svg). Etiquetado con `network=lwn` y `osmc:symbol=red:white:red_bar`.
+    * ![línea punteada](route_alp.png) *sendero alpino*, marcado con ![blanco-azul-blanco](white_blue_bar.svg). Etiquetado con `network=lwn` y `osmc:symbol=blue:white:blue_bar`.
 
-    * ![línea roja](route_std.png) *sendero*, marcado con ![diamante](yellow_diamond.svg). Marcado con `network=lwn` y `osmc:symbol=yellow:[...]`.
-    * ![línea discontinua](route_mnt.png) *camino de montaña*, marcado con ![blanco-rojo-blanco](white_red_bar.svg). Etiquetado con `network=lwn` y `osmc:symbol=red:[...]`.
-    * ![línea de puntos](route_alp.png) *camino alpino*, marcado con ![blanco-azul-blanco](white_blue_bar.svg). Etiquetado con `network=lwn` y `osmc:symbol=blue:[...]`.
+    Tenga en cuenta que sobre esta red hay varias rutas nacionales y regionales
+    que se muestran de la forma habitual.
 
-    Tenga en cuenta que, además de esta red, hay una serie de rutas nacionales y regionales
-    nacionales y regionales que se muestran de forma normal.
+    Para obtener más información sobre cómo etiquetar rutas de senderismo en Suiza en OSM, consulte:
+    [Red de senderismo suiza](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## ¡Austria
 
-    Para más información sobre el etiquetado de rutas de senderismo en Suiza en OSM ver:
-    [Swiss hiking network](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+    La región de Vorarlberg utiliza un sistema de clasificación similar al de
+    Suiza. Las rutas con etiquetas `operator=Land Vorarlberg`, `network=rwn`
+    y `network:type=basic_network` se marcarán con un esquema basado en la dificultad:
+
+    * ![línea roja](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![línea discontinua](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![línea punteada](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     El club alpino italiano (CAI) mantiene la red de senderos de montaña
     que se clasifican por nivel de dificultad similar a la que existe en Suiza.
@@ -318,30 +336,14 @@ legal:
 acknowledgements:
   title: Reconocimientos
   text: |-
-    Todos los datos cartográficos proceden de [OpenStreetMap y colaboradores](https://www.openstreetmap.org)
+    Todos los datos del mapa son proporcionados por [OpenStreetMap y colaboradores](https://www.openstreetmap.org)
     y distribuidos bajo la licencia ODbL. El mapa base también es cortesía de OSM.
     Para más información, consulte la
     [página de copyright de OSM](https://www.openstreetmap.org/copyright).
 
-    Datos de relieve y elevación creados a partir de una combinación de datos SRTM y ASTER GDEM.
-    ASTER GDEM es un producto de METI y la NASA.
-    El postprocesado fue amablemente proporcionado por Yves Cainaud de [opensnowmap.org](https://opensnowmap.org).
-
-    El código del perfil de elevación ha sido desarrollado por Espen Oldeman Lund en una cooperación entre [Kresendo](https://www.kresendo.no) y el proyecto TG4NP del [Western Norway Research Institute](https://www.vestforsk.no).
-
-    La variante de pistas para deportes de invierno ha sido desarrollada por Michael Spreng. El símbolo de equitación ha sido
-    preparado por Robert Whittaker.
-
-    Los destinos Guidepost han sido procesados por [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Muchas gracias a Jan Michel por proporcionar el servicio.
-
-    Las traducciones de este sitio corren a cargo de
-    [translatewiki.net y sus colaboradores](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Un agradecimiento especial a los traductores pioneros que
-    proporcionaron traducciones antes de translatewiki.net: Yves Cainaud (francés),
-    Oscar Formaggi (italiano),
-    Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (español),
-    [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (bokmål y nynorsk noruego),
-    Mads Lumholt/TG4NP (danés), Magnús Smári Snorrason/TG4NP (islandés),
-    Lars Mikaelsson/TG4NP (sueco) y Elina Pesonen (finlandés).
+    El mapa base OpenTopoMap-R es amablemente proporcionado por
+    [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html). Si le gusta,
+    considere hacer una donación para el mantenimiento de sus servidores. Visite la página de donaciones de OpenMaps para obtener más información. Los datos de sombreado y elevación se crearon a partir de una combinación de datos SRTM y ASTER GDEM. ASTER GDEM es un producto de METI y NASA. El posprocesamiento fue amablemente proporcionado por Yves Cainaud de OpenSnowmap.org. El código del perfil de elevación fue desarrollado por Espen Oldeman Lund en cooperación entre Kresendo y el proyecto TG4NP en el Instituto de Investigación del Oeste de Noruega. La variante de pistas de deportes de invierno fue desarrollada por Michael Spreng. El símbolo de equitación fue preparado por Robert Whittaker. Los destinos de los postes guía son procesados por [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Muchas gracias a Jan Michel por brindar el servicio. Las traducciones de este sitio son proporcionadas por [translatewiki.net y sus colaboradores](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Un agradecimiento especial a los traductores pioneros que proporcionaron traducciones antes de translatewiki.net: Yves Cainaud (francés), Oscar Formaggi (italiano), Gustavo Ramis (español), Guttorm Flatabø (noruego bokmål y nynorsk), Mads Lumholt (danés), Magnús Smári Snorrason (isleño), Lars Mikaelsson (sueco) y Elina Pesonen (finlandés).
 contact:
   title: Contacto
   text: |-
