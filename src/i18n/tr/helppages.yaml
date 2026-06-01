@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: BaRaN6161 TURK
 # Author: Erdemaslancan
+# Author: HakanIST
 # Author: Hedda
 # Author: Lonvia
 # Author: MuratTheTurkish
@@ -122,6 +123,21 @@ rendering:
         ele=<yükseklik>
 
     `tourism` ve `information` zorunludur. `name` ve `ele` atlanabilir.
+route_order:
+  title: Rotaların sıralanması
+  text: |-
+    waymarkedtrails, yükseklik profilini göstermek ve GPX ile KML indirme için düzgün sıralanmış rotalara ihtiyaç duyar. Bir rotayı analiz ederken, ilişki içindeki üye yolların sırasına mümkün olduğunca saygı göstermeye çalışır çünkü bu, haritacıların deneme yanılma yöntemine başvurmak zorunda kalmadan sırayı etkilemesini kolaylaştırır. Bir ilişki sıralanmamış görünüyorsa, waymarkedtrails yalnızca yollar kesintisiz bir doğrusal rota oluşturabiliyorsa onları sıraya koyar.
+
+    Rotayı sıralarken ilişki rolleri dikkate alınır. `forward` ve `backward` rolleri, rotanın yöne bağlı olarak farklı bölümlerde takip edilmesi gereken kısımları işaretlemek için kullanılabilir. Bu rollerin rotaya değil, yolun yönüne göre tanımlandığını unutmayın! Böyle bir bölünmüş kısma sahipseniz, her yön için yolların ilişkide doğrudan birbirini takip ettiğinden ve yolların hâlâ rota sırasını izlediğinden emin olun.
+
+    Diğer tüm roller, bir biçimde yan yollar olarak kabul edilir ve rotanın genel sıralaması için göz ardı edilir. Yine de haritada görünürler.
+
+    waymarkedtrails, bir rota içindeki bölünmemiş dönel kavşakları işleyebilir. Kapalı yolu herhangi bir rol olmadan eklemeniz yeterlidir; dönel kavşak dahili olarak uygun bölümlere ayrılır. Bu, forward ve backward olarak bölünmüş V yaklaşımı olan dönel kavşaklarda bile çalışır. Bu işlemenin başarısız olduğu iki durum vardır:
+
+    * dönel kavşak herhangi bir nedenle birden fazla yola bölünmüşse, parçaları uygun `forward` ve `backward` rolleriyle eklemeniz _gerekir_.
+    * dönel kavşak yönlü bir bölümün parçasıysa, dönel kavşağı bölmeniz ve kullanılan parçayı uygun rolle eklemeniz gerekir.
+
+    Sıralama için genel kural: JOSM ilişki düzenleyicisi rotayı kesintisiz gösteriyorsa, waymarkedtrails de doğrusal bir rota gösterebilmelidir.
 hierarchies:
   title: İlişki hiyerarşileri
   text: |-
@@ -176,6 +192,10 @@ osmc:
     Sert sınır 4 karakterdir, elmas şeklindeki arka planlar yalnızca
     bir karakter alır, çizgili ve çubuk şeklindeki arka planlar hiç
     referans metni almaz.
+  reference_footer: waymarkedtrails'in işleyebildiği renklerin ve şekillerin tam listesini
+    aşağıdaki referansta bulabilirsiniz.
+  footer: Waymarked Trails tarafından desteklenen sembollerin listesi için ekstra
+    [osmc:symbol](osmc_symbols.html) etiket sayfasına bakın.
 hikinglocal:
   title: Yerelleştirilmiş oluşturma
   text: |-
@@ -205,6 +225,14 @@ hikinglocal:
 
     OSM'de İsviçre'deki yürüyüş yollarını etiketleme hakkında daha fazla bilgi için bakınız:
     [İsviçre yürüyüş ağı](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## Avusturya
+
+    Vorarlberg bölgesi, İsviçre'ye benzer bir sınıflandırma sistemi kullanmaktadır. `operator=Land Vorarlberg`, `network=rwn` ve `network:type=basic_network` etiketlerine sahip rotalar, zorluk temelli bir şema ile işaretlenecektir:
+
+    * ![kırmızı çizgi](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![kesikli çizgi](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![noktalı çizgi](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     ## İtalya
 
@@ -326,30 +354,8 @@ legal:
     Bu web sitelerinin içeriği ve bunun için herhangi bir sorumluluk kabul etmemektedir.
 acknowledgements:
   title: Onaylama
-  text: |-
-    Tüm harita verileri [OpenStreetMap ve katkıda bulunanlar](https://www.openstreetmap.org)
-    tarafından sağlanmış ve ODbL lisansı altında dağıtılmıştır. Temel
-    harita da OSM'nin izniyle kullanılmıştır.
-    Daha fazla bilgi için [OSM telif hakkı sayfasına](https://www.openstreetmap.org/copyright) bakın.
-
-    Tepe gölgeleme ve yükseklik verileri, SRTM ve ASTER GDEM verilerinin birleştirilmesinden elde edilmiştir.
-    ASTER GDEM, METI ve NASA'nın bir ürünüdür.
-    Son işlemler Yves Cainaud tarafından [opensnowmap.org](https://opensnowmap.org) tarafından sağlanmıştır.
-
-    Yükseklik profili kodu, Espen Oldeman Lund tarafından [Kresendo](https://www.kresendo.no) ile [TG4NP projesi](https://tg4np.eu) arasında [Batı Norveç Araştırmaları](https://www.vestforsk.no) ile işbirliği içinde geliştirilmiştir.
-
-    Kış sporları yamaçları çeşidi Michael Spreng tarafından geliştirilmiştir. Sürme sembolü
-    Robert Whittaker tarafından hazırlanmıştır.
-
-    [Mueschelsoft](https://osm.mueschelsoft.de/destinationsign/example/index.htm) tarafından işlenen kılavuz adresleri servis sağladığı için Jan Michel'e çok teşekkürler.
-
-    Bu sitenin çevirileri [translatewiki.net ve katkıda bulunanları](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators) tarafından sağlanmıştır. Öncü tercümanlara özel teşekkürler.
-    translatewiki.net'ten önce verilen çeviriler: Yves Cainaud (Fransızca),
-    Oscar Formaggi (İtalyanca),
-    Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (İspanyolca),
-    [Guttorm Flatabø](https://guttormflatabo.com)/[TG4NP](https://tg4np.eu) (Norveççe ve nynorsk),
-    Mads Lumholt/TG4NP (Danca), Magnús Smári Snorrason/TG4NP (Islandic),
-    Lars Mikaelsson/TG4NP (İsveççe) ve Elina Pesonen (Fince).
+  text: Tüm harita verileri [OpenStreetMap ve katkıda bulunanlar](https://www.openstreetmap.org)
+    tarafından sağlanmakta ve ODbL lisansı altında dağıtılmaktadır.
 contact:
   title: İletişim
   text: |-

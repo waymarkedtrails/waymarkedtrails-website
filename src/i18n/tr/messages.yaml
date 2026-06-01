@@ -5,6 +5,7 @@
 # Author: Can
 # Author: Emperyan
 # Author: Grkn gll
+# Author: HakanIST
 # Author: Hedda
 # Author: Incelemeelemani
 # Author: JackUKElliott
@@ -21,9 +22,12 @@ attribution:
   elevation_title: 'yükseklik verileri: [SRTM/ASTER](help/acknowledgements)'
 destination_sign:
   more: Daha fazla ayrıntı
+  no_data: Bu yol tabelası için hedef bilgisi mevcut değildir.
   title: Hedefler
 details:
   altitude: Yükseklik
+  educational:
+    other: Bu bir eğitim parkurudur.
   image: Resim
   mapped_len: Eşlenmiş uzunluk
   note: Not
@@ -33,24 +37,55 @@ details:
   pilgrimage:
     christian: Bu bir Hıristiyan hacı yoludur.
     other: Bu bir hacı yoludur.
+  roundtrip: Bu rota bir tur (gidiş-dönüş) rotasıdır.
   route_symbol: Rota sembolu
+  signed_direction: Bu rota yalnızca ileri yönde işaretlenmiştir.
   subroutes_title: Bölümler
   superroutes_title: Parçası
   symbol: Sembol
+  linear:
+    "yes": Bu rotanın ilişkisi sıralanmış ve tek parçadır.
+    sorted: Bu rotanın ilişkisi tek parçadır ancak üyeler sıralanmamıştır.
+    "no": İlişkide boşluklar veya başka sorunlar var.
   tags:
     key: anahtar
     title: OpenStreetMap etiketleri
     value: değer
   type:
+    guidepost: Yol tabelası
+    node: Düğüm
     relation: İlişki
     way: Yol
+    wayset: Yol kümesi
   website: Web site
   wikipedia: Vikipedi
   zoom_to: Haritada göster
+  analyze:
+    title: İlişkiyi analiz et
+    summary: Bu ilişki {num} segmentten oluşmaktadır.
+    disclaimer: Bu, waymarkedtrails tarafından ilişkiden hesaplanan rota segmentlerini
+      gösterir ve her zaman doğru olmayabilir.
+    open_end: Rotada açık uç.
+    multi_end: Rotanın ikiden fazla segmenti bu noktada buluşmaktadır.
+    two_end: |-
+      İlişki sıralanmamış olduğundan rotanın kesintiye uğradığı nokta.
+      Kırmızı kesikli çizgiler rotanın nerede devam ettiğini gösterir.
   download:
+    title: Rotayı indir
+    need_format: Bir biçim seçin
+    need_direction: Dahil edilecek yolları seçin
+    start: Dosyayı al
     format:
+      title: Biçim
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
+    direction:
+      title: Yön olarak yolları dahil et
+      forward: ileri
+      backward: geri
+      both: her ikisi
+    other_ways: Ek rota parçaları
 elevation:
   ascent: Birikmiş yükseliş
   descent: Birikmiş iniş
@@ -58,6 +93,7 @@ elevation:
     altitude: Yükseklik (m)
     distance: Mesafe (km)
   title: Yükselti profili
+  total: Toplam tırmanış/iniş
   unavailable: Yükseklik verisi bulunamadı.
   warn_unsorted: Rota potansiyel olarak sıralanmamış veya eksik. Yükseklik bilgisi
     yanlış olabilir.
@@ -66,6 +102,8 @@ error:
   missing_id: Eksik parametre 'id'.
   missing_query: Eksik parametre 'query'.
   panel_title: Hata
+  object_not_found: Nesne bulunamadı.
+  api_unavailable: API kullanılamıyor.
 headline:
   last_update: Son güncelleme
 help: Harita hakkında
@@ -75,9 +113,12 @@ network:
   downhill: Aşağı
   national: Ulusal rotalar
   node: Düğüm ağ bağlantıları
+  nordic: Nordik kayak
   other: Diğer rotalar
   regional: Bölgesel rotalar
   skitour: Kaya turları
+  sled: Kızak pisti
+  sleigh: Kızak pisti
   winter_hike: Kış yürüyüşü
 osmc_symbol:
   back: Geri
@@ -91,11 +132,14 @@ osmc_symbol:
     Ayrıca, yalnızca şeklin adını içeren ön planları tanır. Bunlardan dolayı semboller
     son sütunda gösterilir.
   foreground_heading: Ön plan
+  intro_header: Genel bakış
   preview: |-
     Bir osmc: sembol değerini aşağıdaki giriş alanına yazın
           harita üzerinde nasıl oluşturulacağını görmek için.
   preview_heading: Önizleme
+  symbol_reference_heading: Desteklenen sembollerin tam listesi
 routelist:
+  loading: Yükleniyor...
   close: Kapat
   more: Daha fazla rota görmek için yakınlaştır.
   rollup: Topla
@@ -104,6 +148,8 @@ search:
   places: Yerler
   routes: Güzergâhlar
   title: Ara
+  help: Arama yapmak için anahtar kelimeler kullanın. Parkur adlarına (ör. Likya Yolu,
+    E2) veya yerlere (ör. Berlin) göre arama yapabilirsiniz.
 settings:
   base_map: Temel harita
   browser_language: Tarayıcı ayarlarını kullan
@@ -113,8 +159,15 @@ settings:
   title: Harita ayarları
   transparency: Harita şeffaflığı
 site_description:
+  cycling: OpenStreetMap'ten haritalar ve bilgilerle yerel ve uzun mesafe bisiklet
+    rotaları.
   hiking: OpenStreetMap'ten harita ve bilgilerle yerel ve uzun-mesafeli kayak ve yürüme
     rotaları.
+  mtb: OpenStreetMap'ten haritalar ve bilgilerle dağ bisikleti (MTB) rotaları.
+  riding: OpenStreetMap'ten haritalar ve bilgilerle at binme rotaları.
+  skating: OpenStreetMap'ten haritalar ve bilgilerle paten rotaları.
+  slopes: OpenStreetMap'ten haritalar ve bilgilerle kış sporu pistleri, kayak, kros
+    kayağı, kış yürüyüşü.
 site_title:
   cycling: Bisiklete binme
   hiking: Doğa yürüyüşü
