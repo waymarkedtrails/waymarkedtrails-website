@@ -64,7 +64,7 @@ details:
     summary: Deze relatie heeft {num} segment(en).
     disclaimer: Hier worden de routesegmenten weergegeven zoals ze door WaymarkedTrails
       zijn berekend, wat niet altijd correct is. Voor meer informatie over hoe WaymarkedTrails
-      routes sorteert, kun je de hulppagina’s raadplegen.
+      routes sorteert, kunt u de hulppagina’s raadplegen.
     open_end: Open einde in de route.
     multi_end: Op dit punt komen meer dan twee routesegmenten samen.
     two_end: |-
@@ -124,7 +124,7 @@ osmc_symbol:
   back: Terug
   background: Het achtergrondsymbool werkt vergelijkbaar. Dit bestaat ook uit een
     kleur en een vorm. De achtergrond kan ook alleen een kleurnaam zijn, met een effen
-    kleurvlak als resultaat. Dit wordt in de eerste regel van onderstaande tabel getoond.
+    kleurvlak als resultaat. Dit wordt in de eerste regel van onderstaande tabel weergegeven.
   background_heading: Achtergrond
   examples: Voorbeelden
   foreground: Het voorgrondsymbool bestaat uit een kleur en een vorm, met een underscore
@@ -134,7 +134,7 @@ osmc_symbol:
   foreground_heading: Voorgrond
   intro_header: Overzicht
   preview: Tik een waarde voor osmc:symbol in het veld hieronder om te zien hoe het
-    op de kaart getoond zal worden.
+    op de kaart weergegeven zal worden.
   preview_heading: Voorvertoning
   symbol_reference_heading: Volledige lijst met ondersteunde symbolen
 routelist:
@@ -147,7 +147,7 @@ search:
   places: Plaatsen
   routes: Routes
   title: Zoeken
-  help: Gebruik trefwoorden om op te zoeken. Je kunt zoeken op namen van routes (bijv.
+  help: Gebruik trefwoorden om op te zoeken. U kunt zoeken op namen van routes (bijv.
     Appalachian Trail, E2) of plaatsen (bijv. Berlijn).
 settings:
   base_map: Basiskaart

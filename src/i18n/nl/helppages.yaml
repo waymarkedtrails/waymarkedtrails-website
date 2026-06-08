@@ -19,7 +19,7 @@ about:
   slopemap: Op deze kaart worden wintersportpistes in de hele wereld weergegeven.
   osm: |-
     De routes worden ingetekend op de standaardkaart van OpenStreetMap. Er is ook een kaartlaag met heuvelschaduwen. De routekaart wordt gemaakt met gegevens van het project [OpenStreetMap](https://www.openstreetmap.org) (OSM).
-    OSM is een gratis en vrij te bewerken kaart van de wereld waar iedereen aan mee kan werken. De kaart is zeker niet volledig, en je kunt zelf bijdragen door nieuwe routes toe te voegen en bestaande routes te corrigeren. Je kunt de [Beginnersgids](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide) raadplegen om meer over OpenStreetMap te weten te komen.
+    OSM is een gratis en vrij te bewerken kaart van de wereld waar iedereen aan mee kan werken. De kaart is zeker niet volledig, en u kunt zelf bijdragen door nieuwe routes toe te voegen en bestaande routes te corrigeren. U kunt de [Beginnersgids](https://wiki.openstreetmap.org/wiki/Beginners%27_Guide) raadplegen om meer over OpenStreetMap te weten te komen.
 rendering:
   title: OSM-gegevens weergeven
   hikingroutes: |-
@@ -120,14 +120,14 @@ route_order:
   text: |-
     WaymarkedTrails heeft goed gesorteerde routes nodig voor het hoogteprofiel en voor de GPX- en KML-download. Bij het analyseren van een route wordt geprobeerd zoveel mogelijk de volgorde van de wegen in de relatie te respecteren. Zo kunnen mappers de volgorde bepalen. Als een relatie ongesorteerd lijkt, zal WaymarkedTrails de wegen toch in een volgorde zetten, maar alleen als de wegen in pricipe een ononderbroken lineaire route vormen.
 
-    Relatierollen worden in acht genomen bij het sorteren van de route. De rollen `forward` en `backward` kunnen worden gebruikt om secties te markeren waar, afhankelijk van de reisrichting, verschillende wegen moeten worden gevolgd. Vergeet niet dat deze rollen worden gedefinieerd ten opzichte van de tekenrichting van de weg in OSM, en niet ten opzichte van de reisrichting! Als je zo'n gesplitste sectie hebt, zorg er dan voor dat de wegen voor elke richting direct na elkaar in de relatie verschijnen en dat de wegen in de juiste volgorde voor de route staan.
+    Relatierollen worden in acht genomen bij het sorteren van de route. De rollen `forward` en `backward` kunnen worden gebruikt om secties te markeren waar, afhankelijk van de reisrichting, verschillende wegen moeten worden gevolgd. Vergeet niet dat deze rollen worden gedefinieerd ten opzichte van de tekenrichting van de weg in OSM, en niet ten opzichte van de reisrichting! Als u zo'n gesplitste sectie hebt, zorg er dan voor dat de wegen voor elke richting direct na elkaar in de relatie verschijnen en dat de wegen in de juiste volgorde voor de route staan.
 
     Alle andere rollen worden beschouwd als zijpaden van welke aard dan ook, en worden genegeerd voor het sorteren van de route. Wel verschijnen ze op de kaart.
 
-    WaymarkedTrails kan niet-gesplitste rotondes binnen een route verwerken. Als je een gesloten weg zonder rol toevoegt in de routerelatie, wordt de rotonde intern gesplitst in de juiste secties. Dit werkt ook wanneer er een V-vormige toegangsweg is naar de rotonde die is gesplitst in `forward` en `backward`. Er zijn twee gevallen waarin deze verwerking mislukt:
+    WaymarkedTrails kan niet-gesplitste rotondes binnen een route verwerken. Als u een gesloten weg zonder rol toevoegt in de routerelatie, wordt de rotonde intern gesplitst in de juiste secties. Dit werkt ook wanneer er een V-vormige toegangsweg is naar de rotonde die is gesplitst in `forward` en `backward`. Er zijn twee gevallen waarin deze verwerking mislukt:
 
-    * als de rotonde opgesplitst is in meerdere wegen, dan lukt de verwerking _alleen als_ je de delen afzonderlijk met de juiste rollen `forward` en `backward` toevoegt.
-    * Als de hele rotonde deel uitmaakt van één reisrichting, dan lukt de verwerking _alleen als_ je de rotonde opsplitst en het te gebruiken deel toevoegt met de juiste rol.
+    * als de rotonde opgesplitst is in meerdere wegen, dan lukt de verwerking _alleen als_ u de delen afzonderlijk met de juiste rollen `forward` en `backward` toevoegt.
+    * Als de hele rotonde deel uitmaakt van één reisrichting, dan lukt de verwerking _alleen als_ u de rotonde opsplitst en het te gebruiken deel toevoegt met de juiste rol.
 
     Algemene vuistregel voor het ordenen: als de JOSM-relatie-editor de route als doorlopend weergeeft, dan zou ook WaymakedTrails een lineaire route moeten kunnen weergeven.
 hierarchies:
@@ -153,8 +153,8 @@ hierarchies:
       wordt aangenomen dat de onderliggende relatie onafhankelijk is. De route van de onderliggende relatie
       wordt toegevoegd aan het bovenliggende en beide relaties worden weergegeven op de kaart.
 
-    Let op: via de routebrowser kun je subrelaties altijd inspecteren. Selecteer de bovenliggende
-    relatie en je krijgt een lijst te zien van de subrelaties.
+    Let op: via de routebrowser kunt u subrelaties altijd inspecteren. Selecteer de bovenliggende
+    relatie en u krijgt een lijst te zien van de subrelaties.
 osmc:
   title: Het label osmc:symbol
   text: |-
@@ -180,7 +180,7 @@ hikinglocal:
   text: |-
     Er zijn veel verschillende systemen om wandelpaden te markeren. De kaart maakt gebruikt van de meest algemene tags om ze goed weer te geven, maar voor sommige systemen werkt dit niet, bijvoorbeeld voor netwerken van wandelroutes. Om deze systemen aan te kunnen kan de kaart gelokaliseerd worden voor regio's of landen waar de standaardweergave niet voldoet.
 
-    Hieronder staat een lijst met regio's die gebruikmaken van speciale kaartsymbolen. Als je je eigen regio op een speciale manier weer wil laten geven, lees dan de hints onderaan de pagina.
+    Hieronder staat een lijst met regio's die gebruikmaken van speciale kaartsymbolen. Als u uw eigen regio op een speciale manier weer wil laten geven, lees dan de hints onderaan de pagina.
   swiss: |-
     ## Zwitserland
 
@@ -205,7 +205,7 @@ hikinglocal:
   italy: '''Club Alpino Italiano'' (CAI) onderhoudt het netwerk van bergpaden waaraan
     een moeilijkheidsgraad is toegekend, vergelijkbaar met wat in Zwitserland bestaat.
     Routes gelabeld met ''network=lwn'', ''osmc:symbol=red:...'' en ''cai_scale=...'',
-    worden herkend als door de CAI onderhouden paden en worden als rode lijnen getoond
+    worden herkend als door de CAI onderhouden paden en worden als rode lijnen weergegeven
     naar moeilijkheidsgraad.'
   uk: |-
     ## Verenigd Koninkrijk
@@ -259,7 +259,7 @@ elevationprofiles:
   general: |-
     De hoogteprofielen zijn gemaakt met hoogtegegevens van het [ASTER global digital elevation model (GDEM) versie 2](https://asterweb.jpl.nasa.gov/gdem.asp). Het label "ele" in OpenStreetMap wordt niet gebruikt. Tunnels en bruggen worden ook niet gebruikt. ASTER GDEM is een product van METI en NASA.
 
-    Als de route meer dan twee eindpunten heeft of uit meer dan één segment bestaat, dan wordt geen profiel weergegeven. De richting van het profiel volgt de route van west naar oost of noord naar zuid. Als routes elementen zouden hebben met rollen zoals "start" en "goal" en als routes zouden bestaan uit onafgebroken delen, dan zouden we de richting uit de route zelf kunnen afleiden. Houd hier rekening mee als je routes uitzet op OpenStreetMap.
+    Als de route meer dan twee eindpunten heeft of uit meer dan één segment bestaat, dan wordt geen profiel weergegeven. De richting van het profiel volgt de route van west naar oost of noord naar zuid. Als routes elementen zouden hebben met rollen zoals "start" en "goal" en als routes zouden bestaan uit onafgebroken delen, dan zouden we de richting uit de route zelf kunnen afleiden. Houd hier rekening mee als u routes uitzet op OpenStreetMap.
 
     Er zijn gaten ("voids") waar we geen hoogtegegevens voor hebben. Deze worden weergegeven als gaten in de hoogteprofielen.
 
@@ -278,14 +278,14 @@ technical:
     * [API-dienst](https://github.com/waymarkedtrails/waymarkedtrails-api/)
     * [website-frontend](https://github.com/waymarkedtrails/waymarkedtrails-website/)
 
-    Wil je alleen een fout melden of het over de functies van deze website hebben, gebruik dan de [probleemtracker](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
+    Wilt u alleen een fout melden of het over de functies van deze website hebben, gebruik dan de [probleemtracker](https://github.com/waymarkedtrails/waymarked-trails-site/issues)
     of de [discussiefunctie](https://github.com/waymarkedtrails/waymarked-trails-site/discussions) van de repo van het project op Github.
   translation: |-
     ## Vertalingen
 
     Vertalingen worden beheerd door de behulpzame mensen van
-    [translatewiki.net](https://translatewiki.net). Als je wilt bijdragen aan een vertaling
-    in je eigen taal of terugkoppeling wilt geven op bestaande vertalingen, bezoek dan de
+    [translatewiki.net](https://translatewiki.net). Als u wilt bijdragen aan een vertaling
+    in uw eigen taal of terugkoppeling wilt geven op bestaande vertalingen, bezoek dan de
     [projectpagina op translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails).
 legal:
   title: Juridische en gebruiksvoorwaarden
@@ -297,7 +297,7 @@ legal:
   usage: |-
     ## Gebruiksbeleid
 
-    Je mag de kaartlaag op andere sites gebruiken, zolang het gebruik beperkt blijft.
+    U mag de kaartlaag op andere sites gebruiken, zolang het gebruik beperkt blijft.
     Maak gebruik van caches voor de tegels overal waar mogelijk en gebruik de juiste referrer.
     Het massaal downloaden van tegels raden we sterk af.
 
@@ -307,36 +307,40 @@ legal:
     ## Voorbehoud
 
     De juistheid en volledigheid van de kaart kunnen niet worden gegarandeerd.
-    Als je gaat trekken, overweeg dan ook een goede papieren kaart en een passende uitrusting, en laat je gezond verstand vooral niet thuis!
+    Als u gaat trekken, overweeg dan ook een goede papieren kaart en een passende uitrusting, en laat uw gezond verstand vooral niet thuis!
     De natuur kan net zo meedogenloos zijn als ze mooi is.
 
     Deze site bevat koppelingen naar externe websites.
     De auteur van deze site heeft geen invloed op de inhoud van deze websites en neemt er geen verantwoordelijkheid voor.
 acknowledgements:
   title: Met dank aan
-  text: |-
-    Alle door [OpenStreetMap en bijdragers](https://www.openstreetmap.org) verstrekte kaartgegevens
-    worden verspreid onder de ODbL-licentie. De basiskaart is ook beschikbaar dankzij OSM. Zie de [auteursrechtenpagina van OSM](https://www.openstreetmap.org/copyright) voor meer informatie.
-
-    Bergschaduwen en hoogtegegevens zijn samengesteld uit gegevens van SRTM en ASTER GDEM.
-    ASTER GDEM is een product van METI en NASA.
-    De nabewerking is gemaakt door Yves Cainaud van [opensnowmap.org](https://www.opensnowmap.org).
-
-    De code voor hoogteprofielen is ontwikkeld door Espen Oldeman Lund in samenwerking met [Kresendo](https://www.kresendo.no) en het TG4NP-project aan het [Western Norway Research Institute](https://wwww.vestforsk.no).
-
-    De variant voor wintersportpistes is ontwikkeld door Michael Spreng. Het paardrijden-pictogram is gemaakt door Robert Whittaker.
-
-    Vertalingen van deze site zijn verstrekt door
-    [translatewiki.net en zijn bijdragers](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Speciale dank gaat naar de eerste vertalers die voor vertalingen hebben gezorgd voordat dit mogelijk was via translatewiki.net: Yves Cainaud (Frans),
-    Oscar Formaggi (Italiaans),
-    Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (Spaans),
-    [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (Noors bokmål en nynorsk),
-    Mads Lumholt/TG4NP (Deens), Magnús Smári Snorrason/TG4NP (IJslands),
-    Lars Mikaelsson/TG4NP (Zweeds) en Elina Pesonen (Fins).
+  text: "Alle kaartgegevens worden verstrekt door [OpenStreetMap en bijdragers](https://www.openstreetmap.org)
+    en\nworden verspreid onder de ODbL-licentie. De basiskaart is ook beschikbaar
+    dankzij OSM. Zie de [auteursrechtenpagina van OSM](https://www.openstreetmap.org/copyright)
+    voor meer informatie.\n\nDe OpenTopoMap-R basiskaart wordt verstrekt door [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html).
+    Overweeg een donatie te maken voor het onderhoud van hun servers als u deze dienst
+    op prijs stelt. Bezoek de [donatiepagina van openmaps](https://openmaps.fr/donate)
+    voor meer informatie. \n\nBergschaduwen en hoogtegegevens zijn samengesteld uit
+    gegevens van SRTM en ASTER GDEM.\nASTER GDEM is een product van METI en NASA.\nDe
+    nabewerking is gemaakt door Yves Cainaud van [opensnowmap.org](https://www.opensnowmap.org).\n\nDe
+    code voor hoogteprofielen is ontwikkeld door Espen Oldeman Lund in samenwerking
+    met [Kresendo](https://www.kresendo.no) en het TG4NP-project aan het [Western
+    Norway Research Institute](https://wwww.vestforsk.no).\n\nDe variant voor wintersportpistes
+    is ontwikkeld door Michael Spreng. Het paardrijdenpictogram is gemaakt door Robert
+    Whittaker.\n\n[Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm)
+    verwerkt de bestemmingen van routebordjes. Dank aan Jan Michel voor deze dienst.
+    \n\nVertalingen van deze site zijn verstrekt door\n[translatewiki.net en zijn
+    bijdragers](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators).
+    Speciale dank gaat uit naar de eerste vertalers die voor vertalingen hebben gezorgd
+    voordat dit mogelijk was via translatewiki.net: Yves Cainaud (Frans),\nOscar Formaggi
+    (Italiaans),\nGustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751)
+    Ramis (Spaans),\n[Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (Noors bokmål
+    en nynorsk),\nMads Lumholt/TG4NP (Deens), Magnús Smári Snorrason/TG4NP (IJslands),\nLars
+    Mikaelsson/TG4NP (Zweeds) en Elina Pesonen (Fins)."
 contact:
   title: Contact
   text: |-
-    Vragen en opmerkingen over deze site kun je sturen naar [lonvia@denofr.de](mailto:lonvia@denofr.de).
+    Vragen en opmerkingen over deze site kunt u sturen naar [lonvia@denofr.de](mailto:lonvia@denofr.de).
 
-    Problemen kun je melden in [de bugtracker van het project op GitHub](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Controleer voordat je een probleem meldt of het probleem niet ontstaat door de OSM-gegevens.
+    Problemen kunt u melden in [de bugtracker van het project op GitHub](https://github.com/waymarkedtrails/waymarked-trails-site/issues). Controleer voordat u een probleem meldt of het probleem niet ontstaat door de OSM-gegevens.
 ...
