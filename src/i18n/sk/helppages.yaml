@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Jaroslav.micek
 # Author: Mikulas1
+# Author: Wizzard
 # Author: Yardom78
 ---
 about:
@@ -119,6 +120,46 @@ rendering:
     rozpoznané podľa nasledujúcich značiek:\n\n tourism=information\n information=guidepost\n
     name=<name> \n ele=<altitude> \n\n`tourism` a `information` sú povinné. `name`
     a `ele` je možné vynechať."
+route_order:
+  title: Usporiadanie trás
+  text: |-
+    waymarkedtrails potrebuje správne usporiadané trasy na zobrazenie
+    výškového profilu a na stiahnutie vo formáte GPX a KML. Pri analýze trasy
+    sa snaží čo najviac rešpektovať poradie členských ciest v rámci
+    relácie, pretože to mapérom najviac uľahčuje ovplyvniť
+    poradie bez nutnosti pokus-omyl. Ak sa relácia
+    javí ako neusporiadaná, waymarkedtrails aj tak usporiada
+    cesty do poradia vtedy a len vtedy, ak cesty môžu vytvoriť neprerušenú
+    líniovú trasu.
+
+    Pri usporadúvaní trasy sa zohľadňujú roly relácie.
+    Roly `forward` a `backward` možno použiť na označenie úsekov, kde
+    sa má trasa podľa smeru sledovať po rôznych častiach. Nezabudnite,
+    že tieto roly sú definované vzhľadom na smer cesty, nie trasy! Ak máte takýto
+    rozdelený úsek, dbajte na to, aby cesty pre každý smer nasledovali
+    priamo za sebou v rámci relácie a aby cesty stále dodržiavali
+    poradie trasy.
+
+    Akákoľvek iná rola sa považuje za vedľajšiu cestu toho či onoho druhu a
+    pri všeobecnom usporadúvaní trasy sa ignoruje. Na mape sa však
+    napriek tomu zobrazí.
+
+    waymarkedtrails dokáže spracovať nerozdelené kruhové objazdy v rámci
+    trasy. Stačí pridať uzavretú cestu bez akejkoľvek roly a kruhový objazd
+    sa interne rozdelí na vhodné úseky. Funguje to dokonca aj vtedy,
+    keď ku kruhovému objazdu vedie prístup v tvare V rozdelený na
+    smery forward a backward. Sú dva prípady, keď toto spracovanie zlyhá:
+
+    * ak bol kruhový objazd z nejakého dôvodu rozdelený na viacero ciest,
+      potom _musíte_ pridať časti s príslušnými rolami `forward` a
+      `backward`.
+    * ak je kruhový objazd súčasťou smerového úseku, musíte
+      kruhový objazd rozdeliť a pridať použitú časť s príslušnou
+      rolou.
+
+    Všeobecné pravidlo pre usporiadanie: ak editor relácií v JOSM
+    zobrazuje trasu ako súvislú, potom by waymarkedtrails mal dokázať
+    zobraziť líniovú trasu tiež.
 hierarchies:
   title: Vzťahové hierarchie
   text: "Mapa podporuje aj tzv. vnorené vzťahy, to znamená, vzťahy, ktoré obsahujú
@@ -137,19 +178,38 @@ hierarchies:
 osmc:
   title: štítok osmc:symbol
   text: |-
-    Značka `osmc:symbol` poskytuje spôsob, ako strojovo čitateľným spôsobom popísať symboly v jednoduchých geometrických tvaroch, aké sa nachádzajú v niektorých
-    európskych krajinách (a najmä v Nemecku). Iba mapa
-     podporuje podmnožinu toho, čo je popísané na stránke Wiki. Aby sa
-    na mape vykreslila, značka musí mať nasledujúci formát:
+    Značka `osmc:symbol` poskytuje spôsob, ako strojovo čitateľne
+    opísať symboly trás. Je určená najmä pre symboly, ktoré sú
+    zložené z jednoduchých geometrických tvarov. Úplný opis a
+    históriu tejto značky nájdete na stránke
+    [osmc:symbol](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol)
+    na OSM wiki. waymarkedtrails sa do veľkej miery riadi syntaxou opísanou
+    na tej wiki stránke s niekoľkými obmedzeniami a rozšíreniami opísanými tu.
 
-     osmc:symbol=waycolor:background:foreground:text:textcolor
+    Aby sa značka
+    vykreslila na mape, musí mať jeden z nasledujúcich formátov:
 
-    `waycolor` tam musí byť, ale je pre túto mapu ignorovaný.
-    Druhé popredie nie je podporované. `text` a `textcolor` môžu
-    byť vynechané.
+        waycolor:background
+        waycolor:background:foreground
+        waycolor:background:foreground:foreground2
+        waycolor:background:foreground:foreground2:text:textcolor
+        waycolor:background:foreground:text:textcolor
 
-    Pozrite si extra stránku so značkami [osmc:symbol](osmc_symbols.html), kde nájdete zoznam symbolov, ktoré
-    podporuje Waymarked Trails.
+    `waycolor` musí byť vždy prítomný, ale táto mapa ho ignoruje.
+    Ďalej musíte zadať pozadie (background), pole však môžete nechať
+    prázdne. Nasledujú maximálne dva rôzne popredia (foreground).
+    Na konci môžete voliteľne pridať krátky referenčný text, ktorý sa pridá
+    navrch. Farba textu musí byť vždy zadaná. Upozorňujeme, že
+    waymarkedtrails ignoruje referenčné texty, keď sú príliš dlhé.
+    Ako dlhý text môže byť, závisí od zvolených pozadí: tvrdý
+    limit sú 4 znaky, kosoštvorcové pozadie zaberie len
+    jeden znak a pruhové a tyčové pozadia neberú žiadny
+    referenčný text.
+  reference_footer: |-
+    Úplný zoznam farieb a tvarov, ktoré dokáže waymarkedtrails
+    vykresliť, nájdete v referencii nižšie.
+  footer: Zoznam symbolov, ktoré podporuje Waymarked Trails, nájdete na osobitnej
+    stránke značky [osmc:symbol](osmc_symbols.html).
 hikinglocal:
   title: Lokalizované vykresľovanie
   text: "Existuje veľa systémov na značenie turistických chodníkov po celom svete.
@@ -160,20 +220,30 @@ hikinglocal:
   swiss: |-
     ## Švajčiarsko
 
-    Švajčiarsko má rozsiahlu sieť značených turistických chodníkov pokrývajúcich
-    celú krajinu. Sieť je uzlovou sieťou, v ktorej fungujú pomenované orientačné body
-    ako uzly. Všetky cesty sú dôsledne označené podľa ich náročnosti.
-    Na mape sú tieto cesty vyznačené červenou farbou s čiarovým vzorom označujúcim obtiažnosť
+    Švajčiarsko má rozsiahlu sieť značených turistických chodníkov pokrývajúcu
+    celú krajinu. Sieť je uzlová sieť, kde ako uzly fungujú pomenované rázcestníky.
+    Všetky chodníky sú jednotne značené podľa svojej obťažnosti.
+    Mapa zobrazuje tieto chodníky červenou farbou, pričom vzor čiary značí obťažnosť
 
-    * ![červená čiara](route_std.png) *turistická cesta*, značená s ![diamant](yellow_diamond.svg). Označené `network=lwn` a `osmc:symbol=yellow:[...]`.
-    * ![prerušovaná čiara](route_mnt.png) *horská cesta*, označené ![bielo-červeno-biele ](white_red_bar.svg). Označené `network=lwn` a `osmc:symbol=red:[...]`.
-    * ![bodkovaná čiara](route_alp.png) *alpská cesta*, označená ![bielo-modro-biele ](white_blue_bar.svg). Označené `network=lwn` a `osmc:symbol=blue:[...]`.
+    * ![červená čiara](route_std.png) *turistický chodník*, značený ![kosoštvorcom](yellow_diamond.svg). Otagovaný `network=lwn` a `osmc:symbol=yellow:[...]:yellow_diamond`.
+    * ![prerušovaná čiara](route_mnt.png) *horský chodník*, značený ![bielo-červeno-biely](white_red_bar.svg). Otagovaný `network=lwn` a `osmc:symbol=red:white:red_bar`.
+    * ![bodkovaná čiara](route_alp.png) *vysokohorský chodník*, značený ![bielo-modro-biely](white_blue_bar.svg). Otagovaný `network=lwn` a `osmc:symbol=blue:white:blue_bar`.
 
-    Všimnite si, že na vrchu tejto siete je množstvo národných a regionálnych
-    trás, ktoré sú zobrazené normálnym spôsobom.
+    Upozorňujeme, že popri tejto sieti existuje viacero národných a regionálnych
+    trás, ktoré sa zobrazujú bežným spôsobom.
 
-    Viac informácií o označovaní turistických chodníkov vo Švajčiarsku v OSM nájdete na:
+    Viac informácií o tagovaní turistických chodníkov vo Švajčiarsku v OSM nájdete na:
     [Švajčiarska turistická sieť](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## Rakúsko
+
+    Región Vorarlbersko používa podobný klasifikačný systém ako
+    Švajčiarsko. Trasy so značkami `operator=Land Vorarlberg`, `network=rwn`
+    a `network:type=basic_network` budú značené schémou založenou na obťažnosti:
+
+    * ![červená čiara](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![prerušovaná čiara](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![bodkovaná čiara](route_alp.png) osmc:symbol=blue:white:blue_bar
   italy: |-
     ## Taliansko
 
@@ -289,30 +359,35 @@ legal:
 acknowledgements:
   title: Poďakovanie
   text: |-
-    Všetky mapové údaje poskytnuté [OpenStreetMap a prispievateľmi](https://www.openstreetmap.org)
-     sú distribuované pod licenciou ODbL. Základná mapa je tiež s láskavým dovolením OSM.
+    Všetky mapové údaje poskytuje [OpenStreetMap a prispievatelia](https://www.openstreetmap.org)
+    a sú distribuované pod licenciou ODbL. Podkladovú mapu tiež láskavo poskytuje OSM.
     Viac informácií nájdete na
     [stránke o autorských právach OSM](https://www.openstreetmap.org/copyright).
 
-    Hillshading a údaje o nadmorskej výške vytvorené zo zmesi údajov SRTM a ASTER GDEM.
+    Podkladovú mapu OpenTopoMap-R láskavo poskytuje
+    [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html). Ak sa vám páči,
+    zvážte, prosím, dar na údržbu ich serverov. Viac informácií nájdete na
+    [stránke darov openmaps](https://openmaps.fr/donate).
+
+    Tieňovanie reliéfu a výškové údaje boli vytvorené z kombinácie údajov SRTM a ASTER GDEM.
     ASTER GDEM je produkt METI a NASA.
-    Postprocessing láskavo poskytol Yves Cainaud z [opensnowmap.org](https://opensnowmap.org ).
+    Následné spracovanie láskavo poskytol Yves Cainaud z [opensnowmap.org](https://opensnowmap.org).
 
-    Kód výškového profilu vyvinul Espen Oldeman Lund v spolupráci medzi [Kresendo](https://www.kresendo.no) a projektom TG4NP vo [Výskumnom inštitúte západného Nórska]( https://www.vestforsk.no).
+    Kód výškového profilu vyvinul Espen Oldeman Lund v spolupráci medzi [Kresendo](https://www.kresendo.no) a projektom TG4NP na [Western Norway Research Institute](https://www.vestforsk.no).
 
-    Variant zjazdoviek pre zimné športy vyvinul Michael Spreng. Jazdecký symbol
+    Variant zimných športových svahov vyvinul Michael Spreng. Symbol jazdy na koni
     pripravil Robert Whittaker.
 
-    Guidepost destinácie spracoval [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Veľká vďaka Janovi Michelovi za poskytnutie služby.
+    Ciele rázcestníkov spracoval [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Veľká vďaka Janovi Michelovi za poskytnutie tejto služby.
 
     Preklady tejto stránky poskytuje
-    [translatewiki.net a jej prispievatelia](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Špeciálne poďakovanie patrí priekopníckym prekladateľom, ktorí
-    poskytli preklady pred translatewiki.net: Yves Cainaud (francúzština),
+    [translatewiki.net a jeho prispievatelia](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Osobitné poďakovanie patrí priekopníckym prekladateľom, ktorí
+    poskytli preklady ešte pred translatewiki.net: Yves Cainaud (francúzština),
     Oscar Formaggi (taliančina),
-    Gustavo [Tuentibiker](https://www.blogger.com /profile/12473561703699888751) Ramis (španielčina),
+    Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (španielčina),
     [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (nórsky bokmål a nynorsk),
-    Mads Lumholt/TG4NP (TG4NP) (TG4NP) TG4NP (Island),
-    Lars Mikaelsson/TG4NP (Švédsko) a Elina Pesonen (Fínska).
+    Mads Lumholt/TG4NP (dánčina), Magnús Smári Snorrason/TG4NP (islandčina),
+    Lars Mikaelsson/TG4NP (švédčina) a Elina Pesonen (fínčina).
 contact:
   title: Kontakt
   text: |-

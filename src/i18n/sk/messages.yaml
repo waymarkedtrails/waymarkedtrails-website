@@ -6,6 +6,7 @@
 # Author: Kusavica
 # Author: Patriccck
 # Author: Patrik L.
+# Author: Wizzard
 # Author: Yardom78
 ---
 attribution:
@@ -18,15 +19,27 @@ destination_sign:
   title: Ciele
 details:
   altitude: Nadmorská výška
+  educational:
+    other: Toto je náučný chodník.
   image: Obrázok
   mapped_len: Mapovaná dĺžka
   note: Poznámka
+  oneway: Túto trasu možno absolvovať len v smere dopredu.
   official_len: Oficiálna dĺžka
   operator: Operátor
+  pilgrimage:
+    christian: Toto je kresťanská pútnická trasa.
+    other: Toto je pútnická trasa.
+  roundtrip: Táto trasa je okružná.
   route_symbol: Symbol trasy
+  signed_direction: Táto trasa je značená len v smere dopredu.
   subroutes_title: Sekcie
   superroutes_title: Súčasť
   symbol: Symbol
+  linear:
+    "yes": Relácia tejto trasy je usporiadaná a v jednom kuse.
+    sorted: Relácia tejto trasy je v jednom kuse, ale členy nie sú usporiadané.
+    "no": Relácia má diery alebo iné problémy.
   tags:
     key: kľúč
     title: Štítky OpenStreetMap
@@ -40,10 +53,34 @@ details:
   website: Webová stránka
   wikipedia: Wikipédia
   zoom_to: Zobraziť na mape
+  analyze:
+    title: Analyzovať reláciu
+    summary: Táto relácia má {num} segmentov.
+    disclaimer: |-
+      Zobrazuje segmenty trasy tak, ako ich z relácie vypočítal waymarkedtrails,
+      čo nemusí byť vždy správne. Viac informácií o tom,
+      ako waymarkedtrails usporadúva trasy, nájdete na stránkach nápovedy.
+    open_end: Otvorený koniec v trase.
+    multi_end: V tomto bode sa stretávajú viac než dva segmenty trasy.
+    two_end: |-
+      Bod, kde je trasa prerušená, pretože relácia nie je usporiadaná.
+      Červené prerušované čiary ukazujú, kde trasa pokračuje.
   download:
+    title: Stiahnuť trasu
+    need_format: Zvoľte formát
+    need_direction: Zvoľte cesty, ktoré sa majú zahrnúť
+    start: Získať súbor
     format:
+      title: Formát
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
+    direction:
+      title: Zahrnúť cesty v smere
+      forward: dopredu
+      backward: dozadu
+      both: oba
+    other_ways: Ďalšie časti trasy
 elevation:
   ascent: Akumulovaný výstup
   descent: Akumulovaný zostup
