@@ -10,6 +10,7 @@
 # Author: Patriccck
 # Author: Patrik L.
 # Author: Shirayuki
+# Author: Spotter
 ---
 about:
   title: O mapě
@@ -20,63 +21,296 @@ about:
   riding: Tato mapa zobrazuje vyznačené trasy pro jízdu na koni po celém světě.
   slopemap: Tato mapa zobrazuje označené svahy pro zimní sporty po celém světě.
   osm: |-
-    Cesty jsou překresleny přes standardní vrstvu OpenStreetMap a volitelně přes vrstvu stínovaných kopců. Vytváření mapy cesty je založeno na datech z [OpenStreetMap](http://www.openstreetmap.org) (OSM)
+    Trasy jsou překresleny přes standardní vrstvu OpenStreetMap a volitelně přes vrstvu stínovaných kopců. Vytváření mapy cesty je založeno na datech z [OpenStreetMap](http://www.openstreetmap.org) (OSM)
     projektu. OSM je volně editovatelná celosvětová mapa, do jejíž tvorby se může každý zapojit. To znamená, že v žádném případě není kompletní. Na druhou stranu to ale také znamená, že se můžete zapojit přidáváním nových tras a opravováním chyb v existujících. Pokud se chcete dozvědět více o projektu OpenStreetMap, navštivte [příručku pro začátečníky](http://wiki.openstreetmap.org/wiki/Beginners%27_Guide).
 rendering:
   title: Vykreslování dat OSM
-  hikingroutes: |-
-    Turistické trasy v OSM je třeba zadat jako vztahy. Jak to funguje je podrobně popsáno na stránce tagování o
-    [pěší trasy](http://wiki.openstreetmap.org/wiki/Walking_Routes) na OSM wiki. Tato mapa ukazuje vztahy, které mají alespoň tyto značky:
-
-        typ = route|superroute
-        cesta = foot|walking|hiking
+  hikingroutes: 'Turistické trasy v OSM je třeba zadávat jako relace. Jak to funguje,
+    je podrobně popsáno na stránce s tagy o turistických trasách (https://wiki.openstreetmap.org/wiki/Walking_Routes)
+    na wiki stránce OSM. Tato mapa zobrazuje relace, které mají alespoň následující
+    tagy: type = route|superroute!route = foot|walking|hiking'
   cyclingroutes: |-
-    Cyklostezky je potřeba v OSM zadávat jako vztahy. Jak to funguje je detailně popsáno na značkovací strounce o [cyklostezkách](http://wiki.openstreetmap.org/wiki/Cycle_routes) v OSM wiki. Tato mapa zobrazuje všechny vztahy, které mají alespoň následující značky:
+    Cyklostezky je potřeba v OSM zadávat jako relace. Jak to funguje je detailně popsáno na straně značení o [cyklostezkách](http://wiki.openstreetmap.org/wiki/Cycle_routes) v OSM wiki. Tato mapa zobrazuje všechny relace, které mají alespoň následující značky:
 
     type = route|superroute
     route = bicycle
 
     Cyklostezky pro horská kola, jsou zobrazeny na zvláštní mapě [MTB-map](http://mtb.waymarkedtrails.org/en/).
   mtbroutes: |-
-    Cyklostezky pro horská kola podléhají stejnému způsobu značkování jako cyklostezky. To je detailně popsáno na OSM wiki na stránce cyklostezky [cycling routes](http://wiki.openstreetmap.org/wiki/Cycle_routes). Vztahy, které mají následující značky, jsou zobrazeny jako "MTB route":
+    Cyklostezky pro horská kola podléhají stejnému způsobu značení jako cyklostezky. To je detailně popsáno na OSM wiki na stránce cyklostezky [cycling routes](http://wiki.openstreetmap.org/wiki/Cycle_routes). Relace, které mají následující značky, jsou zobrazeny jako "MTB route":
 
      type = route|superroute
      route = mtb
 
-    Běžné cyklostezky jsou zeobrazeny na [mapě cyklostezek](http://cycling.waymarkedtrails.org/en/).
+    Běžné cyklostezky jsou zobrazeny na [mapě cyklostezek](http://cycling.waymarkedtrails.org/en/).
+  skatingroutes: "Značené bruslařské trasy by měly být označeny štítky jako jakékoli
+    jiné trasy. \nZnačky tras, které tato mapa rozumí, naleznete na wiki stránce o
+    \n[švýcarských trasách pro inline bruslení](https://wiki.openstreetmap.org/wiki/Switzerland/InlineNetwork).
+    \nAby trasa byla rozpoznána jako bruslařská, musí být přítomny následující štítky:
+    \n\n type = route|superroute\n route = inline_skates"
+  ridingroutes: |-
+    Značené trasy pro jízdu na koni by měly být označeny štítky jako jakékoli jiné relace tras.
+    Podrobnosti naleznete na [stránce trasy na wiki OSM](https://wiki.openstreetmap.org/wiki/Relation:route).
+    Aby byla trasa rozpoznána jako trasa pro jízdu na koni, musí být přítomny následující štítky:
+
+     type = route|superroute
+     route = horse
+  sloperoutes: |-
+    Značené sjezdovky jsou cesty s tagy piste:type.
+    Aby byly cesty rozpoznány jako sjezdovka, musí být u nich přítomny následující tagy:
+
+     piste:type = downhill|nordic|sled|hike|sleigh
+
+    Pro relace musí být přítomny následující tagy:
+
+     type = route|superroute
+     route = ski|piste
+     piste:type = downhill|nordic|sled|hike|sleigh
+  slopeclassification: Klasifikace sjezdovek je určena z tagu `piste:difficulty` a
+    použita pro barvu při vykreslování.
   classification: |-
     Značka pro „trasu“ s více hodnot je podporován, jestli jsou hodnoty odděleny středníkem a bez mezer.
     Klasifikace (a barva trasy na map+) je určena značkou `network`.
+  slopemaplabels: "Popisek lyžařských (sjezdových) tras se \"odhaduje\" z tagů v následujícím
+    pořadí:\n\n1. Pokud existuje tag `piste:ref`, vytvořte textový popisek s tagem
+    `piste:ref`.\n2. Pokud existuje tag `piste:name`, odvozuje z něj referenci, nejprve
+    použitím \n pouze velkých písmen a pokud to není možné, použitím prvních písmen
+    \n názvu.\n3. Pokud existuje tag `ref`, vytvořte textový popisek s tagem `ref`.\n4.
+    Pokud se jedná o relaci a existuje tag `name`, odvoděte z ní referenci, nejprve
+    použitím \n pouze velkých písmen a pokud to není možné, použitím prvních písmen
+    \n názvu.\n5. Vzdejte to.\n\nSeverské sjezdovky jsou označeny značkou, která zobrazuje
+    pouze jejich barvu, pokud je přítomna barevná značka."
+  hikinglabels: "Popisek každé trasy se „uhodne“ z tagů v následujícím pořadí:\n\n1.
+    Zkontrolujte [lokalizovaná pravidla vykreslování](#help-hikinglocal).\n2. Zkuste
+    interpretovat tag `osmc:symbol`. Podrobnosti o tom, které části \n jsou chápány,
+    naleznete v [pravidla vykreslování osmc:symbol](osmc_symbols.html).\n3. Pokud
+    existuje tag `ref`, vytvořte textový popisek s tagem `ref`.\n4. Pokud existuje
+    tag `name`, odvozte z něj referenci, nejprve použitím \n pouze velkých písmen
+    a pokud to není možné, použitím prvních písmen \n názvu.\n5. Vzdejte to."
+  labels: "Popisek pro každou trasu se „uhodne“ z tagů v následujícím pořadí: \n\n1.
+    Pokud existuje tag `ref`, vytvořte textový popisek s tagem `ref`. \n2. Pokud existuje
+    tag `name`, odvoděte z něj referenci, nejprve použitím \n pouze velkých písmen
+    a pokud to není možné, použitím prvních písmen názvu. \n3. Vzdejte to."
+  hierarchy: Mapa také podporuje [hierarchie relací](#help-hierarchies).
+  guideposts: "[Rozcestníky](https://wiki.openstreetmap.org/wiki/Tag:information%3Dguidepost)\njsou
+    rozpoznatelné podle následujících tagů:\n\ntourism=information\n information=guidepost\n
+    name=<name> \n ele=<altitude> Pole \n\n`tourism` a `information` jsou povinná.
+    Pole `name` a `ele` lze vynechat."
+route_order:
+  title: Řazení tras
+  text: "waymarkedtrails potřebuje správně seřazené trasy pro zobrazení výškového
+    profilu a pro stahování souborů GPX a KML. Při analýze trasy se snaží co nejvíce
+    respektovat pořadí dílčích cest v rámci relace, protože to mapperům usnadňuje
+    ovlivňování pořadí bez nutnosti metody pokus-omyl. Pokud se relace jeví jako neseřazená,
+    pak waymarkedtrails stále seřadí cesty pouze tehdy, když cesty mohou tvořit nepřerušenou
+    lineární trasu. Role relací se berou v úvahu při seřazení trasy. Role `vpřed`
+    a `zpět` lze použít k označení úseků, kde by se trasa měla sledovat v různých
+    částech v závislosti na směru. Nezapomeňte, že tyto role jsou definovány vzhledem
+    ke směru cesty, nikoli k trase. Pokud máte takový rozdělený úsek, ujistěte se,
+    že cesty pro každý směr se v relaci objevují přímo za sebou a že cesty stále dodržují
+    pořadí trasy. Jakékoli jiné role jsou považovány za vedlejší cesty té či oné formy
+    a ignorovány při obecném řazení trasy. Stále se zobrazují na mapě. !W!!Waymarkedtrails
+    dokáže zpracovat nerozdělené kruhové objezdy v rámci trasy. Jednoduše přidejte
+    uzavřenou cestu bez jakékoli role a kruhový objezd bude interně rozdělen na příslušné
+    úseky. Toto funguje i tehdy, když je k kruhovému objezdu příjezd ve tvaru V, který
+    je rozdělen na směr dopředu a dozadu. Existují dva případy, kdy toto zpracování
+    selže: \n\n* pokud byl kruhový objezd z nějakého důvodu rozdělen více směry, \npak
+    musíte přidat části s příslušným `forward` a \n Role `backward`.\n* Pokud je kruhový
+    objezd součástí směrového úseku, musíte kruhový objezd rozdělit a přidat použitou
+    část s příslušnou rolí.\nObecné pravidlo pro řazení: pokud editor relací JOSM
+    zobrazuje trasu jako souvislou, pak by waymakedtrails měl být schopen zobrazit
+    i lineární trasu."
+hierarchies:
+  title: Hierarchie relací
+  text: "Mapa také podporuje vnořené relace, tj. relace, které samy o sobě obsahují
+    \n relací. Tyto hierarchie se v databázi OSM používají dvěma různými způsoby:
+    buď se používají k rozdělení velmi dlouhých tras (např. [E1](https://hiking.waymarkedtrails.org/#route?id=36367)),
+    nebo se používají k zamezení duplicitní práce, když dvě trasy vedou stejnou cestou
+    (viz například švýcarská [ViaFrancigena](https://hiking.waymarkedtrails.org/#route?id=124582),
+    která je součástí evropské [Via Francigena](https://hiking.waymarkedtrails.org/#route?id=11860709)).
+    V prvním případě nejsou dílčí vztahy samy o sobě kompletními trasami a proto by
+    neměly být na mapě zobrazovány samostatně. Jak přesně je dílčí vztah vykreslovačem
+    zpracován, závisí na značce `network`: Pokud nadřazená a podřízená relace sdílejí
+    stejnou síťovou značku, podřízená relace je považována pouze za fázi nadřazené
+    relace. Proto je její trasa přidána k nadřazené relaci a podřízená relace se nezobrazuje
+    v mapě. Pokud se síťová značka nadřazené a podřízené relace liší, předpokládá
+    se, že relace jsou nezávislé. Trasa podřízené relace je přidána k nadřazené relaci
+    a obě relace se zobrazují v mapě. Poznámka: Podrelace si můžete vždy prohlédnout
+    pomocí prohlížeče tras. Jednoduše vyberte nadřazenou relaci a zobrazí se seznam
+    jejích podrelací."
+osmc:
+  title: Štítek osmc:symbol
+  text: |-
+    Štítek `osmc:symbol` umožňuje popsat štíty trasy strojově čitelným způsobem. Je určen především pro symboly, které jsou tvořeny jednoduchými geometrickými tvary. Úplný popis a historii štítku naleznete na stránce [osmc:symbol](https://wiki.openstreetmap.org/wiki/Key:osmc:symbol) na wiki OSM. waymarkedtrails se z velké části řídí syntaxí popsanou na wiki stránce s určitými omezeními a rozšířeními popsanými zde. Aby se štítek zobrazil na mapě, musí mít jeden z následujících formátů: waycolor:background
+     waycolor:background:foreground
+     waycolor:background:foreground:foreground2
+     waycolor:background:foreground:foreground2:text:textcolor
+     waycolor:background:foreground:text:textcolor
+
+    Pole `waycolor` musí být vždy přítomno, ale pro tuto mapu se ignoruje.
+    Dále musíte zadat pozadí, i když pole můžete nechat
+    prázdné. Dále následují maximálně dvě různá popředí.
+    Nakonec můžete volitelně přidat malý referenční text, který se přidá
+    nahoru. Barva textu musí být vždy specifikována. Upozorňujeme, že
+    waymarkedtrails bude ignorovat referenční texty, když budou příliš dlouhé.
+    Délka textu závisí na zvoleném pozadí:
+    pevný limit je 4 znaky, pozadí ve tvaru diamantu pojme pouze
+    jeden znak, pozadí ve tvaru pruhů a pruhů nepojmou žádný
+    referenční text.
+  reference_footer: |-
+    Úplný seznam barev a tvarů, které waymarkedtrails
+     dokáže vykreslit, naleznete v níže uvedené referenci.
+  footer: Seznam symbolů, které jsou podporovány na značených stezkách, naleznete
+    na stránce s tagy [osmc:symbol](osmc_symbols.html).
 hikinglocal:
   title: Lokalizované vykreslování
+  text: Po celém světě existuje mnoho různých systémů pro značení turistických stezek.
+    I když se mapa snaží použít nejobecnější značky pro jejich slušné vykreslení,
+    u některých systémů je odsouzena k selhání, zejména u sítí turistických stezek.
+    Aby se mapa těmto systémům přizpůsobila, lze ji lokalizovat pro regiony, kde standardní
+    vykreslení není dostatečné. Níže je uveden seznam regionů, které používají speciální
+    mapové symboly. Chcete-li si nechat svůj vlastní region vykreslit speciálním způsobem,
+    přečtěte si rady na konci stránky.
+  swiss: |-
+    ## Švýcarsko
+
+    Švýcarsko má rozsáhlou síť značených turistických stezek pokrývající
+    celou zemi. Síť je uzlová, kde pojmenované ukazatele fungují
+    jako uzly. Všechny stezky jsou konzistentně značeny podle jejich obtížnosti.
+    Mapa zobrazuje tyto stezky červeně s čarami označujícími obtížnost
+
+    * ![red line](route_std.png) *turistická stezka*, označená ![diamond](yellow_diamond.svg). Označeno `network=lwn` a `osmc:symbol=yellow:[...]:yellow_diamond`.
+    * ![dashed line](route_mnt.png) *horská stezka*, označená ![white-red-white](white_red_bar.svg). Označeno štítky `network=lwn` a `osmc:symbol=red:white:red_bar`.
+    * ![tečkovaná čára](route_alp.png) *alpská stezka*, označena štítky ![white-blue-white](white_blue_bar.svg). Označeno štítky `network=lwn` a `osmc:symbol=blue:white:blue_bar`.
+
+    Upozorňujeme, že nad touto sítí vede řada národních a regionálních tras
+    , které jsou zobrazeny běžným způsobem.
+
+    Další informace o označování turistických stezek ve Švýcarsku v OSM naleznete na adrese:
+    [Švýcarská turistická síť](https://wiki.openstreetmap.org/wiki/Switzerland/HikingNetwork).
+  austria: |-
+    ## Rakousko
+
+    Region Vorarlbersko používá podobný klasifikační systém jako Švýcarsko
+    . Trasy se štítky `operator=Land Vorarlberg`, `network=rwn`
+    a `network:type=basic_network` budou označeny schématem založeným na obtížnosti:
+
+    * ![red line](route_std.png) osmc:symbol=yellow:white:yellow_upper
+    * ![dashed line](route_mnt.png) osmc:symbol=red:white:red_bar
+    * ![dotted line](route_alp.png) osmc:symbol=blue:white:blue_bar
+  italy: |-
+    ## Itálie
+
+    Italský alpský klub (CAI) udržuje síť horských stezek
+    , které jsou klasifikovány podle obtížnosti podobně jako ty ve Švýcarsku.
+    Trasy označené `network=lwn`, `osmc:symbol=red:..` a značkou `cai_scale`
+    budou rozpoznány jako trasy udržované CAI a zobrazeny jako červené čáry
+    podle jejich obtížnosti.
+
+    * ![red line](route_std.png) cai_scale=T
+    * ![dashed line](route_mnt1.png) cai_scale=E
+    * ![dashed line](route_mnt2.png) cai_scale=EE
+    * ![dotted line](route_alp.png) cai_scale=EEA*
+  uk: |-
+    ## Spojené království
+
+    Klasifikace [dálkových stezek ve Spojeném království](https://wiki.openstreetmap.org/wiki/WikiProject_United_Kingdom_Long_Distance_Paths)
+    (ty označené štítkem `network=uk_ldp`) závisí na značce `operator`. Relace
+    s `operator=National Trails` se zobrazují jako národní stezky, všechny ostatní relace
+    se zobrazují jako regionální trasy.
+
+    Relace se značkou `network=lwn/rwn/nwn/iwn` se zpracovávají jako obvykle.
   czech: |-
-    ## Česko
+    ## Česká republika
 
-    Země používá standard značení tras založený na sadě 7 symbolů ve 4 různých barvách. Popis najdete na [stránce českého značení](http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest).
+    Země používá standard značení stezek založený na sadě 7 symbolů ve 4 různých
+    barvách. Popis viz [česká stránka o značení](https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/Editing_Standards_and_Conventions#Doporu.C4.8Den.C3.A9_typy_cest) (pouze česky).
 
-    Je-li k dispozici tag 'kct_*', má přednost před tagy 'osmc:symbol'. Pokud není použit platný tag sítě, je trasa navíc překlasifikována. Trasy s 'kct_red=major' jsou národní trasy, další 'kct_*=major' jsou klasifikovány jako regionální.
+    Pokud je k dispozici tag `kct_*`, má přednost před jakýmkoli tagem `osmc:symbol`.
+    Kromě toho je trasa překlasifikována, pokud nelze najít platný síťový tag. Trasy
+    s `kct_red=major` se stanou národními trasami, ostatní `kct_*=major` jsou klasifikovány jako
+    regionální.
   slovakia: |-
     ## Slovensko
 
-    Slovensko používá stejné značení tras jako Česko.
-    Schéma se ale poněkud liší, podívejte se na
-    [Slovenské stránky o turistice](http://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes).
-
-    Podle tohoto schématu jsou značené všechny trasy s tagem „operator=KST“. Jelikož
-    by trasy na Slovensku měly obsahovat správné označení sítě, není povolena
-    reklasifikace tras.
+    Slovensko používá stejný standard značení stezek jako Česká republika. Schéma značení se však mírně liší, viz [stránka o slovenské turistice](https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Hiking_routes). Všechny trasy se štítkem `operator=KST` jsou označeny podle tohoto schématu. Protože trasy na Slovensku by měly mít platný síťový štítek, neprovádí se žádná reklasifikace.
   hungary: |-
     ## Maďarsko
 
-    V Maďarsku se rovněž nachází ucelený systém značení pomocí symbolů různých barev. Ty mají svůj vlastní tag [jel](http://wiki.openstreetmap.org/wiki/Key:jel). Tento tag je preferován ve srovnání s jakýmkoliv jiným tagem `osmc:symbol`
+    Maďarsko také používá systém s pevnou sadou symbolů v různých barvách. Tyto
+    jsou označeny vlastním štítkem [jel](https://wiki.openstreetmap.org/wiki/Key:jel).
+    Tento štítek je upřednostňován před jakýmkoli štítkem `osmc:symbol`.
+  germany: |-
+    ## Německo
+
+    ### Fränkischer Albverein
+
+    Síť v okolí Norimberku je poměrně hustá, proto se regionální trasy označené `operátor=Fränkischer Albverein` zobrazí na nižších úrovních přiblížení než obvykle.
+  ukcycle: "## Spojené království\n\n### Norwich\n\nMěsto Norwich používá systém barevně
+    kódovaných tras. Trasy označené štítkem \n`operator=Norwich City Council` jsou
+    označeny barevným čtvercem podle štítku `colour`."
 elevationprofiles:
   title: Výškové profily
+  general: |-
+    Profily výškových úrovní jsou vytvořeny s daty o výškách z [ASTER globálního digitálního modelu výškových úrovní (GDEM) verze 2](https://asterweb.jpl.nasa.gov/gdem.asp), tag „ele“ v OpenStreetMap se nebere v úvahu, stejně jako tunely a mosty. ASTER GDEM je produktem METI a NASA. Pokud má trasa více než dva koncové body nebo se skládá z více než jednoho segmentu, profil se nevykreslí. Směr profilu sleduje trasu západ-východ nebo sever-jih. Pokud by trasy měly prvky s rolemi jako „start“ a „goal“ a/nebo by byly uvedeny souvisle od začátku k cíli, mohli bychom být schopni určit směr ze samotné relace trasy. Při mapování tras na OpenStreetMap byste měli mít tyto věci na paměti.
+
+    Existují díry, tzv. „prázdná místa“, pro která nemáme žádná data o výšce. Ty jsou vizualizovány jako díry v profilu výškového profilu.
+
+    Upozorňujeme, že ačkoli je ASTER verze 2 pravděpodobně nejlepším bezplatným globálním DEM, má svá omezení, a to jak z hlediska přesnosti, tak pokrytí. Více informací naleznete v jejich [souhrnné zprávě o validaci](https://www.jspacesystems.or.jp/ersdac/GDEM/ver2Validation/Summary_GDEM2_validation_report_final.pdf). Nepřesnosti jsou dále umocněny nepřesností dat OSM, [technikou vyhlazování](https://github.com/waymarkedtrails/waymarked-trails-site/commit/602e12f38bfdc50c7e07bd3f44e080d72bcbb2a2), kterou používáme, a rozlišením profilu, které se s delší trasou snižuje.
 technical:
   title: Technické detaily
+  general: "Překryv trasy se aktualizuje každou minutu a obvykle je 2–5 minut pozadu
+    za serverem \nOSM. Datum v levém horním rohu ukazuje poslední aktualizaci. Aktualizace
+    podkladové mapy Mapnik nejsou pod kontrolou tohoto webu. V závislosti na aktuálním
+    zatížení OSM serveru to trvá\nmezi minutou a několika hodinami.\n\nZdrojový kód
+    těchto webových stránek je k dispozici pod licencí GPL a\nrozdělen do několika
+    repozitářů:\n* [backendový kód a generování map](https://github.com/waymarkedtrails/waymarkedtrails-backend/)\n*
+    [API služba](https://github.com/waymarkedtrails/waymarkedtrails-api/)\n* [frontend
+    webových stránek](https://github.com/waymarkedtrails/waymarkedtrails-website/)\n\nPokud
+    chcete pouze nahlásit chybu nebo diskutovat o funkcích webových stránek,\nmůžete
+    použít [sledovač problémů](https://github.com/waymarkedtrails/waymarked-trails-site/issues)\nnebo
+    [diskusi funkce](https://github.com/waymarkedtrails/waymarked-trails-site/discussions)
+    z repozitáře projektu na Githubu."
+  translation: "## Překlady\n\nPřeklady spravují vždy ochotní lidé na \n[translatewiki.net](https://translatewiki.net).
+    Pokud chcete přispět překladem \ndo svého vlastního jazyka nebo poskytnout zpětnou
+    vazbu k existujícím překladům, navštivte stránku projektu \n[translatewiki.net](https://translatewiki.net/wiki/Translating:Waymarked_Trails)."
 legal:
   title: Podmínky právní a užití
+  copyright: "Překryvné trasy jsou dostupné pod licencí \n[Creative Commons Attribution-Share
+    Alike 3.0 Germany License](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en)
+    a trasy GPX pod licencí \n[ODbL](https://opendatacommons.org/licenses/odbl/).
+    \nMohou být znovu použity a změněny, pokud výsledné dílo používá kompatibilní
+    licenci \na je zmíněn projekt OpenStreetMap a tato stránka."
+  usage: |-
+    ## Zásady použití
+
+    Překryvnou verzi můžete používat i na jiných stránkách, pokud je míra přístupu k nim mírná. Prosím
+    Ukládejte dlaždice do mezipaměti co nejčastěji a používejte správný odkaz. Hromadné stahování dlaždic se důrazně nedoporučuje.
+
+    Trasy GPX jsou poskytovány pro pohodlí návštěvníků těchto stránek. Hromadné stahování
+    není povoleno.
+  disclaimer: |-
+    ## Prohlášení
+
+    Správnost ani úplnost mapy nelze zaručit. Pokud se vydáte na túru, pořiďte si slušnou papírovou mapu, vhodné vybavení a nenechávejte selský rozum doma. Příroda může být stejně nemilosrdná jako krásná.Tyto stránky obsahují odkazy na externí webové stránky. Autor těchto stránek nemá žádný vliv na obsah těchto webových stránek a nepřebírá za něj žádnou odpovědnost.
 acknowledgements:
   title: Poděkování
+  text: |-
+    Veškerá mapová data poskytla [OpenStreetMap a přispěvatelé](https://www.openstreetmap.org)
+    a jsou distribuována pod licencí ODbL. Základní mapa je také s laskavým svolením OSM.
+    Další informace naleznete na stránce [copyright OSM](https://www.openstreetmap.org/copyright).
+
+    Základní mapu OpenTopoMap-R laskavě poskytla [openmaps.fr](https://openmaps.fr/about-openmaps.fr.html). Pokud se vám líbí,
+    zvažte prosím dar na údržbu jejich serverů. Navštivte stránku pro darování openmaps [https://openmaps.fr/donate]
+    pro více informací.
+
+    Data o stínování a nadmořské výšce vytvořená kombinací dat SRTM a ASTER GDEM.
+    ASTER GDEM je produktem METI a NASA.
+    Postprocessing laskavě poskytl Yves Cainaud z [opensnowmap.org](https://opensnowmap.org).
+
+    Kód pro výškový profil vyvinul Espen Oldeman Lund ve spolupráci mezi [Kresendo](https://www.kresendo.no) a projektem TG4NP v [Výzkumném ústavu Západního Norska](https://www.vestforsk.no).
+
+    Variantu pro sjezdovky pro zimní sporty vyvinul Michael Spreng. Symbol pro jízdu na koni připravil Robert Whittaker. Cílové rozcestníky zpracoval [Mueschelsoft](http://osm.mueschelsoft.de/destinationsign/example/index.htm). Mnohokrát děkujeme Janu Michelovi za poskytnutí služby. Překlady tohoto webu poskytuje [translatewiki.net a jeho přispěvatelé](https://translatewiki.net/wiki/Category:Waymarked_Trails_translators). Zvláštní poděkování patří průkopnickým překladatelům, kteří poskytovali překlady před translatewiki.net: Yves Cainaud (francouzština), Oscar Formaggi (italština), Gustavo [Tuentibiker](https://www.blogger.com/profile/12473561703699888751) Ramis (španělština), [Guttorm Flatabø](https://guttormflatabo.com)/TG4NP (norština bokmål a nynorsk), Mads Lumholt/TG4NP (dánština), Magnús Smári Snorrason/TG4NP (islandština), Lars Mikaelsson/TG4NP (švédština) a Elina Pesonen (finština).
 contact:
   title: Kontakt
   text: |-

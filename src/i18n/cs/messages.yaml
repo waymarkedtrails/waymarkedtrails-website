@@ -13,32 +13,77 @@
 # Author: Matěj Suchánek
 # Author: Mormegil
 # Author: Natalie
+# Author: Spotter
 ---
 attribution:
-  data: Mapová data © [OpenStreetMap](https://www.openstreetmap.org) pod [ODbL](https://www.openstreetmap.org/copyright)
-  elevation_title: údaje o nadmořské výšce podle [SRTM/ASTER](help/acknowledgements)
+  data: Mapová data © [OpenStreetMap](https://www.openstreetmap.org) pod licencí [ODbL](https://www.openstreetmap.org/copyright)
+  elevation_title: data o nadmořské výšce od [SRTM/ASTER](nápověda/poděkování)
 destination_sign:
   more: Více informací
+  no_data: Pro tento rozcestník nejsou k dispozici žádné informace o cíli.
   title: Cíle
 details:
-  altitude: Výška
+  altitude: Nadmořská výška
+  educational:
+    other: Toto je naučná stezka.
   image: Obrázek
-  mapped_len: Zobrazeno na mapě
+  mapped_len: Mapovaná délka
   note: Poznámka
-  official_len: Celková délka
+  oneway: Tato trasa je značena pouze ve směru vpřed.
+  official_len: Oficiální délka
   operator: Operátor
+  pilgrimage:
+    christian: Toto je křesťanská poutní cesta.
+    other: Toto je poutní cesta.
+  roundtrip: Tato trasa je okružní.
+  route_symbol: Symbol trasy
+  signed_direction: Tato trasa je značena pouze ve směru vpřed.
   subroutes_title: Sekce
   superroutes_title: Část z
+  symbol: Symbol
+  linear:
+    "yes": Relace pro tuto trasu je uspořádaná a celistvá.
+    sorted: Relace pro tuto trasu je celistvá, ale části nejsou uspořádané.
+    "no": Relace má mezery nebo jiné problémy.
   tags:
+    key: klíč
     title: OpenStreetMap značky
+    value: hodnota
   type:
+    guidepost: Rozcestník
+    node: Uzel
     relation: Relace
+    way: Cesta
+    wayset: Sada tras
   website: Webová stránka
+  wikipedia: Wikipedie
   zoom_to: Ukázat na mapě
+  analyze:
+    title: Analyzovat relaci
+    summary: Tato relace má {num} segmentů.
+    disclaimer: Zde jsou zobrazeny úseky trasy tak, jak byly vypočítány funkcí waymarkedtrails
+      z relace, což nemusí být vždy správné. Více informací o tom, jak waymarkedtrails
+      třídí trasy, naleznete na stránkách nápovědy.
+    open_end: Otevřený konec trasy.
+    multi_end: V tomto bodě se setkává více než dva úseky trasy.
+    two_end: Bod, kde je trasa přerušena, protože relace není seřazena. Červené přerušované
+      čáry ukazují, kde trasa pokračuje.
   download:
+    title: Stáhnout trasu
+    need_format: Vyberte formát
+    need_direction: Vyberte trasy které zahrnout
+    start: Získat soubor
     format:
+      title: Formát
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
+    direction:
+      title: Zahrnout cesty ve směru
+      forward: vpřed
+      backward: zpět
+      both: oba směry
+    other_ways: Další části trasy
 elevation:
   ascent: Kumulované stoupání
   descent: Kumulovaný sestup
@@ -52,12 +97,27 @@ elevation:
     mohou být nepřesné.
 error:
   load_error: Chyba při připojování k serveru.
+  missing_id: Chybí parametr 'id'.
+  missing_query: Chybí parametr 'query'.
   panel_title: Chyba
+  object_not_found: Objekt nenalezen.
+  api_unavailable: API není k dispozici.
 headline:
   last_update: Poslední aktualizace
 help: O mapě
+locate_me: Najdi mě
 network:
   continental: Kontinentální kongres
+  downhill: Z kopce
+  national: Národní trasy
+  node: Uzlové síťové připojení
+  nordic: Severské lyžování
+  other: Jiné trasy
+  regional: Regionální trasy
+  skitour: Lyžařské výlety
+  sled: Sáňkařská dráha
+  sleigh: Sáňkařská trať
+  winter_hike: Zimní turistika
 osmc_symbol:
   back: Zpět
   background: Pozadí funguje podobně. Skládá se z barvy a tvaru. Pozadí také může
@@ -65,15 +125,28 @@ osmc_symbol:
     v první řadě.
   background_heading: Podklad
   examples: Příklady
+  foreground: Symbol popředí se skládá z barvy a tvaru spojených podtržítkem. Níže
+    uvedená tabulka ukazuje všechny kombinace rozpoznávané tímto webem. Rozpoznává
+    také popředí, která se skládají pouze z názvu tvaru. Symboly pro ně jsou uvedeny
+    v posledním sloupci.
   foreground_heading: Popředí
+  intro_header: Přehled
+  preview: "Zadejte hodnotu osmc:symbol do vstupního pole níže \n a podívejte se,
+    jak se bude zobrazovat na mapě."
   preview_heading: Náhled
+  symbol_reference_heading: Úplný seznam podporovaných symbolů
 routelist:
+  loading: Načítání...
   close: Zavřít
+  more: Pro zobrazení poznámek k mapě přejděte na větší měřítko.
   rollup: srolovat
   title: Trasy
 search:
+  places: Místa
   routes: Trasy
   title: Hledat
+  help: Pro vyhledávání použijte klíčová slova. Můžete vyhledávat podle názvů stezek
+    (např. Apalačská stezka, E2) nebo míst (např. Berlín).
 settings:
   base_map: Základní mapa
   browser_language: Použít nastavení prohlížeče
@@ -82,10 +155,19 @@ settings:
   route_layer: Routovací vrstva
   title: Nastavení mapy
   transparency: Průhlednost mapy
+site_description:
+  cycling: Místní a dálkové cyklistické trasy s mapami a informacemi z OpenStreetMap.
+  hiking: Místní i dálkové turistické a pěší trasy s mapami a informacemi z OpenStreetMap.
+  mtb: Trasy pro horská kola (MTB) s mapami a informacemi z OpenStreetMap.
+  riding: Trasy pro jízdu na koni s mapami a informacemi z OpenStreetMap.
+  skating: Trasy pro inline bruslení s mapami a informacemi z OpenStreetMap.
+  slopes: Zimní sportovní svahy, sjezdové lyžování, běžecké bruslení, zimní turistika
+    s mapami a informacemi z OpenStreetMap.
 site_title:
   cycling: Cyklistika
   hiking: Pěší turistika
   mtb: Horská cyklistika
+  osmc_symbol: Štítek osmc:symbol
   riding: Jízda na koni
   skating: Inline bruslení
   slopes: Svahy pro zimní sporty
