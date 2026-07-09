@@ -56,6 +56,7 @@ details:
       title: Μορφή
       GPX: GPX
       KML: KML
+      GeoJson: GeoJson
     direction:
       title: Συμπερίληψη γραμμών στην κατεύθυνση
       forward: προς τα εμπρός
