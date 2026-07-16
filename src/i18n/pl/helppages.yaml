@@ -5,6 +5,7 @@
 # Author: Kastanoto
 # Author: Maro21
 # Author: Mateon1
+# Author: PanWor
 # Author: Rezonansowy
 # Author: Teiron
 # Author: Woytecr
@@ -148,13 +149,13 @@ osmc:
 hikinglocal:
   title: Wyświetlanie lokalizowane
   text: "Istnieje wiele różnych systemów oznaczenia szlaków turystycznych na całym
-    świecie. Kiedy\nmapa próbuje użyć najogólniejszych znaczników by wyświetlić je
+    świecie. Kiedy\nmapa próbuje użyć najogólniejszych znaczników, by wyświetlić je
     w przyzwoitej postaci, jest to\nskazane na niepowodzenie dla niektórych systemów,
     zwłaszcza w przypadki sieci szlaków turystycznych. \nAby dostosować takie systemy,
-    mapy mogą być zlokalizowane w regionach gdzie\nrenderowanie standardowe jest niewystarczające.\n\nPoniżej
-    znajduje się lista regionów, które używają specjalnych symboli na mapach. Aby
-    \ \ntwój region był wyświetlany w sposób szczególny, przeczytaj wskazówki z końca
-    strony."
+    mapy mogą być zlokalizowane w regionach, gdzie\nrenderowanie standardowe jest
+    niewystarczające.\n\nPoniżej znajduje się lista regionów, które używają specjalnych
+    symboli na mapach. Aby  \nTwój region był wyświetlany w sposób szczególny, przeczytaj
+    wskazówki z końca strony."
   swiss: "## Szwajcaria\n\nSzwajcaria posiada obszerną sieć oznakowanych tras turystycznych
     pokrywającą\ncały kraj. Sieć jest złożona z węzłów, których funkcję pełnią nazwane
     \ndrogowskazy. Wszystkie ścieżki oznaczane są konsekwentnie zgodnie z ich trudnością.\nMapa
