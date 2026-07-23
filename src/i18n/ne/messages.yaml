@@ -7,35 +7,163 @@
 # Author: सरोज कुमार ढकाल
 # Author: हिमाल सुबेदी
 ---
+attribution:
+  data: मानचित्र डेटा © [OpenStreetMap](https://www.openstreetmap.org) [ODbL](https://www.openstreetmap.org/copyright)
+    अन्तर्गत
+  elevation_title: '[SRTM/ASTER]द्वारा उचाइ तथ्याङ्क(मद्दत/स्वीकृति)'
+destination_sign:
+  more: थप विवरणहरू
+  no_data: यो गाइडपोष्टका लागि गन्तव्य सूचना उपलब्ध छैन ।
+  title: गन्तव्यहरू
 details:
+  altitude: उचाइ
+  educational:
+    other: यो एक शैक्षिक मार्ग हो।
+  image: छवि
+  mapped_len: म्याप गरिएको लम्बाइ
   note: टिप्पणी
+  oneway: यो मार्ग अगाडि दिशामा मात्र पछ्याउन सकिन्छ।
   official_len: आधिकारिक दुरी
   operator: सञ्चालक
+  pilgrimage:
+    christian: यो एक क्रिश्चियन तीर्थयात्रीको मार्ग हो।
+    other: यो तीर्थयात्रीको मार्ग हो।
+  roundtrip: यो मार्ग गोप्य यात्रा हो।
+  route_symbol: मार्ग प्रतीक
+  signed_direction: यो मार्ग अगाडि दिशामा मात्र चिन्ह लगाइएको छ ।
   subroutes_title: खण्डहरू
   superroutes_title: खण्ड
+  symbol: प्रतीक
+  linear:
+    "yes": यो मार्गका लागि सम्बन्ध क्रमबद्ध गरिएको छ र एक टुक्रामा छ ।
+    sorted: यो मार्गको लागि सम्बन्ध एक टुक्रामा छ तर सदस्यहरू क्रमबद्ध गरिएको छैन
+      ।
+    "no": सम्बन्धमा प्वालहरू वा अन्य समस्याहरू छन्।
   tags:
+    key: कुञ्जी
     title: OpenStreetMap ट्यागहरू
+    value: मान
+  type:
+    guidepost: मार्गदर्शक पोस्ट
+    node: नोड
+    relation: सम्बन्ध
+    way: बाटो
+    wayset: Wayset
   website: वेवसाइट
   wikipedia: विकिपिडिया
+  zoom_to: मानचित्रमा देखाउनुहोस्
+  analyze:
+    title: सम्बन्ध विश्लेषण गर्नुहोस्
+    summary: यो सम्बन्धमा {num} खण्डहरू छन् ।
+    disclaimer: यसले सम्बन्धबाट waymarkedtrails द्वारा गणना गरिएको रूपमा मार्ग खण्डहरू
+      देखाउँछ, जुन सधैँ सही नहुन सक्छ । कसरी waymarkedtrails ले मार्गहरू क्रमबद्ध
+      गर्दछ भन्ने बारे थप जानकारीको लागि, मद्दत पृष्ठमा जानुहोस् ।
+    open_end: मार्गको अन्त्य खोल्नुहोस् ।
+    multi_end: यस बिन्दुमा मार्गका दुई भन्दा बढी खण्डहरू भेट्छन्।
+    two_end: बिन्दु जहाँ सम्बन्ध क्रमबद्ध नगरिएकाले मार्ग अवरोध गरिएको छ । रातो ड्यास
+      गरिएको रेखाले मार्ग जारी राख्ने स्थान देखाउँछ ।
+  download:
+    title: मार्ग डाउनलोड गर्नुहोस्
+    need_format: ढाँचा रोज्नुहोस्
+    need_direction: समावेश गर्ने तरिका रोज्नुहोस्
+    start: फाइल प्राप्त गर्नुहोस्
+    format:
+      title: प्रारूप
+      GPX: GPX
+      KML: KML
+      GeoJson: GeoJson
+    direction:
+      title: दिशामा बाटोहरू समावेश गर्नुहोस्
+      forward: अगाडि
+      backward: पछाडि
+      both: दुबै
+    other_ways: अतिरिक्त मार्ग भागहरू
 elevation:
+  ascent: संचित वृद्धि
+  descent: संचित घटेको
   diagram:
     altitude: उचाइ (मि)
     distance: दुरी (किमि)
+  title: उचाइ प्रोफाइल
+  total: जम्मा वृद्धि/बन्द
+  unavailable: उचाइ डेटा फेला परेन ।
+  warn_unsorted: मार्ग सम्भावित अनक्रमबद्ध वा अपूर्ण छ । उचाइ सूचना गलत हुन सक्छ ।
 error:
+  load_error: सर्भरमा जडान गर्दा त्रुटि ।
+  missing_id: हराइरहेको परामिति 'id' ।
+  missing_query: परामिति 'क्वेरी' हराइरहेको छ ।
   panel_title: त्रुटि
+  object_not_found: वस्तु फेला परेन ।
+  api_unavailable: एपीआई उपलब्ध छैन ।
 headline:
   last_update: अन्तिम सम्पादन
 help: यस नक्साको बारेमा
+locate_me: मलाई अवस्थित गर्नुहोस्
 network:
+  continental: Continental routes
   downhill: ओरालो
+  national: राष्ट्रिय मार्गहरू
+  node: नोड सञ्जाल जडान
+  nordic: नर्डिक स्किइङ
+  other: अन्य मार्गहरू
+  regional: क्षेत्रीय मार्गहरू
+  skitour: स्की यात्राहरू
+  sled: स्लेडिङ पिस्ट
+  sleigh: स्लिङ पिस्ट
+  winter_hike: हिउँद पैदल यात्रा
 osmc_symbol:
+  back: पछाडि
+  background: पृष्ठभूमिले समान तरिकाले कार्य गर्दछ । यो रङ र आकारले पनि बनेको हुन्छ
+    । पृष्ठभूमि केवल रङ नाम पनि हुन सक्छ जसले चयन गरिएको रङको क्यानभासमा परिणाम दिन्छ
+    ।यो पहिलो पङ्क्तिमा देखाइएको छ ।
   background_heading: पृष्ठभूमि
+  examples: उदाहरणहरू
+  foreground: अग्रभूमि सङ्केतमा एउटा रङ र एउटा आकार समावेश हुन्छ जुन एउटा अन्डरस्कोरद्वारा
+    लिङ्क गरिएको हुन्छ । तलको तालिकाले यो साइटद्वारा पहिचान गरिएका सबै संयोजनहरू देखाउँछ
+    । यसले अग्रभूमिहरू पनि पहिचान गर्दछ जुन आकारको नामबाट मात्र समावेश हुन्छ । तीका
+    लागि सङ्केतहरू अन्तिम स्तम्भमा देखाइन्छ ।
+  foreground_heading: अग्रभूमि
+  intro_header: सिंहावलोकन
+  preview: यसलाई नक्सामा कसरी रेन्डर गरिने भनेर हेर्न तलको आगत फाँटमा एउटा osmc:symbol
+    मान टाइप गर्नुहोस् ।
+  preview_heading: पूर्वावलोकन
+  symbol_reference_heading: समर्थित प्रतीकहरूको पूरा सूची
 routelist:
   loading: खुल्दै छ…
+  close: बन्द गर्नुहोस्
+  more: थप मार्गहरू हेर्न जुम बढाउनुहोस् ।
+  rollup: माथि घुमाउनुहोस्
   title: बाटाहरू
 search:
+  places: स्थानहरू
   routes: बाटाहरू
   title: खोज्नुहोस्
+  help: कृपया यससँग खोजी गर्न खोजशब्दहरू प्रयोग गर्नुहोस् । तपाईँले मार्गहरूको नाम
+    (उदाहरणका लागि एपलाचियन ट्रेल, E2) वा स्थानहरू (उदाहरणका लागि बर्लिन) मा खोजी
+    गर्न सक्नुहुन्छ ।
 settings:
+  base_map: आधार मानचित्र
+  browser_language: ब्राउजर सेटिङ प्रयोग गर्नुहोस्
+  hillshading_layer: पहाड छायाँकरण
   language: भाषा
+  route_layer: मार्ग तह
+  title: मानचित्र सेटिङ
+  transparency: नक्सा पारदर्शिता
+site_description:
+  cycling: OpenStreetMap बाट नक्सा र जानकारी सहित, स्थानीय र लामो-दूरी साइकल मार्गहरू।
+  hiking: OpenStreetMap बाट नक्सा र जानकारी सहित स्थानीय र लामो-दूरी पदमार्ग र हिँड्ने
+    मार्गहरू।
+  mtb: OpenStreetMap बाट मानचित्र र जानकारी सहित, हिमाली-बाइकिङ मार्गहरू (MTB)।
+  riding: OpenStreetMap बाट मानचित्र र जानकारी सहित, घोडा सवार मार्गहरू।
+  skating: Inline-skating routes, with maps and information from OpenStreetMap.
+  slopes: OpenStreetMap बाट नक्सा र जानकारी सहित, जाडो खेल स्लोपहरू, हिमालमा स्किइङ,
+    क्रस-काउन्टी स्केटिङ, जाडो हिँड्ने।
+site_title:
+  cycling: Cycling
+  hiking: पदयात्रा
+  mtb: MTB
+  osmc_symbol: osmc:प्रतीक ट्याग
+  riding: घोडा सवारी
+  skating: इनलाइन स्केटिङ
+  slopes: शीतकालीन खेल स्लोप्स
 ...
