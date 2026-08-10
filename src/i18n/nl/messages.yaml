@@ -128,9 +128,9 @@ osmc_symbol:
   background_heading: Achtergrond
   examples: Voorbeelden
   foreground: Het voorgrondsymbool bestaat uit een kleur en een vorm, met een underscore
-    ertussen. Onderstaande tabel geeft alle combinaties weer die deze site herkent.
-    Ook voorgrondsymbolen die alleen een vormnaam hebben worden herkend. De laatste
-    kolom toont die symbolen.
+    ertussen. De onderstaande tabel geeft alle combinaties weer die deze site herkent.
+    Ook voorgrondsymbolen die alleen een vormnaam hebben worden herkend. De symbolen
+    daarvoor staan in de laatste kolom.
   foreground_heading: Voorgrond
   intro_header: Overzicht
   preview: Tik een waarde voor osmc:symbol in het veld hieronder om te zien hoe het
